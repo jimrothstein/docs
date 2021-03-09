@@ -1,0 +1,24 @@
+---
+# NO TABS, 2 spaces to indent
+## WORKS!
+title:	"116th Congress"
+location:	~/documents/correspondence/house_committees.md
+#date:	24NOV2018
+output: 
+  pdf_document:
+    latex_engine: xelatex
+fontsize: 12pt
+geometry: margin=0.5in,top=0.25in
+#author:		jim
+#thanks:		special thanks to you
+#abstract:	|
+#	Guide to House
+# NO TABS, 2 spaces to indent
+---
+
+```
+rmarkdown::render(
+    "~/Downloads/documents/misc_files/2020_legal_misc_notes.md", 
+    output_dir="~/Downloads/print_and_delete")
+test 
+```

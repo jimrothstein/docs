@@ -1,0 +1,16 @@
+v
+*.tar
+exclude_files.txt
+dir1
+# exclude_files.txt   
+#
+##############
+#	SYNTAX:
+#	dir1
+#	dir1 is directory, not dir1/, not dir1/*, not ... in quotes
+##############
+#
+#	COMMAND:
+#
+# tar -cvf mytar.tar  -X exclude_files.txt *
+##############

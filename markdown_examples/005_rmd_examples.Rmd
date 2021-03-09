@@ -1,0 +1,114 @@
+
+---
+title: Template for .Rmd
+output: 
+  pdf_document:
+    latex_engine: xelatex
+    toc:  TRUE
+    toc_depth:  1
+fontsize: 12pt
+geometry: margin=0.5in,top=0.25in
+#  md_document:
+#  html_document:
+#    toc: true
+#  	toc_float: true
+#    css: styles.css
+---
+
+---
+/home/jim/.config/nvim/templates/skeleton.Rmd
+othercomments
+---
+
+<!--  commments -->
+
+```{r setup, include=FALSE		}
+knitr::opts_chunk$set(echo = TRUE,  comment="      ##",  error=TRUE, collapse=TRUE)
+```
+
+```{r library, include=FALSE		}
+library(jimTools)
+library(here)
+```
+
+
+```{r render, eval=FALSE	}
+here()
+file <- "005_rmd_examples.Rmd"
+file  <- basename(file)
+dir=""
+
+jimTools::ren_pdf(file,dir)
+jimTools::ren_github(file, dir)
+```
+
+
+
+
+
+
+
+
+list?
+
+- one 
+- two
+- three
+
+***
+
+list?
+* one
+* two
+* three
+*
+
+*** 
+
+list?
+* one 
+*
+* two
+*
+* three
+*
+
+***
+list?
+-	one 
+-	two 
+-	three
+
+***
+list?
+	-	one
+	- two
+	- three
+	
+
+***
+
+>	is this block?
+***
+
+	
+` code block ` 
+*** 
+
+### Verbatim quote
+
+`this is a quote, but does not appear so`
+
+`"this is also a quote and appears so."`
+
+
+This is regular text.
+
+>		But this should be an indented block.  And this also should be part of the
+>		indent.   Let us add one more sentence to see if three or more sentenaces
+>		are also in the block.    All have '>' in first column.
+>
+>
+>
+
+```{r knit_exit()} knitr::knit_exit() ```

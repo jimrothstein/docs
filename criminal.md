@@ -1,0 +1,1 @@
+ALZ_legal/legal_18CR/zimmerman_notes.md

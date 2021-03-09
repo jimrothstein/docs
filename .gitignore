@@ -1,0 +1,84 @@
+# .gitignore
+# ~/documents/.gitignore   ($G)
+#
+# IF file has been put into index
+# =================================
+# adding it into .gitignore later is NOT enough
+# must do:
+# git rm --cached <file>
+#
+# .R overhead (in any directory)
+# =============
+.Rproj.user
+.Rproj
+.Rhistory
+.RData
+.Ruserdata
+.Rprofile
+.Renviron
+
+#
+# ignore these directories
+# ==========================
+r_legal/
+spoon-knife/
+bookclub-Advanced_R/
+book_advanced_R/
+vim-myhelp/
+dev/
+r_try_things_here/
+PPPloans/
+pkg_youtube_api/
+jimTools/
+rtweet/
+PPP/
+genentech-build-tidy-tools/
+make_project/
+BMRSr/
+hugo_projects/
+AoC/
+
+
+
+# ignore these separate projects
+# ================================
+pkg_linear_algebra/
+pkg_mp3_files/
+pkg_yt_api/
+r_rafael/
+r_health_labs/
+book_modern_dive/
+opensecrets/
+test_opensecrets/
+CARES/
+15dr14800_dir/
+ok_delete/
+
+# Data files, in all directories
+# ================================
+*.RDS
+*.rds
+*.Rdata
+*.csv
+*.pdf
+
+
+
+# Google API
+# ============
+.httr-oauth
+r_mp3/R/.httr-oauth
+r_mp3/.httr-oauth
+r_mp3/R/021_api_codes.R
+r_mp3/R/021_api_codes.Rmd
+
+
+# Special
+# =========
+# plugin "jimrothstein/myhelp" - separate from rest of code/ 
+vim-myhelp/
+*.html
+*.tar.gz
+
+tags
+

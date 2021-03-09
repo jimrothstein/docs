@@ -1,0 +1,178 @@
+---
+title: 'Oregon Attorney General Complaint'
+#author: "jim rothstein  831-824-4304" -->
+date: "August 27, 2019"
+output:
+  pdf_document:
+    toc: yes
+    toc_depth: 3
+  html_document:
+    toc: yes
+geometry: margin=1in, bottom=0.5in
+fontsize: 12pt
+urlcolor: blue
+---
+<!-- file_name: "2019_06_25_Tow_Complaint.md" --> 
+# 
+## Introduction
+
+On Tuesday, June 25, 2019 my vehicle was improperly towed from the parking
+facility where I work in Tualatin, OR.
+
+Explainations for the tow have changed over time; however no tow was ever justified.
+
+Attempts to recover my costs and expenses have failed.
+
+This complaint alleges (1) an unlawful tow and (2) multiple violations of [ORS
+98.8](https://www.oregonlaws.org/ors/98.805) and Tualatin Municpal Code [TMC 8-5](https://library.municode.com/or/tualatin/codes/city_charter_and_municipal_code_?nodeId=TUALATIN_MUNICIPAL_CODE_TIT8VEPA_CH8-05TOPRPR).  
+
+Tualatin Police have issued formal notice of violations of TMC 8-5-040(b and c), a
+subset of the violations I allege.
+
+This complaint also alleges willful disregard of the law **before the
+tow** and continuing bad faith **after the tow**.
+
+##  Responsible Parties
+
+The parties responsible for the  tow, include:
+
+*	Retriever Towing (503-222-4763)
+*	Kevin Johnson, who requested the tow (503-222-5402) for:
+	*	Quest Property Management
+	*	Tualatin Development Association	
+
+Each party was aware I work in the complex.
+
+
+## Basic Facts
+
+(@)	I rent office space at 8215 SW Tualatin-Sherwood Road, Suite 200, Tualatin,
+OR 97062.
+
+(@)	The complex includes 4 buildings (2 office structures, 1 hotel, 1 free
+   standing structure for restaurants).   To the south of the buildings is
+   a common, contiguous "parking facility" (`ORS 98.830(3), TMC 8-5-020(1)`).
+   The complex is bounded to the south by Tualatin-Sherwood Highway, east by
+   Martinazzi and to immediate north by a recreational area and lake maintained
+   by City of Tualatin.
+   	
+(@) At approximately 6 am on Tuesday, June 25, 2019 I parked my vehicle at the
+   complex.
+
+(@)	When I returned, approximately 4 pm, the vehicle was gone.
+
+(@)	Because my insurance company monitors the vehicle location and speed at all
+   times,  I was able to track the vehicle's movements to Tigard, OR 
+   at about 11 am that morning.    No one in my office had requested a tow.
+
+(@)	 The sole parking sign was torn in half appeared to be "Forever Towing." 	I
+   could not find any such towing company with a Google search.   
+
+(@)	However, I called the phone number listed and "Retriever Towing" answered
+   and said they had the vehicle.
+
+(@) When told the reason (unauthorized, non-customer parking), I explained I
+worked in the complex and expected them to return the vehicle immediately, which
+they refused to do.
+
+(@) I called the Tualatin Police.
+
+(@)	With few options, I made arrangements with Retriever Towing to go to the
+car's location and retrieve the car.   I told them I would be walking, I was
+able to catch a WES train.
+
+(@)	 I retrieved the car approximately approximately 6:04 pm.   Retriever
+	 refused to tell me who called for the tow.
+
+(@)	  Early the next morning, Wednesday,  I inquired around the complex as who
+had ordered the tow.  The hotel manager had not and he explained when they do
+tow.  I then called Quest and the person who answered acknowledged the tow
+because the car was parked "overnight", a new reason.   When I responded "not my
+car", she said Kevin Johnson made the call and she sent me to his voicemail,
+where I left a detailed message.
+
+	 Later that day and the next I also
+	-	spoke with the owner the building where I work, who said building owners had
+	limited authority to set rules in the parking facility, which involves city. He
+	has no authority to tow, and gave me a copy of the warning he gives to cars
+	blocking access.
+	-	took numerous photos of signs throughout the parking facility.
+	-	completed Tualatin Police Report #WP191770803
+(@)	Over course of next several days, I collected information from Retriever
+Towing, spoke with attorney Sean Brady for City of Tualatin and the person
+responsible for enforcement, Ken Froescher (503-691-4822).
+
+(@)  In consultation with my credit card company, I disputed Retriever Towing charge on August 19, 2019.  This complaint is based upon laws and behavior, not presence or absence of any financial issues.
+
+## Documentation
+
+As of today, my documentation (see attached) includes:
+
+-  receipt from Retriever Towing (June 25, 2019)
+*  "towing authorization" from Retriever Towing (dated January 28, 2018; rec'd June 27, 2019)
+*  Photographs from Retriever Towing (rec'd June 27, 2019)
+*  dozens of my photographs of the signs in the parking facility (available upon request), including
+		the torn sign and its replacement 48 hours later (June 25 - June 27, 2019).
+-	sample parking warning from 1 building in complex (rec'd June 27, 2019)
+-	enforcement letter from Tualatin Police to Quest (July 16,  2019)
+-	verifcation emails between office manager where I work and Kevin Johnson (July 12, 2019 but I received July 26, 2019)
+- 	my detailed contemperaneous notes. (available upon request)
+-   insurance company record of car arrival time on June 25, 2019 (available upon request)
+
+##	Allegations
+### Signage
+	-	Torn in half, disfigured
+		-	ORS 98.854(1)(a)
+	-	Not at entrance
+		-	TMC 8-5-040(1)(b)
+	-	Not prominently displayed
+		-	ORS 98.954(1)(a)
+		-	TMC 8-5-040(1)(b)
+	-	No delination between businesses
+		-	TMC 8-5-040(c) ("each parking space must be clearly marked")
+		-	TMC 8-5-005
+		
+### Improper Authorization
+	-	Not properly authorized; not signed
+		-ORS 98.854(2) ("at time of tow", "each signed authorization")
+		-TMC 8-5-040(1)(a) ("expressed written authorization")
+		
+	
+### Towing Company
+	-	Failure to offer/call for transportation
+		-TMC 8-5-050(5)
+	-	Failure to arrive at designated time
+
+
+## Supplemental
+<!-- to reset list -->
+
+-	Rules for parking and towing at this parking facility vary widely between owners, managers, City of Tualatin.
+
+-	None  of managers/owners appear to know the correct, lawful rules.
+
+-	Decision to tow my car appears to made arbitrarily, without valid
+justification.
+
+-	Unknown - historical complaints or data on improper Retriever Towing
+towing within City of Tualatin.
+
+-	Unknown - historical complaints or data on improper towing requests by Kevin
+		Johnson| Quest Management | Tualatin Development Association.
+		
+-	Examples of Kevin Johnson exercising bad faith, include:
+
+	-	no returned phone calls
+	-	no show at meeting
+	-	ever changing explanations for towing, including unsupported, irrelevant
+	accusations
+	-	personal threat against me for valid parking.
+	-	does not know legal rules, but persists in argumentive.
+	-	verifies I am tenant, says he will reimburse, but then does not do so.
+	-	appears to bear zero responsibility for a situation he and Retriever Towing caused.
+
+## Contact
+
+Jim Rothstein
+jimrothstein@gmail.com
+831-824-4304

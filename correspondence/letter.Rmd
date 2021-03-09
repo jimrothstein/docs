@@ -1,0 +1,49 @@
+---
+title: "WH901E6U"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+23 JUNE 2019
+
+re: WH901E6U
+
+Dear Shannon(?) - Conflict Resolution Team
+
+Thank you for responding to my complaint re:  Health Share, ODS and a dental provider:  OHSU Student Clinic.
+
+I tried to leave message, but not sure you received.   So I am trying this way.
+
+I want to be sure you know the provider terminated COVERED Dental care in distinct step from terminating non-covered care (abandoned implant).   The provider provided only the sketchiest  documentation (and factually wrong details.)
+
+
+In past month, ODS recently explained the provider rules for COVERED care.    The dental provider did not follow these rules to terminate covered care and did not provide required documentation to ODS.
+
+ODS then had its "OHP coordinator" research the matter.  But what came back to me made no sense and contradicted even the sketchy documentation I had.   For example, the provider says they actually tried to reschedule with me, but I failed to reply.
+
+ODS was going to obtain more specifics from the OHP coordinator but I never heard from them.  I also contacted Health Share, but it offered no assistance.   
+
+So I complained directly to OHP/DHS.   Again this COVERED care.
+
+In your message to me, you suggested contacting Oregon Dental Board.   In fact, I did that several months ago (and is now under investigation).
+
+The letter I sent you (by fax) included my complaint to the Board. This emphasized the IMPLANT because I think unprofessional to recommend a procedure, take money and quit half-way through, leaving a hole. 
+
+
+I may have confused you with that letter.  My complaint to you should have emphasize COVERED care, including 3 month periodontal cleaning cycle, which you covered.   As I (now) understand COVERED care, the provider did NOT follow the rules, did NOT provide the necessary documentation and is making up stories to cover itself.
+
+I would be happy to provide you with additional details I have.   Is there a way to reach you by phone?  Or email?
+
+Thank you.
+jim rothstein
+WH901E6U
+DOB:  12/23/1955
+
+
+
+
+
+
