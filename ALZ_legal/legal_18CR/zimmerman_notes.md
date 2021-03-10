@@ -1984,6 +1984,67 @@ ANYWHERE.
 *
 *
 
+##  Tue  09 Mar 2021
+* Wow, this phone didn't go well.  Both Karly and Janice on speaker phone.  
+*  Karly did not attend Thursday hearing.  ALZ graduated.    Said I was told
+    to expect call from court (Really?! so I went through the fax and secy
+    saying forward to VET people and nothing more.) Apparently there was a
+    priprivate mtg before VET court and Braden brought this up.  Private.  Can
+    not tell me anything. Ok, I understand that.
+*  Karly did not know if judge read letter or Braden raised in court. Nothing.
+*  I had asked if judge or anybody said anything.
+*
+*   So I think I asked if anyone will address the points I raised.  instead of
+    saying the truth ... nothing happens.  They took a more aggressive stance:
+    It is this aggressive, counter-factual that got to me
+*
+*  Karly said (and
+    repeated and repeated) that we went over this on phone 45 min with Braden;
+    point by point.   Right, I said I did not get any answers.  Some things he
+    said he'd need to check.
+
+* At this point, Janice got on the phone reminded me she had set up mtg with
+    Braden (really!?   I had to barge in;  think she was referring to
+    telephone mtg.)   Janice kept saying they have given me all the can.
+    What is it that I want (I said:  there is  a list;  they told me Karly
+  hanldes VET court and she took the court. don't blame me.   Now you are
+  telling me the list, the phone mtg --- like black hole.   Nothing zero comes
+  out.   Probation violations?   Money?   $500 VET Court fee?   Can't tell me
+  this.
+
+*  Janice seemed to suggest why was I involving Karly.   Janice had given me
+    all the anwers, set up mtg blah blah.  I said I called and they told me
+    Karly does the VET Court - don't blame me.   But clearly, they are of view
+    that they have done everything (ie nothing) and why do I persist?
+    (that's my take)   I persist b/c you do not answer q.
+
+*  They hide their own incompetance.   Their own inability to answer the
+    simplest of questions,   to even tell me if Hearing is public or not.
+    They put burden on me .... we went over this;  we told you everything;  we
+    we went over it;point-by-point.   What is you want?
+
+
+* Talking past each other.  I stil have nothing!
+
+* Finally, I said OK.   And added I won't bother either of you again.
+
+*  At one point Karly said Braden broght it up with VET mtg, which puzzled me.
+    When was this, what is this.  private private .  Can't tell me what day it
+    was?    (Apparently was right before Court).  Said I  don't know the
+    proces.
+*  Pretty sure Karly said that I had been told to expect a call.   Really? and
+    I went through the fax and secy said everything forward to VET.  So I put
+    in my notes this is waste.   and did not expect anything.  Hence, suprise
+    when 4 calls came in.
+
+*  In phone msg. Karly said collecting money from me sounds civil.  (Whyy are
+    we Braden if it is all civil)
+
+
+
+
+
+
 
 
 

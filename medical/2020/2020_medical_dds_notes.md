@@ -966,4 +966,57 @@ refer mostly to Dr. Asplin (Litholink) and then to Dr. Lieske (Mayo)
 >  high oxalate,  plus suppressed urine ammonium. We could offer him a video visit
 >  if he likes.  John
 
+\newpage
+
+##  Tue  09 Mar 2021
+Dear Barb:
+  Attached please find:
+  1.  Very latest Litholink report (Feb 2021)
+  2.  Current prescription list
+  3.  List of **prior** hyperoxaluria suggestions.
+
+\newpage
+09 MARCH  2021  
+
+Rothstein, James  
+23 DEC 1955
+Mayo # 12261030
+
+
+For Dr. Lieske - for use during phone call
+(Will not make sense otherwise)
+
+**PRIOR** Hyperoxaluria theories
+
+
+
+1.   Take more calcium
+1.   "You just have it" [hyperoxaluria]
+1.   Take more D3 to reduce PTH [didn't]
+1.   Surgery may fix PTH ( and hyperoxaluria ?)
+1.   If 'stone burden' is low (via CT scan), conclude hyperoxaluria is 'normal'
+     for you.
+1.   "clinically not possible"  [fat malabsorption without diarrhea]
+1.   "unique"
+1.   "Your body may have adjusted" [to pancreas atrophy without diarrhea]
+1.   Variance in UrOx is in 'normal range' [for people with enteric hyperoxaluria}
+1.   You may have hidden generic factor, not one of common ones.
+1.   You may have TWO causes:  pancreatic atrophy AND abdominal hernia bacteria, which
+     just balance so no diarrhea, no malnutrition, no symptoms.
+   
+
+FACT:  Colonoscopy prep increasing difficult (over years) to completely empty.
+FACT:  Last one:  7-day liquid diet; not empty; ~36' to empty during procedure.
+FACT:  At time, GI doctor nothing amiss and that I was just "slow".
+FACT:  Much later, came two-cause hyperoxaluria theory: so patient not sure if
+possible or just another theory.  Dr suggested pancreatic enzymes, but patient
+unclear  benefit, how prove or disprove theory, or affect hyperoxaluria.
+
+
+
+
+
+
+
+
 
