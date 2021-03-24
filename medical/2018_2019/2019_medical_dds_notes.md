@@ -434,16 +434,16 @@ all.  Provider can work comfortably & completely.
 	mention: no diagnosis, 4 1/2 years, think doctors have not seen this and
 	GUESSING.   Promised to reopen case.  Good.  Also, didn't see any refer to
 	Mayo (or not the person who would see - not sure). More discussion about
-	whether or not I missed 2 phone calls from dr. miyake (explained they were
+	whether or not I missed 2 phone calls from Dr. Miyake (explained they were
 	not scheduled, he appeared to just call following email back & forth).
-	Also, dr miyake willing to ans question in is office; appreciate that;
+	Also, Dr. Miyake willing to ans question in is office; appreciate that;
 	tired of the BS though (he once described case as "unique", stopped
 	listening after that.)
 
 -	No faith Kaiser can regulate itself.   Dept heads didn't notice 4 1/2 and
 	NO diagnosis??
 
--	Will send letter OHP.  Someone somwhere must be willing to pay attentiln.
+-	Will send letter OHP.  Someone somewhere must be willing to pay attention.
 
 -	Litholink: correspondence with  researcher Dr. Aisplin, checking my
 	results, he sits on top of vast urine database and numberous publications.
