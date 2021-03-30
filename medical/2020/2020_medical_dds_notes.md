@@ -960,6 +960,14 @@ refer mostly to Dr. Asplin (Litholink) and then to Dr. Lieske (Mayo)
 * black, hours before penis feels something;  no blood no mess.   Couldn't fetch
     the stone.
 * Dr. Lam replies .... inline with 5 mm stone from U/S  (U/S exaggerate
+
+
+##  late FEB 2021  Dr. Carl is  "out-to-lunch"  
+*   clueless whether he is getting Litholink (I get 10 days later, never heard
+    from him). Disappointing.   This guy not reliable; not on top of things ... fortunately
+    Lieske may be in picture:
+*   Neprh calls for late Apr appt; now is early March ... total bs.
+
 ##  Thu  04 Mar 2021 Lieske replies:  phone call?
 >  To me this looks dietary in nature. I think he’s on a very vegan leaning diet
 >  based upon the patterns in the urine (high potassium, citrate and pH with the
@@ -1012,8 +1020,10 @@ FACT:  Much later, came two-cause hyperoxaluria theory: so patient not sure if
 possible or just another theory.  Dr suggested pancreatic enzymes, but patient
 unclear  benefit, how prove or disprove theory, or affect hyperoxaluria.
 
-
-
+##  Thurs  11 Mar 2021 spoke with Dr. Lieske
+*  See my notes on G- docs.   Seems promising; has seen; 
+*   Wants diet 100 mg Oxalate (crazy!) + enzymes.
+*   Begin Zenprep (all are non-generic)
 
 
 
