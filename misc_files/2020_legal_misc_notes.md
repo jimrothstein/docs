@@ -417,3 +417,13 @@ jim
 ##  Tue  09 Feb 2021  sitting in chair in 2ndF lobby;  Kristine: "why aren't you
 in your office?"   "I answer change of scenery"  As she turns to leave, "seems
 like odd place to work."     Am I going to get nasty note now?
+
+
+##   Mon 15 MAR  sit in chair "Against House rules to work in hallways....:
+*   See email exchange, too ridiculous
+*   "Smelly" garbage ... it is a garbage !
+*    stain on wall, mssing the waste bin
+*     carpet , yep I told her boss needs cleaning ... 
+*    *   I am blocking the door so janitor can not get in to clean.
+*  Also see my email re: community room; book online, oh!   of course, she would
+    never suggest that to me.   Anyway it is GREAT to have 2 hours.
