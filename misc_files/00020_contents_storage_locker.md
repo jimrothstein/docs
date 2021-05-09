@@ -46,7 +46,7 @@ https://www.markdownguide.org/basic-syntax/
 
 ***
 ### TUB 01 (has room)
-* Glass/Cooking/utensiles/Food Storage/can opener/
+* Glass/Cooking/utensils/Food Storage/can opener/
 
 ***
 ### TUB 02  (small)

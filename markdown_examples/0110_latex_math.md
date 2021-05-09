@@ -1,26 +1,20 @@
 \documentclass{article}
 
 \usepackage{amsmath,amssymb}
-\usepackage{comment}
-\usepackage{dirtree}
 
 \begin{document}
 
 \begin{verbatim}
-"0100_latex_math.md"
+"0110_latex_math.md"
   Your text here.
 Compiled with pdflatex
 Pandoc complains and says to use pdflatex.
-pdflatex handles this document just fine.
+pdflatex handles this document just fine. (?)
 \end{verbatim}
 
 
 % This is a comment.
 
-\begin{comment}
-\Tree[.IP [.NP [.Det \textit{the} ]
-               [.N\1 [.N \textit{package} ]]]]
-\end{comment}
 
 \begin{equation}
 x^2 + y^2 = r^2
@@ -30,15 +24,22 @@ x^2 + y^2 = r^2
 \frac{x}{y} = L
 \end{equation}
 
-\dirtree{%
-.1 debug.
-.2 filename.
-.2 modules.
-.3 module.
-.3 module.
-.3 module.
-.2 level.
-}
+
+%  does not work
+
+\begin{align}
+  x=2
+  y=3
+\end{align}
+
+% E = mc^2/sqrt( 1 - (v/c)^2)
+
+% \begin{align}
+%   E_0 &= mc^2  \\
+%   E &=\frac{mc^2}
+%   {\sqrt{1 - \frac{v^2}
+%   {c^2}}}
+% \end{align}
 
 \end{document}
 

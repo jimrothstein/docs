@@ -427,3 +427,32 @@ like odd place to work."     Am I going to get nasty note now?
 *    *   I am blocking the door so janitor can not get in to clean.
 *  Also see my email re: community room; book online, oh!   of course, she would
     never suggest that to me.   Anyway it is GREAT to have 2 hours.
+
+##  Tue  04 May 2021  Elite Towing |  Tow to Marsh Tramission | leaves
+*   Appointment set for 8:00 am; not told can arrive early  or leave if they do
+    not see you at car.
+*   Can not be BOTH at car and ON PHONE
+*   Car is less than 30 yards from building (with wifi)
+*   Not told Towing company could arrive Early, or would need to confirm,  or
+    would leave exactly at 8:00 am!
+
+*   voice/phone chronology exists:   Towing company DID call/text/lv messages
+    BEFORE 8 am .    I don't receive if no wifi.
+*   Just before 8 am (7:55?)  I see messages,  note that call number differs from
+    number in message.   While figuring this out - I see the Tow truck.
+*   I walk toward Tow Truck (so wifi cuts out) some bushes between us.  Truck is making 3-point turn
+
+    It is the ONLY car there.  Why didn't you stop? 
+*   Tow truck finishes pivot and drives away ... I start waving, now walking
+    directly behind, I in middle of parking lot, no obsticals   but he is too
+    fast ...   (he's still in parking lot) - perhaps he will cirle?   No, I see
+    in distance, tow truck is LEAVING parking area and entering main road (this
+    is much too far to yell, or run
+    after).
+*   Return to building (wifi) and call ....  8:02 am "Not looking for people to
+*   wave at
+    them";  made multiple attempts (TRUE) but also LEFT at the appointment tme. I
+    I repeatly ask, please return; he repeats made muliple attempts.  I say OK, I
+    I will get another tower.   Call lasts 1:30+
+*   Note:  Tow company voice message also uses "appointment".   
+*   Call Geico.

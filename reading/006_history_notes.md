@@ -55,6 +55,12 @@ left a taint to Federalist brand.   After Hamilton murder, Federalist were all
 but gone.   (Federalist prefered England's stability, to Jefferson's support
 for anti-Monarchy French revolutionaries
 
+
+## Pennsylvania RR
+- (1852-1874) pres = J. Edgar Thompson, engineer, modernizes, uses Westinghouse Air Brake.
+  -  (1877)  wage cut (Depression)
+  -  (1889)  Johnstown Flood Disaster (just west Altoona Horse Shoe) PRR
+      built; destroys PRR equipment/repair shops
 ## Religion in US
 -	Darwin observed human species HELP preserve weakest;  not pure survival of
 fitest.

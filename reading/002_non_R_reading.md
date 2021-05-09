@@ -1,4 +1,4 @@
-/* vim: set nospell: */ 
+d* vim: set nospell: */ 
 ---
 title: "002_non_R_reading"
 output:

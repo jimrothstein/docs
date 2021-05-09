@@ -4,26 +4,9 @@
 !pandoc % -t latex -V fontsize=10pt -V geometry:margin=0.3in -o ~/Downloads/print_and_delete/out.pdf
 -->
 
-### ALL Reference, reading etc ...
-
-## 02JUN18 RCascadia Conf 
-- https://cascadiarconf.com/agenda/)
-- https://cascadiarconf.slack.com/messages/C5NA0HC0J/)
-- Woo - How to contribute to Github https://github.com/karawoo)
-
-
-##Periodic Reading
-John Smith -
--  :blog:  (http://learningalliances.net/2018/02/computing-on-r/ )
--  :sildes: (https://docs.google.com/presentation/d/1Nv7DEAH-G-YQgf5eCuSAoaRrTAFNkkz3JE-mHrkj2XI/edit#slide=id.gd9c453428_0_16)
-- [R CRAN - news, etc] (https://www.r-project.org/)
-- Slack: https://rfordatascience.slack.com
-- Twitter: (R stats) https://twitter.com/jimrothstein/lists/stats
-- Rstudio: webinars:https://www.rstudio.com/resources/webinars/
-- R-weekly: https://www.rweekly.org
-Ted Laderast (OHSU)
--	https://laderast.github.io/#about
-
+## R, install, configure, update
+* Problems updating R packages.
+* To install from R 4.x.y  see  cran linux bin?
 
 ## .rmd, .md, Blogdown:
 -	https://bookdown.org/yihui/blogdown/)
@@ -530,4 +513,5 @@ Do you sell new battery for this ACER laptop?
 CB3-431-C7EX  (manuf 3/22/18)
 SNID:  81201450072
 
-*
+##  Fri  02 Apr 2021
+
