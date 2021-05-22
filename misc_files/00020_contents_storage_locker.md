@@ -2,26 +2,37 @@
 vim:linebreak:spell:nowrap:cul tw=78 fo=tqlnr foldcolumn=3 cc=+1
 -->
 
-# ===  
+ ===  
   PDF  
-# ===  
+ ===  
 
 NOTE:   .tex uses a .sty which I do not have.  Therefore,  NO PDF files
+(update May 21, 2021 ... hmmmm, pandoc/pdf  seems to work fine! use first
+below)
 
+
+  *  !pandoc % -f markdown -o out/out.pdf  
   *  !pandoc % -f markdown  -t latex -H ../chapter_break.tex -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o ~/Downloads/print_and_delete/out.pdf
   *  !pandoc % -f markdown  -t latex -H ../chapter_break.tex -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o out.pdf 
   *  !pandoc % -f markdown  --pdf-engine xelatex -H chapter_break.tex -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o ~/Downloads/print_and_delete/out.pdf
 
 
-# ====  
+ ====  
   HTML
-# ====  
+ ====  
 
   *  !pandoc % -f markdown                               -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o out/out.html 
+
+
+====
+ GITHUB:  *.md display nicely?  [ignores latex]
+====
 
 -H header  
 -V or --variable  
 --pdf-engine=xelatex  
+
+<!--    this is for knitr:: ONLY
 
 ---
 title: "`r knitr::current_input()`"
@@ -40,6 +51,8 @@ output:
     fontsize: 10pt   
     geometry: margin=0.5in,top=0.25in   
 ---
+--> 
+
 
 PANDOC EXAMPLES:
 https://learnbyexample.github.io/tutorial/ebook-generation/customizing-pandoc/
@@ -54,7 +67,8 @@ https://www.markdownguide.org/basic-syntax/
 <!--   why?   latex failed to compile, wants $?  wants ]?
 $$\mbox{ Render to pdf, use pdf output, use:  999999_render.Rmd}$$
 -->
-\mbox{hello}
+
+\mbox{hello - but no box?}
 
 ### LOCKER  
 00-09     K/Household.  
@@ -102,6 +116,7 @@ BOX 04
 ### BOX 55 (office)
   * Empty hanging folders/1-3 looseleafs/padding/ruler/steno/long acctg pad 
 
+***
 ### BOX 06
 
   * Cleaning:   TP/Liquid soap/sponge/spray/vinegar/baking soda/
