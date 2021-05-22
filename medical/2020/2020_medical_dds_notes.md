@@ -1178,4 +1178,26 @@ Do you have any comments?
   never be able to get UrOx into normal.
 
 
+##  Sun  16 May 2021
+Dear Dr Wong:
+Just update:
+
+- now about 8 weeks on pancreatic enzymes.
+- same subjective comments as before:  seems less bloating, better stool.
+- April litholink - showed no effect on UrOx (even with better diet ??)
+- June - will speak with Dr. Lieske (Mayo); believe he wants another 24-hour
+    urine.
+- fyi, small weight loss!  maybe 3-4 pounds and continuing to fall.  Weight now:
+    146 1/2.   Adult life always > 150, **EXCEPT with vigorous exercise** (indoor
+    rowing); diet and gym insufficient to reduce weight.
+- per Dr. Lieke renewed effort to be on low-oxalate diet.   In practice, however,
+    this means more **JUNK**  ice cream, bread, sugar has replaced
+    dense,nutritious foods like beans, soy, nuts, boiled high fiber, whole grains
+    kernels, one pound of leafy vegetables per day.
+- not eager, but if you need evidence that enzymes actually doing anything, very
+    willing to any of these;  Colonoscopy, kidney x-ray, Sitz test.   As you
+    know, first two have had difficulty.
+- fully vaccinated 
+
+
 

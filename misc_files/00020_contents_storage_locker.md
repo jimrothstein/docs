@@ -2,24 +2,44 @@
 vim:linebreak:spell:nowrap:cul tw=78 fo=tqlnr foldcolumn=3 cc=+1
 -->
 
-<!--
-set cul   "cursorline
-cc=+1			"colorcolumn is 1 more than tw
-
- =================
-STOP    -    go to R
-This is Legacy only!
-==============================
+# ===  
+  PDF  
+# ===  
 
 NOTE:   .tex uses a .sty which I do not have.  Therefore,  NO PDF files
-USE:  3rd option (html)
-!pandoc % -f markdown  -t latex -H chapter_break.tex -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o ~/Downloads/print_and_delete/out.pdf
-!pandoc % -f markdown  --pdf-engine xelatex -H chapter_break.tex -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o ~/Downloads/print_and_delete/out.pdf
-!pandoc % -f markdown                               -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o ~/Downloads/print_and_delete/out.html
 
--H header
--V or --variable
---pdf-engine=xelatex
+  *  !pandoc % -f markdown  -t latex -H ../chapter_break.tex -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o ~/Downloads/print_and_delete/out.pdf
+  *  !pandoc % -f markdown  -t latex -H ../chapter_break.tex -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o out.pdf 
+  *  !pandoc % -f markdown  --pdf-engine xelatex -H chapter_break.tex -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o ~/Downloads/print_and_delete/out.pdf
+
+
+# ====  
+  HTML
+# ====  
+
+  *  !pandoc % -f markdown                               -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o out/out.html 
+
+-H header  
+-V or --variable  
+--pdf-engine=xelatex  
+
+---
+title: "`r knitr::current_input()`"
+date: "`r paste('last updated', 
+    format(lubridate::now(), ' %d %B %Y'))`"
+output:   
+  html_document:  
+        code_folding: show
+        toc: true 
+        toc_depth: 2
+        toc_float: true
+  pdf_document:   
+    latex_engine: xelatex  
+    toc: true
+    toc_depth:  2   
+    fontsize: 10pt   
+    geometry: margin=0.5in,top=0.25in   
+---
 
 PANDOC EXAMPLES:
 https://learnbyexample.github.io/tutorial/ebook-generation/customizing-pandoc/
@@ -28,15 +48,19 @@ MARKDOWN GUIDE:
 https://www.markdownguide.org/basic-syntax/
 
 \newpage
+
+\today
+
+<!--   why?   latex failed to compile, wants $?  wants ]?
+$$\mbox{ Render to pdf, use pdf output, use:  999999_render.Rmd}$$
 -->
+\mbox{hello}
 
-
- =======================
-      STOP  -   go to R
- =======================
-
-
-## LOCKER
+### LOCKER  
+00-09     K/Household.  
+10-19     Meds/Toilet.  
+20-29     Summer.  
+30-39     winter.  
 
 ***
 ### TUB 00
@@ -45,16 +69,15 @@ https://www.markdownguide.org/basic-syntax/
 - Clean Plastic Bags
 
 ***
-### TUB 01 (has room)
-* Glass/Cooking/utensils/Food Storage/can opener/
+### TUB 01 SUMMER 
 
 ***
 ### TUB 02  (small)
 * Toilet+DDS /Razor/Hand Soap/tooth supplies/mineral oil/skin
 
 \noindent\rule{20cm}{0.4pt}
-### TUB03   (has room)
-* Wool (dirty) / some bags/1 sheet/
+### TUB 29   
+  * Towel/sheets (win + sum)/pillow cases/
 
 ***
 BOX 04
@@ -76,6 +99,9 @@ BOX 04
 * Office:  pens/clips/Index cards
 \noindent\rule{20cm}{0.4pt}
 
+### BOX 55 (office)
+  * Empty hanging folders/1-3 looseleafs/padding/ruler/steno/long acctg pad 
+
 ### BOX 06
 
   * Cleaning:   TP/Liquid soap/sponge/spray/vinegar/baking soda/
@@ -88,15 +114,18 @@ BOX 04
   * MEDS
 \noindent\rule{20cm}{0.4pt}
 
-### BOX 08
+### BOX 08 (kitchen) ?
 
-  * Winter:  Long pants, sweat shirt/dark socks/green sheet (for car)
-  * **BOX 08-B**  Winter vest; sweat
+* Glass/Cooking/utensils/Food Storage/can opener/
+
+### TUB 29   
+  * Towel/sheets (win + sum)/pillow cases/
+
 
 \noindent\rule{20cm}{0.4pt}
 BLUE SUITCASE
 
-        * Clothes: summer.
+        * Empty Duffle 
 
 \noindent\rule{20cm}{0.4pt}
 BLACK SUITCASE
@@ -107,11 +136,13 @@ BLACK SUITCASE
 YELLOW DUFFEL
         * Office: VIP/Need 1st/locks/checks/car/keys
 \noindent\rule{20cm}{0.4pt}
-TUB 10
+TUB 30 - WINTER
 
-        * shoes(good) /1 flip-flop/boots/ALL shoes leak/noleak
-        * swim
+        * shoes(good, Rockport) /1 flip-flop/
+        * swim?
+        * socks/pants/vest/sweats 
         * extra gloves(1 only), etc
+        * Wool (dirty) 
 
 Notes:
 
@@ -170,4 +201,13 @@ Notes:
 ### BOX 120
   *  TEA
   *  MEDS AM/MISC
+```{r render}
+file <- "~/Downloads/print_and_delete/out"
+file <- "00020_contents_storage_locker.md"
+# use  999999_render.Rmd
+rmarkdown::render(file,
+                  output_format = "pdf_document",
+                  #output_format = "html_document",
+                  output_file = "./out.pdf")
 
+```

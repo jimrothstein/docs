@@ -17,16 +17,27 @@ geometry: margin=0.5in,top=0.25in
 
 <!--
 
-IF PANDOC fails?  [wants ulem.sty ] see ~/r_try_things_here/ tinytex .Rmd
+# =========================================================================
+IF PANDOC fails?  
+# =========================================================================
+[wants ulem.sty ] see ~/r_try_things_here/ tinytex .Rmd
 
 Save as .Rmd, and knitr to html, works fine
 rmarkdown::render(file, output_dir="~/Downloads/print_and_delete")
 
+OR, use pandoc to generate .tex output.  Firefox can read and format .tex
+
 vim:linebreak:spell:nowrap:cul tw=78 fo=tqlnr foldcolumn=3 cc=+1
+
+# ======
+  PANDOC
+# ======
+!pandoc % -t latex --toc -V linkcolor:blue -V fontsize=10pt -V geometry:margin=0.4in -o ~/Downloads/print_and_delete/out.pdf
+
 !pandoc % -t latex --toc -V linkcolor:blue -V fontsize=10pt -V geometry:margin=0.4in -o ~/Downloads/print_and_delete/out.pdf
 
 # very complicated?   try --pdf-engine xelatex
-!pandoc % -f markdown -t latex --pdf-engine xelatex --toc -V linkcolor:blue -V fontsize=10pt -V geometry:margin=0.4in -o ~/Downloads/print_and_delete/out.pdf
+!pandoc % -f markdown -t latex --pdf-engine xelatex --toc -V linkcolor:blue -V fontsize=10pt -V geometry:margin=0.4in -o out.pdf
 
 # want .tex output?
 !pandoc % -f markdown -t latex --toc -V linkcolor:blue -V fontsize=10pt -V
@@ -1013,6 +1024,37 @@ clinical trials on this issue are lacking.
 [ NIH: Dignose & Treat:  diagram] ( https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3831207/ )
 https://en.wikipedia.org/wiki/Pancreatic_elastase
 https://labtestsonline.org/tests/stool-elastase
+
+
+
+[REF: ]( https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6212541/ )
+
+>  "A significant proportion of patients with PEI demonstrate an inadequate
+>  response to enteric-coated enzyme therapy alone[50]. One possible explanation
+>  is reduced pancreatic bicarbonate secretion, impairing neutralization of
+>  acidic chyme[51]. If the intra-duodenal pH is lower than 5.0, the enteric
+>  coating will not dissolve on time and enzyme release will happen in the distal
+>  small bowel[52].
+>  
+>  The use of acid suppression with enteric-coated PERT may increase gastric pH
+>  and enhance PERT efficacy. In a prospective, open, comparative study, 21
+>  patients with newly diagnosed PEI were treated with enteric-coated
+>  mini-microspheres (40000 IU) three times a day, with the addition of
+>  esomeprazole after 3 mo. 13C-MTG breath tests normalized in 57% of patients
+>  with PERT monotherapy. In non-responders, the addition of esomeprazole
+>  normalised fat digestion in an additional 29% of participants[50].
+>  
+>  Although data is of only moderate quality and large multicentre trials are
+>  still required, the combined use of acid suppression and PERT is considered
+>  appropriate when the response to PERT alone is suboptimal[6,25,37-39]. It
+>  should be noted that there is limited evidence to support adjuvant acid
+>  suppression in PEI caused by cystic fibrosis[53-56].
+>  
+>  If maldigestion does not respond to patient education, optimisation of PERT
+>  dose and adjuvant acid suppression, then other causes, such as small
+>  intestinal bacterial overgrowth, bile acid malabsorption, coeliac disease,
+>  inflammatory bowel disease, and lactose intolerance should be investigated and
+>  treated[6,37,39]."
 
 **CHRONIC PANCREATITIS**
 -	long-standing inflammation of the pancreas that alters the organ's normal

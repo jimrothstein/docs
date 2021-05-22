@@ -26,13 +26,18 @@ s/https.*/[&]()/g
 \newpage
 -->
 
-TODO:  Add Latex to this .md docuemnq
+TODO:  Add Latex to this .md document (then pdf is best output choice).
+
+USE:   999999_render.Rmd   
+
+\textbf{reason why}
 
 1.  **MASTER PROJECT LIST**
 
 *   update weekly/print
 *   avoid retyping older projects.
-*  Latex ... improve over time.
+*   Latex ... improve over time.
+*   USE knitr ... until latex/pandoc/lua wiz
 *
 2.  **Replicate/Sampling**
   *  r-bloggers, 2018/8
@@ -84,4 +89,12 @@ Code:
   (zsh) 071_ updateR  updateR  
 
 
+6.  \textbf{Youtube api}
+  * Auth code .... seems always need to rebuild, why?
+  * Given all_playlists (tibble?) THINK:
+    * get_total_playlist_count (vs get_count_all_playlists)
+    * get_total_video_count (vs get_count_all_videos)
+  * Given specific playlist
+    * get_playlist_video_list
+    * get_playlist_video_count
 

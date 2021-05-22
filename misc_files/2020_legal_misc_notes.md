@@ -19,7 +19,8 @@ geometry: margin=0.5in,top=0.25in
 
 **To Run this** 
 
-!pandoc % -markdown -t latex  -o ~/Downloads/print_and_delete/out.pdf
+!pandoc % -f markdown -t latex  -o ~/Downloads/print_and_delete/out.pdf
+!pandoc % -f markdown -t latex  -o out.pdf
 
 > No need for yaml.
 >
@@ -456,3 +457,138 @@ like odd place to work."     Am I going to get nasty note now?
     I will get another tower.   Call lasts 1:30+
 *   Note:  Tow company voice message also uses "appointment".   
 *   Call Geico.
+
+##  Wed  12 May 2021  Regus ...
+Chron .. April 9 ... letter:  last day is May 31, Regus not renewing.
+30 April ... Regus invoices for June rent!  (will take it May 15)
+xx May  ... email to Regus, are you sure?
+xx May  ... yes, Regus is sure.
+10 MAY (mon) ... email to Kerry
+11 MAY (tues)  ... email to xxxx Sandra Melody Regus, from this website:
+https://www.complaintsboard.com/regus-b116485
+12 MAY (wed)  Nohting ... clock ticking   (will take it May 15....  Call Cap1 ask
+them to `block` charges from Regus, not a dispute - there is NO charge yet.
+
+Note: back to Regus corporate (send via regular email to help desk AND via their
+website ... pretty poor)
+
+Thank you for the response.   I remain concerned that I have conflicting
+information:   locally, Regus says it is not renewing my lease.  My last day is
+May 31, 2021.
+
+However, you have invoiced for June rent.   It can not be both - non-renewal and
+pay for rent.
+
+On Monday, May 10 I emailed the local Regus management for clarification.   On Tuesday,
+May 11 I emailed Regus head of customer support.   As this time, neither has
+responded.
+
+You are scheduled to draw funds, per April 30 invoice, on May 15, 2021.
+
+Since this may not be resolved to everyone's satisfaction in the limited time, I
+have asked my bank not accept new charges from Regus.
+
+I am happy to pay the invoice, if and when this is worked out.   Please notify
+the appropriate people at Regus that the payment set for May 15 will not go
+through.
+
+I do  owe for April coffee ($30) and will make arrangement to pay you for this.
+(Please stop all coffee fees -- Regus offers it complementary).
+
+\newpage
+##  Sun  16 May 2021  Justin:  note re: Eugene lease
+
+Hi Justin:
+
+A few points I like to clarify:
+
+
+1.  Section 1
+
+  *  \color{red}{1.3    No Renewal?  }
+
+2.  Section 2
+  * \color{red}{2.2 Changes to Operating Expenses ...just review.}
+
+3.  Section 3
+  *  3.1 (b) parking areas?
+
+4.   Section 4
+
+5.   Section 5
+
+
+Internet - responsible party ?
+Garbage - rules
+
+6.  Section 6
+
+
+7.  Section 7 Insurance
+  *  \color{red}{Please discuss.}
+
+8.  Section 8
+
+
+9.  Section 9
+
+
+10.  Section 10
+
+11.  Section 11
+
+12.  Section 12
+
+13.  Section 13
+
+14.  Section 14 
+
+15.  Section 15 - Default
+
+\color{red}{
+
+      *   Early termination - amicable.
+
+      *   (For example:  job in another city.)
+
+      *   Also 18.9 - be sure I understand.
+          }
+\color{black}
+16.   Section 16 - Expiration
+\color{red}{
+  *   Joint walk-through at both beginning/end, with signatures.
+      }
+
+\color{black}
+17.   Section 17
+
+18.   Section 18
+
+19.   Section 19
+
+20.   Section 20
+   * \color{red}{20.3 Office Lighting - this vs Section 3.2(a)[Lessee] for routine replacement}
+
+21.    Addendum
+
+
+22.     Exhibit A
+  *  "Park's facilities" ??
+
+
+
+\color{red}{Misc:
+
+  *  Is personal refrigerator (in office) allowed?  
+
+  *  Coffee/hot water appliance?  
+
+  *  Outside awning to block direct sunlight?  
+
+  *  After hours (ie when unoccupied) acceptable use of temperature control?  
+   *  Suggestions or tips:  How other tenants maintain clean, cool, comfortable  
+   *  offices (carpet?  coffee spills? crumbs?)  
+       (Want no bugs.)
+       }
+
+
