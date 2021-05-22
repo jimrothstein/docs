@@ -64,11 +64,15 @@ https://www.markdownguide.org/basic-syntax/
 
 \today
 
+\\today
+
+$\today$
+
 <!--   why?   latex failed to compile, wants $?  wants ]?
 $$\mbox{ Render to pdf, use pdf output, use:  999999_render.Rmd}$$
 -->
 
-\mbox{hello - but no box?}
+$$\mbox{hello - but no box?}$$
 
 ### LOCKER  
 00-09     K/Household.  
@@ -89,7 +93,7 @@ $$\mbox{ Render to pdf, use pdf output, use:  999999_render.Rmd}$$
 ### TUB 02  (small)
 * Toilet+DDS /Razor/Hand Soap/tooth supplies/mineral oil/skin
 
-\noindent\rule{20cm}{0.4pt}
+$$\noindent\rule{20cm}{0.4pt}$$
 ### TUB 29   
   * Towel/sheets (win + sum)/pillow cases/
 

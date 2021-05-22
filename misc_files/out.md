@@ -58,9 +58,15 @@ PANDOC EXAMPLES:
 
 MARKDOWN GUIDE: <https://www.markdownguide.org/basic-syntax/>
 
+\\today
+
+$\\today$
+
 <!--   why?   latex failed to compile, wants $?  wants ]?
 $$\mbox{ Render to pdf, use pdf output, use:  999999_render.Rmd}$$
 -->
+
+hello - but no box?
 
 ### LOCKER
 
@@ -86,9 +92,9 @@ $$\mbox{ Render to pdf, use pdf output, use:  999999_render.Rmd}$$
 
 -   Toilet+DDS /Razor/Hand Soap/tooth supplies/mineral oil/skin
 
-### TUB 29
-
--   Towel/sheets (win + sum)/pillow cases/
+$$\\noindent\\rule{20cm}{0.4pt}$$
+\#\#\# TUB 29  
+\* Towel/sheets (win + sum)/pillow cases/
 
 ------------------------------------------------------------------------
 
