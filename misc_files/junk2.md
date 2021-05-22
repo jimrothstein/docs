@@ -2,4 +2,6 @@
 
 ### This is markdown
 
+\\today
+
 $\\today$
