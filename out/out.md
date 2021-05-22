@@ -1,27 +1,26 @@
-```{=html}
 <!--
 vim:linebreak:spell:nowrap:cul tw=78 fo=tqlnr foldcolumn=3 cc=+1
 -->
-```
-===\
-PDF\
+
+===  
+PDF  
 ===
 
 NOTE: .tex uses a .sty which I do not have. Therefore, NO PDF files
-(update May 21, 2021 ... hmmmm, pandoc/pdf seems to work fine! use first
+(update May 21, 2021 … hmmmm, pandoc/pdf seems to work fine! use first
 below)
 
--   !pandoc % -f markdown -o out/out.pdf\
--   !pandoc % -f markdown -t latex -H ../chapter_break.tex -V
+-   !pandoc % -f markdown -o out/out.pdf  
+-   !pandoc % -f markdown -t latex -H ../chapter\_break.tex -V
     linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o
-    \~/Downloads/print_and_delete/out.pdf
--   !pandoc % -f markdown -t latex -H ../chapter_break.tex -V
+    \~/Downloads/print\_and\_delete/out.pdf
+-   !pandoc % -f markdown -t latex -H ../chapter\_break.tex -V
     linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o out.pdf
--   !pandoc % -f markdown --pdf-engine xelatex -H chapter_break.tex -V
+-   !pandoc % -f markdown –pdf-engine xelatex -H chapter\_break.tex -V
     linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o
-    \~/Downloads/print_and_delete/out.pdf
+    \~/Downloads/print\_and\_delete/out.pdf
 
-====\
+====  
 HTML ====
 
 -   !pandoc % -f markdown -V linkcolor:blue -V fontsize=11pt -V
@@ -29,11 +28,10 @@ HTML ====
 
 ==== GITHUB: \*.md display nicely? \[ignores latex\] ====
 
--H header\
--V or --variable\
---pdf-engine=xelatex
+-H header  
+-V or –variable  
+–pdf-engine=xelatex
 
-```{=html}
 <!--    this is for knitr:: ONLY
 
 ---
@@ -54,30 +52,21 @@ output:
     geometry: margin=0.5in,top=0.25in   
 ---
 -->
-```
+
 PANDOC EXAMPLES:
 https://learnbyexample.github.io/tutorial/ebook-generation/customizing-pandoc/
 
 MARKDOWN GUIDE: https://www.markdownguide.org/basic-syntax/
 
-```{=tex}
-\newpage
-```
-```{=tex}
-\today
-```
-```{=html}
 <!--   why?   latex failed to compile, wants $?  wants ]?
 $$\mbox{ Render to pdf, use pdf output, use:  999999_render.Rmd}$$
 -->
-```
-`\mbox{hello - but no box?}`{=tex}
 
 ### LOCKER
 
-00-09 K/Household.\
-10-19 Meds/Toilet.\
-20-29 Summer.\
+00-09 K/Household.  
+10-19 Meds/Toilet.  
+20-29 Summer.  
 30-39 winter.
 
 ------------------------------------------------------------------------
@@ -97,10 +86,6 @@ $$\mbox{ Render to pdf, use pdf output, use:  999999_render.Rmd}$$
 
 -   Toilet+DDS /Razor/Hand Soap/tooth supplies/mineral oil/skin
 
-`\noindent`{=tex}
-```{=tex}
-\rule{20cm}{0.4pt}
-```
 ### TUB 29
 
 -   Towel/sheets (win + sum)/pillow cases/
@@ -119,17 +104,11 @@ BOX 04 \* Office \* Misc/Green Paper/Empty Folders/LooseLeaf
 
 ### TUB 05A (small)
 
--   Office: stickers/pads `\noindent`{=tex}
-    ```{=tex}
-    \rule{20cm}{0.4pt}
-    ```
+-   Office: stickers/pads
 
 ### TUB 5B (check)
 
--   Office: pens/clips/Index cards `\noindent`{=tex}
-    ```{=tex}
-    \rule{20cm}{0.4pt}
-    ```
+-   Office: pens/clips/Index cards
 
 ### BOX 55 (office)
 
@@ -143,16 +122,9 @@ BOX 04 \* Office \* Misc/Green Paper/Empty Folders/LooseLeaf
 -   Cleaning: TP/Liquid soap/sponge/spray/vinegar/baking soda/
 -   Cleaning Gloves/Clean rags.
 
-`\noindent`{=tex}
-```{=tex}
-\rule{20cm}{0.4pt}
-```
 ### BOX 07
 
--   MEDS `\noindent`{=tex}
-    ```{=tex}
-    \rule{20cm}{0.4pt}
-    ```
+-   MEDS
 
 ### BOX 08 (kitchen) ?
 
@@ -162,31 +134,15 @@ BOX 04 \* Office \* Misc/Green Paper/Empty Folders/LooseLeaf
 
 -   Towel/sheets (win + sum)/pillow cases/
 
-`\noindent`{=tex}
-```{=tex}
-\rule{20cm}{0.4pt}
-```
 BLUE SUITCASE
 
         * Empty Duffle 
 
-`\noindent`{=tex}
-```{=tex}
-\rule{20cm}{0.4pt}
-```
 BLACK SUITCASE
 
         * Winter Clothes:  winter/wool/hats/sweaters/gloves/shirt
 
-`\noindent`{=tex}
-```{=tex}
-\rule{20cm}{0.4pt}
-```
 YELLOW DUFFEL \* Office: VIP/Need 1st/locks/checks/car/keys
-`\noindent`{=tex}
-```{=tex}
-\rule{20cm}{0.4pt}
-```
 TUB 30 - WINTER
 
         * shoes(good, Rockport) /1 flip-flop/
@@ -199,24 +155,15 @@ Notes:
 
 -   charger for China phone? (in China) use usb.
 
--   ```{=tex}
-    \newpage
-    ```
+-   
 
 ## FILES and FILE BOXES
 
-```{=tex}
-\today
-```
 ### BLUE
 
 -   Office supplies
 -   Has room
 
-`\noindent`{=tex}
-```{=tex}
-\rule{20cm}{0.4pt}
-```
 ### BEIGE/WHITE (smaller box)
 
 -   Need 1st
@@ -224,10 +171,6 @@ Notes:
 -   CAR (title, repair)
 -   Has room
 
-`\noindent`{=tex}
-```{=tex}
-\rule{20cm}{0.4pt}
-```
 ### PINK
 
 -   Medical 2009 - 2019
@@ -237,21 +180,13 @@ Notes:
 -   DDS Complaint
 -   Row
 
-`\noindent`{=tex}
-```{=tex}
-\rule{20cm}{0.4pt}
-```
 ### BROWN
 
--   Financial \<= 2018
+-   Financial &lt;= 2018
 -   TOW
 -   ALZ
 -   
 
-`\noindent`{=tex}
-```{=tex}
-\rule{20cm}{0.4pt}
-```
 ### BLACK
 
 -   Financial 2019, 2020
@@ -261,10 +196,6 @@ Notes:
 -   Plastic Bags
 -   
 
-`\noindent`{=tex}
-```{=tex}
-\rule{20cm}{0.4pt}
-```
 ### BOX 100
 
 -   misc office
@@ -272,17 +203,13 @@ Notes:
 -   (batteries - none left)
 -   
 
-`\noindent`{=tex}
-```{=tex}
-\rule{20cm}{0.4pt}
-```
 ### BOX 120
 
 -   TEA
--   MEDS AM/MISC \`\`\`{r render} file \<-
-    "\~/Downloads/print_and_delete/out" file \<-
-    "00020_contents_storage_locker.md" \# use 999999_render.Rmd
-    rmarkdown::render(file, output_format = "pdf_document",
-    \#output_format = "html_document", output_file = "./out.pdf")
+-   MEDS AM/MISC \`\`\`{r render} file &lt;-
+    “\~/Downloads/print\_and\_delete/out” file &lt;-
+    “00020\_contents\_storage\_locker.md” \# use 999999\_render.Rmd
+    rmarkdown::render(file, output\_format = “pdf\_document”,
+    \#output\_format = “html\_document”, output\_file = “./out.pdf”)
 
 \`\`\`
