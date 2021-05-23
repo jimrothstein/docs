@@ -1,0 +1,246 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  10pt,
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={xxx\_latex\_md.Rmd},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=0.5in,top=0.25in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{xxx\_latex\_md.Rmd}
+\author{}
+\date{\vspace{-2.5em}last updated 22 May 2021}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+===\\
+PDF\\
+===
+
+NOTE: .tex uses a .sty which I do not have. Therefore, NO PDF files
+(update May 21, 2021 \ldots{} hmmmm, pandoc/pdf seems to work fine! use
+first below)
+
+\begin{itemize}
+\tightlist
+\item
+  !pandoc \% -f markdown -o out/out.pdf\\
+\item
+  !pandoc \% -f markdown -t latex -H ../chapter\_break.tex -V
+  linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o
+  \textasciitilde/Downloads/print\_and\_delete/out.pdf
+\item
+  !pandoc \% -f markdown -t latex -H ../chapter\_break.tex -V
+  linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o out.pdf
+\item
+  !pandoc \% -f markdown --pdf-engine xelatex -H chapter\_break.tex -V
+  linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o
+  \textasciitilde/Downloads/print\_and\_delete/out.pdf
+\end{itemize}
+
+====\\
+HTML ====
+
+\begin{itemize}
+\tightlist
+\item
+  !pandoc \% -f markdown -V linkcolor:blue -V fontsize=11pt -V
+  geometry:margin=0.3in -o out/out.html
+\end{itemize}
+
+==== GITHUB: *.md display nicely? {[}ignores latex{]} ====
+
+-H header\\
+-V or --variable\\
+--pdf-engine=xelatex
+
+PANDOC EXAMPLES:
+\url{https://learnbyexample.github.io/tutorial/ebook-generation/customizing-pandoc/}
+
+MARKDOWN GUIDE: \url{https://www.markdownguide.org/basic-syntax/}
+
+\newpage
+
+\today
+
+\textbackslash today
+
+\(\today\)
+
+\[\today\]
+
+\[\mbox{hello - but no box?}\]
+
+\hypertarget{locker}{%
+\subsubsection{LOCKER}\label{locker}}
+
+00-09 K/Household.\\
+10-19 Meds/Toilet.\\
+20-29 Summer.\\
+30-39 winter.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{tub-00}{%
+\subsubsection{TUB 00}\label{tub-00}}
+
+\begin{itemize}
+\tightlist
+\item
+  K- Tea Bags
+\item
+  Clean Plastic Bags
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{tub-01-summer}{%
+\subsubsection{TUB 01 SUMMER}\label{tub-01-summer}}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{tub-02-small}{%
+\subsubsection{TUB 02 (small)}\label{tub-02-small}}
+
+\begin{itemize}
+\tightlist
+\item
+  Toilet+DDS /Razor/Hand Soap/tooth supplies/mineral oil/skin
+\end{itemize}
+
+\[\noindent\rule{20cm}{0.4pt}\] \#\#\# TUB 29\\
+* Towel/sheets (win + sum)/pillow cases/
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{g  }\OtherTok{\textless{}{-}} \FunctionTok{globalenv}\NormalTok{()}
+\NormalTok{g}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## <environment: R_GlobalEnv>
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{c  }\OtherTok{\textless{}{-}} \FunctionTok{environment}\NormalTok{()}
+\NormalTok{c}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## <environment: R_GlobalEnv>
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{append  }\OtherTok{\textless{}{-}} \StringTok{"exit now"}
+\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{knit\_exit}\NormalTok{(}\AttributeTok{append=}\NormalTok{append)}
+\end{Highlighting}
+\end{Shaded}
+
+exit now
+
+\end{document}
