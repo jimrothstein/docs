@@ -1,3 +1,21 @@
+---
+title: "`r knitr::current_input()`"
+date: "`r paste('last updated', 
+    format(lubridate::now(), ' %d %B %Y'))`"
+output:   
+  html_document:  
+        code_folding: show
+        toc: true 
+        toc_depth: 2
+        toc_float: true
+  pdf_document:   
+    latex_engine: xelatex  
+    toc: true
+    toc_depth:  2   
+    fontsize: 10pt   
+    geometry: margin=0.5in,top=0.25in   
+---
+
 <!--
 vim:linebreak:spell:nowrap:cul tw=78 fo=tqlnr foldcolumn=3 cc=+1
 -->
@@ -34,23 +52,6 @@ below)
 
 <!--    this is for knitr:: ONLY
 
----
-title: "`r knitr::current_input()`"
-date: "`r paste('last updated', 
-    format(lubridate::now(), ' %d %B %Y'))`"
-output:   
-  html_document:  
-        code_folding: show
-        toc: true 
-        toc_depth: 2
-        toc_float: true
-  pdf_document:   
-    latex_engine: xelatex  
-    toc: true
-    toc_depth:  2   
-    fontsize: 10pt   
-    geometry: margin=0.5in,top=0.25in   
----
 --> 
 
 
@@ -67,6 +68,8 @@ https://www.markdownguide.org/basic-syntax/
 \\today
 
 $\today$
+
+$$\today$$
 
 <!--   why?   latex failed to compile, wants $?  wants ]?
 $$\mbox{ Render to pdf, use pdf output, use:  999999_render.Rmd}$$
@@ -220,13 +223,18 @@ Notes:
 ### BOX 120
   *  TEA
   *  MEDS AM/MISC
+
 ```{r render}
-file <- "~/Downloads/print_and_delete/out"
-file <- "00020_contents_storage_locker.md"
+file <- "0020_contents_storage_locker.md"
+file <- here("misc_files", file)
+file
+
+
 # use  999999_render.Rmd
 rmarkdown::render(file,
-                  output_format = "pdf_document",
+                  #output_format = "pdf_document",
+                  output_format = "md_document",
                   #output_format = "html_document",
-                  output_file = "./out.pdf")
+                  output_file = "out/out")
 
 ```

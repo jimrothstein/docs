@@ -34,23 +34,6 @@ HTML ====
 
 <!--    this is for knitr:: ONLY
 
----
-title: "`r knitr::current_input()`"
-date: "`r paste('last updated', 
-    format(lubridate::now(), ' %d %B %Y'))`"
-output:   
-  html_document:  
-        code_folding: show
-        toc: true 
-        toc_depth: 2
-        toc_float: true
-  pdf_document:   
-    latex_engine: xelatex  
-    toc: true
-    toc_depth:  2   
-    fontsize: 10pt   
-    geometry: margin=0.5in,top=0.25in   
----
 -->
 
 PANDOC EXAMPLES:
@@ -61,6 +44,8 @@ MARKDOWN GUIDE: <https://www.markdownguide.org/basic-syntax/>
 \\today
 
 $\\today$
+
+$$\\today$$
 
 <!--   why?   latex failed to compile, wants $?  wants ]?
 $$\mbox{ Render to pdf, use pdf output, use:  999999_render.Rmd}$$
@@ -212,10 +197,15 @@ Notes:
 ### BOX 120
 
 -   TEA
--   MEDS AM/MISC \`\`\`{r render} file &lt;-
-    “~/Downloads/print\_and\_delete/out” file &lt;-
-    “00020\_contents\_storage\_locker.md” \# use 999999\_render.Rmd
-    rmarkdown::render(file, output\_format = “pdf\_document”,
-    \#output\_format = “html\_document”, output\_file = “./out.pdf”)
+-   MEDS AM/MISC
+
+\`\`\`{r render} file &lt;- “0020\_contents\_storage\_locker.md” file
+&lt;- here(“misc\_files”, file) file
+
+# use 999999\_render.Rmd
+
+rmarkdown::render(file, \#output\_format = “pdf\_document”,
+output\_format = “md\_document”, \#output\_format = “html\_document”,
+output\_file = “out/out”)
 
 \`\`\`
