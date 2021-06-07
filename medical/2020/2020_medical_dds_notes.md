@@ -1200,4 +1200,14 @@ Just update:
 - fully vaccinated 
 
 
+##  F  28 May 2021   call Dr. Bilbao, reduce medications?
+  *  Suspects I do need thryoid
+  *  Trial:  remove for 30=60 days;  retest between July 1 and Aug 1
+  *  Then, separately, remove Welbutrin
+  *  Finally, separately, Efexsor
+  *  Not sure I understand her order, but ....
+
+##  Sat  05 Jun 2021  3rd fecal Stool (5/24?/21) Fat is 20 g/24 hr (normal <7g /24 hr)
+  *  Down >50% from 4/2/19 (44 g/24 hr)
+  *  And ....       10/31/18 (34 g/24 hr - I didn't eat enough fat?)
 

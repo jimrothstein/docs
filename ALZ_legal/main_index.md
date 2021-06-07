@@ -1,35 +1,47 @@
+<!--
+vim:linebreak:spell:nowrap:cul tw=78 fo=tqlnr foldcolumn=3 cc=+1
 ---
-title:	"Files"
-location:	~/documents/filing_system.md
-date:	Wed Feb  6 18:38:56 PST 2019
-fontsize:	14pt
-mainfont:	Arial
-author:
-- name: Author One
-  affiliation: University of Somewhere
-- name: Author Two
-  affiliation: University of Nowhere
-geometry:	margin=0.5in
-latex_engine:	xelatex
-output:	
--	pdf_document:
-		toc:	true
-		keep_tex:	yes	
+title: "`r knitr::current_input()`"
+date: "`r paste('last updated', 
+    format(lubridate::now(), ' %d %B %Y'))`"
+output:   
+  html_document:  
+        code_folding: show
+        toc: true 
+        toc_depth: 2
+        toc_float: true
+  pdf_document:   
+    latex_engine: xelatex  
+    toc: true
+    toc_depth:  2   
+    fontsize: 10pt   
+    geometry: margin=0.5in,top=0.25in   
+    TAGS:  
 ---
 
-USAGE: pandoc %.md -o out.pdf
-% title is 
-% author is 
-% date is 
-% location = ~/documents/filing_system.md 
+-->
+
+<!---    
+
+MAIN ZIMMERMAN INDEX
+
+  *  Use knitr:: to render
+  *  embed latex, if it works.
+
+!pandoc % -f markdown  -H chapter_break.tex -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o ~/Downloads/print_and_delete/out.pdf
+
+!pandoc % -f markdown -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o out/out.html 
+
+!pandoc % -f markdown -V linkcolor:blue -V fontsize=10pt -V geometry:margin=0.3in -o ALZ_main_index.pdf
+
+--pdf-engine xelatex 
+
+-->
 
 
-# Title 1
-## Title 2
-### Title 3
-#### Title 4
-##### Title 5
+WIP - Expect changes/duplication/things make no sense ....
 
+#  CIVIL
 ##	CLAIM ##
 -	trial exhibits + originals
 -	related ( bus schedule, Dr: times & dates)
@@ -130,3 +142,68 @@ USAGE: pandoc %.md -o out.pdf
 
 ##	SUPPLEMSENTAL POLICE REPORT ##
 -	Folder, separate - 21DEC2018 - Officer Sharp (also on G-Drive)
+
+##  My Evidence/Records/Exhibits/Photos
+  *  Chron
+
+
+
+# Criminal (aka post-civil)
+
+
+##  Background
+
+###  Post-2018 notes, 2019, 2020, 2021, loose ends
+  *   Criminal Defense  ORS 138.500, 135, 137 - my notes
+  *   Victim Ore Constitution:  41,42,  ORS 147.421(1)
+
+###  Collection  ORS 18.265
+
+###  ORCP-71  corrections to Civil Jury.
+  *  My notes.
+
+### Contacts/misc
+  *  Lawyers/Ore Bar
+  *  Zimmerman Info
+  *  Family
+  *  Russel, Olivia Michell
+  *  x-wife, Alexa
+  *  Probation
+  *  Williams, Cheyenne info (18CV23345 - name change; 19SC06479 civil -lane
+      county - credit concepts)
+
+
+###  Addresses - ALZ
+
+###  Misc Telephone/contacts/lawyer notes.
+
+###  Correspondence to/from DA/Court
+  *  21Mar2019 to 18DEC2019
+
+### Other Litigation
+  *  ALZ civil/family litigation.
+  *  ALZ criminal
+  *  family
+  *  friends/partners
+  *  assets
+
+### Police
+  *  ALZ records
+  *  plus my records
+  *  correspondence to officer Sharp
+
+### Friends & Family
+  * Olivia (CR)
+  * Parents
+  * CR/civil/notes
+
+### Civil - all other.
+
+### Family - DR
+  * 20DR16908
+
+# Conviction 
+
+# Post-Conviction
+
+# Complaint - Violations
