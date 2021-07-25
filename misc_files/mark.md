@@ -54,3 +54,14 @@ Me: Just waking up ..... now. Was job better today than Friday? Will print
 prior dialogue, annotate, footnote (like my bible) and discuss with you
 face-to-face. You raise important points. And so Bluementhal. Truth is never
 easy for me. 10:52 PM
+
+# H!
+## H2
+### Conceal
+
+**bold** 
+*italic*
+_italic_
+
+
+

@@ -1,5 +1,5 @@
 # .gitignore
-# ~/documents/.gitignore   ($G)
+# ~/docs/.gitignore   ($G)
 #
 # IF file has been put into index
 # =================================
@@ -20,6 +20,7 @@
 #
 # ignore these directories
 # ==========================
+
 r_legal/
 spoon-knife/
 bookclub-Advanced_R/

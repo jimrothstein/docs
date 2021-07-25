@@ -1,34 +1,18 @@
 ﻿<!--	
 vim:linebreak:spell:nowrap:cul tw=78 fo=tqlnr foldcolumn=3 cc=+1
+
+!pandoc % -f markdown  --pdf-engine xelatex  -V fontsize=11pt -V geometry:margin=0.3in -o ~/Downloads/print_and_delete/out.pdf
 -->
 
-<!--
-set cul   "cursorline
-cc=+1			"colorcolumn is 1 more than tw
-
-!pandoc % -f markdown -t latex -V linkcolor:blue -V fontsize=12pt -V geometry:margin=0.5in -o ~/Downloads/print_and_delete/out.pdf
-
--H header
--V or --variable
---pdf-engine=xelatex
-
-PANDOC EXAMPLES:
-https://learnbyexample.github.io/tutorial/ebook-generation/customizing-pandoc/
-
-MARKDOWN GUIDE:
-https://www.markdownguide.org/basic-syntax/
-
-\newpage
--->
 **Rothstein, James  (DOB = 12/23/1955)**  
 **current_medications.md**
 
-As of  **12 JAN 2021** 
+As of \today
 
 Prescription:
 =============
 -	Cozaar (Losartan) - 100 mg 
--	Levothyroxine - 100 microg 
+-	Levothyroxine - 100 microg [^e]
 -	Zyloprim (Allopurinol) - 100 mg  
 -	Effexor (Venlafaxine ER) -  75 mg
 -	Wellbutrin (Bupropion) - 100 mg
@@ -37,27 +21,31 @@ Prescription:
 -	Norvasc (Amlodipine) - 10 mg
 -	Lopid (Gemfibrozil) - 300 mg (x 1, not x 2 as prescribed)
 -	Finasteride - 5 mg
+- Pancrelipase (Zenpep)  25,000 USP units (Lipase) x 11 tablets/day
 
 External
-======
+========
 -	Selenium Sul 2.5% (shampoo)
 -	0.05% AUG Betamethasone Dipropionate (liquid, scalp)
-- 0.05% Clobetasol Propionate (arm, butt)
-- (NEW)	2-3 drops mineral oil, each ear, 2-3x per week
+- 0.05% Clobetasol Propionate (arm, butt, knee)
+-	2-3 drops mineral oil, each ear, 2-3x per week | and/or vasaline around ear
 - (Replaces OLD) see History
 
 OTC
 ====
 -	Psyllium (1 -2 Tbsp)
--	Baby Aspirin 81 mg
 -	KAL Calcium Citrate 4 pills/d, total=1300 mg (Ca); [^a]   
   NOTE: contains no  vitamin D3 (hard to find).  
--	B-complex, including B6 (8 mg, 400%) x3 per week.
-- D3 14,000 IU per week [^b]   
+-	(STOPPED 7/21) Baby Aspirin 81 mg [^c]
+-	(STOPPED 7/21) B-complex, including B6 (8 mg, 400%) x3 per week.
+- (CHANGED 7/21) D3 - now 400-1000 IU only on days `<`20 sun exposure (WAS:  14,000 IU per week) [^b]  
 
 [^a]: Depending on brand of CaCitrate, Ca supplement varies 1000-1300 mg per day.
 [^b]: 11 May 2020 the D3 dose dropped from 25,000 IU per week to 14,000 IU per
 week because higher dose did NOT reduce serum PTH.
+[^c]: Asprin-81 mg, stopped 7/2021 per doctor (prior: taken for 20+ years)
+[^e]: Levothyroxine (>20 years); 7/2021 stopped 1 month, blood test: 10
+  (HIGH); resumed dose.
 
 \newpage
 
@@ -183,6 +171,8 @@ Infrequent>
 - 11 MAY 2020, NOW:  14,000 IU per week (WAS:  25,000 IU per week)
 - Reason:   OHSU had suspected high PTH was due  to low D3;  nope;  
 - Dr. Miyake says to check for primary parahyperthyroidism.
+  - 26 JUN 2021 - drop to 400  - 1000 IU only on days where less than 20 min
+      sun exposure; else zero.
 
 ## Mg 
 -	since 2014, stopped 2014   (calcium alone is recommendation)
@@ -238,7 +228,13 @@ Stopped: Replace with mineral oil (see Top)
 Dose Change:
 	B6 supplement (was daily;  change to 3x per week).
 
+  - **26 JUN 2021**:
+    - Per Dr. Bilbao, stop asprin, B vitamins,  reduce D3 to 400 - 1000 IU
+        only on days `<` 20 minutes in sun.   (seems low to me - blood test in
+        winter '21/'22)
 
+##  Mon  05 Jul 2021
+  *  After 1 month suspension of thryoid supplement, blood TSH is HIGH (10) resume Levothyxine.
 
 Discontinued Prescriptions: (not full list)> 
 =======================

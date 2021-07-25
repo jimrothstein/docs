@@ -591,4 +591,59 @@ Garbage - rules
        (Want no bugs.)
        }
 
+##  Sun  11 Jul 2021  REGUS
+  *  Note from May .... put into Regus folder.
+  *
+##  Sun  11 Jul 2021    
+  { ## KEY account numbers,  SCHWAB etc    
+  
+  *  Schwab 7655-1177  
+  *  Billpay  Jimbo66&  
+  *  Checking acct(Schwab):   7009069725    (says BNY Mellon)  
+  *  Checking Acct (on physical checks)  59385380076551177  (JP Morgan/Chase)  
+  *  Outgoing Routing (to send $):   031100157  
+  *  Inbound Routing (send $ to me): 071000013  
+  *  Billpay Security:  
+  
+     *  1st instrument: saxophone    
+     *  dog/cat:        saxophone1  
+     *  2nd pet:        saxophone2  
+     *  comic book:     saxophone3  
+     *  artist:         saxophone4  
+  
+   }  
 
+##  Wed  14 Jul 2021  Columbia Storage.
+  *  Payment has been done automatically for years!
+  *  Apparently they changed their system and did not get payment.   Claimed they
+      had old phone number and the email must have gone to my spam folder
+      (bullshit -- I get invoices every month by email.)
+  *  Claimed can not legally move CC info from one system to another.   Ok, but
+      again this is YOUR change.  Said he would try to waive late fee, but not
+      sure.
+  *   He kept repeating they tried to contact me .... I am responsible for
+      payment ....blah blah blah.   I added this is annoying.  
+  *  When I said I authorize only the past due ($49 for June) and ($49 for July)
+      he interrupted, said I was being belligerent and HE hung up.
+
+##  Mon  19 Jul 2021  541 Williamette
+  *  Asked Maryann (Bldg manger) about lease end August 31.   Her Reply was
+      covered by 17.3
+  *    17.3 Holdover.
+(a) If Lessee does not vacate the leased premises at the time required, Lessor
+shall have the option to treat Lessee as a Lessee from month-to-month, subject to
+all of the provisions of this lease except the provisions for term and renewal.
+Failure of Lessee to remove fixtures, furniture, furnishing or trade fixtures
+which under this lease shall constitute a failure to vacate to which this
+paragraph shall apply if the property not removed will substantially interfere
+with occupancy of the premises by another Lessee or with occupancy by Lessor for
+any purpose, including preparation for a new Lessee. Lessee's monthly rent shall
+automatically increase to an amount equal to 150% of the last month's rental rate
+during the specified lease term, for any holdover period.
+
+(b) If a month-to-month tenancy results from a holdover by Lessee under this
+Paragraph 17.3, the tenancy shall be terminable at the end of any monthly rental
+period on written notice from Lessor, given not less than TEN (10) days prior to
+the termination date which shall be specified in the notice. Lessee waives any
+notice which would otherwise be provided by law with respect to a month-to-month
+tenancy.

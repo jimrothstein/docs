@@ -28,7 +28,7 @@ as of \today:
   to locate and install that .sty file)  
 
 
-!pandoc % -f markdown -V geometry:margin=0.3in -o out/out.pdf  
+!pandoc % -f markdown -V geometry:margin=0.3in -o $OUT/%.pdf 
 !pandoc % -f markdown  -t latex -H ../chapter_break.tex -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o ~/Downloads/print_and_delete/out.pdf
 !pandoc % -f markdown  -t latex -H ../chapter_break.tex -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o out.pdf 
 !pandoc % -f markdown  --pdf-engine xelatex -H chapter_break.tex -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o ~/Downloads/print_and_delete/out.pdf
@@ -182,6 +182,7 @@ as of \today
 
 ### BLUE
   *  Empty (hanging folders only)
+  *  Paper, looseleaf supplies (June '21) 
 
 \noindent\rule{20cm}{0.4pt}
 ### BEIGE/WHITE (smaller box)
@@ -203,7 +204,7 @@ as of \today
 \noindent\rule{20cm}{0.4pt}
 
 ### BROWN  
- *  Financial <= 2020
+ *  Financial `<=` 2020
  *  TOW
  *  ALZ  (move to ALZ box)
  

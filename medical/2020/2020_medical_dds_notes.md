@@ -24,7 +24,7 @@ I do not see notes from the ACTUAL conversation.   But she did not followup.
 -	Next one is April-May.
 -	We agree to contact each other early MARCH.   To schedule all the prelim
 appointments.
-\newpage
+
 ##  8 JAN 2020   email Dr: Wayne Wong re: MRI - Dr. Wei Wang (pancreas) Dr. Harbin> 
 8 JAN 2020
 
@@ -1201,13 +1201,122 @@ Just update:
 
 
 ##  F  28 May 2021   call Dr. Bilbao, reduce medications?
-  *  Suspects I do need thryoid
+  *  Suspects I do need thyroid
   *  Trial:  remove for 30=60 days;  retest between July 1 and Aug 1
   *  Then, separately, remove Welbutrin
   *  Finally, separately, Efexsor
   *  Not sure I understand her order, but ....
 
-##  Sat  05 Jun 2021  3rd fecal Stool (5/24?/21) Fat is 20 g/24 hr (normal <7g /24 hr)
+##  Sat  05 Jun 2021  3rd 72-hour fecal Stool (5/24?/21) Fat is 20 g/24 hr (normal <7g /24 hr)
   *  Down >50% from 4/2/19 (44 g/24 hr)
   *  And ....       10/31/18 (34 g/24 hr - I didn't eat enough fat?)
+##  Tue  08 Jun 2021  Thyroid medication
+  * Feel a little run down; lack of sleep or is Thyroid kicking in?
 
+\newpage
+##  Sat  26 Jun 2021  dr. bilbao - changes to medication:
+Dr. Bilbao:
+
+
+Appreciate if you advise me on the following, mostly OTC:
+
+  1.  \textbf{Asprin} - 81 mg (~ 21 years) 
+
+\begin{quote}
+  Have read the benefit accrues over time;  by early 60s additional benefit is
+minimal.   
+
+  Proposal:  Stop?
+\end{quote}
+
+
+  2. \textbf{Psyllium Husk} ( ~23 years) 
+
+\begin{quote}
+Of all the UrOx, GI, pancreas interventions, only this one  observe the benefit.
+
+  Proposed:   Continue.
+\end{quote}
+
+  3.  **B vitamin complex**:
+  
+\begin{quote}
+\textbf{B12} (~5-6 years) - Prior doctor suggested, per age and diet (mostly
+  vegetable at that time).  Diet now rich in dairy (2-3 servings per day); chicken
+      (~once per week); includes eggs.
+
+\textbf{B6}   (~4 years). - At my request, per mention in literature suggesting B6 reduces
+      UrOx even in NON-GENETIC UrOx.   I saw no benefit.
+
+      Proposed: Stop unless reason. 
+
+\end{quote}
+  4.  **Vitamin D3** - 5000IU x 3 per week;   (~7-8 years) 
+      \begin{quote}
+      Blood test showed
+      deficiency (~18).  Since then range from high 20s to 40 or so.   Besides
+      supplements, also increased sun exposure (5-10 min per day; in summer).
+
+      (prior) Higher dose 5000 IU x 5 per week:  no effect on parathyroid.
+
+      Proposed:    Continue?   Brand recommendations?
+      \end{quote}
+
+
+OTC are unregulated, with poor track record.  Contents include ingredients I
+would never willingly take.   If necessary can continue but appreciate any
+guidance re: brand/specific ingredients.
+
+
+
+  5. **Levothyroxine** - 100 microg.  
+  Please recall June 1 stopped.   Blood test:   early July 
+
+
+##  Mon  28 Jun 2021
+
+Dr. Bilbao says:
+
+"Ok to stop the aspirin, B12 and B6. (no benefit for aspirin for primary
+prevention, and sounds like you are supplementing in diet for the Bs) Take
+400-1000 units of vitamin D3 on days when you do not receive 20 minutes of direct
+sunlight.  Ok to continue psyllium husk."
+
+  * D3 seems too low;  will cease D3 till fall; then do as she says; ask to
+      retest D3 in Dec?
+
+##  Thu  15 Jul 2021  Dr. Lieske - no results 24-hour urine.
+Waste of time.   He has no results (Collection ended 18 JUN 2021).  Says may need
+to redo.   Asked for written prescribed diet (as in clinic trials):  he just
+repeated low OX.   I said I think I've been doing this, but I am human.  Wouldn't
+it be better to revmoe one variable?  Trials?   Again I said yes, if in exchange
+for my body, I get a through exam/history b/c no one who has seen me has
+experience.    Re:  GFR what is important is TREND, not actual value.  Any
+questions I should ask pancreas doctor re: fat malabsorption, UrOX.   He couldn't
+think of any.  I mentioned high PTH, even with D3 - he made no comment.  
+
+Not useful phone call.
+
+\newpage
+
+##  Thu  22 Jul 2021   Dr. Sadana:
+
+1.  First, I apologize for phone visit (July 22); my phone just did not ring.
+
+2.  Two key `facts`:  
+    *  Given MRI, stool fat and no lab errors, I do not doubt **pancreatic
+         atrophy**.  No recollection of chronic pancreastis. No symptoms of fat
+         malabsorption [^1] 
+    *  Also very clear I have **hyperoxaluria** (high UrOx),  whose value varies widely.    However,
+        pancreatic enzymes do not appear to have any affect on UrOx [^2]
+
+3.  Two key questions (not necessarily for immediate answer).
+    *  How would you describe the **health** of pancreas?   What should I be
+         doing to maintain pancreatic health?
+    *  *The bottom line: What is the medical benefit of continuing to take
+        pancreatic enzymes?*
+
+
+
+[^1]: No malnutrition, anemia, diarrhea.
+[^2]: Evaluating this with Dr. Lieske (Mayo Clinic)
