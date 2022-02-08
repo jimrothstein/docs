@@ -1,0 +1,649 @@
+   vim:linebreak nowrap tw=81 fo=tqlnr foldcolumn=3 
+---
+## WORKS!
+title:	"116th Congress"
+location:	~/documents/correspondence/house_committees.md
+#date:	24NOV2018
+output: 
+  pdf_document:
+    latex_engine: xelatex
+fontsize: 12pt
+geometry: margin=0.5in,top=0.25in
+#author:		jim
+#thanks:		special thanks to you
+#abstract:	|
+#	Guide to House
+---
+
+<!--
+
+**To Run this** 
+
+!pandoc % -f markdown -t latex  -o ~/Downloads/print_and_delete/out.pdf
+!pandoc % -f markdown -t latex  -o out.pdf
+
+> No need for yaml.
+>
+
+Other useful pandoc commands: 
+
+* -V geometry:margin=0.25in 
+* -H 010_header.tex
+
+-->
+
+<!--
+# Title 1
+## Title 2
+### Title 3
+#### Title 4
+##### Title 5
+-->
+<!-- comment -->
+
+```
+rmarkdown::render("~/Downloads/documents/misc_files/2020_legal_misc_notes.md")
+test 
+```
+##  R JAN 2020  REGUS, office unlocked, stuff put on my desk, 12:45 pm
+-	door unlocked, no note, no email
+-	everything put on my desk (etoys plugged in on other desk, black file box,
+	even recycle box!)
+	room smells like sprayed;  garbage removed (thank you) but left without
+	putting plastic liner back in.
+	looks like took the clorex wipes on Austin's desk were removed.
+
+	No arguement about rules.   But Troy has seen this before and seemed
+	satisified. How about a 'heads-up'?   A warning? 
+	Just communicate!
+
+## F 3JAN2020 REGUS, room still smells. 8 pm
+-	Smell still strong;
+-	sneezes, watery eyes, nasal drip -- flee to kitchen
+-	Find fan in open room; helps but stuff clings.   smell it in hallway.
+-	clean desks with soap/vinegar.   Can not find source of smell.
+-	Wrap towel around face, better, but eyes still irritated.
+-	Not very nice.   No note, no email, no communication.   Reminds of girl in
+elementary shool.   Barry Ives, Frank D (?) spray deoderant inside her desk on
+all of her stuff.  Regus can come up with thousand reasons.  A little courtesy?
+Haha.
+
+## Sa 4 JAN2020 REGUS, room still stinks.
+-	Fan all day; can not stay in room - eyes tear, nasal stuff, sneeze after
+just a few moments.   Leave and symptoms go away (example:  kitchen, here
+several hours, including now.)
+
+-	Wash down desks (again) with clorox wipes, clean as many surfaces as I can.
+MOve a lot of my stuff out.    Can not get rid of smell & symptoms. 
+Go outside and eyes, nasal clear up right away.  
+Little work today!  Or since Thursday.   
+-	intenet says vineager in cups, wet towel (works for smoke);  nothing works.
+-
+-
+## W 11 WED 2020  REGUS, room> {{{
+-	Troy (old manger) now gone
+-	Room is sprayed again!    I arrive 2:45 pm or so.   Door unlocked.
+-	Front desk, new mgr, says:   "odor"
+-	2 compaints
+-	need to remove boxes
+-  	2 other people also assigned to this room (really?)
+-  	She ackowledged ventilation does NOT work.    I asked if any problem
+	address to ME; do not just spray.     PLease lock door .... there is evena
+	note.
+-	My days are NUMBERED here.   Follow rules and don't piss anyone off (but it
+comes naturally.> }}}
+
+## W 1 APR 2020		   cap 1 dispute BOOM FITNESS   $35 in FEB 2020
+On March 16, 2020 BOOM FITNESS annouces (email) will close on March 31.
+Am I entitled to $35 refund on annual dues?
+-	3 FEB - paid $54.95  (monthly $19.95 + $35 annual fee)
+-	5 FEB - Cap 1 sends alert,  but I see no problem
+-	2 MAR - paid $19.95 (reg monthly) 
+-16 MAR - Boom (email) will close doors on 31 MAR
+-16 MAR - Boom ends 24-hour access today.
+-18 MAR - Citing state rules, BOOM closes gym competely today.
+
+## T 7 APR 2020   cap1 | told more than 1 hour wait!
+
+## mid-APR 2020   boom refunds everyone (?) for accidentally April  bill.> {{{
+- Since closed, should not have billled anyone.
+- But I pay by credit card, which was not charged.  But I got the refund.  (Most people use debit card?  Is this where problem was?).
+- Upshot:  got money back,  call it even,  call it a day.}}}
+
+
+## M 11 MAY 2020  Retriever Towing & Quest - sue?{{{
+- asking AG about opinion of ORS 98.954 (2) that `at the time of tow`
+- means: need to see signature ON the date of tow (not something 18 months prior).
+- l/m Brooks Spangler
+- If I can get this `opinion`, believe in very strong case.
+- Brooks call me right back!  No AG opinion,  he believes a `lower level attorney` wrote that; it is NOT an approved position.
+- Not aware, or can not say, of any investigation or news or action re: towing or Retreiver.  
+- Brooks will send note to atty asking if anything `time of tow`; Melissa Roberts will reply if anything to say.
+-}}}
+
+## R 4JUNE 2020 Austin appears, makes comment ---{{{
+-- Friday, referator is cleaned;  so I put less perisable things (apples,
+fruit, oats in my room).   (Perishables in cooler, closed.)
+-- After hours (7 pm?), left things to dry, soap out, on desk next to me (per
+usual.)   I am in kitchen,  1 male & female work by, at first thought:  is it
+Tom at this hour?
+-- returns 1' later, it is Austin (barely recognize him).   Says "Is that your
+food?   Are you living here?   We share an office"   He doesn't even stop for
+answer.
+
+## F 5JUNE 2020, "default in #34" - Jo from Vancouver, regus
+-- did remove some things from office today.   Food back in refrigerator.
+-- email, after 5:30, violations, witness, claims .... yikes.  (see email)
+
+## Sa 6JUNE 2020,  clean up;
+-- no more multiple cofffee cups (use theirs and so no need to dry/clean).
+revome cleaning stuff (bleach, sponge ...), bags etc.
+-- draft email to Jo, it is clean, some mgr did not say anything; please
+communicate.
+
+-- Dear Jo:
+
+I received your email after 5 Friday and immediately called you.
+
+Today, Saturday, I cleaned the desks and area around me, as well as removed my
+coffee cups and related paraphilia. (I use and clean  my 16 oz cups because of
+a kidney condition and need for substantial hydration;  I will use the office 
+cups.)  Also any fruit/salads are back in refrigerator.  (The  office
+refrigerator is now cleaned every Friday, so I temporarily remove any 
+salads/fruits that I want to keep. 
+
+I am not sure if I have met you.   Until fairly recently, I was not aware of any
+criticism. When Kristine asked me to remove boxes, I did so.  Since then,
+Kristine has entered (for mail) and Tom has chatted with me, but neither pointed out
+any issues. 
+
+Not meant as an excuse, there have been stretches where I seemed to only one
+using the room.  I may have adopted less than perfect habits.  Perhaps what one
+manager finds unacceptable, another does not.     
+
+All of this can be fixed.  Please do not jump to conclusions.
+
+When I am in the room, my door is often open.   If something is not quite right,
+please tell me.   I will come in earlier than usual on Monday to fix anything still not
+order.
+
+## MON 8 JUN 2020
+-- she replied, seems to backed off;  
+-- let it go;  pointless to harp on these issues (not going to win)
+- what clothes? I can't keep sweatshirt?
+- not living here,  work:  till 2 am  or later; but almost never here before 11
+		am or noon.
+- fix the ventilation if you are worried about safety, clean .....
+-  ETC
+-   most important:   why not communicate directly, 'face-to-face' despite
+		covid-19, with anything bothering you guys?
+-- I think waste of time.   
+- Use place like library,  wouldn't leave shirt on chair overnight| would dry
+		things on adjacent table in library (even if nobody there).
+- Bottom line:  better to KEEP this place, then NOT.   Don't argue with them or
+		show their own hypocricy ("safety ..."    fix the ventilation!)
+> }}}
+
+
+## M 13 JUL 2020 cleaning problems at night> {{{
+Cleaning ppl (Jenny & Alex) report that mgr called them and angry in AM:
+- no bleach in toilet
+- water on mirrors
+- pee on floor
+- crumbs on tables
+- microwave not clean
+- fruit in garbage
+
+And mgr (Kristine) asking what time I go home (Jenny said 12 midnight).
+Apparently someone in AM checks these things and reports to Kristine, who calls
+cleaning people.
+
+Writing on the wall.  Go to sleep earlier, when cleaning ppl leave.   And also
+Kristine really should just ask me,  I  told I work late.> }}}
+
+
+
+## R 20 AUG 2020 ;  lysol, trash; covid-19, ventilation
+
+\newpage
+
+August 20, 2020
+
+Dear Kristine:
+
+
+You asked me to summarize our conversation yesterday:
+
+Trash.  
+
+I will ask cleaning people (Jenny/Alex) to return to the
+normal procedures; I won't touch the trash.
+
+Furniture.
+
+No problem with any rearrangement.  If you can give me an hour or two notice, I
+can be elsewhere.
+
+Ventilation.
+
+By ventilation I mean regular airflow, i.e. removal of stale older air and
+replacement with either fresh outside or filtered air.  In general the
+northwest corner of building has less air circulation.  I have reported this
+before. It is less of a problem in winter, but quite noticeable in summer.
+covid-19 adds to everyone's concerns.
+
+Opening the door to northwest hallway does seem to 	improve flow.	  I still smell
+the cleaner, but it is diminished.  
+
+
+Temperature.  
+
+During normal working hours, I do not have any problem with
+temperature,   as long as I keep my door closed.  Hallway is warm.   After the 5
+pm, things warm up quite a bit, but I understand that
+
+
+Lysol smell.
+
+The two cleaning people work very hard.   Alex said he follows the direction of
+his boss and used lysol, but did not have the container. The lysol company
+makes a large number of lysol products and some have been approved for covid-19
+use.  
+
+If they are required to use strong cleaners, of course I can stay away (with some
+notice.) but I hope this can be infrequent and less than 24 hours.  
+
+However, I am not the only with strong dislike for this odor or the length of
+time it remains in the air.
+
+* https://www.autopia.org/forums/interior-car-care/184194-getting-rid-lysol-smell.html
+
+* https://www.reddit.com/r/CleaningTips/comments/dhpjmw/lysol_smellfrom_hell/
+
+
+Apparently, lysol can cling to clothes, carpets, car seats.
+
+
+Just fyi:
+
+
+Covid-19 cleaners.
+
+[ The CDC website offers 3 cleaning suggestions, including soap and water.] (
+https://www.cdc.gov/coronavirus/2019-ncov/community/reopen-guidance.html)
+
+
+[FDA:  Hand Sanitizers] (https://www.fda.gov/drugs/information-drug-class/qa-consumers-hand-sanitizers-and-covid-19)
+
+[EPA approved for Covid-19] (https://www.epa.gov/pesticide-registration/list-n-disinfectants-use-against-sars-cov-2-covid-19)
+
+Also, the EWG evaluates products for health and environment products.  Some lysol are
+very good but some receive failing grades.
+
+[121 products: ] (https://www.ewg.org/guides/search/?page=1&per_page=15&q=lysol&utf8=%E2%9C%93&x=0&y=0)
+
+[F:] (https://www.ewg.org/guides/cleaners/1124-LYSOLBathroomCleanerSprayFreshApple/)
+
+
+Thank you for your time.
+
+jim rothstein
+
+
+## W 19AUG2020 Austin re-appears!
+Door unlocks, in comes Austin, followed by Kristine;  he is returning his files
+and certificate.  Ok,  but no knock, no hello.   Kristine removes a chair.
+
+## R 20 AUG2020 Lysol smell diminshes - IF I wedge open heavy door.
+Smell returns as soon as a/c stops or door is closed again.
+
+## F 21 AUG2020  Lysol continues!
+Wedge open door for airflow;  return couple hours later; **door is closed!**
+Hallways still smells of lysol.   Not a 'hint' of it;  it is still strong to me.
+Stay in my office; door closed.
+
+## M 07 SEP 20   table still here (not the chair); no response to my lysol
+letter
+
+## T 22 SEP 20   Santi - no mask
+Ask Santi to use mask.  He does;  after not using it.
+Seems to on chin; not covering nose.
+
+Ask Kristine about Mask in 'shared space.'   She isn't sure, will check, but then
+says it is 'his office' and we do not require it.   I point out 'shared office'.
+And I ask if wearing mask includes 'nose'- yes, she says.   
+
+She then repeats that it is 'his office' and I say 'yeah, but I dont want
+virus. '   She says she will check, but maybe "you need to WORK FROM HOME."
+(emphasis added.)
+
+## T 29 SEP 20
+Nothing on mask policy.  Santi getting much better, though.   Msgs to REGUS for
+clarification.  
+For past week+, there is NO circulation in room.  NO aircon.   So it is cooler
+in the hall.   Neighbor said same problem, hot and using fan.   Room warmer than
+it was in summer.
+
+##  Fri  13 Nov 2020
+*  Regus - internet out (think anyone tells me?).  Apparently at least till
+    Monday.   Regus didn't want to pay for overnight part??
+
+##  Tue  24 Nov 2020, fiber - workmen in office; 
+*  Arrive ~ noon;  workman in office; installing fiber(good) but big hole in
+    ceiling, piping etc -- so can not use desk or office.   OK, for good cause.
+*  But no 'heads-up'?  Surely Regus mgr knew the plan.   Also I see mail on other
+    desk, so mgr was in this office today.   No email, no note, no ....
+*  Eat breakfast outside front office, sit on 2 chairs in attrium.   Kristine
+    complains audio (watching R video) is too distacting.   I lower it.  Leave
+    office for (return to car).
+*  ~ 7 pm, return, office all clean!  Ready to work.
+
+##  W 25 NOV 2020 ....
+~10 pm leave, per Kristine demand!
+
+##  R 26 NOV 2020 thanksgiving.
+~4:30 pm Keypad does not work.  Door locked!      Buy water at McDonalds, only
+place open!
+
+##  F 27 NOV  2020    several ppl, and BAnk keypad broken,  DDS comes and wedges open
+door.
+##  SU 29 NOV 2020
+
+29 Nov 2020
+
+Dear Kristine:
+
+I have modified my work hours to arrive earlier and leave earlier.  
+
+The janitors are correct I am often  here between 10 pm and 3 am.   My routine
+has been to arrive late and leave late (please see email 21 May 2020).  But as I
+understood these words,  I do not reside here, I am not here overnight.  When I
+am not working, I am not here.
+
+I think you said that the last sentence of House Rule 9 was either re-interpreted or modified.
+
+  *  Rule 9   "Employees and Guests"
+  *  ... "No part of the office or Business Center may be used for overnight
+      accommodation."   [Jan 2020]
+
+Obviously I want comply with rules.   You mentioned you had
+additional documentation to clarify Rule 9.  This would be very helpful.
+
+Please let me know when you have questions or additional complaints. The sooner I am
+aware, the sooner I can address these.
+
+Thank you.
+
+jim
+
+
+ ##   xx Dec 2020 Kerri, Lead Community Mgr, trying reach me.
+ My phone number is no good.   I reply and l/m  yes it is good number.
+ Think I responded to every inquiry I got.   Then nothing for several days.
+
+##  Thu  10 Dec 2020  phone tag with Kerry, Regus suburb community mgr lead,
+971-327-4133.
+  - Kerry calls, l/m, said she'd call again in PM.
+  - I call l/m  (~10, 11 am?) Asked again she try to send  email.
+  - No other calls or voicemails, so ~4:30 pm, I leave her a second msg .
+  - ~4:20 pm ?   I call her.  She calls back.
+  - Says she rec'd my email to Kristine, but doesn't seem to know content.
+  - Best I can piece together:   24-hour access means "access".  Working late at
+      night is violation of their lease with building and is not what they mean
+      by "access".    So it is violation of my lease.
+  -  Ok, I ask for definitions, rules ....   Seem to go in circles and I at one
+    point I say she sounds like a politican.
+  - At other points, she seems to throw out ... 1 night is ok, but not every
+      night;   10 - 11 pm is ok, not too far from normal working hours.  
+  - I keep saying telling me the rules, what hours are ok or not?   Told her
+      Kristine said there was documentation on this.
+  - She says  janitors say you enter and leave building.   Yes, I try to stay out
+      there way.
+  - At one point she says, you here now (> 4pm)  and you were here (10 am) and
+      you were till 3 am ..... cut her off,  "Didn't you read the email?"
+  - So more circles,  read the email!   Asking for clarification.
+  - Change to new topic:   I say don't want to make a big case out of it;  I
+      changed hours.  I try to respond.
+  - Point out:  more than one way to discuss things that Regus doesn't like,
+      nicer ways.  Said she understood.   Pointed out:  first year, I didn't seem
+      have any problems.   She mentioned new manager.     Said now it seems like
+      everything I do is wrong.
+  - Since we are talking:   my memos re: ventilation or especially cleaning at
+      beginning of covid.   All go unanswered.   it takes 2.
+  - Ask to clean carpet, spots pre-date.   Said they'd consider spot cleaning or
+      whatever.
+  - Wast of time.   But believe am OK for now.   Just stay on schedule they prefer
+      or best I can interpret that (leave 10, 11) which she mentioned.
+
+##  Tue  09 Feb 2021  sitting in chair in 2ndF lobby;  Kristine: "why aren't you
+in your office?"   "I answer change of scenery"  As she turns to leave, "seems
+like odd place to work."     Am I going to get nasty note now?
+
+
+##   Mon 15 MAR  sit in chair "Against House rules to work in hallways....:
+*   See email exchange, too ridiculous
+*   "Smelly" garbage ... it is a garbage !
+*    stain on wall, mssing the waste bin
+*     carpet , yep I told her boss needs cleaning ... 
+*    *   I am blocking the door so janitor can not get in to clean.
+*  Also see my email re: community room; book online, oh!   of course, she would
+    never suggest that to me.   Anyway it is GREAT to have 2 hours.
+
+##  Tue  04 May 2021  Elite Towing |  Tow to Marsh Tramission | leaves
+*   Appointment set for 8:00 am; not told can arrive early  or leave if they do
+    not see you at car.
+*   Can not be BOTH at car and ON PHONE
+*   Car is less than 30 yards from building (with wifi)
+*   Not told Towing company could arrive Early, or would need to confirm,  or
+    would leave exactly at 8:00 am!
+
+*   voice/phone chronology exists:   Towing company DID call/text/lv messages
+    BEFORE 8 am .    I don't receive if no wifi.
+*   Just before 8 am (7:55?)  I see messages,  note that call number differs from
+    number in message.   While figuring this out - I see the Tow truck.
+*   I walk toward Tow Truck (so wifi cuts out) some bushes between us.  Truck is making 3-point turn
+
+    It is the ONLY car there.  Why didn't you stop? 
+*   Tow truck finishes pivot and drives away ... I start waving, now walking
+    directly behind, I in middle of parking lot, no obsticals   but he is too
+    fast ...   (he's still in parking lot) - perhaps he will cirle?   No, I see
+    in distance, tow truck is LEAVING parking area and entering main road (this
+    is much too far to yell, or run
+    after).
+*   Return to building (wifi) and call ....  8:02 am "Not looking for people to
+*   wave at
+    them";  made multiple attempts (TRUE) but also LEFT at the appointment tme. I
+    I repeatly ask, please return; he repeats made muliple attempts.  I say OK, I
+    I will get another tower.   Call lasts 1:30+
+*   Note:  Tow company voice message also uses "appointment".   
+*   Call Geico.
+
+##  Wed  12 May 2021  Regus ...
+Chron .. April 9 ... letter:  last day is May 31, Regus not renewing.
+30 April ... Regus invoices for June rent!  (will take it May 15)
+xx May  ... email to Regus, are you sure?
+xx May  ... yes, Regus is sure.
+10 MAY (mon) ... email to Kerry
+11 MAY (tues)  ... email to xxxx Sandra Melody Regus, from this website:
+https://www.complaintsboard.com/regus-b116485
+12 MAY (wed)  Nohting ... clock ticking   (will take it May 15....  Call Cap1 ask
+them to `block` charges from Regus, not a dispute - there is NO charge yet.
+
+Note: back to Regus corporate (send via regular email to help desk AND via their
+website ... pretty poor)
+
+Thank you for the response.   I remain concerned that I have conflicting
+information:   locally, Regus says it is not renewing my lease.  My last day is
+May 31, 2021.
+
+However, you have invoiced for June rent.   It can not be both - non-renewal and
+pay for rent.
+
+On Monday, May 10 I emailed the local Regus management for clarification.   On Tuesday,
+May 11 I emailed Regus head of customer support.   As this time, neither has
+responded.
+
+You are scheduled to draw funds, per April 30 invoice, on May 15, 2021.
+
+Since this may not be resolved to everyone's satisfaction in the limited time, I
+have asked my bank not accept new charges from Regus.
+
+I am happy to pay the invoice, if and when this is worked out.   Please notify
+the appropriate people at Regus that the payment set for May 15 will not go
+through.
+
+I do  owe for April coffee ($30) and will make arrangement to pay you for this.
+(Please stop all coffee fees -- Regus offers it complementary).
+
+\newpage
+##  Sun  16 May 2021  Justin:  note re: Eugene lease
+
+Hi Justin:
+
+A few points I like to clarify:
+
+
+1.  Section 1
+
+  *  \color{red}{1.3    No Renewal?  }
+
+2.  Section 2
+  * \color{red}{2.2 Changes to Operating Expenses ...just review.}
+
+3.  Section 3
+  *  3.1 (b) parking areas?
+
+4.   Section 4
+
+5.   Section 5
+
+
+Internet - responsible party ?
+Garbage - rules
+
+6.  Section 6
+
+
+7.  Section 7 Insurance
+  *  \color{red}{Please discuss.}
+
+8.  Section 8
+
+
+9.  Section 9
+
+
+10.  Section 10
+
+11.  Section 11
+
+12.  Section 12
+
+13.  Section 13
+
+14.  Section 14 
+
+15.  Section 15 - Default
+
+\color{red}{
+
+      *   Early termination - amicable.
+
+      *   (For example:  job in another city.)
+
+      *   Also 18.9 - be sure I understand.
+          }
+\color{black}
+16.   Section 16 - Expiration
+\color{red}{
+  *   Joint walk-through at both beginning/end, with signatures.
+      }
+
+\color{black}
+17.   Section 17
+
+18.   Section 18
+
+19.   Section 19
+
+20.   Section 20
+   * \color{red}{20.3 Office Lighting - this vs Section 3.2(a)[Lessee] for routine replacement}
+
+21.    Addendum
+
+
+22.     Exhibit A
+  *  "Park's facilities" ??
+
+
+
+\color{red}{Misc:
+
+  *  Is personal refrigerator (in office) allowed?  
+
+  *  Coffee/hot water appliance?  
+
+  *  Outside awning to block direct sunlight?  
+
+  *  After hours (ie when unoccupied) acceptable use of temperature control?  
+   *  Suggestions or tips:  How other tenants maintain clean, cool, comfortable  
+   *  offices (carpet?  coffee spills? crumbs?)  
+       (Want no bugs.)
+       }
+
+##  Sun  11 Jul 2021  REGUS
+  *  Note from May .... put into Regus folder.
+  *
+##  Sun  11 Jul 2021    
+  { ## KEY account numbers,  SCHWAB etc    
+  
+  *  Schwab 7655-1177  
+  *  Billpay  Jimbo66&  
+  *  Checking acct(Schwab):   7009069725    (says BNY Mellon)  
+  *  Checking Acct (on physical checks)  59385380076551177  (JP Morgan/Chase)  
+  *  Outgoing Routing (to send $):   031100157  
+  *  Inbound Routing (send $ to me): 071000013  
+  *  Billpay Security:  
+  
+     *  1st instrument: saxophone    
+     *  dog/cat:        saxophone1  
+     *  2nd pet:        saxophone2  
+     *  comic book:     saxophone3  
+     *  artist:         saxophone4  
+  
+   }  
+
+##  Wed  14 Jul 2021  Columbia Storage.
+  *  Payment has been done automatically for years!
+  *  Apparently they changed their system and did not get payment.   Claimed they
+      had old phone number and the email must have gone to my spam folder
+      (bullshit -- I get invoices every month by email.)
+  *  Claimed can not legally move CC info from one system to another.   Ok, but
+      again this is YOUR change.  Said he would try to waive late fee, but not
+      sure.
+  *   He kept repeating they tried to contact me .... I am responsible for
+      payment ....blah blah blah.   I added this is annoying.  
+  *  When I said I authorize only the past due ($49 for June) and ($49 for July)
+      he interrupted, said I was being belligerent and HE hung up.
+
+##  Mon  19 Jul 2021  541 Williamette
+  *  Asked Maryann (Bldg manger) about lease end August 31.   Her Reply was
+      covered by 17.3
+  *    17.3 Holdover.
+(a) If Lessee does not vacate the leased premises at the time required, Lessor
+shall have the option to treat Lessee as a Lessee from month-to-month, subject to
+all of the provisions of this lease except the provisions for term and renewal.
+Failure of Lessee to remove fixtures, furniture, furnishing or trade fixtures
+which under this lease shall constitute a failure to vacate to which this
+paragraph shall apply if the property not removed will substantially interfere
+with occupancy of the premises by another Lessee or with occupancy by Lessor for
+any purpose, including preparation for a new Lessee. Lessee's monthly rent shall
+automatically increase to an amount equal to 150% of the last month's rental rate
+during the specified lease term, for any holdover period.
+
+(b) If a month-to-month tenancy results from a holdover by Lessee under this
+Paragraph 17.3, the tenancy shall be terminable at the end of any monthly rental
+period on written notice from Lessor, given not less than TEN (10) days prior to
+the termination date which shall be specified in the notice. Lessee waives any
+notice which would otherwise be provided by law with respect to a month-to-month
+tenancy.

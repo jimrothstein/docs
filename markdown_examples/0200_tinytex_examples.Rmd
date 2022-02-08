@@ -1,0 +1,109 @@
+---
+title:	"0200_tinytex_examples.Rmd"
+date:	24DEC2020
+mainfont:  "Day Roman" 
+output: 
+  pdf_document:
+    latex_engine: xelatex
+    number_sections:  true 
+fontsize: 12pt
+geometry: margin=0.5in,top=0.25in
+---
+
+## Example of .Rmd file (rendered by rmarkdown/knitr as usual)
+That ALSO:  
+    - Uses TinyTex (R package and Latex distribution)
+    - Creates and saves a .tex file (latex)    
+    - Renders this .tex file using tinytex::pdflatex()    
+And  
+    - Renders simple equation with inline Latex cmds.    
+
+##  Pandoc/knitr fail?
+  *  try tinytex::parse_install("0200_tinytex_examples.log")
+
+##  TinyTex examples  
+  -  TinyTex:: is an R package  
+  -  TinyTex is also a lightweight Latex distribtion  
+  -  Docs: https://yihui.name/tinytex/  
+
+```{r setup, include=FALSE		}
+knitr::opts_chunk$set(echo = TRUE,
+                      comment = "      ##",
+                      error = TRUE,
+                      collapse = TRUE)
+
+## turn off to limit output
+    options(tinytex.verbose = T)
+
+    ## need?  in yaml
+    options(tinytex.engine = 'xelatex')
+
+## failure?   try to gleem from .log file
+    if (F) {
+        tinytex::parse_install("0200_tinytex_examples.log")
+}
+
+library(tinytex)
+library(rmarkdown)
+library(knitr)
+```
+
+
+## Check Tools, tinytex::tlmgr  , pandoc
+```{r misc_tools, eval=FALSE  }
+# silent, but takes a while
+tinytex::tlmgr_update()
+
+# find pandoc
+rmarkdown::find_pandoc(cache = FALSE)
+# $version
+# [1] ‘2.13’
+# 
+# 
+```
+
+
+## BIG Advantage of useing R package tinytex:: 
+  -  if Latex package is missing, it will be installed.
+
+## tinytex::latxmk is wrapper for more common tools?   
+  -  pdflatex, etc
+
+```{r example}
+getwd()
+the_file = "0200_tinytex_examples.Rmd"
+
+if (FALSE ) tinytex::latexmk(the_file)  # file needs *.tex extension
+
+```
+
+##  render latex inline (ie as regular md)
+
+\begin{equation}
+x^2 + y^2 = r^2
+\end{equation}
+
+## In R, write a .tex file; render it as pdf using tinytex:: 
+```{r using_tex_file}
+
+writeLines(c(
+             '\\documentclass{article}',
+             '\\begin{document}', 'Hello world!', '\\end{document}'
+             ), 'test.tex')
+
+tinytex::pdflatex('test.tex', pdf_file="~/Downloads/print_and_delete/out.pdf")
+```
+
+markdown_examples/0200_tinytex_examples.Rmd
+```{r eval=FALSE  }
+
+file  <- basename("markdown_examples/0200_tinytex_examples.Rmd")
+file
+rmarkdown::render(file, 
+                  output_format="pdf_document",
+                  output_dir = "~/Downloads/print_and_delete/")
+
+```
+
+
+
