@@ -5,6 +5,8 @@ TAGS:  reading list
 ---
 
 <!--
+WANT linkable HTML links? Must use [text portion](url portion)
+
 file <- "001_R_stats_tech_reading.md"
 !pandoc % -t latex -V linkcolor:blue -V fontsize=10pt -V geometry:margin=0.4in -o ~/Downloads/print_and_delete/reading.pdf 
 
@@ -27,6 +29,8 @@ vim: to format all urls for md
 s/https.*/[&]()/g
 
 -->
+\footnotesize
+
 As of \today
 
 ### R - always learn something new:
@@ -189,6 +193,15 @@ Many, many, of course, but these emphsize basic .tex documents.
 
 ### APIs and R
 
+####    Longer Reading/Documentation
+    *   Gargle docs include discussion of a few Google Cloud features: https://gargle.r-lib.org/articles/get-api-credentials.html
+    *   [Mozilla MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP)
+    *   RFC 
+    *   https://stackoverflow.com/questions/978061/http-get-with-request-body   *
+    *   https://oauth.com (Aaron Parecki)
+    *   web technologies, including RESTFUL, https://www.se.rit.edu/~swen-344/expectations/
+
+
 ####    Videos
 
     *   [Anson](https://www.youtube.com/watch?v=TE66McLMMEw)   Getting Google
@@ -202,66 +215,108 @@ Many, many, of course, but these emphsize basic .tex documents.
     *   [freeCodeCamp](https://www.youtube.com/watch?v=VywxIQ2ZXw4) Postman Intro.
 
     *   [Oauth 2.0 - Explain like I am 5] (https://www.youtube.com/watch?v=hHRFjbGTEOk)
+    *   Curl's Creater https://youtu.be/I6id1Y0YuNk?list=PLbcglKxZP5PN07Vw-0ukcDJCxFGY2Crgc
+    *   Postman and GitHub: https://youtu.be/AfuL7AFpFmQ?list=PLbcglKxZP5PN07Vw-0ukcDJCxFGY2Crgc
+
+####    CRAN Task Views:  Web Technology & Services: https://cran.r-project.org/web/views/WebTechnologies.html
 
 
 
+###    Vocabulary  (also:   [https://developer.mozilla.org/en-US/docs/Glossary](https://developer.mozilla.org/en-US/docs/Glossary) )     
+
+####    HTTP, JSON, RFC and Web Technologies
+
+Curl:   [https://everything.curl.dev/](https://everything.curl.dev/)  
+        https://stackoverflow.com/users/93747/daniel-stenberg
+        https://daniel.haxx.se/blog/
+
+        Command Line book:      https://datascienceatthecommandline.com/2e/index.html
+
+JSON   https://cran.r-project.org/web/packages/jsonlite/index.html  
+HTTP protocol MDN https://developer.mozilla.org/en-US/docs/Web/HTTP  
+HTTP Header Fields https://en.wikipedia.org/wiki/List_of_HTTP_header_fields, Media types (MIME):   https://www.iana.org/assignments/media-types/media-types.xhtml
+HTTPS,  HTTP over TLS or SSL:  https://en.wikipedia.org/wiki/HTTPS 
+HTTP  mentioned by Hadley Wickham:
+    -   https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177
+    -   https://www.jmarshall.com/easy/http/
+    -   https://docs.python-requests.org/en/master/user/quickstart/
+
+Media Types (was MIME): https://en.wikipedia.org/wiki/Media_type   
+                        https://docs.github.com/en/rest/overview/media-types
+RFC  
+  -  RFC 2616 HTTP 2.1  https://www.rfc-editor.org/rfc/rfc2616  
+  -  RFC 2617 Basic Authentication https://www.rfc-editor.org/rfc/rfc2617  
+  -  RFC 3986 + RFC 8820 URI/URL
+  *  RFC 6749 OAUTH 2.0 https://www.rfc-editor.org/rfc/rfc6749  
+  *  RFC 6750 Bearer Token: https://datatracker.ietf.org/doc/html/rfc6750  
+SOAP https://en.wikipedia.org/wiki/SOAP
+URI  https://en.wikipedia.org/wiki/Uniform_Resource_Identifier
+URL  
 
 
-####    Vocabulary  (also:  https://developer.mozilla.org/en-US/docs/Glossary)
-.httr-oauth  
-Access Token   
-API  
+
+#### OAUTH 2.0 & Security
+
 AUTH Code   
 AUTH CODE   
 AUTH SERVER  
 AUTH Token (??  or Access Token)  
-AWS  
+Token, Service Account:  https://gargle.r-lib.org/articles/get-api-credentials.html#service-account-token
+
+Grant  
+identity, identify server
+OAuth 2.0 Protocol (https://datatracker.ietf.org/doc/html/rfc6749)  
+oob (out-of-band)  https://docs.auth3.dev/grant-types/urn-ietf-wg-oauth-2.0-oob
+openSSL
+USER  
+
+#### Popular APIs 
+  *  GitHub API https://docs.github.com/en/rest
+  *  GitLab API https://vulpes.cba.mit.edu/help/api/index.md
+  *  Google Cloud  https://cloud.google.com/   
+  *  Google Cloud Platform  https://console.developers.google.com/products https://en.wikipedia.org/wiki/Google_Cloud_Platform  
+    *   Google Cloud Platform (GCP)  
+    *   Google Explorer    
+    *   Google Identity (https://developers.google.com/identity)    
+    *   Google OAuth2.0 implementation (https://developers.google.com/identity/protocols/oauth2#installed)    
+    *   google people api  
+    *   google web fonts api  
+    *   googleapis.com  
+    *   googleAuthR::  
+
+#### R and related
+
+curl::  (based on C library used in cURL) https://jeroen.cran.dev/curl/index.html
+cloudyR project  
+curlconverter:: https://github.com/hrbrmstr/curlconverter  
+fakerapi.it fakerapi https://fakerapi.it/en  
+gargle::   good intro (https://www.tidyverse.org/blog/2021/07/gargle-1-2-0/)  
+.httr-oauth  
+httptest2:: https://enpiar.com/httptest2/index.html  
+httpuv, libuv (https://cran.r-project.org/package=httpuv)   https://nikhilm.github.io/uvbook/introduction.html  
+httr2:: github https://github.com/r-lib/httr2  cran https://cloud.r-project.org/web/packages/httr2/index.html  
+httr::  
+S3, class httr2_token  
+Workload Identity federation  
+
+
+####    RESTFUL API
+
 Bearer Token  
 CLIENT  
 Client_ID  
 Client_Secret  
-cloudyR project  
-Curl  
-Curl:   https://everything.curl.dev/  
-curlconverter:: https://github.com/hrbrmstr/curlconverter  
-Dashboard  
 endpoint  
-fakerapi.it fakerapi https://fakerapi.it/en  
-gargle::   good intro (https://www.tidyverse.org/blog/2021/07/gargle-1-2-0/)  
-Google Cloud  https://cloud.google.com/   
-Google Cloud Platform  https://console.developers.google.com/products https://en.wikipedia.org/wiki/Google_Cloud_Platform  
-Google Cloud Platform (GCP)  
-Google Explorer    
-Google Identity (https://developers.google.com/identity)    
-Google OAuth2.0 implementation (https://developers.google.com/identity/protocols/oauth2#installed)    
-google people api  
-google people api  
-google web fonts api  
-googleapis.com  
-googleAuthR::  
-Grant  
-HTTP protocol MDN https://developer.mozilla.org/en-US/docs/Web/HTTP  
-httptest2:: https://enpiar.com/httptest2/index.html  
-httpuv (https://cran.r-project.org/package=httpuv)   
-httr2:: github https://github.com/r-lib/httr2  cran https://cloud.r-project.org/web/packages/httr2/index.html  
-httr::  
-JSON  
-OAuth 2.0 Protocol (https://datatracker.ietf.org/doc/html/rfc6749)  
-oob  
+Access Token   
+API  
+OpenApi (was Swagger) https://swagger.io/docs/specification/about/
 Postman  
-Reading:  
-Refresh Token  
 Refresh Token  
 Restful  
-RFC 2616 HTTP 2.1  https://www.rfc-editor.org/rfc/rfc2616  
-RFC 6749 OAUTH 2.0 https://www.rfc-editor.org/rfc/rfc6749  
-RFC 6750 Bearer Token: https://datatracker.ietf.org/doc/html/rfc6750  
-S3, class httr2_token  
-URI  
-URL  
-USER  
-Workload Identity federation  
-
+    https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm; 
+    https://en.wikipedia.org/wiki/Representational_state_transfer#Architectural_constraints 
+    https://restfulapi.net/  
+    http://www.cse.lehigh.edu/~spear/cse216_tutorials/tut_spark/index.html  
 <!--
 vim:linebreak:nospell:nowrap:cul tw=78 fo=tqlnr foldcolumn=3 cc=+1
 -->
