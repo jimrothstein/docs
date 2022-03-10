@@ -167,6 +167,11 @@ Many, many, of course, but these emphsize basic .tex documents.
   *  wikibooks:     https://en.wikibooks.org/wiki/LaTeX/Document_Structure
   *  http://ctan.imsc.res.in/info/first-latex-doc/first-latex-doc.pdf
   *   https://texfaq.org/FAQ-man-latex
+  *  Not So Short Introduction(https://ctan.math.illinois.edu/info/lshort/english/lshort.pdf)
+  *  AMS  documentation      https://www.latex-project.org/help/documentation/amsldoc.pdf
+  *  LuaTex Manual:   http://www.pragma-ade.com/general/manuals/luatex.pdf 
+  *  LuaTex Background Overleaf:  https://www.overleaf.com/learn/latex/Articles/An_Introduction_to_LuaTeX_(Part_1)%3A_What_is_it%E2%80%94and_what_makes_it_so_different%3F
+  *  Fontspec pkg (for LuaTex) https://mirrors.rit.edu/CTAN/macros/unicodetex/latex/fontspec/fontspec.pdf
 
 ### Good Technical Reading
   *  Linux:  Archiwiki, Debian, FreeBSD
@@ -181,31 +186,32 @@ Many, many, of course, but these emphsize basic .tex documents.
   *   [Bright Side of Math]( https://www.youtube.com/channel/UCdwo4k1RQHTcq_-WS7Cazqg ) 
   *   [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw)
   *   Zedstatistics
-  *   [Chris Mack] (http://www.lithoguru.com/scientist/statistics/course.html) -
+  *   [Chris Mack](http://www.lithoguru.com/scientist/statistics/course.html) -
       practical R, models
   *   [Statistics Globe](https://statisticsglobe.com/r-programming-language)
   *   [Statquest - Josh Starmer](https://statquest.org/video-index/)
 
 
-***
-
 \newpage
+
+\footnotesize
 
 ### APIs and R
 
-####    Longer Reading/Documentation
-    *   Gargle docs include discussion of a few Google Cloud features: https://gargle.r-lib.org/articles/get-api-credentials.html
-    *   [Mozilla MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP)
-    *   RFC 
-    *   https://stackoverflow.com/questions/978061/http-get-with-request-body   *
-    *   https://oauth.com (Aaron Parecki)
-    *   web technologies, including RESTFUL, https://www.se.rit.edu/~swen-344/expectations/
 
+####    Longer Reading/Documentation
+  *  [Gargle docs include discussion of a few Google Cloud features](https://gargle.r-lib.org/articles/get-api-credentials.html)
+  *  [Mozilla MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP)
+  *  [Request body](https://stackoverflow.com/questions/978061/http-get-with-request-body)
+  *   https://oauth.com (Aaron Parecki)
+  *   web technologies, including RESTFUL, https://www.se.rit.edu/~swen-344/expectations/
+  *  [RFC Specs](https://www.rfc-editor.org/)
+
+\href{http://www.overleaf.com}{Something Linky} 
 
 ####    Videos
 
-    *   [Anson](https://www.youtube.com/watch?v=TE66McLMMEw)   Getting Google
-        API/Oauth2 setup.
+  *  \href{https://www.youtube.com/watch?v=TE66McLMMEw}{Anson, Getting Google API/Oauth2 setup.}
 
     *   [Griffith](https://www.youtube.com/watch?v=iLVoA1DTE60) Curl to make
         resquests.
@@ -215,6 +221,8 @@ Many, many, of course, but these emphsize basic .tex documents.
     *   [freeCodeCamp](https://www.youtube.com/watch?v=VywxIQ2ZXw4) Postman Intro.
 
     *   [Oauth 2.0 - Explain like I am 5] (https://www.youtube.com/watch?v=hHRFjbGTEOk)
+    *   \url{https://www.youtube.com/watch?v=rhi1eIjSbvkh} Basic Authentication: urlencode, user:pass, how browser responds, TLS
+
     *   Curl's Creater https://youtu.be/I6id1Y0YuNk?list=PLbcglKxZP5PN07Vw-0ukcDJCxFGY2Crgc
     *   Postman and GitHub: https://youtu.be/AfuL7AFpFmQ?list=PLbcglKxZP5PN07Vw-0ukcDJCxFGY2Crgc
 
@@ -318,5 +326,7 @@ Restful
     https://restfulapi.net/  
     http://www.cse.lehigh.edu/~spear/cse216_tutorials/tut_spark/index.html  
 <!--
+
+Rscript -e "rmarkdown::render(<file>, output_format='pdf_document')"
 vim:linebreak:nospell:nowrap:cul tw=78 fo=tqlnr foldcolumn=3 cc=+1
 -->
