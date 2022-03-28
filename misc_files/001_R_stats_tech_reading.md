@@ -206,6 +206,7 @@ Many, many, of course, but these emphsize basic .tex documents.
   *   https://oauth.com (Aaron Parecki)
   *   web technologies, including RESTFUL, https://www.se.rit.edu/~swen-344/expectations/
   *  [RFC Specs](https://www.rfc-editor.org/)
+  *  JSON - https://json-schema.org/
 
 \href{http://www.overleaf.com}{Something Linky} 
 
@@ -225,6 +226,7 @@ Many, many, of course, but these emphsize basic .tex documents.
 
     *   Curl's Creater https://youtu.be/I6id1Y0YuNk?list=PLbcglKxZP5PN07Vw-0ukcDJCxFGY2Crgc
     *   Postman and GitHub: https://youtu.be/AfuL7AFpFmQ?list=PLbcglKxZP5PN07Vw-0ukcDJCxFGY2Crgc
+    *   Plumber::,R, api https://www.youtube.com/watch?v=J0Th2QRZ7Rk
 
 ####    CRAN Task Views:  Web Technology & Services: https://cran.r-project.org/web/views/WebTechnologies.html
 
@@ -306,25 +308,31 @@ httr2:: github https://github.com/r-lib/httr2  cran https://cloud.r-project.org/
 httr::  
 S3, class httr2_token  
 Workload Identity federation  
+plumber
 
 
 ####    RESTFUL API
 
-Bearer Token  
-CLIENT  
-Client_ID  
-Client_Secret  
-endpoint  
-Access Token   
-API  
+Bearer Token  RFC 6750, Unclear to me:  A access token tied to a client that
+that resource has verified?  Google does it differently? 
+  *  Client obtains in response  header with access_token, but token_type is "Bearer"
+  *  Three methods for client to obtain (given it has access token):
+     GET, with request header for Bearer 
+     As POST, in form body + encoding
+     (do not use) in URI query
 OpenApi (was Swagger) https://swagger.io/docs/specification/about/
 Postman  
-Refresh Token  
 Restful  
     https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm; 
     https://en.wikipedia.org/wiki/Representational_state_transfer#Architectural_constraints 
     https://restfulapi.net/  
     http://www.cse.lehigh.edu/~spear/cse216_tutorials/tut_spark/index.html  
+
+#### MISC  
+Openstack (Cloud) https://docs.openstack.org/api-quick-start/
+Okta.com
+
+
 <!--
 
 Rscript -e "rmarkdown::render(<file>, output_format='pdf_document')"
