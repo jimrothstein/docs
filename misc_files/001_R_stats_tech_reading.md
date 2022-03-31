@@ -336,11 +336,10 @@ Okta.com
 ###	NEOVIM/LUA
 
 ####	Config
-  *  	https://neovim.io/doc/user/quickref.html#option-list  
-  *  	Ex:	https://github.com/whatsthatsmell/dots/tree/master/public%20dots/vim-nvim  
-  *  	https://cj.rs/blog/my-setup/nvim-0-5/  
+  *	https://neovim.io/doc/user/quickref.html#option-list  
+  * 	Ex:	https://github.com/whatsthatsmell/dots/tree/master/public%20dots/vim-nvim  
+  *	https://cj.rs/blog/my-setup/nvim-0-5/  
   *	Statusline: https://elianiva.my.id/post/neovim-lua-statusline#active-statusline
-
   *	https://www.jakewiesler.com/blog/getting-started-with-vim
   *	blog + https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/
   *	blog + https://blog.devgenius.io/create-custom-keymaps-in-neovim-with-lua-d1167de0f2c2
