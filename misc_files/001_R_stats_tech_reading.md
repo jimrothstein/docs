@@ -336,7 +336,7 @@ Okta.com
 ###	NEOVIM/LUA
 
 ####	Config
-	*	https://neovim.io/doc/user/quickref.html#option-list
+  *  https://neovim.io/doc/user/quickref.html#option-list  
 	*	Ex:	https://github.com/whatsthatsmell/dots/tree/master/public%20dots/vim-nvim
 	*	https://cj.rs/blog/my-setup/nvim-0-5/
 	*	Statusline: https://elianiva.my.id/post/neovim-lua-statusline#active-statusline
