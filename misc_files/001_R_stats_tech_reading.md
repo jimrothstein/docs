@@ -336,19 +336,20 @@ Okta.com
 ###	NEOVIM/LUA
 
 ####	Config
-  *  https://neovim.io/doc/user/quickref.html#option-list  
-	*	Ex:	https://github.com/whatsthatsmell/dots/tree/master/public%20dots/vim-nvim
-	*	https://cj.rs/blog/my-setup/nvim-0-5/
-	*	Statusline: https://elianiva.my.id/post/neovim-lua-statusline#active-statusline
-	*	https://www.jakewiesler.com/blog/getting-started-with-vim
-	*	blog + https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/
-	*	blog + https://blog.devgenius.io/create-custom-keymaps-in-neovim-with-lua-d1167de0f2c2
-	*	Ex: 	https://gitlab.com/mcepl/vimdir/-/tree/master/plugin	
-	*	Ex:	https://github.com/samuelludwig/nixrc/tree/master/modules/user/nvim/lua/dot
-	*	300 line challenge: 	https://neovim.discourse.group/t/the-300-line-init-lua-challenge/227
-	*	https://cj.rs/blog/my-setup/nvim-0-5/
-	*	https://benfrain.com/refactor-your-neovim-init-lua-single-file-to-modules-with-packer/
-	*	https://github.com/nanotee/nvim-lua-guide
+  *  	https://neovim.io/doc/user/quickref.html#option-list  
+  *  	Ex:	https://github.com/whatsthatsmell/dots/tree/master/public%20dots/vim-nvim  
+  *  	https://cj.rs/blog/my-setup/nvim-0-5/  
+  *	Statusline: https://elianiva.my.id/post/neovim-lua-statusline#active-statusline
+
+  *	https://www.jakewiesler.com/blog/getting-started-with-vim
+  *	blog + https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/
+  *	blog + https://blog.devgenius.io/create-custom-keymaps-in-neovim-with-lua-d1167de0f2c2
+  *	Ex: 	https://gitlab.com/mcepl/vimdir/-/tree/master/plugin	
+  *	Ex:	https://github.com/samuelludwig/nixrc/tree/master/modules/user/nvim/lua/dot
+  *	300 line challenge: 	https://neovim.discourse.group/t/the-300-line-init-lua-challenge/227
+  *	https://cj.rs/blog/my-setup/nvim-0-5/
+  *	https://benfrain.com/refactor-your-neovim-init-lua-single-file-to-modules-with-packer/
+  *	https://github.com/nanotee/nvim-lua-guide
 
 ####	Plugins
 
