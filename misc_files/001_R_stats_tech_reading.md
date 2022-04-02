@@ -241,9 +241,9 @@ Command Line book:      https://datascienceatthecommandline.com/2e/index.html
   *  HTTP Header Fields https://en.wikipedia.org/wiki/List_of_HTTP_header_fields, Media types (MIME):   https://www.iana.org/assignments/media-types/media-types.xhtml
   *  HTTPS,  HTTP over TLS or SSL:  https://en.wikipedia.org/wiki/HTTPS 
   *  HTTP  mentioned by Hadley Wickham:
-  *      -   https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177
-  *      -   https://www.jmarshall.com/easy/http/
-  *      -   https://docs.python-requests.org/en/master/user/quickstart/
+	-	https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177
+    *	https://www.jmarshall.com/easy/http/
+  	*	https://docs.python-requests.org/en/master/user/quickstart/
 
 Media Types (was MIME): https://en.wikipedia.org/wiki/Media_type   
                         https://docs.github.com/en/rest/overview/media-types
