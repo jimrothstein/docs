@@ -213,26 +213,19 @@ Many, many, of course, but these emphsize basic .tex documents.
 ####    Videos
 
   *  \href{https://www.youtube.com/watch?v=TE66McLMMEw}{Anson, Getting Google API/Oauth2 setup.}
-
-    *   [Griffith](https://www.youtube.com/watch?v=iLVoA1DTE60) Curl to make
+  *   [Griffith](https://www.youtube.com/watch?v=iLVoA1DTE60) Curl to make
         resquests.
-
         ggmaps  Google Maps API https://www.youtube.com/watch?v=Of_M4kcE9yM&list=PLbcglKxZP5PN07Vw-0ukcDJCxFGY2Crgc
+  *   [freeCodeCamp](https://www.youtube.com/watch?v=VywxIQ2ZXw4) Postman Intro.
+  *   [Oauth 2.0 - Explain like I am 5] (https://www.youtube.com/watch?v=hHRFjbGTEOk)
+  *   \url{https://www.youtube.com/watch?v=rhi1eIjSbvkh} Basic Authentication: urlencode, user:pass, how browser responds, TLS
+  *   Curl's Creater https://youtu.be/I6id1Y0YuNk?list=PLbcglKxZP5PN07Vw-0ukcDJCxFGY2Crgc
+  *   Postman and GitHub: https://youtu.be/AfuL7AFpFmQ?list=PLbcglKxZP5PN07Vw-0ukcDJCxFGY2Crgc
+  *   Plumber::,R, api https://www.youtube.com/watch?v=J0Th2QRZ7Rk
 
-    *   [freeCodeCamp](https://www.youtube.com/watch?v=VywxIQ2ZXw4) Postman Intro.
+CRAN Task Views:  Web Technology & Services: https://cran.r-project.org/web/views/WebTechnologies.html
 
-    *   [Oauth 2.0 - Explain like I am 5] (https://www.youtube.com/watch?v=hHRFjbGTEOk)
-    *   \url{https://www.youtube.com/watch?v=rhi1eIjSbvkh} Basic Authentication: urlencode, user:pass, how browser responds, TLS
-
-    *   Curl's Creater https://youtu.be/I6id1Y0YuNk?list=PLbcglKxZP5PN07Vw-0ukcDJCxFGY2Crgc
-    *   Postman and GitHub: https://youtu.be/AfuL7AFpFmQ?list=PLbcglKxZP5PN07Vw-0ukcDJCxFGY2Crgc
-    *   Plumber::,R, api https://www.youtube.com/watch?v=J0Th2QRZ7Rk
-
-####    CRAN Task Views:  Web Technology & Services: https://cran.r-project.org/web/views/WebTechnologies.html
-
-
-
-###    Vocabulary  (also:   [https://developer.mozilla.org/en-US/docs/Glossary](https://developer.mozilla.org/en-US/docs/Glossary) )     
+Vocabulary  (also:   [https://developer.mozilla.org/en-US/docs/Glossary](https://developer.mozilla.org/en-US/docs/Glossary) )     
 
 ####    HTTP, JSON, RFC and Web Technologies
 
@@ -240,16 +233,17 @@ Curl:   [https://everything.curl.dev/](https://everything.curl.dev/)
         https://stackoverflow.com/users/93747/daniel-stenberg
         https://daniel.haxx.se/blog/
 
-        Command Line book:      https://datascienceatthecommandline.com/2e/index.html
 
-JSON   https://cran.r-project.org/web/packages/jsonlite/index.html  
-HTTP protocol MDN https://developer.mozilla.org/en-US/docs/Web/HTTP  
-HTTP Header Fields https://en.wikipedia.org/wiki/List_of_HTTP_header_fields, Media types (MIME):   https://www.iana.org/assignments/media-types/media-types.xhtml
-HTTPS,  HTTP over TLS or SSL:  https://en.wikipedia.org/wiki/HTTPS 
-HTTP  mentioned by Hadley Wickham:
-    -   https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177
-    -   https://www.jmarshall.com/easy/http/
-    -   https://docs.python-requests.org/en/master/user/quickstart/
+Command Line book:      https://datascienceatthecommandline.com/2e/index.html
+
+  *  JSON   https://cran.r-project.org/web/packages/jsonlite/index.html
+  *  HTTP protocol MDN https://developer.mozilla.org/en-US/docs/Web/HTTP
+  *  HTTP Header Fields https://en.wikipedia.org/wiki/List_of_HTTP_header_fields, Media types (MIME):   https://www.iana.org/assignments/media-types/media-types.xhtml
+  *  HTTPS,  HTTP over TLS or SSL:  https://en.wikipedia.org/wiki/HTTPS 
+  *  HTTP  mentioned by Hadley Wickham:
+  *      -   https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177
+  *      -   https://www.jmarshall.com/easy/http/
+  *      -   https://docs.python-requests.org/en/master/user/quickstart/
 
 Media Types (was MIME): https://en.wikipedia.org/wiki/Media_type   
                         https://docs.github.com/en/rest/overview/media-types
@@ -261,38 +255,32 @@ RFC
   *  RFC 6750 Bearer Token: https://datatracker.ietf.org/doc/html/rfc6750  
 SOAP https://en.wikipedia.org/wiki/SOAP
 URI  https://en.wikipedia.org/wiki/Uniform_Resource_Identifier
-URL  
-
 
 
 #### OAUTH 2.0 & Security
 
-AUTH Code   
-AUTH CODE   
-AUTH SERVER  
-AUTH Token (??  or Access Token)  
 Token, Service Account:  https://gargle.r-lib.org/articles/get-api-credentials.html#service-account-token
-
-Grant  
-identity, identify server
 OAuth 2.0 Protocol (https://datatracker.ietf.org/doc/html/rfc6749)  
 oob (out-of-band)  https://docs.auth3.dev/grant-types/urn-ietf-wg-oauth-2.0-oob
 openSSL
-USER  
 
 #### Popular APIs 
   *  GitHub API https://docs.github.com/en/rest
   *  GitLab API https://vulpes.cba.mit.edu/help/api/index.md
   *  Google Cloud  https://cloud.google.com/   
   *  Google Cloud Platform  https://console.developers.google.com/products https://en.wikipedia.org/wiki/Google_Cloud_Platform  
-    *   Google Cloud Platform (GCP)  
-    *   Google Explorer    
-    *   Google Identity (https://developers.google.com/identity)    
-    *   Google OAuth2.0 implementation (https://developers.google.com/identity/protocols/oauth2#installed)    
-    *   google people api  
-    *   google web fonts api  
-    *   googleapis.com  
-    *   googleAuthR::  
+
+####	Google Specific
+  *  Google Cloud Platform (GCP)
+  *  Google Explorer 
+  *  Google Identity (https://developers.google.com/identity)
+  *  Google OAuth2.0 implementation (https://developers.google.com/identity/protocols/oauth2#installed)
+  *  google people api  https://developers.google.com/people/  
+  *  google web fonts api
+  *  googleapis.com
+  *  googleAuthR:: 
+  *  For Youtube (installed apps, like R):
+     *  https://developers.google.com/youtube/v3/guides/auth/installed-apps
 
 #### R and related
 
@@ -305,9 +293,7 @@ gargle::   good intro (https://www.tidyverse.org/blog/2021/07/gargle-1-2-0/)
 httptest2:: https://enpiar.com/httptest2/index.html  
 httpuv, libuv (https://cran.r-project.org/package=httpuv)   https://nikhilm.github.io/uvbook/introduction.html  
 httr2:: github https://github.com/r-lib/httr2  cran https://cloud.r-project.org/web/packages/httr2/index.html  
-httr::  
 S3, class httr2_token  
-Workload Identity federation  
 plumber
 
 
@@ -349,6 +335,12 @@ Okta.com
   *	https://cj.rs/blog/my-setup/nvim-0-5/
   *	https://benfrain.com/refactor-your-neovim-init-lua-single-file-to-modules-with-packer/
   *	https://github.com/nanotee/nvim-lua-guide
+
+####	Lua
+  *  	https://www.lua.org/manual/5.4/
+  *	http://www.lua.org/pil/contents.html (1st ed)
+  *	https://learnxinyminutes.com/docs/lua/ (learn X in Y)
+  *	http://lua-users.org/wiki/LuaDirectory (lua tutorial, wiki)
 
 ####	Plugins
 
