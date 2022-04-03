@@ -162,12 +162,13 @@ Call Stacks:
 ###  Latex (.tex, latex, not knitr, markdown, pandoc)
 Many, many, of course, but these emphsize basic .tex documents.
 
+  *  [https://learnbyexample.github.io/customizing-pandoc/](Good tips)
+  *  \href{https://ctan.math.illinois.edu/info/lshort/english/lshort.pdf}{Not So Short Introduction}
   *  Latex:  Latex in 24 hours (iPad)
   *  https://mirrors.rit.edu/CTAN/info/beginlatex/html/intro.html#intro
   *  wikibooks:     https://en.wikibooks.org/wiki/LaTeX/Document_Structure
   *  http://ctan.imsc.res.in/info/first-latex-doc/first-latex-doc.pdf
   *   https://texfaq.org/FAQ-man-latex
-  *  Not So Short Introduction(https://ctan.math.illinois.edu/info/lshort/english/lshort.pdf)
   *  AMS  documentation      https://www.latex-project.org/help/documentation/amsldoc.pdf
   *  LuaTex Manual:   http://www.pragma-ade.com/general/manuals/luatex.pdf 
   *  LuaTex Background Overleaf:  https://www.overleaf.com/learn/latex/Articles/An_Introduction_to_LuaTeX_(Part_1)%3A_What_is_it%E2%80%94and_what_makes_it_so_different%3F
@@ -203,7 +204,7 @@ Many, many, of course, but these emphsize basic .tex documents.
   *  [Gargle docs include discussion of a few Google Cloud features](https://gargle.r-lib.org/articles/get-api-credentials.html)
   *  [Mozilla MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP)
   *  [Request body](https://stackoverflow.com/questions/978061/http-get-with-request-body)
-  *   https://oauth.com (Aaron Parecki)
+  *  https://oauth.com (Aaron Parecki)
   *   web technologies, including RESTFUL, https://www.se.rit.edu/~swen-344/expectations/
   *  [RFC Specs](https://www.rfc-editor.org/)
   *  JSON - https://json-schema.org/
@@ -219,7 +220,7 @@ Many, many, of course, but these emphsize basic .tex documents.
   *   [freeCodeCamp](https://www.youtube.com/watch?v=VywxIQ2ZXw4) Postman Intro.
   *   [Oauth 2.0 - Explain like I am 5] (https://www.youtube.com/watch?v=hHRFjbGTEOk)
   *   \url{https://www.youtube.com/watch?v=rhi1eIjSbvkh} Basic Authentication: urlencode, user:pass, how browser responds, TLS
-  *   Curl's Creater https://youtu.be/I6id1Y0YuNk?list=PLbcglKxZP5PN07Vw-0ukcDJCxFGY2Crgc
+  *   Curl's Creator https://youtu.be/I6id1Y0YuNk?list=PLbcglKxZP5PN07Vw-0ukcDJCxFGY2Crgc
   *   Postman and GitHub: https://youtu.be/AfuL7AFpFmQ?list=PLbcglKxZP5PN07Vw-0ukcDJCxFGY2Crgc
   *   Plumber::,R, api https://www.youtube.com/watch?v=J0Th2QRZ7Rk
 
@@ -291,7 +292,9 @@ fakerapi.it fakerapi https://fakerapi.it/en
 gargle::   good intro (https://www.tidyverse.org/blog/2021/07/gargle-1-2-0/)  
 .httr-oauth  
 httptest2:: https://enpiar.com/httptest2/index.html  
-httpuv, libuv (https://cran.r-project.org/package=httpuv)   https://nikhilm.github.io/uvbook/introduction.html  
+httpuv, libuv 
+(https://cran.r-project.org/package=httpuv)   
+  *  https://nikhilm.github.io/uvbook/introduction.html  
 httr2:: github https://github.com/r-lib/httr2  cran https://cloud.r-project.org/web/packages/httr2/index.html  
 S3, class httr2_token  
 plumber
