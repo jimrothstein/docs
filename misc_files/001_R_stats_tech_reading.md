@@ -225,30 +225,32 @@ Many, many, of course, but these emphsize basic .tex documents.
   *   Plumber::,R, api https://www.youtube.com/watch?v=J0Th2QRZ7Rk
 
 CRAN Task Views:  Web Technology & Services: https://cran.r-project.org/web/views/WebTechnologies.html
+  *  (R & Dropbox) https://github.com/karthik/rdrop2 (2020)
+  *  (R & Predictit) https://github.com/kiernann/predictr
 
 Vocabulary  (also:   [https://developer.mozilla.org/en-US/docs/Glossary](https://developer.mozilla.org/en-US/docs/Glossary) )     
 
 ####    HTTP, JSON, RFC and Web Technologies
 
-Curl:   [https://everything.curl.dev/](https://everything.curl.dev/)  
-        https://stackoverflow.com/users/93747/daniel-stenberg
-        https://daniel.haxx.se/blog/
+##### Curl:   
+  *  [https://everything.curl.dev/](https://everything.curl.dev/)  
+  *  https://stackoverflow.com/users/93747/daniel-stenberg
+  *  https://daniel.haxx.se/blog/
 
-
-Command Line book:      https://datascienceatthecommandline.com/2e/index.html
-
+##### HTTP
+  *  Command Line book:      https://datascienceatthecommandline.com/2e/index.html
   *  JSON   https://cran.r-project.org/web/packages/jsonlite/index.html
   *  HTTP protocol MDN https://developer.mozilla.org/en-US/docs/Web/HTTP
   *  HTTP Header Fields https://en.wikipedia.org/wiki/List_of_HTTP_header_fields, Media types (MIME):   https://www.iana.org/assignments/media-types/media-types.xhtml
   *  HTTPS,  HTTP over TLS or SSL:  https://en.wikipedia.org/wiki/HTTPS 
   *  HTTP  mentioned by Hadley Wickham:
-	-	https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177
-    *	https://www.jmarshall.com/easy/http/
+    -  https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177
+    -  https://www.jmarshall.com/easy/http/
   	*	https://docs.python-requests.org/en/master/user/quickstart/
 
 Media Types (was MIME): https://en.wikipedia.org/wiki/Media_type   
                         https://docs.github.com/en/rest/overview/media-types
-RFC  
+##### RFC  
   -  RFC 2616 HTTP 2.1  https://www.rfc-editor.org/rfc/rfc2616  
   -  RFC 2617 Basic Authentication https://www.rfc-editor.org/rfc/rfc2617  
   -  RFC 3986 + RFC 8820 URI/URL
@@ -258,18 +260,31 @@ SOAP https://en.wikipedia.org/wiki/SOAP
 URI  https://en.wikipedia.org/wiki/Uniform_Resource_Identifier
 
 
-#### OAUTH 2.0 & Security
+#### OAUTH 2.0,  Security , Authentication
 
-Token, Service Account:  https://gargle.r-lib.org/articles/get-api-credentials.html#service-account-token
-OAuth 2.0 Protocol (https://datatracker.ietf.org/doc/html/rfc6749)  
-oob (out-of-band)  https://docs.auth3.dev/grant-types/urn-ietf-wg-oauth-2.0-oob
-openSSL
+  *  Token, Service Account:  https://gargle.r-lib.org/articles/get-api-credentials.html#service-account-token
+  *  OAuth 2.0 Protocol (https://datatracker.ietf.org/doc/html/rfc6749)  
+  *  oob (out-of-band)  https://docs.auth3.dev/grant-types/urn-ietf-wg-oauth-2.0-oob (use their
+  identity server for standard RFC methods)
+  *  openSSL
+  *  https://developer.okta.com/
+  *  https://oauth.net
+  *  microsoft/open_id:  https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-protocols-oidc
+  *  auth0.com: https://auth0.com/docs/get-started
 
 #### Popular APIs 
   *  GitHub API https://docs.github.com/en/rest
   *  GitLab API https://vulpes.cba.mit.edu/help/api/index.md
   *  Google Cloud  https://cloud.google.com/   
   *  Google Cloud Platform  https://console.developers.google.com/products https://en.wikipedia.org/wiki/Google_Cloud_Platform  
+  *  Spotify (api + authorization): https://developer.spotify.com/documentation/general/guides/ 
+  *  Spotify & Postman:  https://www.youtube.com/watch?v=5TNQf2gBrd8
+  *  Dropbox: https://www.dropbox.com/developers
+  *  Predictit.org: https://www.predictit.org/api/marketdata/all/  (xml dump,
+  must write you own functions)
+  *  ConstantContact: https://v3.developer.constantcontact.com/
+
+
 
 ####	Google Specific
   *  Google Cloud Platform (GCP)
@@ -293,10 +308,12 @@ gargle::   good intro (https://www.tidyverse.org/blog/2021/07/gargle-1-2-0/)
 .httr-oauth  
 httptest2:: https://enpiar.com/httptest2/index.html  
 httpuv, libuv 
-(https://cran.r-project.org/package=httpuv)   
-  *  https://nikhilm.github.io/uvbook/introduction.html  
-httr2:: github https://github.com/r-lib/httr2  cran https://cloud.r-project.org/web/packages/httr2/index.html  
-S3, class httr2_token  
+  *  https://cran.r-project.org/package=httpuv   
+  *  https://nikhilm.github.io/uvbook/introduction.html  (low-level, C code,
+  but good sense of what is happening)
+httr2:: 
+  *  github https://github.com/r-lib/httr2  
+  *  cran https://cloud.r-project.org/web/packages/httr2/index.html  
 plumber
 
 
@@ -319,7 +336,7 @@ Restful
 
 #### MISC  
 Openstack (Cloud) https://docs.openstack.org/api-quick-start/
-Okta.com
+
 
 
 ###	NEOVIM/LUA
