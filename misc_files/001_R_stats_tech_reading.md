@@ -1,11 +1,11 @@
 ---
 date:  \today
-geometry:  margin=0.5in, top=0.25in
+# geometry:  margin=0.5in, top=0.25in
 TAGS:  reading list
 ---
 
 <!--
-WANT linkable HTML links? Must use [text portion](url portion)
+LINK:  [TEXT portion](URL portion)
 
 file <- "001_R_stats_tech_reading.md"
 !pandoc % -t latex -V linkcolor:blue -V fontsize=10pt -V geometry:margin=0.4in -o ~/Downloads/print_and_delete/reading.pdf 
@@ -83,6 +83,8 @@ As of \today
   *  Nahim,  Dueling Idiots, harder but real world stats/prob problems (pins
       falling on surfaces)
 
+####	Blogs
+  -  https://towardsdatascience.com/
 
 ####  R, the Language: Functional, Standard and Non- Evaluation, Environments,
 Call Stacks:
@@ -139,7 +141,39 @@ Call Stacks:
       Biology?  math?  probability?   Think this is really an ideas book; not
       as easy as may appear.
   *  ISLRv2:       https://web.stanford.edu/~hastie/ISLRv2_website.pdf
+	*  UCLA:  Mixed Models - intro:  https://stats.oarc.ucla.edu/other/mult-pkg/introduction-to-linear-mixed-models/
 
+\newpage
+####  Joins (merge)
+  -  https://rdatatable.gitlab.io/data.table/index.html
+  -  https://stackoverflow.com/questions/1299871/how-to-join-merge-data-frames-inner-outer-left-right?noredirect=1&lq=1
+	-  https://jozef.io/r006-merge/
+	-
+https://gist.github.com/nacnudus/ef3b22b79164bbf9c0ebafbf558f22a0  
+https://stackoverflow.com/questions/1299871/how-to-join-merge-data-frames-inner-outer-left-right  
+https://stackoverflow.com/questions/12773822/why-does-xy-join-of-data-tables-not-allow-a-full-outer-join-or-a-left-join  
+https://github.com/LucyNjoki/R-LadiesAbuja_Data-Manipulation-with-data.table-in-R/issues/3#issuecomment-1097736781  
+https://docs.microsoft.com/en-us/sql/t-sql/language-reference?view=sql-server-ver15  
+https://stackoverflow.com/questions/25430986/create-nested-data-tables-by-collapsing-rows-into-new-data-tables  
+https://stackoverflow.com/questions/67261777/data-table-join-is-hard-to-understand  
+https://stackoverflow.com/questions/54312225/which-data-table-syntax-for-left-join-one-column-to-prefer/54313203#54313203  
+https://rdatatable.gitlab.io/data.table/  
+https://jozef.io/r006-merge/  
+https://themockup.blog/posts/2020-09-04-10-table-rules-in-r/  
+https://github.com/TysonStanley/tidyfast  
+https://mkmanu.wordpress.com/2016/04/08/working-with-data-frames-in-r-joins-and-merging/  
+https://stackoverflow.com/questions/34124928/can-i-use-the-r-data-table-join-capability-to-select-rows-and-perform-some-opera  
+https://rpubs.com/ronasta/join_data_tables  
+https://web.archive.org/web/20131114060032/http://rwiki.sciviews.org/doku.php?id=tips%3adata-frames%3amerge  
+https://johnmackintosh.net/blog/2021-03-22-some-data-table-tips/  
+https://rstudio-pubs-static.s3.amazonaws.com/52230_5ae0d25125b544caab32f75f0360e775.html  
+https://github.com/ggrothendieck/sqldf#readme  
+https://cran.r-project.org/web/packages/dplyr/vignettes/two-table.html  
+https://thoughtbot.com/blog/back-to-basics-sql  
+https://sqlzoo.net/wiki/The_JOIN_operation  
+https://martinctc.github.io/blog/using-data.table-with-magrittr-pipes-best-of-both-worlds/  
+
+\newpage
 ### Linear Algebra (as mathematics)
 
   *  Beezer Linear Algebra (easier?)
@@ -169,10 +203,16 @@ Many, many, of course, but these emphsize basic .tex documents.
   *  wikibooks:     https://en.wikibooks.org/wiki/LaTeX/Document_Structure
   *  http://ctan.imsc.res.in/info/first-latex-doc/first-latex-doc.pdf
   *   https://texfaq.org/FAQ-man-latex
-  *  AMS  documentation      https://www.latex-project.org/help/documentation/amsldoc.pdf
   *  LuaTex Manual:   http://www.pragma-ade.com/general/manuals/luatex.pdf 
   *  LuaTex Background Overleaf:  https://www.overleaf.com/learn/latex/Articles/An_Introduction_to_LuaTeX_(Part_1)%3A_What_is_it%E2%80%94and_what_makes_it_so_different%3F
   *  Fontspec pkg (for LuaTex) https://mirrors.rit.edu/CTAN/macros/unicodetex/latex/fontspec/fontspec.pdf
+
+	Math Mode
+
+  *  AMS math  documentation      https://www.latex-project.org/help/documentation/amsldoc.pdf
+	*  https://www1.cmc.edu/pages/faculty/aaksoy/latex/latexthree.html#
+	*  http://web.mit.edu/rsi/www/pdfs/math.pdf
+	*  https://www.atqed.com/latex-column-vector
 
 ### Good Technical Reading
   *  Linux:  Archiwiki, Debian, FreeBSD
@@ -271,13 +311,14 @@ URI  https://en.wikipedia.org/wiki/Uniform_Resource_Identifier
   *  https://oauth.net
   *  microsoft/open_id:  https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-protocols-oidc
   *  auth0.com: https://auth0.com/docs/get-started
+	*  openID:  https://en.wikipedia.org/wiki/OpenID
 
 #### Popular APIs 
   *  GitHub API https://docs.github.com/en/rest
   *  GitLab API https://vulpes.cba.mit.edu/help/api/index.md
-  *  Google Cloud  https://cloud.google.com/   
-  *  Google Cloud Platform  https://console.developers.google.com/products https://en.wikipedia.org/wiki/Google_Cloud_Platform  
-  *  Spotify (api + authorization): https://developer.spotify.com/documentation/general/guides/ 
+  *  Google Cloud  https://cloud.google.com/
+  *  Google Cloud Platform  https://console.developers.google.com/products https://en.wikipedia.org/wiki/Google_Cloud_Platform
+  *  Spotify (api + authorization): https://developer.spotify.com/documentation/general/guides/
   *  Spotify & Postman:  https://www.youtube.com/watch?v=5TNQf2gBrd8
   *  Dropbox: https://www.dropbox.com/developers
   *  Predictit.org: https://www.predictit.org/api/marketdata/all/  (xml dump,
@@ -288,79 +329,68 @@ URI  https://en.wikipedia.org/wiki/Uniform_Resource_Identifier
 
 ####	Google Specific
   *  Google Cloud Platform (GCP)
-  *  Google Explorer 
   *  Google Identity (https://developers.google.com/identity)
   *  Google OAuth2.0 implementation (https://developers.google.com/identity/protocols/oauth2#installed)
-  *  google people api  https://developers.google.com/people/  
+  *  google people api  https://developers.google.com/people/
   *  google web fonts api
-  *  googleapis.com
-  *  googleAuthR:: 
-  *  For Youtube (installed apps, like R):
-     *  https://developers.google.com/youtube/v3/guides/auth/installed-apps
+  *  For Youtube (installed apps, like R): https://developers.google.com/youtube/v3/guides/auth/installed-apps
+
 
 #### R and related
 
-curl::  (based on C library used in cURL) https://jeroen.cran.dev/curl/index.html
-cloudyR project  
-curlconverter:: https://github.com/hrbrmstr/curlconverter  
-fakerapi.it fakerapi https://fakerapi.it/en  
-gargle::   good intro (https://www.tidyverse.org/blog/2021/07/gargle-1-2-0/)  
-.httr-oauth  
-httptest2:: https://enpiar.com/httptest2/index.html  
-httpuv, libuv 
-  *  https://cran.r-project.org/package=httpuv   
-  *  https://nikhilm.github.io/uvbook/introduction.html  (low-level, C code,
-  but good sense of what is happening)
-httr2:: 
-  *  github https://github.com/r-lib/httr2  
-  *  cran https://cloud.r-project.org/web/packages/httr2/index.html  
-plumber
-
+  -  curl::  (based on C library used in cURL) https://jeroen.cran.dev/curl/index.html
+  -  cloudyR project
+  -  curlconverter:: https://github.com/hrbrmstr/curlconverter
+  -  fakerapi.it fakerapi https://fakerapi.it/en
+  -  gargle::   good intro (https://www.tidyverse.org/blog/2021/07/gargle-1-2-0/)
+  -  httptest2:: https://enpiar.com/httptest2/index.html
+  -  httpuv, libuv
+    -  https://cran.r-project.org/package=httpuv
+    -  https://nikhilm.github.io/uvbook/introduction.html  (low-level, C code, but good sense of what is happening)
+  -  httr2::
+    -  github https://github.com/r-lib/httr2
+    -  cran https://cloud.r-project.org/web/packages/httr2/index.html
+  -  plumber
 
 ####    RESTFUL API
 
-Bearer Token  RFC 6750, Unclear to me:  A access token tied to a client that
-that resource has verified?  Google does it differently? 
-  *  Client obtains in response  header with access_token, but token_type is "Bearer"
-  *  Three methods for client to obtain (given it has access token):
-     GET, with request header for Bearer 
-     As POST, in form body + encoding
-     (do not use) in URI query
-OpenApi (was Swagger) https://swagger.io/docs/specification/about/
-Postman  
-Restful  
-    https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm; 
-    https://en.wikipedia.org/wiki/Representational_state_transfer#Architectural_constraints 
-    https://restfulapi.net/  
-    http://www.cse.lehigh.edu/~spear/cse216_tutorials/tut_spark/index.html  
 
-#### MISC  
-Openstack (Cloud) https://docs.openstack.org/api-quick-start/
-
-
+  -  OpenApi (api doc rules:  openapi.json or openapi.yaml; was Swagger) https://oai.github.io/Documentation/specification.html
+  -  Postman
+    -  30-day tutorial: https://www.postman.com/postman/workspace/f1c6b0a9-b930-4165-9aa4-f655dd7051b5/overview
+  -  https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm;
+  -  https://en.wikipedia.org/wiki/Representational_state_transfer#Architectural_constraints
+  -  https://restfulapi.net/
+  -  http://www.cse.lehigh.edu/~spear/cse216_tutorials/tut_spark/index.html
+  -  Openstack (Cloud) https://docs.openstack.org/api-quick-start/
 
 ###	NEOVIM/LUA
 
 ####	Config
-  *	https://neovim.io/doc/user/quickref.html#option-list  
-  *	Ex:	https://github.com/whatsthatsmell/dots/tree/master/public%20dots/vim-nvim  
-  *	https://cj.rs/blog/my-setup/nvim-0-5/  
+  *	https://neovim.io/doc/user/quickref.html#option-list
+  *	Code Ex:	| Joel | goal: understand ! |https://github.com/whatsthatsmell/dots/tree/master/public%20dots/vim-nvim  
+  *	https://cj.rs/blog/my-setup/nvim-0-5/  | go to playlists | view all
+	playlists | choose by length, date etc. 
   *	Statusline: https://elianiva.my.id/post/neovim-lua-statusline#active-statusline
-  *	https://www.jakewiesler.com/blog/getting-started-with-vim
+  *	https://www.jakewiesler.com/blog/getting-started-with-vim | Jake | good
+	but limited.
   *	blog + https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/
   *	blog + https://blog.devgenius.io/create-custom-keymaps-in-neovim-with-lua-d1167de0f2c2
   *	Ex: 	https://gitlab.com/mcepl/vimdir/-/tree/master/plugin	
   *	Ex:	https://github.com/samuelludwig/nixrc/tree/master/modules/user/nvim/lua/dot
   *	300 line challenge: 	https://neovim.discourse.group/t/the-300-line-init-lua-challenge/227
-  *	https://cj.rs/blog/my-setup/nvim-0-5/
   *	https://benfrain.com/refactor-your-neovim-init-lua-single-file-to-modules-with-packer/
   *	https://github.com/nanotee/nvim-lua-guide
+  *	kickstart:  https://github.com/nvim-lua/kickstart.nvim/blob/master/init.lua
 
 ####	Lua
-  *  	https://www.lua.org/manual/5.4/
-  *	http://www.lua.org/pil/contents.html (1st ed)
-  *	https://learnxinyminutes.com/docs/lua/ (learn X in Y)
-  *	http://lua-users.org/wiki/LuaDirectory (lua tutorial, wiki)
+\begin{enumerate}
+  \item https://www.lua.org/manual/5.4/
+  \item	http://www.lua.org/pil/contents.html (1st ed)
+  \item	https://learnxinyminutes.com/docs/lua/ (learn X in Y)
+  \item	http://lua-users.org/wiki/LuaDirectory (lua tutorial, wiki)
+	\item Lua by example:		https://luabyexample.org/
+\end{enumerate}
 
 ####	Plugins
 
