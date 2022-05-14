@@ -1,25 +1,26 @@
 
 ####
 # =======================================
-#   As of 12 OCT 2021
+#   As of 11 MAY 2022
+#
+#		Mostly TECHNICAL DOCUMENTATION.
 #   
 #   ToDO:
-#   Document various directories (most are below) and what goes where.
-#   Also, which belong ~/code/jimHelp ?
+#		-	Remove personal.
+#		- Tidy, consolidate.
 # =======================================
 
-# ~/code/MASTER_INDEX.md
-#### ls -d1 */
 
-ALZ_legal/
-backup_code_KEEP/
-correspondence/
-JOB/
-markdown_examples/
-medical/
-misc_files/
-technical_notes/
 
+~
+001_tech_reading.md
+300_tech_notes.md
+chapter_break.tex
+exclude_files.txt
+medical_notes
+medical_notes.md
+misc_files
+README.md
 
 <!-- comment
 -->

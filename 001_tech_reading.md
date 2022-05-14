@@ -10,16 +10,13 @@ LINK:  [TEXT portion](URL portion)
 file <- "001_R_stats_tech_reading.md"
 !pandoc % -t latex -V linkcolor:blue -V fontsize=10pt -V geometry:margin=0.4in -o ~/Downloads/print_and_delete/reading.pdf 
 
-!pandoc % -t latex -V linkcolor:blue -V fontsize=12pt -V geometry:margin=0.5in -o ~/Downloads/print_and_delete/out.pdf
-!pandoc % -t latex -V linkcolor:blue -V fontsize=10pt -V geometry:margin=0.3in -o %.html
-!pandoc % -t latex -V linkcolor:blue -V fontsize=10pt -V geometry:margin=0.3in -o $OUT/%.pdf
 
 !pandoc -t latex -M date="`date "+%B %e, %Y"`" -o %.pdf
 -H header
 -V or --variable
 --pdf-engine=xelatex
 
-PANDOC EXAMPLES:
+REF:
 https://learnbyexample.github.io/tutorial/ebook-generation/customizing-pandoc/
 
 MARKDOWN GUIDE:
@@ -38,7 +35,7 @@ As of \today
   *  Peng, https://bookdown.org/rdpeng/rprogdatascience/
   *  Hadley, https://r4ds.had.co.nz/index.html
   *	 [Jennybc (book)](https://stat545.com/index.html) [wtf](https://rstats.wtf/) [git](https://happygitwithr.com/)
-  *  Gillespie (2016) https://bookdown.org/csgillespie/efficientR/
+  *  Gillespie, Lovelace (2016) https://bookdown.org/csgillespie/efficientR/
   *  Matloff:  Art of R Programming (2011)
   *  de Jong, Intro to Data Cleaning  https://cran.r-project.org/doc/contrib/de_Jonge+van_der_Loo-Introduction_to_data_cleaning_with_R.pdf
   
@@ -54,12 +51,14 @@ As of \today
 
 #### More Intuitive/Explanatory:
   *  [Rossman, know all the basics?   confident?]  ( https://askgoodquestions.blog/ )
-  *  Przemyslaw Biecek and Tomasz Burzykowski | different ideas | Ch1, 2 Explanatory Model Analysis |  https://ema.drwhy.ai/
+  *  Przemyslaw Biecek and Tomasz Burzykowski | different ideas | Ch1, 2 Explanatory Model Analysis | https://ema.drwhy.ai/
   *  ML Berkeley:  https://ml.berkeley.edu/blog/posts/crash-course/part-1/
   *  Goodfellow et al: https://www.deeplearningbook.org/ ideas
   *  Guo:  Creative site and book: https://seeing-theory.brown.edu/#firstPage
   *  navarro (learn statistics with r) review lm() and geometric r^2, Ch15, 16
   *  navarro  2019 (learn statistics with r) study output of lm()
+	*  Huntington https://www.theeffectbook.net/index.html (intutition?)
+
 
 #### Solid, basic stats intros
   *  PSU Course begin with 414 | | no R
@@ -83,12 +82,10 @@ As of \today
   *  Nahim,  Dueling Idiots, harder but real world stats/prob problems (pins
       falling on surfaces)
 
-####	Blogs
+####	Blogs::::
   -  https://towardsdatascience.com/
 
-####  R, the Language: Functional, Standard and Non- Evaluation, Environments,
-Call Stacks:
-
+####  R, the Language: Functional, Standard and Non- Evaluation, Environments, Call Stacks:
 
   *  Gaslam, Brodie - blog - several good posts
     *   NSE:  https://www.brodieg.com/2020/05/05/on-nse/
@@ -104,31 +101,23 @@ Call Stacks:
 ### Other book stats/R books:
 
   *  Hannay (=rbassett) read, (avoid pkgs ch 11, 12) | https://faculty.nps.edu/rbassett/_book/
-  *  Compeau:  
-    *  great ideas book! http://compeau.cbd.cmu.edu/  |  
-    *  http://compeau.cbd.cmu.edu/programming-for-lovers/ cmu -	ch 8, 9 esp collinear.  
-  *  Berkeley, excellent glossary: https://www.stat.berkeley.edu/~stark/SticiGui/Text/gloss.htm
   *  Ismay modern dive (2020)
   *  Kaplan (2017) ch 6.5 https://dtkaplan.github.io/SM2-bookdown/
   *	 Kurz: Statistial Rethinking reCoded (Bayesian)
   *	 Lane se(b_hat)
   *	 Matloff(2020) book
   *	 Mcelreath (videos)
-  *	 PENG  | 	art of ... (2017) ch 6.5 | r4ds			 (2019)	ch 9.5
+  *	 PENG  | 	art of ... (2017) ch 6.5 ( https://bookdown.org/rdpeng/artofdatascience/) | r4ds			 (2019)	ch 9.5
   * 	mosaic ch 5.6, ch 24
 
 ### More advanced regession/modeling books
-  *  Shalizi:  excellent:
-    *  (2019) http://www.stat.cmu.edu/~cshalizi/TALR/ -deeper/more
-        explanatory. By Ch 11, use of gradient f, matrix derviatives ....
-        (following FARA?)
-    *  Shalizi http://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/ADAfaEPoV.pdf  
-    *  http://www.stat.cmu.edu/~cshalizi/mreg/15/
-  *  Boehmke Hands on ML | https://bradleyboehmke.github.io/HOML/ Ch 4,5
-  *  Davidson (Econometric) -  Ch 1, 2
-  *  MATLOFF (1st book) |	ch3 - lot of useful prproperties of x,y  | 	ch 7  - affine transformations
-  *  Thomas,  Math for ML  ... good lin alg, but quickly gets advanced.  https://gwthomas.github.io/docs/math4ml.pdf
-  *  Deisenroth, Faiesel et al | Math4ML *book | linear alg book, regression, 2nd level
+
+  -  Shalizi:  excellent:
+    -  (2019) http://www.stat.cmu.edu/~cshalizi/TALR/ -deeper/more explanatory. By Ch 11, use of gradient f, matrix derviatives ....
+    -  Shalizi http://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/ADAfaEPoV.pdf    
+    -  http://www.stat.cmu.edu/~cshalizi/mreg/15/  
+  -  Davidson (Econometric) -  Ch 1, 2
+  -  MATLOFF (1st book) |	ch3 - lot of useful prproperties of x,y  | 	ch 7  - affine transformations
   *  Efron, Hastie "Computer Age Statistical Inference"  (advanced, but
       chapter intros put techniques into perspective), no R.
   *  Kuhn (2019): https://bookdown.org/max/FES/
@@ -143,7 +132,87 @@ Call Stacks:
   *  ISLRv2:       https://web.stanford.edu/~hastie/ISLRv2_website.pdf
 	*  UCLA:  Mixed Models - intro:  https://stats.oarc.ucla.edu/other/mult-pkg/introduction-to-linear-mixed-models/
 
+####	Algorithms & ML
+  -  Compeau:  
+    -  great ideas book! http://compeau.cbd.cmu.edu/  |  
+    -  http://compeau.cbd.cmu.edu/programming-for-lovers/ cmu -	ch 8, 9 esp collinear.  
+  -  Berkeley, excellent glossary: https://www.stat.berkeley.edu/~stark/SticiGui/Text/gloss.htm
+  -  Boehmke Hands on ML | https://bradleyboehmke.github.io/HOML/ Ch 4,5
+  -  Thomas,  Math for ML  ... good lin alg, but quickly gets advanced.  https://gwthomas.github.io/docs/math4ml.pdf
+  -  Deisenroth, Faiesel et al | Math4ML *book | linear alg book, regression, 2nd level
+	-  Downey, Allen "Thinking Bayes" https://www.greenteapress.com/thinkbayes/thinkbayes.pdf
+
+#### Linear Algebra (as mathematics)
+
+  *  Beezer Linear Algebra (easier?)
+  *  Herve Adbi | lin alg| no R, no stat, starts simple but gets to decomposition.
+  *  Strang, Linear Algebra (classic)
+  *  Artin, Michael "Algebra"  - readable ?
+  *	 Friendly - R Pkg linear algebra
+  *  Kazan |  normal equations
+
+
+#### Intro to Linear Alg & Models, 
+
+  *  Kuiper, Shonda: simple, clear:   video: https://www.youtube.com/watch?v=jQkK0XMrAdM
+  *  Race, Shaina gentle intro to lin alg:, https://shainarace.github.io/LinearAlgebra/index.html 
+  *  Thomas, Garrett, Math for ML, Berkeley  https://gwthomas.github.io/docs/math4ml.pdf
+  *  Bendixcarstensen.com, with R & matrix models (practical; try not use api pkg) http://www.bendixcarstensen.com/APC/linalg-notes-BxC.pdf
+  *	 Rafael genomics - Chapter 4 matrix  
+   
+
+####  Latex (.tex, latex, not knitr, markdown, pandoc)
+
+  *  [https://learnbyexample.github.io/customizing-pandoc/](Good tips)
+  *  \href{https://ctan.math.illinois.edu/info/lshort/english/lshort.pdf}{Not So Short Introduction}
+  *  Latex:  Latex in 24 hours (iPad)
+  *  https://mirrors.rit.edu/CTAN/info/beginlatex/html/intro.html#intro
+  *  wikibooks:     https://en.wikibooks.org/wiki/LaTeX/Document_Structure
+  *  http://ctan.imsc.res.in/info/first-latex-doc/first-latex-doc.pdf
+  *  https://texfaq.org/FAQ-man-latex
+  *  LuaTex Manual:   http://www.pragma-ade.com/general/manuals/luatex.pdf 
+  *  LuaTex Background Overleaf:  https://www.overleaf.com/learn/latex/Articles/An_Introduction_to_LuaTeX_(Part_1)%3A_What_is_it%E2%80%94and_what_makes_it_so_different%3F
+  *  Fontspec pkg (for LuaTex) https://mirrors.rit.edu/CTAN/macros/unicodetex/latex/fontspec/fontspec.pdf
+	*  Video:   Michelle ... (very clear!)
+	
+
+	Math Mode
+
+  *  AMS math  documentation      https://www.latex-project.org/help/documentation/amsldoc.pdf
+	*  https://www1.cmc.edu/pages/faculty/aaksoy/latex/latexthree.html#
+	*  http://web.mit.edu/rsi/www/pdfs/math.pdf
+	*  https://www.atqed.com/latex-column-vector
+
+### Good Technical Reading
+  *  Linux:  Archiwiki, Debian, FreeBSD
+  *  Gross, Ash et al "Elliptical Tales" - very readable, but must think!
+      (515.983 | ASH | 2012)
+  *  Seefeld, et al Biology & R | https://cran.r-project.org/doc/contrib/Seefeld_StatsRBio.pdf
+
+#### ZSH
+  *  Janssens, DS at Command Line: https://www.datascienceatthecommandline.com/2e/  
+        Great way to improve zsh, CLI skills.
+	*  Rothgar  Mastering ZSH: https://github.com/rothgar/mastering-zsh 
+
+
+### Videos
+  *   [maththebeautiful - Paul?]( https://www.youtube.com/c/MathTheBeautiful/playlists )
+  *   [Bright Side of Math]( https://www.youtube.com/channel/UCdwo4k1RQHTcq_-WS7Cazqg ) 
+  *   [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw)
+  *   Zedstatistics
+  *   [Chris Mack](http://www.lithoguru.com/scientist/statistics/course.html) -
+      practical R, models
+  *   [Statistics Globe](https://statisticsglobe.com/r-programming-language)
+  *   [Statquest - Josh Starmer](https://statquest.org/video-index/)
+
+<!--
+================================================================================================================================
+->
+
 \newpage
+
+\footnotesize
+
 ####  Joins (merge)
   -  https://rdatatable.gitlab.io/data.table/index.html
   -  https://stackoverflow.com/questions/1299871/how-to-join-merge-data-frames-inner-outer-left-right?noredirect=1&lq=1
@@ -172,70 +241,6 @@ https://cran.r-project.org/web/packages/dplyr/vignettes/two-table.html
 https://thoughtbot.com/blog/back-to-basics-sql  
 https://sqlzoo.net/wiki/The_JOIN_operation  
 https://martinctc.github.io/blog/using-data.table-with-magrittr-pipes-best-of-both-worlds/  
-
-\newpage
-### Linear Algebra (as mathematics)
-
-  *  Beezer Linear Algebra (easier?)
-  *  Herve Adbi | lin alg| no R, no stat, starts simple but gets to decomposition.
-  *  Strang, Linear Algebra (classic)
-  *  Artin, Michael "Algebra"  - readable ?
-  *	 Friendly - R Pkg linear algebra
-  *  Kazan |  normal equations
-
-
-#### Intro to Linear Alg & Models, 
-
-  *  Kuiper, Shonda: simple, clear:   video: https://www.youtube.com/watch?v=jQkK0XMrAdM
-  *  Race, Shaina gentle intro to lin alg:, https://shainarace.github.io/LinearAlgebra/index.html 
-  *  Thomas, Garrett, Math for ML, Berkeley  https://gwthomas.github.io/docs/math4ml.pdf
-  *  Bendixcarstensen.com, with R & matrix models (practical; try not use api pkg) http://www.bendixcarstensen.com/APC/linalg-notes-BxC.pdf
-  *	 Rafael genomics - Chapter 4 matrix  
-   
-
-###  Latex (.tex, latex, not knitr, markdown, pandoc)
-Many, many, of course, but these emphsize basic .tex documents.
-
-  *  [https://learnbyexample.github.io/customizing-pandoc/](Good tips)
-  *  \href{https://ctan.math.illinois.edu/info/lshort/english/lshort.pdf}{Not So Short Introduction}
-  *  Latex:  Latex in 24 hours (iPad)
-  *  https://mirrors.rit.edu/CTAN/info/beginlatex/html/intro.html#intro
-  *  wikibooks:     https://en.wikibooks.org/wiki/LaTeX/Document_Structure
-  *  http://ctan.imsc.res.in/info/first-latex-doc/first-latex-doc.pdf
-  *   https://texfaq.org/FAQ-man-latex
-  *  LuaTex Manual:   http://www.pragma-ade.com/general/manuals/luatex.pdf 
-  *  LuaTex Background Overleaf:  https://www.overleaf.com/learn/latex/Articles/An_Introduction_to_LuaTeX_(Part_1)%3A_What_is_it%E2%80%94and_what_makes_it_so_different%3F
-  *  Fontspec pkg (for LuaTex) https://mirrors.rit.edu/CTAN/macros/unicodetex/latex/fontspec/fontspec.pdf
-
-	Math Mode
-
-  *  AMS math  documentation      https://www.latex-project.org/help/documentation/amsldoc.pdf
-	*  https://www1.cmc.edu/pages/faculty/aaksoy/latex/latexthree.html#
-	*  http://web.mit.edu/rsi/www/pdfs/math.pdf
-	*  https://www.atqed.com/latex-column-vector
-
-### Good Technical Reading
-  *  Linux:  Archiwiki, Debian, FreeBSD
-  *  Gross, Ash et al "Elliptical Tales" - very readable, but must think!
-      (515.983 | ASH | 2012)
-  *  Seefeld, et al Biology & R | https://cran.r-project.org/doc/contrib/Seefeld_StatsRBio.pdf
-  *  Janssens, DS at Command Line: https://www.datascienceatthecommandline.com/2e/  
-        Great way to improve zsh, CLI skills.
-
-### Videos
-  *   [maththebeautiful - Paul?]( https://www.youtube.com/c/MathTheBeautiful/playlists )
-  *   [Bright Side of Math]( https://www.youtube.com/channel/UCdwo4k1RQHTcq_-WS7Cazqg ) 
-  *   [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw)
-  *   Zedstatistics
-  *   [Chris Mack](http://www.lithoguru.com/scientist/statistics/course.html) -
-      practical R, models
-  *   [Statistics Globe](https://statisticsglobe.com/r-programming-language)
-  *   [Statquest - Josh Starmer](https://statquest.org/video-index/)
-
-
-\newpage
-
-\footnotesize
 
 ### APIs and R
 
