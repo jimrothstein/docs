@@ -1,4 +1,8 @@
-as of 12 MAY 2022
+
+Mon May 16 01:41:35 PDT 2022
+TODO:
+  -	See Index Cards (bottom) - integrate that point to very bottom into main text
+
 ```
 This is block with 3 back ticks: green!
 ```
@@ -141,7 +145,7 @@ noremap <leader>tl Vy<C-w>wpa<CR><C-\><C-n><C-w>pj
 ```
 }
 
-# VIM writing_notes
+#### VIM writing_notes
 ```
 
 *jim_writing_notes1*
@@ -175,7 +179,17 @@ setlocal nosmartindent
 setlocal indentexpr=  
 ```
 
-# LUA
+####	GIT commands
+
+  -  Change git push from https to ssh
+
+```
+		git remote -v   shows using https:
+		git remote set-url origin git@github.com:jimrothstein/REPOSITORY.git 
+		git remote -v # shows using git:
+```
+
+#### LUA
 
 ```
 In lua, nil or false evaluate to:  false
@@ -534,6 +548,7 @@ as of \today:
 
 gf   (goto file)
 
+grep jim /var/log/syslog  # see cron jobs that ran
 
 
 # ZSH
@@ -1204,4 +1219,78 @@ Some Remarks:
   -	I am using httr2 to automate things;  I'd like to understand things using a little as possible:  curl, browser and local server running as localhost.  
   -	Most of the R work is done at lower level, such as packages curl and httpuv.  
 	
+
+
+# Mon May 16 01:40:07 PDT 2022
+
+
+###  Index Cards
+
+  -  LUA/language/neovim use
+  -  GIT
+  -  API/Curl
+  -  R - debug, env, frames, roxygen2, ...
+  -  SEARCH
+  -  LINUX - mostly config
+  -  VIM - daily use
+  -  ZSH - daily use
+
+LINUX on laptop
+  -  Settings: selected linux
+  -  downloaded and began, opens terminal:  Linux !
+  -  Chrome, browser, data all seems in place !
+  -  Only terminal is linux.  
+
+
+Source:  Rose Pesotta (HD6509.P47)
+1881 - ass'n Alexander III
+repression; ends period of limited reform
+BUT seed planted during liberalization remains, now underground discussions, travelers, variety of ideas, esp in shetls.   Boys faced constription, but girls if so radicalized faced reality of Jewish culture (babies, domestic work, religion...)
+1881 - 1914 1/3 of East Europian Jews go to US.
+
+1760
+George III (~ 17) educated, but poor understanding ppl.
+Continent (esp France) respect English power, but not English culture, resistance to change, a Parliament that acquiases.   FRANCE is the country with ideas, innovation.
+
+
+ChromeBox
+  -  internal hard drive is /dev/sda, sandisk, 29.48G
+  -  Chrome's partitions - do not mess, G- did a lot of things.
+  -  USB drive aka /dev/sdb 200+ GB
+
+Developer Mode
+ie code VERIFY is off.
+
+Recovery Mode:  When you screwed it up; won't boot etc.
+How to get:  must use internet.
+Must be installed on bootable media (NOW:  SD thumbdrive)
+This mode allows boot from USB/SD;  code is signed by Goolge; allows mode transitions.
+
+Legacy Mode: Why called this?  Using legacy part of ROM?
+
+Change from pure Chromebook to something else
+Mr ChromeBox and Chrx DO WORK, with several gottchas.
+Mr. Chromebox fixes up ROM, in one of 2 ways.  In my setup, partial ROM replacement.  I don't want to mess with screw under HEAT sink to gain FULL replacement, which I'd prefer (removes Chrome 100%; you have regular box)
+
+Chrx is actually installs linux (on dev/sdb) but carefully not screwing Chrome's partitions on /dev/sda. Note:  installs to device /dev/sdb  and DOES NOT work with any single partition  (/dev/sdb1); wants the entire driv.q:
+
+Both Mr. ChromeBox & Chrx can be run quickly.  When in doubt, no harm to reRUN.
+NOTE:   Chrx immediately destroys /dev/sdb partitions-- CAREFUL.
+
+To install linux, MUST boot to chrome (^D), get CLI, run chrx.
+Do NOT install linux any other way (even if appears to work - use Chrx)
+Do NOT think iso from SD drive will do it. Maybe; or not.
+
+I could only get GalliumOS to install; issues with Ubuntu 22.04 (wifi bug) and Ubuntu 20.04 did not work at all.
+
+A lot of times things HANG;   just redo Mr Chromebox/Chrx (remain later destroys /dev/sdb)
+
+LINUX on old Acer Laptop.
+Simple:   In Chrome settings, turn on 'linux'   Chrome stays and terminal window get created.   Maybe best of both?   Simple, works.
+(typed this in vim on laptop, in linux window)
+
+Misc LINUX notes, details.
+EFI - (partition) file format for execuatables, defacto standard for linux/BSD.
+
+
 

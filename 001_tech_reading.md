@@ -140,7 +140,13 @@ As of \today
   -  Boehmke Hands on ML | https://bradleyboehmke.github.io/HOML/ Ch 4,5
   -  Thomas,  Math for ML  ... good lin alg, but quickly gets advanced.  https://gwthomas.github.io/docs/math4ml.pdf
   -  Deisenroth, Faiesel et al | Math4ML *book | linear alg book, regression, 2nd level
+	-  mcelreath: https://github.com/rmcelreath/stat_rethinking_2022 (videos)
+	-  https://www.tmwr.org/
+
+#### Bayesian
+
 	-  Downey, Allen "Thinking Bayes" https://www.greenteapress.com/thinkbayes/thinkbayes.pdf
+	-	 Johnson, Ott et al:  https://www.bayesrulesbook.com/index.html
 
 #### Linear Algebra (as mathematics)
 
@@ -187,6 +193,7 @@ As of \today
   *  Linux:  Archiwiki, Debian, FreeBSD
   *  Gross, Ash et al "Elliptical Tales" - very readable, but must think!
       (515.983 | ASH | 2012)
+	*  Linux- insides: https://0xax.gitbooks.io/linux-insides/content/
   *  Seefeld, et al Biology & R | https://cran.r-project.org/doc/contrib/Seefeld_StatsRBio.pdf
 
 #### ZSH
