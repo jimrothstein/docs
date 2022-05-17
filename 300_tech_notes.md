@@ -546,12 +546,7 @@ as of \today:
 
 ### LINUX/ZSH notes
 
-gf   (goto file)
-
 grep jim /var/log/syslog  # see cron jobs that ran
-
-
-# ZSH
 
 ```
 *jim_Permissions*

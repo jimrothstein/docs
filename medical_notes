@@ -1,1 +1,0 @@
-/home/jim/docs/medical/2020/2020_medical_dds_notes.md
