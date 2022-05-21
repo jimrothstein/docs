@@ -1,35 +1,16 @@
 
 Mon May 16 01:41:35 PDT 2022
+  -  move `vimdoc` to LEGACY (bottom)
+	-	 add keycode, xmodmap
+
 TODO:
   -	See Index Cards (bottom) - integrate that point to very bottom into main text
+	-	HTTR2 notes - mess
 
 ```
 This is block with 3 back ticks: green!
 ```
 
-```vimdoc
-This is block with 3 back ticks AND vimdoc:  boring!
-```
-
-```vimdoc
-Patience !   Takes a few minutes to finish.
-shell 137 = out of memory
-
-SOURCE FILE, for vimdoc:
-~/code/jimHelp/source/jimHelp.md 
-
-CREATE:
-jimHelp.txt in ~/code/jimHelp/doc/
-
-PWD:
-MUST be ~/code/jimHelp/ 
-
-PANDOC:
-!pandoc --metadata=project:xxx --lua-filter doc/panvimdoc/scripts/skip-blocks.lua --lua-filter doc/panvimdoc/scripts/include-files.lua -t doc/panvimdoc/scripts/panvimdoc.lua % -o doc/jimHelp.txt
-
-
-FINALLY, 
-:helptags ALL
 
 # ============================================
 PURPOSE:    Render .md, .txt. .R, .Rmd files
@@ -43,7 +24,7 @@ as of \today:
     *  I do not know how to embed latex, produce html or md (github flavor).  
 ```
 
-# PDF                                                                    
+#### PDF                                                                    
 
 ```
  PDF   [ignores html, css; also ignores YAML header (pandoc & ::render()]
@@ -532,7 +513,7 @@ as of \today:
 
 !pandoc % -f markdown  -t latex -H ../chapter_break.tex -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o ~/Downloads/print_and_delete/out.pdf
 !pandoc % -f markdown  -t latex -H ../chapter_break.tex -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o out.pdf 
-!pandoc % -f markdown  --pdf-engine xelatex -H chapter_break.tex -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o ~/Downloads/print_and_delete/out.pdf
+!pandoc % -f markdown  --pdf-engine lualatex -H chapter_break.tex -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o ~/Downloads/print_and_delete/out.pdf
 ```
 
 ```
@@ -546,7 +527,67 @@ as of \today:
 
 ### LINUX/ZSH notes
 
-grep jim /var/log/syslog  # see cron jobs that ran
+#### sudo vs su ....
+{
+
+	-	su jim  change to User 'jim'
+	- sudo cmd 
+		-	last ~ 15'  (temporary use of root privileges)
+		-	asks for user's password
+		-	allows root 'privileges' but the home directory, path etc remains the
+			user's
+	- sudo su   # run cmd su (to switch user) with root permissions. (default is
+		root)
+	- **sudo su -** # run cmd su (to change user) with root permissions AND WITH root
+		environment (echo $SHELL will root)
+	-	shell:  either login or non-login
+	-	non-login has 2 flavors: **interactive** (user at CLI) and **non-interactive** (a
+		subshell for scripts)
+
+!askubuntu 376199
+!askubuntu 1225041
+
+
+}
+{}
+#### drive info
+{
+	# succinct, useful info
+	lsblk --output NAME,UUID,PARTUUID
+}
+
+####	xev
+{
+	-	Keyboard specific, find what *keycode* a button is mapped to:
+	- USAGE:  > xev
+	- type just 1 button, look for its keycode, keysym on this keyboard
+	- example:   q  will be keycode=24, keysym=0x71 called 'q'
+
+}
+####	xxd
+{
+	-  To find how zsh maps a button (A, alt, F2) :  
+	-	 USAGE:  > xxd <CR>
+	-  press <ALT>+a
+	-  terminal displays coding (^[a)
+	-	 SEE ROTHGAR
+}
+#### remap capslock to escape
+
+{
+#		PURPOSE:	**maps ChromeBox "capslock" key to Escape.**
+#		-	133 to find this use > xev
+#		- xmodmap is older, but simpler.
+#		- newer is **setxkbmap** but I find more effort to figure out simple things.
+#		-	SEE  tech_notes
+#
+xmodmap -e "keycode 133 = Escape"
+}
+
+{
+	grep jim /var/log/syslog  # see cron jobs that ran
+}
+
 
 ```
 *jim_Permissions*
@@ -558,7 +599,7 @@ u g o   (user group other)
 *Grep* always finds words that match a pattern and returns file names of
 matches.
 
-ls (+ glob) finds filenames that match a pattern.  Very differnt.
+ls (+ glob) finds filenames that match a pattern.  Very different.
 (same in vim)
 
 *jim_GLOB_examples*
@@ -1215,6 +1256,69 @@ Some Remarks:
   -	Most of the R work is done at lower level, such as packages curl and httpuv.  
 	
 
+#### HTTR2 - NOTES (needs clean up!)
+
+PURPOSE:    Demonstrate configuration for HTTR2 and OAUTH2 with Google's Youtube API.
+
+							- uses off-the-shelf `httr2::req_oauth_auth_code()` + configuration
+						  - uses authorization code flow.
+							- uses redirect_uri localhost, cut & paste (via obo) is deprecated.
+							- httr2::  hides almost all details of interaction.
+							- use  curl and localhost such as httpuv:: to see lower level
+
+Source:  https://developers.google.com/youtube/v3/guides/auth/installed-apps
+
+RELATED INFO:
+  -  Google Explorer (youtube)
+	-  Google OAUTH2 playground
+
+
+#	===============================
+From Google (Youtube) Explorer:
+GET https://youtube.googleapis.com/youtube/v3/playlists?part=snippet%2CcontentDetails&maxResults=5&mine=true&key=[YOUR_API_KEY] HTTP/1.1
+
+Authorization: Bearer [YOUR_ACCESS_TOKEN]
+Accept: application/json
+#	===============================
+
+For youtube (auth code):
+
+echo "curl -Lsv \"https://accounts.google.com/o/oauth2/v2/auth?\
+client_id=$client_id&\
+redirect_uri=https://127.0.0.1:8080&\
+scope=https://www.googleapis.com/auth/youtube&\
+response_type=code\""
+
+
+scope = list(
+        "https://www.googleapis.com/auth/youtube",
+        "https://www.googleapis.com/auth/youtube.force-ssl")
+
+For youtube (obtain results):
+curl \
+  'https://youtube.googleapis.com/youtube/v3/playlists?part=snippet%2CcontentDetails&maxResults=5&mine=true&key=[YOUR_API_KEY]' \
+  --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
+  --header 'Accept: application/json' \
+  --compressed
+
+### NEEDED SCOPES:
+https://www.googleapis.com/auth/youtube	Manage your YouTube account
+https://www.googleapis.com/auth/youtube.force-ssl	See, edit, and permanently delete your YouTube videos, ratings, comments and captions
+
+
+playlistId  =  "PLlXfTHzgMRUIqYrutsFXCOmiqKUgOgGJ5"  # Pavel Grinfeld, Linear Alg 3
+
+
+
+#### Procedure: 
+  -		Follow hadley outlines in Vignette for Github and and getting user's information.  (Requires oauth token)
+  -  Change for google 
+	-  let httr2 handle the details, use this function: httr2::req_oauth_auth_code()
+  -  If I have this right, this will (1) get the access token and (2) complete REST
+request.
+
+#==============================
+
 
 # Mon May 16 01:40:07 PDT 2022
 
@@ -1288,4 +1392,29 @@ Misc LINUX notes, details.
 EFI - (partition) file format for execuatables, defacto standard for linux/BSD.
 
 
+####	LEGACY
 
+```vimdoc
+This is block with 3 back ticks AND vimdoc:  boring!
+```
+
+```vimdoc
+Patience !   Takes a few minutes to finish.
+shell 137 = out of memory
+
+SOURCE FILE, for vimdoc:
+~/code/jimHelp/source/jimHelp.md 
+
+CREATE:
+jimHelp.txt in ~/code/jimHelp/doc/
+
+PWD:
+MUST be ~/code/jimHelp/ 
+
+PANDOC:
+!pandoc --metadata=project:xxx --lua-filter doc/panvimdoc/scripts/skip-blocks.lua --lua-filter doc/panvimdoc/scripts/include-files.lua -t doc/panvimdoc/scripts/panvimdoc.lua % -o doc/jimHelp.txt
+
+
+FINALLY, 
+:helptags ALL
+```

@@ -7,6 +7,10 @@ TAGS:  reading list
 <!--
 LINK:  [TEXT portion](URL portion)
 
+\url{nytimes.com}
+
+\href{nytimes.com}{NY Times}
+
 file <- "001_R_stats_tech_reading.md"
 !pandoc % -t latex -V linkcolor:blue -V fontsize=10pt -V geometry:margin=0.4in -o ~/Downloads/print_and_delete/reading.pdf 
 
@@ -24,6 +28,8 @@ https://www.markdownguide.org/basic-syntax/
 
 vim: to format all urls for md
 s/https.*/[&]()/g
+
+
 
 -->
 \footnotesize
@@ -43,8 +49,6 @@ As of \today
 ### R - more advanced
   *  official R CRAN: https://cran.r-project.org/manuals.html
   *  design.tidyverse.org
-
-
 
 
 ### Basic Statistics
@@ -82,11 +86,19 @@ As of \today
   *  Nahim,  Dueling Idiots, harder but real world stats/prob problems (pins
       falling on surfaces)
 
-####	Blogs::::
-  -  https://towardsdatascience.com/
+####	R and Special Topics
+	-	Data Science at Command Line (book) https://datascienceatthecommandline.com/2e/chapter-2-getting-started.html
+		-	videos: https://www.youtube.com/c/R4DSOnlineLearningCommunity  
+
+####	Blogs
+  -  https://towardsdatascience.com
+  -  R-Blogger
+	-  \url{https://rweekly.org/}{rweekly.org}
 
 ####  R, the Language: Functional, Standard and Non- Evaluation, Environments, Call Stacks:
 
+  *  Chambers (2008) "Statistics & Computing" (much coverage of R internals)
+	\url{https://files.slack.com/files-pri/T6UC1DKJQ-F016BP8QPMG/download/john-chambers-software-for-data-analysis-programming-with-r.pdf?origin_team=T6UC1DKJQ}
   *  Gaslam, Brodie - blog - several good posts
     *   NSE:  https://www.brodieg.com/2020/05/05/on-nse/
     *   HP Calculator & Reverse Polish!  https://www.brodieg.com/2019/01/11/reverse-polish-notation-parsing-in-r/
@@ -96,13 +108,12 @@ As of \today
   * Rnews - 2001-2008 has lot of good articles
 
 
-
-
 ### Other book stats/R books:
 
   *  Hannay (=rbassett) read, (avoid pkgs ch 11, 12) | https://faculty.nps.edu/rbassett/_book/
   *  Ismay modern dive (2020)
-  *  Kaplan (2017) ch 6.5 https://dtkaplan.github.io/SM2-bookdown/
+  *  Kaplan (2017) ch 6.5 https://dtkaplan.github.io/SM2-bookdown/  (wordy,
+	but exposes nuances)
   *	 Kurz: Statistial Rethinking reCoded (Bayesian)
   *	 Lane se(b_hat)
   *	 Matloff(2020) book
@@ -117,6 +128,8 @@ As of \today
     -  Shalizi http://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/ADAfaEPoV.pdf    
     -  http://www.stat.cmu.edu/~cshalizi/mreg/15/  
   -  Davidson (Econometric) -  Ch 1, 2
+  - **ISLRv2:**  (book) https://web.stanford.edu/~hastie/ISLRv2_website.pdf
+		-	videos: https://www.youtube.com/c/R4DSOnlineLearningCommunity 
   -  MATLOFF (1st book) |	ch3 - lot of useful prproperties of x,y  | 	ch 7  - affine transformations
   *  Efron, Hastie "Computer Age Statistical Inference"  (advanced, but
       chapter intros put techniques into perspective), no R.
@@ -129,24 +142,38 @@ As of \today
   * Taubes, linear alg, statistics,  http://people.math.harvard.edu/~knill/teaching/math19b_2011/handouts/chapters1-19.pdf
       Biology?  math?  probability?   Think this is really an ideas book; not
       as easy as may appear.
-  *  ISLRv2:       https://web.stanford.edu/~hastie/ISLRv2_website.pdf
 	*  UCLA:  Mixed Models - intro:  https://stats.oarc.ucla.edu/other/mult-pkg/introduction-to-linear-mixed-models/
 
 ####	Algorithms & ML
-  -  Compeau:  
-    -  great ideas book! http://compeau.cbd.cmu.edu/  |  
-    -  http://compeau.cbd.cmu.edu/programming-for-lovers/ cmu -	ch 8, 9 esp collinear.  
   -  Berkeley, excellent glossary: https://www.stat.berkeley.edu/~stark/SticiGui/Text/gloss.htm
+  -  Berkeley CRASH 
+  -  Compeau:
+     -  great ideas book! http://compeau.cbd.cmu.edu/
+     -  http://compeau.cbd.cmu.edu/programming-for-lovers/ cmu -	ch 8, 9 esp collinear.  
   -  Boehmke Hands on ML | https://bradleyboehmke.github.io/HOML/ Ch 4,5
-  -  Thomas,  Math for ML  ... good lin alg, but quickly gets advanced.  https://gwthomas.github.io/docs/math4ml.pdf
   -  Deisenroth, Faiesel et al | Math4ML *book | linear alg book, regression, 2nd level
-	-  mcelreath: https://github.com/rmcelreath/stat_rethinking_2022 (videos)
-	-  https://www.tmwr.org/
+  -  Higgens "Practical R Info?"
+	-	Huntington "The Effect Book"
+	-	mcelreath: https://github.com/rmcelreath/stat_rethinking_2022 (videos)
+	-	Molnar, "Interpretable ML"
+	-	SciLearn
+	-	Thomas,  Math for ML  ... good lin alg, but quickly gets advanced.  https://gwthomas.github.io/docs/math4ml.pdf
+	-	mcelreath: https://github.com/rmcelreath/stat_rethinking_2022 (videos)
+  -	https://www.tmwr.org/
 
 #### Bayesian
 
 	-  Downey, Allen "Thinking Bayes" https://www.greenteapress.com/thinkbayes/thinkbayes.pdf
 	-	 Johnson, Ott et al:  https://www.bayesrulesbook.com/index.html
+	-  paulvanderlake (many R resources) 2012 ThinkBayes
+
+
+#### Shiny
+	-	R, javascript + shiny https://book.javascript-for-r.com/
+	-	Hadley, https://mastering-shiny.org/
+	-	https://engineering-shiny.org/
+	-	HTTP Testing (book) https://books.ropensci.org/http-testing/
+
 
 #### Linear Algebra (as mathematics)
 
@@ -199,7 +226,7 @@ As of \today
 #### ZSH
   *  Janssens, DS at Command Line: https://www.datascienceatthecommandline.com/2e/  
         Great way to improve zsh, CLI skills.
-	*  Rothgar  Mastering ZSH: https://github.com/rothgar/mastering-zsh 
+	*		Rothgar  Mastering ZSH: https://github.com/rothgar/mastering-zsh 
 
 
 ### Videos
@@ -211,6 +238,12 @@ As of \today
       practical R, models
   *   [Statistics Globe](https://statisticsglobe.com/r-programming-language)
   *   [Statquest - Josh Starmer](https://statquest.org/video-index/)
+	*		Edward Malthouse - is careful with assumptions.
+	*		Prof Christoph Scherber -03
+	*		Lorenzo
+	*		Sadum
+	*		Tom Raby
+	*		Jazon Jiao (Alg + Regression)
 
 <!--
 ================================================================================================================================
@@ -275,6 +308,7 @@ https://martinctc.github.io/blog/using-data.table-with-magrittr-pipes-best-of-bo
   *   Curl's Creator https://youtu.be/I6id1Y0YuNk?list=PLbcglKxZP5PN07Vw-0ukcDJCxFGY2Crgc
   *   Postman and GitHub: https://youtu.be/AfuL7AFpFmQ?list=PLbcglKxZP5PN07Vw-0ukcDJCxFGY2Crgc
   *   Plumber::,R, api https://www.youtube.com/watch?v=J0Th2QRZ7Rk
+	*		R4DS all videos:  https://www.youtube.com/c/R4DSOnlineLearningCommunity
 
 CRAN Task Views:  Web Technology & Services: https://cran.r-project.org/web/views/WebTechnologies.html
   *  (R & Dropbox) https://github.com/karthik/rdrop2 (2020)
