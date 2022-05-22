@@ -1,32 +1,32 @@
 
+\footnotesize
+\tableofcontents
+
+#	News
 Mon May 16 01:41:35 PDT 2022
   -  move `vimdoc` to LEGACY (bottom)
 	-	 add keycode, xmodmap
 
-TODO:
+<!--
+		USAGE:  print_pdf.sh % out.pdf	
+-->
+
+#	TODO:
   -	See Index Cards (bottom) - integrate that point to very bottom into main text
 	-	HTTR2 notes - mess
 
-```
-This is block with 3 back ticks: green!
-```
 
+PURPOSE:		Misc Tech Notes;  details, notes can be here - but COMMANDS put on
+INDEX
 
-# ============================================
-PURPOSE:    Render .md, .txt. .R, .Rmd files
-USING:      pandoc, latex, knitr ....
-Jump to this file:      |jim_knitr_pandoc_latex|
-# ============================================
+USING:      pandoc, latex, 
 
 as of \today:  
     *  To mix latex and .md, must go with pdf, either pandoc or knit  
     *  Add r, knitr code to YAML?   then must render as .RMD file
     *  I do not know how to embed latex, produce html or md (github flavor).  
-```
+# PDF
 
-#### PDF                                                                    
-
-```
  PDF   [ignores html, css; also ignores YAML header (pandoc & ::render()]
 
  To create pdf, just about everything works:  pandoc, markdown, latex, knitr..
@@ -580,15 +580,29 @@ as of \today:
 #		- xmodmap is older, but simpler.
 #		- newer is **setxkbmap** but I find more effort to figure out simple things.
 #		-	SEE  tech_notes
+#		- lots of ways to do this remap.  Stay with what works.
 #
 xmodmap -e "keycode 133 = Escape"
 }
 
 {
 	grep jim /var/log/syslog  # see cron jobs that ran
+
+	
+Sat May 21 18:48:16 PDT 2022
+	-	jr changed /etc/rsyslog/50-default.conf
+	-	uncomment #cron  -- cron s/d now log to cron.log	
+	-	after change, run sudo service rsyslog restart	
+
 }
 
+#### Linux Kernel
+{
+	- one LTS Ubuntu can have many (upstream) kernels
+	-	Mix & Match kernels?  X? 
+	-	Kernel Upgrade - See INDEX C.
 
+}
 ```
 *jim_Permissions*
 u g o   (user group other)
@@ -1381,6 +1395,8 @@ Do NOT install linux any other way (even if appears to work - use Chrx)
 Do NOT think iso from SD drive will do it. Maybe; or not.
 
 I could only get GalliumOS to install; issues with Ubuntu 22.04 (wifi bug) and Ubuntu 20.04 did not work at all.
+(SEE also wifi notes)
+
 
 A lot of times things HANG;   just redo Mr Chromebox/Chrx (remain later destroys /dev/sdb)
 
@@ -1392,7 +1408,16 @@ Misc LINUX notes, details.
 EFI - (partition) file format for execuatables, defacto standard for linux/BSD.
 
 
-####	LEGACY
+####	wifi
+	Hopeless?  Ubuntu bug (May 2022) Some notes otherwise:
+	-	EAP is protocol |  many pieces | goal:  protect wifi
+	-	WPA several versions
+	-	supplicant - one end seeks to be authenticated by other end.
+	-	Standard is 802.1X
+
+	- nmcli is main cli way. (see INDEX C)
+	- networkctl status	
+	-	systemctl <command>
 
 ```vimdoc
 This is block with 3 back ticks AND vimdoc:  boring!
