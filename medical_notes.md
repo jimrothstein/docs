@@ -1634,7 +1634,7 @@ private; several with rewiews WORSE than Humana.
 
 ##  Thu  20 Jan 2022
 In Eugene, Kaiser uses Valley River (?), but no phone for them.   They will
-callme when opening.   So I made appointment in Salem at KP.
+call me when opening.   So I made appointment in Salem at KP.
 
 ##  Sat  29 Jan 2022 Dr. Lam urology | CT Scan | Summary of phone call.
 Tiny stone (means < 1 mm).  But ultrasound thought 15mm ??  Later he acknowledtes
@@ -1642,14 +1642,14 @@ next time try KUB 1st.
 My error:  CT Scan is NO contrast.  (MRI had)  Using CT + contrast blocks out the
 stones.
 Prostate size - nothing to do "normal" - unless some urinary problem.
-Vascular calification - yes plague, by age 65 western diet = some atheroscleoius
+Vascular calcification - yes plague, by age 65 western diet = some atheroscleoius
 (but I most vegetarian ?).   No aneuyysm means NO buldge in vessel that may
 break.
 He concludes that despite high urinary OX, I am doing good with preventing
-stones.  Told him in the K Cit; and thoght UrOx is bad on itself.
+stones.  Told him in the K Cit; and thought UrOx is bad on itself.
 
 ##  Wed 1 MARCH 2022 - nutritionist
 Kaiser nutritionist telephone appt - said "1 time education" ; said I've been
-through this;   agreed that she would ask Kaiser kidney dietian for input.
+through this;   agreed that she would ask Kaiser kidney dietitian for input.
 
 ##  Fri  25 Mar 2022 - 2nd CT reading, bladder now has prtrusion; 2 small stones
