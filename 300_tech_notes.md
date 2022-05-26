@@ -527,6 +527,14 @@ as of \today:
 
 ### LINUX/ZSH notes
 
+Wed May 25 20:22:20 PDT 2022
+	-	run GallumOS 18.04
+	```
+	- password for Ubuntu, UbuntuOne is icmup.6667.again
+	```
+	- Ubuntu could NOT install (wifi issues)
+	- But old laptop runs fine with just linux mode.
+
 #### sudo vs su ....
 {
 
@@ -576,11 +584,12 @@ as of \today:
 
 {
 #		PURPOSE:	**maps ChromeBox "capslock" key to Escape.**
-#		-	133 to find this use > xev
-#		- xmodmap is older, but simpler.
+#		-	use > xev to find that capslock is key 133.
+#		- xmodmap is older, but simpler to  change key action to  change key
+action.
 #		- newer is **setxkbmap** but I find more effort to figure out simple things.
 #		-	SEE  tech_notes
-#		- lots of ways to do this remap.  Stay with what works.
+#		- lots of ways to do this remap. This works, stay with it: 
 #
 xmodmap -e "keycode 133 = Escape"
 }
@@ -1366,29 +1375,34 @@ George III (~ 17) educated, but poor understanding ppl.
 Continent (esp France) respect English power, but not English culture, resistance to change, a Parliament that acquiases.   FRANCE is the country with ideas, innovation.
 
 
-ChromeBox
+=============================
+###		ChromeBox:  Convert to Linux
+=============================
   -  internal hard drive is /dev/sda, sandisk, 29.48G
-  -  Chrome's partitions - do not mess, G- did a lot of things.
+  -  Chrome's partitions - do not mess, G- Chrome did a lot of things and is
+		 fussy.
   -  USB drive aka /dev/sdb 200+ GB
 
 Developer Mode
 ie code VERIFY is off.
 
 Recovery Mode:  When you screwed it up; won't boot etc.
-How to get:  must use internet.
+How to get:  must use internet; separate machine
 Must be installed on bootable media (NOW:  SD thumbdrive)
 This mode allows boot from USB/SD;  code is signed by Goolge; allows mode transitions.
 
-Legacy Mode: Why called this?  Using legacy part of ROM?
+Legacy Mode: Why called this?  Using legacy part of ROM? no G- support
 
 Change from pure Chromebook to something else
 Mr ChromeBox and Chrx DO WORK, with several gottchas.
-Mr. Chromebox fixes up ROM, in one of 2 ways.  In my setup, partial ROM replacement.  I don't want to mess with screw under HEAT sink to gain FULL replacement, which I'd prefer (removes Chrome 100%; you have regular box)
+Mr. Chromebox fixes up ROM, in one of 2 ways.  In my setup, partial ROM replacement; other way is FULL, but  I don't want to mess with screw under HEAT sink to gain FULL replacement, which I'd prefer (removes Chrome 100%; you have regular box)
 
 Chrx is actually installs linux (on dev/sdb) but carefully not screwing Chrome's partitions on /dev/sda. Note:  installs to device /dev/sdb  and DOES NOT work with any single partition  (/dev/sdb1); wants the entire driv.q:
+Chrx now gives you ^L (legacy) as well as ^D option
+Chrx now gives you ^L (legacy) as well as ^D option
 
 Both Mr. ChromeBox & Chrx can be run quickly.  When in doubt, no harm to reRUN.
-NOTE:   Chrx immediately destroys /dev/sdb partitions-- CAREFUL.
+**NOTE:   Chrx immediately destroys /dev/sdb partitions-- CAREFUL.**
 
 To install linux, MUST boot to chrome (^D), get CLI, run chrx.
 Do NOT install linux any other way (even if appears to work - use Chrx)
@@ -1418,6 +1432,8 @@ EFI - (partition) file format for execuatables, defacto standard for linux/BSD.
 	- nmcli is main cli way. (see INDEX C)
 	- networkctl status	
 	-	systemctl <command>
+	- NOT an issue with GalliumOS (based on 18.04 ubuntu - so stuck here for
+		now)
 
 ```vimdoc
 This is block with 3 back ticks AND vimdoc:  boring!
