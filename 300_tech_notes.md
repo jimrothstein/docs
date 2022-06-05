@@ -104,6 +104,13 @@ download.file("https://gist.githubusercontent.com/jimrothstein/c5e148c9a766ab1a1
 readLines(con="junk.txt")
 ```
 
+#	LATEX NOTES
+-	Tikz seems to be most popular way to gaphics.
+-	footnote:  **postscript** is more powerful programming language;  pdf hails from
+	this.  However, using postscript with latex requires addins, such as
+	ghostscript; drivers; ...   Avoid postscript and packages pstricks, even if
+	greater capability.
+
 #### neovim, nvim, vim  update to latest version
 {
 ```
@@ -1125,14 +1132,127 @@ CB3-431-C7EX  (manuf 3/22/18)
 SNID:  81201450072
 ```
 
-## REST RESTful
+#### REST RESTful, HTTP Protocol
 ```
+	-	HTTP - best is Mozilla introduction
+  -	In practice, Restful API means built upon HTTP. (do exist non-HTTP )
 *	originally URL linked to file or webpage.
 *	more recenty, URI links to payload,  HTML/JSON/XML
 *	RESTFUL provides stateless operations, architecture (vs SOAP, or others)
 * VERBS include GET/POST/ etc etc
 Stateless means server keeps no session information.   Each call to server is
 independent.  Examples include HTTP, IP, REST.   But TCP is not stateless.
+
+
+
+**Vocabulary**  (also:   [https://developer.mozilla.org/en-US/docs/Glossary](https://developer.mozilla.org/en-US/docs/Glossary) )     
+
+USER - owns the 'resource'
+client - your restful api software (aka app, 3rd party, wants to access USER's resource;  usually
+must register with the resource.  Can be desktop or mobile app, or web app.
+Authorization Server - asks USER to approve request
+Authorization Code - returns to client software
+
+
+####    HTTP, JSON, RFC and Web Technologies
+
+##### Curl:   
+  *  [https://everything.curl.dev/](https://everything.curl.dev/)  
+  *  https://stackoverflow.com/users/93747/daniel-stenberg
+  *  https://daniel.haxx.se/blog/
+
+##### HTTP
+  *  Command Line book:      https://datascienceatthecommandline.com/2e/index.html
+  *  JSON   https://cran.r-project.org/web/packages/jsonlite/index.html
+  *  HTTP protocol MDN https://developer.mozilla.org/en-US/docs/Web/HTTP
+  *  HTTP Header Fields https://en.wikipedia.org/wiki/List_of_HTTP_header_fields, Media types (MIME):   https://www.iana.org/assignments/media-types/media-types.xhtml
+  *  HTTPS,  HTTP over TLS or SSL:  https://en.wikipedia.org/wiki/HTTPS 
+  *  HTTP  mentioned by Hadley Wickham:
+    -  https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177
+    -  https://www.jmarshall.com/easy/http/
+  	*	https://docs.python-requests.org/en/master/user/quickstart/
+
+	*  BNF notation, see !w
+
+Media Types (was MIME): https://en.wikipedia.org/wiki/Media_type   
+                        https://docs.github.com/en/rest/overview/media-types
+##### RFC  
+  -  RFC 2616 HTTP 2.1  https://www.rfc-editor.org/rfc/rfc2616  
+  -  RFC 2617 Basic Authentication https://www.rfc-editor.org/rfc/rfc2617  
+  -  RFC 3986 + RFC 8820 URI/URL
+  *  RFC 6749 OAUTH 2.0 https://www.rfc-editor.org/rfc/rfc6749  
+  *  RFC 6750 Bearer Token: https://datatracker.ietf.org/doc/html/rfc6750  
+SOAP https://en.wikipedia.org/wiki/SOAP
+URI  https://en.wikipedia.org/wiki/Uniform_Resource_Identifier
+
+
+#### OAUTH 2.0,  Security , Authentication
+
+  *  Token, Service Account:  https://gargle.r-lib.org/articles/get-api-credentials.html#service-account-token
+  *  OAuth 2.0 Protocol (https://datatracker.ietf.org/doc/html/rfc6749)  
+  *  oob (out-of-band)  https://docs.auth3.dev/grant-types/urn-ietf-wg-oauth-2.0-oob (use their
+  identity server for standard RFC methods)
+  *  openSSL
+  *  https://developer.okta.com/
+  *  https://oauth.net
+  *  microsoft/open_id:  https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-protocols-oidc
+  *  auth0.com: https://auth0.com/docs/get-started
+	*  openID:  https://en.wikipedia.org/wiki/OpenID
+	*  letsencrypt.org | ISRG.org ? | source for free?  CA
+
+#### Popular APIs 
+  *  GitHub API https://docs.github.com/en/rest
+  *  GitLab API https://vulpes.cba.mit.edu/help/api/index.md
+  *  Google Cloud  https://cloud.google.com/
+  *  Google Cloud Platform  https://console.developers.google.com/products https://en.wikipedia.org/wiki/Google_Cloud_Platform
+  *  Spotify (api + authorization): https://developer.spotify.com/documentation/general/guides/
+  *  Spotify & Postman:  https://www.youtube.com/watch?v=5TNQf2gBrd8
+  *  Dropbox: https://www.dropbox.com/developers
+  *  Predictit.org: https://www.predictit.org/api/marketdata/all/  (xml dump,
+  must write you own functions)
+  *  ConstantContact: https://v3.developer.constantcontact.com/
+	*  Glitch - site acts like server in-between API source and user	?
+
+
+
+
+####	Google Specific
+  *  Google Cloud Platform (GCP)
+  *  Google Identity (https://developers.google.com/identity)
+  *  Google OAuth2.0 implementation (https://developers.google.com/identity/protocols/oauth2#installed)
+  *  google people api  https://developers.google.com/people/
+  *  google web fonts api
+  *  For Youtube (installed apps, like R): https://developers.google.com/youtube/v3/guides/auth/installed-apps
+
+
+#### R and related
+
+  -  curl::  (based on C library used in cURL) https://jeroen.cran.dev/curl/index.html
+  -  cloudyR project
+  -  curlconverter:: https://github.com/hrbrmstr/curlconverter
+  -  fakerapi.it fakerapi https://fakerapi.it/en
+  -  gargle::   good intro (https://www.tidyverse.org/blog/2021/07/gargle-1-2-0/)
+  -  httptest2:: https://enpiar.com/httptest2/index.html
+  -  httpuv, libuv
+    -  https://cran.r-project.org/package=httpuv
+    -  https://nikhilm.github.io/uvbook/introduction.html  (low-level, C code, but good sense of what is happening)
+  -  httr2::
+    -  github https://github.com/r-lib/httr2
+    -  cran https://cloud.r-project.org/web/packages/httr2/index.html
+  -  plumber
+
+####    RESTFUL API (vs. graphQL)
+
+
+  -  OpenApi (api doc rules:  openapi.json or openapi.yaml; was Swagger) https://oai.github.io/Documentation/specification.html
+  -  Postman
+    -  30-day tutorial: https://www.postman.com/postman/workspace/f1c6b0a9-b930-4165-9aa4-f655dd7051b5/overview
+  -  https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm;
+  -  https://en.wikipedia.org/wiki/Representational_state_transfer#Architectural_constraints
+  -  https://restfulapi.net/
+  -  http://www.cse.lehigh.edu/~spear/cse216_tutorials/tut_spark/index.html
+  -  Openstack (Cloud) https://docs.openstack.org/api-quick-start/
+
 
 ### epub, Calibre, iPad, iCloud, eReader, pdf
 -	Claim:  iPad does not support Calibre; free Readers for iPad, everyone has fav.
@@ -1183,6 +1303,8 @@ for my needs!  (at this time.)
 -	man Xorg (good)	, I have no ~/.xinitrc
 -	Terminal is NOT equal to SHELL (explain?)
 - 	GTK+ - C lib, widgets supports X.   Gnone, Win32, etc use GTK+ tools.
+-	[see wiki] GTK is C toolkit, widgets (now gtk3, soon gtk4)
+- I have GTK, competition is qt
 -	graphical login? kdm, gdm, xdm (basic) lightdm, sddm aka Display Mgr
 -	REMOVE PLUGIN:  vimwiki - how to get rid  | .vimrc - delete references to plugin
 ##	13 OCT 2018
@@ -1191,18 +1313,135 @@ for my needs!  (at this time.)
 	-	rxvt, urxvt, terminator, st (not friendly) xfce4-terminal.
 
 ```
-#   CURL |  YOUTUBE API | GOOGLE API |  OAUTH 2.0 | 
 
-YOUTUBE  (as of 2FEB 2022)
-API:   AIzaSyBIpR4Wee8ZvAiofh41leZvCj7ReVuXRXE
-SECRET:   don't !!
+#		CURL
+
+Purpose:	Examples of Curl at CLI, references to more details.
+
+Note:			Using curl with Youtube API is separate (see below)
+
+
+
+
+
+\newpage
+
+####	OAUTH2	
+	-	mix of channels:  some done in browser, other server-to-server (acccess
+		token?)  !so 15219006
+
+####	CURL + youtube api
+Sat  02 Apr 2022
+
+	
+ PURPOSE:		Focus is Google API, youtube in particular. This is summary of
+ using cURL to obtain authorization_code and then proceed querying youtube.
+
+ USAGE:	This is a markdown, md, file.   All zsh code is treated as verbatim.
+ To run the zsh, use the neovim terminal and with short cut ,tl.
+
+ Once something is working convert to a zsh script file.
+ But THIS document be NEAT summary.
+
+  *	 ~/.Renviron for secrets  
+	*	 Source:  https://developers.google.com/youtube/v3/guides/auth/installed-apps  
+	*  zsh, `&' is special.  Use single quotes around it to avoid errors.  
+	*	 scope must be a string char[1], separate multiple scopes by space
+
+REF:  https://stackoverflow.com/questions/53357741/how-to-perform-oauth-2-0-using-the-curl-cli#53357742et CLIENT_ID=Replace_with_your_Client_ID
+
+#### Youtube constants
+```
+auth_url=https://accounts.google.com/o/oauth2/v2/auth
+token_url=https://oauth2.googleapis.com/token 
+base_url=https://www.googleapis.com/youtube/v3
+uri_redirect=
+# Per google docs, scopes are separated by whitespace
+scope='https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/youtube.force-ssl'	
+
+client_id=$(Rscript -e "cat(Sys.getenv('OAUTH2_ID'))")
+
+```
+
+#### Youtube Pagination
+```
+(in .tex, use math {)
+part= snippet, content...
+
+(study JSON)
+fields=nextPageToken,items(id,snippet(title,description,publishedAt))
+fields=nextPageToken,items(snippet(topLevelComment(snippet(videoId,textDisplay))))
+fields=pageInfo.totalResults
+
+####	Run this in neovim terminal, copy+paste into browser, which asks user
+\begin{verbatim}
+permission and then returns auth.code !
+echo \
+'https://accounts.google.com/o/oauth2/v2/auth?'\
+'client_id='$client_id'&redirect_uri=urn:ietf:wg:oauth:2.0:oob'\
+'&scope='$scope'&response_type=code'
+\end{verbatim
+
+####	We now have auth code.
+
+
+
+PURPOSE:    HTTR2::  Given ONE video,  return ALL Comments 
+Authorization: Bearer [YOUR_ACCESS_TOKEN]
+Accept: application/json
+
+
+(1APR2022)
+```
+Google's example, with loop for uri_redirect
+https://accounts.google.com/o/oauth2/v2/auth?
+ scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube.readonly&
+ response_type=code&
+ state=security_token%3D138r5719ru3e1%26url%3Dhttps%3A%2F%2Foauth2.example.com%2Ftoken&
+ redirect_uri=http%3A//127.0.0.1%3A9004&
+ client_id=client_id
+```
+
+	-  Google's authorization server: https://accounts.google.com/o/oauth2/v2/auth
+
+### Finally, Request:  appropriate query sent to:
+GET https://www.googleapis.com/youtube/v3/commentThreads 
+
+
+### From Explorer
+GET https://youtube.googleapis.com/youtube/v3/playlists?part=snippet%2CcontentDetails&maxResults=5&mine=true&key=[YOUR_API_KEY] HTTP/1.1
+
+Authorization: Bearer [YOUR_ACCESS_TOKEN]
+Accept: application/json
+
+
+###
+same, but as Curl
+    
+curl \
+  'https://youtube.googleapis.com/youtube/v3/playlists?part=snippet%2CcontentDetails&maxResults=5&mine=true&key=[YOUR_API_KEY]' \
+  --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
+  --header 'Accept: application/json' \
+  --compressed
+
+
+
+###   From Google Playground
+   https://youtube.googleapis.com/youtube/v3/commentThreads?videoId=Mec9sw1cJk8&part=snippet,replies
+###
+
+\newpage
+#   CURL |  YOUTUBE API | GOOGLE API |  OAUTH 2.0 | 
 
 Examples:
 
 ##  cURL write (to standard)
 ##  w response after callling example.com
 ```
+\begin{verbatim}
 curl -w "Response %{response_code}\n" example.com
+\end{verbatim}
+
 ```
 # github
 curl https://api.github.com/zen
@@ -1219,8 +1458,12 @@ curl --head <URL>
 ##  CURL_CONFIG (a FILE)
 ##  USAGE   curl -K CURL_CONFIG ...
 ```
+
+
+\begin{verbatim}
 url = example.com
 -w "Type:  Hello  %{local_ip} \n"
+\end{verbatim}
 
 Misc Notes:
 "State"  - cookies used to be used; now state carried in headers
@@ -1305,7 +1548,7 @@ Accept: application/json
 #	===============================
 
 For youtube (auth code):
-
+```
 echo "curl -Lsv \"https://accounts.google.com/o/oauth2/v2/auth?\
 client_id=$client_id&\
 redirect_uri=https://127.0.0.1:8080&\
@@ -1331,7 +1574,7 @@ https://www.googleapis.com/auth/youtube.force-ssl	See, edit, and permanently del
 
 playlistId  =  "PLlXfTHzgMRUIqYrutsFXCOmiqKUgOgGJ5"  # Pavel Grinfeld, Linear Alg 3
 
-
+```
 
 #### Procedure: 
   -		Follow hadley outlines in Vignette for Github and and getting user's information.  (Requires oauth token)
@@ -1340,7 +1583,7 @@ playlistId  =  "PLlXfTHzgMRUIqYrutsFXCOmiqKUgOgGJ5"  # Pavel Grinfeld, Linear Al
   -  If I have this right, this will (1) get the access token and (2) complete REST
 request.
 
-#==============================
+# ==============================
 
 
 # Mon May 16 01:40:07 PDT 2022
@@ -1459,3 +1702,4 @@ PANDOC:
 FINALLY, 
 :helptags ALL
 ```
+vim:nospell

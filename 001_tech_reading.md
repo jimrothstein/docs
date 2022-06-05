@@ -9,7 +9,7 @@ LINK:  [TEXT portion](URL portion)
 
 \url{nytimes.com}
 
-\href{nytimes.com}{NY Times}
+\href{nytimes.com}{Click: NY Times}
 
 file <- "001_R_stats_tech_reading.md"
 !pandoc % -t latex -V linkcolor:blue -V fontsize=10pt -V geometry:margin=0.4in -o ~/Downloads/print_and_delete/reading.pdf 
@@ -35,6 +35,13 @@ s/https.*/[&]()/g
 \footnotesize
 
 As of \today
+
+
+###	BookClub
+- Janssens, DS at Command Line: https://www.datascienceatthecommandline.com/2e/
+- Hadley, https://mastering-shiny.org/
+- R, javascript + shiny https://book.javascript-for-r.com/
+- HTTP Testing (book) https://books.ropensci.org/http-testing/  
 
 ### R - always learn something new:
   *  Burns, R Inferno (not intro book)
@@ -70,8 +77,7 @@ As of \today
     *   https://online.stat.psu.edu/stat462/
     *   https://online.stat.psu.edu/stat415/
   *	 AMS Basic, good intro CLT (but not t)
-  *  Dekking, et al Modern Introduction to Probability & Statistics (2005), no R.
-    *   https://cis.temple.edu/~latecki/Courses/CIS2033-Spring13/Modern_intro_probability_statistics_Dekking05.pdf
+  *  Dekking, et al Modern Introduction to Probability & Statistics (2005), no R. https://cis.temple.edu/~latecki/Courses/CIS2033-Spring13/Modern_intro_probability_statistics_Dekking05.pdf
   *  Faraday, PRAR:  Practical Regression, Anova, linear algebra (mature
       approach)
   *  Frey, Bruce "Statistical Hacks"
@@ -94,6 +100,8 @@ As of \today
   -  https://towardsdatascience.com
   -  R-Blogger
 	-  \url{https://rweekly.org/}{rweekly.org}
+	-	 https://www.rstudio.com/blog/software-development-resources-for-data-scientists/
+	-	 milospopovic.net
 
 ####  R, the Language: Functional, Standard and Non- Evaluation, Environments, Call Stacks:
 
@@ -114,7 +122,6 @@ As of \today
   *  Ismay modern dive (2020)
   *  Kaplan (2017) ch 6.5 https://dtkaplan.github.io/SM2-bookdown/  (wordy,
 	but exposes nuances)
-  *	 Kurz: Statistial Rethinking reCoded (Bayesian)
   *	 Lane se(b_hat)
   *	 Matloff(2020) book
   *	 Mcelreath (videos)
@@ -123,50 +130,68 @@ As of \today
 
 ### More advanced regession/modeling books
 
-  -  Shalizi:  excellent:
-    -  (2019) http://www.stat.cmu.edu/~cshalizi/TALR/ -deeper/more explanatory. By Ch 11, use of gradient f, matrix derviatives ....
-    -  Shalizi http://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/ADAfaEPoV.pdf    
-    -  http://www.stat.cmu.edu/~cshalizi/mreg/15/  
-  -  Davidson (Econometric) -  Ch 1, 2
-  - **ISLRv2:**  (book) https://web.stanford.edu/~hastie/ISLRv2_website.pdf
-		-	videos: https://www.youtube.com/c/R4DSOnlineLearningCommunity 
-  -  MATLOFF (1st book) |	ch3 - lot of useful prproperties of x,y  | 	ch 7  - affine transformations
-  *  Efron, Hastie "Computer Age Statistical Inference"  (advanced, but
-      chapter intros put techniques into perspective), no R.
-  *  Kuhn (2019): https://bookdown.org/max/FES/
-  *  RAFAEL  			dsbook - ch 17.4, ch 18.3.4
-  *  **Roback/Legler Beyond Multiple Linear Regression: (2021)**_ https://bookdown.org/roback/bookdown-BeyondMLR/
+-  Shalizi:  excellent:
+  -  (2019) http://www.stat.cmu.edu/~cshalizi/TALR/ -deeper/more explanatory. By Ch 11, use of gradient f, matrix derviatives ....
+  -  Shalizi http://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/ADAfaEPoV.pdf    
+  -  http://www.stat.cmu.edu/~cshalizi/mreg/15/
+-  Davidson (Econometric) -  Ch 1, 2
+- **ISLRv2:**  (book) https://web.stanford.edu/~hastie/ISLRv2_website.pdf
+		-	videos: https://www.youtube.com/c/R4DSOnlineLearningCommunity
+-  MATLOFF (1st book) |	ch3 - lot of useful prproperties of x,y  | 	ch 7  - affine transformations
+*  Efron, Hastie "Computer Age Statistical Inference"  (advanced, but chapter intros put techniques into perspective), no R.
+*  Kuhn (2019): https://bookdown.org/max/FES/
+*  RAFAEL  			dsbook - ch 17.4, ch 18.3.4
+*  **Roback/Legler Beyond Multiple Linear Regression: (2021)**_ https://bookdown.org/roback/bookdown-BeyondMLR/
       (Replaces BYSH) introduces likelihood; ch6 - logistic worked problem
-  *	 Siegrist (aka random services.org) 
-    * random| (3)expected value 1..11 and 	|(5) random samples 1-8 (t-dist)
-  * Taubes, linear alg, statistics,  http://people.math.harvard.edu/~knill/teaching/math19b_2011/handouts/chapters1-19.pdf
-      Biology?  math?  probability?   Think this is really an ideas book; not
-      as easy as may appear.
-	*  UCLA:  Mixed Models - intro:  https://stats.oarc.ucla.edu/other/mult-pkg/introduction-to-linear-mixed-models/
+*	 Siegrist (aka random services.org) * random| (3)expected value 1..11 and 	|(5) random samples 1-8 (t-dist)
+* Taubes, linear alg, statistics,  http://people.math.harvard.edu/~knill/teaching/math19b_2011/handouts/chapters1-19.pdf
+      Biology?  math?  probability?   Think this is really an ideas book; not as easy as may appear.
+
+\newpage
 
 ####	Algorithms & ML
-  -  Berkeley, excellent glossary: https://www.stat.berkeley.edu/~stark/SticiGui/Text/gloss.htm
-  -  Berkeley CRASH 
-  -  Compeau:
-     -  great ideas book! http://compeau.cbd.cmu.edu/
-     -  http://compeau.cbd.cmu.edu/programming-for-lovers/ cmu -	ch 8, 9 esp collinear.  
-  -  Boehmke Hands on ML | https://bradleyboehmke.github.io/HOML/ Ch 4,5
-  -  Deisenroth, Faiesel et al | Math4ML *book | linear alg book, regression, 2nd level
-  -  Higgens "Practical R Info?"
-	-	Huntington "The Effect Book"
-	-	mcelreath: https://github.com/rmcelreath/stat_rethinking_2022 (videos)
-	-	Molnar, "Interpretable ML"
-	-	SciLearn
-	-	Thomas,  Math for ML  ... good lin alg, but quickly gets advanced.  https://gwthomas.github.io/docs/math4ml.pdf
-	-	mcelreath: https://github.com/rmcelreath/stat_rethinking_2022 (videos)
-  -	https://www.tmwr.org/
+-  Berkeley, excellent glossary: https://www.stat.berkeley.edu/~stark/SticiGui/Text/gloss.htm
+-	 Berkeley CRASH
+-	 Chollet, Deep Learning for R (not online, no pdf)
+-  Compeau:  
+		-  great ideas book! http://compeau.cbd.cmu.edu/  
+		-  http://compeau.cbd.cmu.edu/programming-for-lovers/ cmu -	ch 8, 9 esp collinear.  
+-  Boehmke Hands on ML | https://bradleyboehmke.github.io/HOML/ Ch 4,5
+-  Deisenroth, Faiesel et al | Math4ML *book | linear alg book, regression, 2nd level
+-  Gagolewski Lightweight ML with R \url{	https://lmlcr.gagolewski.com/ } 
+-  Higgens "Practical R Info?" 
+-	 Huntington "The Effect Book"
+-	 mcelreath: https://github.com/rmcelreath/stat_rethinking_2022 (videos)
+-	 Molnar, "Interpretable ML"
+-	 SciLearn
+-	 Thomas,  Math for ML  ... good lin alg, but quickly gets advanced.  https://gwthomas.github.io/docs/math4ml.pdf
+-	 mcelreath: https://github.com/rmcelreath/stat_rethinking_2022 (videos)
+-	 https://www.tmwr.org/
+-  UCLA:  Mixed Models - intro:  https://stats.oarc.ucla.edu/other/mult-pkg/introduction-to-linear-mixed-models/
+-	 Varma: Deep Learning \url{https://srdas.github.io/DLBook/}
 
 #### Bayesian
 
-	-  Downey, Allen "Thinking Bayes" https://www.greenteapress.com/thinkbayes/thinkbayes.pdf
-	-	 Johnson, Ott et al:  https://www.bayesrulesbook.com/index.html
+	-	 Aaronson, Scott: \url{https://www.scottaaronson.com/qclec.pdf}
+	Information Theory:  CS, Quantum, Bayesian, linear algebra, Probability
+	-	 Clyde, Mine et al Intro To Bayesian Thinking  (R,intuitive, online only)
+	-  Downey, Allen "Thinking Bayes" https://www.greenteapress.com/thinkbayes/thinkbayes.pdf  (2012 pdf, clear intutive, but python)
+	-  Davidson-Pilon Bayesian for Hackers  python, but ideas seem well
+	presented.
+	-	 Johnson, Ott et al:  https://www.bayesrulesbook.com/index.html (online,
+	no pdf)
 	-  paulvanderlake (many R resources) 2012 ThinkBayes
+	-  Kurz: Statistial Rethinking reCoded (Bayesian) \url{https://bookdown.org/content/4857/#how-to-use-and-understand-this-project} (R, meant as supplement to McElreath)
 
+\begin{itemize}
+\item {Aaronson, Scott: \url{https://www.scottaaronson.com/qclec.pdf} 	Information Theory:  CS, Quantum, Bayesian, linear algebra, Probability}  
+\item {Clyde, Mine et al Intro To Bayesian Thinking	(R,intuitive, online only) }  
+\item { Downey, Allen "Thinking Bayes" https://www.greenteapress.com/thinkbayes/thinkbayes.pdf  (2012 pdf, clear intutive, but python) }  
+\item {Davidson-Pilon Bayesian for Hackers  python, but ideas seem well 	presented.}
+\item { Johnson, Ott et al:  https://www.bayesrulesbook.com/index.html (online, item 	no pdf) }
+\item {Kurz: Statistial Rethinking reCoded (Bayesian) \url{https://bookdown.org/content/4857/#how to-use-and-understand-this-project} (R, meant as supplement to McElreath)}
+\item {Paulvanderlake (many R resources) 2012 ThinkBayes}
+\end{itemize}
 
 #### Shiny
 	-	R, javascript + shiny https://book.javascript-for-r.com/
@@ -314,101 +339,8 @@ CRAN Task Views:  Web Technology & Services: https://cran.r-project.org/web/view
   *  (R & Dropbox) https://github.com/karthik/rdrop2 (2020)
   *  (R & Predictit) https://github.com/kiernann/predictr
 
-Vocabulary  (also:   [https://developer.mozilla.org/en-US/docs/Glossary](https://developer.mozilla.org/en-US/docs/Glossary) )     
 
-####    HTTP, JSON, RFC and Web Technologies
-
-##### Curl:   
-  *  [https://everything.curl.dev/](https://everything.curl.dev/)  
-  *  https://stackoverflow.com/users/93747/daniel-stenberg
-  *  https://daniel.haxx.se/blog/
-
-##### HTTP
-  *  Command Line book:      https://datascienceatthecommandline.com/2e/index.html
-  *  JSON   https://cran.r-project.org/web/packages/jsonlite/index.html
-  *  HTTP protocol MDN https://developer.mozilla.org/en-US/docs/Web/HTTP
-  *  HTTP Header Fields https://en.wikipedia.org/wiki/List_of_HTTP_header_fields, Media types (MIME):   https://www.iana.org/assignments/media-types/media-types.xhtml
-  *  HTTPS,  HTTP over TLS or SSL:  https://en.wikipedia.org/wiki/HTTPS 
-  *  HTTP  mentioned by Hadley Wickham:
-    -  https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177
-    -  https://www.jmarshall.com/easy/http/
-  	*	https://docs.python-requests.org/en/master/user/quickstart/
-
-Media Types (was MIME): https://en.wikipedia.org/wiki/Media_type   
-                        https://docs.github.com/en/rest/overview/media-types
-##### RFC  
-  -  RFC 2616 HTTP 2.1  https://www.rfc-editor.org/rfc/rfc2616  
-  -  RFC 2617 Basic Authentication https://www.rfc-editor.org/rfc/rfc2617  
-  -  RFC 3986 + RFC 8820 URI/URL
-  *  RFC 6749 OAUTH 2.0 https://www.rfc-editor.org/rfc/rfc6749  
-  *  RFC 6750 Bearer Token: https://datatracker.ietf.org/doc/html/rfc6750  
-SOAP https://en.wikipedia.org/wiki/SOAP
-URI  https://en.wikipedia.org/wiki/Uniform_Resource_Identifier
-
-
-#### OAUTH 2.0,  Security , Authentication
-
-  *  Token, Service Account:  https://gargle.r-lib.org/articles/get-api-credentials.html#service-account-token
-  *  OAuth 2.0 Protocol (https://datatracker.ietf.org/doc/html/rfc6749)  
-  *  oob (out-of-band)  https://docs.auth3.dev/grant-types/urn-ietf-wg-oauth-2.0-oob (use their
-  identity server for standard RFC methods)
-  *  openSSL
-  *  https://developer.okta.com/
-  *  https://oauth.net
-  *  microsoft/open_id:  https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-protocols-oidc
-  *  auth0.com: https://auth0.com/docs/get-started
-	*  openID:  https://en.wikipedia.org/wiki/OpenID
-
-#### Popular APIs 
-  *  GitHub API https://docs.github.com/en/rest
-  *  GitLab API https://vulpes.cba.mit.edu/help/api/index.md
-  *  Google Cloud  https://cloud.google.com/
-  *  Google Cloud Platform  https://console.developers.google.com/products https://en.wikipedia.org/wiki/Google_Cloud_Platform
-  *  Spotify (api + authorization): https://developer.spotify.com/documentation/general/guides/
-  *  Spotify & Postman:  https://www.youtube.com/watch?v=5TNQf2gBrd8
-  *  Dropbox: https://www.dropbox.com/developers
-  *  Predictit.org: https://www.predictit.org/api/marketdata/all/  (xml dump,
-  must write you own functions)
-  *  ConstantContact: https://v3.developer.constantcontact.com/
-
-
-
-####	Google Specific
-  *  Google Cloud Platform (GCP)
-  *  Google Identity (https://developers.google.com/identity)
-  *  Google OAuth2.0 implementation (https://developers.google.com/identity/protocols/oauth2#installed)
-  *  google people api  https://developers.google.com/people/
-  *  google web fonts api
-  *  For Youtube (installed apps, like R): https://developers.google.com/youtube/v3/guides/auth/installed-apps
-
-
-#### R and related
-
-  -  curl::  (based on C library used in cURL) https://jeroen.cran.dev/curl/index.html
-  -  cloudyR project
-  -  curlconverter:: https://github.com/hrbrmstr/curlconverter
-  -  fakerapi.it fakerapi https://fakerapi.it/en
-  -  gargle::   good intro (https://www.tidyverse.org/blog/2021/07/gargle-1-2-0/)
-  -  httptest2:: https://enpiar.com/httptest2/index.html
-  -  httpuv, libuv
-    -  https://cran.r-project.org/package=httpuv
-    -  https://nikhilm.github.io/uvbook/introduction.html  (low-level, C code, but good sense of what is happening)
-  -  httr2::
-    -  github https://github.com/r-lib/httr2
-    -  cran https://cloud.r-project.org/web/packages/httr2/index.html
-  -  plumber
-
-####    RESTFUL API
-
-
-  -  OpenApi (api doc rules:  openapi.json or openapi.yaml; was Swagger) https://oai.github.io/Documentation/specification.html
-  -  Postman
-    -  30-day tutorial: https://www.postman.com/postman/workspace/f1c6b0a9-b930-4165-9aa4-f655dd7051b5/overview
-  -  https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm;
-  -  https://en.wikipedia.org/wiki/Representational_state_transfer#Architectural_constraints
-  -  https://restfulapi.net/
-  -  http://www.cse.lehigh.edu/~spear/cse216_tutorials/tut_spark/index.html
-  -  Openstack (Cloud) https://docs.openstack.org/api-quick-start/
+####	RESTFUL APIS  (see 0300_tech_notes.md)
 
 ###	NEOVIM/LUA
 
