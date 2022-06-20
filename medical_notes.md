@@ -1653,3 +1653,111 @@ Kaiser nutritionist telephone appt - said "1 time education" ; said I've been
 through this;   agreed that she would ask Kaiser kidney dietitian for input.
 
 ##  Fri  25 Mar 2022 - 2nd CT reading, bladder now has prtrusion; 2 small stones
+
+**GAP  lost files!**
+
+
+## Sun Jun  5 00:14:05 PDT 2022
+Call with Dr. S - Friday.
+	-	**Zenpep**, agrees does not appear to be benefit.  Stop and repeat 24-hour urine
+	in 60 days (August).  Lengthy discussion re: CT scans vs ultrasound and what to
+	do going forward.   I have no answer.. just continue.
+	- **Effexor** reduce dose by 1/2 for 30days.  Monitor and report to her any
+	changes.   If no changes, probaby ok to go to ZERO after 30 days.  But report
+	to her.	
+	-	Make appt for July 18th or so.
+	-	**Wellbutrin** no change.  She was a little suprised I was put on Effexor
+	first and that it had positive effect. (she dislikes drug; except great for hot
+	flashes)
+	-	Litholink:  repeat 60 days (August)
+
+Stool notes:
++1 day (1/2 dose of Zenpep.)   Some extra gas; but bowl movement is regular.
+
+##	Wed Jun  8 10:58:20 PDT 2022
+\newpage
+
+8 JUN 2022
+
+Dear Dr. Jhansale:
+
+Just a followup to our conversation last Friday (3 JUNE).
+
+We agreed to do the following:
+
+**ZENPEP**
+
+Appears to be little evidence of improved UrOx with Zenpep, continued use of
+medicine does not seem warranted.   As a test, I will taper Zenpep to zero pills
+per day.   In mid-August (~60 days), I will repeat 24-hour urine (Litholink) and
+review with you.
+
+	-	The official textbook treatment of pancreatic atrophy, which I have, are use
+		of these type of enzymes.  Indeed there **was a reduction in fecal fatty acid**.
+		The issue is that no other benefit was observed.  The usual symptoms
+		(diarhea) never applied.   One doctor(GI, left Kaiser) said to follow the
+		science (textbook), another (Pancreas, left Kaiser) said my "body may have
+		adjusted" to lack of enzymes.  Two others (Litholink and Mayo) observed
+		that sometimes symptoms (diarhea) do not appear and (Mayo) in some  people (a few, a
+		couple ?) enzymes do not reduce UrOx.
+	
+	-	Separately, I will update chart of all my UrOx numbers (since 2014) and send copy to you.
+
+	-	The long term health effect having little to no pancreatic enzymes is UNKNOWN to me.
+	-	The long term effects, however, of UrOx is **NOT benign** (medical literature).
+		No doctor been able to provide clarity or effect prevention.
+	
+
+**Effexor**
+
+Will begin 1/2 dose (~ 1 week when I get the medicine) for 30 days (to mid July).
+Will report any significant changes immediately to you.  If all goes well, will
+be using only Wellbutrin going foward, till we review.
+	-	Am aware your experience  with Effexor for mental health has been not been as
+	successful.  However, I feel I must report that beginning with Effexor,
+	followed soon after by Wellbutrin, in 2014 ended all reported symptoms.  I have been
+	very stable since and feel I am fully functional, albeit still unemployed.
+
+	-	Said another way should I miss the Effexor, I would have no objection to
+	resuming.
+
+
+**Litholink**
+
+	-	Suggestion:   Would it be easier if I prepared the Litholink form and then
+	send it to you electonically? (in late July) 
+	-	If yes,  appreciate if you then (1) sign it (2) fax it Litholink (number on
+	form) and (3) be sure to prepare "Courtesy Blood Draw" request for Kaiser Lab.
+	Eugene lab is not strict on this, but Portland/Salem are extremely strict - no
+	form, no work, no negotiation (they have called Security on me).
+	-	Second Suggestion:  Given the persistent HIGH UrOx numbers, I hope you would
+	be willing to speak directly to Litholink's medical head.  Litholink sits atop
+	a vast treasure of urine and kidney stone data.  I spoke with this person,
+	but I feel you, a doctor, might make more progress.  (If yes, I will need to
+	prepare you with questions).   This is not an immediate need.
+	-	Please recall that last litholink (2 May 2022) leaked urine, but the lab did
+	do the blood work.  We have the report.
+	-	I think did a SECOND 24-hour urine (blood+urine) and sent this to Litholink.
+	There is still no report.
+
+
+Thank you.
+
+Jim
+
+
+##	Fri Jun 17 19:35:47 PDT 2022
+-	Zenpep, since June 5 tappered from 11 per day; to now 2 per day.  All seems
+fine; stool now returned to elongated, swollen banana shape.  Feels good!
+-	First week or so, at 5 or 6 per day, stomach got a little angry:  gas, slight
+discomfort; no diarerha.  Still regularly; daily.  After week or so, stomach calmed down.  Now everything
+seems very good shape. 
+-	But UrOx, stones, fat in stool -- no idea.
+
+
+
+
+
+
+
+vim:nospell	

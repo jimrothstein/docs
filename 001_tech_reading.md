@@ -15,6 +15,7 @@ file <- "001_R_stats_tech_reading.md"
 !pandoc % -t latex -V linkcolor:blue -V fontsize=10pt -V geometry:margin=0.4in -o ~/Downloads/print_and_delete/reading.pdf 
 
 
+
 !pandoc -t latex -M date="`date "+%B %e, %Y"`" -o %.pdf
 -H header
 -V or --variable

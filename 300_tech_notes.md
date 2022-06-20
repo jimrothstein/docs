@@ -2,41 +2,35 @@
 \footnotesize
 \tableofcontents
 
-#	News
-Mon May 16 01:41:35 PDT 2022
-  -  move `vimdoc` to LEGACY (bottom)
-	-	 add keycode, xmodmap
+as of \today:  
+
+PURPOSE:		Misc Tech Notes;  details, notes can be here (but COMMANDS put on INDEX C)
 
 <!--
 		USAGE:  print_pdf.sh % out.pdf	
 -->
 
-#	TODO:
+###	TODO:
   -	See Index Cards (bottom) - integrate that point to very bottom into main text
 	-	HTTR2 notes - mess
+	-	Fix TOC
 
 
-PURPOSE:		Misc Tech Notes;  details, notes can be here - but COMMANDS put on
-INDEX
-
-USING:      pandoc, latex, 
-
-as of \today:  
-    *  To mix latex and .md, must go with pdf, either pandoc or knit  
-    *  Add r, knitr code to YAML?   then must render as .RMD file
-    *  I do not know how to embed latex, produce html or md (github flavor).  
-# PDF
+\begin{verbatim}
+### PDF
 
  PDF   [ignores html, css; also ignores YAML header (pandoc & ::render()]
 
  To create pdf, just about everything works:  pandoc, markdown, latex, knitr..
 
   NOTE:   Missing latex .sty ?  
-		With .tex file, run (in R) tinytex:latemk(*.tex) to install
+		-	With .tex file, run (in R) tinytex:latemk(*.tex) to install
+		- OR, use tlmgr install <font>
 
-  fonts installed?  fc-list : family
-  (Oct 2021) Can not figure out how to use another font in pandoc:  mainfont:
-  is not working.
+		-	fonts installed?  fc-list : family
+		- also luaotfload (loads fonts)
+		-	ENGINE=software (such as **luatex**, tex, pdftex) 
+		-	FORMAT=macros (such as **lualatex**)
 
   (Jan 2022) **Missing font, package?   TinyTex**
   *  update R
@@ -46,9 +40,7 @@ as of \today:
 
   Lua in *.tex file
   *  see ~/code/publish_project/TEX/
-```
 
-```vimdoc       
 !pandoc % -f markdown -o %.pdf
 
 !pandoc % -f markdown  -t latex -H ../chapter_break.tex -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o ~/Downloads/print_and_delete/out.pdf
@@ -56,12 +48,6 @@ as of \today:
 
 !pandoc --metadata=project:JIM --lua-filter doc/panvimdoc/scripts/skip-blocks.lua --lua-filter doc/panvimdoc/scripts/include-files.lua  -t doc/panvimdoc/scripts/panvimdoc.lua % -o doc/source/jim_knitr_pandoc_latex.txt
 
-```
-
-
-# HTML
-
-```
   HTML [to produce HTML with pandoc, all latex is IGNORED.]  
 
 I do **not** know how to create fancy HTML files from knitr, pandoc.
@@ -70,12 +56,7 @@ I do **not** know how to create fancy HTML files from knitr, pandoc.
  small amounts of latex (math) b/c ppl have added filters or other widgets to
  pandoc.
 
- Avoid experiments:   will waste time.
  If using Latex, its packages, diagrams with Latex ... must go with PDF.
-
-
-  *  !pandoc % -f markdown -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o out/out.html 
-
 
 -H header  
 -V or --variable  
@@ -88,98 +69,31 @@ I do **not** know how to create fancy HTML files from knitr, pandoc.
 pandoc balks at processing straight text if it things it sees markdown.
 If lucky, !pandoc % -o file.pdf will work.
 
-**BEST**  print_me.sh *.txt file;  then use browser to print and save as .pdf
-*.R  - NOPE, Firefox chokes.
+\end{verbatim}
 
-```
-# R, DEFINTIONS, TERSE EXAMPLES
-```
-Not in this document.
-See ~/code/try_things_here/BASE/
-```
-# GIST, GITHUB download to R
-```
-download.file("https://gist.githubusercontent.com/jimrothstein/c5e148c9a766ab1a1a91464517a0fe1f/raw/61655207c75c898be9a80454abf53bee06c34e5f/gistfile1.txt", 
-              destfile="junk.txt")
-readLines(con="junk.txt")
-```
+###		R, DEFINTIONS, TERSE EXAMPLES
+			See ~/code/try_things_here/BASE/
 
-#	LATEX NOTES
--	Tikz seems to be most popular way to gaphics.
--	footnote:  **postscript** is more powerful programming language;  pdf hails from
-	this.  However, using postscript with latex requires addins, such as
-	ghostscript; drivers; ...   Avoid postscript and packages pstricks, even if
-	greater capability.
+###	LATEX NOTES
+-	Tikz seems to be most popular way to gaphics vs **pstricks**.
 
-#### neovim, nvim, vim  update to latest version
-{
-```
-##  Tue  02 Nov 2021 (also 30 DEC 2021)
--  download nvim.appimage | place in ~/bin/ | will overwrite prior
--  change permissions to  764
--  do not touch soft link nvim --> nvim.appimage
--  nothing more than this.
+	footnote: \par
+	**postscript** a more powerful programming language than tex; **pstricks**,
+	ghostscript; pdf (a subset of postscript) hails from this.  However, using
+	postscript with latex requires addins, such as ghostscript; drivers; ...
+	Avoid **postscript** and packages pstricks, even if greater capability.
 
-##  Wed  09 Feb 2022
-
--   neovim TERMINAL BUFFER has 2 modes:  Normal (move around as usual, gf, y
-etc) and a NEW MODE:  Terminal mode.  This mode means we see BASH cursor.
-Anything entered goes there.  There is NO INSERT/EDIT Mode.  You deal with
-Terminal mode at the ACTIVE line only.
-See #75 Vimcast
-
--   This mapping copies line , inserts into terminal buffer and runs
-noremap <leader>tl Vy<C-w>wpa<CR><C-\><C-n><C-w>pj
-```
-}
-
-#### VIM writing_notes
-```
-
-*jim_writing_notes1*
-
-http://www.terminally-incoherent.com/blog/2013/06/17/using-vim-for-writing-prose/
-:h help-writing
-## hard wrap is friend  
-
-a=automatic reformat
-t=wrap at textwidth
-
-setlocal formatoptions=ant
-setlocal textwidth=80
-setlocal wrapmargin=0
-setlocal foldcolumn=3 		"trick, to set left margin	 
-
-
-Long parapgarapja l;akdsjf asalkfjas d; asdfk;ladsjf  lk;adjf a;lkaf as;l
-asdfjl; adsfl;kj d;as fasdj;lkj afds;lkj 
-
-##  Folds
-26FEB2022  set to use treesitter;  don't seem to work
-
-##	Turn off indents
-
-(no c indents)
-
-setlocal noautoindent  
-setlocal nocindent  
-setlocal nosmartindent  
-setlocal indentexpr=  
-```
 
 ####	GIT commands
 
   -  Change git push from https to ssh
 
-```
 		git remote -v   shows using https:
 		git remote set-url origin git@github.com:jimrothstein/REPOSITORY.git 
 		git remote -v # shows using git:
-```
 
 #### LUA
 
-```
 In lua, nil or false evaluate to:  false
 0 or '', evaluate to: true
 
@@ -274,25 +188,63 @@ vim.wo.number = true
 vim.wo.number = false
 vim.bo.shiftwidth = 4    
   
-```
 
 
 
 
 
+###	NEOVIM NOTES
+#### neovim, nvim, vim  update to latest version
+{
+ Tue  02 Nov 2021 (also 30 DEC 2021)
+-  download nvim.appimage | place in ~/bin/ | will overwrite prior
+-  change permissions to  764
+-  do not touch soft link nvim --> nvim.appimage
+-  nothing more than this.
 
-# VIMDOC 
-## SOURCE md file
+ Wed  09 Feb 2022
 
-The SOURCE markdown file is located in jimHelp/source.   Edit .md file; not
-the resulting .txt file.   Edit .md file; not the resulting .txt file
+-   neovim TERMINAL BUFFER has 2 modes:  Normal (move around as usual, gf, y
+etc) and a NEW MODE:  Terminal mode.  This mode means we see BASH cursor.
+Anything entered goes there.  There is NO INSERT/EDIT Mode.  You deal with
+Terminal mode at the ACTIVE line only.
+See #75 Vimcast
 
-## Resulting txt file.
-The resulting txt file will be located in jimHelp/doc
+-   This mapping copies line , inserts into terminal buffer and runs
+noremap <leader>tl Vy<C-w>wpa<CR><C-\><C-n><C-w>pj
+}
+
+#### VIM writing_notes
+
+*jim_writing_notes1*
+
+http://www.terminally-incoherent.com/blog/2013/06/17/using-vim-for-writing-prose/
+:h help-writing
+## hard wrap is friend  
+
+a=automatic reformat
+t=wrap at textwidth
+
+setlocal formatoptions=ant
+setlocal textwidth=80
+setlocal wrapmargin=0
+setlocal foldcolumn=3 		"trick, to set left margin	 
 
 
-# Vim Notes
+Long parapgarapja l;akdsjf asalkfjas d; asdfk;ladsjf  lk;adjf a;lkaf as;l
+asdfjl; adsfl;kj d;as fasdj;lkj afds;lkj 
 
+####  Folds
+26FEB2022  set to use treesitter;  don't seem to work
+
+####	Turn off indents
+
+(no c indents)
+
+setlocal noautoindent  
+setlocal nocindent  
+setlocal nosmartindent  
+setlocal indentexpr=  
 
 HELPTAGS and Ctags are NOT related (do not confuse).
 
@@ -314,9 +266,8 @@ Following sets things up:
 * :vert h    (open help on right)
 
 
-## VIM help 1
+#### VIM help 1
 
-```
 :h windows.txt
 :h vert
 :h splitright
@@ -384,14 +335,14 @@ Following sets things up:
 $VIMRUNTIME (inside the image app)
 :!ls $VIMRUNTIME
 
-## Windows, splits
+#### Windows, splits
 :h usr_07.txt
 :h usr_08.txt
 :h windows.txt
 :h CTRL-W    
 
 
-## statusline  %m (modify?) %y (filetype) ...
+#### statusline  %m (modify?) %y (filetype) ...
 :h statusline
 :echo expand("%m")  
 :set statusline=%t
@@ -404,7 +355,7 @@ Ranges (in file)
 3 lines below to end - 5 lines
 :.+3, $-5
 
-## insert mode
+#### insert mode
 :h insert.txt
 :h insert-index
 :h i_CTRL-R
@@ -419,12 +370,12 @@ Insert in bulk:
 :i or :a  followed by . when done
 
 
-## Registers
+#### Registers
 :echo @a 
 :let @a="hello"
 
 
-## Plugins
+#### Plugins
 :h Vimux
 :call VimuxRunCommand("ls")
 :VimuxPromptCommand<CR>
@@ -433,22 +384,22 @@ To Close:
 :VimuxCloseRunner<CR>
 
 
-## Syntax Highlighting
+#### Syntax Highlighting
 :h usr_06.txt
 
-## vim initialize
+#### vim initialize
 :vert h nvim_R
 :tab help
 
 
-## vim help 2
+#### vim help 2
 :vert h nvim-R  " opens help to right
 :let R_nvimpager = "vertical" default, (can be "tab", "tabnew")
 
-## vim & grep (search both *.R and *.Rmd - note | is escaped)
+#### vim & grep (search both *.R and *.Rmd - note | is escaped)
 :grep -EHRn 'binomial' ~/code/**/*.(R\|Rmd)
 
-## vim tabs
+#### vim tabs
 tabs   :tabn :tabp :tabnew
 
 READ: cmds to open windows at various localations:  bo, above ...
@@ -472,16 +423,14 @@ READ: cmds to open windows at various localations:  bo, above ...
 :h motions.txt (jumps, motions, find next } etc)
 
 
-## search
+#### search
     /foo/+1    find foo  and move +1 line down 
 /foo/0     find .... but move to beginning of line 
 /foo/e-1    find ... then move back 1 character.
 
 
-```
 
-## VIM HELP 3 (context)
-```vimdoc
+#### VIM HELP 3 (context)
 :h i_{}      (insert, delete, visual, ...)
 
 :h :ex_cmd
@@ -494,43 +443,12 @@ READ: cmds to open windows at various localations:  bo, above ...
 
 :h ft-r-indent    (for plugin r)
 :h ft-json-....   (for plugin json)
-```
 
 
-# Pandoc Notes
 
-```
-as of \today:  
-    *  To mix latex and .md, must go with pdf, either pandoc or knit  
-    *  Add r, knitr code to YAML?   then must render as .RMD file
-    *  I do not know how to embed latex, produce html or md (github flavor).  
+\end{verbatim}
 
- ===    
-  PDF   [ignores html, css; also ignores YAML header (pandoc & ::render()]
- ===  
-
-  *  Pandoc creates a .tex file (from .md source).   This .tex file is run
-      through engine (pdflatex, xelatex ....) to actually output the pdf.
-
-  NOTE:   .tex uses a .sty which I do not have.  USE  knitr:: (with TinyTex
-  to locate and install that .sty file)  
-
-
-!pandoc % -f markdown -o %.pdf
-
-!pandoc % -f markdown  -t latex -H ../chapter_break.tex -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o ~/Downloads/print_and_delete/out.pdf
-!pandoc % -f markdown  -t latex -H ../chapter_break.tex -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o out.pdf 
-!pandoc % -f markdown  --pdf-engine lualatex -H chapter_break.tex -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o ~/Downloads/print_and_delete/out.pdf
-```
-
-```
- ====  
-  HTML [ignores latex]  
- ====    
-
-  *  !pandoc % -f markdown -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o out/out.html 
-
-```
+\newpage
 
 ### LINUX/ZSH notes
 
@@ -1046,7 +964,7 @@ zle-line-finish
 zle-line-init
 ```
 
-## BINDKEY
+#### BINDKEY
 ```
 *bindkey*  # results, all shortcuts
 
@@ -1107,8 +1025,7 @@ zle-line-init
 
 
 
-# XFCE4
-
+### XFCE4
 
 Shortcuts: https://docs.xfce.org/apps/terminal/start#keyboard_shortcuts
 HELP:   https://docs.xfce.org/apps/terminal/4.12/start
@@ -1119,170 +1036,7 @@ ALT-F10  toggle bet min/max (NOPE!)
 
 ALT-TAB  rotate through open windows?
 
-
-```
-##  Thu  19 Nov 2020  Acer Batttery
-  *  ACER CB3-431-C7EX 
-  *  From back (tiny print on labels)
-    *  SNID   8120 1450072
-    *  SN NXGC7AA001812038A47200
-    *  ACER CB-431 Model N16P1
-Do you sell new battery for this ACER laptop?
-CB3-431-C7EX  (manuf 3/22/18)
-SNID:  81201450072
-```
-
-#### REST RESTful, HTTP Protocol
-```
-	-	HTTP - best is Mozilla introduction
-  -	In practice, Restful API means built upon HTTP. (do exist non-HTTP )
-*	originally URL linked to file or webpage.
-*	more recenty, URI links to payload,  HTML/JSON/XML
-*	RESTFUL provides stateless operations, architecture (vs SOAP, or others)
-* VERBS include GET/POST/ etc etc
-Stateless means server keeps no session information.   Each call to server is
-independent.  Examples include HTTP, IP, REST.   But TCP is not stateless.
-
-
-
-**Vocabulary**  (also:   [https://developer.mozilla.org/en-US/docs/Glossary](https://developer.mozilla.org/en-US/docs/Glossary) )     
-
-USER - owns the 'resource'
-client - your restful api software (aka app, 3rd party, wants to access USER's resource;  usually
-must register with the resource.  Can be desktop or mobile app, or web app.
-Authorization Server - asks USER to approve request
-Authorization Code - returns to client software
-
-
-####    HTTP, JSON, RFC and Web Technologies
-
-##### Curl:   
-  *  [https://everything.curl.dev/](https://everything.curl.dev/)  
-  *  https://stackoverflow.com/users/93747/daniel-stenberg
-  *  https://daniel.haxx.se/blog/
-
-##### HTTP
-  *  Command Line book:      https://datascienceatthecommandline.com/2e/index.html
-  *  JSON   https://cran.r-project.org/web/packages/jsonlite/index.html
-  *  HTTP protocol MDN https://developer.mozilla.org/en-US/docs/Web/HTTP
-  *  HTTP Header Fields https://en.wikipedia.org/wiki/List_of_HTTP_header_fields, Media types (MIME):   https://www.iana.org/assignments/media-types/media-types.xhtml
-  *  HTTPS,  HTTP over TLS or SSL:  https://en.wikipedia.org/wiki/HTTPS 
-  *  HTTP  mentioned by Hadley Wickham:
-    -  https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177
-    -  https://www.jmarshall.com/easy/http/
-  	*	https://docs.python-requests.org/en/master/user/quickstart/
-
-	*  BNF notation, see !w
-
-Media Types (was MIME): https://en.wikipedia.org/wiki/Media_type   
-                        https://docs.github.com/en/rest/overview/media-types
-##### RFC  
-  -  RFC 2616 HTTP 2.1  https://www.rfc-editor.org/rfc/rfc2616  
-  -  RFC 2617 Basic Authentication https://www.rfc-editor.org/rfc/rfc2617  
-  -  RFC 3986 + RFC 8820 URI/URL
-  *  RFC 6749 OAUTH 2.0 https://www.rfc-editor.org/rfc/rfc6749  
-  *  RFC 6750 Bearer Token: https://datatracker.ietf.org/doc/html/rfc6750  
-SOAP https://en.wikipedia.org/wiki/SOAP
-URI  https://en.wikipedia.org/wiki/Uniform_Resource_Identifier
-
-
-#### OAUTH 2.0,  Security , Authentication
-
-  *  Token, Service Account:  https://gargle.r-lib.org/articles/get-api-credentials.html#service-account-token
-  *  OAuth 2.0 Protocol (https://datatracker.ietf.org/doc/html/rfc6749)  
-  *  oob (out-of-band)  https://docs.auth3.dev/grant-types/urn-ietf-wg-oauth-2.0-oob (use their
-  identity server for standard RFC methods)
-  *  openSSL
-  *  https://developer.okta.com/
-  *  https://oauth.net
-  *  microsoft/open_id:  https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-protocols-oidc
-  *  auth0.com: https://auth0.com/docs/get-started
-	*  openID:  https://en.wikipedia.org/wiki/OpenID
-	*  letsencrypt.org | ISRG.org ? | source for free?  CA
-
-#### Popular APIs 
-  *  GitHub API https://docs.github.com/en/rest
-  *  GitLab API https://vulpes.cba.mit.edu/help/api/index.md
-  *  Google Cloud  https://cloud.google.com/
-  *  Google Cloud Platform  https://console.developers.google.com/products https://en.wikipedia.org/wiki/Google_Cloud_Platform
-  *  Spotify (api + authorization): https://developer.spotify.com/documentation/general/guides/
-  *  Spotify & Postman:  https://www.youtube.com/watch?v=5TNQf2gBrd8
-  *  Dropbox: https://www.dropbox.com/developers
-  *  Predictit.org: https://www.predictit.org/api/marketdata/all/  (xml dump,
-  must write you own functions)
-  *  ConstantContact: https://v3.developer.constantcontact.com/
-	*  Glitch - site acts like server in-between API source and user	?
-
-
-
-
-####	Google Specific
-  *  Google Cloud Platform (GCP)
-  *  Google Identity (https://developers.google.com/identity)
-  *  Google OAuth2.0 implementation (https://developers.google.com/identity/protocols/oauth2#installed)
-  *  google people api  https://developers.google.com/people/
-  *  google web fonts api
-  *  For Youtube (installed apps, like R): https://developers.google.com/youtube/v3/guides/auth/installed-apps
-
-
-#### R and related
-
-  -  curl::  (based on C library used in cURL) https://jeroen.cran.dev/curl/index.html
-  -  cloudyR project
-  -  curlconverter:: https://github.com/hrbrmstr/curlconverter
-  -  fakerapi.it fakerapi https://fakerapi.it/en
-  -  gargle::   good intro (https://www.tidyverse.org/blog/2021/07/gargle-1-2-0/)
-  -  httptest2:: https://enpiar.com/httptest2/index.html
-  -  httpuv, libuv
-    -  https://cran.r-project.org/package=httpuv
-    -  https://nikhilm.github.io/uvbook/introduction.html  (low-level, C code, but good sense of what is happening)
-  -  httr2::
-    -  github https://github.com/r-lib/httr2
-    -  cran https://cloud.r-project.org/web/packages/httr2/index.html
-  -  plumber
-
-####    RESTFUL API (vs. graphQL)
-
-
-  -  OpenApi (api doc rules:  openapi.json or openapi.yaml; was Swagger) https://oai.github.io/Documentation/specification.html
-  -  Postman
-    -  30-day tutorial: https://www.postman.com/postman/workspace/f1c6b0a9-b930-4165-9aa4-f655dd7051b5/overview
-  -  https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm;
-  -  https://en.wikipedia.org/wiki/Representational_state_transfer#Architectural_constraints
-  -  https://restfulapi.net/
-  -  http://www.cse.lehigh.edu/~spear/cse216_tutorials/tut_spark/index.html
-  -  Openstack (Cloud) https://docs.openstack.org/api-quick-start/
-
-
-### epub, Calibre, iPad, iCloud, eReader, pdf
--	Claim:  iPad does not support Calibre; free Readers for iPad, everyone has fav.
-		No, no, no.    Download Calibre software for osx to iPad.   What  does not
-		work is connecting iPad to Calibre on Laptop.
--	Goodreader for pdf ($20?) - many say best iPad reader.?
-- Marvin - no pdf support, but excellent otherwise?
-
-```
-
-# KNITR
-
-```
-**knitr -> R & rmarkdown -> Bookdown (~2016) -> Blogdown -> netlify (Hugo, static)**
-HUGO:   md -> html
-BOOKDOWN:  Rmd        ->html (skips md)
-
-**lua** is a lightweight language acts like "glue" ; embeds within code; useful in
-textdoc .
-
-**renv** 	Why I think I do not need (and do not want).  Re-creates tidyverse code
-INSIDE each project, ie local copy of everything inside package.  Then takes
-snapshots as either your code or the any of like libraries changes.   Nice
-purpose:   easily re-create complete environment.   But much too much overhead
-for my needs!  (at this time.)
-
-```
-
-#  X11
-```
+####  X11
 -	XFCE - many distros, suite of apps, use GTK+ toolkit
 -	-	DESKTOP Mgr=Xfdesktop (colors, images, wallpaper)
 -	-	FILE Mgr=Thunar (GTK+ toolkit)
@@ -1312,15 +1066,191 @@ for my needs!  (at this time.)
 -	TERMINALS
 	-	rxvt, urxvt, terminator, st (not friendly) xfce4-terminal.
 
+\begin{verbatim}
+##  Thu  19 Nov 2020  Acer Batttery
+  *  ACER CB3-431-C7EX 
+  *  From back (tiny print on labels)
+    *  SNID   8120 1450072
+    *  SN NXGC7AA001812038A47200
+    *  ACER CB-431 Model N16P1
+Do you sell new battery for this ACER laptop?
+CB3-431-C7EX  (manuf 3/22/18)
+SNID:  81201450072
+\end{verbatim}
+
+\newpage
+
+## REST RESTful, HTTP Protocol , JSON, RFC, API and Web Technologies
+-	HTTP - best is Mozilla introduction
+-	In practice, Restful API means built upon HTTP. (do $\exists$ non-HTTP )
+*	originally URL linked to file or webpage.
+*	more recenty, URI links to payload,  HTML/JSON/XML
+*	RESTFUL provides stateless operations, architecture (vs SOAP, or others)
+* VERBS include GET/POST/ etc etc
+Stateless means server keeps no session information.   Each call to server is
+independent.  Examples include HTTP, IP, REST.   But TCP is not stateless.
+
+
+####    RESTFUL API (vs. graphQL) REF:
+
+  -  OpenApi (api doc rules:  openapi.json or openapi.yaml; was Swagger) https://oai.github.io/Documentation/specification.html
+  -  Postman - popular testing/setup site, many videos; `code` button to show
+		 cURL, httr, curlR and many others
+    -  30-day tutorial: https://www.postman.com/postman/workspace/f1c6b0a9-b930-4165-9aa4-f655dd7051b5/overview
+  -  https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm;
+  -  https://en.wikipedia.org/wiki/Representational_state_transfer#Architectural_constraints
+  -  https://restfulapi.net/
+  -  http://www.cse.lehigh.edu/~spear/cse216_tutorials/tut_spark/index.html
+  -  Openstack (Cloud) https://docs.openstack.org/api-quick-start/
+
+#### REST & OAUTH2 Vocabulary  
+(also:   [https://developer.mozilla.org/en-US/docs/Glossary](https://developer.mozilla.org/en-US/docs/Glossary) )     
+BEST VIDEO:	oath2 5/27/20 "Like I am 5"
+
+-	USER - owns the 'resource'
+-	client - your restful api software (aka app, 3rd party, wants to access USER's resource;  usually must register with the resource.  Can be desktop or mobile app, or web app.
+-	**Authorization** Server - asks USER to approve request
+-	**Authorization** Code - returns to client software
+-	**Access** Token - short term access (~ 1 hour).  Server gives to client.
+-	**BEARER** **TOKEN** - type of HEADER, indicates Access Token
+-	**Refresh** Token - As needed client passes to server (+ secrets) in exchange for new Access
+Token.  Refresh Token is longer lived.  Why this way?   Security mechanism.
+	-	Still need to know secrets to gain Access Token. Possession is
+		insufficient.
+	-	**Implicit,** **password** - out-of-favor; do not use.
+	-	**GRANT** **TYPES** - several; use only ...?
+	-	**PKCE**	-	additional security b/c authorization code can be compromised.
+	-	**PAT or Personal Access Token (Github)** - Github's authentication method, of form
+	-	user:token (NOT user:password)
+	-	Google Service Account -	for non-interactive, machine-to-machine (so far I -have no need)
+	-	serialize - encode a string/object as .....?
+
+-	endpoint
+-	url
+- uri
+-	credentials - see RFC 6749
+- redirect_uri	
+-	oob -	only google used, considered obsolete mechanism in authorization
+	process.
+-	httpuv, libuv -	low-level, set up sockets, I/O, events;  cross platform
+-	JWT
+-	native
+-	policy
+-	webhook -	client request and **listen**  Specify event and callback url.
+	Server responds only when event occurs.  CLAIM:  smart phones can not use
+	webhook (why?)
+
+
+
+
+#### Curl REF:   
+  *  [https://everything.curl.dev/](https://everything.curl.dev/)  
+  *  https://stackoverflow.com/users/93747/daniel-stenberg
+  *  https://daniel.haxx.se/blog/
+
+#### HTTP REF:
+  *  Command Line book:      https://datascienceatthecommandline.com/2e/index.html
+  *  JSON   https://cran.r-project.org/web/packages/jsonlite/index.html
+  *  HTTP protocol MDN https://developer.mozilla.org/en-US/docs/Web/HTTP
+  *  HTTP Header Fields https://en.wikipedia.org/wiki/List_of_HTTP_header_fields, Media types (MIME):   https://www.iana.org/assignments/media-types/media-types.xhtml
+  *  HTTPS,  HTTP over TLS or SSL:  https://en.wikipedia.org/wiki/HTTPS 
+  *  HTTP  mentioned by Hadley Wickham:
+    -  https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177
+    -  https://www.jmarshall.com/easy/http/
+  	*	https://docs.python-requests.org/en/master/user/quickstart/
+	*  BNF notation, see !w
+
+Media Types (was MIME): https://en.wikipedia.org/wiki/Media_type   
+                        https://docs.github.com/en/rest/overview/media-types
+#### RFC REF: 
+  -  RFC 2616 HTTP protocol and terms:  https://www.rfc-editor.org/rfc/rfc2616  
+  -  RFC 2617 Basic Authentication:	 https://www.rfc-editor.org/rfc/rfc2617  
+  -  RFC 3986 + RFC 8820 URI/URL
+  *  RFC 6749 OAUTH 2.0 https://www.rfc-editor.org/rfc/rfc6749  
+  *  RFC 6750 Bearer Token: https://datatracker.ietf.org/doc/html/rfc6750  
+SOAP https://en.wikipedia.org/wiki/SOAP
+URI  https://en.wikipedia.org/wiki/Uniform_Resource_Identifier
+
+
+#### OAUTH 2.0,  Security , Authentication, REF
+
+  *  Token, Service Account:  https://gargle.r-lib.org/articles/get-api-credentials.html#service-account-token
+  *  OAuth 2.0 Protocol (https://datatracker.ietf.org/doc/html/rfc6749)  
+  *  oob (out-of-band)  https://docs.auth3.dev/grant-types/urn-ietf-wg-oauth-2.0-oob (use their
+  identity server for standard RFC methods)
+  *  openSSL
+  *  https://developer.okta.com/
+  *  https://oauth.net
+  *  microsoft/open_id:  https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-protocols-oidc
+  *  auth0.com: https://auth0.com/docs/get-started
+	*  openID:  https://en.wikipedia.org/wiki/OpenID
+	*  letsencrypt.org | ISRG.org ? | source for free?  CA
+
+#### Popular APIs 
+  *  GitHub API https://docs.github.com/en/rest
+  *  GitLab API https://vulpes.cba.mit.edu/help/api/index.md
+  *  Spotify (api + authorization): https://developer.spotify.com/documentation/general/guides/
+  *  Spotify & Postman:  https://www.youtube.com/watch?v=5TNQf2gBrd8
+  *  Dropbox: https://www.dropbox.com/developers
+  *  Predictit.org: https://www.predictit.org/api/marketdata/all/  (xml dump,
+  must write you own functions)
+  *  ConstantContact: https://v3.developer.constantcontact.com/
+	*  Glitch - site acts like server in-between API source and user	?
+
+
+####	Google Specific
+  *  Google Identity (https://developers.google.com/identity)
+  *  Google OAuth2.0 implementation (https://developers.google.com/identity/protocols/oauth2#installed)
+  *  google people api  https://developers.google.com/people/
+  *  google web fonts api
+  *  Google Cloud  https://cloud.google.com/
+  *  Google Cloud Platform  https://console.developers.google.com/products https://en.wikipedia.org/wiki/Google_Cloud_Platform
+  *  For Youtube (installed apps, like R): https://developers.google.com/youtube/v3/guides/auth/installed-apps
+
+#### R and related
+
+  -  curl::  (based on C library used in cURL) https://jeroen.cran.dev/curl/index.html
+  -  cloudyR project
+  -  curlconverter:: https://github.com/hrbrmstr/curlconverter
+  -  fakerapi.it fakerapi https://fakerapi.it/en
+  -  gargle::   good intro (https://www.tidyverse.org/blog/2021/07/gargle-1-2-0/)
+  -  httptest2:: https://enpiar.com/httptest2/index.html
+  -  httpuv, libuv
+    -  https://cran.r-project.org/package=httpuv
+    -  https://nikhilm.github.io/uvbook/introduction.html  (low-level, C code, but good sense of what is happening)
+  -  httr2::
+    -  github https://github.com/r-lib/httr2
+    -  cran https://cloud.r-project.org/web/packages/httr2/index.html
+  -  plumber
+
+
+\newpage
+
+#### epub, Calibre, iPad, iCloud, eReader, pdf
+-	Claim:  iPad does not support Calibre; free Readers for iPad, everyone has fav.
+		No, no, no.    Download Calibre software for osx to iPad.   What  does not
+		work is connecting iPad to Calibre on Laptop.
+-	Goodreader for pdf ($20?) - many say best iPad reader.?
+- Marvin - no pdf support, but excellent otherwise?
+
+
+#### KNITR
+
 ```
+**knitr -> R & rmarkdown -> Bookdown (~2016) -> Blogdown -> netlify (Hugo, static)**
+HUGO:   md -> html
+BOOKDOWN:  Rmd        ->html (skips md)
 
-#		CURL
+**lua** is a lightweight language acts like "glue" ; embeds within code; useful in
+textdoc .
 
-Purpose:	Examples of Curl at CLI, references to more details.
+**renv** 	Why I think I do not need (and do not want).  Re-creates tidyverse code
+INSIDE each project, ie local copy of everything inside package.  Then takes
+snapshots as either your code or the any of like libraries changes.   Nice
+purpose:   easily re-create complete environment.   But much too much overhead
+for my needs!  (at this time.)
 
-Note:			Using curl with Youtube API is separate (see below)
-
-
+```
 
 
 
@@ -1331,8 +1261,6 @@ Note:			Using curl with Youtube API is separate (see below)
 		token?)  !so 15219006
 
 ####	CURL + youtube api
-Sat  02 Apr 2022
-
 	
  PURPOSE:		Focus is Google API, youtube in particular. This is summary of
  using cURL to obtain authorization_code and then proceed querying youtube.
@@ -1345,13 +1273,12 @@ Sat  02 Apr 2022
 
   *	 ~/.Renviron for secrets  
 	*	 Source:  https://developers.google.com/youtube/v3/guides/auth/installed-apps  
-	*  zsh, `&' is special.  Use single quotes around it to avoid errors.  
+	*  zsh, `&' symbol is special.  Use single quotes around it to avoid errors.  
 	*	 scope must be a string char[1], separate multiple scopes by space
 
 REF:  https://stackoverflow.com/questions/53357741/how-to-perform-oauth-2-0-using-the-curl-cli#53357742et CLIENT_ID=Replace_with_your_Client_ID
 
 #### Youtube constants
-```
 auth_url=https://accounts.google.com/o/oauth2/v2/auth
 token_url=https://oauth2.googleapis.com/token 
 base_url=https://www.googleapis.com/youtube/v3
@@ -1361,10 +1288,7 @@ scope='https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/y
 
 client_id=$(Rscript -e "cat(Sys.getenv('OAUTH2_ID'))")
 
-```
-
 #### Youtube Pagination
-```
 (in .tex, use math {)
 part= snippet, content...
 
@@ -1392,7 +1316,6 @@ Accept: application/json
 
 
 (1APR2022)
-```
 Google's example, with loop for uri_redirect
 https://accounts.google.com/o/oauth2/v2/auth?
  scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube.readonly&
@@ -1400,7 +1323,6 @@ https://accounts.google.com/o/oauth2/v2/auth?
  state=security_token%3D138r5719ru3e1%26url%3Dhttps%3A%2F%2Foauth2.example.com%2Ftoken&
  redirect_uri=http%3A//127.0.0.1%3A9004&
  client_id=client_id
-```
 
 	-  Google's authorization server: https://accounts.google.com/o/oauth2/v2/auth
 
@@ -1433,70 +1355,8 @@ curl \
 \newpage
 #   CURL |  YOUTUBE API | GOOGLE API |  OAUTH 2.0 | 
 
-Examples:
-
-##  cURL write (to standard)
-##  w response after callling example.com
-```
-\begin{verbatim}
-curl -w "Response %{response_code}\n" example.com
-\end{verbatim}
-
-```
-# github
-curl https://api.github.com/zen
-
-##  returns lot of kev=value pairs
-curl https://api.github.com/users/defunkt
-
-##   -include headers
-curl -i https://api.github.com/users/defunkt
-
-##   headers only
-curl --head <URL>
-
-##  CURL_CONFIG (a FILE)
-##  USAGE   curl -K CURL_CONFIG ...
-```
-
-
-\begin{verbatim}
-url = example.com
--w "Type:  Hello  %{local_ip} \n"
-\end{verbatim}
-
-Misc Notes:
-"State"  - cookies used to be used; now state carried in headers
-
-Misc Notes:
-"State"  - cookies used to be used; now state carried in headers  
-```
 
 \newpage
-
-Thanks for willing to take a look.
-Some thoughts to get you and anyone else a start:
-
-  -  I expect my issue connecting **httr2** and **google api** (youtube) to resolved with  simple parameter wrongly set.  As usual, it is the journey that is more interesting.
-
-  -  First, review vignette https://httr2.r-lib.org/articles/wrapping-apis.html, including oauth and github.
-  -  Second, review the command line tool curl https://curl.se.  
-  -  Next, look through Google's API documentation + related:
-
-    -  https://developers.google.com/youtube/v3/getting-started 
-    -  Try api requests in both Google Oauth2 Playground:
-	https://developers.google.com/oauthplayground/ 
-    -  And in Google API Explorer:
-       https://developers.google.com/youtube/v3/docs/
-
-I have done the above without errors.  But  httr2 code returns 404.
-```
-404. That’s an error.
-
-The requested URL was not found on this server. That’s all we know.
-```
-
-```
 
 client = oauth_client(id=  client_id,
         token_url  = token_url,
@@ -1513,7 +1373,6 @@ req_oauth_auth_code(client = client, auth_url = auth_url, token_params=scope[[1]
 
 
 resp  <- req %>% req_perform()
-```
 
 Some Remarks:
   -	Google is but one implementation of various API, oauth technologies.  The more you read the more confused you may become (at least for me).  
@@ -1521,6 +1380,14 @@ Some Remarks:
   -	I am using httr2 to automate things;  I'd like to understand things using a little as possible:  curl, browser and local server running as localhost.  
   -	Most of the R work is done at lower level, such as packages curl and httpuv.  
 	
+
+\newpage
+
+\begin{verbatim}
+===============
+				G O O G L E
+===============
+\end{verbatim}
 
 #### HTTR2 - NOTES (needs clean up!)
 
@@ -1539,16 +1406,19 @@ RELATED INFO:
 	-  Google OAUTH2 playground
 
 
+\begin{verbatim}
 #	===============================
 From Google (Youtube) Explorer:
 GET https://youtube.googleapis.com/youtube/v3/playlists?part=snippet%2CcontentDetails&maxResults=5&mine=true&key=[YOUR_API_KEY] HTTP/1.1
 
 Authorization: Bearer [YOUR_ACCESS_TOKEN]
 Accept: application/json
+
 #	===============================
 
+\end{verbatim}
+
 For youtube (auth code):
-```
 echo "curl -Lsv \"https://accounts.google.com/o/oauth2/v2/auth?\
 client_id=$client_id&\
 redirect_uri=https://127.0.0.1:8080&\
@@ -1567,14 +1437,21 @@ curl \
   --header 'Accept: application/json' \
   --compressed
 
-### NEEDED SCOPES:
+#### NEEDED SCOPES:
 https://www.googleapis.com/auth/youtube	Manage your YouTube account
 https://www.googleapis.com/auth/youtube.force-ssl	See, edit, and permanently delete your YouTube videos, ratings, comments and captions
 
 
 playlistId  =  "PLlXfTHzgMRUIqYrutsFXCOmiqKUgOgGJ5"  # Pavel Grinfeld, Linear Alg 3
 
-```
+
+
+\begin{verbatim}
+
+========================
+				E N D    G O O G L E
+========================
+\end{verbatim}
 
 #### Procedure: 
   -		Follow hadley outlines in Vignette for Github and and getting user's information.  (Requires oauth token)
@@ -1583,13 +1460,8 @@ playlistId  =  "PLlXfTHzgMRUIqYrutsFXCOmiqKUgOgGJ5"  # Pavel Grinfeld, Linear Al
   -  If I have this right, this will (1) get the access token and (2) complete REST
 request.
 
-# ==============================
 
-
-# Mon May 16 01:40:07 PDT 2022
-
-
-###  Index Cards
+##  Index Cards
 
   -  LUA/language/neovim use
   -  GIT
@@ -1618,9 +1490,11 @@ George III (~ 17) educated, but poor understanding ppl.
 Continent (esp France) respect English power, but not English culture, resistance to change, a Parliament that acquiases.   FRANCE is the country with ideas, innovation.
 
 
+\begin{verbatim}
 =============================
 ###		ChromeBox:  Convert to Linux
 =============================
+\end{verbatim}
   -  internal hard drive is /dev/sda, sandisk, 29.48G
   -  Chrome's partitions - do not mess, G- Chrome did a lot of things and is
 		 fussy.
@@ -1702,4 +1576,38 @@ PANDOC:
 FINALLY, 
 :helptags ALL
 ```
+##	CURL Examples:
+
+cURL write (to standard)
+ w response after callling example.com
+\begin{verbatim}
+curl -w "Response %{response_code}\n" example.com
+\end{verbatim}
+
+github
+curl https://api.github.com/zen
+
+returns lot of kev=value pairs
+curl https://api.github.com/users/defunkt
+
+   -include headers
+curl -i https://api.github.com/users/defunkt
+
+   headers only
+curl --head <URL>
+
+CURL_CONFIG (a FILE)
+ USAGE   curl -K CURL_CONFIG ...
+
+
+\begin{verbatim}
+url = example.com
+-w "Type:  Hello  %{local_ip} \n"
+\end{verbatim}
+
+Misc Notes:
+"State"  - cookies used to be used; now state carried in headers
+
+Misc Notes:
+"State"  - cookies used to be used; now state carried in headers  
 vim:nospell
