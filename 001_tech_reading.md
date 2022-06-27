@@ -173,16 +173,20 @@ As of \today
 
 #### Bayesian
 
-	-	 Aaronson, Scott: \url{https://www.scottaaronson.com/qclec.pdf}
-	Information Theory:  CS, Quantum, Bayesian, linear algebra, Probability
-	-	 Clyde, Mine et al Intro To Bayesian Thinking  (R,intuitive, online only)
-	-  Downey, Allen "Thinking Bayes" https://www.greenteapress.com/thinkbayes/thinkbayes.pdf  (2012 pdf, clear intutive, but python)
-	-  Davidson-Pilon Bayesian for Hackers  python, but ideas seem well
-	presented.
-	-	 Johnson, Ott et al:  https://www.bayesrulesbook.com/index.html (online,
-	no pdf)
-	-  paulvanderlake (many R resources) 2012 ThinkBayes
-	-  Kurz: Statistial Rethinking reCoded (Bayesian) \url{https://bookdown.org/content/4857/#how-to-use-and-understand-this-project} (R, meant as supplement to McElreath)
+-	 Aaronson, Scott: \url{https://www.scottaaronson.com/qclec.pdf}
+Information Theory:  CS, Quantum, Bayesian, linear algebra, Probability
+-	 Barber, David:	Bayesian Reasoning & ML (examples): http://web4.cs.ucl.ac.uk/staff/D.Barber/textbook/020217.pdf
+-	 Clyde, Mine et al Intro To Bayesian Thinking  (R,intuitive, online only)
+-  Downey, Allen "Thinking Bayes" https://www.greenteapress.com/thinkbayes/thinkbayes.pdf  (2012 pdf, clear intutive, but python)
+-  Davidson-Pilon Bayesian for Hackers  python, but ideas seem well
+presented.
+-	Gelman: DBA3	
+-	Gimenez:  Easy Stats (examples)
+-  Kurz: Statistial Rethinking reCoded (Bayesian) \url{https://bookdown.org/content/4857/#how-to-use-and-understand-this-project} (R, meant as supplement to McElreath)
+-	 Johnson, Ott et al:  https://www.bayesrulesbook.com/index.html (online,
+no pdf)
+-	McElreath:	book, videos  Statistical Rethinking
+-  paulvanderlake (many R resources) 2012 ThinkBayes
 
 \begin{itemize}
 \item {Aaronson, Scott: \url{https://www.scottaaronson.com/qclec.pdf} 	Information Theory:  CS, Quantum, Bayesian, linear algebra, Probability}  

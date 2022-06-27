@@ -1656,6 +1656,13 @@ through this;   agreed that she would ask Kaiser kidney dietitian for input.
 
 **GAP  lost files!**
 
+##	May 2, 2022
+Litholink:   urine leaks, only blood result
+
+##	May 11, 2022
+Repeat Litholink:  blood + urine
+Stunned:   Urox=45  w/ Ca, ZenPep, KCit;   but I was not low-Ox  (ate lentils for
+instance)
 
 ## Sun Jun  5 00:14:05 PDT 2022
 Call with Dr. S - Friday.
@@ -1755,6 +1762,66 @@ seems very good shape.
 -	But UrOx, stones, fat in stool -- no idea.
 
 
+## Tue Jun 21 14:34:37 PDT 2022
+-	Zenpep gone now for 4-5 days? (let's say JUN 18=zero)   Just mention it:  seem to have started to
+SCRATCH myself!  everywhere:  arms, legs, neck, stomach .... no sign of skin
+issue.
+-	Stool not elongated or swollen, ie misc chunks.   Zero sign of loose stool.
+
+## Thu Jun 23 23:25:52 PDT 2022
+
+\newpage
+
+24 Jun 2022
+
+Dr Jhansale:
+
+**Update: VENLAFAXINE 37.5, Zenpep, Litholink**
+
+0.	June 18, 2022 (Zenpep):			Last day of use (now zero)  (Stool normal, regular, no sign of
+		digestive issues at all)
+1.	June 24, 2022 (VENLAFAXINE):		First day on 1/2 dose   (37.5 mg)
+2.	July 22 (Next telephone appt:) 	review VENLAFAXINE
+3.	August 21 (Next Litholink)  evaluate 60 days without Zenpep (I  will provide
+you with paperwork, early July)
+
+
+Additional Notes:
+**Itching**
+With 2-3 days of zero Zenpep itching began on all 4 limbs, abdomen, thighs, neck,
+groin & shoulders.  No signs of skin rashes.  But can't seem  to stop.
+
+**Exercise**
+Joined local Y.   First real exercise in 800+ days (aside from pushups, jumping
+jacks, daily 10000 steps). Main exercise is indoor rowing machine (poor man's
+MRI + exercise) b/c of deep breathing.  Past benefits rowing return, including mental health.  
+
+**Litholink - new result:  Urox 45**
+Litholink results (May 11, 2022) - I just rec'd these results.  Full Zenpep,
+Calcium, KCitrate etc.   UrOx = 45, no special diet (ie NOT low-oxalate)
+stunned.   Did Zenpep have effect or not?   Will review with you July 22.
+
+**VENLAFAXINE & Insurance**
+For years, insurance paid.  Refused to pay for 1/2 dose (37.5 mg)!   "not in
+formulary"   (I paid $26.15+ for 30 pills).    Ins company now faxing you forms
+they need to approve.  
+
+Thank you.   Looking forward to more rowing.
+
+
+## Sun Jun 26 18:50:56 PDT 2022
+**Itching**
+	-	Drew blood today (shoulder)
+	- 1 week; began a few days AFTER last dose of ZENPEP.
+	-	Began BEFORE reduced Venfalaxone (37.5);  BEFORE joining Y;
+	-	trimmed nails; wet cloth on wrist (instead of scratching)
+	-	thighs, groin, arms, legs; not backh
+	-	No shirt, seems to help, actually.
+	-	No sign of rash or yellow or skin issue 
+	-	With movement:  no itching problem.   
+  -	Sleeping:  no itching problem:
+	-	**Sitting or Stationary:   This is problem.**
+	-	https://blog.dana-farber.org/insight/2020/02/is-itching-a-sign-of-pancreatic-cancer/
 
 
 
