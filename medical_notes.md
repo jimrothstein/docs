@@ -1770,7 +1770,6 @@ issue.
 
 ## Thu Jun 23 23:25:52 PDT 2022
 
-\newpage
 
 24 Jun 2022
 
@@ -1825,6 +1824,95 @@ Thank you.   Looking forward to more rowing.
 
 
 
+##	Wed Jun 29 12:08:15 PDT 2022
+Resumed Zenpep today.
+-	No change in itching to date.
+-	Today, discussed with doctor on call (?) or via the nurse?
+-	They made appt for me:  next week.
 
+
+On theory that loss of Zenpep caused problem, goal is to see if problem goes away
+WITH RESUMPTION.   If not, stop again, seems to be no harm.
+
+-	longer walk;  some gas; stomach seems to be transitioned (as I recall from before);
+-	As soon as sit down, massive scratching ... 
+- Turn up a/c ... to type these messages.
+
+
+## Thu Jun 30 14:35:45 PDT 2022
+-	DOSE today:   efforex 1/2 dose.
+-								ZENPEP full (11 tablets) dose.
+-`Itching started 3 days BEFORE change in efforex.
+-
+-	Misc Notes:
+-	poor sleep; (itching)
+- To sleep or stop itching:  a/c - very cold, sleep under desk.
+-	itching resumes as soon as awake.
+-	Getting worse?  don't think so, but tolerance/patience has sharply decreased.
+-	Unable to most common tasks:  cook, type, work ... just want to lie down;  Not
+because tired; but sleep is only way to get relief from itching.
+- So many 2nd affects;  eating poorly, trouble hydrating ... just rather lie
+down, doze.  No desire to do any work.  Not like depression; just losing battle
+with the itching.  Tired of splashing water; rubbing in Hydrocortizone.
+-	Today bought coffee (none yesterday - rare, very rare); will make effort to
+WALK to Y (did not go yesterday).
+
+-	AFTER Y,  long walk, exercise, shower - ALL good, no itch.  Hot sun on skin -
+no itch.   Effect lasts couple of hours.
+-	Hyrdorcortizone 1% - works IF apply frequently, hourly?   And must apply asap -
+before really scratch.
+- Trim NAILS!   but not so much that Nails hurt.  Tricky.
+
+##	Fri Jul  1 20:24:50 PDT 2022
+-	DOSE today:			
+	-	efforx 1/2 dose.
+	-	Zenpep full dose (11 tablets)
+
+- AM stomach seemed ok, but by afternoon
+	BLOATED, gas, gained 1 pound !  (149 to 150), sulfur taste; begins to lessen by
+	midnight.
+
+-	BLOOD TEST today (A1C, metabolic)
+	-	GLUCOSE:  134 !!  (not fasting, but LONG walk to get to clinic; breakfast was
+	oatmeal, yogurt, orange?, one piece of whole wheat, banana, apple.)  Remember
+	getting to Clinic a bit tired and had to sit down; not normal for me.
+	-	A1C  5.6%   Been rowing every day almost everyday past week.
+	-	Other numbers all seem fine, Bilirubin well within normal.
+-	ITCHING
+	-	walking, shower, rowing - no problem
+	-	begins when stay still.
+	-	new a/c in office;  trying to keep room COLD to suppress itch.
+-	Stomach
+	-	bad egg taste; feel very bloated.
+	-	I assume related to re-adjusting to ZENPEP (siimlar to before)
+	-	not exactly normal, but these are minor effects.  ITCH is #1.
+									
+
+##	Wed Jul  6 04:11:09 PDT 2022  visit Dr. 
+-	Suspects NOT realated to Zenpep (or efforex or ...)
+-	He is not certain:  might be SCABIES, which has `simple` treatment.
+-	Treat ONE night; but still takes several days or more for ITCH to die down
+(Itch is body's response to this mite & its determinents)
+-	ALSO, says VERY DRY SKIN, recommends OTC lotions for dry skin. (I buy Avenno
+something.)
+-	To reduce ITCH sensation, recommends ANTI-HISTOMINE.    However, I see warnings
+about kidneys - is this one of no-no medicines?  So I do not buy; 
+-	Stay with Hydrocordizone 1%.
+-	IF CONDITION CONTINUES ... then will send me to DERMITOLOGY for possile STERIOD
+use.  Does NOT want to use STERIOD till clearer picture.  Makes sense to me.
+
+-	With a/c |  with aggressive Hydrocordizone - before deep ITCH |  and sprinkle bit
+of water |  exercise;   I think I can manage.
+
+SCABIES 
+	-	Die after 2-3 days without human skin!
+	-	Isolate clothes, towels in plastic .... or wash hot water, hot dryer.
+	-	Usually passed human-human skin contact (10 minutes or more)
+	-	Where did I get this??  
+	-	TIME to CLEAN CAR!
+
+
+
+	
 
 vim:nospell	

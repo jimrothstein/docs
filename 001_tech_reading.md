@@ -171,23 +171,28 @@ As of \today
 -  UCLA:  Mixed Models - intro:  https://stats.oarc.ucla.edu/other/mult-pkg/introduction-to-linear-mixed-models/
 -	 Varma: Deep Learning \url{https://srdas.github.io/DLBook/}
 
-#### Bayesian
+#### Bayes
 
 -	 Aaronson, Scott: \url{https://www.scottaaronson.com/qclec.pdf}
 Information Theory:  CS, Quantum, Bayesian, linear algebra, Probability
--	 Barber, David:	Bayesian Reasoning & ML (examples): http://web4.cs.ucl.ac.uk/staff/D.Barber/textbook/020217.pdf
+-	 Barber, David:	Bayesian Reasoning & ML (examples): \href{http://web4.cs.ucl.ac.uk/staff/D.Barber/textbook/020217.pdf}{Barber}
 -	 Clyde, Mine et al Intro To Bayesian Thinking  (R,intuitive, online only)
--  Downey, Allen "Thinking Bayes" https://www.greenteapress.com/thinkbayes/thinkbayes.pdf  (2012 pdf, clear intutive, but python)
+- Cunningham, Scott:   Mixtape: Causal Inference \href{https://mixtape.scunning.com/}{mixtape}
+-  Downey, Allen \href{"Thinking Bayes" https://www.greenteapress.com/thinkbayes/thinkbayes.pdf}{2012 pdf, clear intutive, but python)}
 -  Davidson-Pilon Bayesian for Hackers  python, but ideas seem well
 presented.
--	Gelman: DBA3	
+-	Gelman: DBA3 \href{http://www.stat.columbia.edu/~gelman/book/BDA3.pdf}{DBA 3}
+\href{http://www.stat.columbia.edu/~gelman/book/BDA3.pdf}{Gelmnan DBA3}
 -	Gimenez:  Easy Stats (examples)
+-	Hunington-Klein The Effect Book \href{https://www.theeffectbook.net/index.html}{Effect Book}
 -  Kurz: Statistial Rethinking reCoded (Bayesian) \url{https://bookdown.org/content/4857/#how-to-use-and-understand-this-project} (R, meant as supplement to McElreath)
--	 Johnson, Ott et al:  https://www.bayesrulesbook.com/index.html (online,
-no pdf)
--	McElreath:	book, videos  Statistical Rethinking
--  paulvanderlake (many R resources) 2012 ThinkBayes
+-	 Johnson, Ott et al: \href{https://www.bayesrulesbook.com/index.html}{BayesRules !	}
+-	McElreath:	book, videos  Statistical Rethinking \href{http://xcelab.net/rm/statistical-rethinking/}{info}
+-  paulvanderlake (many R resources) 2012 ThinkBayes \href{https://paulvanderlaken.com/2017/08/31/data-science-machine-learning-statistics-resources/}{paulvanderlake}
+-	Taubes, Lectures 1-19	\href{https://people.math.harvard.edu/~knill/teaching/math19b_2011/handouts/chapters1-19.pdf}{Lectures 1-19}
 
+<!--
+			Repeat using `itemize`
 \begin{itemize}
 \item {Aaronson, Scott: \url{https://www.scottaaronson.com/qclec.pdf} 	Information Theory:  CS, Quantum, Bayesian, linear algebra, Probability}  
 \item {Clyde, Mine et al Intro To Bayesian Thinking	(R,intuitive, online only) }  
@@ -197,6 +202,7 @@ no pdf)
 \item {Kurz: Statistial Rethinking reCoded (Bayesian) \url{https://bookdown.org/content/4857/#how to-use-and-understand-this-project} (R, meant as supplement to McElreath)}
 \item {Paulvanderlake (many R resources) 2012 ThinkBayes}
 \end{itemize}
+-->
 
 #### Shiny
 	-	R, javascript + shiny https://book.javascript-for-r.com/
