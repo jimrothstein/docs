@@ -460,6 +460,10 @@ Wed May 25 20:22:20 PDT 2022
 	- Ubuntu could NOT install (wifi issues)
 	- But old laptop runs fine with just linux mode.
 
+#### Use exit to exit .sh early
+
+#### completion
+	Use zstyle
 #### sudo vs su ....
 {
 
@@ -556,7 +560,7 @@ example:   print -l ~/code/**/*.(R|Rmd)   # any level, return all .R and .Rmd
 files
 
 See my zsh GLOG handwritten notes (till typed in here)
-
+ZLE	= Zsh line editor | NOT GNU readline\
 *zle_widgets* (all commands)
 Output from zle -al (~403 cmds)
 .accept-and-hold

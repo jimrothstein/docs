@@ -1912,6 +1912,148 @@ SCABIES
 	-	TIME to CLEAN CAR!
 
 
+##	Thu Jul  7 21:57:15 PDT 2022   SCABIES
+-	REF: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6532717/
+- Beginning 10:30 pm 6JUL to 12:30 7JUL (14 hours)
+-	MUCH IMPROVED;  still itching, but less intense; easier to manage with
+HydroCordizone
+-	HOWEVER,  itching DID return 8 hours later;   failure to respond quickly to
+ITCH with hydrodrocorizone only increases itch & scratching.   
+-	ie ACT FAST	
+
+\newpage
+
+##	9 JULY 2022
+
+-- NO  REPLY NEEDED --
+
+-- **re: INSURANCE DENIAL & VENLAFAXINE ER HCL ER 37.5 mg TAB**
+
+---
+
+**Dr. Jhansale:**
+
+
+
+--	Please recall our plan to REDUCE VENLAFAXINE (from 75 mg to 37.5 and then, hopefully, to ZERO)
+
+--	Insurance company has always paid for 75 mg, but REFUSED to pay for 37.5 (non
+"formulary").   You ALSO sent supplemental paperwork to them.
+
+--	DENIAL (date: 7/2/22) They sent you a copy as cc.
+
+--	**IF you are too busy to deal with this, I am happy to DROP matter.**  (I won't miss the $26 I paid)
+
+--	HOWEVER, based on cumulative experience this company, HUMANA, appears to have
+trouble with the most routine (banal) duties (wrong email/url addresses, denying
+requests b/c, they claim, unable to contact a Kaiser doctor ).    I do not know
+if this deliberate business strategy, or simple incompetence.  In fact, BOTH 75
+	mg and 37.5 mg appear on their formulary!
+
+--	REGARDLESS, I wish to document their conduct, ie one data point, and later
+present it to those with more clout than I do.   All of this just to taper, and
+hopefully end, one medicine.
+
+--	Again, if you are too busy, I will drop it.  Otherwise, I proceed to the next
+rung, to request "independent" review, which requires from you (see page 4 of 9 of their July
+2, 2022 DENIAL):
+
+> "your prescribing doctor ... must submit a statement with your appeal request
+indicating that all the drugs on any tier of our formulary (or the PA/UM
+requirement) would not be as effective to treat your condition as the requested
+drug, or would harm your health."
+
+
+Thank you.
+
+jim
+
+\newpage
+
+##	Sun Jul 10 18:55:44 PDT 2022
+
+**Status Now:**
+
+Effexor:  still 1/2 dose  
+Zenpep:   still full dose (11 pills)  
+
+**ITCH:		Remains dominant.**   Can not tell if improvement or responding quicker
+(see below).  
+
+**What I did**		
+
+-	5 JUL:		Saw you Tuesday 5 JUL
+- 6	JUL:		Medicine ready; applied  head to toe: 10:30 pm for 14 hours | woke itching and
+reapplied small amount.
+- 7 JUL:		12:30 Shower off
+- DAILY:		wash skin/ treat ITCH with 1% Hydrocordizone; VASALINE:  scratches;
+used sparingly AVEENO "Daily Moisture", "Dry_skin";  Dimethicone 1.% (expensive)
+-	DID NOT PURCHASE ANTI-HISTIMINE (recall processed through kidney; believe told to
+avoid)
+-	Discard old pillows;  isolate clothing; vaccum daily.
+
+
+**What works**  
+
+-	**EXERCISE**
+-	**DIRECT SUNLIGHT on skin**  (~ 20' per day)
+-	All the other stuff?  minimal if any.
+
+**EXAMPLE**
+
+This routine works consistently :
+
+- midday - WALK to YMCA (~30 minutes); en route:  stand fixed in sunlight 5-10' |
+exercise at Y > 30 minutes  |  shower (not sure essential, re: itch)
+- Proceed directly to library:  next 3-4 hours can **focus, work, no itch, no
+distraction.**
+- ItCH  certainly returns after 4 or so hours.
+
+
+
+**Comments**
+
+-	skin (esp legs, ankles, bottom side of arms, thighs)   still stratched and DO
+itch.
+-	GROIN appears less inflamed.
+- Learned to respond ASAP to first ITCH with soap, water, Vasaline, % Hydro..
+Reduces RISK of deep itching/scratching, but that is it. Can not FOCUS.
+
+
+**Misc**
+
+Fred Meyers says "a couple" of prescriptions each WEEK.   each WEEK?
+
+Can not identify source of SCABIES:   
+
+-	No covid | following covid guidelines | generally very isolated.
+-	NO KNOWN contact with anyone for 1', 5', 10' or more.
+-	*Can I get from BUS seat?   library Seat?  during BLOOD Test? From cashier?
+	From coffee cup?  Door knobs?   I use Asian bathroom techniques:  no touch.
+	And no sex.*
+
+
+## Mon 7/11			doctor office:  reapply after 7 days (per perscription)
+-	Did Wind shift today?   Able to get some work done!  First time in weeks.	
+-	ITCH not gone away;  but hitting it now with hydro 1%, Vasaline, PLUS Aveeno
+-	AND ... just little cool water, covering the area with cool (wet) hand ...seems
+to soothe!  Area must feel the cool or cold for a few seconds.
+-	OR, the scabies and remains are being to clear (HOPE)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	
 
