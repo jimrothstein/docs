@@ -2041,6 +2041,65 @@ to soothe!  Area must feel the cool or cold for a few seconds.
 -	OR, the scabies and remains are being to clear (HOPE)
 
 
+## Tue Jul 12 23:21:57 PDT 2022  ITCHING!
+-	at least TWO BOUTS of intense itching each day.  Drew blood again today.
+-	HOWEVER, once I get it under control (lotions, potions and grease) SEEMS to
+easier to focus ... till next BOUT.
+
+
+## Wed Jul 13 11:21:03 PDT 2022
+-	7 day mark; will reapply this pm for 14 hours;
+-	today:  new welts on right thigh (many)
+- ITCHING with vengence.
+-	I do not think this stuff worked.  
+-	APPLY treatment #2 5 pm,  Use > 1/2 tube, till nothing left.
+
+
+##	Thr		 Jul 14 00:02:51 PDT 2022
+-	8 sm shower off (15 hours)
+-	Itching returns in few hours (WITH exercise).
+- Benefit??
+
+\newpage
+##	Fri Jul 15 00:11:15 PDT 2022
+**UPDATE:			NO REPLY NEEDED**
+
+-	Tele Appt:  Dr. Jhansale, Fri July 22 (11:40 am)
+
+**Doses Today**
+
+-	 Efforex :  1/2 dose (supply ends next week)
+-	 ZENPEP:    tapering to ZERO again (unrelated to ITCH so STOP per original plan)
+
+
+**NOTES**
+
+-  Efforex	-	Unaware any change in mental outlook.  (ITCH dominates).
+-  ITCH
+	-  Now almost 4 full weeks.
+	-	2nd treatment applied last 36 hours.
+	-	Only reduction in ITCH is temporary and seems more related to my **TRICKS**:
+	direct sunlight, exercise, move, cold , apply enough lotions and potions to skin.
+	-	If I can get ahead of ITCH, will get few hours of relief.
+	- But last 2 days, ITCH is with vengence, think I see new welts.
+	- Understand this takes time,but there are **secondary affects**
+
+**ITCH - Secondary Affects**
+
+-	 Can not work:  sit at keyboard and suddenly find one hand in shirt/pants
+scratching.  (Exception:  see my **tricks**)
+-	 Can not sit still.
+-	 Sleep:	no pattern.   Equally likely to find me asleep at 12 midnight, 12 Noon,
+neither, or both.
+-	 Diet:	Mostly pretty good, but some times food just isn't priority; itch is.
+
+
+##	Sat Jul 16 03:41:09 PDT 2022
+-	ITCH - no letup;  scratch all day.  Try to take photo of thigh.
+-	Worse.
+
+
+
 
 
 
