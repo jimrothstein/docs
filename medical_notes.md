@@ -2094,9 +2094,47 @@ neither, or both.
 -	 Diet:	Mostly pretty good, but some times food just isn't priority; itch is.
 
 
-##	Sat Jul 16 03:41:09 PDT 2022
+##	Sat Jul 16 03:41:09 PDT 2022   +26 | +10 | +3
 -	ITCH - no letup;  scratch all day.  Try to take photo of thigh.
 -	Worse.
+- Sent 7 photos of thighs.
+- Today is +26 | +10 | + 3
+(26 days AFTER 1st itch; 
+10 days AFTER 1st treatment;   
+3 days AFTER 2nd treatment
+treatment)
+
+
+Day 1 means the DAY AFTER 1st deteched ITCH	
+
+Sun Tan Lotion:
+-- do not skimp, must cover entire surface.  esp neck.
+-- every 2 hours.
+	
+
+##	Sun Jul 17 22:59:25 PDT 2022		+27 | +11 | +4   NO ITCH
+- wind change?  ITCH but can control!
+- left office FAST ... so not to start scratching.
+- Rest of day - some itch, but CONTROLLABLE !
+- 9 pm, a bit MORE ITCH - add grease, water ....
+
+DEFINE:   Today is "NO ITCH"
+
+
+## Mon Jul 18   +28 | +12 | +5     Jhansale & Humana refusal to pay
+-	no itch, but fear of return with every little sensation.
+- How to prevent?   Do not know.
+
+-	Behavior Change:   no more buses, change to UO library (at least till cold
+weather)
+
+- Dr. Jhansale replies re: $26 Humana refused to pay (taper Effexor , 1/2 dose)
+Drop this.
+
+
+## Tue Jul 19 02:24:04 PDT 2022
+
+
 
 
 
