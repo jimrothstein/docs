@@ -523,6 +523,7 @@ action.
 xmodmap -e "keycode 133 = Escape"
 }
 
+####	cron job, crontab
 {
 	grep jim /var/log/syslog  # see cron jobs that ran
 
@@ -532,6 +533,7 @@ Sat May 21 18:48:16 PDT 2022
 	-	uncomment #cron  -- cron s/d now log to cron.log	
 	-	after change, run sudo service rsyslog restart	
 
+-	see cron Icard ('linux')
 }
 
 #### Linux Kernel

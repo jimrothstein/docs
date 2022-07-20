@@ -115,6 +115,12 @@ As of \today
   * Gupta, Suraj - How R Finds objects: https://blog.obeautifulcode.com/R/How-R-Searches-And-Finds-Stuff/
   * Rnews - Lumley, Macros in R:   https://www.r-project.org/doc/Rnews/Rnews_2001-3.pdf
   * Rnews - 2001-2008 has lot of good articles
+-	rlist use functional ideas with lists:  https://renkun-ken.github.io/rlist/
+- tutorial for rlist:  https://renkun-ken.github.io/rlist-tutorial/
+- Gatto:  https://github.com/lgatto/TeachingMaterial/blob/master/_R-functional-programming/functional-programming.pdf
+
+#### Haskell
+-	fairly gentle Haskell intro: https://www.cantab.net/users/antoni.diller/haskell/units/unit02.html
 
 
 ### Other book stats/R books:
