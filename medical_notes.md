@@ -1905,11 +1905,19 @@ use.  Does NOT want to use STERIOD till clearer picture.  Makes sense to me.
 of water |  exercise;   I think I can manage.
 
 SCABIES 
+	- ITCH = PRURITIS (other possible causes)
 	-	Die after 2-3 days without human skin!
-	-	Isolate clothes, towels in plastic .... or wash hot water, hot dryer.
+	-	But can live 1-2 months ON a person
+	-	Isolate clothes, towels in plastic .... or wash hot water, hot dryer.  (in
+	car, in plastic,  T > 50C, or 122 F, takes 10 min to kill)
 	-	Usually passed human-human skin contact (10 minutes or more)
 	-	Where did I get this??  
 	-	TIME to CLEAN CAR!
+	-	14 days for egg to mature to larve/nymph
+	- like warmer skin (groin, under the arms)
+	-	Worldwide infections are growing:  example Germany 525 infections/100K
+	peeople (1/2 %)
+	-	mostly < 24 yo?
 
 
 ##	Thu Jul  7 21:57:15 PDT 2022   SCABIES

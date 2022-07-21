@@ -84,6 +84,7 @@ As of \today
   *  Frey, Bruce "Statistical Hacks"
   *  [Dalpiaz, David, Univ of IL] ( https://daviddalpiaz.github.io/appliedstats/ )
   *  Lindelov:  Concise R examples of common stat tests.
+	*		Lavine, Statistical Thought: https://people.math.umass.edu/~lavine/Book/book.pdf
   *  Matloff (Prob book) 
     * http://heather.cs.ucdavis.edu/~matloff/132/PLN/probstatbook/ProbStatBook.pdf
     * (via pdflatex) https://github.com/matloff/probstatbook
@@ -121,7 +122,7 @@ As of \today
 
 #### Haskell
 -	fairly gentle Haskell intro: https://www.cantab.net/users/antoni.diller/haskell/units/unit02.html
-
+-	Haskell book:	http://book.realworldhaskell.org/read/
 
 ### Other book stats/R books:
 
@@ -193,6 +194,7 @@ presented.
 -	Hunington-Klein The Effect Book \href{https://www.theeffectbook.net/index.html}{Effect Book}
 -  Kurz: Statistial Rethinking reCoded (Bayesian) \url{https://bookdown.org/content/4857/#how-to-use-and-understand-this-project} (R, meant as supplement to McElreath)
 -	 Johnson, Ott et al: \href{https://www.bayesrulesbook.com/index.html}{BayesRules !	}
+-	Lavine  (tutorial) https://people.math.umass.edu/~lavine/whatisbayes.pdf
 -	McElreath:	book, videos  Statistical Rethinking \href{http://xcelab.net/rm/statistical-rethinking/}{info}
 -  paulvanderlake (many R resources) 2012 ThinkBayes \href{https://paulvanderlaken.com/2017/08/31/data-science-machine-learning-statistics-resources/}{paulvanderlake}
 -	Taubes, Lectures 1-19	\href{https://people.math.harvard.edu/~knill/teaching/math19b_2011/handouts/chapters1-19.pdf}{Lectures 1-19}
