@@ -1,5 +1,6 @@
    vim:linebreak:spell:nowrap tw=81 fo=tqlnr foldcolumn=3
 
+
 <!--
 !pandoc % -f markdown --toc -t latex -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.5in -o ~/Downloads/print_and_delete/medical_notes.md.pdf
 
@@ -2143,8 +2144,243 @@ Drop this.
 ## Tue Jul 19 02:24:04 PDT 2022
 
 
+\newpage
+
+#### Current Prescriptions  ( 26 JULY 2022)
+
+Prescription (as of \today):
+
+-	Cozaar (Losartan) - 100 mg
+-	Levothyroxine - 100 microg
+-	Zyloprim (Allopurinol) - 100 mg
+- Wellbutrin (Bupropion) - 100 mg
+- Potassium Citrate - 10 mEq = 1080mg (x 4)
+- Flomax (Tamsulosin) - 0.4 mg
+- Norvasc (Amlodipine) - 10 mg
+- Lopid (Gemfibrozil) - 300 mg (x 1, not x 2 as prescribed)
+- Finasteride - 5 mg
+
+External
+
+- Selenium Sul 2.5% (shampoo)
+- 0.05% AUG Betamethasone Dipropionate (liquid, scalp)
+- 0.05% Clobetasol Propionate (arm, butt)
+- (NEW) 2-3 drops mineral oil, each ear, 2-3x per week
+
+OTC
+
+- Psyllium (1 -2 Tbsp)
+- KAL Calcium Citrate 4 pills/d, total=1300 mg (Ca); NOTE: contains no vitamin D3 (hard to find)
+- D3 14,000 IU per week>
+
+---
+
+Changes:  **2022**\
+
+-	STOP:  Effexor (Venlafaxine ER) - 75 mg  (by mid-July 2022)   Since 2014?
+-	NEW:	mineral oil, 2-3 drops, per ear, as needed to remove wax.
 
 
+
+Changes:	**2021**  
+
+-	NEW:	Vasaline to ears, dry areas;  as needed
+-	STOP:	Baby Asprin - 81 mg  Since ~2000 (age 45)o
+-	REDUCE:	B-complex, including B-12, B-6,   1x per week
+
+---
+
+\newpage
+
+Details, Directions
+Before breakfast/Empty Stomach
+1) Losartan - 100 mg ** Cozaar **
+• 1989s began: 80 mg Diovan | 2010 160mg | 2014 change to Cozaar (ARB)
+• ACE (inhibite Ang II receptors)
+2) Levothyroxine - 100 microg
+
+---
+Caution:  Copied from 2020
+Prescription:
+• Cozaar (Losartan) - 100 mg
+• Levothyroxine - 100 microg
+• Zyloprim (Allopurinol) - 100 mg
+• Effexor (Venlafaxine ER) - 75 mg
+• Wellbutrin (Bupropion) - 100 mg
+• Potassium Citrate - 10 mEq = 1080mg (x 4)
+• Flomax (Tamsulosin) - 0.4 mg
+• Norvasc (Amlodipine) - 10 mg
+• Lopid (Gemfibrozil) - 300 mg (x 1, not x 2 as prescribed)
+• Finasteride - 5 mg
+
+External
+• Selenium Sul 2.5% (shampoo)
+• 0.05% AUG Betamethasone Dipropionate (liquid, scalp)
+• 0.05% Clobetasol Propionate (arm, butt)
+• (NEW) 2-3 drops mineral oil, each ear, 2-3x per week
+• (Replaces OLD) see History
+
+OTC
+• Psyllium (1 -2 Tbsp)
+• Baby Asprin - 81 mg
+• KAL Calcium Citrate 4 pills/d, total=1300 mg (Ca); NOTE: contains no vitamin D3 (hard to find)
+• B-complex, including B6 (8 mg, 400%) x3 per week.
+• D3 14,000 IU per week>
+
+Details, Directions
+Before breakfast/Empty Stomach
+1) Losartan - 100 mg ** Cozaar **
+• 1989s began: 80 mg Diovan | 2010 160mg | 2014 change to Cozaar (ARB)
+• ACE (inhibite Ang II receptors)
+2) Levothyroxine - 100 microg
+
+1
+
+• 2000 began (Avoid Ca next 5 hours, actual: 1-2 hour)
+
+With Breakfast (OK in 1 mouthful - OK with dairy)
+3) Psyllium - 1-2 T
+• 1-2 T OR 1.0g (2 x 500mg capsule) -Since <1998 -Begin Mar 2019: NOT with food,
+4) Vitamin D3 25,000 IU per week
+• Mar 2019: NOT with food, take with FAT
+• 1NOV2018: 5000 IU x 5 per week (1 pill=5k) (25,000 IU per week)
+• summer 2017: raised to 4000IU/day x 7 (28,000IU per week) by Dr. Vanek (OHSU) . per HIGH
+PTHT test (80, normal 15-75pg/mL) .
+• prior: 2000 IU - 3000 IU (Total ~ 17,000 IU/week) began: 2013? due to low serum D3.
+6) Baby aspirin
+• 81 mg (since 2000?)
+7) Allopurinol (Zyloprim) -
+• 2019 - 100 mg (no need split pill)
+• since 2014- 150 mg (=300 mg/2 )
+8) Effoxor - 75mg
+• since 2014
+9) Wellbutrin - 100 microg
+• since 2014
+10) K+ Cit, 4 x 1080 mg
+• (since 2014)
+11) Ca Cit
+• MAR 2019: Stop Kaiser, Begin Kroeger Brand, 1 pill = 320mg CA/250 IU D . Take 4 pills per day
+with food, not with vitamin D supplemnt.
+• Prior: 6 pills per day, 3 in am, 3 in pm regardless of dairy calcium
+• – treatment for ENTERIC HYPEROXALURIA? (still no diagnosis)
+
+After Breakfast
+FLOMAX - 0.4 mg -1/2 AFTER MEAL, but sometimes 2 hours or more after eating (since 2014) -( most
+ppl take AFTER DINNER, but I’ll pee even more at night)
+
+2
+
+EACH MEAL
+K Citrate (Each tablet 10 mEq =1080 mg K , total 4 daily)~~ CaCitrate
+
+BEFORE BED
+13) Amlodipine - 10 mg
+• (since 1993? 5 mg; 2010 10 mg)
+14) Lopid (Gemfibrozil)
+• needs food, not empty stomach)
+• since 1993, “astronomical triglycerides”; note: not a statin, not Lipitor
+15) FINASTERIDE 5 MG TAB DR.R -since spring 2017
+16) Spironolactone - Oral (Brand name(s): Aldactone) 25 mg (K sparing water pill)
+• Began 3 JAN 2018 (for bp, kidney, reduce edema, spare K)
+• Ended Nov 2018
+
+SKIN CARE (changed 12/12/2017 - see doctor’s notes - fre-
+quency below are OLD)
+
+Colbetasol ointment (added 12/12/2017) for psoriasis
+SELENIUM SULFIDE, 2 1⁄2 % SCALP * Shampoo 1-3 x per week, to control * Since 2014
+AUG BETAMETHASONE Dipropionate (0.05%) - SCALP, PSORIASIS -since 2014, to control SCALP,
+left Elbow, right Knee -several times per week -ONLY when need to control SCALP, NOW NOT USE for
+elbow, knee PSORIASIS (JULY 2017)
+1% HydroCortisone Cream (BLUE) EAR * As necessary to control itching
+2% KETOCONAZOLE (YELLOW) - EAR ONLY -several times per week -ONLY when need to control, 1
+or 2 per week (JULY 2017) >
+
+Infrequent>
+-Klonopin (Clonazepam) - 1 dose = 0.5 mg/ 2 - used 10x in 2016
+
+History >
+Amoxicillin - 500 mg, x 3 - 9 JAN 2018 - 17 JAN (Remove Tooth #4), again June? 2018~~
+
+3
+
+D3 Dose >
+• 11 MAY 2020, NOW: 14,000 IU per week (WAS: 25,000 IU per week)
+• Reason: OHSU had suspected high PTH was due to low D3; nope;
+• Dr. Miyake says to check for primary parahyperthyroidism.
+
+Mg
+• since 2014, stopped 2014 (calcium alone is recommendation)
+** Tumeric ** - (winter 2016; end summer 2016 - believed high Ox - Note UrOx)
+## Calcium> ** ~1MAY2019 ** - reducing diary sources of Calcium (1) expensive protein (2) maybe too
+much fat -esp cheese (3) vegetables I eat: broccoli, bok choy, kale very good source of Calcium. Adding
+more lentils/split pea to diet as protein,filler. - Effort to take D3 supplement AT DIFFERENT TIME from
+Calcium supplement; stop 1 big mouthful.
+Remark: Ca supplements poorly absorbed. So no risk of taking too much Calcium, even with dairy.~
+-summer 2014 (note: almost all meals have DAIRY - cheese, yogurt,
+milk..)
+- **TUMS**
+-fall 2014
+-Ca Cit (Kaiser) 300 mg (elemental) Ca per pill, 2-3 each day,
+(only when little or no calcium in meal).
+-1NOV2017 Ca Cit (3x day, with food,
+only if NO calcium in meal) per Dr. C - urology - need extra citrate) (1Nov17) .
+-11OCT2018
+-6 pills per day, 3 in am, 3 in pm
+(Kaiser brand = 1200 mg each day)
+**regardless of dairy calcium** per Dr. Miyake .
+-15MAR2019
+- change to Kroger Brand CaCit.
+- each pill=315 mg (Ca) x 4 pill + 250 IU D per pill>
+-1MAY2019
+- change to: KAL Calcium Citrate 3 pills/d, total=1000 mg (Ca);
+- NOTE: no vitamin D3 (hard to find without D3) >
+- fall 2019
+- Raise KAL Calcium Citrate to 1300 mg/day (4 pills x 300 mg each)
+- 11 MAY 2020
+Dr. Miyake says 1300 mg is OK.
+- 01 AUG 2020:
+
+4
+
+Stopped: Replace with mineral oil (see Top) 1% HydroCortisone (BLUE) 2% KETOCONAZOLE (YELLOW)
+Dose Change: B6 supplement (was daily; change to 3x per week).
+
+Discontinued Prescriptions: (not full list)>
+• Atenolol - 1991? - 2010
+• HTC (w/Diovan) - discontinued 2009?, repeated low Blood Potassium levels blamed on water pill
+• Cardura - reviewed in Bangkok, 2010? Stopped July 2012
+• Spironolactone - Oral (Brand name(s): Aldactone) 25 mg (K sparing water pill)
+– Began 3 JAN 2018 (for bp, kidney, reduce edema, spare K)
+– End NOV 2018 (per Dr. Miyak, not right medicine to ‘protect’ kidney; also Sodium level is LOW
+last 2-3 masurements; dehydrating?)
+
+OLD, discontinued Medications:
+-water pill, HTCZ - (1990s? 2000s? Stopped 10 years ago? - affect K level? -atenolol (beta blocker) - (1991?
+- 2010) affected ? -in 2001, I remember Bilirubin always low >
+
+
+
+\newpage
+## Tue Jul 26 15:07:12 PDT 2022
+
+NO REPLY NEEDED 
+
+-	NO ITCH  T+ 7-8 days (good) 
+-	Last Effexor ~ 7/23;  T+4 days with ZERO Effexor 
+-	SKIN:		Referal to 2nd Dermitologist and following up. 
+	-	scraps of GROIN area 
+	-	my right temple:  area of concern  (had at least 1 year; no problems) 
+- **Last 3-4 days:  Mood | blood pressure changes?** (just documenting)
+	-	Movement:  creates slight dizziness, as though blood pressure meds not
+		working.  Sitting or standing still: no problem.   [EXACT opposite of
+		Scabies, when movement mitigated itch.  Now walking can be difficult. (for
+		different reason)] \
+	-	Greater irritability, annoyed;  Examples:  now 3 pm, haven't gotten to
+		library yet is aggravating me;  playing with mobile phone is annoying "why am
+		I playing with this thing?"  [That is not a bad sensation, just a new one.]
+		(Note:  last effexor date). \
+	-	Could be heat, could be anything so merely documenting here.
 
 
 

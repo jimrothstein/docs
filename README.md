@@ -1,14 +1,14 @@
 
-####
-# =======================================
-#   As of 11 MAY 2022
-#
-#		Mostly TECHNICAL DOCUMENTATION.
-#   
-#   ToDO:
-#		-	Remove personal.
-#		- Tidy, consolidate.
-# =======================================
+#### 	Tue Jul 26 20:40:40 PDT 2022
+
+		Mostly TECHNICAL DOCUMENTATION.
+   
+   ToDO:
+
+		-	Remove personal.
+		- Tidy, consolidate.
+
+		---
 
 
 

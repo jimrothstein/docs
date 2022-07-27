@@ -63,10 +63,10 @@ I do **not** know how to create fancy HTML files from knitr, pandoc.
 --pdf-engine=xelatex  
 
 
-*Create pdf from straight txt* 
-(do not process any markdown)
+####	pandoc:  ascii to pdf
 
-pandoc balks at processing straight text if it things it sees markdown.
+-	Try verbatum; process as a markdown.
+pandoc balks at processing straight text if it thinks it sees markdown.
 If lucky, !pandoc % -o file.pdf will work.
 
 \end{verbatim}
