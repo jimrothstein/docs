@@ -272,6 +272,9 @@ presented.
         Great way to improve zsh, CLI skills.
 	*		Rothgar  Mastering ZSH: https://github.com/rothgar/mastering-zsh 
 
+####	REGEX  (now: see tech_notes, RETURN HERE)
+
+		
 
 ### Videos
   *   [maththebeautiful - Paul?]( https://www.youtube.com/c/MathTheBeautiful/playlists )

@@ -1,19 +1,23 @@
 \footnotesize
 as of \today  
 
-####	Vol 01 - CLI Skills
--	CURL
+####	Volume 01 - CLI Skills
+-	Android (adb, fastboot)
+-	CURL					(SEE:   API, R-misc)
 -	GIT
 -	JSON
--	LATEX
+-	LATEX					(ALSO:  WIP)
 -	MAKE
--	REGEX
+-	REGEX/GREP		(SEE:  ZSH for glob)
+-	SEARCH				(SEE:  INDEX CARD)
+	-	Gmail | Github | DDG | ...
+-	TMUX
+-	YOUTUBE-DL
 \begin{description}
 \item[For basic GLOB - see ZSH LL] 
 \end{description}
--	SEARCH
 
-####	Vol 02 - LINUX CONFIG/HARDWARE
+####	Volume 02 - LINUX CONFIG/HARDWARE
 -	Linux Config - General
 -	GRUB
 -	X11
@@ -22,29 +26,26 @@ as of \today
 -	ChromeBox
 -	ChromeBook Laptop
 -	PHONES
-	-	phone1
-	-	phone2
 -	Other eToys
 
-####	Vol 03 - Neovim/Lua
+####	Volume 03 - Neovim/Lua
 
-####	Vol 04 - ZSH
+####	Volume 04 - ZSH
 
-####	Vol 05 -  MATH, ALGEBRA
+####	Volume 05 - MATH, ALGEBRA
 -	Linear Algebra
 -	ML
-(if R code, put into R LL)
+(if R code, put into R LL [^1])
 
 
-####	Vol 06 -	Statistics
+####	Volume 06 -	Statistics
 -	Classic
-	-	Regression
+-	Regression
 -	Baysian
 
+####	Volume 07 -	R:	Advanced R
 
-####	Vol 07 -	R:	Advanced R
-
-####  Vol 08	 -	R:	Other R skills 
+####  Volume 08	-	R:	Other R skills 
 \flushleft
 \begin{enumerate}
 \item BASE:   
@@ -70,4 +71,6 @@ as of \today
 \item
 \end{enumerate}
 
+
+[^1]:		LL = Looseleaf	
 vim:linebreak:nospell:nowrap:cul tw=78 fo=ntl foldcolumn=3 cc=+1

@@ -2383,6 +2383,36 @@ NO REPLY NEEDED
 	-	Could be heat, could be anything so merely documenting here.
 
 
+## Fri Jul 29 09:57:59 PDT 2022
+-	recall:  NO ZENPEP, NO Efforex 
+-	Hot all week (>95) and never liked heat seems to be affect than before:
+terribel sleep, functioning, not sure:  am I eating? (lost 3 pounds?)
+-	HEAD:	all week, any movement:  feels bp high or dizzy or  .  This is NEW.
+Sometimes just have to STOP; ie walking (ok, it is hot) is more aderous than
+previously noted.
+-	HEAD:  1st night in CAR since Scabies (early july ??).  Sleep much better, even
+though hot; worry will scapies return (car is not clean).  Still SOME dizziness
+at sudden movement, but MUCH better than early in week.   Still need more sleep.
+-	Hate a/c in this room.  noisy, cool yes but NOT comfortable cool.  Just does
+not feel right.
+
+-	HEAD:  easily annoyed; To do task X 1st must do Y,Z...  But do task Y must repeat
+cycle.   After couple hours:  nowhere near even starting X.  This is ANNOYING,
+anger and ThIS IS NEW.   Could be something technical; could be just cleaning
+room.  Begin one task, but to do that need all these others ... really annoying
+and this is NEW.
+-	Fed up with doctors, drugs.   2nd time in 2 months:  show up at Fred meyer only
+to find CHARGE for something expected to be no charge.  REally angry, fed up with
+this.
+
+
+##	Sun 31Jul2022
+-	BAD night, POOR sleep; sleeping in this ac is cause?   I halucinate, always
+awaken struggling with mental task and frustration (like can't organize pile of
+papers, collection of bottles.   That's how I wake up.
+-	Throat hurts (dry), Dizy most of day, brain=fog
+-	Persists through out the day.
+
 
 
 

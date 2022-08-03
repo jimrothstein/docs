@@ -1,6 +1,6 @@
 
 <!--
-vim:linebreak:spell:nowrap:cul tw=78 fo=tqlnr foldcolumn=3 cc=+1
+vim:linebreak:spell:nowrap:cul tw=78 fo=tqlnr foldcolumn=3 cc=+To demonstrate how the god damn american people KNOW NOTHING about ANYTHING.1
 -->
 
 ---

@@ -84,6 +84,7 @@ If lucky, !pandoc % -o file.pdf will work.
 	Avoid **postscript** and packages pstricks, even if greater capability.
 
 
+
 ####	GIT commands
 
   -  Change git push from https to ssh
@@ -92,6 +93,7 @@ If lucky, !pandoc % -o file.pdf will work.
 		git remote set-url origin git@github.com:jimrothstein/REPOSITORY.git 
 		git remote -v # shows using git:
 
+```
 #### LUA
 
 In lua, nil or false evaluate to:  false
@@ -446,9 +448,10 @@ READ: cmds to open windows at various localations:  bo, above ...
 
 
 
-\end{verbatim}
 
 \newpage
+###	REGEX
+-	see tech_notes/REGEX.md
 
 ### LINUX/ZSH notes
 
@@ -487,6 +490,9 @@ Wed May 25 20:22:20 PDT 2022
 
 }
 {}
+
+\newpage
+
 #### drive info
 {
 	# succinct, useful info
@@ -1617,3 +1623,19 @@ Misc Notes:
 Misc Notes:
 "State"  - cookies used to be used; now state carried in headers  
 vim:nospell
+
+####	Mobile, Cell Phone - notes
+
+RETAIL DEMO UNIT ('retail mode'):
+-	ie runs in endless LOOP, no Cell ability, no MEI
+-	useable ONLY for wifi
+-	Can be BARGAIN, but ...
+-	Must unlock bootloader (to remove 'endless loop software' and become regular
+	wifi device.
+-	if CAN unlock bootloader , BARGAIN.    Beware endless hours otherwise.
+
+Google Pixel 3a XL (my phone)
+-	Android 12 = final google update.
+- DO expect "unofficial" Android 13 for this phone (sooner or lalter).
+
+```
