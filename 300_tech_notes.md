@@ -8,12 +8,18 @@ PURPOSE:		Misc Tech Notes;  details, notes can be here (but COMMANDS put on INDE
 
 <!--
 		USAGE:  print_pdf.sh % out.pdf	
+
+		USAGE (small tableofcontents font)  b/c this template has \small embedded
+		in the template
+		!pandoc % -f markdown --template ~/dotfiles/proposed_template.latex -o
+		out.pdf ; zathura out.pdf
 -->
 
 ###	TODO:
   -	See Index Cards (bottom) - integrate that point to very bottom into main text
 	-	HTTR2 notes - mess
 	-	Fix TOC
+	-	In markdown (or latex), include separate files into this main one?
 
 
 \begin{verbatim}
@@ -451,7 +457,22 @@ READ: cmds to open windows at various localations:  bo, above ...
 
 \newpage
 ###	REGEX
--	see tech_notes/REGEX.md
+-	see ./tech_notes/REGEX.md
+-	for regex reading see 300_tech_reading.md
+
+
+#### Regex grouping:  capture & non-capture
+
+**Perl** PCRE for lookaheads, capture (in R, perl=T)
+from !so
+
+Groups that capture you can use later on in the regex to match OR you can use
+them in the replacement part of the regex. Making a non-capturing group simply
+exempts that group from being used for either of these reasons.
+
+
+Non-capturing groups are great if you are trying to capture many different
+things and there are some groups you don't want to capture. 
 
 ### LINUX/ZSH notes
 
@@ -1638,4 +1659,26 @@ Google Pixel 3a XL (my phone)
 -	Android 12 = final google update.
 - DO expect "unofficial" Android 13 for this phone (sooner or lalter).
 
+**OEM Unlock**
+-	greyed out?   (like mine) then not possible to unlock bootloader itself.
+	Means:  no root.   **no ROM install** **no TWRP**
+-	my pixel is VERISON (sprint?) phone;  not a Google phone;  b/c IMEI begins with 35...  NO way to change bootloader.
+
+-	ADB DEBUG:  a "mode" that allows installing apps, read logs on Android, file
+	transfer... Works by running TCP sever on host (PC) and daemon on device
+	(phone) Works by running TCP sever on host (PC) and daemon on device (phone)
+
+-	Photo tranfer, different.
+-	**FASTBOO**  purpose to `flash` ROM on device;  level beyond ADB.
+-	**mp3 file transfer** ADB appears to be FUSSY:  remove things like `?` from
+	file names or foregin char.   ADB sucks at error messages; chokes; just seem
+	to stall.	Just fix the file names and adb will work;  speed is very good;
+	but even 25 MB/s  ~ 1.8 GB/min.   Be patient with 40 GB. 
+
+-	Bluetooth - wasted plenty of time:  use wired ADB;   some mention Ubuntu &
+	bluetooth never got along.   Either way - TIME SINK;  waste.
+
+-	MTP is protocol to move files;  seems imperfect;  PTP for photos
+mtp://[usb:001,085]   where 085 refers to device.  (Run lsusb)
+-	AVOID this stuff;   **stay with ADB and fix those file names**
 ```

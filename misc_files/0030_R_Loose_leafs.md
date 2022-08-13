@@ -1,6 +1,40 @@
 \footnotesize
 as of \today  
 
+```
+template has \small font embedded
+
+!pandoc % -f markdown --template ~/dotfiles/proposed_template.latex -V geometry:margin=0.4in --toc-depth=4 -V toc-title="Reading" -o out.pdf ; zathura out.pdf
+```
+\tableofcontents
+
+#		Leval A
+##	Levle 22
+
+###	Control INDEX (yellow)
+-	Volume 1 - 8 Index
+-	QUEUE
+	-	Weekly (review)
+	-	Active (review)
+-	TECH NOTES (DRAFT)
+-	FILES
+	-	ZSH scripts (sh, api, regex etc)
+	-	md (needs clean up)
+	-	R | Rmd (TRY)
+		-	base
+		-	vector
+		-	graphics
+		-	DT
+	-	Latex
+	-	Make
+- TECH READING
+
+#	level 1
+
+### level 3
+
+####	Level 4
+
 ####	Volume 01 - CLI Skills
 -	Android (adb, fastboot)
 -	CURL					(SEE:   API, R-misc)
@@ -28,7 +62,7 @@ as of \today
 -	PHONES
 -	Other eToys
 
-####	Volume 03 - Neovim/Lua
+####	Volume 03 - Neovim/Lua | nvim-R
 
 ####	Volume 04 - ZSH
 
@@ -45,18 +79,21 @@ as of \today
 
 ####	Volume 07 -	R:	Advanced R
 
-####  Volume 08	-	R:	Other R skills 
+####  Volume 08	-	R:	BASE and Other R skills 
 \flushleft
 \begin{enumerate}
 \item BASE:   
 \begin{itemize}
+
 \item cat/sprintf/options()/dir cmds/etc.
 \item[-] With a dash.
 \end{itemize}
+\item base graphics | plots
 \item VECTORS  
-  *  Vectors | lists | str | base types | [ [[ | loops |  unlist | flatten
-\item Tools to Manage R PACKAGE updates, installation. 
-\item TESTING:  TINYTEST | TESTTHAT
+
+-	Vectors | lists | str | base types | [ [[ | loops |  unlist | flatten
+\item Manage R | package | updates |  installation. 
+\item TESTING:  tinytest | testthat
 \item ENV
 \item HTTR2
 \begin{itemize}

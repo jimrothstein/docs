@@ -2143,7 +2143,6 @@ Drop this.
 
 ## Tue Jul 19 02:24:04 PDT 2022
 
-
 \newpage
 
 #### Current Prescriptions  ( 26 JULY 2022)
@@ -2414,12 +2413,110 @@ papers, collection of bottles.   That's how I wake up.
 -	Persists through out the day.
 
 
+##	Wed 03Aug2022  Clueless
+I'm clueless ... 
+
+"
+The skin scrapping for your groin area was rejected by the lab.  The message
+below was given to you on 7/27/22.  It was not recommended to recollect scrapping
+because the selenium sulfide would interfere with further testing.  I hope this
+helps.
+ 
+Warmest regards, Jackie L. Boaz, LPN
+ 
+ 
+ 
+ 
+Patient had skin scrapping on 7/25/22, this was rejected from the lab.  Provider
+recommends for patient to continue with the selenium sulfide 2.5% top lotion.  If
+this gets worse or is not clearing up patient should be reevaluated.
+"
 
 
 
+## Mon 08Aug2022  Status
+-	status:   NO effexor, NO Zenpep
+-	not felt well since day before scabies began (+   days)
+- HEAD:  lessening, but any sudden movement/motion yields momentary
+dizzy/lightheaded/blood swish;   still every day; WITH vigorous exercise decreses
+(+ days)
+-	SKIN:	clueless what is going on.  Groin still red;  face spots still there;  
+-	MEDICNE:  nothing from Dr J, re: pro/con; status of shampoo.  concentrtion too
+low to reduce further.
+-	AIR CONDITIONING:   Strongly suspect a/c in office does not lead to good heath:
+		-	Sleep much better in car.
+		-	Nap in rooom;  throat will be very dry; once or twice painfully dry; ditto
+		nose.
+		-	cold, no I'm hot;  no now it is blowing on me.
+		- Result:   Minimize time in office.   Just not right place.  (library: far,
+		far better, none of above complaints.)
+-	CDC called me after I routinely reported NO feeling so great.  Think scabies
+got their attention.
+- NEXT:  Litholink due; plus blood test.
+-	GOAL:	vigorous exericse as much as I can at Y (its own problems)
 
 
 
+##	Mon 08Aug2022  Dr Jhansale   Status:  On same page?
+
+####	Update( Tue 09Aug2022)
+BLOAT - HOW could I forgt this?
+-	past 5-7 days, stomach, BLOAT
+-	What did I EAT?
+- hungry, but no room;  gas?  full?
+-	happens 3-5 hours after eating; right where I have hernia.
+-	Big pressure - Seems like `right where hernia is.
+-	Gonna explode!
+-	Psyllium does help.
+-	Walking does not help.  Often hungry!
+-	146 lb (shoes only) weight at gym 
+
+
+Status:  Are you on I on same page?
+
+OVERALL -  Still not 100% (or 90%) since day before scabies began ( ~ June 17,
+2022).
+
+-	ITCH - No itching, or very minor,  since cessation (~ July 18, 2022)
+-	HEAD (or bp) sudden movement triggers momenatary dizzines| sensation of
+	internal fluid sloshin about | bp shift?.  Forces cessation of all activity,
+	but disapates quickly (10 seconds or so).  
+-	EMOTIONS - Unambiguous, clear change in ease to anger| irritated | become confused| mood | grouchy.
+	ALSO can be brief but strong emtionally response.   Temporary (minutes to
+	hours), but prounced ability to concentrate; sort things out (even as simple as
+	cleaning my desk) | mood.  These are NEW, unmistakable.  (~ since July 18, 2022 - effexor).
+	Once triggered requires physical change to mitigate (ie leave librar)
+
+-	EXERCISE - vigorous exercise (not walking) such as rowing 30 minutes or more is
+	PROTECTIVE to above HEAD and EMOTIONS.   Noted decrease in symptoms and
+	intensity in days following vigorous exericse, but not to ZERO.
+-	CDC - called me!  Part of V-safe vaccine followup.  I reported decrease in
+	health (all of this) though clearly stated did not think covid-19 related.
+	Suspect scabies or health DECREASE caught attention.
+
+-	INSURANCE -	clueless why rejecting what was previouly approved or what to do
+	about it. [your office replied today - but I DO NOT THINK issue is WHICH
+	phamacy I get prescriptions refilled.   Humana is objecting to SPEFIC
+	presriptions] Selinium - as diluted as I can go.
+
+Appreciate your attention to these items:
+
+From 21 JULY 2022 report at doctor's office:
+-	Vaccines:  (non-Covid) Am I up-to-date?   Td?  POLIO?? 
+-	Labs:   Lipids!   (LDL/HDL/Tri....)  Please add.
+
+-	Colonscopy - now 5 years - It is time.  (Kaiser doctor who made recommendation is
+no longer at KP)
+
+
+LITHOLINK:
+	- Per our plan of early JUNE (prior to scabies), repeat 24-hour urine WITHOUT
+	ZENPEP (enyzeme) to review WHAT, IF ANY , UrOx changes.
+	-	Also per discussion, would appreciate you review specific questions with new
+Litholink lab director.
+
+
+ARE we are on same page?
 
 
 

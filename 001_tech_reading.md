@@ -1,8 +1,11 @@
----
-date:  \today
-# geometry:  margin=0.5in, top=0.25in
-TAGS:  reading list
----
+\footnotesize
+
+```
+template has \small font embedded
+!pandoc % -f markdown --template ~/dotfiles/proposed_template.latex -V geometry:margin=0.4in --toc-depth=4 -V toc-title="Reading" -o out.pdf ; zathura out.pdf
+```
+
+\tableofcontents
 
 <!--
 LINK:  [TEXT portion](URL portion)
@@ -14,7 +17,9 @@ LINK:  [TEXT portion](URL portion)
 file <- "001_R_stats_tech_reading.md"
 !pandoc % -t latex -V linkcolor:blue -V fontsize=10pt -V geometry:margin=0.4in -o ~/Downloads/print_and_delete/reading.pdf 
 
+-V toc-title="Read"   is ignored.
 
+!pandoc % -f markdown --template ~/dotfiles/proposed_template.latex -V geometry:margin=0.4in --toc-depth=4 -V toc-title="Reading" -o out.pdf ; zathura out.pdf
 
 !pandoc -t latex -M date="`date "+%B %e, %Y"`" -o %.pdf
 -H header
@@ -33,10 +38,12 @@ s/https.*/[&]()/g
 
 
 -->
-\footnotesize
 
 As of \today
 
+```
+Use \href{url}{text}
+```
 
 ###	BookClub
 - Janssens, DS at Command Line: https://www.datascienceatthecommandline.com/2e/
@@ -52,14 +59,27 @@ As of \today
   *  Gillespie, Lovelace (2016) https://bookdown.org/csgillespie/efficientR/
   *  Matloff:  Art of R Programming (2011)
   *  de Jong, Intro to Data Cleaning  https://cran.r-project.org/doc/contrib/de_Jonge+van_der_Loo-Introduction_to_data_cleaning_with_R.pdf
+-	Grolemund,  2014 https://rstudio-education.github.io/hopr/
   
 
-### R - more advanced
-  *  official R CRAN: https://cran.r-project.org/manuals.html
-  *  design.tidyverse.org
+### R - Documentation (can beat searching !)
+	
+-	Just Read the docs!		https://rdrr.io/r/	
+*  official R CRAN: https://cran.r-project.org/manuals.html
+	-	R intro:  https://cran.r-project.org/doc/manuals/r-release/R-intro.html
+	-	R Lang:	https://cran.r-project.org/doc/manuals/r-release/R-lang.html
+-	 design.tidyverse.org
+-	Just Read the docs!		https://rdrr.io/r/	
 
+
+###	R - graphics (base:: is main package)
+-	 	https://rdrr.io/r/graphics/par.html
+-		R intro			-	Ch 12:	https://cran.r-project.org/doc/manuals/r-release/R-intro.html#Graphics	
+-		R internals - Ch 6 graphics (lower level)
+-		base Idiot's guide  https://rstudio-pubs-static.s3.amazonaws.com/7953_4e3efd5b9415444ca065b1167862c349.html
 
 ### Basic Statistics
+
 
 #### More Intuitive/Explanatory:
   *  [Rossman, know all the basics?   confident?]  ( https://askgoodquestions.blog/ )
@@ -103,7 +123,7 @@ As of \today
   -  R-Blogger
 	-  \url{https://rweekly.org/}{rweekly.org}
 	-	 https://www.rstudio.com/blog/software-development-resources-for-data-scientists/
-	-	 milospopovic.net
+	-	 \href{milospopovic.net}{milospopovic}
 
 ####  R, the Language: Functional, Standard and Non- Evaluation, Environments, Call Stacks:
 
@@ -155,7 +175,6 @@ As of \today
 * Taubes, linear alg, statistics,  http://people.math.harvard.edu/~knill/teaching/math19b_2011/handouts/chapters1-19.pdf
       Biology?  math?  probability?   Think this is really an ideas book; not as easy as may appear.
 
-\newpage
 
 ####	Algorithms & ML
 -  Berkeley, excellent glossary: https://www.stat.berkeley.edu/~stark/SticiGui/Text/gloss.htm
@@ -255,7 +274,9 @@ presented.
 
 	Math Mode
 
-  *  AMS math  documentation      https://www.latex-project.org/help/documentation/amsldoc.pdf
+	*  AMS math  documentation
+		 \href{https://www.latex-project.org/help/documentation/amsldoc.pdf}{2017
+		 version on ipad}
 	*  https://www1.cmc.edu/pages/faculty/aaksoy/latex/latexthree.html#
 	*  http://web.mit.edu/rsi/www/pdfs/math.pdf
 	*  https://www.atqed.com/latex-column-vector
@@ -266,25 +287,54 @@ presented.
       (515.983 | ASH | 2012)
 	*  Linux- insides: https://0xax.gitbooks.io/linux-insides/content/
   *  Seefeld, et al Biology & R | https://cran.r-project.org/doc/contrib/Seefeld_StatsRBio.pdf
+-	Robert Sedgewick and Kevin Wayne (essential info ... serious programmers) https://algs4.cs.princeton.edu/home/
 
 #### ZSH
   *  Janssens, DS at Command Line: https://www.datascienceatthecommandline.com/2e/  
         Great way to improve zsh, CLI skills.
 	*		Rothgar  Mastering ZSH: https://github.com/rothgar/mastering-zsh 
 
-####	REGEX  (now: see tech_notes, RETURN HERE)
+
+####	REGEX  
+Focus:  **grep -P,  regex usage**:\
+
+- https://linuxize.com/post/regular-expressions-in-grep/#grep-regular-expression
+	(overview, not bad place to start)	
+-	another overview:	https://bsd.org/regexintro.html
+-	!wikipidia - several excellent articles and background.
+-	GNU grep documentation:
+	https://www.gnu.org/savannah-checkouts/gnu/grep/manual/grep.html#Top
+- **wikipedia articles!**  
+	Because touch upon many issues: quoting, expansions, quasi-quotation,
+	recursion, definitions which I have stumbled accross but never really
+	understood at appropriate abstraction.  Now it may clarify why do what we do
+	and why the nomenclature is the way it is.
+-	!so [regex] FAQ: https://stackoverflow.com/tags/regex/info (specific question (else can get lost in all the permutations.)
+
+Too comprehensive? (docs that cover flavors, usage in languages are too
+confusing to me)
+	
+-	(Regex | Jan Goyvaerts) https://www.regular-expressions.info/tutorial.html (regex buddy)
+- https://www.regular-experssions.mobi
+-	\href{https://learnbyexample.github.io/tags/regular-expressions/}{https://learnbyexample.github.io - some very intuitive arguments}
+-	(iPad) Mastering	Regular Expressions
+
+Finite Automata?
+
+-	https://sodocumentation.net/regex
+-	https://swtch.com/~rsc/regexp/regexp1.html
 
 		
 
 ### Videos
   *   [maththebeautiful - Paul?]( https://www.youtube.com/c/MathTheBeautiful/playlists )
+  *   [Statquest - Josh Starmer](https://statquest.org/video-index/)
   *   [Bright Side of Math]( https://www.youtube.com/channel/UCdwo4k1RQHTcq_-WS7Cazqg ) 
   *   [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw)
   *   Zedstatistics
   *   [Chris Mack](http://www.lithoguru.com/scientist/statistics/course.html) -
       practical R, models
   *   [Statistics Globe](https://statisticsglobe.com/r-programming-language)
-  *   [Statquest - Josh Starmer](https://statquest.org/video-index/)
 	*		Edward Malthouse - is careful with assumptions.
 	*		Prof Christoph Scherber -03
 	*		Lorenzo
@@ -294,17 +344,17 @@ presented.
 
 <!--
 ================================================================================================================================
-->
+-->
 
-\newpage
 
 \footnotesize
 
-####  Joins (merge)
+#### DT Joins (merge)
   -  https://rdatatable.gitlab.io/data.table/index.html
   -  https://stackoverflow.com/questions/1299871/how-to-join-merge-data-frames-inner-outer-left-right?noredirect=1&lq=1
 	-  https://jozef.io/r006-merge/
 	-
+<!--
 https://gist.github.com/nacnudus/ef3b22b79164bbf9c0ebafbf558f22a0  
 https://stackoverflow.com/questions/1299871/how-to-join-merge-data-frames-inner-outer-left-right  
 https://stackoverflow.com/questions/12773822/why-does-xy-join-of-data-tables-not-allow-a-full-outer-join-or-a-left-join  
@@ -328,6 +378,7 @@ https://cran.r-project.org/web/packages/dplyr/vignettes/two-table.html
 https://thoughtbot.com/blog/back-to-basics-sql  
 https://sqlzoo.net/wiki/The_JOIN_operation  
 https://martinctc.github.io/blog/using-data.table-with-magrittr-pipes-best-of-both-worlds/  
+-->
 
 ### APIs and R
 
@@ -393,6 +444,10 @@ CRAN Task Views:  Web Technology & Services: https://cran.r-project.org/web/view
 \end{enumerate}
 
 ####	Plugins
+
+###	Android
+- \href{https://www.androidauthority.com/lineageos-install-guide-893303/{decent primer:android RoM" 
+- \href{https://developer.android.com/studio/command-line/adb}{adb documentation}
 
 <!--
 

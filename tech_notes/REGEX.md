@@ -83,38 +83,6 @@ regex engine.   Shell interpreters have no such compiler and single backslash
 suffices.
 
 
-####	Reading (return to tech_reading)\
-Focus:  **grep -P,  regex useage**:\
-
-- https://linuxize.com/post/regular-expressions-in-grep/#grep-regular-expression
-	(overview, not bad place to start)	
--	another overview:	https://bsd.org/regexintro.html
--	!wikipidia - several excellent articles and background.
--	GNU grep documentation:
-	https://www.gnu.org/savannah-checkouts/gnu/grep/manual/grep.html#Top
-
-**Read the wikipedia articles!**  
-
-Because touch upon many issues: quoting, expansions, quasi-quotation,
-recursion, definitions which I have stumbled accross but never really
-understood at appropriate abstraction.  Now it may clarify why do what we do
-and why the nomenclature is the way it is.
-
-specific question (else can get lost in all the permutations.)
--	!so [regex] FAQ: https://stackoverflow.com/tags/regex/info
-
-Too comprehensive? (docs that cover flavors, usage in languages are too
-confusing to me)
-	
--	https://www.regular-expressions.info/tutorial.html (regex buddy)
-- https://www.regular-experssions.mobi
--	\href{https://learnbyexample.github.io/tags/regular-expressions/}{https://learnbyexample.github.io - some very intuitive arguments}
-
-Finite Automata?
-
--	https://sodocumentation.net/regex
--	https://swtch.com/~rsc/regexp/regexp1.html
-
 <!--
 vim:linebreak:nospell:nowrap:cul tw=78 fo=ntl foldcolumn=3 cc=+1
 -->
