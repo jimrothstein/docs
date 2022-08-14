@@ -1,39 +1,48 @@
 \footnotesize
 as of \today  
-
 ```
+file <- "misc_files/003_R_loose_leafs.md"
 template has \small font embedded
 
-!pandoc % -f markdown --template ~/dotfiles/proposed_template.latex -V geometry:margin=0.4in --toc-depth=4 -V toc-title="Reading" -o out.pdf ; zathura out.pdf
+!pandoc % -f markdown \
+--template ~/dotfiles/proposed_template.latex \
+-V geometry:margin=0.4in --toc --toc-depth=5 -V toc-title="Control INDEX" -o out.pdf ; zathura out.pdf
 ```
-\tableofcontents
+\newpage
 
-#		Leval A
-##	Levle 22
+<!--	
+Have the ToC
+Don't even want to see this
+-->
 
-###	Control INDEX (yellow)
--	Volume 1 - 8 Index
--	QUEUE
-	-	Weekly (review)
-	-	Active (review)
--	TECH NOTES (DRAFT)
--	FILES
-	-	ZSH scripts (sh, api, regex etc)
-	-	md (needs clean up)
-	-	R | Rmd (TRY)
-		-	base
-		-	vector
-		-	graphics
-		-	DT
-	-	Latex
-	-	Make
-- TECH READING
+##	WIP Outline	
+###	Volume 1 - 8 Index
 
-#	level 1
+###	QUEUE
 
-### level 3
+####	Weekly (review)
+####	Active (review)
 
-####	Level 4
+
+###	TECH NOTES (DRAFT)
+
+###	FILES
+
+####	ZSH scripts (sh, api, regex etc)
+####	md (needs clean up)
+####	Latex
+####	Make
+####	R | Rmd (TRY)
+#####	base
+#####	vector
+#####	graphics
+#####	DT
+
+###	TECH READING
+
+\newpage
+
+##	Loose Leaf VOLUMES
 
 ####	Volume 01 - CLI Skills
 -	Android (adb, fastboot)
