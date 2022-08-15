@@ -236,3 +236,21 @@ at hearings.
  - Known for some other reason.
  - Long forgotten day.
 
+
+
+##	Lorraine Hansberry (Rasisen in the Sun)
+-	1930s, raised in area south/west of Washington Park (between Cottage and
+Grand (MLK))
+-	some areas black, some white .... Woodlawn all white.
+-	father chopped up apts to make room for steady flow of north-bound black
+migrants.  Made him rich.  but ran into racial covenants.  Sued.  (He is the
+new LANDLORD as bldg change owners).  Very ambiguous to me:  what were racial/economic boundaries?
+-	attends public schools; mixed white; 
+-	2 older sisters attend Howard U; `popular` rich young black women; arrive
+with multiple trunks in toe.
+-	not so, Lorraine; attends U Wisc; scholarship;  contends with
+	implicit/explicit racism; blossoms into rebel but endears all who come
+	within in her reach.  eventually Communist.
+
+
+
