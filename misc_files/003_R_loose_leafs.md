@@ -1,30 +1,51 @@
 \footnotesize
+---
 as of \today  
-```
-file <- "misc_files/003_R_loose_leafs.md"
+
+
+
+<!--
+COMMENT
 template has \small font embedded
 
-!pandoc % -f markdown \
---template ~/dotfiles/proposed_template.latex \
--V geometry:margin=0.4in --toc --toc-depth=5 -V toc-title="Control INDEX" -o out.pdf ; zathura out.pdf
+# FaILS
+!pandoc % -f markdown  --template ~/dotfiles/trivial_template.tex -V geometry:margin=0.4in --toc --toc-depth=5 -V toc-title="Control INDEX" -t pdf -o - | zathura -
+
+# WORKS
+!pandoc % -f markdown  -V geometry:margin=0.3in --toc --toc-depth=5 -V toc-title="Control INDEX" -t pdf -o - | zathura -
+
+
+--template ~/dotfiles/proposed_template.latex 
+
+--include-in-header geometry.tex
+-->
+
+```
+file <- "misc_files/003_R_loose_leafs.md"
+
 ```
 \newpage
 
 <!--	
-Have the ToC
-Don't even want to see this
+C O M M E N T
+
 -->
 
 ##	WIP Outline	
 ###	Volume 1 - 8 Index
+
+---
 
 ###	QUEUE
 
 ####	Weekly (review)
 ####	Active (review)
 
+---
 
 ###	TECH NOTES (DRAFT)
+
+---
 
 ###	FILES
 
@@ -38,6 +59,8 @@ Don't even want to see this
 #####	graphics
 #####	DT
 
+---
+
 ###	TECH READING
 
 \newpage
@@ -45,6 +68,7 @@ Don't even want to see this
 ##	Loose Leaf VOLUMES
 
 ####	Volume 01 - CLI Skills
+
 -	Android (adb, fastboot)
 -	CURL					(SEE:   API, R-misc)
 -	GIT
