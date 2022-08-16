@@ -1669,7 +1669,7 @@ Google Pixel 3a XL (my phone)
 	(phone) Works by running TCP sever on host (PC) and daemon on device (phone)
 
 -	Photo tranfer, different.
--	**FASTBOO**  purpose to `flash` ROM on device;  level beyond ADB.
+-	**FASTBOOT**  purpose to `flash` ROM on device;  level beyond ADB.
 -	**mp3 file transfer** ADB appears to be FUSSY:  remove things like `?` from
 	file names or foregin char.   ADB sucks at error messages; chokes; just seem
 	to stall.	Just fix the file names and adb will work;  speed is very good;
@@ -1681,4 +1681,11 @@ Google Pixel 3a XL (my phone)
 -	MTP is protocol to move files;  seems imperfect;  PTP for photos
 mtp://[usb:001,085]   where 085 refers to device.  (Run lsusb)
 -	AVOID this stuff;   **stay with ADB and fix those file names**
+
+-	**adb backup**	disapppointing, time-sink;  THINK backup all all my apps,
+	data, but can NOT find clear documentation.  STOP.
+-	Do not like Google bloatware.  Expected something like ONEPLUS (which I
+	install ROM).  Google's rules, annoyances - must remove.  do not want G-
+	ecosystem to point to each of its sister apps.
+
 ```
