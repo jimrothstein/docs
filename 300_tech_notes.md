@@ -23,7 +23,8 @@ PURPOSE:		Misc Tech Notes;  details, notes can be here (but COMMANDS put on INDE
 
 
 \begin{verbatim}
-### PDF
+
+### PDF, Pandoc, Latex
 
  PDF   [ignores html, css; also ignores YAML header (pandoc & ::render()]
 
@@ -54,6 +55,9 @@ PURPOSE:		Misc Tech Notes;  details, notes can be here (but COMMANDS put on INDE
 
 !pandoc --metadata=project:JIM --lua-filter doc/panvimdoc/scripts/skip-blocks.lua --lua-filter doc/panvimdoc/scripts/include-files.lua  -t doc/panvimdoc/scripts/panvimdoc.lua % -o doc/source/jim_knitr_pandoc_latex.txt
 
+-N					(Number sections)
+
+
   HTML [to produce HTML with pandoc, all latex is IGNORED.]  
 
 I do **not** know how to create fancy HTML files from knitr, pandoc.
@@ -69,7 +73,6 @@ I do **not** know how to create fancy HTML files from knitr, pandoc.
 --pdf-engine=xelatex  
 
 
-####	pandoc:  ascii to pdf
 
 -	Try verbatum; process as a markdown.
 pandoc balks at processing straight text if it thinks it sees markdown.
@@ -77,10 +80,9 @@ If lucky, !pandoc % -o file.pdf will work.
 
 \end{verbatim}
 
-###		R, DEFINTIONS, TERSE EXAMPLES
-			See ~/code/try_things_here/BASE/
 
 ###	LATEX NOTES
+
 -	Tikz seems to be most popular way to gaphics vs **pstricks**.
 
 	footnote: \par
@@ -89,6 +91,9 @@ If lucky, !pandoc % -o file.pdf will work.
 	postscript with latex requires addins, such as ghostscript; drivers; ...
 	Avoid **postscript** and packages pstricks, even if greater capability.
 
+
+###		R, DEFINTIONS, TERSE EXAMPLES
+			See ~/code/try_things_here/BASE/
 
 
 ####	GIT commands
