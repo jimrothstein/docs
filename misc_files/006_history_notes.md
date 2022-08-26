@@ -184,6 +184,18 @@ issue, became a southern cause.
 -   1946 strikes catches GE off guard (huh?).   Emerges Boulware:  GE is boss,
     not union.  You take what we give; no matter how long you strike.
 
+##	HUAC
+-	claim:  there really was effort by CPUSA and "popular front" to disseminate
+organizing, education, labor activities.  But overthrow?? 
+-	1947, 1948 (?) investigates communist influence in Hollywood (actors,
+directors, writers ...)  Vicious.   Many those targeted had liberal leanings or
+depicted another side of life in their works, films  themes like religious
+tolerance, anti-Semitic (ex:  John Wayne film
+ALSO shows heroism of fighters in Burma?)   HUAC forced you to take
+stand or they would end your career.  Some, including an RKO executive Dore
+Schary , stood their ground ("Until the time is proven that a Communist is dedicated to
+overthrow gov't,  I can not determine any grounds for hiring but the man's
+competance.
 
 ##  William F Buckley emerges:
   *  pro-McCarthy
@@ -217,6 +229,11 @@ at hearings.
 
 ##  JFK
   -  To balance conscience and job, he promised to resign if ever conflict!
+-	Both JFK and esp HHH supported clause  allow govt to arrest/detain
+subversives in times of national crisis.   1962 Cuban Missile,  FBI Hoover
+kept list and called many such subversives (anonymously, to track them). JFK
+did not declare emergency.  Bernstein's parents of (Berstein/Woodruff)
+receieved phone calls.
 
 ## SCOTUS
     - Did you know this ???     From SCOTUS oral arugment ....   "political
