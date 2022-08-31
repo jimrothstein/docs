@@ -2131,6 +2131,7 @@ DEFINE:   Today is "NO ITCH"
 
 
 ## Mon Jul 18   +28 | +12 | +5     Jhansale & Humana refusal to pay
+
 -	no itch, but fear of return with every little sensation.
 - How to prevent?   Do not know.
 
@@ -2143,6 +2144,7 @@ Drop this.
 
 ## Tue Jul 19 02:24:04 PDT 2022
 
+meds:
 \newpage
 
 #### Current Prescriptions  ( 26 JULY 2022)
@@ -2361,7 +2363,7 @@ OLD, discontinued Medications:
 
 
 \newpage
-## Tue Jul 26 15:07:12 PDT 2022
+## Tue Jul 26 15:07:12 PDT 2022 - report bp changes (but NO reply needed)
 
 NO REPLY NEEDED 
 
@@ -2382,8 +2384,10 @@ NO REPLY NEEDED
 	-	Could be heat, could be anything so merely documenting here.
 
 
-## Fri Jul 29 09:57:59 PDT 2022
+## Fri Jul 29 09:57:59 PDT 2022 - serious symptoms 
+
 -	recall:  NO ZENPEP, NO Efforex 
+
 -	Hot all week (>95) and never liked heat seems to be affect than before:
 terribel sleep, functioning, not sure:  am I eating? (lost 3 pounds?)
 -	HEAD:	all week, any movement:  feels bp high or dizzy or  .  This is NEW.
@@ -2519,10 +2523,79 @@ Litholink lab director.
 ARE we are on same page?
 
 
+##	Mon 29Aug2022 - Dr. J,  in office
+{
+-	in-office Dr. J   Guess in-office is way to go; voice, email have proven
+useless.
+-	much routine stuff:  fix med  list.  How many times fix this!!
+-	**delayed** response to removing Efforex.    Why the FUCK DIDN'T YOU JUST SAY :THIS
+weeks ago.   Why do i need to go threw SOME MUCH work????>
+-	1 month+ since I reported symptoms to her. (Effexor ended 7/23/2022 - the plan
+		had been to taper and if no issues after 30 days, drop it.   I assumed she
+		meant issues would appear on the tapered dose.  WRON.  WRONGG)
+-
+
+-	After some discussion re; Trazadone (before Efforex) ; decide to go on Efforex.
+(Update:   I did say Trazadone ... WRONG.   I was took KLONOPIN for many years!)
+
+-	PHYSICAL conditions (dizzy, headaches, weakness) - we never discussed.
+-	Bloating;   I repeatedly said I do am not the doctor; no longer want to
+self-medicate.   Can not determine if food, absence of Zenpep, or even Effexor!
+She wants to colloprate.   I said ALL BETS off this summer.  I am wrong too
+often.  You are doctor.  (Implicit - and YOU need to followup)
+-	Insurance denials.... gave her all the details.  Will She actually do
+something now?
+-	Summer heat has also broken.  So feel more alert. 
+-	**Repeat:   in-person is best way to resolve.**
+}
+
+## Tue 30 Aug2022  review of your notes:
+
+-	Thank you for your time;  feel got some things addressed yesterday, in-person.
+-	your notes differ slightly from my recollection but seem to "minor" errors or differences.
+	For exact symptoms, timing, order of events, I prefer to refer to emails.
+-	we did NOT address 2nd major topic:  dizzy, fear of falling, headaches, bp
+surges.   **I ASSUME covered by resumption of Effexor. **
+-	I now have strong preference of in-office visits ONLY.  No emails. no
+telephone.  Do not wish to use more than my fair share of your time, but I see
+the in-house visit is much more efficient than strings of emails, calls .... 
+
+
+**********************
+-	Here is a very specific, concrete example why.  
+
+	Although you did remind me to monitor and report mood changes as I tappered
+	Effexor from 75mg to 37.5 mg to zero;  the first hint of trouble came in July
+	26 email,  some 4 days after Efforex was gone.  I accept blame:  I clearly
+	wrote: NO REPLY NEEDED.  At the time I was far more worried about skin, skin
+	scrappings,  scabies.  I had assumed, rightly or wrongly, that any Effexor
+	related mood shifts would have occurred long before.  
+
+
+	But that July 26 email clearly records the problems I would I would endure
+	through present. 
+
+	I think an excellent example of why patients should not self-medicate.
+******************
+
+
+
+-	Accordingly, I request two-week followup NOT be by phone.  But in-person.
+If you approve, then I'd appreciate if you or your staff just pick day and time and I will
+be there - no need for confirmmatinos, more telephone calls.
+
+
+-	Again, I thank you for  your time and understanding.
+
+##	Tue 30Aug2022
+
+
+
+
 
 
 
 
 	
 
-vim:nospell	
+vim:spell	
