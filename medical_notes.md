@@ -2147,7 +2147,7 @@ Drop this.
 meds:
 \newpage
 
-#### Current Prescriptions  ( 26 JULY 2022)
+#### Current Prescriptions  ( 31 AUG 2022)
 
 Prescription (as of \today):
 
@@ -2158,14 +2158,17 @@ Prescription (as of \today):
 - Potassium Citrate - 10 mEq = 1080mg (x 4)
 - Flomax (Tamsulosin) - 0.4 mg
 - Norvasc (Amlodipine) - 10 mg
-- Lopid (Gemfibrozil) - 300 mg (x 1, not x 2 as prescribed)
+- Lopid (Gemfibrozil) - 600 mg (x 1, not x 2 as prescribed)
 - Finasteride - 5 mg
+-	Zenpep ZERO
+-	Effexor ZERO
+
 
 External
 
 - Selenium Sul 2.5% (shampoo)
 - 0.05% AUG Betamethasone Dipropionate (liquid, scalp)
-- 0.05% Clobetasol Propionate (arm, butt)
+- 0.05% Clobetasol Propionate (psoriasis arm, butt)
 - (NEW) 2-3 drops mineral oil, each ear, 2-3x per week
 
 OTC
@@ -2173,12 +2176,23 @@ OTC
 - Psyllium (1 -2 Tbsp)
 - KAL Calcium Citrate 4 pills/d, total=1300 mg (Ca); NOTE: contains no vitamin D3 (hard to find)
 - D3 14,000 IU per week>
+-	B vitamin - continue
 
 ---
 
 Changes:  **2022**\
+-	Calcium Citrate
+	NOW: ~ July 2022  - 1300 mg (KAL brand)
+	PRIOR:	1000 mg (varies with brand)
 
--	STOP:  Effexor (Venlafaxine ER) - 75 mg  (by mid-July 2022)   Since 2014?
+-	Effexor (Venlafaxime ER) 
+	75.0 mg (2014 - 6/23/2022) (do I still need?)
+	37.5 mg (6/24/2022 - 7/23/2022)
+	0 mg (7/24/2022  - )
+symptoms return + 4 days (7/29/2022 or before)  (heat apparently aggravates
+symptoms)
+
+-	Zenpep (enzymes)  2021 - 7/15/2022  (is it doing anything?)
 -	NEW:	mineral oil, 2-3 drops, per ear, as needed to remove wax.
 
 
@@ -2188,6 +2202,7 @@ Changes:	**2021**
 -	NEW:	Vasaline to ears, dry areas;  as needed
 -	STOP:	Baby Asprin - 81 mg  Since ~2000 (age 45)o
 -	REDUCE:	B-complex, including B-12, B-6,   1x per week
+
 
 ---
 
@@ -2587,7 +2602,10 @@ be there - no need for confirmmatinos, more telephone calls.
 
 -	Again, I thank you for  your time and understanding.
 
-##	Tue 30Aug2022
+##	Tue 30Aug2022  begin litholink
+
+
+Wed 31Aug2022 Revise Current Medications
 
 
 

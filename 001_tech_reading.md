@@ -54,6 +54,7 @@ Use \href{url}{text}
 ### R - always learn something new:
   *  Burns, R Inferno (not intro book)
   *  Peng, https://bookdown.org/rdpeng/rprogdatascience/
+	*  Peng, https://bookdown.org/rdpeng/RProgDA/
   *  Hadley, https://r4ds.had.co.nz/index.html
   *	 [Jennybc (book)](https://stat545.com/index.html) [wtf](https://rstats.wtf/) [git](https://happygitwithr.com/)
   *  Gillespie, Lovelace (2016) https://bookdown.org/csgillespie/efficientR/
