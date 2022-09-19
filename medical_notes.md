@@ -2591,7 +2591,7 @@ the in-house visit is much more efficient than strings of emails, calls ....
 	through present. 
 
 	I think an excellent example of why patients should not self-medicate.
-******************
+***************
 
 
 
@@ -2608,7 +2608,38 @@ be there - no need for confirmmatinos, more telephone calls.
 Wed 31Aug2022 Revise Current Medications
 
 
+\newpage
 
+##	Sun 18Sep2022   Q for Enteric Hyperoxaluria:
+
+Several of these are number questions that might be combined into one page
+summary sheet.   By distribution, I mean rough spectrum,
+histogram, or even a crude sketch of values.  If it exists for large samples.
+
+
+1.	AGE -  Spectrum of ages for first diagnosis of enteric hyperoxaluria?  Is
+		there a known trigger?
+
+2.	UrOx - Spectrum of UrOx values for enteric hyperoxaluria?  Assume no lab error,
+		what variation  should one patient expect between 24 hour urine samples?
+		What does a wide variation tell us?
+
+3.  Chronic high UrOx - Using different regions  of the spectrum from #2, what are the long term health
+		risks?    Is there any such "safe" level of UrOx?
+
+4.	Standard Treatment for Enteric Hyperoxaluria seems to be K+ Citrate (prevent
+		stones), Calcium Citrate and DIET.   What is spectrum of benefits (percentage
+		reduction in UrOx). 
+
+5.	DIET - If diet is suspected, how can this be verified?   Is there benefit to
+		putting patient on controlled diet of low/high oxalate?
+
+6.	Labs, such as Litholink - Are there any (anonymous) studies that associate
+		UrOx with other factors?
+
+7.	Pancreatic Insufficiency - What percentage of Enteric Hyperoxaluria patients
+		also have this condition.   For these people, what is spectrum of decreased
+		UrOx from supplemental enzymes?
 
 
 
