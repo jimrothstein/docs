@@ -12,6 +12,7 @@ LINK:  [TEXT portion](URL portion)
 
 \url{nytimes.com}
 
+\href{url}{text}   url itself does NOT print
 \href{nytimes.com}{Click: NY Times}
 
 file <- "001_R_stats_tech_reading.md"
@@ -200,21 +201,19 @@ Use \href{url}{text}
 
 #### Bayes
 
--	 Aaronson, Scott: \url{https://www.scottaaronson.com/qclec.pdf}
-Information Theory:  CS, Quantum, Bayesian, linear algebra, Probability
+
+-	\href{https://arbital.com/p/bayes_rule/}{Arbital, wiki-like}
 -	 Barber, David:	Bayesian Reasoning & ML (examples): \href{http://web4.cs.ucl.ac.uk/staff/D.Barber/textbook/020217.pdf}{Barber}
 -	 Clyde, Mine et al Intro To Bayesian Thinking  (R,intuitive, online only)
-- Cunningham, Scott:   Mixtape: Causal Inference \href{https://mixtape.scunning.com/}{mixtape}
 -  Downey, Allen \href{"Thinking Bayes" https://www.greenteapress.com/thinkbayes/thinkbayes.pdf}{2012 pdf, clear intutive, but python)}
 -  Davidson-Pilon Bayesian for Hackers  python, but ideas seem well
 presented.
--	Gelman: DBA3 \href{http://www.stat.columbia.edu/~gelman/book/BDA3.pdf}{DBA 3}
-\href{http://www.stat.columbia.edu/~gelman/book/BDA3.pdf}{Gelmnan DBA3}
+-	Dekking \href{https://cis.temple.edu/~latecki/Courses/CIS2033-Spring13/Modern_intro_probability_statistics_Dekking05.pdf}{Dekking Modern Intro}
 -	Gimenez:  Easy Stats (examples)
--	Hunington-Klein The Effect Book \href{https://www.theeffectbook.net/index.html}{Effect Book}
 -  Kurz: Statistial Rethinking reCoded (Bayesian) \url{https://bookdown.org/content/4857/#how-to-use-and-understand-this-project} (R, meant as supplement to McElreath)
 -	 Johnson, Ott et al: \href{https://www.bayesrulesbook.com/index.html}{BayesRules !	}
 -	Lavine  (tutorial) https://people.math.umass.edu/~lavine/whatisbayes.pdf
+-	
 -	McElreath:	book, videos  Statistical Rethinking \href{http://xcelab.net/rm/statistical-rethinking/}{info}
 -  paulvanderlake (many R resources) 2012 ThinkBayes \href{https://paulvanderlaken.com/2017/08/31/data-science-machine-learning-statistics-resources/}{paulvanderlake}
 -	Taubes, Lectures 1-19	\href{https://people.math.harvard.edu/~knill/teaching/math19b_2011/handouts/chapters1-19.pdf}{Lectures 1-19}
@@ -231,6 +230,15 @@ presented.
 \item {Paulvanderlake (many R resources) 2012 ThinkBayes}
 \end{itemize}
 -->
+
+####	2nd Bayes books | Advanced or  Interesting Ideas
+-	 Aaronson, Scott: \url{https://www.scottaaronson.com/qclec.pdf}
+Information Theory:  CS, Quantum, Bayesian, linear algebra, Probability
+- Cunningham, Scott:   Mixtape: Causal Inference \href{https://mixtape.scunning.com/}{mixtape}
+-	Hunington-Klein The Effect Book wordy \href{https://www.theeffectbook.net/index.html}{Effect Book}
+-	Gelman: DBA3 \href{http://www.stat.columbia.edu/~gelman/book/BDA3.pdf}{Gelman DBA 3}
+-	\href{http://theanalysisofdata.com/probability/0_1.html}{Lebanon, Guy
+Analysis of Data;  more advanced math, some measure}
 
 #### Shiny
 	-	R, javascript + shiny https://book.javascript-for-r.com/
