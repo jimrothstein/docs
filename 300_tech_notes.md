@@ -1533,6 +1533,19 @@ Continent (esp France) respect English power, but not English culture, resistanc
 ###		ChromeBox:  Convert to Linux
 =============================
 \end{verbatim}
+
+##	Thu 29Sep2022
+		
+**WARNING**	GalliumOS is dead (per Reddit, several threads)
+-	I am using GalliumOS, which is based on Ubuntu 18.04
+-	Ubuntu 18.04 has end-of-life early 2023.
+-	latest neovim (0.8) is built upon Ubuntu 20.04;  so I MUST remain on **neovim 0.72.**
+-	Therefore:   Must move beyond GalliumOS in near future.  
+-	To do so, requires FULL ROM replacement;  ie turning the screw under heat
+	sink!
+-	
+
+
   -  internal hard drive is /dev/sda, sandisk, 29.48G
   -  Chrome's partitions - do not mess, G- Chrome did a lot of things and is
 		 fussy.
