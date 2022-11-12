@@ -31,7 +31,27 @@ vim:linebreak:spell:nowrap tw=78 fo=tqlnr foldcolumn=3
 *  Gentry, landed Gentry:  upper class, but not nobles or church, inherited
     land, able to live by collecting rent.  Some actually wealthier  than
     nobles. 
+\section{England - 17th}
+1649 - Charles I beheaded (impeached)
+1684 - James II (Catholic) succeeds brother Charles II.
+1689 - William III (from Netherlands) removes James II .  **Glorious
+Revolution** was actual neither.   Replaced one king with another - EXCEPT
+King no longer sovereign but **constitutional monarch** meaning beholden to
+English people(really?) and not elected by GOD.   **Whig** triumph (ie
+aristocrats, oppose Catholic rule)
 
+\section{Enlightenment}
+Hobbes - man selfish interests, BUT capacity to REASON and realize collective
+strength is the safest for all.   So Hobbes actually is pro-monarchy b/c
+stability.
+1616-1633 Gaelio battles Church.
+Spinoza - Dutch Jew.  Independent path.
+Locke  - man is individual. Different between richest and poorest is only
+education, wealth ...   Babies start with blank slate.      life, freedom,
+happiness .... unclear his view of property.   At one point, each should have
+enough ... but elsewhere seemed to not rule out amassing property (then called
+estates ?) and perhaps first capitalist - UNCLEAR.    Also tolerant (well,
+maybe not for Catholics, jews)
 
 ## Impeach
 England:  evolved as method for Parliament to assure power over King. (King
