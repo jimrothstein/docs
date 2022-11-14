@@ -224,6 +224,41 @@ competance.
   *  he seeks non-business adherents to conversative (more ideological)
 
 
+##  John Birch Society, real person
+-   1939 rural Georgia, bible-thumping family, graduates college.
+-   1940 July Shanghai China as missionary
+-   1942 by how fluent in Chinese, saving souls, he works among Chinese;
+meets Doolittle. (APR).   In July '42 Flying Tigers (volunteers) now called
+"US-China Air Task Force" (Chennault) and in '43 becomes 14th Air Force.  To
+survive, Birch joins US army in China.
+-   1943 Birch in Chansgha, behind Japanese lines provides intelligence re:
+Jap troops, status of airfields.
+-   1944 (July) Chennault awards Birch metals for his work.  Birch seems to excel at
+everything he does. (Oct) Vinegar Joe is out. Gen Wedemeyer in (too
+sympathetic to CCK)
+-   1945 (late August) war over.   Birch and party stopped by Communists (not
+something unusual or alarming).  But Birch is tired, weary from war ... makes
+threatening move and is killed.  A tragety , but not a hero. his fault.
+-   AFTERMATH:  Wedemeyer talks down to Mao, bad move.   Mao protests had
+saved dozens of American pilots, knew nothing about his indicident.   Beside
+you are operating in our country, area controlled by us, why didn't you inform
+us of operations?   Later testimony, Birch did provoke.  Birch knew Chinese
+well-enough not to act this way.    Later, US army does
+NOT award medals, not a hero, US & China were on **same side**    Zhu-de does
+investigate writes report.   Mao does take incident seriously, but facts point
+to Birch's own error.    US Wedmeyer and Ambass Hurley ... choose CKK.
+Americans just too arogant.    **US-China cooperation effectively begins to end.**
+
+-   Sen Knowland, anti-communist since at least 1946, makes speech in 1950.
+Birch's mother endlessly lobbies.    First American death of next war?   Just
+spirals on and on.   Welch, of Sugar Dadddy, Junior Mints, Pom-poms,  looks
+for symbol.   Welch part of well funded effort..... 
+
+-   1952 Taft also sees communistis everywhere.  But Eisenhower gets
+nomination.   Birch Society forms actively in 1957? 1958?
+
+
+
 ## IKE and presidental power
 John Foster Dulles dies in June 1959;  thaw begins in East-West. Major
 conference set for 1960, Paris.    Failed. 
@@ -282,7 +317,8 @@ Grand (MLK))
 -	father chopped up apts to make room for steady flow of north-bound black
 migrants.  Made him rich.  but ran into racial covenants.  Sued.  (He is the
 new LANDLORD as bldg change owners).  Very ambiguous to me:  what were racial/economic boundaries?
--	attends public schools; mixed white; 
+-	attends public schools; mixed white;  Lorraine is cursed, spit upon, etc
+for father's suit against covenants.
 -	2 older sisters attend Howard U; `popular` rich young black women; arrive
 with multiple trunks in toe.
 -	not so, Lorraine; attends U Wisc; scholarship;  contends with
