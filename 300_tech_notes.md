@@ -21,7 +21,6 @@ PURPOSE:		Misc Tech Notes;  details, notes can be here (but COMMANDS put on INDE
 	-	Fix TOC
 	-	In markdown (or latex), include separate files into this main one?
 
-
 \begin{verbatim}
 
 ### PDF, Pandoc, Latex
