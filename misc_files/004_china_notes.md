@@ -467,8 +467,8 @@ early 1980s
 
 1982
 -12th Party Congress 'socialism with Chinese characteristists"
--Hu Yaobang (Party Sec)
--Zhao  (premier, will be reformer)
+-**Hu Yaobang** (Party Sec, liberl)
+-**Zhao Ziyang** (premier, will be reformer)
 
 
 1983
@@ -487,9 +487,12 @@ early 1980s
 HR - less organized from above; pay taxes to govt (not turn over all the profits)
 -problems - you get - overgrazed lands, poor maintaince of irrigation systems, seed banks, anything done by collectives now at mercy of market
 
-
+1987
+-   Deng demotes Hu Yaobang (check dates); Zhao Ziyang now Party Sec (see
+    **Bao Tong**);  but rising tensions, demand for more reform;
+    inflation/corruption.
  1989
-   * Hu Yaobang (4/89) dies, Zhao Ziyang replaces Hu 
+   * Hu Yaobang (4/89) dies, Zhao Ziyang replaces Hu  (check dates)
    * May - Gorbachev visits China, 1st rapproachment since falling out
    * student protests, Tibet uprising, Party unsure?
    * June 4 - night
@@ -502,7 +505,12 @@ HR - less organized from above; pay taxes to govt (not turn over all the profits
    * Zhu Rongji - focused on economic restructuring
    * Li Peng - 
    * After TMS - US policy of ‘alignment’  (Nixon to 1989) with China ends;  Cold War soon ends; why arm China, train its military (as US had been doing)?  esp. when shoots its own?  However, Bush I and Gen Brent Scowcroft (Kissinger protege) seek continued alignment, good relations with China (i.e. not condemn China) goal: bring China into existing (US dominated) world order, even after TMS.
-   * 
+   * role of **Bao Tong** (1932-2022); mother educates; joins Party 1949; 6 yrs in countryside
+     during Cul Rev; 1980 joins Zhao Ziyang and contributes to many reforms in
+     1980s.  Too vocal about dislike for potential hard crackdown (*before*
+     TS).  Sent to prison till 1997.   Highest ranking party official sent to
+     prison after TS.   Remains acid critic of China government policies,
+     though remaining firm in Maxist beliefs and remaining in Beijing.
 1990
 
 
