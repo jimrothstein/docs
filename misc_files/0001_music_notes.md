@@ -1,19 +1,15 @@
-
 vim:linebreak:spell:nowrap tw=78 fo=tqlnr foldcolumn=3 
 
-#	Template for .md !
-
 <!--
-!pandoc % -t latex --variable fontsize=12pt -o
-~/Downloads/print_and_delete/out.pdf
 
--H
-
-
+!pandoc % -f markdown -t pdf -H ~/dotfiles/tex/geometry.tex -o - | zathura -
 -->
 
 
-1950s
+##  1940s
+    -   Loesser Publishers (B'way music), will  have Edie Gormie
+
+##  1950s
 
  	*	music shifts, from live to records
  	*	folk, country, western gain
@@ -21,12 +17,18 @@ vim:linebreak:spell:nowrap tw=78 fo=tqlnr foldcolumn=3
  	*		* Live, Bands, Bandleader=boss
  	*		* BL hires singers, does arrangements, all decisions.
  	*	In 50s and records,
- 	*		* A&R men
+ 	*		* A&R men (find the talent)
  	*		* singers going solo.
+            -   Publisher (holds copyright) gets 1cent + bonus
+            -   Record Co (Atlantic, RCA, Mercury and many more)
+            -   Song writer
+            -   Producer (Leiber & Stroll?)
  	*
  	*	Examples: (Claim:  many from Dorsey)
 >	Crosby, Patti Page, Sinatra (prefers Tin Pan Alley, so less than current),
 > Jo Stafford, Burl Ives, Clooney.
+    -   Barry Mann (1939- ) & Cythia Weil (1937) (lyrics)
+    -   Carole King (1942 - )
 
  	* Urban Folk:
 > Guthrie, Led Belle , Lomax, the DJ, Weavers.
