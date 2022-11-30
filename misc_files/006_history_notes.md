@@ -119,6 +119,34 @@ issue, became a southern cause.
 
       **Billy Graham** (1955)
 
+/section{Ludendorff}
+-   6/14/1914 -assassination
+-   Schlieffen Plan - Paris in 4 weeks; then Russia in 4 months;  Route through
+Belgium,  not directly from Alasce into France b/c too well fortified.  But
+Belgium resists more than expected.   Gen Ludendorff uses new gun and breaks
+through.  https://en.wikipedia.org/wiki/Schlieffen_Plan
+-   But Russians move too soon.   DUO of Ludendorff and older, aristocrat
+Hindenberg defeat Russians by analyzing the two Russian armies and defeat
+them. **Battle of Tannenberg**   However, what appeared as military success
+violates Schlieffen Plan.    Germany faces  **TWO FRONT WAR**  Argument
+Germany could have sued for peace and everyone could have gone home.
+-   **Rathenau** Jewish industrialist; brilliant planner; and keeps Germany
+economy afloat.    Not why did the war take 4 years, but how did Germany
+survive for 4 years.
+-   East or West, Kaiser dithers between 1914 and 1916 while military asks him
+    to choose which one first.  Falkkenhayn (military leader in charge) says
+    East; Ludendorff says West.
+-   Faced with no choose,  Falkkenhayn devises Verdun Plan, control area
+    around Verdun and bleed the city dry.  Falekkenhayn[^1] is realist and able
+    general, but this is a Military failure;  almost equal deaths; pointless
+    as French General activates superhuman logistics effort.  Falkkenhayn now
+    replaced with Ludendorff.  Post Verdun Ludendorff + Hidenberg as figure
+    head in control.  Will control army + govt as effective military
+    dictatorship. :    
+    :[^1] FALK also sought political way to end war; Russia was not favorable
+    and German diplomats not eager;  another failure.
+-   Turnip Winter (1916-17)
+
 ## Rise of Hard Right:  anti_New Deal.
   *  hate National Recovery Act's price controls; profanity to business.
   *  Assorted groups in 1930s-1950s, Leonard Read (Chamber of Commerce, vast
