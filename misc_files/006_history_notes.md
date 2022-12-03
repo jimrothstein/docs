@@ -119,8 +119,8 @@ issue, became a southern cause.
 
       **Billy Graham** (1955)
 
-/section{Ludendorff}
--   6/14/1914 -assassination
+\section{Ludendorff}
+-   6/14/1914 -assassination \
 -   Schlieffen Plan - Paris in 4 weeks; then Russia in 4 months;  Route through
 Belgium,  not directly from Alasce into France b/c too well fortified.  But
 Belgium resists more than expected.   Gen Ludendorff uses new gun and breaks
