@@ -31,8 +31,8 @@ output:
 !pandoc % -f markdown  -t latex -H ../chapter_break.tex -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o out.pdf 
 !pandoc % -f markdown  --pdf-engine xelatex -H chapter_break.tex -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o ~/Downloads/print_and_delete/out.pdf
      
-
-
+USE:
+!pandoc % -f markdown  --pdf-engine lualatex -H geometry.tex -t pdf
 -->
 
 as of \today
@@ -151,6 +151,7 @@ as of \today
 \noindent\rule{20cm}{0.4pt}
 
 \newpage
+
 ## FILES and FILE BOXES
 \today
 
@@ -162,55 +163,52 @@ as of \today
   *  Labels
   *  Looseleaf separators
 
-\noindent\rule{20cm}{0.4pt}
+***
 ### BEIGE/WHITE (smaller box)
   *  Need 1st
   *  China phone/money/passport (charger for China phone? (in China)   use usb).
   *  CAR (title, repair)
-  *  keys:  POB 2192 (one key)
+  *  keys:  POB 1522 (one key)
   *  Has room
   
-\noindent\rule{20cm}{0.4pt}
+***
 ### PINK
 (heavy)
 
-  *  Medical 2009 - 2019
+  *  Medical 2009 - 2019 (prune!)
   *  24-hour urine
   *  My medical notes | Kidney
   *  (older) DDS
   *  (complaint) DDS 
   *  Row
 
-\noindent\rule{20cm}{0.4pt}
+***
+
+<!-- 
+    \noindent\rule{20cm}{0.4pt}
+-->
 ### BROWN  
 (heavy)
 
  *  Financial `<=` 2020
  *  TOW
  
-\noindent\rule{20cm}{0.4pt}
+***
+
 ### BLACK
-  *  Financial current year 
-  *  DDS 2019 - 
-  *  EYES
-  *  ALZ
+-   Financial current year 
+-   Financial years: 2022, 2021
+-   Auto Insurance
+-   Health Insurance
+    -   All Open Correspondence
+    -   Medicare Info
+    -   Part D Info
+    -   OHP Info
+    -   Pacific Source
+    -   Humana
+    -   Aetna/Caremark/CVS
+-   DDS 2019 - 
+-   EYES
+-   Eugene, Salem Info
 
 
-<!-- 
-
-```{r render, eval=F, include=F}
-file <- "0020_contents_storage_locker.md"
-file <- here("misc_files", file)
-file
-
-
-# use  999999_render.Rmd
-rmarkdown::render(file,
-                  #output_format = "pdf_document",
-                  output_format = "md_document",
-                  #output_format = "html_document",
-                  output_file = "out/out")
-
-```
-
--->

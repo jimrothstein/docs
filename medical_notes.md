@@ -2643,6 +2643,13 @@ histogram, or even a crude sketch of values.  If it exists for large samples.
 
 
 
+##  Wed 07Dec2022 (status only)
+-   Dr. S moved to PDX, so last visit was ....?   She prepared tests for would
+    need for 1 year.
+-   On my time, on her time?, wrote two letters to insurance company.  Isn't this
+    something routine?  Why 2 people do draft, review, print a ltr to insurance
+    company?   (Plus, she could - and should - have done so at first mention of
+    problem - June?)
 
 
 	
