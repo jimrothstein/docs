@@ -1,7 +1,6 @@
 
 vim:linebreak:spell:nowrap tw=78 fo=tqlnr foldcolumn=3 
 
-#	Template for .md !
 
 <!--
 !pandoc % -t latex -V linkcolor:blue -V fontsize=12pt -V geometry:margin=0.5in -o ~/Downloads/print_and_delete/out.pdf
@@ -12,7 +11,7 @@ vim:linebreak:spell:nowrap tw=78 fo=tqlnr foldcolumn=3
 
 
 -->
-
+Germany
 [failing nytimes.com](www.nytimes.com)
 
 ## Russia
@@ -119,25 +118,25 @@ issue, became a southern cause.
 
       **Billy Graham** (1955)
 
-/section{Ludendorff}
--   6/14/1914 -assassination
+\section{Ludendorff}
+-   6/14/1914 -assassination \
 -   Schlieffen Plan - Paris in 4 weeks; then Russia in 4 months;  Route through
 Belgium,  not directly from Alasce into France b/c too well fortified.  But
 Belgium resists more than expected.   Gen Ludendorff uses new gun and breaks
 through.  https://en.wikipedia.org/wiki/Schlieffen_Plan
 -   But Russians move too soon.   DUO of Ludendorff and older, aristocrat
 Hindenberg defeat Russians by analyzing the two Russian armies and defeat
-them. **Battle of Tannenberg**   However, what appeared as military success
+them separately. **Battle of Tannenberg**   However, what appeared as military success
 violates Schlieffen Plan.    Germany faces  **TWO FRONT WAR**  Argument
 Germany could have sued for peace and everyone could have gone home.
 -   **Rathenau** Jewish industrialist; brilliant planner; and keeps Germany
-economy afloat.    Not why did the war take 4 years, but how did Germany
-survive for 4 years.
+    economy afloat.    Not why did the war take 4 years, but how did Germany
+    survive for 4 years.
 -   East or West, Kaiser dithers between 1914 and 1916 while military asks him
     to choose which one first.  Falkkenhayn (military leader in charge) says
     East; Ludendorff says West.
 -   Faced with no choose,  Falkkenhayn devises Verdun Plan, control area
-    around Verdun and bleed the city dry.  Falekkenhayn[^1] is realist and able
+    around **Verdun** and bleed the city dry.  Falkkenhayn [^1] is realist and able
     general, but this is a Military failure;  almost equal deaths; pointless
     as French General activates superhuman logistics effort.  Falkkenhayn now
     replaced with Ludendorff.  Post Verdun Ludendorff + Hidenberg as figure
@@ -146,6 +145,29 @@ survive for 4 years.
     :[^1] FALK also sought political way to end war; Russia was not favorable
     and German diplomats not eager;  another failure.
 -   Turnip Winter (1916-17)
+1916
+-   British blockade Germany; Germans down to 1000 cal/d, starving.  (German
+army always had enough to eat, unlike Russian army, German general and
+aristocracy clueless about actual conditions in population.  England has
+enough food sources no starvation.
+-   Haber tells Ludendorff can produce enough fertilizer or poison gas NOT
+    both.  His wife is so upset with what her husband does she commits
+    suicide. 1918 Germany.
+-   Whatever Ludendorff asks, the German people provide.   It was never for
+    enough for Ludendorff who had no understanding of people, soldiers, war,
+    death, starvation.  He is to blame; not the German people.  Ludendorff
+    regarded as brilliant tactician (Take that hill!) but absolutely clueless
+    how to defeat an army or win a war.       
+    Russian General Brusilov defeats Austrian army (date, significance?)
+-   Claim in 1916 Germany could have very reasonable peace deal.  Ludendorff
+    either intimidated a weaker Kaiser or fooled him and the industrialist
+    class, as well as the people that great victory lie ahead. A big lie.
+
+-   March '18
+        German military almost breaks French-British line in France. High
+        point.
+    -   Oct '18 German Revolution begins?    Reason why Ludendorff sees loss?
+
 
 ## Rise of Hard Right:  anti_New Deal.
   *  hate National Recovery Act's price controls; profanity to business.
