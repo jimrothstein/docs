@@ -9,7 +9,8 @@ PURPOSE:		Misc Tech Notes;  details, notes can be here (but COMMANDS put on INDE
 <!--
 		USAGE:  print_pdf.sh % out.pdf	
 
-		USAGE (small tableofcontents font)  b/c this template has \small embedded
+        For smaller font in table of contents:
+		USAGE (small tableofcontents font)  this template has \small embedded
 		in the template
 		!pandoc % -f markdown --template ~/dotfiles/proposed_template.latex -o
 		out.pdf ; zathura out.pdf
@@ -93,6 +94,30 @@ If lucky, !pandoc % -o file.pdf will work.
 
 ###		R, DEFINTIONS, TERSE EXAMPLES
 			See ~/code/try_things_here/BASE/
+
+####    R, Definitions
+-   **object**  Most computer languages do NOT allow direct access to
+    memory.  In R, various data structures (called `Objects` provide
+    access.  Use symbols or variables to access the the `Objects`.
+    Unique to R(?), symbols are also objects and can be manipulated
+    (example?).
+
+-   **intrepreted vs compiler code**   The former is source code that
+    is executed line-by-line.   The later is machine code.   Between
+    the two, is wide spectrum
+
+-   **struct** (C, non-R)  a collection that can hold multiple types, eg `db
+    record`.
+    \begin{verbatim}
+    struct record
+    {
+        char name[32];
+        int age;
+        float debt;
+    }
+#   To use:
+    struct record X    # X is variable, struct is keyword, `record` is struct
+    \end{verbatim}
 
 
 ####	GIT commands
