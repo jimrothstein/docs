@@ -4,7 +4,9 @@
 
 as of \today:  
 
-PURPOSE:		Misc Tech Notes;  details, notes can be here (but COMMANDS put on INDEX C)
+PURPOSE:		Misc Tech Notes;  details, notes can be here (but COMMANDS put
+on INDEX C).  Math, R, probability and stats notes **do NOT go here*
+
 
 <!--
 		USAGE:  print_pdf.sh % out.pdf	

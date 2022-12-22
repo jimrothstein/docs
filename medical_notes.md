@@ -2653,5 +2653,47 @@ histogram, or even a crude sketch of values.  If it exists for large samples.
 
 
 	
+\newpage
+
+re: **Appeal Number 1-11710713263**
+
+ROTHSTEIN, JAMES 
+831-824-4304
+jimrothstein@gmail.com
+
+
+
+This is a written request for appeal to Administrative Law Judge (ALJ).
+
+
+Humana:  Plan ID 113
+(please see attached OMHA-100 form)
+
+I challenge Humana's October 19, 2022 "appeal decision is unfavorable".
+In particular, I question the statement "we did not receive the requested
+information."  I will present evidence that Humana did, in fact, receive
+requested information.  
+
+If Humana needed additional information, not previously requested, I am (1)
+unaware of such a request and (2) skeptical the doctor involved did not comply.
+
+At the hearing, I will also supply receipts and do seek reimbursement.
+
+The very crux of this matter is that doctor and I felt I should tapper the
+medicine dose  and, if successful, reduce the dose to ZERO.   That is correct
+stop taking the medicine.
+
+I look forward to addressing these concerns during the hearing.
+
+Thank you for your time.
+
+
+
+Jim Rothstein
+
+
+
+
+
 
 vim:spell	
