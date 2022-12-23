@@ -1,4 +1,4 @@
-   vim:linebreak:spell:nowrap tw=81 fo=tqlnr foldcolumn=3
+   vim:linebreak:spell:nowrap tw=81 fo=tqlnr 
 
 
 <!--
@@ -2653,8 +2653,10 @@ histogram, or even a crude sketch of values.  If it exists for large samples.
 
 
 	
+
 \newpage
 
+##  Humana Appeal
 re: **Appeal Number 1-11710713263**
 
 ROTHSTEIN, JAMES 
@@ -2691,6 +2693,15 @@ Thank you for your time.
 
 Jim Rothstein
 
+
+
+##  Thu 22Dec2022 (sick, 2x last 2 weeks)
+-   both fever
+-   both long recovery (1 week or so)
+-   2nd stronger:   fever  then throat, cough, sneeze, blockage at night:
+breathing hard b/c nose blocked up.  (not respiratory)
+-   Dr.  no point in Covid test at long as healthier each day;  nothing to treat
+anyway
 
 
 
