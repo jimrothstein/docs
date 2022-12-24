@@ -26,8 +26,8 @@ on INDEX C).  Math, R, probability and stats notes **do NOT go here*
 
 \begin{verbatim}
 
-### PDF, Pandoc, Latex
 
+### PDF, Pandoc, Latex
  PDF   [ignores html, css; also ignores YAML header (pandoc & ::render()]
 
  To create pdf, just about everything works:  pandoc, markdown, latex, knitr..
@@ -83,6 +83,7 @@ If lucky, !pandoc % -o file.pdf will work.
 \end{verbatim}
 
 
+\section{LATEX NOTES}
 ###	LATEX NOTES
 
 -	Tikz seems to be most popular way to gaphics vs **pstricks**.
@@ -93,6 +94,17 @@ If lucky, !pandoc % -o file.pdf will work.
 	postscript with latex requires addins, such as ghostscript; drivers; ...
 	Avoid **postscript** and packages pstricks, even if greater capability.
 
+Original tex was 320 low-level cmds (aka primitives). 
+Macros created from these.
+But actual engine (tex) hidden from user.
+
+**LuaTex** is re-write of core TEX engine (hard, written in C).  
+Therefore, **LuaTex** added primitives, more open (can use tex or lua)
+
+**LuaLatex** is macro package.
+
+EXAMPLE:  In .tex file, write lua:  directlua is new primitive; lua api inside
+value for  $\pi = \directlua{tex.sprint(math.pi)}$
 
 ###		R, DEFINTIONS, TERSE EXAMPLES
 			See ~/code/try_things_here/BASE/
