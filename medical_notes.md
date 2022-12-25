@@ -2702,6 +2702,8 @@ Jim Rothstein
 breathing hard b/c nose blocked up.  (not respiratory)
 -   Dr.  no point in Covid test at long as healthier each day;  nothing to treat
 anyway
+-   update:  24DEC  still recovery from 2nd illness ... Nose stuffed; especially
+and night.  Almost painful to swallow.   Unusual to linger this long.
 
 
 
