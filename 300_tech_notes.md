@@ -1468,9 +1468,7 @@ Some Remarks:
 \newpage
 
 \begin{verbatim}
-===============
 				G O O G L E
-===============
 \end{verbatim}
 
 #### HTTR2 - NOTES (needs clean up!)
@@ -1531,10 +1529,7 @@ playlistId  =  "PLlXfTHzgMRUIqYrutsFXCOmiqKUgOgGJ5"  # Pavel Grinfeld, Linear Al
 
 
 \begin{verbatim}
-
-========================
 				E N D    G O O G L E
-========================
 \end{verbatim}
 
 #### Procedure: 
@@ -1575,9 +1570,7 @@ Continent (esp France) respect English power, but not English culture, resistanc
 
 
 \begin{verbatim}
-=============================
 ###		ChromeBox:  Convert to Linux
-=============================
 \end{verbatim}
 
 ##	Thu 29Sep2022
@@ -1719,7 +1712,7 @@ RETAIL DEMO UNIT ('retail mode'):
 -	useable ONLY for wifi
 -	Can be BARGAIN, but ...
 -	Must unlock bootloader (to remove 'endless loop software' and become regular
-	wifi device.
+	wifi device.  Locked means bootloder hard-coded insist OS match a code.
 -	if CAN unlock bootloader , BARGAIN.    Beware endless hours otherwise.
 
 Google Pixel 3a XL (my phone)
@@ -1754,4 +1747,13 @@ mtp://[usb:001,085]   where 085 refers to device.  (Run lsusb)
 -	Do not like Google bloatware.  Expected something like ONEPLUS (which I
 	install ROM).  Google's rules, annoyances - must remove.  do not want G-
 	ecosystem to point to each of its sister apps.
+
+-   Android is U/I to actual OS, which is **Dalik**, uses java VM **Recovery
+    Mode** is separate partition(?) contains just enough code to boot in this
+    mode.  Replacing this code is **custom** recovery vs **stock** recovery.
+
+
 ```
+\section{Laptop Buying Notes}
+**eMMc** is on bmotherboard(embedded), slow but works:  cheap, reliable;  fine to boot.   Check /dev/mmcblk**
+SSD is much better, but more expensive.  
