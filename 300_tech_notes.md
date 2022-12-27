@@ -1,4 +1,3 @@
-
 \footnotesize
 \tableofcontents
 
@@ -23,6 +22,7 @@ on INDEX C).  Math, R, probability and stats notes **do NOT go here*
 	-	HTTR2 notes - mess
 	-	Fix TOC
 	-	In markdown (or latex), include separate files into this main one?
+    -   Replace markdown headlines, with latex sections
 
 \begin{verbatim}
 
@@ -83,7 +83,6 @@ If lucky, !pandoc % -o file.pdf will work.
 \end{verbatim}
 
 
-\section{LATEX NOTES}
 ###	LATEX NOTES
 
 -	Tikz seems to be most popular way to gaphics vs **pstricks**.
@@ -98,14 +97,19 @@ Original tex was 320 low-level cmds (aka primitives).
 Macros created from these.
 But actual engine (tex) hidden from user.
 
-**LuaTex** is re-write of core TEX engine (hard, written in C).  
+**LuaTex** (engine) is re-write of core TEX engine (hard, written in C).  
 Therefore, **LuaTex** added primitives, more open (can use tex or lua)
 
 **LuaLatex** is macro package.
 
 EXAMPLE:  In .tex file, write lua:  directlua is new primitive; lua api inside
-value for  $\pi = \directlua{tex.sprint(math.pi)}$
+value for  
+\begin{verbatim}
+$\pi = \directlua{tex.sprint(math.pi)}$
+\end{verbatim}
 
+
+\section{R}
 ###		R, DEFINTIONS, TERSE EXAMPLES
 			See ~/code/try_things_here/BASE/
 
@@ -142,8 +146,9 @@ value for  $\pi = \directlua{tex.sprint(math.pi)}$
 		git remote set-url origin git@github.com:jimrothstein/REPOSITORY.git 
 		git remote -v # shows using git:
 
+
+\section{Lua}
 ```
-#### LUA
 
 In lua, nil or false evaluate to:  false
 0 or '', evaluate to: true
@@ -240,10 +245,11 @@ vim.wo.number = false
 vim.bo.shiftwidth = 4    
   
 
+--end
+```
 
 
-
-
+```
 ###	NEOVIM NOTES
 #### neovim, nvim, vim  update to latest version
 {
@@ -495,6 +501,8 @@ READ: cmds to open windows at various localations:  bo, above ...
 :h ft-r-indent    (for plugin r)
 :h ft-json-....   (for plugin json)
 
+end neovim 
+```
 
 
 
@@ -1645,6 +1653,7 @@ EFI - (partition) file format for execuatables, defacto standard for linux/BSD.
 This is block with 3 back ticks AND vimdoc:  boring!
 ```
 
+\begin{verbatim}
 ```vimdoc
 Patience !   Takes a few minutes to finish.
 shell 137 = out of memory
@@ -1665,6 +1674,8 @@ PANDOC:
 FINALLY, 
 :helptags ALL
 ```
+\end{verbatim}
+
 ##	CURL Examples:
 
 cURL write (to standard)
@@ -1743,5 +1754,4 @@ mtp://[usb:001,085]   where 085 refers to device.  (Run lsusb)
 -	Do not like Google bloatware.  Expected something like ONEPLUS (which I
 	install ROM).  Google's rules, annoyances - must remove.  do not want G-
 	ecosystem to point to each of its sister apps.
-
 ```
