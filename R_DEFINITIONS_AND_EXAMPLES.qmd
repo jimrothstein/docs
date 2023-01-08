@@ -32,7 +32,7 @@ PURPOSE:    R Definitions Plus Code Examples
 -->
 
 \footnotesize{this is footnotesize}
-file <- "/home/jim/code/try_things_here/BASE/DEFINITIONS_AND_EXAMPLES.qmd"
+file <- "/home/jim/code/docs/R_DEFINITIONS_AND_EXAMPLES.qmd"
 
 
 \renewcommand{\familydefault}{\sfdefault}  
@@ -218,9 +218,13 @@ deparse:  R expression ==`>` string (actually: structure(expression(), scrfile)
     
 
 \subsection{Primitive vs Internal function}
+
 -   `if`, `+`, sin, sqrt
 -   C functions
 -   SEE ADV-R Chapter 6, code: 059 (myoldcode)
+-   SEE https://nsaunders.wordpress.com/2018/06/22/idle-thoughts-lead-to-r-internals-how-to-count-function-arguments/
+-   SEE R Internals/Ch 2
+
 -   Do not understand at deeper level
 
 ```{r }
@@ -230,9 +234,17 @@ deparse:  R expression ==`>` string (actually: structure(expression(), scrfile)
 ### check several functions
 y  <- list(sin, "sin", c, switch, typeof, sqrt, `if`, `+`)
 
-sapply(y, typeof)
-sapply(y, is.primitive)
-sapply(y, is.function)
+quote(sin)
+quote("sin")
+quote(c)
+quote(sqrt)
+quote(`if`)
+quote(`+`)
+deparse(y)
+data.frame(object = y,
+typeof = sapply(y, typeof),
+           is.primitive = sapply(y, is.primitive),
+           is.function = sapply(y, is.function))
 ```
 
 
@@ -242,6 +254,27 @@ sapply(y, is.function)
     functional component, based on Scheme. 
 
     It is possible to abuse R, using it more like S code. (?)
+
+**Reification**
+    Abstract idea to treat all code as "data", including functions, structures,
+    etc.   This means all such objects can be modified by code.   C has. (TODO)
+
+\section{Referencial Transparency}
+    A function f is \textbf{referencial  transparent} IF replacing x with its value returns same.   
+
+```{r}
+f = function(x) x
+x = 6
+identical(f(x), f(6))
+```
+However, not all R functions have this property.
+```{r}
+x=6
+identical(quote(x), quote(6))
+```
+
+**Referencial Semantics** 
+    Changes to values are done in memory.  There is no copy.
 
 **Substitute**
     When used in function with formal variable, substitute stops evaluation,
@@ -276,6 +309,29 @@ Example:   `+` (1,2) vs.  1 + 2
     String ("5+5") is NOT call.   No such thing as evaluating a string.
     See 0210_  You can PARSE a string and then manipulate it.  Simpler to eval
     a quote(5+5) to return the sum.
+
+\section{String Interpolation} Method to substitute the value of expr into a
+string.   Can think of it as `template` with holes.
+
+SEE:    https://www.r-bloggers.com/2018/03/math-notation-for-r-plot-titles-expression-and-bquote/
+```{r}
+x = 5 
+bquote(x == .(x))
+
+## from ethz documentation, takes expr, returns lang ob
+default <- 1
+(z = bquote( function(x, y = .(default)) x+y ))
+
+typeof(z)
+is.call(z)  #T
+is.expression(z) #F 
+is.symbol(z) #F
+
+a = 2
+plot(1:10, a*(1:10), main = bquote(a == .(a)))
+```
+
+
 
 \section{Symbol}
 ```{r}
@@ -320,18 +376,6 @@ s
     symbols and their values:
 
     https://stackoverflow.com/questions/8846628/what-exactly-is-a-symbol-in-lisp-scheme
-
-**Reification**
-    Abstract idea to treat all code as "data", including functions, structures,
-    etc.   This means all such objects can be modified by code.   C has. (TODO)
-
-**Referencial Transparency**
-    Function f is ref transparent IF replacing x with its value returns same
-    result:   x=6,   f(x) == f(6)
-    But quote(x) != quote(6)  differ, not referencial transparent
-
-**Referencial Semantics** 
-    Changes to values are done in memory.  There is no copy.
 
 **Variable**
     Three kinds:  
