@@ -24,6 +24,26 @@ Germany
 -		- Convert Tatar (Who, where, when?, from N. Central Asia)
 - Ottoman (when)  depopulate Ukraine, as slaves brought to  Black Sea.
 - Gives rise to Cossack's?   When Where?
+- ~1852 Russia expansionary; considers itself true defenders of religion; in
+Holy Land, Russians considered pious visitors, but French are merely
+'tourists'.   Russia eyes Ottman, while Fr & UK, despite own suspicions of
+each other, prop up Ottoman to block Russians.
+
+
+\section{Ottoman}
+-   330  Constantine establishes Eastern outpost.
+-   1054 Rome excommunicates East.
+-   late 11th  end Crusades; Christians hold HolyLand.
+-   1204 Constantinople - sacked by western crusaders; tension between 2
+Christianities. 
+-   1405 Ottoman seize Constantinople - but very tolerant.  Russia
+increasingly orthodox.
+-   15-19th Both France and Russia have claims `spiritual` and protector ties
+    to Holy land.  Monks, some also not so pious, do all the work in Holy
+    Land.
+-   1852 SPARK. Unruly pilgrims, not so pious...   Nicholas I extends
+protection.  Napolean III (?) seeking support of Fr Catholics also steps in;
+French warships to Holy Land.  Now UK is nervous.
 
 
 ## English Civil War
