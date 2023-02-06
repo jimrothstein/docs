@@ -2706,7 +2706,65 @@ anyway
 and night.  Almost painful to swallow.   Unusual to linger this long.
 
 
+\newpage
 
+##  R 8FEB 23     -- prep for ALJ Hearing
+**Chronology:**  
+
+(many possible variables, venf: taper, off, then resume, taper pancreatic enzymes to zero;) 
+SCABIES (and zero exercise); 24 hour urine test \
+
+**JUNE**
+
+    -  6/xx/2022 - appt with Dr. J;  Agree to Plan;
+    -  6/17/2022 - must pay $26.16 for 37 1/2 mg 6/xx/2022 - appt with Dr. J;
+    Agree to Plan;
+        6/18/2022   -   SCABIES begins - ends 7/18/2022
+    -   6/23/2022   -   Last Venf 75 mg
+    -   6/24/2022   -   Begin Venf 37 1/2 mg
+    -   
+
+    -   6/24/2022 I call Humana; Used wrong # to contact dr; I give correct
+    number.
+    -   6/26/2022   -   Notice of Denial
+
+**JULY**
+
+    -   7/12/2022   -   "We agree with our initial decision ..." Letter
+    -   7/18/2022   -   SCABIES ends
+    -   7/18/2022   -   Dr J - no to letter
+    -   7/23/2022   -   Last Venf 37 1/2 mg
+    -   7/24/2022   -   First Day NO Venf
+    -   7/26/2022   -   Ltr to Dr. J; suspect something amiss.
+    -   late July   -   Note stronger emotions.
+
+**AUGUST**
+
+    -   late AUG    -   "going to explode" (emotionally)
+    -   8/29/2022   -   visit Dr. J:  plan resume 37 1/2 mg
+    -   
+
+**SEPTEMBER**
+
+    -   9/2/2022    -   Begin 75 mg (b/c have old bottle) and can not resolve 37
+    1/2 mg dose issue.  Almost immediate CALM.   Became aware of lethargy;
+    non-normal need to lie down 2-3 per day.    75 mg continues to present.
+    -   9/20/2022   -    Tell Dr. J using 75 mg (not 37 1/2) She writes Letter.
+    -   9/22/2022   -   Fax to C2C; have confirmation.
+    -   
+**OCTOBER**
+
+    -   10/19/2022  -   "UNFAVORABLE"  claim did not receive info from doctor.
+
+**DECEMBER**
+
+    -   12/17/2022  -   Mail (USPS) OHMA form and ltr 
+
+**JANUARY** 2023
+
+    -   1/3/203     -   Call from OHMA
+    -   1/4/2023    -   "Notice of Hearing" (rec'd 15 JAN 23)
+    -   1/19/2023   -   FAX confirm to OHMA
 
 
 vim:spell	
