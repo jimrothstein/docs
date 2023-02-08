@@ -1666,7 +1666,7 @@ Stunned:   Urox=45  w/ Ca, ZenPep, KCit;   but I was not low-Ox  (ate lentils fo
 instance)
 
 ## Sun Jun  5 00:14:05 PDT 2022
-Call with Dr. S - Friday.
+Telephone Call with Dr. S - Friday (6/3/22)
 	-	**Zenpep**, agrees does not appear to be benefit.  Stop and repeat 24-hour urine
 	in 60 days (August).  Lengthy discussion re: CT scans vs ultrasound and what to
 	do going forward.   I have no answer.. just continue.
@@ -1890,7 +1890,7 @@ before really scratch.
 									
 
 ##	Wed Jul  6 04:11:09 PDT 2022  visit Dr. 
--	Suspects NOT realated to Zenpep (or efforex or ...)
+-	Suspects NOT related to Zenpep (or efforex or ...)
 -	He is not certain:  might be SCABIES, which has `simple` treatment.
 -	Treat ONE night; but still takes several days or more for ITCH to die down
 (Itch is body's response to this mite & its determinents)
@@ -1933,7 +1933,6 @@ ITCH with hydrodrocorizone only increases itch & scratching.
 \newpage
 
 ##	9 JULY 2022
-
 -- NO  REPLY NEEDED --
 
 -- **re: INSURANCE DENIAL & VENLAFAXINE ER HCL ER 37.5 mg TAB**
@@ -2565,7 +2564,6 @@ something now?
 }
 
 ## Tue 30 Aug2022  review of your notes:
-
 -	Thank you for your time;  feel got some things addressed yesterday, in-person.
 -	your notes differ slightly from my recollection but seem to "minor" errors or differences.
 	For exact symptoms, timing, order of events, I prefer to refer to emails.
@@ -2605,13 +2603,12 @@ be there - no need for confirmmatinos, more telephone calls.
 ##	Tue 30Aug2022  begin litholink
 
 
-Wed 31Aug2022 Revise Current Medications
+##  Wed 31Aug2022 Revise Current Medications
 
 
 \newpage
 
 ##	Sun 18Sep2022   Q for Enteric Hyperoxaluria:
-
 Several of these are number questions that might be combined into one page
 summary sheet.   By distribution, I mean rough spectrum,
 histogram, or even a crude sketch of values.  If it exists for large samples.
