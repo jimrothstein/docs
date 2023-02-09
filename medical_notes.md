@@ -2215,6 +2215,7 @@ Before breakfast/Empty Stomach
 2) Levothyroxine - 100 microg
 
 ---
+
 Caution:  Copied from 2020
 Prescription:
 • Cozaar (Losartan) - 100 mg
