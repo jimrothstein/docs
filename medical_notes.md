@@ -2215,6 +2215,7 @@ Before breakfast/Empty Stomach
 2) Levothyroxine - 100 microg
 
 ---
+
 Caution:  Copied from 2020
 Prescription:
 • Cozaar (Losartan) - 100 mg
@@ -2764,4 +2765,18 @@ SCABIES (and zero exercise); 24 hour urine test \
     -   1/19/2023   -   FAX confirm to OHMA
 
 
+##  Wed 08Feb2023 - visit Dr. Mueller
+FACE:   left and right side, most likely benign; right has slight pinkish;
+treatments I now have (scalp) won't work, leave it alone.
+
+Psoriasis:  CAN leave it alone, provide no spread or worsening;  I said I'd be
+more aggressive, which WORKED before.
+
+CALCIUM - spike in urine;  refer to Dr. LAM;   discussed diuretic but reported
+need for K ~ 20 years ago, he dropped it.
+
+VENLAFAXINE - 'notorious' for hard to taper, some patients need boost of ???
+(serotonin) to balance remove of VENLAFAXINE
+
+Pneumonia shot:   every 10 years. no after effects, slight arm soreness.
 vim:spell	
