@@ -1,13 +1,22 @@
-\footnotesize
-\tableofcontents
+---
+title: "using .qmd "
+author: "Norah Jones"
+date: "5/22/2021"
+pdf-engine: lualatex
+format:
+  pdf: 
+    toc: false
+    include-in-header: 
+      text: |
+        \usepackage[top=.5in, bottom=.5in, left=.7in, right=.5in]{geometry}
+        \usepackage{amsmath,amssymb,amstext,amsfonts}
+        \usepackage{lipsum}
+---
 
-as of \today:  
+---
+<!---
+    :!quarto render % -o - | zathura -
 
-PURPOSE:		Misc Tech Notes;  details, notes can be here (but COMMANDS put
-on INDEX C).  Math, R, probability and stats notes **do NOT go here*
-
-
-<!--
 		USAGE:  print_pdf.sh % out.pdf	
 
         For smaller font in table of contents:
@@ -17,25 +26,49 @@ on INDEX C).  Math, R, probability and stats notes **do NOT go here*
 		out.pdf ; zathura out.pdf
 -->
 
-###	TODO:
+\footnotesize
+\tableofcontents
+
+as of \today:  
+
+PURPOSE:		Misc Tech Notes;  details, notes can be here (but COMMANDS put
+on INDEX C).  Math, R, probability and stats notes **do NOT go here*
+
+
+
+\section{TODO:}
+-   quarto STOPS
+
   -	See Index Cards (bottom) - integrate that point to very bottom into main text
 	-	HTTR2 notes - mess
 	-	Fix TOC
 	-	In markdown (or latex), include separate files into this main one?
     -   Replace markdown headlines, with latex sections
 
+
+\section{X11, Wayland, video}
+
+Wayland is open source \textit{protocol} replacement for X windows, (widgets
+says get graphics from X or Wayland).
+WESTON is reference implementation.
+
+Because Wayland accepts same toolkits (Qt, GTK) as X, the impact for developers
+and users should be minimal.  Wayland shrinks X;  much functional now in Linux
+kernel.  
+
+
 \begin{verbatim}
+\section{PDF, Pandoc, Latex}
 
-
-### PDF, Pandoc, Latex
  PDF   [ignores html, css; also ignores YAML header (pandoc & ::render()]
 
  To create pdf, just about everything works:  pandoc, markdown, latex, knitr..
+ Note:  zathura uses library, open source `popler`.
+
 
   NOTE:   Missing latex .sty ?  
 		-	With .tex file, run (in R) tinytex:latemk(*.tex) to install
 		- OR, use tlmgr install <font>
-
 		-	fonts installed?  fc-list : family
 		- also luaotfload (loads fonts)
 		-	ENGINE=software (such as **luatex**, tex, pdftex) 
@@ -49,6 +82,7 @@ on INDEX C).  Math, R, probability and stats notes **do NOT go here*
 
   Lua in *.tex file
   *  see ~/code/publish_project/TEX/
+
 
 !pandoc % -f markdown -o %.pdf
 
@@ -83,7 +117,7 @@ If lucky, !pandoc % -o file.pdf will work.
 \end{verbatim}
 
 
-###	LATEX NOTES
+\section{LATEX NOTES}
 
 -	Tikz seems to be most popular way to gaphics vs **pstricks**.
 
@@ -148,7 +182,6 @@ $\pi = \directlua{tex.sprint(math.pi)}$
 
 
 \section{Lua}
-```
 
 In lua, nil or false evaluate to:  false
 0 or '', evaluate to: true
@@ -246,10 +279,8 @@ vim.bo.shiftwidth = 4
   
 
 --end
-```
 
 
-```
 ###	NEOVIM NOTES
 #### neovim, nvim, vim  update to latest version
 {
@@ -502,7 +533,6 @@ READ: cmds to open windows at various localations:  bo, above ...
 :h ft-json-....   (for plugin json)
 
 end neovim 
-```
 
 
 
@@ -529,9 +559,7 @@ things and there are some groups you don't want to capture.
 
 Wed May 25 20:22:20 PDT 2022
 	-	run GallumOS 18.04
-	```
 	- password for Ubuntu, UbuntuOne is icmup.6667.again
-	```
 	- Ubuntu could NOT install (wifi issues)
 	- But old laptop runs fine with just linux mode.
 
@@ -621,7 +649,6 @@ Sat May 21 18:48:16 PDT 2022
 	-	Kernel Upgrade - See INDEX C.
 
 }
-```
 *jim_Permissions*
 u g o   (user group other)
 
@@ -1046,10 +1073,8 @@ yank
 yank-pop
 zle-line-finish
 zle-line-init
-```
 
 #### BINDKEY
-```
 *bindkey*  # results, all shortcuts
 
 "^A"-"^C" self-insert
@@ -1103,7 +1128,6 @@ zle-line-init
 "^\\\\"-"~" self-insert
 "^?" vi-backward-delete-char
 "\M-^@"-"\M-^?" self-insert
-```
 
 
 
@@ -1320,7 +1344,6 @@ URI  https://en.wikipedia.org/wiki/Uniform_Resource_Identifier
 
 #### KNITR
 
-```
 **knitr -> R & rmarkdown -> Bookdown (~2016) -> Blogdown -> netlify (Hugo, static)**
 HUGO:   md -> html
 BOOKDOWN:  Rmd        ->html (skips md)
@@ -1334,7 +1357,6 @@ snapshots as either your code or the any of like libraries changes.   Nice
 purpose:   easily re-create complete environment.   But much too much overhead
 for my needs!  (at this time.)
 
-```
 
 
 
@@ -1642,12 +1664,9 @@ EFI - (partition) file format for execuatables, defacto standard for linux/BSD.
 	- NOT an issue with GalliumOS (based on 18.04 ubuntu - so stuck here for
 		now)
 
-```vimdoc
 This is block with 3 back ticks AND vimdoc:  boring!
-```
 
 \begin{verbatim}
-```vimdoc
 Patience !   Takes a few minutes to finish.
 shell 137 = out of memory
 
@@ -1666,7 +1685,6 @@ PANDOC:
 
 FINALLY, 
 :helptags ALL
-```
 \end{verbatim}
 
 ##	CURL Examples:
@@ -1753,7 +1771,9 @@ mtp://[usb:001,085]   where 085 refers to device.  (Run lsusb)
     mode.  Replacing this code is **custom** recovery vs **stock** recovery.
 
 
-```
 \section{Laptop Buying Notes}
+
 **eMMc** is on bmotherboard(embedded), slow but works:  cheap, reliable;  fine to boot.   Check /dev/mmcblk**
 SSD is much better, but more expensive.  
+
+vim: nospell

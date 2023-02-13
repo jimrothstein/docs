@@ -1,3 +1,17 @@
+---
+title: "using .qmd "
+author: "Norah Jones"
+date: "5/22/2021"
+pdf-engine: lualatex
+format:
+  pdf: 
+    toc: false
+    include-in-header: 
+      text: |
+        \usepackage[top=.5in, bottom=.5in, left=.7in, right=.5in]{geometry}
+        \usepackage{amsmath,amssymb,amstext,amsfonts}
+        \usepackage{lipsum}
+---
 \footnotesize
 
 ```
