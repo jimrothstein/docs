@@ -137,6 +137,12 @@ $\pi = \directlua{tex.sprint(math.pi)}$
     struct record X    # X is variable, struct is keyword, `record` is struct
     \end{verbatim}
 
+-   \textit{monad} - As goal, seek functions with (1) no side effects (2) can
+    be composed.  Function factories can be useful, esp where variables can be
+    'stored' in environment.   SEE BRUNO video.
+
+}
+
 
 ####	GIT commands
 
