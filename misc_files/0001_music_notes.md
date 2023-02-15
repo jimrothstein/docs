@@ -72,3 +72,6 @@ Day), On Moonlight Bay( 1951, Doris Day), West Point Story (1950, Day)
 ## Max Steiner, film composer:
 - Gone With the Wind
 - A Summer Place (1959)
+
+##  Sue Thompson,  1925-2021
+
