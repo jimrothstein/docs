@@ -396,4 +396,13 @@ with multiple trunks in toe.
 	within in her reach.  eventually Communist.
 
 
-
+##  Eugene, OR
+Judge Alfred Ted Goodwin, 1923-2023
+father was Baptist minister;  
+-   ordered cross removed from Ore. hiltop.
+-   beach bet high tide and vegetation is PUBLIC (1964)
+-   Nixon appointed to fed bench.
+-   favored **federal** enforcement to protect Spotted Owl
+-   forcing children to recite "one nation under god" violates separation of
+Church. (unfortunately, reversed in separate case when 'teacher led')
+-   also branded cattle (man of the west?)

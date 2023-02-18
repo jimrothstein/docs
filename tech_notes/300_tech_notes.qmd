@@ -569,6 +569,13 @@ Wed May 25 20:22:20 PDT 2022
 	- Ubuntu could NOT install (wifi issues)
 	- But old laptop runs fine with just linux mode.
 
+\section{Lenovo Laptop}
+
+- w/ costini, only terminals work:  built-in and `terminator`
+- terminals:  kitty (very, very popular), wez ... do NOT work.
+- think I like old ACER laptop better (screen, better keyboard, seems better
+  built)
+
 #### Use exit to exit .sh early
 
 #### completion
@@ -1584,6 +1591,8 @@ LINUX on laptop
   -  downloaded and began, opens terminal:  Linux !
   -  Chrome, browser, data all seems in place !
   -  Only terminal is linux.  
+
+  -
 
 
 Source:  Rose Pesotta (HD6509.P47)

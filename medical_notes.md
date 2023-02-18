@@ -2779,4 +2779,19 @@ VENLAFAXINE - 'notorious' for hard to taper, some patients need boost of ???
 (serotonin) to balance remove of VENLAFAXINE
 
 Pneumonia shot:   every 10 years. no after effects, slight arm soreness.
+
+
+
+##  Fri 17Feb2023  HAND notes.
+
+Per ROWING coach:
+-   ICE only reduces pain.
+-   REST
+-   STRENGTH - fingers & wrist
+    -   exerise hand in SAND
+    -   try rubber band
+-   BRACE   
+-   HEELS - use to push.
+
+
 vim:spell	
