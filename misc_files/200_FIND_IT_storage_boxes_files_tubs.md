@@ -175,12 +175,15 @@ as of \today
 ### PINK
 (heavy)
 
-  *  Medical 2009 - 2019 (prune!)
-  *  24-hour urine
-  *  My medical notes | Kidney
-  *  (older) DDS
-  *  (complaint) DDS 
-  *  Row
+-   Medical Current Year:   SEE file cabinent
+-   Medical 2009 - 2022 (prune!) 
+-   HUMANA - appeal 2022
+-   24-hour urine - summaries
+-   24-hour urine - diets/notes
+-   My medical notes | Kidney
+-   (older) DDS
+-   (complaint) DDS 
+-   Row
 
 ***
 
