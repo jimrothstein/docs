@@ -37,6 +37,9 @@ Holy Land, Russians considered pious visitors, but French are merely
 'tourists'.   Russia eyes Ottman, while Fr & UK, despite own suspicions of
 each other, prop up Ottoman to block Russians.
 
+Great Terror - show-trials, Bukharin, Lev Kamenev, Zinoviev,  Alexi Rykov, but Pasternak
+(born 1890) asks why spared?     
+
 
 \section{Ottoman}
 -   330  Constantine establishes Eastern outpost.
