@@ -105,6 +105,14 @@ left a taint to Federalist brand.   After Hamilton murder, Federalist were all
 but gone.   (Federalist prefered England's stability to Jefferson's support
 for anti-Monarchy French revolutionaries
 
+\section{ After Napoleon}
+-   removes many parochial, arthritic European structures like local tariffs,
+reduces number of German municipalities, etc.   setting environment `more
+friendly` to industrial revolution.
+-   France, Germany, USA ... also contributed to technological improvements,
+not just England.  Empirical fact(?):  more capital per worker, more GDP per
+worker. Why is Peru `poor`, cheaper to use 19th C inventions b/c cheap labor,
+its GDP/Capital is about where England was in 19th.
 
 ## Pennsylvania RR
 - (1852-1874) pres = J. Edgar Thompson, engineer, modernizes, uses Westinghouse Air Brake.
@@ -436,6 +444,11 @@ with multiple trunks in toe.
 	implicit/explicit racism; blossoms into rebel but endears all who come
 	within in her reach.  eventually Communist.
 
+
+\section{finance}
+-   1987 crash?   not due to economic conditions;   failure of Black-Sholes
+model (buy puts, 'insurance') to protect against falling markets.   Can't do
+that when everyone is doing same; and market is crashing.
 
 ##  Eugene, OR
 Judge Alfred Ted Goodwin, 1923-2023
