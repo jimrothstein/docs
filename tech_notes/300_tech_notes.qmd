@@ -1608,6 +1608,8 @@ Continent (esp France) respect English power, but not English culture, resistanc
 
 \begin{verbatim}
 ###		ChromeBox:  Convert to Linux
+15Mar2023 - Crostini does **not** allow external drive to mount.  File manager (Chromeos), but not in Crositini.
+Time to get rid of Crotini.
 \end{verbatim}
 
 ##	Thu 29Sep2022

@@ -480,5 +480,86 @@ Wed 18Jan2023
     (eviction).   LZS pays $88 filing fee.   Agent:  Amy Zimmerman!  Hearing
     to be 24 JAN 2023 9am
 
+ 
+ Tue 14Feb2023  - letter City of Salem prosecutor:
+
+\newpage
+
+14 FEB 2023
+
+City of Salem, Oregon \
+Legal Department \
+\textbf{ATTN:  Prosecutor Lori Evans} \
+FAX:    503-361-2202 (fax) \
+Voice: 503-588-6003
+
+---
+
+City of Salem v Zimmerman, Amy Lynn \
+\textbf{2021-000-5606-CR DUI, 100.331(10)} \
+\textbf{2021-000-5605-CR Refusal to take drug test}
+
+
+
+Oregon v Zimmerman, Amy Lynn \
+\textbf{ 18CR66984}
+
+---
+
+
+Dear Prosecutor Evans:
+
+I have no knowledge of the above \textbf{City of Salem cases}.   However, the
+above defendant was convicted of several felonies in the above Marion County criminal case. 
+
+I am one of the listed victims in 18CR66984.
+
+Attached please find a copy of letter I recently sent to the original
+prosecutor in that case.   
+
+Again, I have no information about City of Salem case.
+
+
+Thank you.
+
+
+jim rothstein\ 
+
+jimrothstein@gmail.com \
+831-824-4304 (messages)
+
+
+##  Fri 17Feb2023    Hearing, I listen
+-   Judge Tiffany?
+-   asks Braden if appeared before?   said something about "Golden Rods"
+-   DEF says 'solo basis' is DUI - bullshit!   says not preprepared today for
+    ??? (did not understand, maybe judge pushing this along)
+-   asking for continuance; both parties are; joint request, so at end Judge
+    grants.
+-   Before that, Braden goes through same bullshit;  police office must make 6
+    hour drive; he did so once before and it was continued.   Police officer 2
+    on medical leave;  lab tech just returned to work.   (This is crazy)
+
+-   Braden repeat solo basis for probation violation is DUI.  (FALSE !).
+    Says could do contested probation violation that would move case to
+    Downtown and effectively become full case re: DUI.   (yes, do that !)
+-   Of course, nobody wants to.   Braden prefers wait for DUI in Muni court to
+    play out.  Will "pester" Munic Court.  (Garbage ... I called last month,
+    still no date; all unknown).
+-   At some point, Patterson says was not prepared to admit or not DUI (or
+    something to that affect).  (sounds like this Judge must have really
+    pushed this!)
+
+-   Then debate over next date; 1st march, then May, finally April 20th, 1:30
+    pm.  Appreciate Judge walked it back, rather than going in ONE direction
+    ... longer and longer.
+
+-   Writing is SO clear:   everyone do as little as possible, hoping it goes
+    away - even the PROSECUTOR !  SEE no evil.   ALZ is just going to walk.  Prepare
+    yourself!
+
+    Judge did ask me.  I said nothing to add.   (Should I have said:  this
+    case is over 2 years and plenty of violations?)
+
 
 
