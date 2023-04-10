@@ -1,0 +1,44 @@
+---
+format: 
+  html:
+    html-math-method: katex
+editor: source
+css: css_examples.css
+---
+
+::: {.callout-note}
+DRAFT: \
+Appreciate your feedback.
+:::
+
+10 April 2023
+
+Honorable Oregon Congressional Delegation \
+Senator Ron Wyden \
+Senator Jeff Merkley \
+Representative Val Hoyle \
+
+#### Is Sunshine the Best Disinfectant? {.test}
+
+
+Of all the events last week, a spiteful Tennessee Legislature and backward
+ruling of a backward Texas federal judge, illustrate how divorced our government 
+is from the real, urgent issues we must confront in this country.
+
+However, a piercing third event, an illustration how the highest levels our
+government are entangled with  private interests of the wealthy, demands a
+forceful response. A Supreme Court justice, who is  unable or unwilling to
+comply with customs and laws of our nation  or display some sense of 'fair
+play',  is no longer fit to serve.
+
+I am well aware that positive change in our country requires American people demand it and fight for it.
+
+
+Nonetheless, I urge you to take the lead in a forceful  and permanent response:   The corruption of our government by private interests must be reversed.
+
+
+Yours truly,
+
+Jim rothstein
+
+

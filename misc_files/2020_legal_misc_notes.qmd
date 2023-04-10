@@ -1,18 +1,9 @@
-   vim:linebreak nowrap tw=81 fo=tqlnr foldcolumn=3 
 ---
-## WORKS!
 title:	"116th Congress"
-location:	~/documents/correspondence/house_committees.md
-#date:	24NOV2018
 output: 
+  html:
   pdf_document:
     latex_engine: xelatex
-fontsize: 12pt
-geometry: margin=0.5in,top=0.25in
-#author:		jim
-#thanks:		special thanks to you
-#abstract:	|
-#	Guide to House
 ---
 
 <!--
@@ -647,3 +638,35 @@ period on written notice from Lessor, given not less than TEN (10) days prior to
 the termination date which shall be specified in the notice. Lessee waives any
 notice which would otherwise be provided by law with respect to a month-to-month
 tenancy.
+
+\newpage
+
+##  Sat 7 APR 2023
+
+Honorable Oregon Congressional Delegation \
+Senator Ron Wyden \
+Senator Jeff Merkley \
+Reprsentative Val Hal \
+
+**Is Sunshine the Best Disinfectant?**
+
+Ocasionally, a political event is so piercing that it can not be ignored:   A
+Supreme Court justice unable or unwilling to comply with customs and laws of
+our nation or even some sense of 'fair play' is no longer fit to serve.  
+
+I am well aware that real change in our country usually occurs only when
+significant number of American people demand it and are willing to spend years
+and decades fighting for it.   I am also well aware corruption at highest level
+of our government shocks few people.   
+
+Nonetheless, I urge you to lead in a forceful  and permanent repsonse.
+
+
+Yours truly,
+
+Jim rothstein
+
+
+
+   vim:linebreak nowrap tw=81 fo=tqlnr foldcolumn=3 
+
