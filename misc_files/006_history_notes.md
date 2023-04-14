@@ -114,6 +114,22 @@ not just England.  Empirical fact(?):  more capital per worker, more GDP per
 worker. Why is Peru `poor`, cheaper to use 19th C inventions b/c cheap labor,
 its GDP/Capital is about where England was in 19th.
 
+##  Panic 1837 (1837-1848)
+-   after period of rapid growth, esp. land.
+-   by 1837, deep depression; one of worst in US history. 
+-   US is dominated by England, for capital, for markets (cotton), and for
+imports.
+-   Several states default (not US govt) and state govt debt is **sovereign**,
+can not sue for it in its own state court.
+-   English bankers get pissed at defaults:   see what happens in democracy;
+lose all values of  paying one's debts.  If US cotton crop fails, English
+factories layoff -> English recession and then of course no demand for US
+cotton the next year. Very tight ties bet US and London bankers.
+-   Lessons?  Without hegemony, US or any country can not separate its
+domestic and foregin policies.  Longer term changes, US States get out of
+capital improvement projects (ie less public bonds, let private section do
+this), States begin to deploy
+property tax to raise revenues (and less sales of land) 
 ## Pennsylvania RR
 - (1852-1874) pres = J. Edgar Thompson, engineer, modernizes, uses Westinghouse Air Brake.
   -  (1877)  wage cut (Depression)
