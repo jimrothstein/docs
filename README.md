@@ -10,8 +10,6 @@
 
 		---
 
-
-~
 001_tech_reading.md
 300_tech_notes.md
 chapter_break.tex

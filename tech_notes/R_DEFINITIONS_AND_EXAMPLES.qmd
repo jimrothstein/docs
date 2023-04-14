@@ -3,6 +3,7 @@ title: "R Definitions"
 date: \today 
 pdf-engine: lualatex
 format:   
+  html:
   pdf:
     toc: false 
     number-sections: false
@@ -22,6 +23,11 @@ format:
     highlight-style: zenburn
 fontsize: 10pt   
 ---
+
+TODO:
+-   Render as quarto
+-   All R notes here
+
 ***
 <!--
 file <- "/home/jim/code/docs/R_DEFINITIONS_AND_EXAMPLES.qmd"

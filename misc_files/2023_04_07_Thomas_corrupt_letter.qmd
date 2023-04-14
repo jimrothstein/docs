@@ -6,10 +6,7 @@ editor: source
 css: css_examples.css
 ---
 
-::: {.callout-note}
-DRAFT: \
-Appreciate your feedback.
-:::
+
 
 10 April 2023
 
@@ -18,7 +15,7 @@ Senator Ron Wyden \
 Senator Jeff Merkley \
 Representative Val Hoyle \
 
-#### Is Sunshine the Best Disinfectant? {.test}
+#### Is Sunshine Still the Best Disinfectant? {.test}
 
 
 Of all the events last week, a spiteful Tennessee Legislature and backward

@@ -13,6 +13,11 @@ format:
         \usepackage{lipsum}
 ---
 
+TODO
+    -   quarto:  focus on html, then pdf?
+    -   toc, use folds, ie way to navigate this document.
+    -   no R here,
+
 ---
 <!---
     :!quarto render % -o - | zathura -
@@ -575,6 +580,8 @@ Wed May 25 20:22:20 PDT 2022
 - terminals:  kitty (very, very popular), wez ... do NOT work.
 - think I like old ACER laptop better (screen, better keyboard, seems better
   built)
+
+
 
 #### Use exit to exit .sh early
 
@@ -1793,4 +1800,12 @@ mtp://[usb:001,085]   where 085 refers to device.  (Run lsusb)
 **eMMc** is on bmotherboard(embedded), slow but works:  cheap, reliable;  fine to boot.   Check /dev/mmcblk**
 SSD is much better, but more expensive.  
 
+#### Lenovo T480
+-   running Linux Mint (no more Chromebooks)
+-   Power, 65W, need brick or wall charger.
+-   cable must support 3 Amps
+-   buzz words GaN, PD (Power Delivery), no need latest PPS
+-   name brands:  Anker, Belkin, "Amazon Basics", **Beware off-brand** buy
+  based on what is compatible with T480 (go crazy trying to match standards,
+  USB-C 3.1, 3.2, 4.0, generatations, standard or not?)
 vim: nospell
