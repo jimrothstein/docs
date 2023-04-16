@@ -647,6 +647,9 @@ action.
 #		- lots of ways to do this remap. This works, stay with it: 
 #
 xmodmap -e "keycode 133 = Escape"
+
+Lenovo: capslock keycode = 66,  and escape is 9.  However, capslock still insisting on going in caps lock (UPPER CASE)
+setkbmap seems to suggest using caps:swapescape and not caps:escape, but xmodmap won't accept.
 }
 
 ####	cron job, crontab
