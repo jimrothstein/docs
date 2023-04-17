@@ -5,7 +5,7 @@ date: "5/22/2021"
 pdf-engine: lualatex
 format:
   pdf: 
-    toc: false
+    toc: true
     include-in-header: 
       text: |
         \usepackage[top=.5in, bottom=.5in, left=.7in, right=.5in]{geometry}

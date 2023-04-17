@@ -131,9 +131,12 @@ REF:  R Internals 1.4
 
 **Evaluation or execution environment** In R, a function runs in an environment specific to that function. Also referred to as frame or context. This frame holds evaluation environment. The frame ends when the function completes.
 
-**Expression** expression() takes an R object and returns expression, which a R list.
+**Expression** expression() takes an R object and returns expression, which a R
+list.  Note:  a `statement` is code that may do things (side effects) but does
+not return anything.
 
-**Expression v Language** R expressions based on list and can be broken down further. Often these are language pieces. Lanugage use pairlists.
+**Expression v Language** R expressions based on list and can be broken down
+further. Often these are language pieces. Lanugage use pairlists.
 
 **First Class** - A function can also be used as an argument to another function. Example: lapply(list(), mean)
 

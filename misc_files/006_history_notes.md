@@ -425,6 +425,27 @@ kept list and called many such subversives (anonymously, to track them). JFK
 did not declare emergency.  Bernstein's parents of (Berstein/Woodruff)
 receieved phone calls.
 
+##  Watergate
+REF:  book Goliath
+1972 - Watergate babies, young, `liberal`, college-educated and definitely anti-war.  Replace
+old man, Wright Patman (D-TX), 1928-1972, who believed in preventing monopoly
+power.  He was last of generation like Brandeis who oppposed bigness,
+concentrated power (though may be different reasons).  In 1930s, he passed law
+to prevent A&P, chain store, from offering various discounts, rebaits that
+made mom&pop difficult to compete against.  He had no problem with
+"efficiency", or that mom&pop could offer better service.  He opposed
+concentrated power to UNFAIRLY change playing field.   That was "fair trade"
+meant in 1930s.
+
+Both Hofstader and Galbrieth praised big business!   H- argued American
+triumph & prosperity due to big corporations.   G- did not focus on `class
+struggle`, is that Liberal means?
+
+A&P law become symbol of opposition to gov't. :
+deas of Limiting big business persisted to 1960s (by mostly old men).   Began change
+in Democrat Party away from working people, fairness, economic issues.
+
+
 ## SCOTUS
     - Did you know this ???     From SCOTUS oral arugment ....   "political
   promises"    are not contracts, not enforceable,  not legal justification to
