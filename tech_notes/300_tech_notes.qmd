@@ -18,6 +18,10 @@ TODO
     -   toc, use folds, ie way to navigate this document.
     -   no R here,
 
+CHANGES:
+    -  18APR 2023  LinuxMint .. removed Timeshift program and all files (it retains
+      daily/weekly/ image of drive) and fills root (\) partition in no time.
+
 ---
 <!---
     :!quarto render % -o - | zathura -
