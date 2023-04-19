@@ -4,6 +4,7 @@ author: "Norah Jones"
 date: "5/22/2021"
 pdf-engine: lualatex
 format:
+  html:
   pdf: 
     toc: true
     include-in-header: 
@@ -16,7 +17,7 @@ format:
 TODO
     -   quarto:  focus on html, then pdf?
     -   toc, use folds, ie way to navigate this document.
-    -   no R here,
+    -   no R here, no Stats
 
 CHANGES:
     -  18APR 2023  LinuxMint .. removed Timeshift program and all files (it retains

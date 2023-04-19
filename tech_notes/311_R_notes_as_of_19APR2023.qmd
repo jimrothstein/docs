@@ -18,8 +18,10 @@ output-dir:  output
 editor_options: 
   chunk_output_type: console
 ---
+
 ::: {.callout-note}
-All R notes here.
+R notes - AS OF 19APR2023 - This copy was written with Latex (pdf)
+DO NOT DELETE.
 :::
 
 TODO: - Render as quarto/html - All R notes here

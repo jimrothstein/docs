@@ -1,11 +1,12 @@
 ---
-title: " R Definitions/Examples"
+title: " R Notes"
 date: \today
 pdf-engine: lualatex
 format:
   html: 
     toc: true
     html-math-method: katex
+    fontsize: 9pt
   pdf: 
     toc: false
     include-in-header: 
@@ -19,7 +20,7 @@ editor_options:
   chunk_output_type: console
 ---
 ::: {.callout-note}
-All R notes here.
+All R, math, statistics  notes here.
 :::
 
 TODO: - Render as quarto/html - All R notes here
@@ -41,7 +42,28 @@ PURPOSE:    R Definitions Plus Code Examples
       :!quarto render %
 -->
 ```
-\footnotesize{this is footnotesize}
+:::{style=font-size=9}
+
+### Do This Week
+-   article:  parse, Lionel, quote, ast etc.  https://rpubs.com/lionel-/programming-draft
+-   012_mtcars - THINK
+  - https://www.rostrum.blog/2023/03/03/getparsedata/
+-   shipunov - visual statistics, use? (https://stats.libretexts.org/Bookshelves/Introductory_Statistics/Book%3A_Visual_Statistics_Use_R_(Shipunov))
+
+
+### Future!
+-   reactR - connect js/html widgets?  Need?
+-   Health Labs - enter Ox data
+-   DT 
+  - 040 - sapply, joins, cartesian, 1-example each, cheat, see Jeremy Owens SQL
+    table str, foreign key etc.
+-   tidygeocoder:: US map, simple examples?
+### NSE 
+-   Review June's articles
+
+
+
+
 
 file \<- "/home/jim/code/docs/R_DEFINITIONS_AND_EXAMPLES.qmd"
 
@@ -389,3 +411,20 @@ res  <- substitute(x+a)
 res
 is.call(res)
 ```
+:::
+####    K-nearest neighbors, K is given
+
+$\forall x \in X$ , which could be any dimension , is already assigned to a region.
+For a new point, examine its K nearest neighbors who decide by majority vote which region $x$ belongs to.
+SEE:  wine example
+SEE:  Gaglow book.
+
+####    Bias-Var Tradeoff.
+With non-zero `noise`, of variance $\sigma^{2}$  the best approximate to $f(x)$ will always have non-zero error:
+Isn't there a relation betwee E, VAR?    like x and p ?
+
+$$
+Error = E(f_hat) + Var(f_hat) + \sigma^{2}
+Error \gteqq 0
+$$
+SEE Berkeley Crash Course; Matloff
