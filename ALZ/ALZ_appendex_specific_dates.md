@@ -62,6 +62,7 @@ ORS 147.410 \
         reintegrating dependence-free veterans back into our community utilizing
         federal and community resources."
 
+habilitating: https://www.merriam-webster.com/thesaurus/habilitating
 
         "The focus is on building supports for a balanced and healthy life. "
         "...before being considered for admission into MCVTC." 

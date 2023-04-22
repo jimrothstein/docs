@@ -1,3 +1,7 @@
+---
+output-dir: docs
+---
+
 THIS FILE:	 "ALZ_chronology.md"
 
 
@@ -116,8 +120,8 @@ from https://www.oregon.gov/odva/Resources/Pages/Justice-Involved-Veterans.aspx
 ###	Salem Municipal Court (503-588-6146 #5) 
 {
 -	2 cases; **March 16, 2021** 11:27 pm (and 12:01 am, next morning)
-	-	[21MAR2021 - gradudate 'vet program']	
-	-	**2021-000-5606-CR** DUI, 100.331(10), plead non-guilty (12/13/21); jury trial.
+	-	[04MAR2021 - gradudate 'vet program']	
+	-	16MAR2021 **2021-000-5606-CR** DUI, 100.331(10), plead non-guilty (12/13/21); jury trial.
 Salem code says see:  ORS 813.010 "Driving Under the Influence of Intoxicants; Penalty." 
 https://oregon.public.law/statutes/ors_813.010
 	- **2021-000-5605-CR** Refussal to take drug test ; plead not guilty (12/13/21)
@@ -321,7 +325,7 @@ to read; many pages.  Details troubling behavior.
 -   21 NOV 2022 - no action per TMH 
 -   29 DEC 2022 - Judgement
 -   4  JAN 2023 - Judgement Entry
-
+##  6MAR 2023 - Motion to Modify Domestic Relations?
 
 }
 
@@ -561,5 +565,25 @@ jimrothstein@gmail.com \
     Judge did ask me.  I said nothing to add.   (Should I have said:  this
     case is over 2 years and plenty of violations?)
 
+
+##  R 2023-04-20   hearing date set: May 18
+Judge: 
+Present:  Ms Hughes (da), usual guy (defense)
+Defense:   Repeats `sole allegation` DUI, trial not set, and "lost hope" of
+trial ... (didn't hear everything) So, requests hearing and will try to find
+"creative solution" (arrrrgh) Judge assigns 1/2 hour May 18, Think he said
+not-contested.
+
+I speak:
+[see](2023_04_20_address_to_Court.html)
+[also letter to friend](2023_04_20_summary_to_friend.pdf)
+
+Afterwords, judge has he wants to respond to me.Understands I am "frustrated"
+
+1.  He is filling in for today.   He will not be judge at the hearing. And he makes no decisions.
+
+2.  No other probation violations have been alleged in past 2 years.  (exactly!)
+
+3.  I will be to speak at hearing, or appear in person.  Believe he also said can repeat my statement then.
 
 
