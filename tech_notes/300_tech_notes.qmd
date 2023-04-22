@@ -4,7 +4,14 @@ author: "Norah Jones"
 date: "5/22/2021"
 pdf-engine: lualatex
 format:
-  html:
+    html:
+        toc: true
+        html-math-method: katex
+        css: styles.css
+---
+
+<!--
+ TODO - need to correct for quarto format   
   pdf: 
     toc: true
     include-in-header: 
@@ -12,8 +19,7 @@ format:
         \usepackage[top=.5in, bottom=.5in, left=.7in, right=.5in]{geometry}
         \usepackage{amsmath,amssymb,amstext,amsfonts}
         \usepackage{lipsum}
----
-
+-->
 TODO
     -   quarto:  focus on html, then pdf?
     -   toc, use folds, ie way to navigate this document.
