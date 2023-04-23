@@ -1,5 +1,5 @@
 project:
-  type: default 
+  type: website 
   title: "tech notes" 
   output-dir: output 
   

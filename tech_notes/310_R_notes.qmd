@@ -7,13 +7,6 @@ format:
     toc: true
     html-math-method: katex
     fontsize: 9pt
-  pdf: 
-    toc: false
-    include-in-header: 
-      text: |
-        \usepackage[top=.5in, bottom=.5in, left=.7in, right=.5in]{geometry}
-        \usepackage{amsmath,amssymb,amstext,amsfonts}
-        \usepackage{lipsum}
 editor:  source
 output-dir:  output
 editor_options: 
@@ -23,13 +16,17 @@ editor_options:
 All R, math, statistics  notes here.
 :::
 
-TODO: - Render as quarto/html - All R notes here
+<!--
+TODO - fix \gteqq
 
-\$\$ \today
-
-\theta
-
-\textbf{hi} \$\$
+  pdf: 
+    toc: false
+    include-in-header: 
+      text: |
+        \usepackage[top=.5in, bottom=.5in, left=.7in, right=.5in]{geometry}
+        \usepackage{amsmath,amssymb,amstext,amsfonts}
+        \usepackage{lipsum}
+-->
 
 ------------------------------------------------------------------------
 
@@ -87,6 +84,7 @@ Tierney, codeTools ?
 
 **bindings:**
 
+
 **Call** A call is an unevaluted function, together with arguments that are evaluated. Call is NOT a function.
 
 ```{r}
@@ -132,6 +130,7 @@ call(quote(f), ...) vs. quote(f(...))
 Like symbol, expression, call is typeof 'language'.
 is.call() is T only for calls. See: "in try... 4010_match_call_examples.Rmd"
 ```
+***
 
 **Calling environment of a function** To run, a function must be called. Calling environment refers to environment of the calling function. Also called parent environment. Not to be confused with a function environment. See example ??
 
@@ -295,6 +294,7 @@ Method to substitute the value of expr into a string. Can think of it as `templa
 
 SEE: https://www.r-bloggers.com/2018/03/math-notation-for-r-plot-titles-expression-and-bquote/
 
+
 ```{r}
 x = 5 
 bquote(x == .(x))
@@ -312,26 +312,30 @@ a = 2
 plot(1:10, a*(1:10), main = bquote(a == .(a)))
 ```
 
+### Symbol
 \section{Symbol}
 
+[3.1.2 Symbol lookup](https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Symbol-lookup) 
+| In this small example y is a symbol and its value is 4. A symbol is an R object too, 
+
 ```{r}
+y = 4
+y
+is.symbol(y)
+is.name(y)
+is.object(y)
 
-#| label: symbol 
-#| include: true
-#| collapse: true
-x <- 10   
-typeof(x)
-is.symbol(x)
-
-is.symbol(as.name(x))
-is.symbol(s <- as.symbol(x) )
-typeof(s)
-s
+# but
+y = as.symbol(y)
+is.symbol(y)
+y
 ```
 
-```         
-See R Lang Ref: 2.1.3.1   Symbol (aka name), usually name of R object.  Use
+See **R Lang Ref: 2.1.3.1**   Symbol (aka name), usually name of R object.  Use
 `as.name() to coerce to symbol or quote() or atoms of parse()
+
+```
+
 
 In order to manipulate symbols we need a new element in our language: the
 ability to quote a data object. Suppose we want to construct the list (a
