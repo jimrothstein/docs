@@ -57,9 +57,11 @@ PURPOSE:    R Definitions Plus Code Examples
 -   tidygeocoder:: US map, simple examples?
 ### NSE 
 -   Review June's articles
-
-
-
+-   Quoting/Eval:  Lionel: https://rpubs.com/lionel-/programming-draft  
+-   function masking/pkgs: https://www.r-bloggers.com/2013/09/control-the-function-scope-by-the-r-package-namescope/ (using namespace to control scope)
+-   {{}} - https://www.r-bloggers.com/2019/06/curly-curly-the-successor-of-bang-bang-2/
+-   env stack - https://www.r-bloggers.com/2014/12/tips-on-non-standard-evaluation-in-r/
+-   quoting, dplyr - https://www.r-bloggers.com/2019/07/bang-bang-how-to-program-with-dplyr/
 
 
 file \<- "/home/jim/code/docs/R_DEFINITIONS_AND_EXAMPLES.qmd"
@@ -82,8 +84,25 @@ Tierney, codeTools ?
 
 \\section(Definitions}
 
-**bindings:**
+explain process:  capture unevaluated code; manipulate it; later evaluate
 
+```{r}
+a = 10
+b = 100
+
+# Order?   a+b (110), then sum(110)
+# Or,      sum (a+b), then sum(110)
+```
+
+-	defuse, substitution, quasiquotation, 
+-	injection (into unevaluated expression)
+-	defuse &  inject are opposites
+-	embrase {{}}, tells function must first evalute the unevaluated content inside {{}}
+
+
+**bindings:**
+-   link between name (symbol) and an object
+-   EX:   f (name) and the defintion (function(x) {...})
 
 **Call** A call is an unevaluted function, together with arguments that are evaluated. Call is NOT a function.
 
