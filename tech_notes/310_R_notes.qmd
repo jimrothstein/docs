@@ -58,10 +58,26 @@ PURPOSE:    R Definitions Plus Code Examples
 ### NSE 
 -   Review June's articles
 -   Quoting/Eval:  Lionel: https://rpubs.com/lionel-/programming-draft  
--   function masking/pkgs: https://www.r-bloggers.com/2013/09/control-the-function-scope-by-the-r-package-namescope/ (using namespace to control scope)
--   {{}} - https://www.r-bloggers.com/2019/06/curly-curly-the-successor-of-bang-bang-2/
+-   https://rpubs.com/lionel-/tidyeval-introduction
+-   https://rpubs.com/lionel-/tidyeval-dplyr-recipes
+-   function masking/pkgs: https://www.r-bloggers.com/2013/09/control-the-function-scope-by-the-r-package-namescope/ (using namespace to control scop)
+-  {{}} - https://www.r-bloggers.com/2019/06/curly-curly-the-successor-of-bang-bang-2/
 -   env stack - https://www.r-bloggers.com/2014/12/tips-on-non-standard-evaluation-in-r/
 -   quoting, dplyr - https://www.r-bloggers.com/2019/07/bang-bang-how-to-program-with-dplyr/
+-   2012 namespace pkg, by Hadley, et al : https://cran.r-project.org/web/packages/namespace/index.html
+
+-   Manuals:
+  - ns-load: https://stat.ethz.ch/R-manual/R-devel/library/base/html/ns-load.html
+  - getFromNamespace: https://stat.ethz.ch/R-manual/R-devel/library/utils/html/getFromNamespace.html
+  - R-exts:package-ns: https://cran.r-project.org/doc/manuals/R-exts.html#Package-namespaces
+  - R-ints 1.2 https://cran.r-project.org/doc/manuals/r-release/R-ints.html#Environments-and-variable-lookup
+
+
+-   stackoverflow
+  - https://stackoverflow.com/questions/14988722/in-r-what-does-loaded-via-a-namespace-and-not-attached-mean
+-   
+-   Posit
+  - ns, but not in package: https://community.rstudio.com/t/is-it-dangerous-to-create-a-namespace-for-functions-in-a-script-without-a-package/91141
 
 
 file \<- "/home/jim/code/docs/R_DEFINITIONS_AND_EXAMPLES.qmd"
