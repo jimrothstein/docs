@@ -65,6 +65,8 @@ PURPOSE:    R Definitions Plus Code Examples
 -   env stack - https://www.r-bloggers.com/2014/12/tips-on-non-standard-evaluation-in-r/
 -   quoting, dplyr - https://www.r-bloggers.com/2019/07/bang-bang-how-to-program-with-dplyr/
 -   2012 namespace pkg, by Hadley, et al : https://cran.r-project.org/web/packages/namespace/index.html
+-   Examples
+  - http://zevross.com/blog/2018/09/11/writing-efficient-and-streamlined-r-code-with-help-from-the-new-rlang-package/
 
 -   Manuals:
   - ns-load: https://stat.ethz.ch/R-manual/R-devel/library/base/html/ns-load.html
@@ -78,6 +80,9 @@ PURPOSE:    R Definitions Plus Code Examples
 -   
 -   Posit
   - ns, but not in package: https://community.rstudio.com/t/is-it-dangerous-to-create-a-namespace-for-functions-in-a-script-without-a-package/91141
+
+Useful?
+    -   wrapr https://winvector.github.io/wrapr/index.html
 
 
 file \<- "/home/jim/code/docs/R_DEFINITIONS_AND_EXAMPLES.qmd"
