@@ -93,6 +93,7 @@ Use \href{url}{text}
 -		R intro			-	Ch 12:	https://cran.r-project.org/doc/manuals/r-release/R-intro.html#Graphics	
 -		R internals - Ch 6 graphics (lower level)
 -		base Idiot's guide  https://rstudio-pubs-static.s3.amazonaws.com/7953_4e3efd5b9415444ca065b1167862c349.html
+-       shipunov - visual statistics, use? (https://stats.libretexts.org/Bookshelves/Introductory_Statistics/Book%3A_Visual_Statistics_Use_R_(Shipunov))
 
 ### Basic Statistics
 

@@ -1,7 +1,8 @@
 project:
   type: website 
   title: "tech notes" 
-  output-dir: output 
+  output-dir: 
+    docs
   
 
 
