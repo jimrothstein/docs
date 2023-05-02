@@ -88,6 +88,7 @@ PURPOSE:    R Definitions Plus Code Examples
   - R-exts:package-ns: https://cran.r-project.org/doc/manuals/R-exts.html#Package-namespaces
   - R-ints 1.2 https://cran.r-project.org/doc/manuals/r-release/R-ints.html#Environments-and-variable-lookup
     R-Lang 2.1.3 Language Objects (calls, expressions, names)
+    R-Lang 6 Compute on Language: https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Computing-on-the-language
 
 
 -   **stackoverflow**
@@ -169,6 +170,12 @@ cl
 ```
 
 Like symbol, expression, call is typeof 'language'.
+```
+three kinds of language objects that are available for modification, calls,
+expressions, and functions
+r-lang 6.1
+```
+
 is.call() is T only for calls. See: "in try... 4010_match_call_examples.Rmd"
 
 ***
@@ -203,6 +210,18 @@ access; use JIT compiler or interpeter
 **Evaluation or execution environment** In R, a function runs in an environment
 specific to that function. Also referred to as frame or context. This frame
 holds evaluation environment. The frame ends when the function completes.
+
+**Evaluation**  parser, evaluator 
+
+```
+When a user types a command at the prompt (or when an expression is read from a
+file) the first thing that happens to it is that the command is transformed by
+the parser into an internal representation. The evaluator executes parsed R
+expressions and returns the value of the expression. All expressions have a
+value. This is the core of the language. 
+
+```
+ https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Evaluation-of-expressions
 
 **Expression** expression() takes an R object and returns expression, which a R
 list.  Note:  a `statement` is code that may do things (side effects) but does
