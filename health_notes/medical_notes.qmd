@@ -1,4 +1,3 @@
-   vim:linebreak:spell:nowrap tw=81 fo=tqlnr 
 
 
 <!--
@@ -9,7 +8,23 @@ add to Medical Dictionary:
 b/c  it is 3rd in list :set spellfiles?
 
 -->
+##  News
+-   2MAY2023  - convert md file to qmd
 
+<!--
+
+    Footnote:   2 steps, as follows:
+
+
+Create:
+        This will be a footnote [^11] 
+
+
+Then add this:
+
+        [^11]:  Footnote 1  Footnote 
+
+-->
 
 ## OCT 2019  Dr. Bilbao
 My notes show I tried to list contradictions:    no symptoms of fat
@@ -2793,5 +2808,7 @@ Per ROWING coach:
 -   BRACE   
 -   HEELS - use to push.
 
+##  2 MAY 2023   (Part B - free bone mass)
+Medicare Part B covers a bone mass measurement once every 24 months (more often if medically necessary) — at no cost to you when your doctor orders it.
 
-vim:spell	
+   vim:linebreak:spell:nowrap tw=81 fo=tqlnr 

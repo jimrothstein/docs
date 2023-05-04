@@ -1,7 +1,7 @@
 ---
 title: " R Notes"
-date: \today
-date-modified: \today 
+date-modified: today 
+date: today
 pdf-engine: lualatex
 format:
   html: 
@@ -19,12 +19,17 @@ execute:
   error: true
   cache: true
   collapse: true
+  standalone: true
 css:  css_examples.css
 
 ---
 ::: {.callout-note}
-All R, math, statistics  notes here.
+All R, math, statistics  notes here. 
 :::
+
+Create a footnote: [^1]
+
+[^1]: This is footnote one.
 
 <!--
 TODO pdf - fix \gteqq

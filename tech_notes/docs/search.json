@@ -4,7 +4,7 @@
     "href": "310_R_notes.html",
     "title": "R Notes",
     "section": "",
-    "text": "Note\n\n\n\nAll R, math, statistics notes here."
+    "text": "Note\n\n\n\nAll R, math, statistics notes here.\nCreate a footnote: 1"
   },
   {
     "objectID": "310_R_notes.html#nse-non-standard-evaluation",
@@ -32,7 +32,7 @@
     "href": "310_R_notes.html#questions",
     "title": "R Notes",
     "section": "3 Questions",
-    "text": "3 Questions\n\n#   Explain how Base R finds column name\nlibrary(dplyr)\ndata(starwars)\ncol = \"hair_color\"\nsum(is.na(starwars[, eval(col) ]) )\n\n[1] 5\n\nsum(is.na(starwars[, col ]) )\n\n[1] 5"
+    "text": "3 Questions\n\n#   Explain how Base R finds column name\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\ndata(starwars)\ncol = \"hair_color\"\nsum(is.na(starwars[, eval(col) ]) )\n\n[1] 5\n\nsum(is.na(starwars[, col ]) )\n\n[1] 5"
   },
   {
     "objectID": "JUNK.html",
@@ -40,5 +40,12 @@
     "title": "tech notes",
     "section": "",
     "text": "hello"
+  },
+  {
+    "objectID": "310_R_notes.html#footnotes",
+    "href": "310_R_notes.html#footnotes",
+    "title": "R Notes",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThis is footnote one.↩︎"
   }
 ]
