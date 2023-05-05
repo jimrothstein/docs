@@ -32,7 +32,10 @@ Create a footnote: [^1]
 [^1]: This is footnote one.
 
 <!--
-TODO pdf - fix \gteqq
+
+```
+
+TODO pdf - fix greater than equa
 
   pdf: 
     toc: false
@@ -41,6 +44,7 @@ TODO pdf - fix \gteqq
         \usepackage[top=.5in, bottom=.5in, left=.7in, right=.5in]{geometry}
         \usepackage{amsmath,amssymb,amstext,amsfonts}
         \usepackage{lipsum}
+```
 -->
 
 ------------------------------------------------------------------------
@@ -549,7 +553,6 @@ Isn't there a relation betwee E, VAR?    like x and p ?
 
 $$
 Error = E(f_hat) + Var(f_hat) + \sigma^{2}
-Error \gteqq 0
 $$
 SEE Berkeley Crash Course; Matloff
 
