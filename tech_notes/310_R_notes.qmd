@@ -1,3 +1,4 @@
+---
 title: " R Notes"
 date-modified: today 
 date: today
@@ -20,22 +21,17 @@ execute:
   collapse: true
   standalone: true
 css:  css_examples.css
-
 ---
 ::: {.callout-note}
 All R, math, statistics  notes here. 
 :::
 
 Create a footnote: [^1]
-
 [^1]: This is footnote one.
 
 <!--
-
 ```
-
 TODO pdf - fix greater than equa
-
   pdf: 
     toc: false
     include-in-header: 
@@ -46,11 +42,9 @@ TODO pdf - fix greater than equa
 ```
 -->
 
-------------------------------------------------------------------------
-
 ::: {.content-visible when-format="html"}
-:::
 
+:::
 
 ```{=html}
 <!--
@@ -61,9 +55,7 @@ PURPOSE:    R Definitions Plus Code Examples
       :!quarto render %
 -->
 ```
-
 {{< include _future_work.qmd >}}
-
 ### Environemnts, Namespacds
 -   conflicted package.
 
@@ -77,7 +69,7 @@ PURPOSE:    R Definitions Plus Code Examples
   -   https://rpubs.com/lionel-/superstache
     Brodie Gaslam
     -   https://www.brodieg.com/2020/05/05/on-nse/
-  
+
 -   function masking/pkgs: https://www.r-bloggers.com/2013/09/control-the-function-scope-by-the-r-package-namescope/ (using namespace to control scop)
 -   {}} - https://www.r-bloggers.com/2019/06/curly-curly-the-successor-of-bang-bang-2/
 -   env stack - https://www.r-bloggers.com/2014/12/tips-on-non-standard-evaluation-in-r/
@@ -100,7 +92,6 @@ PURPOSE:    R Definitions Plus Code Examples
     R-Lang 2.1.3 Language Objects (calls, expressions, names)
     R-Lang 6 Compute on Language: https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Computing-on-the-language
 
-
 -   **stackoverflow**
   - https://stackoverflow.com/questions/14988722/in-r-what-does-loaded-via-a-namespace-and-not-attached-mean
   - {{}}https://stackoverflow.com/questions/62791997/what-is-the-embracing-operator
@@ -108,45 +99,30 @@ PURPOSE:    R Definitions Plus Code Examples
 -   **Posit**
   - ns, but not in package: https://community.rstudio.com/t/is-it-dangerous-to-create-a-namespace-for-functions-in-a-script-without-a-package/91141
 
-Useful?
-    -   wrapr https://winvector.github.io/wrapr/index.html
-
-
+    -   wrapr https://winvector.github.io/wrapr/index.html useful?
 
 ::: {.content-visible when-format="pdf"}
 Will only appear in HTML.
 \renewcommand{\familydefault}{\sfdefault}
-
 \section{R Definitions \& Examples   (TERSE)}
-
 \section{Manuals}
-
-```         
-```
-
 \\section(Definitions}
-
 :::
 
 a term
 :   its definition
-
 {{< pagebreak >}}
-
 **attach**
     -   add df/list/datafile/env to search list, at a `pos` and `name`
     -   added to R ~1988   [Add Link]
     -   compare to `with`
 
-
 explain process:  capture unevaluated code; manipulate it; later evaluate
-
 
 -	defuse, substitution, quasiquotation, 
 -	injection (into unevaluated expression)
 -	defuse &  inject are opposites
 -	embrase {{}}, tells function must first evalute the unevaluated content inside {{}}
-
 
 **bindings:**
 -   link between name (symbol) and an object
@@ -158,15 +134,12 @@ explain process:  capture unevaluated code; manipulate it; later evaluate
 -   See:  R-lang 6.5, call, sys.call v match.call
 
 ```{r}
-
-
 #| label: intro_call
 #| collapse: true
 #| include: true
 f  <- function(x) {
     x^2}
 cl  <- call("f", 3)
-
 # display f as unevaluated f(3)
 cl
 
@@ -185,9 +158,7 @@ three kinds of language objects that are available for modification, calls,
 expressions, and functions
 r-lang 6.1
 ```
-
 is.call() is T only for calls. See: "in try... 4010_match_call_examples.Rmd"
-
 ***
 
 **Calling environment of a function** To run, a function must be called.
@@ -208,9 +179,7 @@ situations. (sys.frame, sys.call count closures from either end of context
 stack)  TODO  - do not understand.
 
 Contexts are Not counted, not reported, not on stack, and coder has no
-access to these functions.
-
-REF:  R Internals 1.4
+access to these functions.  REF:  R Internals 1.4
 
 **byte code** "Readable" concise instructions; not machine code; no user
 access; use JIT compiler or interpeter
@@ -222,14 +191,12 @@ specific to that function. Also referred to as frame or context. This frame
 holds evaluation environment. The frame ends when the function completes.
 
 **Evaluation**  parser, evaluator 
-
 ```
 When a user types a command at the prompt (or when an expression is read from a
 file) the first thing that happens to it is that the command is transformed by
 the parser into an internal representation. The evaluator executes parsed R
 expressions and returns the value of the expression. All expressions have a
 value. This is the core of the language. 
-
 ```
  https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Evaluation-of-expressions
 
@@ -240,7 +207,7 @@ does not return anything.
 Hadley defines expression as an "object that stores quoted code without evaluating it." (tidyr cheat sheet)
 SEE evaluation.
 
-**Expression v Language** R expressions are based on list and can be broken down
+**Expression v Language** R expressions based on list and can be broken down
 further. Often these are language pieces. Lanugage use pairlists.
 
 **First Class** - A function can also be used as an argument to another
@@ -283,7 +250,6 @@ REF: https://cran.r-project.org/doc/manuals/r-release/R-ints.html#Namespaces
 package is special and will be considered separately). A package pkg defines
 two environments namespace:pkg and package:pkg: it is package:pkg that can be
 attached and form part of the search path.
-
 
 ::: {.content-visible when-format="html"}
 ##  NSE, Non-Standard Evaluation
@@ -394,8 +360,10 @@ identical(quote(x), quote(6))
 **Referencial Semantics** Changes to values are done in memory. There is no
 copy.
 
-**Substitute** When used in function with formal variable, substitute stops
+**Substitution** When used in function with formal variable, substitute stops
 evaluation, captures the user's code and returns a call (ie unevaluated )
+
+|   substitute returns the parse tree for the (unevaluated) expression expr, substituting any variables bound in env.
 
 **syntax** How code looks, is { in right place, a grammar.
 
