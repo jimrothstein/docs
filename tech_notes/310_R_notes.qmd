@@ -1,4 +1,3 @@
----
 title: " R Notes"
 date-modified: today 
 date: today
@@ -76,6 +75,8 @@ PURPOSE:    R Definitions Plus Code Examples
   -   https://rpubs.com/lionel-/tidyeval-dplyr-recipes
   -   {{}} * https://www.tidyverse.org/blog/2019/06/rlang-0-4-0/
   -   https://rpubs.com/lionel-/superstache
+    Brodie Gaslam
+    -   https://www.brodieg.com/2020/05/05/on-nse/
   
 -   function masking/pkgs: https://www.r-bloggers.com/2013/09/control-the-function-scope-by-the-r-package-namescope/ (using namespace to control scop)
 -   {}} - https://www.r-bloggers.com/2019/06/curly-curly-the-successor-of-bang-bang-2/
@@ -232,11 +233,14 @@ value. This is the core of the language.
 ```
  https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Evaluation-of-expressions
 
-**Expression** expression() takes an R object and returns expression, which a R
-list.  Note:  a `statement` is code that may do things (side effects) but does
-not return anything.
+**Expression** Interactively, a valid R statement that returns an value is  called an expression,
+An expression() takes an R object and returns expression, which a
+R list.  Note:  a `statement` is code that may do things (side effects) but
+does not return anything.
+Hadley defines expression as an "object that stores quoted code without evaluating it." (tidyr cheat sheet)
+SEE evaluation.
 
-**Expression v Language** R expressions based on list and can be broken down
+**Expression v Language** R expressions are based on list and can be broken down
 further. Often these are language pieces. Lanugage use pairlists.
 
 **First Class** - A function can also be used as an argument to another
@@ -554,6 +558,8 @@ Isn't there a relation betwee E, VAR?    like x and p ?
 $$
 Error = E(f_hat) + Var(f_hat) + \sigma^{2}
 $$
+
+
 SEE Berkeley Crash Course; Matloff
 
 
