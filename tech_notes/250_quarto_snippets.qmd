@@ -1,0 +1,56 @@
+##  Quarto:    Examples for HTML,  PDF
+```
+250_quarto_snippets.qmd
+
+
+PURPOSE:   Collect of HTML and PDF inline commands to control output
+NOTE:      No documentation here
+```
+
+Create a footnote: [^1]
+
+[^1]: This is footnote one.
+
+::: {.content-visible when-format="html"}
+:::
+***
+
+```
+<!--
+{{< include _future_work.qmd >}}
+-->
+
+***
+::: {.content-visible when-format="html"}
+:::
+***
+
+##  PDF
+
+
+
+::: {.content-visible when-format="pdf"}
+TODO pdf - fix greater than equa
+  pdf: 
+    toc: false
+    include-in-header: 
+      text: |
+        \usepackage[top=.5in, bottom=.5in, left=.7in, right=.5in]{geometry}
+        \usepackage{amsmath,amssymb,amstext,amsfonts}
+        \usepackage{lipsum}
+:::
+
+***
+
+
+::: {.content-visible when-format="pdf"}
+Will only appear in HTML.
+\renewcommand{\familydefault}{\sfdefault}
+\section{R Definitions \& Examples   (TERSE)}
+\section{Manuals}
+\\section(Definitions}
+:::
+
+***
+
+```

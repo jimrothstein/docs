@@ -47,5 +47,33 @@
     "title": "R Notes",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nThis is footnote one.↩︎"
+  },
+  {
+    "objectID": "250_quarto_snippets.html",
+    "href": "250_quarto_snippets.html",
+    "title": "tech notes",
+    "section": "",
+    "text": "250_quarto_snippets.qmd\n\n\nPURPOSE:   Collect of HTML and PDF inline commands to control output\nNOTE:      No documentation here\nCreate a footnote: 1\n\n&lt;!--\n{{&lt; include _future_work.qmd &gt;}}\n--&gt;\n\n***\n::: {.content-visible when-format=\"html\"}\n:::\n***\n\n##  PDF\n\n\n\n::: {.content-visible when-format=\"pdf\"}\nTODO pdf - fix greater than equa\n  pdf: \n    toc: false\n    include-in-header: \n      text: |\n        \\usepackage[top=.5in, bottom=.5in, left=.7in, right=.5in]{geometry}\n        \\usepackage{amsmath,amssymb,amstext,amsfonts}\n        \\usepackage{lipsum}\n:::\n\n***\n\n\n::: {.content-visible when-format=\"pdf\"}\nWill only appear in HTML.\n\\renewcommand{\\familydefault}{\\sfdefault}\n\\section{R Definitions \\& Examples   (TERSE)}\n\\section{Manuals}\n\\\\section(Definitions}\n:::\n\n***"
+  },
+  {
+    "objectID": "250_quarto_snippets.html#quarto-examples-for-html-pdf",
+    "href": "250_quarto_snippets.html#quarto-examples-for-html-pdf",
+    "title": "tech notes",
+    "section": "",
+    "text": "250_quarto_snippets.qmd\n\n\nPURPOSE:   Collect of HTML and PDF inline commands to control output\nNOTE:      No documentation here\nCreate a footnote: 1\n\n&lt;!--\n{{&lt; include _future_work.qmd &gt;}}\n--&gt;\n\n***\n::: {.content-visible when-format=\"html\"}\n:::\n***\n\n##  PDF\n\n\n\n::: {.content-visible when-format=\"pdf\"}\nTODO pdf - fix greater than equa\n  pdf: \n    toc: false\n    include-in-header: \n      text: |\n        \\usepackage[top=.5in, bottom=.5in, left=.7in, right=.5in]{geometry}\n        \\usepackage{amsmath,amssymb,amstext,amsfonts}\n        \\usepackage{lipsum}\n:::\n\n***\n\n\n::: {.content-visible when-format=\"pdf\"}\nWill only appear in HTML.\n\\renewcommand{\\familydefault}{\\sfdefault}\n\\section{R Definitions \\& Examples   (TERSE)}\n\\section{Manuals}\n\\\\section(Definitions}\n:::\n\n***"
+  },
+  {
+    "objectID": "250_quarto_snippets.html#pdf",
+    "href": "250_quarto_snippets.html#pdf",
+    "title": "tech notes",
+    "section": "PDF",
+    "text": "PDF"
+  },
+  {
+    "objectID": "250_quarto_snippets.html#footnotes",
+    "href": "250_quarto_snippets.html#footnotes",
+    "title": "tech notes",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThis is footnote one.↩︎"
   }
 ]
