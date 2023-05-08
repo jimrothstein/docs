@@ -4,7 +4,7 @@
     "href": "310_R_notes.html",
     "title": "R Notes",
     "section": "",
-    "text": "Note\n\n\n\nAll R, math, statistics notes here.\nCreate a footnote: [^1] [^1]: This is footnote one."
+    "text": "Note\n\n\n\nAll R, math, statistics notes here."
   },
   {
     "objectID": "310_R_notes.html#nse-non-standard-evaluation",
@@ -31,8 +31,8 @@
     "objectID": "310_R_notes.html#questions",
     "href": "310_R_notes.html#questions",
     "title": "R Notes",
-    "section": "3 Questions",
-    "text": "3 Questions\n\n#   Explain how Base R finds column name\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\ndata(starwars)\ncol = \"hair_color\"\nsum(is.na(starwars[, eval(col) ]) )\n\n[1] 5\n\nsum(is.na(starwars[, col ]) )\n\n[1] 5"
+    "section": "1 Questions",
+    "text": "1 Questions\n\n#   Explain how Base R finds column name\nlibrary(dplyr)\ndata(starwars)\ncol = \"hair_color\"\nsum(is.na(starwars[, eval(col) ]) )\n\n[1] 5\n\nsum(is.na(starwars[, col ]) )\n\n[1] 5\n\n\n\n1.0.1 K-nearest neighbors, K is given\n\\forall x \\in X , which could be any dimension , is already assigned to a region. For a new point, examine its K nearest neighbors who decide by majority vote which region x belongs to. SEE: wine example SEE: Gaglow book.\n\n\n1.0.2 Bias-Var Tradeoff.\nWith non-zero noise, of variance \\sigma^{2} the best approximate to f(x) will always have non-zero error: Isn’t there a relation betwee E, VAR? like x and p ?\n\nError = E(f_hat) + Var(f_hat) + \\sigma^{2}\n\nSEE Berkeley Crash Course; Matloff"
   },
   {
     "objectID": "JUNK.html",

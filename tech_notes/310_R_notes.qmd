@@ -30,48 +30,7 @@ All R, math, statistics  notes here.
 ### Environemnts, Namespacds
 -   conflicted package.
 
-### Metaprogramming, NSE  
-
--   Hadley, Advanced R, version 1 (Expressions)
--   Quoting/Eval:  Lionel: https://rpubs.com/lionel-/programming-draft  
-  -   https://rpubs.com/lionel-/tidyeval-introduction
-  -   https://rpubs.com/lionel-/tidyeval-dplyr-recipes
-  -   {{}} * https://www.tidyverse.org/blog/2019/06/rlang-0-4-0/
-  -   https://rpubs.com/lionel-/superstache
-    Brodie Gaslam
-    -   https://www.brodieg.com/2020/05/05/on-nse/
-
--   function masking/pkgs: https://www.r-bloggers.com/2013/09/control-the-function-scope-by-the-r-package-namescope/ (using namespace to control scop)
--   {}} - https://www.r-bloggers.com/2019/06/curly-curly-the-successor-of-bang-bang-2/
--   env stack - https://www.r-bloggers.com/2014/12/tips-on-non-standard-evaluation-in-r/
--   quoting, dplyr - https://www.r-bloggers.com/2019/07/bang-bang-how-to-program-with-dplyr/
--   2012 namespace pkg, by Hadley, et al : https://cran.r-project.org/web/packages/namespace/index.html
--   https://www.rostrum.blog/2023/03/03/getparsedata/ (parse, tokens,  more advanced)
-
--   **Examples**
-  - http://zevross.com/blog/2018/09/11/writing-efficient-and-streamlined-r-code-with-help-from-the-new-rlang-package/ (mostly ggplot2)
-  - Murdoch,  R Journal vol 2/2 2010
-  - statisticsglob.com (several parse examples)
-  - advanced-r-solutions.rbind.io/expressions.html
-  - Tierney, codeTools ?
-
--   **Manuals:**
-  - ns-load: https://stat.ethz.ch/R-manual/R-devel/library/base/html/ns-load.html
-  - getFromNamespace: https://stat.ethz.ch/R-manual/R-devel/library/utils/html/getFromNamespace.html
-  - R-exts:package-ns: https://cran.r-project.org/doc/manuals/R-exts.html#Package-namespaces
-  - R-ints 1.2 https://cran.r-project.org/doc/manuals/r-release/R-ints.html#Environments-and-variable-lookup
-    R-Lang 2.1.3 Language Objects (calls, expressions, names)
-    R-Lang 6 Compute on Language: https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Computing-on-the-language
-
--   **stackoverflow**
-  - https://stackoverflow.com/questions/14988722/in-r-what-does-loaded-via-a-namespace-and-not-attached-mean
-  - {{}}https://stackoverflow.com/questions/62791997/what-is-the-embracing-operator
--   
--   **Posit**
-  - ns, but not in package: https://community.rstudio.com/t/is-it-dangerous-to-create-a-namespace-for-functions-in-a-script-without-a-package/91141
-
-    -   wrapr https://winvector.github.io/wrapr/index.html useful?
-
+{{< include _references.qmd >}}
 
 a term
 :   its definition
@@ -154,7 +113,7 @@ access; use JIT compiler or interpeter
 specific to that function. Also referred to as frame or context. This frame
 holds evaluation environment. The frame ends when the function completes.
 
-**Evaluation**  parser, evaluator 
+**Evaluation**  parser, evaluator SEE R-lang definitions 2.1.3 
 ```
 When a user types a command at the prompt (or when an expression is read from a
 file) the first thing that happens to it is that the command is transformed by
@@ -164,7 +123,30 @@ value. This is the core of the language.
 ```
  https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Evaluation-of-expressions
 
-**Expression** Interactively, a single, valid R statement that returns an value is  called an expression. 
+**Expression** 
+
+
+[R language definition](https://cran.r-project.org/doc/manuals/R-lang.html#Evaluation)
+From r-lang 2.1.4 
+
+|    In R one can have objects of type "expression". An expression contains one or
+|    more statements. A statement is a syntactically correct collection of tokens.
+|    Expression objects are special language objects which contain **parsed but
+|    unevaluated R statements.** The main difference is that an expression object can
+|    contain several such expressions. Another more subtle difference is that
+|    objects of type "expression" are only evaluated when explicitly passed to eval,
+|    whereas other language objects may get evaluated in some unexpected cases. 
+
+(emphasis added)
+
+
+
+
+
+
+Interactively, a single, valid R statement that returns an value is  called an expression. 
+
+
 An expression also a formal language construction with list structure.  The function expression() takes an R
 object and returns expression.  Note:  a `statement` is code that may do things
 (side effects) but does not return anything.
@@ -439,8 +421,8 @@ parse(text= '2^2')
 f  <- function(x=NULL) {
 }
 
-cl  <- call("f", list(x=2))
 cl
+cl  <- call("f", list(x=2))
 is.function(cl)
 is.call(cl)
 

@@ -59,6 +59,7 @@ file <- "R_INSTALL_CONFIG.qmd"
 -   ~/.Renviron loads first;  also good place to store `secrets` and access as
     Sys.getenv(' ')
 
+
 -   ~/.Rprofile is configuration file for R.  pre-load packages, 
 
 
@@ -77,7 +78,12 @@ file <- "R_INSTALL_CONFIG.qmd"
     getOption("repos") # what repo/mirror in use
     
 
-
+###  R update (puzzled) 05/07/2023 
+-   inside RStudio, seems to be ok.
+-   but from console, seems to balk at a few packages ("MASS, Matrix, Survival""), 
+-   !so seems to advice against manually changing permissions.
+-   but `install.packages( ..., lib="~/R/x86....")`does not work either.
+-   Bottom Line, use RStudio
 
 
 }

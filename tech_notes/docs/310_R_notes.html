@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-05-05">
+<meta name="dcterms.date" content="2023-05-07">
 
 <title>tech notes - R Notes</title>
 <style>
@@ -129,13 +129,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#environemnts-namespacds" id="toc-environemnts-namespacds" class="nav-link" data-scroll-target="#environemnts-namespacds"><span class="header-section-number">0.2</span> Environemnts, Namespacds</a></li>
   <li><a href="#metaprogramming-nse" id="toc-metaprogramming-nse" class="nav-link" data-scroll-target="#metaprogramming-nse"><span class="header-section-number">0.3</span> Metaprogramming, NSE</a></li>
   <li><a href="#create-a-call" id="toc-create-a-call" class="nav-link" data-scroll-target="#create-a-call"><span class="header-section-number">0.4</span> create a call</a></li>
-  <li><a href="#nse-non-standard-evaluation" id="toc-nse-non-standard-evaluation" class="nav-link" data-scroll-target="#nse-non-standard-evaluation"><span class="header-section-number">1</span> NSE, Non-Standard Evaluation</a>
-  <ul class="collapse">
-  <li><a href="#string-interpolation" id="toc-string-interpolation" class="nav-link" data-scroll-target="#string-interpolation"><span class="header-section-number">1.1</span> String Interpolation</a></li>
-  <li><a href="#symbol" id="toc-symbol" class="nav-link" data-scroll-target="#symbol"><span class="header-section-number">1.2</span> Symbol</a></li>
-  </ul></li>
-  <li><a href="#tidy-evaluation" id="toc-tidy-evaluation" class="nav-link" data-scroll-target="#tidy-evaluation"><span class="header-section-number">2</span> Tidy Evaluation</a></li>
-  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions"><span class="header-section-number">3</span> Questions</a></li>
+  <li><a href="#symbol" id="toc-symbol" class="nav-link" data-scroll-target="#symbol"><span class="header-section-number">0.5</span> Symbol</a></li>
+  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions"><span class="header-section-number">1</span> Questions</a></li>
   </ul>
 </nav>
     </div>
@@ -155,14 +150,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 5, 2023</p>
+      <p class="date">May 7, 2023</p>
     </div>
   </div>
   
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">May 5, 2023</p>
+      <p class="date-modified">May 7, 2023</p>
     </div>
   </div>
     
@@ -184,26 +179,6 @@ Note
 <p>All R, math, statistics notes here.</p>
 </div>
 </div>
-<p>Create a footnote: [^1] [^1]: This is footnote one.</p>
-<!--
-```
-TODO pdf - fix greater than equa
-  pdf: 
-    toc: false
-    include-in-header: 
-      text: |
-        \usepackage[top=.5in, bottom=.5in, left=.7in, right=.5in]{geometry}
-        \usepackage{amsmath,amssymb,amstext,amsfonts}
-        \usepackage{lipsum}
-```
--->
-<!--
-file <- "/home/jim/code/docs/R_DEFINITIONS_AND_EXAMPLES.qmd"
-
-PURPOSE:    R Definitions Plus Code Examples
-
-      :!quarto render %
--->
 <!--
 This is a `child` document to R_notes.
 
@@ -252,7 +227,8 @@ separatedly.
 <li><p>ns-load: https://stat.ethz.ch/R-manual/R-devel/library/base/html/ns-load.html</p></li>
 <li><p>getFromNamespace: https://stat.ethz.ch/R-manual/R-devel/library/utils/html/getFromNamespace.html</p></li>
 <li><p>R-exts:package-ns: https://cran.r-project.org/doc/manuals/R-exts.html#Package-namespaces</p></li>
-<li><p>R-ints 1.2 https://cran.r-project.org/doc/manuals/r-release/R-ints.html#Environments-and-variable-lookup R-Lang 2.1.3 Language Objects (calls, expressions, names) R-Lang 6 Compute on Language: https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Computing-on-the-language</p></li>
+<li><p>R-ints 1.2 https://cran.r-project.org/doc/manuals/r-release/R-ints.html#Environments-and-variable-lookup R-Lang <a href="https://cran.r-project.org/doc/manuals/R-lang.html" class="uri">https://cran.r-project.org/doc/manuals/R-lang.html</a><br>
+2.1.3 Language Objects (calls, expressions, names) R-Lang 6 Compute on Language: https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Computing-on-the-language</p></li>
 <li><p><strong>stackoverflow</strong></p></li>
 <li><p>https://stackoverflow.com/questions/14988722/in-r-what-does-loaded-via-a-namespace-and-not-attached-mean</p></li>
 <li><p>{{}}https://stackoverflow.com/questions/62791997/what-is-the-embracing-operator</p></li>
@@ -319,14 +295,25 @@ r-lang 6.1</code></pre>
 <p><strong>byte code</strong> “Readable” concise instructions; not machine code; no user access; use JIT compiler or interpeter</p>
 <p><strong>Deparse</strong> See <strong>parse</strong>.</p>
 <p><strong>Evaluation or execution environment</strong> In R, a function runs in an environment specific to that function. Also referred to as frame or context. This frame holds evaluation environment. The frame ends when the function completes.</p>
-<p><strong>Evaluation</strong> parser, evaluator</p>
+<p><strong>Evaluation</strong> parser, evaluator SEE R-lang definitions 2.1.3</p>
 <pre><code>When a user types a command at the prompt (or when an expression is read from a
 file) the first thing that happens to it is that the command is transformed by
 the parser into an internal representation. The evaluator executes parsed R
 expressions and returns the value of the expression. All expressions have a
 value. This is the core of the language. </code></pre>
 <p>https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Evaluation-of-expressions</p>
-<p><strong>Expression</strong> Interactively, a valid R statement that returns an value is called an expression, An expression() takes an R object and returns expression, which a R list. Note: a <code>statement</code> is code that may do things (side effects) but does not return anything. Hadley defines expression as an “object that stores quoted code without evaluating it.” (tidyr cheat sheet) SEE evaluation.</p>
+<p><strong>Expression</strong></p>
+<p><a href="https://cran.r-project.org/doc/manuals/R-lang.html#Evaluation">R language definition</a> From r-lang 2.1.4</p>
+<p>&nbsp;&nbsp;&nbsp;In R one can have objects of type “expression”. An expression contains one or<br>
+&nbsp;&nbsp;&nbsp;more statements. A statement is a syntactically correct collection of tokens.<br>
+&nbsp;&nbsp;&nbsp;Expression objects are special language objects which contain **parsed but<br>
+&nbsp;&nbsp;&nbsp;unevaluated R statements.** The main difference is that an expression object can<br>
+&nbsp;&nbsp;&nbsp;contain several such expressions. Another more subtle difference is that<br>
+&nbsp;&nbsp;&nbsp;objects of type “expression” are only evaluated when explicitly passed to eval,<br>
+&nbsp;&nbsp;&nbsp;whereas other language objects may get evaluated in some unexpected cases.</p>
+<p>(emphasis added)</p>
+<p>Interactively, a single, valid R statement that returns an value is called an expression.</p>
+<p>An expression also a formal language construction with list structure. The function expression() takes an R object and returns expression. Note: a <code>statement</code> is code that may do things (side effects) but does not return anything. Hadley defines expression as an “object that stores quoted code without evaluating it.” (tidyr cheat sheet) SEE evaluation.</p>
 <p><strong>Expression v Language</strong> R expressions based on list and can be broken down further. Often these are language pieces. Lanugage use pairlists.</p>
 <p><strong>First Class</strong> - A function can also be used as an argument to another function. Example: lapply(list(), mean)</p>
 <p><strong>Frame vs Environment</strong> Frame refers to the calling stack of functions. Environment, in R, is property of function, where it looks to find non-local variables.</p>
@@ -339,14 +326,9 @@ value. This is the core of the language. </code></pre>
 <p>In R, an “evaluator” find any “unbound symbols” (in an expression) by using variable bindings in effect when created.</p>
 <p><strong>match</strong> - match.arg - match.call - match.fun</p>
 <p><strong>namespace:</strong> REF: https://cran.r-project.org/doc/manuals/r-release/R-ints.html#Namespaces | Namespaces are environments associated with packages (and once again the base package is special and will be considered separately). A package pkg defines two environments namespace:pkg and package:pkg: it is package:pkg that can be attached and form part of the search path.</p>
-</section>
-<section id="nse-non-standard-evaluation" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="nse-non-standard-evaluation"><span class="header-section-number">1</span> NSE, Non-Standard Evaluation</h2>
-<p>Treat code as data: ability to manipulate code before evaluated.</p>
+<p>Treat code as data: ability to manipulate code before evaluated. <strong>NSE, Non-Standard Evaluation</strong></p>
+<p><strong>Standard evaluation</strong> In se expressions are evaluated immediately, ie the code and all variables are found the value is inserted. (SEE Brodie, rev() example)</p>
 <p><strong>operator</strong> (non-R) An operate takes a function f and returns new function g. Example: <span class="math inline">f'(x) = g(x)</span></p>
-<div class="cell" data-hash="310_R_notes_cache/html/unnamed-chunk-2_0cbd3d063f5775b8f0651c9572d98545">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># test  is this grey?</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
 <p><strong>package:</strong></p>
 <p><strong>Pairlist</strong></p>
 <p><strong>Parent Frame of function</strong> If function g() is called inside body of function f, the g has the parent frame (aka calling environment) that is execution environment of f.&nbsp;DRAW Diagram</p>
@@ -364,42 +346,36 @@ value. This is the core of the language. </code></pre>
 <li><p>Do not understand at deeper level</p></li>
 </ul>
 <div class="cell" data-hash="310_R_notes_cache/html/primitive_da07502006b79b72519311826cdb175b">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#   </span><span class="al">TODO</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co">#   R complains about putting function in data.frame</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="do">### check several functions</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>y  <span class="ot">&lt;-</span> <span class="fu">list</span>(sin, <span class="st">"sin"</span>, c, <span class="cf">switch</span>, typeof, sqrt, <span class="st">`</span><span class="at">if</span><span class="st">`</span>, <span class="st">`</span><span class="at">+</span><span class="st">`</span>)</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="fu">quote</span>(sin)</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="fu">quote</span>(<span class="st">"sin"</span>)</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="fu">quote</span>(c)</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="fu">quote</span>(sqrt)</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="fu">quote</span>(<span class="st">`</span><span class="at">if</span><span class="st">`</span>)</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="fu">quote</span>(<span class="st">`</span><span class="at">+</span><span class="st">`</span>)</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="fu">deparse</span>(y)</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="fu">data.frame</span>(<span class="at">object =</span> y,</span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>           <span class="at">typeof =</span> <span class="fu">sapply</span>(y, typeof),</span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>           <span class="at">is.primitive =</span> <span class="fu">sapply</span>(y, is.primitive),</span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>           <span class="at">is.function =</span> <span class="fu">sapply</span>(y, is.function))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#   </span><span class="al">TODO</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co">#   R complains about putting function in data.frame</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="do">### check several functions</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>y  <span class="ot">&lt;-</span> <span class="fu">list</span>(sin, <span class="st">"sin"</span>, c, <span class="cf">switch</span>, typeof, sqrt, <span class="st">`</span><span class="at">if</span><span class="st">`</span>, <span class="st">`</span><span class="at">+</span><span class="st">`</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="fu">quote</span>(sin)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="fu">quote</span>(<span class="st">"sin"</span>)</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="fu">quote</span>(c)</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="fu">quote</span>(sqrt)</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="fu">quote</span>(<span class="st">`</span><span class="at">if</span><span class="st">`</span>)</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="fu">quote</span>(<span class="st">`</span><span class="at">+</span><span class="st">`</span>)</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="fu">deparse</span>(y)</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="fu">data.frame</span>(<span class="at">object =</span> y,</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>           <span class="at">typeof =</span> <span class="fu">sapply</span>(y, typeof),</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>           <span class="at">is.primitive =</span> <span class="fu">sapply</span>(y, is.primitive),</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>           <span class="at">is.function =</span> <span class="fu">sapply</span>(y, is.function))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><strong>R</strong> R has two parents: S, based on C, Fortran for statistics. R also has functional component, based on Scheme.</p>
 <pre><code>It is possible to abuse R, using it more like S code. (?)
 
 **Reification** Abstract idea to treat all code as "data", including functions, structures, etc. This means all such objects can be modified by code. C has. (TODO)
 
-::: {.content-visible when-format="html"}
-##  Referencial Transparency
-:::
 
-::: {.content-visible when-format="pdf"}
+**  Referencial Transparency
 
-\section{Referencial Transparency}
-:::
-
-A function f is \textbf{referencial  transparent} IF replacing x with its value
+A function f is \textbf{referencial  transparent} IF replacing x (an expression) with its value
 returns same.
 
-::: {.cell hash='310_R_notes_cache/html/unnamed-chunk-4_db6cb01b18586ac86b984f9919e50d99'}
+::: {.cell hash='310_R_notes_cache/html/unnamed-chunk-3_bafc7f4dca6cfd209e7f3e740a383bc7'}
 
 ```{.r .cell-code}
 f = function(x) x
@@ -410,73 +386,68 @@ identical(f(x), f(6))</code></pre>
 </div>
 <p>:::</p>
 <p>However, not all R functions have this property.</p>
-<div class="cell" data-hash="310_R_notes_cache/html/unnamed-chunk-5_96e24c38bd6a079e9725234270ec06eb">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>x<span class="ot">=</span><span class="dv">6</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">identical</span>(<span class="fu">quote</span>(x), <span class="fu">quote</span>(<span class="dv">6</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="310_R_notes_cache/html/unnamed-chunk-4_bfff33a0b903d863dcd5fcce31c3c58a">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>x<span class="ot">=</span><span class="dv">6</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">identical</span>(<span class="fu">quote</span>(x), <span class="fu">quote</span>(<span class="dv">6</span>))               <span class="do">##  F</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] FALSE</code></pre>
 </div>
 </div>
-<p><strong>Referencial Semantics</strong> Changes to values are done in memory. There is no copy.</p>
+<p><strong>Referencial Semantics</strong> Changes to values are done in memory. There is no copy. (Example: why important. Also other properties of functions, inverse, etc)</p>
+<p><strong>side effect</strong> A function may access global and formal variables read-only. Only local variables may be modified. - a popup? console output? no changes to files, no graphs</p>
+<p><strong>srcref</strong> Is an attribute of all functions. The body() contains code only. The srcref contains original code, plus comments and formatting.</p>
 <p><strong>Substitution</strong> When used in function with formal variable, substitute stops evaluation, captures the user’s code and returns a call (ie unevaluated )</p>
 <p>&nbsp;&nbsp;substitute returns the parse tree for the (unevaluated) expression expr, substituting any variables bound in env.</p>
 <p><strong>syntax</strong> How code looks, is { in right place, a grammar.</p>
 <p><strong>Syntax Sugar</strong> Syntax to make easier for human to express or write code efficiently.</p>
-<p><strong>Vectorize</strong> No loops, no for, no lapply. Example:</p>
-<pre><code>a &lt;- 1:10^4
-x &lt;- a[a %% 2 == 0]         # select elments of a vector</code></pre>
-<pre><code>Example:   array[i]  vs. get_array(array, i)
-Example:   `+` (1,2) vs.  1 + 2</code></pre>
 <p><strong>semantics</strong> What does the code DO?</p>
 <p><strong>String</strong> String (“5+5”) is NOT call. No such thing as evaluating a string. See 0210_ You can PARSE a string and then manipulate it. Simpler to eval a quote(5+5) to return the sum.</p>
-<section id="string-interpolation" class="level3" data-number="1.1">
-<h3 data-number="1.1" class="anchored" data-anchor-id="string-interpolation"><span class="header-section-number">1.1</span> String Interpolation</h3>
+<p><strong>String Interpolation</strong></p>
 <p>Method to substitute the value of expr into a string. Can think of it as <code>template</code> with holes. SEE: https://www.r-bloggers.com/2018/03/math-notation-for-r-plot-titles-expression-and-bquote/</p>
 <p>bquote examples SEE 410</p>
-<div class="cell" data-hash="310_R_notes_cache/html/unnamed-chunk-6_b4246d889525b11f1725592ea4c9bb29">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="dv">5</span> </span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">bquote</span>(x <span class="sc">==</span> .(x))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="310_R_notes_cache/html/unnamed-chunk-5_f0c0dcd408c8afce26902a9f5f37a9ae">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="dv">5</span> </span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">bquote</span>(x <span class="sc">==</span> .(x))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>x == 5</code></pre>
 </div>
 </div>
 </section>
-<section id="symbol" class="level3" data-number="1.2">
-<h3 data-number="1.2" class="anchored" data-anchor-id="symbol"><span class="header-section-number">1.2</span> Symbol</h3>
+<section id="symbol" class="level3" data-number="0.5">
+<h3 data-number="0.5" class="anchored" data-anchor-id="symbol"><span class="header-section-number">0.5</span> Symbol</h3>
 <p><a href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Symbol-lookup">3.1.2 Symbol lookup</a> | In this small example y is a symbol and its value is 4. A symbol is an R object too,</p>
-<div class="cell" data-hash="310_R_notes_cache/html/unnamed-chunk-7_1a93f537a645ceda52bb64aafd93233f">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> <span class="dv">4</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Q: This is true, mathematically: a<em>(b+c) = a</em>b + a*c.&nbsp;In practice, I get to choose to evaluate (insert values) with the LHS or the RHS, expecting the exact same result had I done the other. Relationship to Symbol in Metaprogramming?</p>
+<div class="cell" data-hash="310_R_notes_cache/html/unnamed-chunk-6_608b46b9487bb886b9bcbecd9b292d0c">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> <span class="dv">4</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 4</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.symbol</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.symbol</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] FALSE</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.name</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.name</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] FALSE</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.object</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.object</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] FALSE</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># but</span></span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> <span class="fu">as.symbol</span>(y)</span>
-<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="fu">is.symbol</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># but</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> <span class="fu">as.symbol</span>(y)</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="fu">is.symbol</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] TRUE</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>`4`</code></pre>
 </div>
 </div>
 <p>See <strong>R Lang Ref: 2.1.3.1</strong> Symbol (aka name), usually name of R object. Use `as.name() to coerce to symbol or quote() or atoms of parse()</p>
-<pre><code>
-
-In order to manipulate symbols we need a new element in our language: the
+<pre><code>In order to manipulate symbols we need a new element in our language: the
 ability to quote a data object. Suppose we want to construct the list (a
 b). We can’t accomplish this with (list a b), because this expression
 constructs a list of the values of a and b rather than the symbols
@@ -498,140 +469,117 @@ get away with this in Scheme syntax because we rely on blanks and
 parentheses to delimit objects. Thus, the meaning of the single quote
 character is to quote the next object. Now we can distinguish between
 symbols and their values:
-
-https://stackoverflow.com/questions/8846628/what-exactly-is-a-symbol-in-lisp-scheme</code></pre>
-</section>
-</section>
-<section id="tidy-evaluation" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="tidy-evaluation"><span class="header-section-number">2</span> Tidy Evaluation</h2>
-<ul>
-<li>pronouns, to distinguish between objects in environment ls() .env<span class="math inline">cyl and  not associated with the df and data columns in df .data</span>cyl (df)</li>
-</ul>
+</code></pre>
+<p>https://stackoverflow.com/questions/8846628/what-exactly-is-a-symbol-in-lisp-scheme ## Tidy Evaluation - pronouns, to distinguish between objects in environment ls() .env<span class="math inline">cyl and  not associated with the df and data columns in df .data</span>cyl (df)</p>
 <p><strong>Variable</strong> Three kinds:<br>
-* formals,x f = function(x= … )<br>
-* local,a f = function() {a =10}<br>
-* free, unbound, global, z f = function() (print(z))</p>
+* formals,x: f = function(x= … )&nbsp; formalArgs() * local,a: f = function() {a =10}<br>
+* free, unbound, global, z: f = function() (print(z))</p>
 <hr>
-<section id="function" class="level4" data-number="2.0.1">
-<h4 data-number="2.0.1" class="anchored" data-anchor-id="function"><span class="header-section-number">2.0.1</span> function</h4>
+<p><strong>function</strong></p>
 <div class="cell" data-hash="310_R_notes_cache/html/function_04e1e2186f23ae82c0d9c477e98e2276">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>f  <span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">x=</span><span class="cn">NULL</span>) {</span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>    x<span class="sc">^</span><span class="dv">2</span></span>
-<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a><span class="fu">formals</span>(f)      <span class="do">## pairlist</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>f  <span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">x=</span><span class="cn">NULL</span>) {</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>    x<span class="sc">^</span><span class="dv">2</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="fu">formals</span>(f)      <span class="do">## pairlist</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>$x
 NULL</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">body</span>(f)         <span class="do">## language, $\code{call}$</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">body</span>(f)         <span class="do">## language, $\code{call}$</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>{
     x^2
 }</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">environment</span>(f)  <span class="do">## environment</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">environment</span>(f)  <span class="do">## environment</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>&lt;environment: R_GlobalEnv&gt;</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">args</span>(f)         <span class="do">## closure</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">args</span>(f)         <span class="do">## closure</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>function (x = NULL) 
 NULL</code></pre>
 </div>
 </div>
 <div class="cell" data-hash="310_R_notes_cache/html/parse_66aa80aaf3bc7a3984824f87c713ad00">
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="do">## returns expression</span></span>
-<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="fu">parse</span>(<span class="at">text=</span> <span class="st">'2^2'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="do">## returns expression</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="fu">parse</span>(<span class="at">text=</span> <span class="st">'2^2'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>expression(2^2)</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="do">## fails, does not know a is.</span></span>
-<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="co"># parse(text= '2a')</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="do">## fails, does not know a is.</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="co"># parse(text= '2a')</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
-<section id="call" class="level4" data-number="2.0.2">
-<h4 data-number="2.0.2" class="anchored" data-anchor-id="call"><span class="header-section-number">2.0.2</span> call</h4>
-<div class="cell" data-hash="310_R_notes_cache/html/call_ada430ac36557e34ec14aae3c24a8b8d">
-<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>f  <span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">x=</span><span class="cn">NULL</span>) {</span>
-<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>cl  <span class="ot">&lt;-</span> <span class="fu">call</span>(<span class="st">"f"</span>, <span class="fu">list</span>(<span class="at">x=</span><span class="dv">2</span>))</span>
-<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>cl</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>call</strong></p>
+<div class="cell" data-hash="310_R_notes_cache/html/call_df77de25e0ee7f7d0ed0db08118cee64">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>f  <span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">x=</span><span class="cn">NULL</span>) {</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>cl</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>f(list(x = 2))</code></pre>
+<pre><code>f(3)</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.function</span>(cl)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>cl  <span class="ot">&lt;-</span> <span class="fu">call</span>(<span class="st">"f"</span>, <span class="fu">list</span>(<span class="at">x=</span><span class="dv">2</span>))</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="fu">is.function</span>(cl)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] FALSE</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.call</span>(cl)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.call</span>(cl)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] TRUE</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="do">##  Args must be evaluated, even if f is unevaluted </span></span>
-<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>    x  <span class="ot">&lt;-</span> <span class="dv">2</span></span>
-<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">call</span>(<span class="st">"f"</span>, <span class="fu">list</span>(x))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="do">##  Args must be evaluated, even if f is unevaluted </span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>    x  <span class="ot">&lt;-</span> <span class="dv">2</span></span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">call</span>(<span class="st">"f"</span>, <span class="fu">list</span>(x))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>f(list(2))</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>    <span class="co">#call("f", list(x=a))   # throws error</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>    <span class="co">#call("f", list(x=a))   # throws error</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell" data-hash="310_R_notes_cache/html/sub_08e99c38a04e12742eafabb49cb4aee9">
-<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>res  <span class="ot">&lt;-</span> <span class="fu">substitute</span>(x<span class="sc">+</span>a) </span>
-<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>res</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>res  <span class="ot">&lt;-</span> <span class="fu">substitute</span>(x<span class="sc">+</span>a) </span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>res</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>x + a</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.call</span>(res)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.call</span>(res)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] TRUE</code></pre>
 </div>
 </div>
-<p>::: #### K-nearest neighbors, K is given</p>
+<p>:::</p>
+</section>
+<section id="questions" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="questions"><span class="header-section-number">1</span> Questions</h2>
+<div class="cell" data-hash="310_R_notes_cache/html/unnamed-chunk-7_0e3fb8b41b95d6f8e0edcee520afd1d2">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co">#   Explain how Base R finds column name</span></span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(starwars)</span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a>col <span class="ot">=</span> <span class="st">"hair_color"</span></span>
+<span id="cb48-5"><a href="#cb48-5" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">is.na</span>(starwars[, <span class="fu">eval</span>(col) ]) )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">is.na</span>(starwars[, col ]) )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5</code></pre>
+</div>
+</div>
+<section id="k-nearest-neighbors-k-is-given" class="level4" data-number="1.0.1">
+<h4 data-number="1.0.1" class="anchored" data-anchor-id="k-nearest-neighbors-k-is-given"><span class="header-section-number">1.0.1</span> K-nearest neighbors, K is given</h4>
 <p><span class="math inline">\forall x \in X</span> , which could be any dimension , is already assigned to a region. For a new point, examine its K nearest neighbors who decide by majority vote which region <span class="math inline">x</span> belongs to. SEE: wine example SEE: Gaglow book.</p>
 </section>
-<section id="bias-var-tradeoff." class="level4" data-number="2.0.3">
-<h4 data-number="2.0.3" class="anchored" data-anchor-id="bias-var-tradeoff."><span class="header-section-number">2.0.3</span> Bias-Var Tradeoff.</h4>
+<section id="bias-var-tradeoff." class="level4" data-number="1.0.2">
+<h4 data-number="1.0.2" class="anchored" data-anchor-id="bias-var-tradeoff."><span class="header-section-number">1.0.2</span> Bias-Var Tradeoff.</h4>
 <p>With non-zero <code>noise</code>, of variance <span class="math inline">\sigma^{2}</span> the best approximate to <span class="math inline">f(x)</span> will always have non-zero error: Isn’t there a relation betwee E, VAR? like x and p ?</p>
 <p><span class="math display">
 Error = E(f_hat) + Var(f_hat) + \sigma^{2}
 </span></p>
 <p>SEE Berkeley Crash Course; Matloff</p>
+
+
 </section>
-</section>
-<section id="questions" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="questions"><span class="header-section-number">3</span> Questions</h2>
-<div class="cell" data-hash="310_R_notes_cache/html/unnamed-chunk-8_b874ec5a4df6d8a05233c36ac9a71978">
-<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="co">#   Explain how Base R finds column name</span></span>
-<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'dplyr'</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following objects are masked from 'package:stats':
-
-    filter, lag</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following objects are masked from 'package:base':
-
-    intersect, setdiff, setequal, union</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(starwars)</span>
-<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>col <span class="ot">=</span> <span class="st">"hair_color"</span></span>
-<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">is.na</span>(starwars[, <span class="fu">eval</span>(col) ]) )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 5</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">is.na</span>(starwars[, col ]) )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 5</code></pre>
-</div>
-</div>
-
-
 </section>
 
 </main> <!-- /main -->
