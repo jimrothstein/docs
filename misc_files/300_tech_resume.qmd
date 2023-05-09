@@ -1,16 +1,18 @@
 ---
-output:   
-  pdf_document:   
-    latex_engine: lualatex  
-    toc: false
-    toc_depth:  2   
-  html_document:  
-    code_folding: hide
-    toc: true 
-    toc_depth: 2
-    toc_float: true
-fontsize: 10pt   
-geometry: margin=0.5in,top=0.25in   
+format:   
+    html:
+        toc: false 
+        toc_depth: 2
+        toc_float: true
+        embed-resources: true
+#     pdf:   
+#         latex_engine: lualatex  
+#         toc: false
+#         toc_depth:  2   
+execute: 
+        error: true
+        collapse: true
+        output-dir: docs 
 ---
 
 # jim Rothstein	
@@ -18,8 +20,8 @@ geometry: margin=0.5in,top=0.25in
 
 > [jimrothstein@gmail.com](jimrothstein@gmail.com)  
 > (831) 824-4304
->	[Github: https://github.com/jimrothstein](Github:
-https://github.com/jimrothstein)
+>
+[Github: https://github.com/jimrothstein](Github:https://github.com/jimrothstein)
 
 ------
 
@@ -30,7 +32,7 @@ https://github.com/jimrothstein)
 1.  API	
 1.	Git/Github
 1.  Latex, knitr, pandoc, quarto
-1.	Neovim
+1.	Rstudio/Neovim
 1.  Lua
 1.	Linux
 
@@ -40,15 +42,16 @@ https://github.com/jimrothstein)
 
 
 Contribute R Github projects 
-:   *\href{https://github.com/jimrothstein)}{See Github}*
 
+[https://github.com/jimrothstein](https://github.com/jimrothstein)  
+[https://jimrothstein.github.io/](https://jimrothstein.github.io)
 
 Variety database, programming projects 
 
 ------
 
 ###	Education {#education}
-:	BS MIT, physics
+	BS MIT, physics
 
 ### Footer {#footer}
 
