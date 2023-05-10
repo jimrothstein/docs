@@ -566,7 +566,7 @@ jimrothstein@gmail.com \
     case is over 2 years and plenty of violations?)
 
 
-##  R 2023-04-20   hearing date set: May 18
+##  R 2023-04-20   (on phone) next hearing date set: May 18
 Judge: 
 Present:  Ms Hughes (da), usual guy (defense)
 Defense:   Repeats `sole allegation` DUI, trial not set, and "lost hope" of
