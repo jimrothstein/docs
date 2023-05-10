@@ -1,9 +1,21 @@
+---
+title: "250_quarto_cheat.qmd "
+author: "JR"
+date: "5/22/2021"
+pdf-engine: lualatex
+format:
+    html:
+        toc: true
+        html-math-method: katex
+        css: styles.css
+---
 ##  Quarto:    Examples for HTML,  PDF
 ```
 250_quarto_snippets.qmd
 
 
-PURPOSE:   Collect of HTML and PDF inline commands to control output
+PURPOSE:   Collect of HTML and PDF inline commands
+to control output
 NOTE:      No documentation here
 ```
 
