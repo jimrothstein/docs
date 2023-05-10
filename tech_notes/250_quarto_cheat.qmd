@@ -8,6 +8,9 @@ format:
         toc: true
         html-math-method: katex
         css: styles.css
+output-dir: docs
+editor_options: 
+  chunk_output_type: console
 ---
 ##  Quarto:    Examples for HTML,  PDF
 ```

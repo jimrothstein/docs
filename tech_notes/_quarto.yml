@@ -1,10 +1,10 @@
 project:
   type: website
-  output-dir: 
-    docs
+  output-dir:  docs
   render:                             ## limit dir? 
     - "018.2_abstract_syntax_tree.qmd"
     - "410_bquote_example.qmd"
+    - "250_quarto_cheat.qmd"
     - "!*.R"          # do not render
     - "!*.Rmd"        # do not render 
    
@@ -20,6 +20,8 @@ website:
         text: 410_bquote_example.qmd
       - href: about.qmd
         text: about.qmd
+      - href: 250_quarto_cheat.qmd
+      - text: 250_quarto_cheat
 
 ##  project-wide
 format:
