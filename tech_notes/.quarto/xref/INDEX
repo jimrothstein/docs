@@ -1,0 +1,27 @@
+{
+  "300_tech_notes.qmd": {
+    "300_tech_notes.html": "3e726d7b"
+  },
+  "junk.qmd": {
+    "junk.html": "f7d8e874"
+  },
+  "310_R_notes.qmd": {
+    "310_R_notes.html": "ebb27aa6",
+    "310_R_notes.tex": "e6567801"
+  },
+  "400_rlang_proposal.md": {
+    "400_rlang_proposal.html": "3086fdfc"
+  },
+  "400_rlang_proposal.qmd": {
+    "400_rlang_proposal.html": "290b42df"
+  },
+  "JUNK.qmd": {
+    "JUNK.html": "52b3e7c8"
+  },
+  "250_quarto_snippets.qmd": {
+    "250_quarto_snippets.html": "6dcb0f5b"
+  },
+  "250_quarto_cheat.qmd": {
+    "250_quarto_cheat.html": "c8478ea2"
+  }
+}

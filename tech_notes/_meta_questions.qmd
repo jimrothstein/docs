@@ -1,0 +1,4 @@
+##  Meta and Related Questions:
+
+If C structs and their manipulation are basis for meta and NSE,  why not explain these structs first, even to non-C programmers.   Later introduce the R functions, shortcuts etc that implement manipulation in R?
+

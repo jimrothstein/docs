@@ -50,7 +50,9 @@ explain process:  capture unevaluated code; manipulate it; later evaluate
 **bindings:**
 -   link between name (symbol) and an object
 -   EX:   f (name) and the definition (function(x) {...})
+-   https://r-pkgs.org/dependencies-mindset-background.html#sec-dependencies-search
 
+**bquote**  SEE String Interpolation
 **Call** A call is an unevaluated function, together with arguments that are
 
 ### create a call
@@ -449,6 +451,9 @@ col = "hair_color"
 sum(is.na(starwars[, eval(col) ]) )
 sum(is.na(starwars[, col ]) )
 ```
+
+{{< include _meta_questions.qmd >}}
+
 ####    K-nearest neighbors, K is given
 
 $\forall x \in X$ , which could be any dimension , is already assigned to a region.
