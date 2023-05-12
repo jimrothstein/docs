@@ -33,7 +33,8 @@
   - http://zevross.com/blog/2018/09/11/writing-efficient-and-streamlined-r-code-with-help-from-the-new-rlang-package/ (mostly ggplot2)
   - Murdoch,  R Journal vol 2/2 2010
   - statisticsglob.com (several parse examples)
-  - advanced-r-solutions.rbind.io/expressions.html
+  - <https://statisticsglobe.com/parse-deparse-expression-r-function>
+  - <advanced-r-solutions.rbind.io/expressions.html>
   - Tierney, codeTools ?
 
 ### Manuals:
@@ -50,6 +51,8 @@
   - getFromNamespace: https://stat.ethz.ch/R-manual/R-devel/library/utils/html/getFromNamespace.html
 
 -   **stackoverflow**
+
+  - https://stackoverflow.com/questions/46834655/whats-the-difference-between-substitute-and-quote-in-r
   - https://stackoverflow.com/questions/14988722/in-r-what-does-loaded-via-a-namespace-and-not-attached-mean
   - {{}}https://stackoverflow.com/questions/62791997/what-is-the-embracing-operator
 -   
@@ -63,3 +66,4 @@
     -   envnames:: code for working with env, older https://github.com/mastropi/envnames
     -   
 
+https://statisticsglobe.com/parse-deparse-expression-r-function
