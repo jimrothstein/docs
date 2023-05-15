@@ -254,7 +254,7 @@ https://oregon.public.law/statutes/ors_813.010
 
 
 
-26DEC2021 - ALZ arrest, 21-17892,  2:09AM  (time is AM)
+26DEC2021 - ALZ arrest - DUI, 21-17892,  2:09AM  (time is AM)
 }
 
 ##	CASE 15DR .... 2022 all chron here
@@ -329,6 +329,15 @@ to read; many pages.  Details troubling behavior.
 
 }
 
+
+##	CASE 15DR .... 2023 all chron here
+{
+NEW LAYWER : Daniel J Lounsbury, BYU Law School grad, sounds serious effort
+
+Oregon;   reinstates child support payments
+    }
+
+--------------------------------------------------------------------------------
 
 ##	CASE **18CR66984** .... 2021 all chron here
 {
@@ -477,15 +486,32 @@ resolve.  OK.  See notes in MUNI (above)
 ##  Wed 18Jan2023 - letter to Sean Kallery (see printout)
 -   ALSO, called Municipal Court;  no date, 2 charges, no other info.
 
-Wed 18Jan2023
-}
+eviction CW, or not, "gifting $1500", CW now at 5150 Norma.
+{ 
+-   NOTE: ( 10/7/22) 22CV34539 CW has new name: "Cheyenne Autumn Lynn
+    Zimmerman" address is ALZ, 5150 Normal address is ALZ, 5150 Norma (phone:
+    974-428-7036)
 
 -   23LT00832 (filed 13JAN 2023) Lynn Zimmerman-Stevens vs Cheyenne Williams
+to be 24 JAN 2023 9am   LZS pays $88 filing fee
     (eviction).   LZS pays $88 filing fee.   Agent:  Amy Zimmerman!  Hearing
-    to be 24 JAN 2023 9am
+-   Plaintiff:   LZS; Agent: ALZ, Occupant: CZ 
+-   ALL have 5150 Norma as address;  clearly indicates CW is tenant. 
+-   SEE PHOTO:  Violation of Lease, "...intimidating renters to Amy Zimmerman
+    ...", intefere with housekeeper and service provider; threatening,
+    coercing, menacing;  activating listening and viewing devices (cell,
+    laptop) "Colluding with others against ALZ with lies and promises"
+-   Is ALZ running hotel again?? Though CW must be a "renter" if using LL-T Court.
+-   CW responds SEE PHOTO.
+-   1/24/23 Judge dismisses w/o prejudice; ie can file again.  CW & LZS appear (no ALZ?)
+-   apparently LZS gave ("gifting") CW $1500 to move out.
+-  And apparently, LZS changed her mind **in Court** to not proceed with eviction. 
 
+-   2/15/23 LZS now says made a mistake, CW will not leave.
+}
+-   2/15/23 Judge letter to Plaintiff, you must refile.  can not undue dismissal?
  
- Tue 14Feb2023  - letter City of Salem prosecutor:
+ Tue 14Feb2023  -  I send letter City of Salem prosecutor:
 
 \newpage
 
@@ -566,6 +592,9 @@ jimrothstein@gmail.com \
     case is over 2 years and plenty of violations?)
 
 
+##  Also 17FEB2023, "waiver" Judge Underwood once worked in DA Office,
+ALZ/DA/Def Atty all sign that this is not a problem.  Judge U is ok.
+
 ##  R 2023-04-20   (on phone) next hearing date set: May 18
 Judge: 
 Present:  Ms Hughes (da), usual guy (defense)
@@ -586,4 +615,5 @@ Afterwords, judge has he wants to respond to me.Understands I am "frustrated"
 
 3.  I will be to speak at hearing, or appear in person.  Believe he also said can repeat my statement then.
 
+}
 
