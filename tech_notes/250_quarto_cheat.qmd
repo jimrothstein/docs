@@ -8,9 +8,15 @@ format:
         toc: true
         html-math-method: katex
         css: styles.css
-output-dir: docs
+        embed-resources: true ## if standalone, all 1 file 
+output-dir: docs            ## NO indent, also _quarto.yml for entier project
 editor_options: 
   chunk_output_type: console
+execute: 
+  error: true                   ## include errors in output
+  warning: true
+  collapse: true
+  standalone: true
 ---
 ##  Quarto:    Examples for HTML,  PDF
 ```

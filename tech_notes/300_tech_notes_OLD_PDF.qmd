@@ -8,22 +8,21 @@ format:
         toc: true
         html-math-method: katex
         css: styles.css
-        embed-resources: true
 output-dir: docs
 editor_options: 
   chunk_output_type: console
-execute: 
-  error: true                   ## include errors in output
-  warning: true
-  collapse: true
-  standalone: true
 ---
 
-<!--  
-      For PDF Version
-      SEE  300.....OLD_PDF.qmd
-    -->
-
+<!--
+ TODO - need to correct for quarto format   
+  pdf: 
+    toc: true
+    include-in-header: 
+      text: |
+        \usepackage[top=.5in, bottom=.5in, left=.7in, right=.5in]{geometry}
+        \usepackage{amsmath,amssymb,amstext,amsfonts}
+        \usepackage{lipsum}
+-->
 TODO
     -   quarto:  focus on html, then pdf?
     -   toc, use folds, ie way to navigate this document.
@@ -33,13 +32,30 @@ CHANGES:
     -  18APR 2023  LinuxMint .. removed Timeshift program and all files (it retains
       daily/weekly/ image of drive) and fills root (\) partition in no time.
 
+---
+<!---
+    :!quarto render % -o - | zathura -
 
+		USAGE:  print_pdf.sh % out.pdf	
+
+        For smaller font in table of contents:
+		USAGE (small tableofcontents font)  this template has \small embedded
+		in the template
+		!pandoc % -f markdown --template ~/dotfiles/proposed_template.latex -o
+		out.pdf ; zathura out.pdf
+-->
+
+\footnotesize
+\tableofcontents
+
+as of \today:  
 
 PURPOSE:		Misc Tech Notes;  details, notes can be here (but COMMANDS put
 on INDEX C).  Math, R, probability and stats notes **do NOT go here*
 
 
 
+\section{TODO:}
 -   quarto STOPS
 
   -	See Index Cards (bottom) - integrate that point to very bottom into main text
@@ -49,7 +65,7 @@ on INDEX C).  Math, R, probability and stats notes **do NOT go here*
     -   Replace markdown headlines, with latex sections
 
 
-{X11, Wayland, video}
+\section{X11, Wayland, video}
 
 Wayland is open source \textit{protocol} replacement for X windows, (widgets
 says get graphics from X or Wayland).
@@ -60,7 +76,8 @@ and users should be minimal.  Wayland shrinks X;  much functional now in Linux
 kernel.  
 
 
-{PDF, Pandoc, Latex}
+\begin{verbatim}
+\section{PDF, Pandoc, Latex}
 
  PDF   [ignores html, css; also ignores YAML header (pandoc & ::render()]
 
@@ -86,6 +103,14 @@ kernel.
   *  see ~/code/publish_project/TEX/
 
 
+!pandoc % -f markdown -o %.pdf
+
+!pandoc % -f markdown  -t latex -H ../chapter_break.tex -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o ~/Downloads/print_and_delete/out.pdf
+!pandoc % -f markdown  --pdf-engine lualatex -H chapter_break.tex -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.3in -o ~/Downloads/print_and_delete/out.pdf
+
+!pandoc --metadata=project:JIM --lua-filter doc/panvimdoc/scripts/skip-blocks.lua --lua-filter doc/panvimdoc/scripts/include-files.lua  -t doc/panvimdoc/scripts/panvimdoc.lua % -o doc/source/jim_knitr_pandoc_latex.txt
+
+-N					(Number sections)
 
 
   HTML [to produce HTML with pandoc, all latex is IGNORED.]  
@@ -108,10 +133,11 @@ I do **not** know how to create fancy HTML files from knitr, pandoc.
 pandoc balks at processing straight text if it thinks it sees markdown.
 If lucky, !pandoc % -o file.pdf will work.
 
+\end{verbatim}
 
 **H2**
 
-section{LATEX NOTES}
+\section{LATEX NOTES}
 
 -	Tikz seems to be most popular way to gaphics vs **pstricks**.
 
@@ -137,7 +163,7 @@ $\pi = \directlua{tex.sprint(math.pi)}$
 \end{verbatim}
 
 
-section{R}
+\section{R}
 ###		R, DEFINTIONS, TERSE EXAMPLES
 			See ~/code/try_things_here/BASE/
 
@@ -181,7 +207,7 @@ section{R}
 		git remote -v # shows using git:
 
 
-section{Lua}
+\section{Lua}
 
 In lua, nil or false evaluate to:  false
 0 or '', evaluate to: true
@@ -563,7 +589,7 @@ Wed May 25 20:22:20 PDT 2022
 	- Ubuntu could NOT install (wifi issues)
 	- But old laptop runs fine with just linux mode.
 
-section{Lenovo Laptop}
+\section{Lenovo Laptop}
 
 ### Terminal
 {
@@ -791,7 +817,7 @@ ALT-TAB  rotate through open windows?
 -	TERMINALS
 	-	rxvt, urxvt, terminator, st (not friendly) xfce4-terminal.
 
-begin{verbatim}
+\begin{verbatim}
 ##  Thu  19 Nov 2020  Acer Batttery
   *  ACER CB3-431-C7EX 
   *  From back (tiny print on labels)
@@ -1106,9 +1132,9 @@ Some Remarks:
 
 \newpage
 
-begin{verbatim}
+\begin{verbatim}
 				G O O G L E
-end{verbatim}
+\end{verbatim}
 
 #### HTTR2 - NOTES (needs clean up!)
 
@@ -1392,7 +1418,7 @@ mtp://[usb:001,085]   where 085 refers to device.  (Run lsusb)
     mode.  Replacing this code is **custom** recovery vs **stock** recovery.
 
 
-section{Laptop Buying Notes}
+\section{Laptop Buying Notes}
 
 **eMMc** is on bmotherboard(embedded), slow but works:  cheap, reliable;  fine to boot.   Check /dev/mmcblk**
 SSD is much better, but more expensive.  

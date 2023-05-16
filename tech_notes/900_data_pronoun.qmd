@@ -1,0 +1,58 @@
+https://rfordatascience.slack.com/archives/C052ATK1ESF/p1684168506576779
+
+
+
+     ‘expr()’ defuses an R expression with injection support.
+     It is equivalent to ‘base::bquote()’.
+```{r}
+
+x = bquote(y)
+x
+# y
+
+bquote(mtcars[[x]])  ## x
+# mtcars[[x]]
+
+bquote(mtcars[[.(x)]])
+# mtcars[[y]]
+
+r = bquote(mtcars[[.(x)]])
+r
+eval(r)
+y = "mpg"
+
+
+##  trying to do remainder of his codd
+bquote(mtcars[[ ..(quote(as.name(x))) ]] , splice=T    )
+bquote(mtcars[[ .(eval(deparse(substitute(as.name(x))))) ]] )
+eval(as.name(a))
+bquote(mtcars[[ .eval(deparse(x))]])
+bquote(mtcars[[ ..(as.name(x))    ]], splice=T )
+```
+
+
+This is June's
+```{r}
+library(rlang)
+x <- expr(y)
+x                   ## y
+
+# `.data[[` injects **as string**
+expr(.data[[x]])
+#> .data[["y"]]
+
+# That's a special property of `.data[[` not generally of `[[`
+expr(mtcars[[x]])
+#> mtcars[[x]]
+expr(mtcars[[!!x]])
+#> mtcars[[y]]
+
+# Mimicing the `.data[[` behavior requires `!!` + `as_label()`
+expr(mtcars[[!!as_label(x)]])
+#> mtcars[["y"]]
+
+# Also a fun aside - `data_sym()` is cool:
+data_sym(x)
+#> .data$y
+```
+
