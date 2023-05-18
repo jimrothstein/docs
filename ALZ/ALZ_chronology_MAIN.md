@@ -98,9 +98,6 @@ Respondent (TIM) lists
 	**Cheyenne Autumn Lynn Williams** Pet is CHE, fees waived.   I see ALZ
 	handwriting.  Payment made:  DRD1 $301.  (who paid?)
 
-
-
-
 - DNS raids ALZ home.
 
 }
@@ -132,7 +129,9 @@ https://oregon.public.law/statutes/ors_813.010
 -	Reason for delays:  backlog since Covid-19; hopefully trial by end of this
 	year;  Court working with her lawyer. Jury trial adds to complexity.
 -	No next hearing.
-
+-   at 17May2023 - new prosecutor Ms. Nicole Theobald; no Court date visible;
+-   Use Salem Municipal Court:  503-588-6146 (main #)
+-   For records, same: 503-588-6003 (legal dept)
 }
 
 ##	Judges
@@ -616,4 +615,10 @@ Afterwords, judge has he wants to respond to me.Understands I am "frustrated"
 3.  I will be to speak at hearing, or appear in person.  Believe he also said can repeat my statement then.
 
 }
+##  R 18 May 23    -  Probation Violation - HEARING
+-   Call Salem Municipal;  DUI shows no future court dates; sending a note to
+    new prosecutor (Nicole Theobald) to inquire (for their records, not for me.)
+
+-   Call Bree of DA office, 503-373-4457; she sends subpeona.  Not permitted to
+    say whether or not someone subpeona!  Gave me no info.  (Waste of time)
 

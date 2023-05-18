@@ -26,6 +26,16 @@ css:  css_examples.css
 All R, math, statistics  notes here. 
 :::
 
+[call](https://stat.ethz.ch/R-manual/R-devel/RHOME/library/base/html/call.html)
+[expression](https://stat.ethz.ch/R-manual/R-devel/RHOME/library/base/html/expression.html)
+[language](https://stat.ethz.ch/R-manual/R-devel/RHOME/library/base/html/is.language.html)
+
+[mode]](https://stat.ethz.ch/R-manual/R-devel/RHOME/library/base/html/mode.html)
+[typeof](https://stat.ethz.ch/R-manual/R-devel/RHOME/library/base/html/typeof.html)
+[vector](https://stat.ethz.ch/R-manual/R-devel/RHOME/library/base/html/vector.html)
+[substitute](https://stat.ethz.ch/R-manual/R-devel/RHOME/library/base/html/substitute.html)
+
+
 {{< include _future_work.qmd >}}
 ### Environemnts, Namespacds
 -   conflicted package.
@@ -35,6 +45,8 @@ All R, math, statistics  notes here.
 a term
 :   its definition
 {{< pagebreak >}}
+
+
 **attach**
     -   add df/list/datafile/env to search list, at a `pos` and `name`
     -   added to R ~1988   [Add Link]
@@ -54,6 +66,7 @@ explain process:  capture unevaluated code; manipulate it; later evaluate
 
 **bquote**  SEE String Interpolation
 **Call** A call is an unevaluated function, together with arguments that are
+(Rmk:   .Call() is unrelated, calls C function)
 
 ### create a call
 -   See:  R-lang 6.5, call, sys.call v match.call
@@ -344,6 +357,13 @@ Q:  This is true, mathematically:    a*(b+c) = a*b + a*c.   In practice, I get
 to choose to evaluate (insert values) with the LHS  or the RHS, expecting the
 exact same result had I done the other.  Relationship to Symbol in
 Metaprogramming?
+
+symbol - human readale, points to area in memory, immutable, not a string
+
+stored in a lookup table?   Two symbols can be compared, if equal then same memory.
+(is symbol evulated ??)
+SEE: https://stackoverflow.com/questions/8846628/what-exactly-is-a-symbol-in-lisp-scheme
+
 ```{r}
 y = 4
 y
@@ -472,6 +492,30 @@ $$
 
 SEE Berkeley Crash Course; Matloff
 
+### 2023-05-16,  Why Rlang?  to june
+I'm in rlang book club, not up-to-date, and debating WHY? work through rlang::
+I think more logical to approach rlang as follows:
+
+(1)learn *some* lisp (scheme), then (2) learn base R (as language,  to manipulate), and only
+(3) then work through rlang:: *code* as an EXAMPLE of magic one can do with lanuage.
+
+If you have time and willing,  feel free to answer to the entire group, if you wish.
+Or, you are  too busy, don't worry about reply.   I think others have similar questions.
+
+Here are few points that might clarify where I am:
+
+-   R about 4 years, including tidyverse 
+-   struggle with rlang:: not because ideas are especially difficult but
+  becuase I find package to be verbose, with imprecise definitions and built
+  upon a structure of many other packages.  And I do not have all the ideas
+  nailed down.
+-   the ideas, once I draw picture or think a bit, seem very logical, useful and *cool*  (or do I fool myself?)
+-   So not why focus on ideas first (ie scheme or equivlent),  then see how R implements, and then build something new.
+-   Me:   minimal C;  minimal Lisp.
+-   But baffled why so much time being  spent on *.data[[]]*, pronouns, new notation.   What is wrong with just bquote?   And if bquote doesn't cut it in certain instances show why *.data[[]]*
+code improves upon bquote.
+-   I've also tried to write a glossary + code examples for each metaprogramming idea in base R (but only got more confused)
+    
 
 
 
