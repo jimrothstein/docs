@@ -1,6 +1,6 @@
 ---
-title: "using .qmd "
-author: "Norah Jones"
+title: "300_tech_notes.qmd"
+author: "jr"
 date: "5/22/2021"
 pdf-engine: lualatex
 format:
@@ -132,9 +132,8 @@ Therefore, **LuaTex** added primitives, more open (can use tex or lua)
 
 EXAMPLE:  In .tex file, write lua:  directlua is new primitive; lua api inside
 value for  
-\begin{verbatim}
-$\pi = \directlua{tex.sprint(math.pi)}$
-\end{verbatim}
+
+$$\pi = \directlua{tex.sprint(math.pi)}$$
 
 
 section{R}
@@ -154,7 +153,8 @@ section{R}
 
 -   **struct** (C, non-R)  a collection that can hold multiple types, eg `db
     record`.
-    \begin{verbatim}
+
+```
     struct record
     {
         char name[32];
@@ -163,9 +163,9 @@ section{R}
     }
 #   To use:
     struct record X    # X is variable, struct is keyword, `record` is struct
-    \end{verbatim}
+```
 
--   \textit{monad} - As goal, seek functions with (1) no side effects (2) can
+-   **monad** - As goal, seek functions with (1) no side effects (2) can
     be composed.  Function factories can be useful, esp where variables can be
     'stored' in environment.   SEE BRUNO video.
 
@@ -694,6 +694,9 @@ Output from zle -al (~403 cmds)
 #### BINDKEY
 *bindkey*  # results, all shortcuts
 
+```
+
+
 "^A"-"^C" self-insert
 "^D" list-choices
 "^E"-"^F" self-insert
@@ -745,6 +748,8 @@ Output from zle -al (~403 cmds)
 "^\\\\"-"~" self-insert
 "^?" vi-backward-delete-char
 "\M-^@"-"\M-^?" self-insert
+
+```
 
 
 
@@ -1127,7 +1132,9 @@ RELATED INFO:
 	-  Google OAUTH2 playground
 
 
-\begin{verbatim}
+
+```
+
 #	===============================
 From Google (Youtube) Explorer:
 GET https://youtube.googleapis.com/youtube/v3/playlists?part=snippet%2CcontentDetails&maxResults=5&mine=true&key=[YOUR_API_KEY] HTTP/1.1
@@ -1137,7 +1144,7 @@ Accept: application/json
 
 #	===============================
 
-\end{verbatim}
+```
 
 For youtube (auth code):
 echo "curl -Lsv \"https://accounts.google.com/o/oauth2/v2/auth?\
