@@ -615,10 +615,27 @@ Afterwords, judge has he wants to respond to me.Understands I am "frustrated"
 3.  I will be to speak at hearing, or appear in person.  Believe he also said can repeat my statement then.
 
 }
-##  R 18 May 23    -  Probation Violation - HEARING
+##  R 18 May 23    -  Probation Violation - HEARING  - **ADMIT**
+{
 -   Call Salem Municipal;  DUI shows no future court dates; sending a note to
     new prosecutor (Nicole Theobald) to inquire (for their records, not for me.)
 
 -   Call Bree of DA office, 503-373-4457; she sends subpeona.  Not permitted to
     say whether or not someone subpeona!  Gave me no info.  (Waste of time)
+-   NO CALL from Court at Hearing Time (see below) Computer says lasted 5 minutes; 
+|   Probation Violation - HELD
+|   - Admit
+Run over to Court computer.   Says same, no records (yet)
+
+**Why NO PHONE CALL** ?
+Call Advocates TWICE last week.   First time, receptionist said have someone call me.  I said just want to listen to hearing.
+Date?    At Court House computer; no mention to call victum.
+Call Advocates AGAIN.   Says he  remembered me.  I repeat:   just want call from hearing.   He sends me to Court (downtown - wrong) Call annex and ask to have phone call.
+Sent to ???? (no name) assures me get emails everyday from Advocates.   OK, I said I am just in the middle, please put me on call list. Thought she did.
+
+So I call Court (annex) to complain.  Gives me name of schedule clerk:   **Kimberly BLAKE**
+Next day, Friday, hear message.  No name.  Says checked with Advocates;  never got any call/request from me!! Suggests go in Person to next hearing.  Crazy !!
+
+}
+
 
