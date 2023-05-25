@@ -1,0 +1,102 @@
+---
+title: "Untitled"
+format: 
+  html:
+    html-math-method: katex
+    fontsize: 9px
+    css: quarto_example_CSS.css
+    embed-resources: true
+    # output-file="test.html"
+    toc: true
+    toc-depth: 2
+editor: source 
+editor_options: 
+  chunk_output_type: console
+---
+
+<!--
+      HTML VERSION of Loose Leafs
+
+      Last Edited:   2023-05-22 
+
+-->
+
+
+```
+file <- "misc_files/010_R_loose_leafs_HTML.qmd
+```
+
+
+
+
+##	TECH NOTES (DRAFT)
+
+---
+
+##	FILES/REPOS
+
+- zsh_project : ZSH scripts (sh, api, regex etc)
+- Latex
+- Make
+- R (try_things_here) all R
+- QUARTO
+- Lua
+
+
+---
+
+###	TECH READING
+
+
+##	Loose Leaf VOLUMES
+
+####	Volume 01 - CLI Skills
+
+-	Android (adb, fastboot)
+-	CURL					(SEE:   API, R-misc)
+-	GIT
+-	JSON
+-	LATEX					(ALSO:  WIP)
+-	MAKE
+-	REGEX/GREP		(SEE:  ZSH for glob)
+-	SEARCH				(SEE:  INDEX CARD)
+	-	Gmail | Github | DDG | ...
+-	TMUX
+-	YOUTUBE-DL
+
+[For basic GLOB - see ZSH LL] 
+
+####	Volume 02 - LINUX CONFIG/HARDWARE
+-	Linux Config - General
+-	GRUB
+-	X11
+-	OS
+-	Hardware
+-	ChromeBox
+-	ChromeBook Laptop
+-	PHONES
+-	Other eToys
+
+####	Volume 03 - Neovim/Lua | nvim-R
+
+####	Volume 04 - ZSH
+
+####	Volume 05 - MATH, ALGEBRA
+-	Linear Algebra
+-	ML
+(if R code, put into R LL [^1])
+
+
+####	Volume 06 -	Statistics
+-	Classic
+-	Regression
+-	Baysian
+- ML
+
+
+####  Volume 08	-	R:	BASE and Other R skills 
+
+
+[^1]:		LL = Looseleaf	
+
+vim:linebreak:nospell:nowrap:cul tw=78 fo=ntl foldcolumn=3 cc=+1

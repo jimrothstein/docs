@@ -2,9 +2,17 @@
 ---
 as of \today  
 
+<!--
+      L A T E X VERSION of Loose Leafs
 
+      Last Edited:   2023-05-22 
+
+-->
 
 <!--
+
+
+      L A T E X
 COMMENT
 template has \small font embedded
 
