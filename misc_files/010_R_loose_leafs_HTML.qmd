@@ -12,6 +12,11 @@ format:
 editor: source 
 editor_options: 
   chunk_output_type: console
+execute: 
+  error: true                   ## include errors in output
+  warning: true
+  collapse: true
+  standalone: true
 ---
 
 <!--
@@ -21,31 +26,10 @@ editor_options:
 
 -->
 
-
 ```
 file <- "misc_files/010_R_loose_leafs_HTML.qmd
 ```
-
-
-
-
-##	TECH NOTES (DRAFT)
-
 ---
-
-##	FILES/REPOS
-
-- zsh_project : ZSH scripts (sh, api, regex etc)
-- Latex
-- Make
-- R (try_things_here) all R
-- QUARTO
-- Lua
-
-
----
-
-###	TECH READING
 
 
 ##	Loose Leaf VOLUMES
@@ -64,7 +48,6 @@ file <- "misc_files/010_R_loose_leafs_HTML.qmd
 -	TMUX
 -	YOUTUBE-DL
 
-[For basic GLOB - see ZSH LL] 
 
 ####	Volume 02 - LINUX CONFIG/HARDWARE
 -	Linux Config - General
@@ -80,6 +63,7 @@ file <- "misc_files/010_R_loose_leafs_HTML.qmd
 ####	Volume 03 - Neovim/Lua | nvim-R
 
 ####	Volume 04 - ZSH
+-   GLOB/Zsh quantifiers
 
 ####	Volume 05 - MATH, ALGEBRA
 -	Linear Algebra
@@ -88,13 +72,16 @@ file <- "misc_files/010_R_loose_leafs_HTML.qmd
 
 
 ####	Volume 06 -	Statistics
--	Classic
+-	Classic (sampling, t-distribution etc)
 -	Regression
 -	Baysian
-- ML
+-   ML
 
 
 ####  Volume 08	-	R:	BASE and Other R skills 
+-   Follows Advanced-R Book 
+-   Base R:  see individual git repos/index cards/Tech Notes
+
 
 
 [^1]:		LL = Looseleaf	

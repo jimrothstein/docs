@@ -8,7 +8,9 @@ format:
     toc: true
     html-math-method: katex
     fontsize: smaller
+    embed-resources: true   
     number-sections: true
+    #output-file: docs/R_Notes.html             ## no paths allowed
 #    fontsize: 9pt
 editor:  source
 output-dir:  docs 
@@ -17,7 +19,7 @@ editor_options:
 margin: 1
 execute: 
   error: true
-  cache: true
+  cache: false
   collapse: true
   standalone: true
 css:  css_examples.css
