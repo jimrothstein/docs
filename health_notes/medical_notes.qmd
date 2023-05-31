@@ -1,4 +1,23 @@
-
+---
+title: "medical_notes.qmd"
+author: "jr"
+date: "5/22/2021"
+pdf-engine: lualatex
+format:
+    html:
+        toc: true
+        html-math-method: katex
+        css: styles.css
+        embed-resources: true
+output-dir: docs
+editor_options: 
+  chunk_output_type: console
+execute: 
+  error: true                   ## include errors in output
+  warning: true
+  collapse: true
+  standalone: true
+---
 
 <!--
 !pandoc % -f markdown --toc -t latex -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.5in -o ~/Downloads/print_and_delete/medical_notes.md.pdf

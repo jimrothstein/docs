@@ -1,14 +1,13 @@
 ---
-title: "Untitled"
+title: "~code/docs/misc_files/010_R_loose_leafs_HTML.qmd"
 format: 
   html:
     html-math-method: katex
-    fontsize: 9px
+    fontsize: 11px
     css: quarto_example_CSS.css
     embed-resources: true
-    # output-file="test.html"
     toc: true
-    toc-depth: 2
+    toc-depth: 4
 editor: source 
 editor_options: 
   chunk_output_type: console
@@ -26,12 +25,6 @@ execute:
 
 -->
 
-```
-file <- "misc_files/010_R_loose_leafs_HTML.qmd
-```
----
-
-
 ##	Loose Leaf VOLUMES
 
 ####	Volume 01 - CLI Skills
@@ -47,7 +40,6 @@ file <- "misc_files/010_R_loose_leafs_HTML.qmd
 	-	Gmail | Github | DDG | ...
 -	TMUX
 -	YOUTUBE-DL
-
 
 ####	Volume 02 - LINUX CONFIG/HARDWARE
 -	Linux Config - General
@@ -70,20 +62,17 @@ file <- "misc_files/010_R_loose_leafs_HTML.qmd
 -	ML
 (if R code, put into R LL [^1])
 
-
 ####	Volume 06 -	Statistics
 -	Classic (sampling, t-distribution etc)
 -	Regression
 -	Baysian
 -   ML
 
-
 ####  Volume 08	-	R:	BASE and Other R skills 
 -   Follows Advanced-R Book 
 -   Base R:  see individual git repos/index cards/Tech Notes
 
-
-
 [^1]:		LL = Looseleaf	
-
+<!--
 vim:linebreak:nospell:nowrap:cul tw=78 fo=ntl foldcolumn=3 cc=+1
+-->

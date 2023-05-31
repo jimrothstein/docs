@@ -59,6 +59,11 @@ As of \today
 ```
 Use \href{url}{text}
 ```
+### Recents 
+-   Bruno, Modern Stats with Tidyverse (Bruno)Bruno Rodrigues http://modern-rstats.eu/ (web)
+only)
+-   Scott, DS with R, Gentle Intro https://bookdown.org/jgscott/DSGI/  (web
+
 
 ###	BookClub
 - Janssens, DS at Command Line: https://www.datascienceatthecommandline.com/2e/
