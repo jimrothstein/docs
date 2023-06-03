@@ -1,23 +1,38 @@
 ---
-title: "using .qmd "
-author: "Norah Jones"
+title: "001_tech_reading.qmd"
+author: "JR"
 date: "5/22/2021"
 pdf-engine: lualatex
 format:
-  pdf: 
-    toc: false
-    include-in-header: 
-      text: |
-        \usepackage[top=.5in, bottom=.5in, left=.7in, right=.5in]{geometry}
-        \usepackage{amsmath,amssymb,amstext,amsfonts}
-        \usepackage{lipsum}
+    html:
+        toc: true
+        html-math-method: katex
+        css: styles.css
+        embed-resources: true ## if standalone, all 1 file 
+        code-link: true
+output-dir: docs            ## NO indent, also _quarto.yml for entier project
+editor_options: 
+  chunk_output_type: console
+execute: 
+  error: true                   ## include errors in output
+  warning: true
+  collapse: true
+  standalone: true
 ---
+
 \footnotesize
 
 ```
 template has \small font embedded
 !pandoc % -f markdown --template ~/dotfiles/proposed_template.latex -V geometry:margin=0.4in --toc-depth=4 -V toc-title="Reading" -o out.pdf ; zathura out.pdf
 ```
+```
+urls:  for github markdown 
+[link](/uri "title")
+
+<url>
+```
+
 
 \tableofcontents
 
@@ -382,32 +397,30 @@ Finite Automata?
   -  https://rdatatable.gitlab.io/data.table/index.html
   -  https://stackoverflow.com/questions/1299871/how-to-join-merge-data-frames-inner-outer-left-right?noredirect=1&lq=1
 	-  https://jozef.io/r006-merge/
-	-
-<!--
-https://gist.github.com/nacnudus/ef3b22b79164bbf9c0ebafbf558f22a0  
-https://stackoverflow.com/questions/1299871/how-to-join-merge-data-frames-inner-outer-left-right  
-https://stackoverflow.com/questions/12773822/why-does-xy-join-of-data-tables-not-allow-a-full-outer-join-or-a-left-join  
-https://github.com/LucyNjoki/R-LadiesAbuja_Data-Manipulation-with-data.table-in-R/issues/3#issuecomment-1097736781  
-https://docs.microsoft.com/en-us/sql/t-sql/language-reference?view=sql-server-ver15  
-https://stackoverflow.com/questions/25430986/create-nested-data-tables-by-collapsing-rows-into-new-data-tables  
-https://stackoverflow.com/questions/67261777/data-table-join-is-hard-to-understand  
-https://stackoverflow.com/questions/54312225/which-data-table-syntax-for-left-join-one-column-to-prefer/54313203#54313203  
-https://rdatatable.gitlab.io/data.table/  
-https://jozef.io/r006-merge/  
-https://themockup.blog/posts/2020-09-04-10-table-rules-in-r/  
-https://github.com/TysonStanley/tidyfast  
-https://mkmanu.wordpress.com/2016/04/08/working-with-data-frames-in-r-joins-and-merging/  
-https://stackoverflow.com/questions/34124928/can-i-use-the-r-data-table-join-capability-to-select-rows-and-perform-some-opera  
-https://rpubs.com/ronasta/join_data_tables  
-https://web.archive.org/web/20131114060032/http://rwiki.sciviews.org/doku.php?id=tips%3adata-frames%3amerge  
-https://johnmackintosh.net/blog/2021-03-22-some-data-table-tips/  
-https://rstudio-pubs-static.s3.amazonaws.com/52230_5ae0d25125b544caab32f75f0360e775.html  
-https://github.com/ggrothendieck/sqldf#readme  
-https://cran.r-project.org/web/packages/dplyr/vignettes/two-table.html  
-https://thoughtbot.com/blog/back-to-basics-sql  
-https://sqlzoo.net/wiki/The_JOIN_operation  
-https://martinctc.github.io/blog/using-data.table-with-magrittr-pipes-best-of-both-worlds/  
--->
+
+-  <https://gist.github.com/nacnudus/ef3b22b79164bbf9c0ebafbf558f22a0>
+-  <https://stackoverflow.com/questions/1299871/how-to-join-merge-data-frames-inner-outer-left-right>
+-  <https://stackoverflow.com/questions/12773822/why-does-xy-join-of-data-tables-not-allow-a-full-outer-join-or-a-left-join>
+-  <https://github.com/LucyNjoki/R-LadiesAbuja_Data-Manipulation-with-data.table-in-R/issues/3#issuecomment-1097736781>
+-  <https://stackoverflow.com/questions/25430986/create-nested-data-tables-by-collapsing-rows-into-new-data-tables>
+-  <https://stackoverflow.com/questions/67261777/data-table-join-is-hard-to-understand>
+-  <https://stackoverflow.com/questions/54312225/which-data-table-syntax-for-left-join-one-column-to-prefer/54313203#54313203>
+-  <https://rdatatable.gitlab.io/data.table/>
+-  <https://jozef.io/r006-merge/>
+-  <https://themockup.blog/posts/2020-09-04-10-table-rules-in-r/>
+-  <https://github.com/TysonStanley/tidyfast>
+-  <https://mkmanu.wordpress.com/2016/04/08/working-with-data-frames-in-r-joins-and-merging/>
+-  <https://stackoverflow.com/questions/34124928/can-i-use-the-r-data-table-join-capability-to-select-rows-and-perform-some-opera>
+-  <https://web.archive.org/web/20131114060032/http://rwiki.sciviews.org/doku.php?id=tips%3adata-frames%3amerge>
+-  <https://rpubs.com/ronasta/join_data_tables>
+-  <https://johnmackintosh.net/blog/2021-03-22-some-data-table-tips/>
+-  <https://rstudio-pubs-static.s3.amazonaws.com/52230_5ae0d25125b544caab32f75f0360e775.html>
+-  <https://github.com/ggrothendieck/sqldf#readme>
+-  <https://thoughtbot.com/blog/back-to-basics-sql>
+-  <https://cran.r-project.org/web/packages/dplyr/vignettes/two-table.html>
+-  <https://sqlzoo.net/wiki/The_JOIN_operation>
+-  <https://martinctc.github.io/blog/using-data.table-with-magrittr-pipes-best-of-both-worlds/>
+-  
 
 ### APIs and R
 
