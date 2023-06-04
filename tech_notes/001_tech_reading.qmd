@@ -368,8 +368,6 @@ Finite Automata?
 -	https://sodocumentation.net/regex
 -	https://swtch.com/~rsc/regexp/regexp1.html
 
-		
-
 ### Videos
   *   [maththebeautiful - Paul?]( https://www.youtube.com/c/MathTheBeautiful/playlists )
   *   [Statquest - Josh Starmer](https://statquest.org/video-index/)
@@ -394,19 +392,18 @@ Finite Automata?
 \footnotesize
 
 #### DT Joins (merge)
+
   -  https://rdatatable.gitlab.io/data.table/index.html
   -  https://stackoverflow.com/questions/1299871/how-to-join-merge-data-frames-inner-outer-left-right?noredirect=1&lq=1
-	-  https://jozef.io/r006-merge/
-
--  <https://gist.github.com/nacnudus/ef3b22b79164bbf9c0ebafbf558f22a0>
--  <https://stackoverflow.com/questions/1299871/how-to-join-merge-data-frames-inner-outer-left-right>
--  <https://stackoverflow.com/questions/12773822/why-does-xy-join-of-data-tables-not-allow-a-full-outer-join-or-a-left-join>
+*   [dt, base, tidyverse, clear]<https://jozef.io/r006-merge/>
+*   <https://gist.github.com/nacnudus/ef3b22b79164bbf9c0ebafbf558f22a0>
+*   <https://stackoverflow.com/questions/1299871/how-to-join-merge-data-frames-inner-outer-left-right>
+*   <https://stackoverflow.com/questions/12773822/why-does-xy-join-of-data-tables-not-allow-a-full-outer-join-or-a-left-join>
 -  <https://github.com/LucyNjoki/R-LadiesAbuja_Data-Manipulation-with-data.table-in-R/issues/3#issuecomment-1097736781>
 -  <https://stackoverflow.com/questions/25430986/create-nested-data-tables-by-collapsing-rows-into-new-data-tables>
 -  <https://stackoverflow.com/questions/67261777/data-table-join-is-hard-to-understand>
 -  <https://stackoverflow.com/questions/54312225/which-data-table-syntax-for-left-join-one-column-to-prefer/54313203#54313203>
 -  <https://rdatatable.gitlab.io/data.table/>
--  <https://jozef.io/r006-merge/>
 -  <https://themockup.blog/posts/2020-09-04-10-table-rules-in-r/>
 -  <https://github.com/TysonStanley/tidyfast>
 -  <https://mkmanu.wordpress.com/2016/04/08/working-with-data-frames-in-r-joins-and-merging/>
