@@ -1,0 +1,79 @@
+---
+title: "250_quarto_cheat.qmd "
+author: "JR"
+date: "5/22/2021"
+pdf-engine: lualatex
+format:
+    html:
+        toc: true
+        html-math-method: katex
+        css: styles.css
+        embed-resources: true ## if standalone, all 1 file 
+output-dir: docs            ## NO indent, also _quarto.yml for entier project
+editor_options: 
+  chunk_output_type: console
+execute: 
+  error: true                   ## include errors in output
+  warning: true
+  collapse: true
+  standalone: true
+---
+```
+##  SHINY:    
+Misc Notes re:  SHINY
+```
+
+PURPOSE:  Misc notes re: SHINY 
+to control output
+NOTE:      No documentation here
+```
+
+Create a footnote: [^1]
+
+[^1]: This is footnote one.
+
+::: {.content-visible when-format="html"}
+:::
+***
+
+```
+<!--
+{{< include _future_work.qmd >}}
+-->
+
+***
+::: {.content-visible when-format="html"}
+:::
+***
+
+##  PDF
+
+
+
+::: {.content-visible when-format="pdf"}
+TODO pdf - fix greater than equa
+  pdf: 
+    toc: false
+    include-in-header: 
+      text: |
+        \usepackage[top=.5in, bottom=.5in, left=.7in, right=.5in]{geometry}
+        \usepackage{amsmath,amssymb,amstext,amsfonts}
+        \usepackage{lipsum}
+:::
+
+***
+
+
+::: {.content-visible when-format="pdf"}
+Will only appear in HTML.
+\renewcommand{\familydefault}{\sfdefault}
+\section{R Definitions \& Examples   (TERSE)}
+\section{Manuals}
+\\section(Definitions}
+:::
+
+***
+
+```
+### Display HTML/CSS
+-   type slider()  in console

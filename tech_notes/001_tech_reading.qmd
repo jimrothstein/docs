@@ -88,6 +88,7 @@ only)
 - HTTP Testing (book) https://books.ropensci.org/http-testing/  
 - [Deisenroth, et al  Math for ML ](https://mml-book.github.io/)
 - [Chan, Intro Probability for DS](https://probability4datascience.com/index.html)
+- [Keyes, R Without Statistics](https://book.rwithoutstatistics.com/index.html)
 
 ### R - always learn something new:
   *  Burns, R Inferno (not intro book)
