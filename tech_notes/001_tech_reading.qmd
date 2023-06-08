@@ -22,16 +22,17 @@ execute:
 
 \footnotesize
 
-```
+<!--
 template has \small font embedded
 !pandoc % -f markdown --template ~/dotfiles/proposed_template.latex -V geometry:margin=0.4in --toc-depth=4 -V toc-title="Reading" -o out.pdf ; zathura out.pdf
-```
-```
+-->
+
+<!--
 urls:  for github markdown 
 [link](/uri "title")
 
 <url>
-```
+-->
 
 
 \tableofcontents
@@ -77,7 +78,7 @@ Use \href{url}{text}
 ### Recents 
 -   Bruno, Modern Stats with Tidyverse (Bruno)Bruno Rodrigues http://modern-rstats.eu/ (web)
 only)
--   Scott, DS with R, Gentle Intro https://bookdown.org/jgscott/DSGI/  (web
+-   [Scott, DS with R, Gentle Intro ](https://bookdown.org/jgscott/DSGI/)
 
 
 ###	BookClub
@@ -85,6 +86,8 @@ only)
 - Hadley, https://mastering-shiny.org/
 - R, javascript + shiny https://book.javascript-for-r.com/
 - HTTP Testing (book) https://books.ropensci.org/http-testing/  
+- [Deisenroth, et al  Math for ML ](https://mml-book.github.io/)
+- [Chan, Intro Probability for DS](https://probability4datascience.com/index.html)
 
 ### R - always learn something new:
   *  Burns, R Inferno (not intro book)
@@ -100,28 +103,29 @@ only)
 
 ### R - Documentation (can beat searching !)
 	
--	Just Read the docs!		https://rdrr.io/r/	
 *  official R CRAN: https://cran.r-project.org/manuals.html
 	-	R intro:  https://cran.r-project.org/doc/manuals/r-release/R-intro.html
 	-	R Lang:	https://cran.r-project.org/doc/manuals/r-release/R-lang.html
 -	 design.tidyverse.org
--	Just Read the docs!		https://rdrr.io/r/	
+-   [ethz](https://stat.ethz.ch/R-manual/R-devel/library/)
 
 
 ###	R - graphics (base:: is main package)
--	 	https://rdrr.io/r/graphics/par.html
--		R intro			-	Ch 12:	https://cran.r-project.org/doc/manuals/r-release/R-intro.html#Graphics	
--		R internals - Ch 6 graphics (lower level)
--		base Idiot's guide  https://rstudio-pubs-static.s3.amazonaws.com/7953_4e3efd5b9415444ca065b1167862c349.html
--       shipunov - visual statistics, use? (https://stats.libretexts.org/Bookshelves/Introductory_Statistics/Book%3A_Visual_Statistics_Use_R_(Shipunov))
+
+    *   https://rdrr.io/r/graphics/par.html
+    *   R intro			-	Ch 12:	https://cran.r-project.org/doc/manuals/r-release/R-intro.html#Graphics	
+    *   internals - Ch 6 graphics (lower level)
+    *   base Idiot's guide  https://rstudio-pubs-static.s3.amazonaws.com/7953_4e3efd5b9415444ca065b1167862c349.html
+    *   shipunov - visual statistics, use? (https://stats.libretexts.org/Bookshelves/Introductory_Statistics/Book%3A_Visual_Statistics_Use_R_(Shipunov))
 
 ### Basic Statistics
 
 
 #### More Intuitive/Explanatory:
+
   *  [Rossman, know all the basics?   confident?]  ( https://askgoodquestions.blog/ )
   *  Przemyslaw Biecek and Tomasz Burzykowski | different ideas | Ch1, 2 Explanatory Model Analysis | https://ema.drwhy.ai/
-  *  ML Berkeley:  https://ml.berkeley.edu/blog/posts/crash-course/part-1/
+  *  [ML Berkeley:](https://ml.berkeley.edu/blog/posts/crash-course/part-1/)
   *  Goodfellow et al: https://www.deeplearningbook.org/ ideas
   *  Guo:  Creative site and book: https://seeing-theory.brown.edu/#firstPage
   *  navarro (learn statistics with r) review lm() and geometric r^2, Ch15, 16
@@ -195,12 +199,12 @@ only)
 
 ### More advanced regession/modeling books
 
--  Shalizi:  excellent:
-  -  (2019) http://www.stat.cmu.edu/~cshalizi/TALR/ -deeper/more explanatory. By Ch 11, use of gradient f, matrix derviatives ....
-  -  Shalizi http://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/ADAfaEPoV.pdf    
-  -  http://www.stat.cmu.edu/~cshalizi/mreg/15/
+Cosmo Shalizi:  excellent:
+    -  [2019] (http://www.stat.cmu.edu/~cshalizi/TALR/) -deeper/more explanatory. By Ch 11, use of gradient f, matrix derviatives ....
+    -  Shalizi http://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/ADAfaEPoV.pdf    
+    -  http://www.stat.cmu.edu/~cshalizi/mreg/15/
 -  Davidson (Econometric) -  Ch 1, 2
-- **ISLRv2:**  (book) https://web.stanford.edu/~hastie/ISLRv2_website.pdf
+- [ISLRv2:] (https://web.stanford.edu/~hastie/ISLRv2_website.pdf)
 		-	videos: https://www.youtube.com/c/R4DSOnlineLearningCommunity
 -  MATLOFF (1st book) |	ch3 - lot of useful prproperties of x,y  | 	ch 7  - affine transformations
 *  Efron, Hastie "Computer Age Statistical Inference"  (advanced, but chapter intros put techniques into perspective), no R.
@@ -214,7 +218,7 @@ only)
 
 
 ####	Algorithms & ML
--  Berkeley, excellent glossary: https://www.stat.berkeley.edu/~stark/SticiGui/Text/gloss.htm
+-  [Berkeley, excellent glossary:](https://www.stat.berkeley.edu/~stark/SticiGui/Text/gloss.htm)
 -	 Berkeley CRASH
 -	 Chollet, Deep Learning for R (not online, no pdf)
 -  Compeau:  
@@ -222,7 +226,7 @@ only)
 		-  http://compeau.cbd.cmu.edu/programming-for-lovers/ cmu -	ch 8, 9 esp collinear.  
 -  Boehmke Hands on ML | https://bradleyboehmke.github.io/HOML/ Ch 4,5
 -  Deisenroth, Faiesel et al | Math4ML *book | linear alg book, regression, 2nd level
--  Gagolewski Lightweight ML with R \url{	https://lmlcr.gagolewski.com/ } 
+-  [Gagolewski Lightweight ML with R](https://lmlcr.gagolewski.com/) iPad
 -  Higgens "Practical R Info?" 
 -	 Huntington "The Effect Book"
 -	 mcelreath: https://github.com/rmcelreath/stat_rethinking_2022 (videos)
@@ -232,11 +236,9 @@ only)
 -	 mcelreath: https://github.com/rmcelreath/stat_rethinking_2022 (videos)
 -	 https://www.tmwr.org/
 -  UCLA:  Mixed Models - intro:  https://stats.oarc.ucla.edu/other/mult-pkg/introduction-to-linear-mixed-models/
--	 Varma: Deep Learning \url{https://srdas.github.io/DLBook/}
+-	 Varma: Deep Learning \url{ #### Bayes
 
-#### Bayes
-
-
+###     BAYES
 -	\href{https://arbital.com/p/bayes_rule/}{Arbital, wiki-like}
 -	 Barber, David:	Bayesian Reasoning & ML (examples): \href{http://web4.cs.ucl.ac.uk/staff/D.Barber/textbook/020217.pdf}{Barber}
 -	 Clyde, Mine et al Intro To Bayesian Thinking  (R,intuitive, online only)
@@ -373,6 +375,7 @@ Finite Automata?
   *   [Statquest - Josh Starmer](https://statquest.org/video-index/)
   *   [Bright Side of Math]( https://www.youtube.com/channel/UCdwo4k1RQHTcq_-WS7Cazqg ) 
   *   [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw)
+  *     *   [ML videos/text](https://www.3blue1brown.com/topics/neural-networks)
   *   Zedstatistics
   *   [Chris Mack](http://www.lithoguru.com/scientist/statistics/course.html) -
       practical R, models
