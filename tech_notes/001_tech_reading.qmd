@@ -39,6 +39,7 @@ urls:  for github markdown
 
 <!--
 LINK:  [TEXT portion](URL portion)
+        <url>
 
 \url{nytimes.com}
 
@@ -65,9 +66,6 @@ https://www.markdownguide.org/basic-syntax/
 
 vim: to format all urls for md
 s/https.*/[&]()/g
-
-
-
 -->
 
 As of \today
@@ -79,6 +77,8 @@ Use \href{url}{text}
 -   Bruno, Modern Stats with Tidyverse (Bruno)Bruno Rodrigues http://modern-rstats.eu/ (web)
 only)
 -   [Scott, DS with R, Gentle Intro ](https://bookdown.org/jgscott/DSGI/)
+- [Keyes, R Without Statistics](https://book.rwithoutstatistics.com/index.html)
+-   Racket:  HTDP <https://htdp.org/2020-5-6/Book/part_prologue.html>
 
 
 ###	BookClub
@@ -200,18 +200,18 @@ only)
 
 ### More advanced regession/modeling books
 
-Cosmo Shalizi:  excellent:
+    -   Cosmo Shalizi:  excellent:
     -  [2019] (http://www.stat.cmu.edu/~cshalizi/TALR/) -deeper/more explanatory. By Ch 11, use of gradient f, matrix derviatives ....
     -  Shalizi http://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/ADAfaEPoV.pdf    
     -  http://www.stat.cmu.edu/~cshalizi/mreg/15/
 -  Davidson (Econometric) -  Ch 1, 2
-- [ISLRv2:] (https://web.stanford.edu/~hastie/ISLRv2_website.pdf)
-		-	videos: https://www.youtube.com/c/R4DSOnlineLearningCommunity
+- [ISLRv2:](https://web.stanford.edu/~hastie/ISLRv2_website.pdf)
+		-	videos: <https://www.youtube.com/c/R4DSOnlineLearningCommunity>
 -  MATLOFF (1st book) |	ch3 - lot of useful prproperties of x,y  | 	ch 7  - affine transformations
 *  Efron, Hastie "Computer Age Statistical Inference"  (advanced, but chapter intros put techniques into perspective), no R.
 *  Kuhn (2019): https://bookdown.org/max/FES/
 *  RAFAEL  			dsbook - ch 17.4, ch 18.3.4
-*  **Roback/Legler Beyond Multiple Linear Regression: (2021)**_ https://bookdown.org/roback/bookdown-BeyondMLR/
+*  **Roback/Legler Beyond Multiple Linear Regression: (2021)**_ <https://bookdown.org/roback/bookdown-BeyondMLR/>
       (Replaces BYSH) introduces likelihood; ch6 - logistic worked problem
 *	 Siegrist (aka random services.org) * random| (3)expected value 1..11 and 	|(5) random samples 1-8 (t-dist)
 * Taubes, linear alg, statistics,  http://people.math.harvard.edu/~knill/teaching/math19b_2011/handouts/chapters1-19.pdf
