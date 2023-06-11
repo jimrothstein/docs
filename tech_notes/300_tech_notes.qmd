@@ -172,22 +172,15 @@ section{R}
 }
 
 
-####	GIT commands
-
-  -  Change git push from https to ssh
-
-		git remote -v   shows using https:
-		git remote set-url origin git@github.com:jimrothstein/REPOSITORY.git 
-		git remote -v # shows using git:
-
+####	GIT commands   SEE INDEX Cars
 
 section{Lua}
 
-In lua, nil or false evaluate to:  false
+-   luarocks - project to allow developers to integrate lua modules, dependenices into their lua code.
+
+-   In lua, nil or false evaluate to:  false
 0 or '', evaluate to: true
 
-
-~/code/lua_project/
 
 Lua + neovim:
     *  code is lua.
