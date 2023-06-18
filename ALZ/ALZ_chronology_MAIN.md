@@ -638,4 +638,31 @@ Next day, Friday, hear message.  No name.  Says checked with Advocates;  never g
 
 }
 
+## F 16 JUNE May2023    Probation Revoked; 36 months jail
+-Def Patterson;  Prosectution Ms. Hughes; Judge:   
+Hughes 1st; asks 36months and receits reasons;   sound strong to me.  About the DUI:  Complaintant said ALZ was on property, banging on door and threatening to beat up complainant. Drunk.  Police give her DUI, take some measurement even though she refused breath test.
+
+Patterson:   Advocacy is one thing, but this guy twists and omits some things.  Makes everything sound minimal.   "Boneheaded" was her actions in civil court.  Identify theft usually means signing up for multiple credit cards and the like.  Claims been good for 2 years.  Wants probation to be continued.   At some point says she laid out money (in LL-T) case.  (Also a lie)
+
+I speak:   Not boneheaded!  Abuse of legal process.  Repeat statements from Judge Hart.   Purpose:    Behavior Change.
+
+Judge asks for each to comment on setencing.
+Again, Patterson can't get facts right.  Says I repeat statements from witnesses and do it each  time.  (True, but this is data and from JUDGE.   Where is YOUR DATA?)   
+
+ALZ:   wants to move on with her wife and family and chldren; how she volunteers (dogs) and all sorts of good things.  Claims to be homeowner.  Still victim:  only changed word from pet, still human urine (no mam!)   
+**NOTE:   Says I still owe her money !!**   She stalked and harassed (did not catch it:   I am doing this, x-wife, life ??)
+
+Moral:   Important to DOCUMENT; the way Angie Donhaoo did.  Examples:   nothing about still running illegal short term rental ("hotel"), suspicious financial; no school or work .... Failure to pay court on time. But PLENTY of ligitation while on probation.  No mention of 15DR civil case:  "vendetta agains her" or her behavior.   DA should have talked to me;  get underlying crime correct and conduct since.  
+
+
+Judge reviews authority to extend probation.   2 cases; go through.  Discussion about whether ALZ is '5i' or harser '5B'  Judge dismesses past need for bench warrants. Totals up months.   Goes through each count.   Count 5 is big one:  36 months.   Others 6 or 12 months, concurrently.  Will be reduced for good behavor, no fees, no fines.   Formally revokes probation in both CASES.   Says now 3rd violoation.
+
+
+Some kind of sobbing in background.   Phone cut.
+
+Conclude:   We wind up EXACTLY where started with Kallery and which she rejected.     And the 5 year stipulated agreement ?   gone.
+
+
+
+
 
