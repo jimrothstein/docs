@@ -665,4 +665,35 @@ Conclude:   We wind up EXACTLY where started with Kallery and which she rejected
 
 
 
+## Sun 18 JUNE23    MEMO TO FUTURE PROSECUTOR
+1.  ALZ will return
+2.  ALZ right combination of talent:
+    -   smarts
+    -   excellent people skills;  to sell; to fool Judges
+    -   to find and cultivate people loyal to her
+    -   to stay under radar screen
+    -   to be fearless, unafraid, relentless when feels threaten by truth.
+    -   to play the `victim`; never responsible
+    -   to lie and lie, even when you have police report in front you.
+    -   to intimidate, bully, frighten; few want to come forward.
+    -   to abuse of ANY Benefit of Doubt
+    -   to abuse any failure to verify compliance.
+    -   to abuse legal process.
+4.  You must Verify every claim. Challenge every financial claim.
+5.  If you are uncertain, read the police reports; civil and family court
+files; her motions and Appeals.  ALZ adores the legal process, pro se or with
+private counsel;  Decades of data.  Do not be fooled by court appearances.
+6.  Document, document, even small infractions.  She chips away; but makes few
+    big mistakes.   If you do not document, there will be a mountain of bad
+behavior but no `violations.`  (see how Angie Donhoo documented)
+6.  Watch for one important ALZ error:  The lies do not stand up to slightest scrutiny. If
+    you do not check, she will skate by and so usually does so.  As I found in
+my case, the lies last long enough to fool judge, but unwind
+with a phone call or two.  Within 24 hours, the lies are felonies.   Doubt I am
+the only such victim.
+7.  Talk to people who were not fooled (most are).  AG Kallery or PO Angie Donahoo (Yamhill County)
+
+
+
+
 
