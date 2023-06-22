@@ -638,7 +638,8 @@ Next day, Friday, hear message.  No name.  Says checked with Advocates;  never g
 
 }
 
-## F 16 JUNE May2023    Probation Revoked; 36 months jail
+## F 16 JUNE May2023    Probation Revoked; 36 months jail, Judge Mathew Tracey
+
 -Def Patterson;  Prosectution Ms. Hughes; Judge:   
 Hughes 1st; asks 36months and receits reasons;   sound strong to me.  About the DUI:  Complaintant said ALZ was on property, banging on door and threatening to beat up complainant. Drunk.  Police give her DUI, take some measurement even though she refused breath test.
 
