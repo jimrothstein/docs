@@ -9,6 +9,27 @@ format:
         html-math-method: katex
         css: styles.css
         embed-resources: true ## if standalone, all 1 file 
+format:
+  html:
+    theme: cosmo
+    code-link: true
+    code-overflow: wrap
+    fig-align: center
+    fig-cap-location: bottom
+    fig-responsive: true
+  pdf:
+    documentclass: krantz
+    keep-tex: true     ## each .tex from each .qmd file saved
+                       ## SEE https://rfordatascience.slack.com/archives/CV1AGK1LY/p1687365502978109 
+    include-in-header:
+      text: |
+        \usepackage{makeidx}
+        \makeindex
+    include-after-body:
+      text: |
+        \printindex
+    fig-align: center
+    fig-cap-location: bottom
 output-dir: docs            ## NO indent, also _quarto.yml for entier project
 editor_options: 
   chunk_output_type: console
@@ -18,6 +39,14 @@ execute:
   collapse: true
   standalone: true
 ---
+
+## INJECT YAML (for pdf, latex)
+```{r}
+files <- fs::dir_ls(here("quarto"), glob = "*.qmd")
+
+walk(files, \(f) quarto_render(f, "pdf", pandoc_args = c("--metadata-file", here("quarto", "params.yml"))))
+```
+
 ```
 ##  SHINY:    
 Misc Notes re:  SHINY
