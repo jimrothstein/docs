@@ -18,15 +18,17 @@ execute:
   collapse: true
   standalone: true
 ---
-##  Quarto:    Examples for HTML,  PDF
-```
-250_quarto_snippets.qmd
-
 
 PURPOSE:   Collect of HTML and PDF inline commands
 to control output
 NOTE:      No documentation here
-```
+
+##  Quarto:    Examples for HTML,  PDF
+
+***
+###  Draw Line above and below + create toc entry (level 3)
+***
+
 
 Create a footnote: [^1]
 
