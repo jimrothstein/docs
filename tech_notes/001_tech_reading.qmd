@@ -81,6 +81,7 @@ only)
 -   Racket:  HTDP <https://htdp.org/2020-5-6/Book/part_prologue.html>
 -   McElreath, fantastic:  <https://www.youtube.com/playlist?list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus>
 -   [Gagolewski Lightweight ML with R](https://lmlcr.gagolewski.com/) iPad
+-   Leo Breiman 2 cultures: <https://www.jstor.org/stable/2676681>
 
 
 ###	BookClub
