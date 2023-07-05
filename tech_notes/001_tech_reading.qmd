@@ -101,6 +101,7 @@ only)
   *	 [Jennybc (book)](https://stat545.com/index.html) [wtf](https://rstats.wtf/) [git](https://happygitwithr.com/)
   *  Gillespie, Lovelace (2016) https://bookdown.org/csgillespie/efficientR/
   *  Matloff:  Art of R Programming (2011)
+  *  Matloff: <https://github.com/matloff/TidyverseSkeptic>
   *  de Jong, Intro to Data Cleaning  https://cran.r-project.org/doc/contrib/de_Jonge+van_der_Loo-Introduction_to_data_cleaning_with_R.pdf
 -	Grolemund,  2014 https://rstudio-education.github.io/hopr/
   
@@ -136,24 +137,38 @@ only)
   *  navarro  2019 (learn statistics with r) study output of lm()
 	*  Huntington https://www.theeffectbook.net/index.html (intutition?)
 
+###     Related to ISLR
+*   [Gagolewski Lightweight ML with R](https://lmlcr.gagolewski.com/) iPad
+*   <https://cran.r-project.org/doc/contrib/Faraway-PRA.pdf> linear algebra
+*   Navarro: Ch 15 <https://learningstatisticswithr.com/>
+*   Navarro: (Ch 15 regression)https://learningstatisticswithr.com/lsr-0.6.pdf
+*   residuals, geometry <https://socialsciences.mcmaster.ca/jfox/Papers/matlib-useR2016.pdf>
+*   https://github.com/friendly/matlib/
+*   Shalizi [2019 Truth About Linear Regression] (http://www.stat.cmu.edu/~cshalizi/TALR/) -deeper/more explanatory. By Ch 11, use of gradient f, matrix derviatives ....
+*  Kuiper, Shonda: linear algebra simple, clear:   video: https://www.youtube.com/watch?v=jQkK0XMrAdM
+*  Race, Shaina gentle intro to lin alg:, https://shainarace.github.io/LinearAlgebra/index.html 
+*  Videos - Cohort 05: https://www.youtube.com/playlist?list=PL3x6DOfs2NGjbefZellBVB306_z8Wz1Xd
+
+
+*  Roback: LINE:  <https://bookdown.org/roback/bookdown-BeyondMLR/ch-MLRreview.html#assumptions-for-linear-least-squares-regression>
+
+
+
+*   Friendly... (adv) geometry and statistical methods <https://bityl.co/JdSp>
+*   Friendly: <http://friendly.github.io/matlib/articles/data-beta.html>
 
 #### Solid, basic stats intros
+  *  Matloff (Prob book) <https://github.com/matloff/probstatbook/blob/master/ProbStatBookW21.pdf>
   *  PSU Course begin with 414 | | no R
     *   https://online.stat.psu.edu/stat414/
     *   https://online.stat.psu.edu/stat462/
     *   https://online.stat.psu.edu/stat415/
   *	 AMS Basic, good intro CLT (but not t)
   *  Dekking, et al Modern Introduction to Probability & Statistics (2005), no R. https://cis.temple.edu/~latecki/Courses/CIS2033-Spring13/Modern_intro_probability_statistics_Dekking05.pdf
-  *  Faraday, PRAR:  Practical Regression, Anova, linear algebra (mature
-      approach)
   *  Frey, Bruce "Statistical Hacks"
   *  [Dalpiaz, David, Univ of IL] ( https://daviddalpiaz.github.io/appliedstats/ )
   *  Lindelov:  Concise R examples of common stat tests.
 	*		Lavine, Statistical Thought: https://people.math.umass.edu/~lavine/Book/book.pdf
-  *  Matloff (Prob book) 
-    * http://heather.cs.ucdavis.edu/~matloff/132/PLN/probstatbook/ProbStatBook.pdf
-    * (via pdflatex) https://github.com/matloff/probstatbook
-      Good, maybe too good and skips a few basics?
   *  Siegrist 
       CLT, stats, linear alg | aka randomservices.org |  ** best book for introducing Math  
   *  Nahim,  Dueling Idiots, harder but real world stats/prob problems (pins
@@ -195,7 +210,6 @@ only)
   *  Ismay modern dive (2020)
   *  Kaplan (2017) ch 6.5 https://dtkaplan.github.io/SM2-bookdown/  (wordy,
 	but exposes nuances)
-  *	 Lane se(b_hat)
   *	 Matloff(2020) book
   *	 Mcelreath (videos)
   *	 PENG  | 	art of ... (2017) ch 6.5 ( https://bookdown.org/rdpeng/artofdatascience/) | r4ds			 (2019)	ch 9.5
@@ -204,9 +218,10 @@ only)
 ### More advanced regession/modeling books
 
     -   Cosmo Shalizi:  excellent:
-    -  [2019] (http://www.stat.cmu.edu/~cshalizi/TALR/) -deeper/more explanatory. By Ch 11, use of gradient f, matrix derviatives ....
-    -  Shalizi http://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/ADAfaEPoV.pdf    
-    -  http://www.stat.cmu.edu/~cshalizi/mreg/15/
+    -  [2019 Truth About Linear Regression] (http://www.stat.cmu.edu/~cshalizi/TALR/) -deeper/more explanatory. By Ch 11, use of gradient f, matrix derviatives ....
+    -  Shalizi-2021: Advanced Data Analysis From Elem Point of View:
+        <http://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/ADAfaEPoV.pdf>
+    -  <http://www.stat.cmu.edu/~cshalizi/mreg/15/>
 -  Davidson (Econometric) -  Ch 1, 2
 - [ISLRv2:](https://web.stanford.edu/~hastie/ISLRv2_website.pdf)
 		-	videos: <https://www.youtube.com/c/R4DSOnlineLearningCommunity>
