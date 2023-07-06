@@ -143,15 +143,15 @@ only)
 *   Navarro: Ch 15 <https://learningstatisticswithr.com/>
 *   Navarro: (Ch 15 regression)https://learningstatisticswithr.com/lsr-0.6.pdf
 *   residuals, geometry <https://socialsciences.mcmaster.ca/jfox/Papers/matlib-useR2016.pdf>
+*   matlib (vectors):  https://cran.r-project.org/web/packages/matlib/index.html
 *   https://github.com/friendly/matlib/
 *   Shalizi [2019 Truth About Linear Regression] (http://www.stat.cmu.edu/~cshalizi/TALR/) -deeper/more explanatory. By Ch 11, use of gradient f, matrix derviatives ....
 *  Kuiper, Shonda: linear algebra simple, clear:   video: https://www.youtube.com/watch?v=jQkK0XMrAdM
 *  Race, Shaina gentle intro to lin alg:, https://shainarace.github.io/LinearAlgebra/index.html 
 *  Videos - Cohort 05: https://www.youtube.com/playlist?list=PL3x6DOfs2NGjbefZellBVB306_z8Wz1Xd
 
-
 *  Roback: LINE:  <https://bookdown.org/roback/bookdown-BeyondMLR/ch-MLRreview.html#assumptions-for-linear-least-squares-regression>
-
+<https://socialsciences.mcmaster.ca/jfox/Papers/matlib-useR2016.pdf>
 
 
 *   Friendly... (adv) geometry and statistical methods <https://bityl.co/JdSp>
