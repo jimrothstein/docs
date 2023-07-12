@@ -59,10 +59,10 @@ file <- "001_R_stats_tech_reading.md"
 --pdf-engine=xelatex
 
 REF:
-https://learnbyexample.github.io/tutorial/ebook-generation/customizing-pandoc/
+<https://learnbyexample.github.io/tutorial/ebook-generation/customizing-pandoc/>
 
 MARKDOWN GUIDE:
-https://www.markdownguide.org/basic-syntax/
+<https://www.markdownguide.org/basic-syntax/>
 
 vim: to format all urls for md
 s/https.*/[&]()/g
@@ -74,7 +74,7 @@ As of \today
 Use \href{url}{text}
 ```
 ### Recents 
--   Bruno, Modern Stats with Tidyverse (Bruno)Bruno Rodrigues http://modern-rstats.eu/ (web)
+-   Bruno, Modern Stats with Tidyverse (Bruno)Bruno Rodrigues <http://modern-rstats.eu/> (web)
 only)
 -   [Scott, DS with R, Gentle Intro ](https://bookdown.org/jgscott/DSGI/)
 -   [Keyes, R Without Statistics](https://book.rwithoutstatistics.com/index.html)
@@ -85,10 +85,10 @@ only)
 
 
 ###	BookClub
-- Janssens, DS at Command Line: https://www.datascienceatthecommandline.com/2e/
-- Hadley, https://mastering-shiny.org/
-- R, javascript + shiny https://book.javascript-for-r.com/
-- HTTP Testing (book) https://books.ropensci.org/http-testing/  
+- Janssens, DS at Command Line: <https://www.datascienceatthecommandline.com/2e/>
+- Hadley, <https://mastering-shiny.org/>
+- R, javascript + shiny <https://book.javascript-for-r.com/>
+- HTTP Testing (book) <https://books.ropensci.org/http-testing/>
 - [Deisenroth, et al  Math for ML ] <https://mml-book.github.io/book/mml-book.pdf>
 - [Chan, Intro Probability for DS](https://probability4datascience.com/index.html)
 
@@ -97,45 +97,44 @@ only)
   *  Burns, R Inferno (not intro book)
   *  Peng, <https://bookdown.org/rdpeng/rprogdatascience/>
 	*  Peng, <https://bookdown.org/rdpeng/RProgDA/>
-  *  Hadley, https://r4ds.had.co.nz/index.html
+  *  Hadley, <https://r4ds.had.co.nz/index.html>
   *	 [Jennybc (book)](https://stat545.com/index.html) [wtf](https://rstats.wtf/) [git](https://happygitwithr.com/)
-  *  Gillespie, Lovelace (2016) https://bookdown.org/csgillespie/efficientR/
+  *  Gillespie, Lovelace (2016) <https://bookdown.org/csgillespie/efficientR/>
   *  Matloff:  Art of R Programming (2011)
   *  Matloff: <https://github.com/matloff/TidyverseSkeptic>
-  *  de Jong, Intro to Data Cleaning  https://cran.r-project.org/doc/contrib/de_Jonge+van_der_Loo-Introduction_to_data_cleaning_with_R.pdf
--	Grolemund,  2014 https://rstudio-education.github.io/hopr/
+  *  de Jong, Intro to Data Cleaning  <https://cran.r-project.org/doc/contrib/de_Jonge+van_der_Loo-Introduction_to_data_cleaning_with_R.pdf>
+-	Grolemund,  2014 <https://rstudio-education.github.io/hopr/>
   
 
 ### R - Documentation (can beat searching !)
 	
-*  official R CRAN: https://cran.r-project.org/manuals.html
-	-	R intro:  https://cran.r-project.org/doc/manuals/r-release/R-intro.html
-	-	R Lang:	https://cran.r-project.org/doc/manuals/r-release/R-lang.html
--	 design.tidyverse.org
+*  official R CRAN: <https://cran.r-project.org/manuals.html>
+	-	R intro:  <https://cran.r-project.org/doc/manuals/r-release/R-intro.html>
+	-	R Lang:	<https://cran.r-project.org/doc/manuals/r-release/R-lang.html>
+-	 <https://design.tidyverse.org>
 -   [ethz](https://stat.ethz.ch/R-manual/R-devel/library/)
 
+### R - graphics (base:: is main package)
 
-###	R - graphics (base:: is main package)
-
-    *   https://rdrr.io/r/graphics/par.html
-    *   R intro			-	Ch 12:	https://cran.r-project.org/doc/manuals/r-release/R-intro.html#Graphics	
-    *   internals - Ch 6 graphics (lower level)
-    *   base Idiot's guide  https://rstudio-pubs-static.s3.amazonaws.com/7953_4e3efd5b9415444ca065b1167862c349.html
-    *   shipunov - visual statistics, use? (https://stats.libretexts.org/Bookshelves/Introductory_Statistics/Book%3A_Visual_Statistics_Use_R_(Shipunov))
+-    <https://rdrr.io/r/graphics/par.html>
+*   R intro Ch 12:	<https://cran.r-project.org/doc/manuals/r-release/R-intro.html#Graphics>
+*   internals - Ch 6 graphics (lower level)
+*   base Idiot's guide:  <https://rstudio-pubs-static.s3.amazonaws.com/7953_4e3efd5b9415444ca065b1167862c349.html>
+*   shipunov - visual statistics, use? <https://stats.libretexts.org/Bookshelves/Introductory_Statistics/Book%3A_Visual_Statistics_Use_R_(Shipunov)>
 
 ### Basic Statistics
 
 
 #### More Intuitive/Explanatory:
 
-  *  [Rossman, know all the basics?   confident?]  ( https://askgoodquestions.blog/ )
-  *  Przemyslaw Biecek and Tomasz Burzykowski | different ideas | Ch1, 2 Explanatory Model Analysis | https://ema.drwhy.ai/
+  *  [Rossman, know all the basics?   confident? ASK GOOD Q]( https://askgoodquestions.blog/)
+  *  Przemyslaw Biecek and Tomasz Burzykowski | different ideas | Ch1, 2 Explanatory Model Analysis | <https://ema.drwhy.ai/>
   *  [ML Berkeley:](https://ml.berkeley.edu/blog/posts/crash-course/part-1/)
-  *  Goodfellow et al: https://www.deeplearningbook.org/ ideas
-  *  Guo:  Creative site and book: https://seeing-theory.brown.edu/#firstPage
+  *  Goodfellow et al: <https://www.deeplearningbook.org/> ideas
+  *  Guo:  Creative site and book: <https://seeing-theory.brown.edu/#firstPage>
   *  navarro (learn statistics with r) review lm() and geometric r^2, Ch15, 16
   *  navarro  2019 (learn statistics with r) study output of lm()
-	*  Huntington https://www.theeffectbook.net/index.html (intutition?)
+	*  Huntington <https://www.theeffectbook.net/index.html> (intutition?)
 *   Taylor, J "Introduction to Error Analysis - 2nd" unique book, error
 propogation and calculations.
 
@@ -143,12 +142,11 @@ propogation and calculations.
 *   [Gagolewski Lightweight ML with R](https://lmlcr.gagolewski.com/) iPad
 *   <https://cran.r-project.org/doc/contrib/Faraway-PRA.pdf> linear algebra
 *   Navarro: Ch 15 <https://learningstatisticswithr.com/>
-*   Navarro: (Ch 15 regression)https://learningstatisticswithr.com/lsr-0.6.pdf
 *   residuals, geometry <https://socialsciences.mcmaster.ca/jfox/Papers/matlib-useR2016.pdf>
 *   matlib (vectors):  https://cran.r-project.org/web/packages/matlib/index.html
 *   https://github.com/friendly/matlib/
 *   Shalizi [2019 Truth About Linear Regression] (http://www.stat.cmu.edu/~cshalizi/TALR/) -deeper/more explanatory. By Ch 11, use of gradient f, matrix derviatives ....
-*  Kuiper, Shonda: linear algebra simple, clear:   video: https://www.youtube.com/watch?v=jQkK0XMrAdM
+*  Kuiper, Shonda: linear algebra simple, clear:   video: <https://www.youtube.com/watch?v=jQkK0XMrAdM>
 *  Race, Shaina gentle intro to lin alg:, < https://shainarace.github.io/LinearAlgebra/index.html  >
 *  Videos - Cohort 05: https://www.youtube.com/playlist?list=PL3x6DOfs2NGjbefZellBVB306_z8Wz1Xd
 
@@ -162,11 +160,11 @@ propogation and calculations.
 #### Solid, basic stats intros
   *  Matloff (Prob book) <https://github.com/matloff/probstatbook/blob/master/ProbStatBookW21.pdf>
   *  PSU Course begin with 414 | | no R
-    *   https://online.stat.psu.edu/stat414/
-    *   https://online.stat.psu.edu/stat462/
-    *   https://online.stat.psu.edu/stat415/
+    *   <https://online.stat.psu.edu/stat414/>
+    *   <https://online.stat.psu.edu/stat462/>
+    *   <https://online.stat.psu.edu/stat415/>
   *	 AMS Basic, good intro CLT (but not t)
-  *  Dekking, et al Modern Introduction to Probability & Statistics (2005), no R. https://cis.temple.edu/~latecki/Courses/CIS2033-Spring13/Modern_intro_probability_statistics_Dekking05.pdf
+  *  Dekking, et al Modern Introduction to Probability & Statistics (2005), no R. <https://cis.temple.edu/~latecki/Courses/CIS2033-Spring13/Modern_intro_probability_statistics_Dekking05.pdf>
   *  Frey, Bruce "Statistical Hacks"
   *  [Dalpiaz, David, Univ of IL] ( https://daviddalpiaz.github.io/appliedstats/ )
   *  Lindelov:  Concise R examples of common stat tests.
@@ -181,7 +179,7 @@ propogation and calculations.
 		-	videos: https://www.youtube.com/c/R4DSOnlineLearningCommunity  
 
 ####	Blogs
-  -  https://towardsdatascience.com
+  -  <https://towardsdatascience.com>
   -  R-Blogger
 	-  \url{https://rweekly.org/}{rweekly.org}
 	-	 https://www.rstudio.com/blog/software-development-resources-for-data-scientists/
@@ -192,15 +190,15 @@ propogation and calculations.
   *  Chambers (2008) "Statistics & Computing" (much coverage of R internals)
 	\url{https://files.slack.com/files-pri/T6UC1DKJQ-F016BP8QPMG/download/john-chambers-software-for-data-analysis-programming-with-r.pdf?origin_team=T6UC1DKJQ}
   *  Gaslam, Brodie - blog - several good posts
-    *   NSE:  https://www.brodieg.com/2020/05/05/on-nse/
-    *   HP Calculator & Reverse Polish!  https://www.brodieg.com/2019/01/11/reverse-polish-notation-parsing-in-r/
-    *   Side Effects, Macros:  https://www.brodieg.com/2019/10/30/visualizing-algorithms/
-  * Gupta, Suraj - How R Finds objects: https://blog.obeautifulcode.com/R/How-R-Searches-And-Finds-Stuff/
-  * Rnews - Lumley, Macros in R:   https://www.r-project.org/doc/Rnews/Rnews_2001-3.pdf
+    *   NSE:  <https://www.brodieg.com/2020/05/05/on-nse/>
+    *   HP Calculator & Reverse Polish!  <https://www.brodieg.com/2019/01/11/reverse-polish-notation-parsing-in-r/>
+    *   Side Effects, Macros:  <https://www.brodieg.com/2019/10/30/visualizing-algorithms/>
+  * Gupta, Suraj - <How R Finds objects: https://blog.obeautifulcode.com/R/How-R-Searches-And-Finds-Stuff/>
+  * Rnews - Lumley, Macros in R:   <https://www.r-project.org/doc/Rnews/Rnews_2001-3.pdf>
   * Rnews - 2001-2008 has lot of good articles
--	rlist use functional ideas with lists:  https://renkun-ken.github.io/rlist/
-- tutorial for rlist:  https://renkun-ken.github.io/rlist-tutorial/
-- Gatto:  https://github.com/lgatto/TeachingMaterial/blob/master/_R-functional-programming/functional-programming.pdf
+-	rlist use functional ideas with lists:  <https://renkun-ken.github.io/rlist/>
+- tutorial for rlist:  <https://renkun-ken.github.io/rlist-tutorial/>
+- Gatto:  <https://github.com/lgatto/TeachingMaterial/blob/master/_R-functional-programming/functional-programming.pdf>
 
 #### Haskell
 -	fairly gentle Haskell intro: https://www.cantab.net/users/antoni.diller/haskell/units/unit02.html
@@ -208,13 +206,13 @@ propogation and calculations.
 
 ### Other book stats/R books:
 
-  *  Hannay (=rbassett) read, (avoid pkgs ch 11, 12) | https://faculty.nps.edu/rbassett/_book/
+  *  Hannay (=rbassett) read, (avoid pkgs ch 11, 12) | <https://faculty.nps.edu/rbassett/_book/>
   *  Ismay modern dive (2020)
-  *  Kaplan (2017) ch 6.5 https://dtkaplan.github.io/SM2-bookdown/  (wordy,
+  *  Kaplan (2017) ch 6.5 <https://dtkaplan.github.io/SM2-bookdown/>  (wordy,
 	but exposes nuances)
   *	 Matloff(2020) book
   *	 Mcelreath (videos)
-  *	 PENG  | 	art of ... (2017) ch 6.5 ( https://bookdown.org/rdpeng/artofdatascience/) | r4ds			 (2019)	ch 9.5
+  *	 PENG  | 	art of ... (2017) ch 6.5  <https://bookdown.org/rdpeng/artofdatascience/> | r4ds			 (2019)	ch 9.5
   * 	mosaic ch 5.6, ch 24
 
 ### More advanced regession/modeling books
