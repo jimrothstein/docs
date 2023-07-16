@@ -5,10 +5,15 @@ date: "5/22/2021"
 pdf-engine: lualatex
 format:
     html:
+        code-fold: true
         toc: true
         html-math-method: katex
         css: styles.css
         embed-resources: true ## if standalone, all 1 file 
+        code-block-bg: true            # chunk outputs 
+        code-block-border-left: "#31BAE9"       
+        indent: true
+     
 output-dir: docs            ## NO indent, also _quarto.yml for entier project
 editor_options: 
   chunk_output_type: console
@@ -19,16 +24,54 @@ execute:
   standalone: true
 ---
 
-PURPOSE:   Collect of HTML and PDF inline commands
-to control output
-NOTE:      No documentation here
+```{}
+```
 
-##  Quarto:    Examples for HTML,  PDF
+```{=html}
+<style>
+
+#title-block-header {
+  margin-block-end: 1rem;
+  position: relative;
+  margin-top: -1px;
+  height: 75px;
+}
+.quarto-title-banner {
+  margin-block-end: 1rem;
+  position: relative;
+  margin-top: -30px;
+  height: 85%;
+}
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;
+  text-align: center;
+}
+
+</style>
+```
+::: myDiv
+PURPOSE: Collect of HTML and PDF inline commands to control output
+
+NOTE: No documentation here
+:::
+
+## Quarto: Examples for HTML, PDF {style="color: lime"}
 
 ***
-###  Draw Line above and below + create toc entry (level 3)
-***
 
+------------------------------------------------------------------------
+
+<font size="1"> Very small </font>
+
+
+### Inline {style="color: black"}
+
+We can apply styles to a sentence or a word by creating spans using `[]` to surround the sentence or word that we want to style and use `{}` to define the style that we want to apply. For example,
+
+The color of this word is [red]{style="color: red;"}. And [this line has a yellow background]{style="background-color: yellow"}.
+
+------------------------------------------------------------------------
 
 Create a footnote: [^1]
 
@@ -36,23 +79,21 @@ Create a footnote: [^1]
 
 ::: {.content-visible when-format="html"}
 :::
-***
 
-```
-<!--
-{{< include _future_work.qmd >}}
--->
+------------------------------------------------------------------------
 
-***
-::: {.content-visible when-format="html"}
+::: callout-note
+future callout note!
 :::
+
+```{r}
+head(mtcars, n=2)
+```         
+
 ***
-
-##  PDF
-
-
 
 ::: {.content-visible when-format="pdf"}
+
 TODO pdf - fix greater than equa
   pdf: 
     toc: false
@@ -63,17 +104,39 @@ TODO pdf - fix greater than equa
         \usepackage{lipsum}
 :::
 
-***
-
 
 ::: {.content-visible when-format="pdf"}
-Will only appear in HTML.
+Will only appear in PDF.
 \renewcommand{\familydefault}{\sfdefault}
 \section{R Definitions \& Examples   (TERSE)}
 \section{Manuals}
 \\section(Definitions}
 :::
 
+
 ***
 
 ```
+create class "myColor" | use in paragraph | and div block| 
+```
+
+<style>
+
+.myColor {
+  color:blue;
+}
+</style>
+
+<p class="myColor"> myColor  </p>
+
+::: {class="myColor"}
+{{< include _future_work.qmd >}}
+:::
+
+***
+
+::: {.content-visible when-format="html"}
+
+HTML
+:::
+
