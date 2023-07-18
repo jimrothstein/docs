@@ -617,6 +617,11 @@ section{Lenovo Laptop}
 
 }
 
+17JULY2023 - ebook-viewer (calibre) has conflict with caps:swapescape, can not figure out
+        REF:  <https://wiki.archlinux.org/title/Xorg/Keyboard_configuration>
+FIX:   now using **setxkbmap -option caps:escape (in .xinitrc) **
+DEPRECATES anything before 17JULY 2023
+
 ###	xxd 
 
 {
@@ -639,10 +644,12 @@ action.
 #		-	SEE  tech_notes
 #		- lots of ways to do this remap. This works, stay with it: 
 #
-xmodmap -e "keycode 133 = Escape"
+DEPRECTED:
 
+xmodmap -e "keycode 133 = Escape"
 Lenovo: capslock keycode = 66,  and escape is 9.  However, capslock still insisting on going in caps lock (UPPER CASE)
 setkbmap seems to suggest using caps:swapescape and not caps:escape, but xmodmap won't accept.
+
 }
 
 ####	cron job, crontab
