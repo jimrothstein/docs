@@ -42,7 +42,7 @@ execute:
   error: true
   cache: true
   output-dir: docs
-  standalone: true 
+  #  standalone: true 
   collapse: true
 
   

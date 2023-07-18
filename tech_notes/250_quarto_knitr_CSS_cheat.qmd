@@ -3,6 +3,7 @@ title: "250_quarto_cheat.qmd "
 author: "JR"
 date: today 
 pdf-engine: lualatex
+#format:  revealjs       # works, but only one format: at a time (?)
 format:
     html:
         code-fold: true
@@ -14,7 +15,8 @@ format:
         code-block-border-left: "#31BAE9"       
         indent: true
         number-sections: true
-     
+        code-link: true             # hyperlink R functions
+        reference-location: margin
 output-dir: docs            ## NO indent, also _quarto.yml for entier project
 editor_options: 
   chunk_output_type: console
@@ -122,7 +124,9 @@ The color of this word is [red]{style="color: red;"}. And [this line has a yello
 
 ------------------------------------------------------------------------
 
-### Create a footnote: [^1]
+### Create a footnote: 
+
+Need footnote one here: [^1]
 
 [^1]: This is footnote one.
 
@@ -137,8 +141,19 @@ future callout note!
 :::
 
 ```{r}
+#| label: mtcars
 head(mtcars, n=2)
 ```         
+
+### Display code and chunk options
+```{r}
+#| label: example
+#| code-line-numbers: "|5|6"
+#| echo: fenced # shows these options in output
+x  <- 1
+y  <- 2
+x+y
+```
 
 ***
 
@@ -190,6 +205,7 @@ create class "myColor" | use in paragraph | and div block|
 
 HTML
 :::
+    
  ***
 
 ## Acknowledgments {.appendix}
@@ -230,6 +246,15 @@ col = function(text, color){           # <1>
 
 `r col("Is this red", "red")`
  
+***
+
+### Fancy Theorems 
+::: {.column-margin}
+We know from *the first fundamental theorem of calculus* that for $x$ in $[a, b]$:
+
+$$\frac{d}{dx}\left( \int_{a}^{x} f(u)\,du\right)=f(x).$$
+:::
+
 ***
 
 ### Custom Blocks (rmarkdown-9.6)
