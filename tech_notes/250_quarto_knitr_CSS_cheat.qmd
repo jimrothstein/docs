@@ -87,7 +87,7 @@ PURPOSE: Collect of HTML and PDF inline commands to control output
 
     markdown does NOT offer all tools (ex: change color)
     best to avoid direct HTML insertion, use tools:
-*   knitr:: can be useful
+*   knitr:: can be useful   functions: <https://cran.r-project.org/web/packages/knitr/knitr.pdf>
 *   rmarkdown cookbook: <https://bookdown.org/yihui/rmarkdown-cookbook/>
 *   markdown:: adds to rmarkdown: <link>
 *   Mimi:  videos
