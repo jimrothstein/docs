@@ -45,6 +45,8 @@ on INDEX C).  Math, R, probability and stats notes **do NOT go here*
 
 ##  {X11, Wayland, video}
 
+**Warning:**  Stay with X11 (proven, well-supported, works)
+
 Wayland is open source \textit{protocol} replacement for X windows, (widgets
 says get graphics from X or Wayland).
 WESTON is reference implementation.
@@ -82,7 +84,7 @@ kernel.
 
 
 
-  HTML [to produce HTML with pandoc, all latex is IGNORED.]  
+(pre-Quarto !)  HTML [to produce HTML with pandoc, all latex is IGNORED.]  
 
 I do **not** know how to create fancy HTML files from knitr, pandoc.
 
@@ -101,8 +103,6 @@ I do **not** know how to create fancy HTML files from knitr, pandoc.
 -	Try verbatum; process as a markdown.
 pandoc balks at processing straight text if it thinks it sees markdown.
 If lucky, !pandoc % -o file.pdf will work.
-
-
 
 ###  section{LATEX NOTES}
 
@@ -168,6 +168,9 @@ $$\pi = \directlua{tex.sprint(math.pi)}$$
 
 
 ##	GIT commands   SEE INDEX Cars
+HEAD - can point to branch (tip) or a commit (detached HEAD). Commits are
+immutable. HEADS can move around.
+
 
 ***
 
@@ -548,6 +551,10 @@ Non-capturing groups are great if you are trying to capture many different
 things and there are some groups you don't want to capture. 
 
 ## LINUX/ZSH notes
+
+21-July-2023:   Rumors, Linux Mint (now based upon Ubuntu/Canonical ) may be moving to **LMDE** (Linux Mint Debian Edition)
+Why?  some issues with Canonical?  Claims that LMDE much firmer ground; Mint will also then be more independent.
+
 
 Wed May 25 20:22:20 PDT 2022
 	-	run GallumOS 18.04
