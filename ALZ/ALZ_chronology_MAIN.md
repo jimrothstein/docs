@@ -682,19 +682,26 @@ Conclude:   We wind up EXACTLY where started with Kallery and which she rejected
     -   to abuse legal process.
 4.  You must Verify every claim. Challenge every financial claim.
 5.  If you are uncertain, read the police reports; civil and family court
-files; her motions and Appeals.  ALZ adores the legal process, pro se or with
+files; her motions and Appeals.  ALZ appears to enjoy the legal process, pro se or with
 private counsel;  Decades of data.  Do not be fooled by court appearances.
 6.  Document, document, even small infractions.  She chips away; but makes few
     big mistakes.   If you do not document, there will be a mountain of bad
 behavior but no `violations.`  (see how Angie Donhoo documented)
 6.  Watch for one important ALZ error:  The lies do not stand up to slightest scrutiny. If
     you do not check, she will skate by and so usually does so.  As I found in
-my case, the lies last long enough to fool judge, but unwind
-with a phone call or two.  Within 24 hours, the lies are felonies.   Doubt I am
+my case, the lies last long enough to fool judge.  With modicum of effort, her claims  rapidly unwind, leaving nothing but fables and felonies.
+
+  Doubt I am
 the only such victim.
 7.  Talk to people who were not fooled (most are).  AG Kallery or PO Angie Donahoo (Yamhill County)
 
 
+## 2023-07-20  "NULLITY"
+x-Lawyer (retired) Jim ?? (prop 114 - gun control), met at Downtown Club, says:
+    *   use affidavid (just what I told him)
+    *   she's prison, probation violation etc.
+    *   Nullity is NOT an appeal; it means it never should have happened in first place.
+    *   Even though I was previously rejected under Civil Procedure, fraud, he said to submit it again.
 
 
 
