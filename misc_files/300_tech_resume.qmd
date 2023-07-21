@@ -1,10 +1,12 @@
 ---
 format:   
     html:
-        toc: false 
+        toc: true 
         toc_depth: 2
         toc_float: true
         embed-resources: true
+        css:  styles.css
+        code-link:  true   # useful?
 #     pdf:   
 #         latex_engine: lualatex  
 #         toc: false
@@ -13,6 +15,7 @@ execute:
         error: true
         collapse: true
         output-dir: docs 
+        standalone: true
 ---
 
 # jim Rothstein	
@@ -25,6 +28,9 @@ execute:
 
 ------
 
+::: callout-note
+DRAFT
+:::
 
 ### Technical {#technical}
 
@@ -33,13 +39,18 @@ execute:
 1.	Git/Github
 1.  Latex, knitr, pandoc, quarto
 1.	Rstudio/Neovim
-1.  Lua
+1.  Lua - used to configure neovim, plugins including Nvim-R
 1.	Linux
 
 ------
 
-### Experience {#experience}  
+### Experience/Projects {#experience}  
 
+Youtube API-
+Used `httr` and `httr2` to add/modify playlists.
+
+Bookmarks (firefox) -
+Used `rrapply` , `tidyr` to unravel bookmarks in tree/json format to table.
 
 Contribute R Github projects 
 

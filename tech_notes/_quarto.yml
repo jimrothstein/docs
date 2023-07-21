@@ -1,3 +1,4 @@
+#  ~/code/docs/tech_notes/_quarto.yml
 project:
   type: website
   output-dir:  docs
