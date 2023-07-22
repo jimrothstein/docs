@@ -33,6 +33,8 @@ execute:
     -   Break this document into separate files, merge into one big one?
 
 ##  CHANGES:
+-  22-July-2023 LinuxMint upgrade  to 21.2 'victoria' via menu: upgrade, no issues.
+                version: /etc/linuxmint/info 
     -  18APR 2023  LinuxMint .. removed Timeshift program and all files (it retains
       daily/weekly/ image of drive) and fills root (\) partition in no time.
 
