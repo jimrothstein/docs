@@ -46,11 +46,13 @@ DRAFT
 
 ### Experience/Projects {#experience}  
 
-Youtube API-
-Used `httr` and `httr2` to add/modify playlists.
+Used youtube API and `httr` and `httr2` to add/modify playlists.
 
-Bookmarks (firefox) -
-Used `rrapply` , `tidyr` to unravel bookmarks in tree/json format to table.
+Used `rrapply` , `tidyr` to unravel firefox bookmarks in tree/json format to table.
+
+java - taught introductory class overseas
+
+database - commerical real estate finanicals (paradox), order tracking (paradox), bank risk management tool (ms access)
 
 Contribute R Github projects 
 
@@ -69,3 +71,16 @@ Variety database, programming projects
 Jim Rothstein	 -- [jimrothstein@gmail.com](jimrothstein@gmail.com) -- (831) 824-4304
 
 ------
+
+Buzz Words
+CSS
+datbase, ms access, paradox, 
+git, github
+IDE: neovim, rstudio
+java
+linux (Ubuntu, Linux Mint, Debian)
+lua (to configure neovim)
+quarto
+shiny
+R:  dplyr, tidyr, data.table, knitr, data.table, httr, 
+zsh, scripts

@@ -1,8 +1,9 @@
 #  ~/code/docs/tech_notes/_quarto.yml
+# REF:  https://quarto.org/docs/reference/projects/options.html
 project:
-  type: website
+  type: website  # default, website or book
   output-dir:  docs
-  render:                             ## limit dir? 
+  render:                             ## limit dir?  # default, render all files
 #     - "018.2_abstract_syntax_tree.qmd"
 #     - "410_bquote_example.qmd"
 #     - "250_quarto_cheat.qmd"
