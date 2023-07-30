@@ -34,53 +34,41 @@ DRAFT
 
 ### Technical {#technical}
 
-1.	R, packages, httr2, tidyverse, data.table, etc
+1.	R, packages, httr2, tidyverse/wrangle, data.table, shiny, quarto (some SCSS), plots (base + ggplot2)
 1.  API	
-1.	Git/Github
-1.  Latex, knitr, pandoc, quarto
+1.	Git/Github -  PR, merging
+1.  Latex, katex, knitr, pandoc, quarto
 1.	Rstudio/Neovim
 1.  Lua - used to configure neovim, plugins including Nvim-R
-1.	Linux
+1.  Zsh Shell - scripts, regex, configuration
+1.	Linux (Debian, LinuxMint, Ubuntu)
 
 ------
 
 ### Experience/Projects {#experience}  
 
-Used youtube API and `httr` and `httr2` to add/modify playlists.
+*   Used youtube API and `httr` and `httr2` to add/modify playlists.
 
-Used `rrapply` , `tidyr` to unravel firefox bookmarks in tree/json format to table.
+*   Used `rrapply` , `tidyr` to unravel firefox bookmarks in tree/json format to table.
 
-java - taught introductory class overseas
+*   `java` - taught introductory class overseas
 
-database - commerical real estate finanicals (paradox), order tracking (paradox), bank risk management tool (ms access)
+*   database - commerical real estate property financials (paradox), order tracking (paradox), bank risk management tool (ms access)
 
-Contribute R Github projects 
+*   Contribute R Github projects 
 
 [https://github.com/jimrothstein](https://github.com/jimrothstein)  
 [https://jimrothstein.github.io/](https://jimrothstein.github.io)
 
-Variety database, programming projects 
 
 ------
 
 ###	Education {#education}
 	BS MIT, physics
 
-### Footer {#footer}
+###  {#footer}
 
 Jim Rothstein	 -- [jimrothstein@gmail.com](jimrothstein@gmail.com) -- (831) 824-4304
 
 ------
 
-Buzz Words
-CSS
-datbase, ms access, paradox, 
-git, github
-IDE: neovim, rstudio
-java
-linux (Ubuntu, Linux Mint, Debian)
-lua (to configure neovim)
-quarto
-shiny
-R:  dplyr, tidyr, data.table, knitr, data.table, httr, 
-zsh, scripts
