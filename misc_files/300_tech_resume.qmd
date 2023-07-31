@@ -32,6 +32,9 @@ execute:
 DRAFT
 :::
 
+
+### Seeking position primarily R coding.    Some preference for data.table, but open.   
+
 ### Technical {#technical}
 
 1.	R, packages, httr2, tidyverse/wrangle, data.table, shiny, quarto (some SCSS), plots (base + ggplot2)
