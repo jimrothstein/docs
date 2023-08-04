@@ -695,6 +695,26 @@ my case, the lies last long enough to fool judge.  With modicum of effort, her c
 the only such victim.
 7.  Talk to people who were not fooled (most are).  AG Kallery or PO Angie Donahoo (Yamhill County)
 
+### 2023-08-03
+1.  Why/who allowed ALZ into Vet Court?  Who thought it would do anything?
+2.  Define "tough".  But when late payments ('deliquent', but not for covid),
+    lies to Judge, clearly still feels victim; still running 'hotel', DA does
+zero.   Why?  What purpose did that serve?
+3.  Explain how 11 days after VET Court:  DUI;  and 2 months "overdose " and hospitalization.
+4.  Why allow endless filings in domestic matter?   NO school/NO work, is this how probation works?  
+5.  Did you notice how many children she tried to become parent to?
+5.  Why didn't you enforce stipulated agreement on these matters?
+6.  Why no PO reports like Angie Donahoo; 
+7.  Why allow this kind of behavior, while on supervised probation!
+8.  Why do you allow financial claims, knowing the mother holds the assets??
+
+**Explain why Sean Kallery removed?  Didn't even care ?**
+**How to justify DA conduct ?   Were you asleep?**
+**Is everything defense counsel asks for is granted?**
+You ignored so many warnings;  you failed to communicate any of this to victim.
+
+
+
 
 ## 2023-07-20  "NULLITY"
 x-Lawyer (retired) Jim ?? (prop 114 - gun control), met at Downtown Club, says:
@@ -702,6 +722,5 @@ x-Lawyer (retired) Jim ?? (prop 114 - gun control), met at Downtown Club, says:
     *   she's prison, probation violation etc.
     *   Nullity is NOT an appeal; it means it never should have happened in first place.
     *   Even though I was previously rejected under Civil Procedure, fraud, he said to submit it again.
-
 
 
