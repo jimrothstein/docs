@@ -70,7 +70,7 @@ As of Thu May 26 14:03:01 PDT 2022
 Respondent (TIM) lists 
 -`Amrik Singh Gahlla
 -	Cheyenne Singh Gahlla
-
+kidney
 -	19JUL2022 - Ltr from ZEH, Suzzanne (ak Suzanne ERNSDORF) NPI 1508052481
 	-	See PHOTO.
 	-	ALZ now doing wonderful; has  (or had?) counseler (BEAVIS, Wendy - 971-701-3327, NPI 1548835473; no Medicare)
@@ -97,7 +97,7 @@ Respondent (TIM) lists
 	Marriage 13DEC2021 to Amrik Gahlla, age 28,   Seeks return of former name:
 	**Cheyenne Autumn Lynn Williams** Pet is CHE, fees waived.   I see ALZ
 	handwriting.  Payment made:  DRD1 $301.  (who paid?)
-
+kidney
 - DNS raids ALZ home.
 
 }
@@ -724,3 +724,9 @@ x-Lawyer (retired) Jim ?? (prop 114 - gun control), met at Downtown Club, says:
     *   Even though I was previously rejected under Civil Procedure, fraud, he said to submit it again.
 
 
+## 2023-08-09 Municipal Court and Legal Dept  (unaware ALZ admitted)
+Muni court seemed to have no info that ALZ admitted probation violation.
+Nor did Legal Dept.   But Legal Dept took information, date of probation revocation, case # and assured me that (1) DUI will still be prosecuted "we have to" (2) will alert prosectutor (still  Nicole) but (3) it is up to prosecutor to decide what to do; to get records; etc.
+
+-   Use Salem Municipal Court:  503-588-6146 (main #)
+-   For Legal Dept & records, same: 503-588-6003 (legal dept)
