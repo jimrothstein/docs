@@ -38,6 +38,11 @@ vim:linebreak:spell:nowrap tw=78 fo=tqlnr foldcolumn=3
 -	Ruth Brown influences Janice Martin.
 -	Chet Atkins (RCA?  A&R) influences many artists.
 
+While so many of us (like me) are spellbound with virtues of the  Trump
+Enterprise thugs, others still passionately debate the merits of two of
+America's very best:   a 40's sex symbol (https://youtu.be/Mq3lCOIY9I8) and
+50's pre-rock-and-roll rocker (https://youtu.be/NIXjInZ0nRM):
+
 ## Jerry Wexler (1917-2008) Bronx
 -	coined "Rythm and Blues" (vs Race)
 -	Billboard journalist, then (1953) Atlantic (with Ahmet Ertegun; 1968 Warner buys)
