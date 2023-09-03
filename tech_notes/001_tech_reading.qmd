@@ -133,7 +133,6 @@ only)
   *  Goodfellow et al: <https://www.deeplearningbook.org/> ideas
   *  Guo:  Creative site and book: <https://seeing-theory.brown.edu/#firstPage>
   *  navarro (learn statistics with r) review lm() and geometric r^2, Ch15, 16
-  *  navarro  2019 (learn statistics with r) study output of lm()
 	*  Huntington <https://www.theeffectbook.net/index.html> (intutition?)
 *   Taylor, J "Introduction to Error Analysis - 2nd" unique book, error
 propogation and calculations.
