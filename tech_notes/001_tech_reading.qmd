@@ -1,24 +1,3 @@
----
-title: "001_tech_reading.qmd"
-author: "JR"
-date: "5/22/2021"
-pdf-engine: lualatex
-format:
-    html:
-        toc: true
-        html-math-method: katex
-        css: styles.css
-        embed-resources: true ## if standalone, all 1 file 
-        code-link: true
-output-dir: docs            ## NO indent, also _quarto.yml for entier project
-editor_options: 
-  chunk_output_type: console
-execute: 
-  error: true                   ## include errors in output
-  warning: true
-  collapse: true
-  standalone: true
----
 
 \footnotesize
 
@@ -29,9 +8,8 @@ template has \small font embedded
 
 <!--
 urls:  for github markdown 
-[link](/uri "title")
-
-<url>
+  [link](/uri "title"),  OR
+  <url>
 -->
 
 
@@ -41,22 +19,21 @@ urls:  for github markdown
 LINK:  [TEXT portion](URL portion)
         <url>
 
-\url{nytimes.com}
+  \url{nytimes.com}
+  \href{url}{text}   url itself does NOT print
+  \href{nytimes.com}{Click: NY Times}
 
-\href{url}{text}   url itself does NOT print
-\href{nytimes.com}{Click: NY Times}
+pandoc:	
+  file <- "001_R_stats_tech_reading.md"
+  !pandoc % -t latex -V linkcolor:blue -V fontsize=10pt -V geometry:margin=0.4in -o ~/Downloads/print_and_delete/reading.pdf 
+  -V toc-title="Read"   is ignored.
 
-file <- "001_R_stats_tech_reading.md"
-!pandoc % -t latex -V linkcolor:blue -V fontsize=10pt -V geometry:margin=0.4in -o ~/Downloads/print_and_delete/reading.pdf 
+  !pandoc % -f markdown --template ~/dotfiles/proposed_template.latex -V geometry:margin=0.4in --toc-depth=4 -V toc-title="Reading" -o out.pdf ; zathura out.pdf
 
--V toc-title="Read"   is ignored.
-
-!pandoc % -f markdown --template ~/dotfiles/proposed_template.latex -V geometry:margin=0.4in --toc-depth=4 -V toc-title="Reading" -o out.pdf ; zathura out.pdf
-
-!pandoc -t latex -M date="`date "+%B %e, %Y"`" -o %.pdf
--H header
--V or --variable
---pdf-engine=xelatex
+  !pandoc -t latex -M date="`date "+%B %e, %Y"`" -o %.pdf
+  -H header
+  -V or --variable
+  --pdf-engine=xelatex
 
 REF:
 <https://learnbyexample.github.io/tutorial/ebook-generation/customizing-pandoc/>
@@ -70,18 +47,69 @@ s/https.*/[&]()/g
 
 As of \today
 
+
+###	Algorithms & ML
+
+-  [Berkeley, excellent glossary:](https://www.stat.berkeley.edu/~stark/SticiGui/Text/gloss.htm)
+-	 Berkeley CRASH
+-	 Chollet, Deep Learning for R (not online, no pdf)  phython versions: 
+-  Compeau:  
+    -	great ideas book! <http://compeau.cbd.cmu.edu/>  
+    -	<http://compeau.cbd.cmu.edu/programming-for-lovers/> cmu -	ch 8, 9 esp collinear.  
+-  Boehmke Hands on ML | <https://bradleyboehmke.github.io/HOML/> Ch 4,5
+-  Chan, Stanley <https://probability4datascience.com/index.html> more math and uses Likelikhood
+-  Deisenroth, Faiesel et al | Math4ML
+  <https://mml-book.github.io/book/mml-book.pdf> *book | linear alg book,
+  regression (Ch 9) related videos
+  <https://www.youtube.com/playlist?list=PLkxomGYFWp67infnvPmEcqyQqk0q6ntrY>
+-  [Gagolewski Lightweight ML with R](https://lmlcr.gagolewski.com/) iPad
+-  Higgens "Practical R Info?" 
+-	 Huntington "The Effect Book"
+-	 mcelreath: <https://github.com/rmcelreath/stat_rethinking_2022> (videos)
+-	 Molnar, "Interpretable ML"
+-	 SciLearn
+-	 Thomas,  Math for ML  ... good lin alg, but quickly gets advanced.  https://gwthomas.github.io/docs/math4ml.pdf
+-	 https://www.tmwr.org/  
+-   Matloff:  ProbStat Book; Ch15.2 - develops logit function
+-   Molnar <https://christophm.github.io/interpretable-ml-book/> Ch 5.2
+  logistical regression  (explanations!) 
+-   UCLA:  Mixed Models - intro:  <https://stats.oarc.ucla.edu/other/mult-pkg/introduction-to-linear-mixed-models/>
+-   Varma: Deep Learning \url{ #### Bayes
+- Wiki: <https://en.wikipedia.org/wiki/Generalized_linear_model#Binary_data>, not easy but through
+-   Leo Breiman 2 cultures: <https://www.jstor.org/stable/2676681>
+-   [Scott, DS with R, Gentle Intro ](https://bookdown.org/jgscott/DSGI/)
+
+
+### Linear Algebra (as mathematics)
+
+  *  Beezer Linear Algebra (easier?)
+  *  Herve Adbi | lin alg| no R, no stat, starts simple but gets to decomposition.
+  *  Strang, Linear Algebra (classic)
+  *  Artin, Michael "Algebra"  - readable ?
+  *	 Friendly - R Pkg linear algebra
+  *  Kazan |  normal equations
+
+
+#### Intro to Linear Alg & Models, 
+
+  *  Kuiper, Shonda: simple, clear:   video: https://www.youtube.com/watch?v=jQkK0XMrAdM
+  *  Race, Shaina gentle intro to lin alg:, https://shainarace.github.io/LinearAlgebra/index.html 
+  *  Thomas, Garrett, Math for ML, Berkeley  https://gwthomas.github.io/docs/math4ml.pdf
+  *  Bendixcarstensen.com, with R & matrix models (practical; try not use api pkg) http://www.bendixcarstensen.com/APC/linalg-notes-BxC.pdf
+  *	 Rafael genomics - Chapter 4 matrix  
+
+### exit
+```{r}
+knitr::knit_exit()
+
 ```
-Use \href{url}{text}
-```
+
 ### Recents 
 -   Bruno, Modern Stats with Tidyverse (Bruno)Bruno Rodrigues <http://modern-rstats.eu/> (web)
 only)
--   [Scott, DS with R, Gentle Intro ](https://bookdown.org/jgscott/DSGI/)
 -   [Keyes, R Without Statistics](https://book.rwithoutstatistics.com/index.html)
 -   Racket:  HTDP <https://htdp.org/2020-5-6/Book/part_prologue.html>
 -   McElreath, fantastic:  <https://www.youtube.com/playlist?list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus>
--   [Gagolewski Lightweight ML with R](https://lmlcr.gagolewski.com/) iPad
--   Leo Breiman 2 cultures: <https://www.jstor.org/stable/2676681>
 
 
 ###	BookClub
@@ -235,25 +263,6 @@ propogation and calculations.
       Biology?  math?  probability?   Think this is really an ideas book; not as easy as may appear.
 
 
-####	Algorithms & ML
--  [Berkeley, excellent glossary:](https://www.stat.berkeley.edu/~stark/SticiGui/Text/gloss.htm)
--	 Berkeley CRASH
--	 Chollet, Deep Learning for R (not online, no pdf)
--  Compeau:  
-		-  great ideas book! http://compeau.cbd.cmu.edu/  
-		-  http://compeau.cbd.cmu.edu/programming-for-lovers/ cmu -	ch 8, 9 esp collinear.  
--  Boehmke Hands on ML | https://bradleyboehmke.github.io/HOML/ Ch 4,5
--  Deisenroth, Faiesel et al | Math4ML *book | linear alg book, regression, 2nd level
--  [Gagolewski Lightweight ML with R](https://lmlcr.gagolewski.com/) iPad
--  Higgens "Practical R Info?" 
--	 Huntington "The Effect Book"
--	 mcelreath: <https://github.com/rmcelreath/stat_rethinking_2022> (videos)
--	 Molnar, "Interpretable ML"
--	 SciLearn
--	 Thomas,  Math for ML  ... good lin alg, but quickly gets advanced.  https://gwthomas.github.io/docs/math4ml.pdf
--	 https://www.tmwr.org/
--  UCLA:  Mixed Models - intro:  https://stats.oarc.ucla.edu/other/mult-pkg/introduction-to-linear-mixed-models/
--	 Varma: Deep Learning \url{ #### Bayes
 
 ###     BAYES
 -	\href{https://arbital.com/p/bayes_rule/}{Arbital, wiki-like}
@@ -301,23 +310,6 @@ Analysis of Data;  more advanced math, some measure}
 	-	HTTP Testing (book) https://books.ropensci.org/http-testing/
 
 
-#### Linear Algebra (as mathematics)
-
-  *  Beezer Linear Algebra (easier?)
-  *  Herve Adbi | lin alg| no R, no stat, starts simple but gets to decomposition.
-  *  Strang, Linear Algebra (classic)
-  *  Artin, Michael "Algebra"  - readable ?
-  *	 Friendly - R Pkg linear algebra
-  *  Kazan |  normal equations
-
-
-#### Intro to Linear Alg & Models, 
-
-  *  Kuiper, Shonda: simple, clear:   video: https://www.youtube.com/watch?v=jQkK0XMrAdM
-  *  Race, Shaina gentle intro to lin alg:, https://shainarace.github.io/LinearAlgebra/index.html 
-  *  Thomas, Garrett, Math for ML, Berkeley  https://gwthomas.github.io/docs/math4ml.pdf
-  *  Bendixcarstensen.com, with R & matrix models (practical; try not use api pkg) http://www.bendixcarstensen.com/APC/linalg-notes-BxC.pdf
-  *	 Rafael genomics - Chapter 4 matrix  
    
 
 ####  Latex (.tex, latex, not knitr, markdown, pandoc)
