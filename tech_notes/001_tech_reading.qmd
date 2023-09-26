@@ -47,12 +47,12 @@ s/https.*/[&]()/g
 
 As of \today
 
-
 ###	Algorithms & ML
 
 -  [Berkeley, excellent glossary:](https://www.stat.berkeley.edu/~stark/SticiGui/Text/gloss.htm)
--	 Berkeley CRASH
--	 Chollet, Deep Learning for R (not online, no pdf)  phython versions: 
+-	 Berkeley CRASH  ML <https://mlberkeley.substack.com/p/part-1>
+-   Leo Breiman 2 cultures: <https://www.jstor.org/stable/2676681>
+-	 Chollet, Deep Learning for R (not online, no pdf)  python: <https://docs.google.com/viewer?a=v&pid=sites&srcid=dW10LmVkdS5wa3xzbmxwfGd4Ojc1ODc1ODY2OTZiOTUzOGQ>
 -  Compeau:  
     -	great ideas book! <http://compeau.cbd.cmu.edu/>  
     -	<http://compeau.cbd.cmu.edu/programming-for-lovers/> cmu -	ch 8, 9 esp collinear.  
@@ -64,19 +64,15 @@ As of \today
   <https://www.youtube.com/playlist?list=PLkxomGYFWp67infnvPmEcqyQqk0q6ntrY>
 -  [Gagolewski Lightweight ML with R](https://lmlcr.gagolewski.com/) iPad
 -  Higgens "Practical R Info?" 
--	 Huntington "The Effect Book"
--	 mcelreath: <https://github.com/rmcelreath/stat_rethinking_2022> (videos)
--	 Molnar, "Interpretable ML"
--	 SciLearn
--	 Thomas,  Math for ML  ... good lin alg, but quickly gets advanced.  https://gwthomas.github.io/docs/math4ml.pdf
--	 https://www.tmwr.org/  
+-   Huntington "The Effect Book" <https://www.theeffectbook.net/index.html>
 -   Matloff:  ProbStat Book; Ch15.2 - develops logit function
--   Molnar <https://christophm.github.io/interpretable-ml-book/> Ch 5.2
-  logistical regression  (explanations!) 
+-  mcelreath: <https://github.com/rmcelreath/stat_rethinking_2022> (videos)
+-   Molnar <https://christophm.github.io/interpretable-ml-book/> Ch 5.2 logistical regression  (explanations!) 
+- Thomas,  Math for ML  ... good lin alg, but quickly gets advanced.  <https://gwthomas.github.io/docs/math4ml.pdf>
 -   UCLA:  Mixed Models - intro:  <https://stats.oarc.ucla.edu/other/mult-pkg/introduction-to-linear-mixed-models/>
 -   Varma: Deep Learning \url{ #### Bayes
 - Wiki: <https://en.wikipedia.org/wiki/Generalized_linear_model#Binary_data>, not easy but through
--   Leo Breiman 2 cultures: <https://www.jstor.org/stable/2676681>
+-	 SciLearn
 -   [Scott, DS with R, Gentle Intro ](https://bookdown.org/jgscott/DSGI/)
 
 
@@ -86,14 +82,14 @@ As of \today
   *  Herve Adbi | lin alg| no R, no stat, starts simple but gets to decomposition.
   *  Strang, Linear Algebra (classic)
   *  Artin, Michael "Algebra"  - readable ?
-  *	 Friendly - R Pkg linear algebra
+  *	 Friendly - R Pkg linear algebra <http://friendly.github.io/matlib/>
   *  Kazan |  normal equations
 
 
 #### Intro to Linear Alg & Models, 
 
-  *  Kuiper, Shonda: simple, clear:   video: https://www.youtube.com/watch?v=jQkK0XMrAdM
-  *  Race, Shaina gentle intro to lin alg:, https://shainarace.github.io/LinearAlgebra/index.html 
+  *  Kuiper, Shonda: simple, clear:   video: <https://www.youtube.com/watch?v=jQkK0XMrAdM>
+  *  Race, Shaina gentle intro to lin alg:, <https://shainarace.github.io/LinearAlgebra/index.html>
   *  Thomas, Garrett, Math for ML, Berkeley  https://gwthomas.github.io/docs/math4ml.pdf
   *  Bendixcarstensen.com, with R & matrix models (practical; try not use api pkg) http://www.bendixcarstensen.com/APC/linalg-notes-BxC.pdf
   *	 Rafael genomics - Chapter 4 matrix  

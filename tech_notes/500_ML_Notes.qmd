@@ -1,0 +1,7 @@
+
+/home/jim/code/docs/tech_notes/500_ML_Notes.qmd
+/home/jim/code/docs/tech_notes/
+
+##  ML Notes
+
+
