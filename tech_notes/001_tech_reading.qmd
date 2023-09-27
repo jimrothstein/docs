@@ -65,7 +65,8 @@ As of \today
 -  [Gagolewski Lightweight ML with R](https://lmlcr.gagolewski.com/) iPad
 -  Higgens "Practical R Info?" 
 -   Huntington "The Effect Book" <https://www.theeffectbook.net/index.html>
--   Matloff:  ProbStat Book; Ch15.2 - develops logit function
+-   Matloff (Prob book) <https://github.com/matloff/probstatbook/blob/master/ProbStatBookW21.pdf> \
+  SEE 15.2 for logistic
 -  mcelreath: <https://github.com/rmcelreath/stat_rethinking_2022> (videos)
 -   Molnar <https://christophm.github.io/interpretable-ml-book/> Ch 5.2 logistical regression  (explanations!) 
 - Thomas,  Math for ML  ... good lin alg, but quickly gets advanced.  <https://gwthomas.github.io/docs/math4ml.pdf>
@@ -93,6 +94,7 @@ As of \today
   *  Thomas, Garrett, Math for ML, Berkeley  https://gwthomas.github.io/docs/math4ml.pdf
   *  Bendixcarstensen.com, with R & matrix models (practical; try not use api pkg) http://www.bendixcarstensen.com/APC/linalg-notes-BxC.pdf
   *	 Rafael genomics - Chapter 4 matrix  
+  *   Gallier,  advanced linear alg <https://www.seas.upenn.edu/~cis5150/linalg-I.pdf>
 
 ### exit
 ```{r}
