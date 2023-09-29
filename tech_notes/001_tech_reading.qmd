@@ -65,25 +65,22 @@ As of \today
 -  [Gagolewski Lightweight ML with R](https://lmlcr.gagolewski.com/) iPad
 -  Higgens "Practical R Info?" 
 -   Huntington "The Effect Book" <https://www.theeffectbook.net/index.html>
+-   Lindholm, "Machine Learning:  A first course for engineers" PDF  more math <http://smlbook.org/>
 -   Matloff (Prob book) <https://github.com/matloff/probstatbook/blob/master/ProbStatBookW21.pdf> \
   SEE 15.2 for logistic
--  mcelreath: <https://github.com/rmcelreath/stat_rethinking_2022> (videos)
--   Molnar <https://christophm.github.io/interpretable-ml-book/> Ch 5.2 logistical regression  (explanations!) 
+- mcelreath: <https://github.com/rmcelreath/stat_rethinking_2022> (videos)
+- Molnar <https://christophm.github.io/interpretable-ml-book/> Ch 5.2 logistical regression  (explanations!) 
+- Random Services <https://www.randomservices.org/random/dist/Transformations.html> 
+- Siegrist: <https://stats.libretexts.org/Bookshelves/Probability_Theory/Probability_Mathematical_Statistics_and_Stochastic_Processes_(Siegrist)/05%3A_Special_Distributions/5.29%3A_The_Logistic_Distribution>
 - Thomas,  Math for ML  ... good lin alg, but quickly gets advanced.  <https://gwthomas.github.io/docs/math4ml.pdf>
--   UCLA:  Mixed Models - intro:  <https://stats.oarc.ucla.edu/other/mult-pkg/introduction-to-linear-mixed-models/>
--   Varma: Deep Learning \url{ #### Bayes
+- UCLA:  Mixed Models - intro:  <https://stats.oarc.ucla.edu/other/mult-pkg/introduction-to-linear-mixed-models/>
+- Varma: Deep Learning \url{ #### Bayes
+- Vasishth: <https://vasishth.github.io/bayescogsci/book/ch-reg.html#sec-logistic>
 - Wiki: <https://en.wikipedia.org/wiki/Generalized_linear_model#Binary_data>, not easy but through
 -	 SciLearn
 -   [Scott, DS with R, Gentle Intro ](https://bookdown.org/jgscott/DSGI/)
 
 
-### Linear Algebra (as mathematics)
-
-  *  Beezer Linear Algebra (easier?)
-  *  Herve Adbi | lin alg| no R, no stat, starts simple but gets to decomposition.
-  *  Strang, Linear Algebra (classic)
-  *  Artin, Michael "Algebra"  - readable ?
-  *	 Friendly - R Pkg linear algebra <http://friendly.github.io/matlib/>
   *  Kazan |  normal equations
 
 
@@ -93,8 +90,37 @@ As of \today
   *  Race, Shaina gentle intro to lin alg:, <https://shainarace.github.io/LinearAlgebra/index.html>
   *  Thomas, Garrett, Math for ML, Berkeley  https://gwthomas.github.io/docs/math4ml.pdf
   *  Bendixcarstensen.com, with R & matrix models (practical; try not use api pkg) http://www.bendixcarstensen.com/APC/linalg-notes-BxC.pdf
-  *	 Rafael genomics - Chapter 4 matrix  
+  *   Rafael genomics - Chapter 4 matrix  (his older stuff is better, but not
+    best organization)
+  *   Rafael, <http://rafalab.dfci.harvard.edu/dsbook-part-2/> (2020?), esp
+    Linear Models and ML chapters
   *   Gallier,  advanced linear alg <https://www.seas.upenn.edu/~cis5150/linalg-I.pdf>
+
+
+#### Logistic Regression (binary response)
+
+$$  
+\Pr(y) \sim \binom{n}{y}\theta^y(1-\theta)^{n-y} 
+$$
+$$
+\Pr(y=1)=\theta=\text{logit}^{-1}(\beta_0+\beta_1x_1+\beta_2x_2+...+\beta_7x_7)
+$$
+ 
+- Prerequisite:	  Ease going from quantile function to CDF, and back. 
+- Difference:   binomial variable, y, =1 and Pr(Y=1) 
+- Difference:   p(y=m | x) conditional class probability vs p(y | x), where m repsents a 'class', given x
+- Model y vs model log-odds (y)
+- Reason for modeling mean
+- Transformations of RV
+
+ SEE  :
+
+-  <https://en.wikipedia.org/wiki/Quantile_function>
+-   Vasishth, 
+- Interpretable ML, Chapter 5.2 
+- <https://stats.stackexchange.com/questions/374452/family-of-glm-represents-the-distribution-of-the-response-variable-or-residuals/374461#374461>
+- <https://www.theanalysisfactor.com/link-functions-and-errors-in-logistic-regression/>
+- <https://www.randomservices.org/random/dist/Transformations.html>
 
 ### exit
 ```{r}
@@ -224,6 +250,14 @@ propogation and calculations.
 -	rlist use functional ideas with lists:  <https://renkun-ken.github.io/rlist/>
 - tutorial for rlist:  <https://renkun-ken.github.io/rlist-tutorial/>
 - Gatto:  <https://github.com/lgatto/TeachingMaterial/blob/master/_R-functional-programming/functional-programming.pdf>
+
+
+### Linear Algebra (as mathematics)
+
+  *  Beezer Linear Algebra (easier?)
+  *  Herve Adbi | lin alg| no R, no stat, starts simple but gets to decomposition.
+  *  Strang, Linear Algebra (classic)
+  *  Artin, Michael "Algebra"  - readable ?
 
 #### Haskell
 -	fairly gentle Haskell intro: https://www.cantab.net/users/antoni.diller/haskell/units/unit02.html
