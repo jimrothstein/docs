@@ -28,21 +28,6 @@ pandoc:
   !pandoc % -t latex -V linkcolor:blue -V fontsize=10pt -V geometry:margin=0.4in -o ~/Downloads/print_and_delete/reading.pdf 
   -V toc-title="Read"   is ignored.
 
-  !pandoc % -f markdown --template ~/dotfiles/proposed_template.latex -V geometry:margin=0.4in --toc-depth=4 -V toc-title="Reading" -o out.pdf ; zathura out.pdf
-
-  !pandoc -t latex -M date="`date "+%B %e, %Y"`" -o %.pdf
-  -H header
-  -V or --variable
-  --pdf-engine=xelatex
-
-REF:
-<https://learnbyexample.github.io/tutorial/ebook-generation/customizing-pandoc/>
-
-MARKDOWN GUIDE:
-<https://www.markdownguide.org/basic-syntax/>
-
-vim: to format all urls for md
-s/https.*/[&]()/g
 -->
 
 As of \today
@@ -62,9 +47,8 @@ As of \today
   <https://mml-book.github.io/book/mml-book.pdf> *book | linear alg book,
   regression (Ch 9) related videos
   <https://www.youtube.com/playlist?list=PLkxomGYFWp67infnvPmEcqyQqk0q6ntrY>
--  [Gagolewski Lightweight ML with R](https://lmlcr.gagolewski.com/) iPad
+-  [Gagolewski Lightweight ML with R](https://lmlcr.gagolewski.com/) iPad, PDF
 -  Higgens "Practical R Info?" 
--   Huntington "The Effect Book" <https://www.theeffectbook.net/index.html>
 -   Lindholm, "Machine Learning:  A first course for engineers" PDF  more math <http://smlbook.org/>
 -   Matloff (Prob book) <https://github.com/matloff/probstatbook/blob/master/ProbStatBookW21.pdf> \
   SEE 15.2 for logistic
@@ -74,14 +58,19 @@ As of \today
 - Siegrist: <https://stats.libretexts.org/Bookshelves/Probability_Theory/Probability_Mathematical_Statistics_and_Stochastic_Processes_(Siegrist)/05%3A_Special_Distributions/5.29%3A_The_Logistic_Distribution>
 - Thomas,  Math for ML  ... good lin alg, but quickly gets advanced.  <https://gwthomas.github.io/docs/math4ml.pdf>
 - UCLA:  Mixed Models - intro:  <https://stats.oarc.ucla.edu/other/mult-pkg/introduction-to-linear-mixed-models/>
-- Varma: Deep Learning \url{ #### Bayes
 - Vasishth: <https://vasishth.github.io/bayescogsci/book/ch-reg.html#sec-logistic>
 - Wiki: <https://en.wikipedia.org/wiki/Generalized_linear_model#Binary_data>, not easy but through
 -	 SciLearn
 -   [Scott, DS with R, Gentle Intro ](https://bookdown.org/jgscott/DSGI/)
+- Kazdan |  normal equations, linear alg<https://www2.math.upenn.edu/~kazdan/312S14/>
+- Kazdan, many good references: <https://www2.math.upenn.edu/~kazdan/>
 
+#### ML R Packages
 
-  *  Kazan |  normal equations
+- Keras
+- caret
+- torch
+- STAN
 
 
 #### Intro to Linear Alg & Models, 
@@ -184,6 +173,7 @@ only)
   *  [ML Berkeley:](https://ml.berkeley.edu/blog/posts/crash-course/part-1/)
   *  Goodfellow et al: <https://www.deeplearningbook.org/> ideas
   *  Guo:  Creative site and book: <https://seeing-theory.brown.edu/#firstPage>
+  *  Huntington "The Effect Book" <https://www.theeffectbook.net/index.html>
   *  navarro (learn statistics with r) review lm() and geometric r^2, Ch15, 16
 	*  Huntington <https://www.theeffectbook.net/index.html> (intutition?)
 *   Taylor, J "Introduction to Error Analysis - 2nd" unique book, error
