@@ -1,5 +1,7 @@
 #  ~/code/docs/tech_notes/_quarto.yml
 # REF:  https://quarto.org/docs/reference/projects/options.html
+# TODO:
+#   - current date?
 project:
   type: website  # default, website or book
   output-dir:  docs
@@ -11,6 +13,9 @@ project:
 #     - "TEST.qmd"
     - "!*.R"          # do not render
     - "!*.Rmd"        # do not render 
+    - "!*.qmd"
+    - "001_tech*"
+      #    - "*.qmd"         # once use ! (not), must specific ones you want
    
   
 
@@ -33,8 +38,11 @@ website:
 ##  project-wide
 format:
   html:
-    theme: cosmo
+    theme: 
+     -  cosmo
+     -  custom.scss
     # css: styles.css
+  
     toc: true
 knitr:
   opts_chunk: 
@@ -42,7 +50,7 @@ knitr:
     comment: "..........>" 
 execute:
   error: true
-  cache: true
+  cache: false
   output-dir: docs
   #  standalone: true 
   collapse: true

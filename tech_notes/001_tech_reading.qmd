@@ -1,4 +1,6 @@
-
+---
+title: "Tech Reading"
+---
 \footnotesize
 
 <!--
@@ -33,24 +35,33 @@ pandoc:
 As of \today
 
 ###	Algorithms & ML
-
+-  Akalin <https://compgenomr.github.io/book/> - very good
 -  [Berkeley, excellent glossary:](https://www.stat.berkeley.edu/~stark/SticiGui/Text/gloss.htm)
 -	 Berkeley CRASH  ML <https://mlberkeley.substack.com/p/part-1>
--   Leo Breiman 2 cultures: <https://www.jstor.org/stable/2676681>
+-  Breiman,   2 cultures: <https://www.jstor.org/stable/2676681>
 -	 Chollet, Deep Learning for R (not online, no pdf)  python: <https://docs.google.com/viewer?a=v&pid=sites&srcid=dW10LmVkdS5wa3xzbmxwfGd4Ojc1ODc1ODY2OTZiOTUzOGQ>
 -  Compeau:  
     -	great ideas book! <http://compeau.cbd.cmu.edu/>  
     -	<http://compeau.cbd.cmu.edu/programming-for-lovers/> cmu -	ch 8, 9 esp collinear.  
 -  Boehmke Hands on ML | <https://bradleyboehmke.github.io/HOML/> Ch 4,5
 -  Chan, Stanley <https://probability4datascience.com/index.html> more math and uses Likelikhood
+-  Davidson  http://qed.econ.queensu.ca/ETM/etm-info.html
 -  Deisenroth, Faiesel et al | Math4ML
   <https://mml-book.github.io/book/mml-book.pdf> *book | linear alg book,
   regression (Ch 9) related videos
   <https://www.youtube.com/playlist?list=PLkxomGYFWp67infnvPmEcqyQqk0q6ntrY>
 -  [Gagolewski Lightweight ML with R](https://lmlcr.gagolewski.com/) iPad, PDF
--  Higgens "Practical R Info?" 
--   Lindholm, "Machine Learning:  A first course for engineers" PDF  more math <http://smlbook.org/>
--   Matloff (Prob book) <https://github.com/matloff/probstatbook/blob/master/ProbStatBookW21.pdf> \
+- 
+- Goodfellow et al: <https://www.deeplearningbook.org/> ideas
+- Higgens "Practical R Info?" 
+- Kaplan  2023 <https://mdsr-book.github.io/mdsr3e/> (tidyverse, parsnip,
+  links to wikip for all stats)
+- Kaplan  2017, 2E <https://dtkaplan.github.io/SM2-bookdown/>
+- Kaplan  2021, 2E, Data <https://dtkaplan.github.io/DataComputingEbook/> see
+- Kaplan  2020, Calculus with R <https://dtkaplan.github.io/RforCalculus/index.html> mosaic and mosaicCalc packages (fitting to curves)
+  ML, chapter 18, plus interesting other chapters
+- Lindholm, "Machine Learning:  A first course for engineers" PDF  more math <http://smlbook.org/>
+- Matloff (Prob book) <https://github.com/matloff/probstatbook/blob/master/ProbStatBookW21.pdf> \
   SEE 15.2 for logistic
 - mcelreath: <https://github.com/rmcelreath/stat_rethinking_2022> (videos)
 - Molnar <https://christophm.github.io/interpretable-ml-book/> Ch 5.2 logistical regression  (explanations!) 
@@ -59,9 +70,10 @@ As of \today
 - Thomas,  Math for ML  ... good lin alg, but quickly gets advanced.  <https://gwthomas.github.io/docs/math4ml.pdf>
 - UCLA:  Mixed Models - intro:  <https://stats.oarc.ucla.edu/other/mult-pkg/introduction-to-linear-mixed-models/>
 - Vasishth: <https://vasishth.github.io/bayescogsci/book/ch-reg.html#sec-logistic>
+- Venables http://web.mit.edu/r_v3.4.1/R-intro.pdf (SEE models chapter)
 - Wiki: <https://en.wikipedia.org/wiki/Generalized_linear_model#Binary_data>, not easy but through
 -	 SciLearn
--   [Scott, DS with R, Gentle Intro ](https://bookdown.org/jgscott/DSGI/)
+- [Scott, DS with R, Gentle Intro ](https://bookdown.org/jgscott/DSGI/)
 - Kazdan |  normal equations, linear alg<https://www2.math.upenn.edu/~kazdan/312S14/>
 - Kazdan, many good references: <https://www2.math.upenn.edu/~kazdan/>
 
@@ -110,6 +122,16 @@ $$
 - <https://stats.stackexchange.com/questions/374452/family-of-glm-represents-the-distribution-of-the-response-variable-or-residuals/374461#374461>
 - <https://www.theanalysisfactor.com/link-functions-and-errors-in-logistic-regression/>
 - <https://www.randomservices.org/random/dist/Transformations.html>
+
+
+#### QUARTO & CSS | SCSS
+
+::: postbox 
+- READ discussions:  <https://github.com/quarto-dev/quarto-cli>
+:::
+- <https://github.com/mine-cetinkaya-rundel/test-website>
+- Rstudio community | SCSS: <https://community.rstudio.com/t/quarto-markdown-list-and-blank-line/160693/4>
+
 
 ### exit
 ```{r}

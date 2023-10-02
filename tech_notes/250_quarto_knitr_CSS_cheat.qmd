@@ -26,6 +26,13 @@ execute:
   collapse: true
   standalone: true
 ---
+
+
+### Quarto & CSS | SCSS
+-   <https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans>
+-   More examples:  ~/code/publish_project/QUARTO    
+
+
 :::aside
 Date:  Set programmatically?
 :::
@@ -39,6 +46,8 @@ This is secret
 
 ::::
 
+
+### 
 
 ```{=html}
 <style>
