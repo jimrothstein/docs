@@ -305,7 +305,7 @@ propogation and calculations.
 *	 Siegrist (aka random services.org) * random| (3)expected value 1..11 and 	|(5) random samples 1-8 (t-dist)
 * Taubes, linear alg, statistics,  http://people.math.harvard.edu/~knill/teaching/math19b_2011/handouts/chapters1-19.pdf
       Biology?  math?  probability?   Think this is really an ideas book; not as easy as may appear.
-
+* Liquet <https://deeplearningmath.org/>  lots of math
 
 
 ###     BAYES
@@ -348,19 +348,21 @@ Information Theory:  CS, Quantum, Bayesian, linear algebra, Probability
 Analysis of Data;  more advanced math, some measure}
 
 #### Shiny
+
+<!-- {{{ -->
 	-	R, javascript + shiny https://book.javascript-for-r.com/
 	-	Hadley, https://mastering-shiny.org/
 	-	https://engineering-shiny.org/
 	-	HTTP Testing (book) https://books.ropensci.org/http-testing/
 
-
+<!-- }}} -->
    
-
 ####  Latex (.tex, latex, not knitr, markdown, pandoc)
 
   *  [https://learnbyexample.github.io/customizing-pandoc/](Good tips)
   *  \href{https://ctan.math.illinois.edu/info/lshort/english/lshort.pdf}{Not So Short Introduction}
   *  Latex:  Latex in 24 hours (iPad)
+  *   <https://www.physicsread.com/latex/>  examples of typical useage
   *  https://mirrors.rit.edu/CTAN/info/beginlatex/html/intro.html#intro
   *  wikibooks:     https://en.wikibooks.org/wiki/LaTeX/Document_Structure
   *  http://ctan.imsc.res.in/info/first-latex-doc/first-latex-doc.pdf
@@ -439,6 +441,10 @@ Finite Automata?
 	*		Sadum
 	*		Tom Raby
 	*		Jazon Jiao (Alg + Regression)
+  *   <https://www.youtube.com/@SerranoAcademy> covariance, intutition! 
+  * https://www.youtube.com/watch?v=GFDNF3Zfoa4   - uncorrelation,
+    independence, orthogonal Kamlesh Gupta
+  * Blargoner duality explained:  https://www.youtube.com/watch?v=eOIJzb7SItg&list=PL6kPvEdcJ4jRnw91XCtlK4UHRHxc0TtsV
 
 <!--
 ================================================================================================================================

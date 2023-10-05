@@ -11,6 +11,7 @@ project:
 #     - "TEST.qmd"
     - "!*.R"          # do not render
     - "!*.Rmd"        # do not render 
+    - "*.qmd"         # must include after a negation
 
   ## project-wdie
 format:
@@ -26,7 +27,7 @@ format:
 
 execute:
   error: true
-  cache: true
+  cache: false  
   output-dir: docs
   standalone: true 
   collapse: true
