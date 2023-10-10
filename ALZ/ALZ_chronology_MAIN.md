@@ -32,6 +32,7 @@ As of Thu May 26 14:03:01 PDT 2022
 
 ##	DEFINTIONS
 -    An **ex parte decision** is one decided by a judge without requiring all of the parties to the dispute to be present.
+    MANDAMUS - court orders lower court/public official to do something
 -	
 ##	BASIC DETAILS
 	-	18CR66984
@@ -104,7 +105,8 @@ kidney
 
 
 ###	VETERAN's court 
-{
+
+{<!--{{{-->
 -	DA must consider:  https://oregon.public.law/statutes/ors_135.886
 -	also on DRIVE:
 from https://www.courts.oregon.gov/courts/marion/programs-services/Pages/treatmentcourt-adult.aspx
@@ -113,9 +115,11 @@ from https://www.courts.oregon.gov/courts/marion/programs-services/Pages/treatme
 from https://www.oregon.gov/odva/Resources/Pages/Justice-Involved-Veterans.aspx
 | The law relies on the judgment of a prosecutor, who will determine on a case-by-case basis which defendants may be eligible for diversion. These prosecutors must consider, for example, whether a veteran who spent four years at a military base should be offered the same diversion opportunity as one who deployed twice to combat situations in Afghanistan or Iraq. Prosecutors must decide how serious the crime must be before diversion is taken off the table and must consider the victim of the offense.
 }
+<!--}}}-->
 
 ###	Salem Municipal Court (503-588-6146 #5) 
-{
+
+{<!--{{{-->
 -	2 cases; **March 16, 2021** 11:27 pm (and 12:01 am, next morning)
 	-	[04MAR2021 - gradudate 'vet program']	
 	-	16MAR2021 **2021-000-5606-CR** DUI, 100.331(10), plead non-guilty (12/13/21); jury trial.
@@ -133,6 +137,7 @@ https://oregon.public.law/statutes/ors_813.010
 -   Use Salem Municipal Court:  503-588-6146 (main #)
 -   For records, same: 503-588-6003 (legal dept)
 }
+<!--}}}-->
 
 ##	Judges
 -	Judge Hart (503-584-7749 - office)
@@ -638,6 +643,10 @@ Next day, Friday, hear message.  No name.  Says checked with Advocates;  never g
 
 }
 
+### 5/23/2023  - l/m for Braden; never returned call.
+I rec 5/19/2023 ltr that ALZ ; may plead guilty; confused since she just 'admitted'
+Call to Victim Advocates (you were told ... not to;   ); ok, transferred to DA Office; Christina can not answer Q; so left voice mail for Braden;  what is happening?  thought she admited;  isn't this stipulated?  NEVER RETURNS CALL
+
 ## F 16 JUNE May2023    Probation Revoked; 36 months jail, Judge Mathew Tracey
 
 -Def Patterson;  Prosectution Ms. Hughes; Judge:   
@@ -730,3 +739,17 @@ Nor did Legal Dept.   But Legal Dept took information, date of probation revocat
 
 -   Use Salem Municipal Court:  503-588-6146 (main #)
 -   For Legal Dept & records, same: 503-588-6003 (legal dept)
+
+
+## ALZ APPEAL 
+
+<!--{{{-->
+-   BEGIN 7/12/2023 - 'inmate mail'
+-  Between 7/12/2023 and 9OCT2023 (today) appears
+-  Atty:  Court appointed Nora Coon 
+-  cases consolidated (do not understand various abbrev) w/15CR58947-A181840 
+-  ? Trial court file (pub & conf) uploaded to shared drive - No exhibits 
+
+
+
+}}}

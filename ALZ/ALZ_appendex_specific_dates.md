@@ -29,16 +29,20 @@ GOAL:				Read in DT data.table, print using kableExtra
 
 VERACITY \
 MENDACITY - williness to lie
+MANDAMUS - 
+
+  Mandamus is a judicial remedy in the form of an order from a court to any government, subordinate court, corporation, or public authority, to do some specific act which that body is obliged under law to do, and which is in the nature of public duty, and in certain cases one of a statutory duty. Wikipedia
 
 ###	Laws | Policies
 
 https://oregon.public.law/statutes/ors_135.886
 
--	including (1) ..." and after the district attorney has considered the
+-	including (1) ..." and after the district attorney has considered the{{{
 	factors listed in subsection (2) of this section, if it appears to the
 	district attorney that diversion of the defendant would be in the interests
 	of justice and of benefit to the defendant and the community
 
+<!--}}}-->
 
 ORS 813.095 Refusal to Take Test for Intoxicants 
 
@@ -56,6 +60,7 @@ ORS 147.410 \
 
 -	Veterans' Court
 [Mission Statement] "The Marion County Veterans Treatment Court (MCVTC) works to identify veterans
+<!--{{{-->
         within the criminal justice system and honor their service by providing a
         collaborative, judicially supervised, mentor oriented, treatment regime. The
         goal is to enhance public safety by stabilizing, habilitating and
@@ -69,7 +74,7 @@ habilitating: https://www.merriam-webster.com/thesaurus/habilitating
         "...intervention program for qualified veterans..."
 Source: https://www.courts.oregon.gov/courts/marion/programs-services/Pages/treatmentcourt-adult.aspx#1be5d11b-19cf-4a44-b650-31a8b734a036
 Retrieved:  8/31/22 
-
+<!--}}}-->
 
 https://www.oregon.gov/cjc/sc/Pages/default.aspx \
 https://www.oregon.gov/cjc/sc/Documents/19-21_SC_CJCAwardDecisions.pdf
@@ -78,9 +83,10 @@ Oregon DoJ Crime Victim's Services Division \
 SEE	2019 - Practician's Guide \
 https://www.doj.state.or.us/crime-victims/victims-rights/victims-rights-guides/)
 
+
 ###	Cases
 
-15CR58947, State vs Zimmerman, convicted 05DEC2016.
+15CR58947, State vs Zimmerman, convicted 05DEC2016.<!--{{{-->
 
 15CR58947 - A165494, State vs Zimmerman
 
@@ -107,7 +113,8 @@ A154283, 	Appeal affirms w/o opinion  re:	2013 Employment Appeals Board,
 
 23LT00832 (filed 13JAN 2023) Lynn Zimmerman-Stevens vs Cheyenne Williams
 (eviction).   LZS pays $88 filing fee.   Agent:  Amy Zimmerman!  Hearing to be
-24 JAN 2023 9am
+24 JAN 2023 9am<!--}}}-->
+
 
 ###	Checklist:   attached documents 
 
