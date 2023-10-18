@@ -3,6 +3,7 @@ output-dir: docs
 ---
 
 THIS FILE:	 "ALZ_chronology.md"
+re: 18CR66984 - A 18141,  Oregon v Zimmerman, Amy L (#325701, 14080975)
 
 
 ============================================
@@ -10,10 +11,9 @@ PURPOSE:		MAIN chronology file
 PRIOR:	
 ~/code/docs/ALZ/recovery_zimmerman_notes.md"
 
-	TODO:
-		-	Probably same as on DRIVE, under 095-backups, 2021-backups (feb 2021)
-		-	ALL PRIOR:  see recovery_zimmerman_notes.md
-
+TODO:
+	-	Probably same as on DRIVE, under 095-backups, 2021-backups (feb 2021)
+	-	ALL PRIOR:  see recovery_zimmerman_notes.md
 PRIOR:	
 ~/code/docs/ALZ/recovery_zimmerman_notes.md"
 ============================================
@@ -35,6 +35,7 @@ As of Thu May 26 14:03:01 PDT 2022
     MANDAMUS - court orders lower court/public official to do something
 -	
 ##	BASIC DETAILS
+	-	18CR66984 - A 18141,  Oregon v Zimmerman, Amy L (#325701, 14080975)
 	-	18CR66984
 	-	15DR14800
 	-	15CR58947
@@ -753,3 +754,5 @@ Nor did Legal Dept.   But Legal Dept took information, date of probation revocat
 
 
 }}}
+
+re: 18CR66984 - A 18141,  Oregon v Zimmerman, Amy L (#325701, 14080975)
