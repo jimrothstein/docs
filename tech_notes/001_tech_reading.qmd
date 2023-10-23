@@ -66,7 +66,7 @@ As of \today
 - mcelreath: <https://github.com/rmcelreath/stat_rethinking_2022> (videos)
 - Molnar <https://christophm.github.io/interpretable-ml-book/> Ch 5.2 logistical regression  (explanations!) 
 - Random Services <https://www.randomservices.org/random/dist/Transformations.html> 
-- Siegrist: <https://stats.libretexts.org/Bookshelves/Probability_Theory/Probability_Mathematical_Statistics_and_Stochastic_Processes_(Siegrist)/05%3A_Special_Distributions/5.29%3A_The_Logistic_Distribution>
+- Siegrist: <https://stats.libretexts.org/Bookshelves/Probability_Theory/Probability_Mathematical_Statistics_and_Stochastic_Processes_(Siegrist)/>
 - Thomas,  Math for ML  ... good lin alg, but quickly gets advanced.  <https://gwthomas.github.io/docs/math4ml.pdf>
 - UCLA:  Mixed Models - intro:  <https://stats.oarc.ucla.edu/other/mult-pkg/introduction-to-linear-mixed-models/>
 - Vasishth: <https://vasishth.github.io/bayescogsci/book/ch-reg.html#sec-logistic>
