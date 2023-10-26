@@ -1,34 +1,38 @@
 ---
 output-dir: docs
 ---
+					
+***
+				
 
+                
+  
+  
 THIS FILE:	 "ALZ_chronology.md"
 re: 18CR66984 - A 18141,  Oregon v Zimmerman, Amy L (#325701, 14080975)
 
-
-============================================
 PURPOSE:		MAIN chronology file
 PRIOR:	
 ~/code/docs/ALZ/recovery_zimmerman_notes.md"
 
 TODO:
-	-	Probably same as on DRIVE, under 095-backups, 2021-backups (feb 2021)
-	-	ALL PRIOR:  see recovery_zimmerman_notes.md
-PRIOR:	
-~/code/docs/ALZ/recovery_zimmerman_notes.md"
-============================================
+-	Probably same as on DRIVE, under 095-backups, 2021-backups (feb 2021)
+-	ALL PRIOR:  see recovery_zimmerman_notes.md
 
-
+NOTES:
 As of Thu May 26 14:03:01 PDT 2022
-	-	**all prior chronology are LOST.**	
-	-
-	-	most files, pdf from trail and post-trial REMAIN (github)
-	- just not MY chronology notes.
+- **all prior chronology are LOST.**	
+-
+- most files, pdf from trail and post-trial REMAIN (github)
+- just not MY chronology notes.
+
+***
+
 
 \tableofcontents
 \pagenumbering{roman}
 
-###-----BEGIN:   DOCs -------------------------
+###-----BEGIN:	 DOCs -------------------------
 
 ##	DEFINTIONS
 -    An **ex parte decision** is one decided by a judge without requiring all of the parties to the dispute to be present.
@@ -42,6 +46,11 @@ As of Thu May 26 14:03:01 PDT 2022
 	-	
 	-	18SC21468
 	-	\textbf{18CR66984} (filed: 10/8/18)
+
+	APPEALS:	
+	criminal: **CA181841** (includes **CA18140**)
+	ALZ=Def-Appelant, atty: Nora Coon (Dep Public Def)
+	State=Plaintiff-Respondent atty Benjamin Gutman (Solicitor General)
 
 ##	People
 
@@ -135,7 +144,7 @@ https://oregon.public.law/statutes/ors_813.010
 	year;  Court working with her lawyer. Jury trial adds to complexity.
 -	No next hearing.
 -   at 17May2023 - new prosecutor Ms. Nicole Theobald; no Court date visible;
--   Use Salem Municipal Court:  503-588-6146 (main #)
+-   Use Salem Municipal Court:	503-588-6146 (main #)
 -   For records, same: 503-588-6003 (legal dept)
 }
 <!--}}}-->
@@ -174,7 +183,7 @@ https://oregon.public.law/statutes/ors_813.010
 {
 	Alexa age ~ 9
 
-	23SEP2020 -	ALZ pays $1.25 + $125.   (yr=2020)
+	23SEP2020 -	ALZ pays $1.25 + $125.	 (yr=2020)
 
 	20OCT2020 - I call; errors in acctg (to fixed); I notify Annette
 
@@ -198,7 +207,7 @@ https://oregon.public.law/statutes/ors_813.010
 	conversation (see PHOTO)
 	-	This house purchased by ALZ's father for Ashley's family (now 3 children)
 		to live in following relocating (?) from Las Vegas.
-	-	Claim:  ALZ OVERDOSE (fentanyl?) | Not stoke | ALZ heart stopped 7
+	-	Claim:	ALZ OVERDOSE (fentanyl?) | Not stoke | ALZ heart stopped 7
 		minutes.
 	-	ALSO, 3 weeks before May 1, 2021, ALZ had DUI.
 	-	prior to that, ALZ sold cars.
@@ -237,7 +246,7 @@ https://oregon.public.law/statutes/ors_813.010
 28SEPT2021 - Ruling - see PHOTO
 (#8) overdose
 (#9) CHE continues to be around ALZ and Alexa?
-(#13) "lack of candor"  on May 21, 22 2021 
+(#13) "lack of candor"	on May 21, 22 2021 
 (#14 ?)ALZ ordered to pay legal fees to TIM.  $1000.
 
 
@@ -280,13 +289,13 @@ Filed 14APR2022, but dated 15FEB 2022:
 	writing.
 
 	12MAR2022 -	Ashley Bobo says something ~ Timindra divorced, guy lost an eye
-	(??).    Confused:  Ashley's father = Tim' husband ?????
+	(??).	 Confused:  Ashley's father = Tim' husband ?????
 	
 	DATE?	-	ALZ claims $1400 income/mo (social security, SSI disability).
 	Nerve damage from Respondent (TIM).  Repondent works for state Dept of
 	Agriculture, full time. ALZ wants NO child support from Respondent. ALZ now
-	says her own mother (Lynn Stevens ...) in contempt (!)  (BETTER RE-READ
-	this).   All fees for ALZ waived.
+	says her own mother (Lynn Stevens ...) in contempt (!)	(BETTER RE-READ
+	this).	 All fees for ALZ waived.
 
 	
 	14MAR2022	-	ALZ petitions again (~20 pages):	child doing poorly in school,
@@ -324,7 +333,7 @@ to read; many pages.  Details troubling behavior.
 -   Contempt of Court??
 -   9/14/22 - 9/19/22 - dismissed
 
-##  A178315 T.A.P fka T.A.Z. v Zimmerman Affirmed w/o opinion?   16NOV 2022
+##  A178315 T.A.P fka T.A.Z. v Zimmerman Affirmed w/o opinion?	 16NOV 2022
 
 ##  A179528 Dismissed without opinion?
 -   21 NOV 2022 - no action per TMH 
@@ -361,7 +370,7 @@ Oregon;   reinstates child support payments
 ##	Wed 16 MAR 2021   DUI/Refuses breath test
 
 
-##	**5MAY 2021**  Braden   SHOW CAUSE, Revoke probation
+##	**5MAY 2021**  Braden	SHOW CAUSE, Revoke probation
 -	DUI
 -	failed to obey all laws
 -	not benefit
@@ -381,7 +390,7 @@ trouble?)
 	-	last 12/15/21
 	-	12/16/21 - state subpeona for Officer Lewis Menges, Salem PD;  Now works
 		in Richland, WA PD; can NOT appear 1/25.  But can appear later.
-	-	Next:   28Mar2022, 10:30 am
+	-	Next:	28Mar2022, 10:30 am
 
 ###	28JAN2022 - my ltr in full in files.
 
@@ -438,7 +447,7 @@ nohting happened when I brought conflicts with agreement to court;  Reminder
 you have someone here who brought ficitious ligitation and then lied about
 INSIDE a court room.   
 
-\textbf{Behavior change:   If this is still the goal?   Respect for legal
+\textbf{Behavior change:   If this is still the goal?	Respect for legal
 system?}
 
 ##	29JUNE2022 - ALZ - pays $15;  in april 22 I see waivers of $167 ?
@@ -454,7 +463,7 @@ system?}
 
 ###	Tue 02Aug2022  Hearing (I missed)
 -	HELD
--	next:   28 SEPT
+-	next:	28 SEPT
 
 
 ##	Tue 09Aug2022  - call Salem Municipal Court
@@ -471,14 +480,14 @@ resolve.  OK.  See notes in MUNI (above)
 -	At this time, there is NO NeXT hearing Date.   Expected the case (trial?)
 	will occur by end of year.
 -	PUBLIC RECORDS request ... I also start this process online (with Salem
-	City).   Just to inspect court records?  Not too optimistic.
+	City).	 Just to inspect court records?  Not too optimistic.
 
 ##	Mon 15Aug2022 - complete waiver info for SALEM MUNI COURT records release
 (to computer file in my case; not to me)
 
 
 
-##	Sat 24Sep2022   FAX letter to Judge (annex fax=503-588-6822)
+##	Sat 24Sep2022	FAX letter to Judge (annex fax=503-588-6822)
 }
 
 
@@ -498,11 +507,11 @@ eviction CW, or not, "gifting $1500", CW now at 5150 Norma.
     974-428-7036)
 
 -   23LT00832 (filed 13JAN 2023) Lynn Zimmerman-Stevens vs Cheyenne Williams
-to be 24 JAN 2023 9am   LZS pays $88 filing fee
+to be 24 JAN 2023 9am	LZS pays $88 filing fee
     (eviction).   LZS pays $88 filing fee.   Agent:  Amy Zimmerman!  Hearing
--   Plaintiff:   LZS; Agent: ALZ, Occupant: CZ 
+-   Plaintiff:	 LZS; Agent: ALZ, Occupant: CZ 
 -   ALL have 5150 Norma as address;  clearly indicates CW is tenant. 
--   SEE PHOTO:  Violation of Lease, "...intimidating renters to Amy Zimmerman
+-   SEE PHOTO:	Violation of Lease, "...intimidating renters to Amy Zimmerman
     ...", intefere with housekeeper and service provider; threatening,
     coercing, menacing;  activating listening and viewing devices (cell,
     laptop) "Colluding with others against ALZ with lies and promises"
@@ -516,7 +525,7 @@ to be 24 JAN 2023 9am   LZS pays $88 filing fee
 }
 -   2/15/23 Judge letter to Plaintiff, you must refile.  can not undue dismissal?
  
- Tue 14Feb2023  -  I send letter City of Salem prosecutor:
+ Tue 14Feb2023	-  I send letter City of Salem prosecutor:
 
 \newpage
 
@@ -525,7 +534,7 @@ to be 24 JAN 2023 9am   LZS pays $88 filing fee
 City of Salem, Oregon \
 Legal Department \
 \textbf{ATTN:  Prosecutor Lori Evans} \
-FAX:    503-361-2202 (fax) \
+FAX:	503-361-2202 (fax) \
 Voice: 503-588-6003
 
 ---
@@ -544,7 +553,7 @@ Oregon v Zimmerman, Amy Lynn \
 
 Dear Prosecutor Evans:
 
-I have no knowledge of the above \textbf{City of Salem cases}.   However, the
+I have no knowledge of the above \textbf{City of Salem cases}.	 However, the
 above defendant was convicted of several felonies in the above Marion County criminal case. 
 
 I am one of the listed victims in 18CR66984.
@@ -573,16 +582,16 @@ jimrothstein@gmail.com \
     grants.
 -   Before that, Braden goes through same bullshit;  police office must make 6
     hour drive; he did so once before and it was continued.   Police officer 2
-    on medical leave;  lab tech just returned to work.   (This is crazy)
+    on medical leave;  lab tech just returned to work.	 (This is crazy)
 
 -   Braden repeat solo basis for probation violation is DUI.  (FALSE !).
     Says could do contested probation violation that would move case to
-    Downtown and effectively become full case re: DUI.   (yes, do that !)
+    Downtown and effectively become full case re: DUI.	 (yes, do that !)
 -   Of course, nobody wants to.   Braden prefers wait for DUI in Muni court to
     play out.  Will "pester" Munic Court.  (Garbage ... I called last month,
     still no date; all unknown).
 -   At some point, Patterson says was not prepared to admit or not DUI (or
-    something to that affect).  (sounds like this Judge must have really
+    something to that affect).	(sounds like this Judge must have really
     pushed this!)
 
 -   Then debate over next date; 1st march, then May, finally April 20th, 1:30
@@ -590,10 +599,10 @@ jimrothstein@gmail.com \
     ... longer and longer.
 
 -   Writing is SO clear:   everyone do as little as possible, hoping it goes
-    away - even the PROSECUTOR !  SEE no evil.   ALZ is just going to walk.  Prepare
+    away - even the PROSECUTOR !  SEE no evil.	 ALZ is just going to walk.  Prepare
     yourself!
 
-    Judge did ask me.  I said nothing to add.   (Should I have said:  this
+    Judge did ask me.  I said nothing to add.	(Should I have said:  this
     case is over 2 years and plenty of violations?)
 
 
@@ -635,11 +644,11 @@ Run over to Court computer.   Says same, no records (yet)
 
 **Why NO PHONE CALL** ?
 Call Advocates TWICE last week.   First time, receptionist said have someone call me.  I said just want to listen to hearing.
-Date?    At Court House computer; no mention to call victum.
-Call Advocates AGAIN.   Says he  remembered me.  I repeat:   just want call from hearing.   He sends me to Court (downtown - wrong) Call annex and ask to have phone call.
-Sent to ???? (no name) assures me get emails everyday from Advocates.   OK, I said I am just in the middle, please put me on call list. Thought she did.
+Date?	 At Court House computer; no mention to call victum.
+Call Advocates AGAIN.	Says he  remembered me.  I repeat:   just want call from hearing.   He sends me to Court (downtown - wrong) Call annex and ask to have phone call.
+Sent to ???? (no name) assures me get emails everyday from Advocates.	OK, I said I am just in the middle, please put me on call list. Thought she did.
 
-So I call Court (annex) to complain.  Gives me name of schedule clerk:   **Kimberly BLAKE**
+So I call Court (annex) to complain.  Gives me name of schedule clerk:	 **Kimberly BLAKE**
 Next day, Friday, hear message.  No name.  Says checked with Advocates;  never got any call/request from me!! Suggests go in Person to next hearing.  Crazy !!
 
 }
@@ -648,30 +657,40 @@ Next day, Friday, hear message.  No name.  Says checked with Advocates;  never g
 I rec 5/19/2023 ltr that ALZ ; may plead guilty; confused since she just 'admitted'
 Call to Victim Advocates (you were told ... not to;   ); ok, transferred to DA Office; Christina can not answer Q; so left voice mail for Braden;  what is happening?  thought she admited;  isn't this stipulated?  NEVER RETURNS CALL
 
-## F 16 JUNE May2023    Probation Revoked; 36 months jail, Judge Mathew Tracey
+## R 15 JUNE 2023  DEF pre-sentence recommendation
+9 pages, much BS.   omits, distorts, incomplete on facts; written by lawyer Patterson
+(I read this first time ~ Oct 2023)
+
+## F 16 JUNE May2023	Probation Revoked; 36 months jail, Judge Mathew Tracey
 
 -Def Patterson;  Prosectution Ms. Hughes; Judge:   
-Hughes 1st; asks 36months and receits reasons;   sound strong to me.  About the DUI:  Complaintant said ALZ was on property, banging on door and threatening to beat up complainant. Drunk.  Police give her DUI, take some measurement even though she refused breath test.
+Hughes 1st; asks 36months and receits reasons;	 sound strong to me.  About the DUI:  Complaintant said ALZ was on property, banging on door and threatening to beat up complainant. Drunk.  Police give her DUI, take some measurement even though she refused breath test.
 
-Patterson:   Advocacy is one thing, but this guy twists and omits some things.  Makes everything sound minimal.   "Boneheaded" was her actions in civil court.  Identify theft usually means signing up for multiple credit cards and the like.  Claims been good for 2 years.  Wants probation to be continued.   At some point says she laid out money (in LL-T) case.  (Also a lie)
+Patterson:   Advocacy is one thing, but this guy twists and omits some things.	Makes everything sound minimal.   "Boneheaded" was her actions in civil court.	Identify theft usually means signing up for multiple credit cards and the like.  Claims been good for 2 years.	Wants probation to be continued.   At some point says she laid out money (in LL-T) case.  (Also a lie)
 
 I speak:   Not boneheaded!  Abuse of legal process.  Repeat statements from Judge Hart.   Purpose:    Behavior Change.
 
 Judge asks for each to comment on setencing.
-Again, Patterson can't get facts right.  Says I repeat statements from witnesses and do it each  time.  (True, but this is data and from JUDGE.   Where is YOUR DATA?)   
+Again, Patterson can't get facts right.  Says I repeat statements from witnesses and do it each  time.	(True, but this is data and from JUDGE.   Where is YOUR DATA?)	 
 
-ALZ:   wants to move on with her wife and family and chldren; how she volunteers (dogs) and all sorts of good things.  Claims to be homeowner.  Still victim:  only changed word from pet, still human urine (no mam!)   
+ALZ:   wants to move on with her wife and family and chldren; how she volunteers (dogs) and all sorts of good things.  Claims to be homeowner.	Still victim:  only changed word from pet, still human urine (no mam!)	 
 **NOTE:   Says I still owe her money !!**   She stalked and harassed (did not catch it:   I am doing this, x-wife, life ??)
 
-Moral:   Important to DOCUMENT; the way Angie Donhaoo did.  Examples:   nothing about still running illegal short term rental ("hotel"), suspicious financial; no school or work .... Failure to pay court on time. But PLENTY of ligitation while on probation.  No mention of 15DR civil case:  "vendetta agains her" or her behavior.   DA should have talked to me;  get underlying crime correct and conduct since.  
+Moral:	 Important to DOCUMENT; the way Angie Donhaoo did.  Examples:	nothing about still running illegal short term rental ("hotel"), suspicious financial; no school or work .... Failure to pay court on time. But PLENTY of ligitation while on probation.  No mention of 15DR civil case:  "vendetta agains her" or her behavior.   DA should have talked to me;  get underlying crime correct and conduct since.  
 
 
-Judge reviews authority to extend probation.   2 cases; go through.  Discussion about whether ALZ is '5i' or harser '5B'  Judge dismesses past need for bench warrants. Totals up months.   Goes through each count.   Count 5 is big one:  36 months.   Others 6 or 12 months, concurrently.  Will be reduced for good behavor, no fees, no fines.   Formally revokes probation in both CASES.   Says now 3rd violoation.
+Judge reviews authority to extend probation.   2 cases; go through.  Discussion
+about whether ALZ is '5i' or harser '5B'  Judge dismesses past need for bench
+warrants. Totals up months.   Goes through each count.   Count 5 is big one:
+36 months.	 Others 6 or 12 months, concurrently.  Will be reduced for good
+behavor, no fees, no fines.   Formally revokes probation in both CASES.   Says
+now 3rd violoation.
 
 
 Some kind of sobbing in background.   Phone cut.
 
-Conclude:   We wind up EXACTLY where started with Kallery and which she rejected.     And the 5 year stipulated agreement ?   gone.
+Conclude:   We wind up EXACTLY where started with Kallery and which she
+rejected.     And the 5 year stipulated agreement ?   gone.
 
 
 
@@ -679,39 +698,44 @@ Conclude:   We wind up EXACTLY where started with Kallery and which she rejected
 ## Sun 18 JUNE23    MEMO TO FUTURE PROSECUTOR
 1.  ALZ will return
 2.  ALZ right combination of talent:
-    -   smarts
-    -   excellent people skills;  to sell; to fool Judges
-    -   to find and cultivate people loyal to her
-    -   to stay under radar screen
-    -   to be fearless, unafraid, relentless when feels threaten by truth.
-    -   to play the `victim`; never responsible
-    -   to lie and lie, even when you have police report in front you.
-    -   to intimidate, bully, frighten; few want to come forward.
-    -   to abuse of ANY Benefit of Doubt
-    -   to abuse any failure to verify compliance.
-    -   to abuse legal process.
+    -	smarts
+    -	excellent people skills;  to sell; to fool Judges
+    -	to find and cultivate people loyal to her
+    -	to stay under radar screen
+    -	to be fearless, unafraid, relentless when feels threaten by truth.
+    -	to play the `victim`; never responsible
+    -	to lie and lie, even when you have police report in front you.
+    -	to intimidate, bully, frighten; few want to come forward.
+    -	to abuse of ANY Benefit of Doubt
+    -	to abuse any failure to verify compliance.
+    -	to abuse legal process.
 4.  You must Verify every claim. Challenge every financial claim.
 5.  If you are uncertain, read the police reports; civil and family court
-files; her motions and Appeals.  ALZ appears to enjoy the legal process, pro se or with
-private counsel;  Decades of data.  Do not be fooled by court appearances.
+    files; her motions and Appeals.  ALZ appears to enjoy the legal process,
+    pro se or with private counsel;  Decades of data.  Do not be fooled by
+    court appearances.
 6.  Document, document, even small infractions.  She chips away; but makes few
     big mistakes.   If you do not document, there will be a mountain of bad
-behavior but no `violations.`  (see how Angie Donhoo documented)
-6.  Watch for one important ALZ error:  The lies do not stand up to slightest scrutiny. If
-    you do not check, she will skate by and so usually does so.  As I found in
-my case, the lies last long enough to fool judge.  With modicum of effort, her claims  rapidly unwind, leaving nothing but fables and felonies.
+    behavior but no `violations.`  (see how Angie Donhoo documented)
+6.  Watch for one important ALZ error:	The lies do not stand up to slightest
+    scrutiny. If you do not check, she will skate by and so usually does so.
+    As I found in my case, the lies last long enough to fool judge.  With
+    modicum of effort, her claims  rapidly unwind, leaving nothing but fables
+    and felonies.
 
-  Doubt I am
-the only such victim.
-7.  Talk to people who were not fooled (most are).  AG Kallery or PO Angie Donahoo (Yamhill County)
+  Doubt I am the only such victim.
+7.  Talk to people who were not fooled (most are).  AG Kallery or PO Angie
+    Donahoo (Yamhill County)
 
 ### 2023-08-03
 1.  Why/who allowed ALZ into Vet Court?  Who thought it would do anything?
 2.  Define "tough".  But when late payments ('deliquent', but not for covid),
     lies to Judge, clearly still feels victim; still running 'hotel', DA does
-zero.   Why?  What purpose did that serve?
-3.  Explain how 11 days after VET Court:  DUI;  and 2 months "overdose " and hospitalization.
-4.  Why allow endless filings in domestic matter?   NO school/NO work, is this how probation works?  
+    zero.	Why?  What purpose did that serve?
+3.  Explain how 11 days after VET Court:  DUI;	and 2 months "overdose " and
+    hospitalization.
+4.  Why allow endless filings in domestic matter?   NO school/NO work, is this
+    how probation works?  
 5.  Did you notice how many children she tried to become parent to?
 5.  Why didn't you enforce stipulated agreement on these matters?
 6.  Why no PO reports like Angie Donahoo; 
@@ -719,40 +743,65 @@ zero.   Why?  What purpose did that serve?
 8.  Why do you allow financial claims, knowing the mother holds the assets??
 
 **Explain why Sean Kallery removed?  Didn't even care ?**
-**How to justify DA conduct ?   Were you asleep?**
+**How to justify DA conduct ?	Were you asleep?**
 **Is everything defense counsel asks for is granted?**
 You ignored so many warnings;  you failed to communicate any of this to victim.
 
+NOTES: for phone call Benjamin Gutman (appeals)
+-	must verify, exmaine.	
+-	Anytime you do not risk something will slide by.   Def takes advantage that
+  nobody checks.
+-	See Parole  Officer memos from case I.
+-	Not relevant to appeals, but must know what you are dealing with...
+  divorce/custody cases:  behavior, judge's rulings, tenacious filings; conduct
+  during probation
+  Appears to enjoy legal process and knows some of process; unaffraid 
 
+					
+	
+	
 
-
+	
 ## 2023-07-20  "NULLITY"
 x-Lawyer (retired) Jim ?? (prop 114 - gun control), met at Downtown Club, says:
-    *   use affidavid (just what I told him)
-    *   she's prison, probation violation etc.
-    *   Nullity is NOT an appeal; it means it never should have happened in first place.
-    *   Even though I was previously rejected under Civil Procedure, fraud, he said to submit it again.
+    *	use affidavid (just what I told him)
+    *	she's prison, probation violation etc.
+    *	Nullity is NOT an appeal; it means it never should have happened in first place.
+    *	Even though I was previously rejected under Civil Procedure, fraud, he
+      said to submit it again.
 
 
 ## 2023-08-09 Municipal Court and Legal Dept  (unaware ALZ admitted)
-Muni court seemed to have no info that ALZ admitted probation violation.
-Nor did Legal Dept.   But Legal Dept took information, date of probation revocation, case # and assured me that (1) DUI will still be prosecuted "we have to" (2) will alert prosectutor (still  Nicole) but (3) it is up to prosecutor to decide what to do; to get records; etc.
+Muni court seemed to have no info that ALZ admitted probation violation. Nor
+did Legal Dept.   But Legal Dept took information, date of probation
+revocation, case # and assured me that (1) DUI will still be prosecuted "we
+have to" (2) will alert prosectutor (still  Nicole) but (3) it is up to
+prosecutor to decide what to do; to get records; etc.
 
--   Use Salem Municipal Court:  503-588-6146 (main #)
+-   Use Salem Municipal Court:	503-588-6146 (main #)
 -   For Legal Dept & records, same: 503-588-6003 (legal dept)
 
 
 ## ALZ APPEAL 
 
 <!--{{{-->
--   BEGIN 7/12/2023 - 'inmate mail'
+-  BEGIN 7/12/2023 - 'inmate mail'
 -  Between 7/12/2023 and 9OCT2023 (today) appears
 -  Atty:  Court appointed Nora Coon 
 -  cases consolidated (do not understand various abbrev) w/15CR58947-A181840 
 -  ? Trial court file (pub & conf) uploaded to shared drive - No exhibits 
+-  **NO access to APPEALS from court house computer.** (says staff)
+-  In criminal case 18CR.. I can see several docs uploaded 2 OCT 2023 but can not open (some marked confidential and others marked public).  DO NOT HaVE Permission
+-  Apparently bet July and Now, court transcriber was preparing documents,
+   including audio when available for all hearings, cases .... No sign of ALZ
+   handwritting; appears to be one by lawyer Nora Coon.
+
+
 
 
 
 }}}
 
-re: 18CR66984 - A 18141,  Oregon v Zimmerman, Amy L (#325701, 14080975)
+## re: 18CR66984 - A 18141,  Oregon v Zimmerman, Amy L (#325701, 14080975)
+
+vim: ts=2 sw=0 expandtab nolinebreak
