@@ -987,8 +987,17 @@ URI  https://en.wikipedia.org/wiki/Uniform_Resource_Identifier
 -	Goodreader for pdf ($20?) - many say best iPad reader.?
 - Marvin - no pdf support, but excellent otherwise?
 
+####	eReader:   Fujistu Quaderno A4 GEN 2  (A4 or A5)
+
+My use is almost entirely PDF technical documents (code, some math, technical
+notes).    No need to draw anything fancy; and no need for android apps.   
+
+Plus is "Distraction Free" (ie meant for reading and some note taking) Most important:  ease of reading with excessive fiddling to load, organize or configure.   I use Calibre. (Not afraid to fiddle, just do not want time sink each time I read)
+
+Curious what others with similar requirements chose.   Fujistu Quanderno A4 GEN 2 (order from eBay) is currently my top choice.
 
 #### KNITR
+
 
 **knitr -> R & rmarkdown -> Bookdown (~2016) -> Blogdown -> netlify (Hugo, static)**
 HUGO:   md -> html
