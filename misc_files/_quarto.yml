@@ -19,11 +19,12 @@ format:
     #      theme: cosmo
       theme: 
         -   lumen
-        -   resume.scss
+       #   -   resume.scss
       toc: true
       toc-title: "Contents"
       toc-location: left
-    # css: styles.css
+        #date: last-modified
+      css: styles.css
 
 execute:
   error: true

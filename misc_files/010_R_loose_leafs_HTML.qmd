@@ -1,23 +1,8 @@
 ---
-title: "~code/docs/misc_files/010_R_loose_leafs_HTML.qmd"
-format: 
-  html:
-    html-math-method: katex
-    fontsize: 11px
-    css: quarto_example_CSS.css
-    embed-resources: true
-    toc: true
-    toc-depth: 4
-editor: source 
-editor_options: 
-  chunk_output_type: console
-execute: 
-  error: true                   ## include errors in output
-  warning: true
-  collapse: true
-  standalone: true
+title: Loose Leaf
+date: last-modified
 ---
-
+/home/jim/code/docs/misc_files/010_R_loose_leafs_HTML.qmd
 <!--
       HTML VERSION of Loose Leafs
 
@@ -30,29 +15,27 @@ execute:
 ####	Volume 01 - CLI Skills
 
 -	Android (adb, fastboot)
--	CURL					(SEE:   API, R-misc)
--	GIT
--	JSON
--	LATEX					(ALSO:  WIP)
--	MAKE
+-	CVIM
+-	CURL (SEE:   API, R-misc, API Notes, OAUTH2)
+-	GIT (SEE:  index c)
+-	JSON (SEE:)
+-	LATEX	(SEE:)				(ALSO:  WIP)
+-	MAKE  (SEE:)
 -	REGEX/GREP		(SEE:  ZSH for glob)
 -	SEARCH				(SEE:  INDEX CARD)
 	-	Gmail | Github | DDG | ...
 -	TMUX
--	YOUTUBE-DL
+-	YOUTUBE-DL ( Now:  yt-dlp;  SEE ~/bin/)
 
 ####	Volume 02 - LINUX CONFIG/HARDWARE
 -	Linux Config - General
--	GRUB
--	X11
--	OS
--	Hardware
--	ChromeBox
--	ChromeBook Laptop
--	PHONES
--	Other eToys
+-	GRUB, X11
+-	OS, OS-tools
+-	Hardware ChromeBox ChromeBook Laptop
+-	PHONES	Other eToys
 
-####	Volume 03 - Neovim/Lua | nvim-R
+####	Volume 03 - Neovim/Lua | nvim-R  
+-	(SEE:  Index C; notes)
 
 ####	Volume 04 - ZSH
 -   GLOB/Zsh quantifiers
@@ -67,6 +50,8 @@ execute:
 -	Regression
 -	Baysian
 -   ML
+
+####  Volume 07	-   R & NSE	
 
 ####  Volume 08	-	R:	BASE and Other R skills 
 -   Follows Advanced-R Book 
