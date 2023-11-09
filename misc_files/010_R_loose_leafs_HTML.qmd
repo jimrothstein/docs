@@ -1,6 +1,9 @@
 ---
 title: Loose Leaf
 date: last-modified
+format:
+  html:
+    theme:  LL.scss
 ---
 /home/jim/code/docs/misc_files/010_R_loose_leafs_HTML.qmd
 <!--
@@ -14,6 +17,7 @@ date: last-modified
 
 ####	Volume 01 - CLI Skills
 
+::: small-font
 -	Android (adb, fastboot)
 -	CVIM
 -	CURL (SEE:   API, R-misc, API Notes, OAUTH2)
@@ -27,6 +31,9 @@ date: last-modified
 -	TMUX
 -	YOUTUBE-DL ( Now:  yt-dlp;  SEE ~/bin/)
 
+:::
+
+::: {style="color: red; border: solid black;"}
 ####	Volume 02 - LINUX CONFIG/HARDWARE
 -	Linux Config - General
 -	GRUB, X11
@@ -34,11 +41,22 @@ date: last-modified
 -	Hardware ChromeBox ChromeBook Laptop
 -	PHONES	Other eToys
 
+:::
+
+::: prettyblue
+
 ####	Volume 03 - Neovim/Lua | nvim-R  
 -	(SEE:  Index C; notes)
+:::
 
+::: bluebox
 ####	Volume 04 - ZSH
 -   GLOB/Zsh quantifiers
+:::
+
+
+
+::: {style="color: blue; border: solid black;"}
 
 ####	Volume 05 - MATH, ALGEBRA
 -	Linear Algebra
@@ -50,6 +68,7 @@ date: last-modified
 -	Regression
 -	Baysian
 -   ML
+:::
 
 ####  Volume 07	-   R & NSE	
 
@@ -59,5 +78,5 @@ date: last-modified
 
 [^1]:		LL = Looseleaf	
 <!--
-vim:linebreak:nospell:nowrap:cul tw=78 fo=ntl foldcolumn=3 cc=+1
+vim:linebreak:nospell:nowrap:cul tw=78 fo=ntl foldcolumn=3 cc=+1 expandtab
 -->

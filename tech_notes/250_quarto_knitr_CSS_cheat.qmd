@@ -27,10 +27,13 @@ execute:
   standalone: true
 ---
 
+**Quarto looks to _quarto.yml in current dir, in parent ...**
+This takes dominance over any scsc file in yaml in the .qmd file.
 
-### Quarto & CSS | SCSS
+### Quarto & CSS | SCSS (see  _quarto.yml cosmo + custom.scss)
+
 -   <https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans>
--   More examples:  ~/code/publish_project/QUARTO    
+-   More examples:  ~/code/QUARTO/QUARTO/
 
 
 :::aside

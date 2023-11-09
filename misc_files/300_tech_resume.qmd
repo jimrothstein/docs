@@ -52,7 +52,7 @@ execute:
 
 ### Projects {#experience}  
 
-Used youtube API and `httr` and `httr2` to add/modify playlists.
+Used youtube API and `httr` and `httr2` to add/modify youtube.com playlists.
 
 Used `rrapply` , `tidyr` to unravel firefox bookmarks in tree/json format to table.
 
