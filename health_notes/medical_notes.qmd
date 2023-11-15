@@ -18,7 +18,7 @@ execute:
   collapse: true
   standalone: true
 ---
-
+## /home/jim/code/docs/health_notes/medical_notes.qmd
 <!--
 !pandoc % -f markdown --toc -t latex -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.5in -o ~/Downloads/print_and_delete/medical_notes.md.pdf
 
@@ -2855,3 +2855,13 @@ some difficult getting form to Litholink, repeated emails, lab didn't get.   Dr.
 Nor do messages going through switchboard.
 
 Will try FAX, 360-449-1695
+
+##  2023-11-13  nephrology (cancel appt)
+Dr. Miyake agreed to handle me via phone appt.  Good. So today, tried to cancel
+previously scheduled appt with outside-Kaiser Nephrology Assoc of Oregon.
+Called 2x to cancel;   1st time put on hold.  after ~6 minutes, hung up and
+called 2nd time.  Again, reception wanted to send me to someone else (new
+patients) but I refused.  I am just trying to cancel.  She seemed adamant;  so
+was I.  Said I would not wait again on hold to CANCEL appt (2nd time, she
+pulled pull my record, name, dob) Annoying!
+
