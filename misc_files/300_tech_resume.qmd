@@ -38,7 +38,8 @@ execute:
 *	R, 4+ years package development, httr2, tidyverse/wrangle, data.table, shiny, quarto (some SCSS), plots (base + ggplot2) roughly to level of Advanced R book.
 * SQL: 2+ years, joins, data.table, dplyr; mySQL
 * RStudio, Neovim/nvim-R as IDE
-* Exposure to regression models
+* Exposure to regression models, KNN, Random Forest
+* R Shiny, reactive programming, dashboard
 * Quarto, Rmarkdown, latex, pandoc, Katex, knitr, some SCSS, CSS
 * 	Git/Github -  PR, merging
 *   Zsh Shell - scripts, regex, configuration
@@ -61,6 +62,10 @@ database - commerical real estate property financials (paradox), order tracking 
 Contribute R Github projects 
 
 ### RELATED WORK HISTORY: 
+
+
+2014 - present **R-Coders**
+Self-employed R programmer.
 
 Webmaster, community expatriate website in China, 2005 – 2008 Setup, maintain,
 promote expat community-based website in Dalian, China. Selected Joomla, hosting company, hired and trained student volunteers.

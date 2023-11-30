@@ -464,6 +464,9 @@ Insert in bulk:
 :h Vimux
 :call VimuxRunCommand("ls")
 :VimuxPromptCommand<CR>
+Lazy:	review ~/.localshare/kickstart/lazy
+(some have ftplugins/after)
+-	ftplugin one method of adding ft specific code (vs autocmd)
 
 To Close:
 :VimuxCloseRunner<CR>
