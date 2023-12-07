@@ -1,11 +1,11 @@
 ---
 format:   
     html:
-        toc: true 
-        toc_depth: 2
-        toc_float: true
+#        toc: true 
+#        toc_depth: 2
+#        toc_float: true
         embed-resources: true
-        css:  styles.css
+        css:  resume.scss   # override project
         code-link:  true   # useful?
 #     pdf:   
 #         latex_engine: lualatex  
@@ -26,12 +26,12 @@ execute:
 
 [Github: https://github.com/jimrothstein](Github:https://github.com/jimrothstein) \
 [Linkedin: https://www.linkedin.com/in/jimrothstein](https://www.linkedin.com/in/jimrothstein)
-
+[https://jimrothstein.github.io/](https://jimrothstein.github.io)
 ------
 
 
 
-### Seeking position primarily R coding.    
+### Seeking position to use R coding skills.
 
 ### Technical {#technical}
 
@@ -51,7 +51,10 @@ execute:
 * Variety of IT/internet/database experience.
 
 
-### Projects {#experience}  
+### Recent Projects {#recent}  
+
+
+Preliminary analysis Drug Benefit Denials (public data from Center for Medicare and Medicaid (CMS))
 
 Used youtube API and `httr` and `httr2` to add/modify youtube.com playlists.
 
@@ -81,24 +84,14 @@ Prior Web and Technical Experience Include:
 
 Webmaster, Saratoga Systems, Campbell, CA (1996-1998) Maintain NT and IIS server. Various internet projects.
 
-### Projects {#experience}  
-
-Used youtube API and `httr` and `httr2` to add/modify playlists.
-
-Used `rrapply` , `tidyr` to unravel firefox bookmarks in tree/json format to table.
-
-database - commerical real estate property financials (paradox), order tracking (paradox), bank risk management tool (ms access)
-
-Contribute R Github projects 
 Web Database Development, Microsoft, Redmond, WA (1996) Web database applications using Asp, MS SQL; contractor.
 
 Contract Programming Assignments: Chicago, IL (1986-1996) Designed and developed variety of business database applications
 (Paradox, Delphi, Access)
+
 ------
 
 
-[https://github.com/jimrothstein](https://github.com/jimrothstein)  
-[https://jimrothstein.github.io/](https://jimrothstein.github.io)
 
 
 ------
