@@ -2839,7 +2839,7 @@ Medicare Part B covers a bone mass measurement once every 24 months (more often 
 
 ##  2023-07-31   Next colonoscopy 
 
-69 yo M, mother died colon cancer; patient colonoscopy every 3-5 years since age
+67 yo M, mother died colon cancer(63?); patient colonoscopy every 3-5 years since age
 50.
 
 FACT:  Last procedure:  2017, with 5-7 year recommendation for repeat.
@@ -2865,3 +2865,13 @@ patients) but I refused.  I am just trying to cancel.  She seemed adamant;  so
 was I.  Said I would not wait again on hold to CANCEL appt (2nd time, she
 pulled pull my record, name, dob) Annoying!
 
+##  2023-12-14 Dr. Lam (uro)
+- K is bit high, decrease KCitrate?   agreed I would review with Dr. Miyake.
+- K is also what drives very high pH (not diet)
+- Litholink - said Dr. Miyake should handle.
+- High Protein/Creatine  - ask Dr. Miyake.
+- Urology does STONES, IMAGING.
+- NEXT:	get KUB in a few months; 
+- CLAIM:  Ultra low CT available (= 3 regular X-rays)
+- Prostate - not discussed; been a few years since checkup.
+- NEXT call:   1 year.
