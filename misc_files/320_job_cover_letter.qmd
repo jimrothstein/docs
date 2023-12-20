@@ -1,0 +1,35 @@
+
+---
+title: skeleton.qmd
+date: last-modified
+# Quarto requires title, if want date to appear
+# ~/.config/kickstart/skeleton/skeleton.qmd
+---
+Outline
+
+Seek
+    -	R coding position, primarily coding and related problem solving.
+
+I bring:
+    Stable coder; curious; 
+    Willing to be informal mentor (or vice versa)
+Don't want
+    -	 not seeking team lead or other managing position.
+
+Gap:
+    You will notice a gap in my resume for the years I lived overseas in
+    China.  A rich, broaden experience.   I did teach an introductory java
+    course and then set up and managed a popular website for both Chinese and
+    foreigners to exchange information in and around Dalian, China.
+
+R: 
+    Since then I have focused on the R package linux and related tools
+    (neovim, github ...)
+
+Ealier Projects:
+    I did a number of database projects mostly with the Paradox database and
+    some mySql.  These included a law firm conlflict database; large
+    multi-table database for real estate (joint ventures and individual
+    properties)
+
+vim:linebreak:nospell:nowrap:cul tw=78 fo=tqlnrc foldcolumn=1 cc=+1
