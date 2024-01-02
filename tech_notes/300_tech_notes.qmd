@@ -28,10 +28,11 @@ execute:
     -   USEFUL ??
     -   quarto:  focus on html (not pdf)
     -   use folds, to simplify navigating this document
-    -   no R here, no Stats
+    -   **no R here, no Stats**
     -   HTTR2 notes = mess
     -   Break this document into separate files, merge into one big one?
-
+	
+  -	
 ##  CHANGES:
 -  22-July-2023 LinuxMint upgrade  to 21.2 'victoria' via menu: upgrade, no issues.
                 version: /etc/linuxmint/info 
@@ -64,6 +65,12 @@ kernel.
 ## {PDF, Pandoc, Latex}
 
 ### PDF Notes   [ignores html, css; also ignores YAML header (pandoc & ::render()]
+2023-12-30
+-	tlmgr controls much latex install: fonts, *.sty, but lately Yuhi seems
+  to embedded tlmgr and never explicitly need to use it and never explicitly
+  need to use it
+-	for PDF:   pdf2latex, pdflatex (pandoc will do it, but complain)
+-		   in R, tinytex::latexmk()
 
  To create pdf, just about everything works:  pandoc, markdown, latex, knitr..
  Note:  zathura uses library, open source `popler`.
@@ -135,42 +142,8 @@ value for
 $$\pi = \directlua{tex.sprint(math.pi)}$$
 
 
-## section{R}
-
-###		R, DEFINTIONS, TERSE EXAMPLES
-			See ~/code/try_things_here/BASE/
-
-####    R, Definitions
--   **object**  Most computer languages do NOT allow direct access to
-    memory.  In R, various data structures (called `Objects` provide
-    access.  Use symbols or variables to access the the `Objects`.
-    Unique to R(?), symbols are also objects and can be manipulated
-    (example?).
-
--   **intrepreted vs compiler code**   The former is source code that
-    is executed line-by-line.   The later is machine code.   Between
-    the two, is wide spectrum
-
--   **struct** (C, non-R)  a collection that can hold multiple types, eg `db
-    record`.
-
-```
-    struct record
-    {
-        char name[32];
-        int age;
-        float debt;
-    }
-#   To use:
-    struct record X    # X is variable, struct is keyword, `record` is struct
-```
-
--   **monad** - As goal, seek functions with (1) no side effects (2) can
-    be composed.  Function factories can be useful, esp where variables can be
-    'stored' in environment.   SEE BRUNO video.
-
-}
-
+## section(R}
+-	No R;  use 310_
 
 ##	GIT commands   SEE INDEX Cars
 HEAD - can point to branch (tip) or a commit (detached HEAD). Commits are
@@ -1437,4 +1410,7 @@ SSD is much better, but more expensive.
 -   name brands:  Anker, Belkin, "Amazon Basics", **Beware off-brand** buy
   based on what is compatible with T480 (go crazy trying to match standards,
   USB-C 3.1, 3.2, 4.0, generatations, standard or not?)
-  vim: nospell:conceallevel=0
+	
+	  
+vim:linebreak:nospell:nowrap:cul tw=78 fo=tqlnr foldcolumn=1 cc=+1
+ 

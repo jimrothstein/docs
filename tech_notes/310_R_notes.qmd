@@ -24,6 +24,15 @@ execute:
   standalone: true
 css:  css_examples.css
 ---
+2023-12-28
+
+## Bugzilla < https://bugs.r-project.org/ >
+-	Besides R bugs good place to see intersection of documentation, R and bugs.
+
+-	<https://vroom.r-lib.org> package uses new internal data structure *ALTREP* <https://www.r-project.org/dsc/2017/slides/dsc2017.pdf>
+	 	
+***
+
 ::: {.callout-note}
 All R, math, statistics  notes here. 
 :::
@@ -519,6 +528,43 @@ code improves upon bquote.
 -   I've also tried to write a glossary + code examples for each metaprogramming idea in base R (but only got more confused)
     
 
+## section{R}
+
+	
+
+###		R, DEFINTIONS, TERSE EXAMPLES
+			See ~/code/try_things_here/BASE/
+
+####    R, Definitions
+-   **object**  Most computer languages do NOT allow direct access to
+    memory.  In R, various data structures (called `Objects` provide
+    access.  Use symbols or variables to access the the `Objects`.
+    Unique to R(?), symbols are also objects and can be manipulated
+    (example?).
+
+-   **intrepreted vs compiler code**   The former is source code that
+    is executed line-by-line.   The later is machine code.   Between
+    the two, is wide spectrum
+
+-   **struct** (C, non-R)  a collection that can hold multiple types, eg `db
+    record`.
+
+```
+    struct record
+    {
+        char name[32];
+        int age;
+        float debt;
+    }
+#   To use:
+    struct record X    # X is variable, struct is keyword, `record` is struct
+```
+
+-   **monad** - As goal, seek functions with (1) no side effects (2) can
+    be composed.  Function factories can be useful, esp where variables can be
+    'stored' in environment.   SEE BRUNO video.
+
+}
 
 
 ### Shiny and DT

@@ -1,9 +1,8 @@
 ---
+# Dec 7
+# resume should be standalone; not a blog post
 format:   
     html:
-#        toc: true 
-#        toc_depth: 2
-#        toc_float: true
         embed-resources: true
         css:  resume.scss   # override project
         code-link:  true   # useful?
@@ -37,28 +36,27 @@ execute:
 
 *	R, 4+ years package development, httr2, tidyverse/wrangle, data.table, shiny, quarto (some SCSS), plots (base + ggplot2) roughly to level of Advanced R book.
 * SQL: 2+ years, joins, data.table, dplyr; mySQL
-* RStudio, Neovim/nvim-R as IDE
-* Exposure to regression models, KNN, Random Forest
+* RStudio, Neovim/Nvim-R as IDE
+* Exposure to regression models, KNN, Random Forest, Logical Regression
 * R Shiny, reactive programming, dashboard
 * Quarto, Rmarkdown, latex, pandoc, Katex, knitr, some SCSS, CSS
 * 	Git/Github -  PR, merging
 *   Zsh Shell - scripts, regex, configuration
 *   Lua - used to configure neovim, plugins including Nvim-R
-* REST APIs, such as Google APIs, httr packages, JSON.
+* REST APIs, such as Google APIs, httr packages, JSON. (Gave talk)
 * 	Linux (Debian, LinuxMint, Ubuntu)
 * Fluent with Ubuntu, shell scripts, markdown, neovim, nvim-R, git.
 * Organized, analytical – yet creative and practical
 * Variety of IT/internet/database experience.
 
 
-### Recent Projects {#recent}  
+### Recent Projects & Skills {#recent}  
 
+-       (active) Preliminary analysis Drug Benefit Denials (public data from Center for Medicare and Medicaid (CMS))
 
-Preliminary analysis Drug Benefit Denials (public data from Center for Medicare and Medicaid (CMS))
+-       (active) Used youtube API and `httr` and `httr2` to add/modify youtube.com playlists.  Used OAUTH tokens scope.
 
-Used youtube API and `httr` and `httr2` to add/modify youtube.com playlists.
-
-Used `rrapply` , `tidyr` to unravel firefox bookmarks in tree/json format to table.
+-       Used `rrapply` , `tidyr` to unravel deeply nested firefox bookmarks in tree/json format to table.
 
 database - commerical real estate property financials (paradox), order tracking (paradox), bank risk management tool (ms access)
 

@@ -5,17 +5,12 @@
 project:
   type: website  # default, website or book
   output-dir:  docs
-  render:                             ## limit dir?  # default, render all files
-#     - "018.2_abstract_syntax_tree.qmd"
-#     - "410_bquote_example.qmd"
-#     - "250_quarto_cheat.qmd"
-#     - "300_tech_notes.qmd"
-#     - "TEST.qmd"
-    - "!*.R"          # do not render
-    - "!*.Rmd"        # do not render 
-    - "!*.qmd"
-    - "001_tech*"
-      #    - "*.qmd"         # once use ! (not), must specific ones you want
+# Render:  
+#   - default:  all 
+#   - can list specific files (only)
+#   - can list do not render "!*.R"
+#   - after using "!" , any additional files must be specifically listed
+#  render:                             ## limit dir?  # default, render all files
    
   
 

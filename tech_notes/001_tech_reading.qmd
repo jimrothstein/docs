@@ -59,6 +59,7 @@ As of \today
 - Higgens "Practical R Info?" 
   Higgens, <https://bookdown.org/pdr_higgins/rmrwr/> easy to read, range of
   topics (~cookbook)
+- Hoffman,  Graphs, Social Networks <https://bookdown.org/markhoff/social_network_analysis/>
 - Kaplan  2023 <https://mdsr-book.github.io/mdsr3e/> (tidyverse, parsnip,
   links to wikip for all stats)
 - Kaplan  2017, 2E <https://dtkaplan.github.io/SM2-bookdown/>
@@ -129,6 +130,7 @@ $$
 :::
 - <https://github.com/mine-cetinkaya-rundel/test-website>
 - Rstudio community | SCSS: <https://community.rstudio.com/t/quarto-markdown-list-and-blank-line/160693/4>
+- good video <https://www.youtube.com/watch?v=k-dQ36sx4Rk>
 
 
 ### exit
