@@ -3,15 +3,15 @@
 project:
   type: website
   output-dir:  docs
-  render:                             ## limit dir? 
+  #  render:                             ## limit dir? 
 #     - "018.2_abstract_syntax_tree.qmd"
 #     - "410_bquote_example.qmd"
 #     - "250_quarto_cheat.qmd"
 #     - "300_tech_notes.qmd"
 #     - "TEST.qmd"
-    - "!*.R"          # do not render
-    - "!*.Rmd"        # do not render 
-    - "*.qmd"         # must include after a negation
+#    - "!*.R"          # do not render
+#    - "!*.Rmd"        # do not render 
+#    - "*.qmd"         # must include after a negation
 
   ## project-wdie
 format:
@@ -20,11 +20,12 @@ format:
       toc: true
       toc-title: "Contents"
       toc-location: left
-
+    pdf: 
+      pdf-engine: lualatex
+    
 execute:
   error: true
   cache: false  
-    #  output-dir: docs
   standalone: true 
   collapse: true
 

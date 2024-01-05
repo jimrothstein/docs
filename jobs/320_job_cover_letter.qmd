@@ -1,67 +1,58 @@
-
+Jim Rothstein       
+jimrothstein@gmail.com      
+831-824-4304         
 ---
-title: skeleton.qmd
-date: last-modified
+#title: skeleton.qmd
+#date: last-modified
 # Quarto requires title, if want date to appear
 # ~/.config/kickstart/skeleton/skeleton.qmd
 ---
-Outline
 
-Opening:
-    I have done a range of projects in different settings.   However, in  past
-    several years I have focused on R and the related packages and uses.
+In different settings, I have done a range of database-related projects.
+However,  in  past several years I have focused on R, its related packages and
+uses.
 
-    Like many, I could be very happy moving ahead to the new challenges in
-    genoimcs, ML and modeling large amounts of data.   However, from my own
-    experience I know a better immediate goal is solidify what I do know and
-    fill in any gaps or weaknesses.  Improve the craft of  Improve the craft
-    of R 
+Like many, I could be happy moving ahead to the new challenges in genomics, ML
+and modeling large amounts of data.   However, from my own experience I know a
+better intermediate goal is to solidify what I do know and fill in any gaps or
+weaknesses.  My goal now is to improve the craft of R coding and data science
+in general.
 
-    So for example, I have worked both data.table and tidyverse but not
-    comfortable saying where each breaks down and another tool might be more
-    appropriate.  
+So for example, I have used various ways to validate inputs and catch
+exceptions, but I have not settled on a preferred way to do this.  I could say
+the same about using tidyverse or much more succinct data.table.  
 
-Seek
-    -	R coding position, primarily coding and related problem solving.
+The kind of position I feel I could immediately contribute would be a team
+environment, but in support role, for example
 
-
-Possible roles:
-    So I see myself as part of team that firms up what work has already been
-    done.   For example, 
-
--   wrangle, workflows, pipelines
+-   wrangle data, or improve workflows, pipelines
 -   refactor code
 -   improve function documentation
--   writing tests
+-   write tests
 -   work through know code issues
--   cooperatively develop project best practices, team tcoding style
+-   help document project best practices and coding style
    
 Of course, I would like to maintain exposure to modeling process, EDA,
 graphics.   But this can be done during down time, or my own time.
 
-I bring:
-    Stable coder; curious; 
-    Willing to be informal mentor (or vice versa)
-Don't want
-    -	 not seeking team lead or other managing position.
+You will notice a gap in my resume for the years I lived overseas in China.  A
+rich, broaden experience.   I did teach an introductory java course and then
+set up and managed a popular website for both Chinese and foreigners to
+exchange information in and around Dalian, China.
 
-Gap:
-    You will notice a gap in my resume for the years I lived overseas in
-    China.  A rich, broaden experience.   I did teach an introductory java
-    course and then set up and managed a popular website for both Chinese and
-    foreigners to exchange information in and around Dalian, China.
+I hope to be considered for a  role in your group and begin to contribute.
 
-R: 
-    Since then I have focused on the R package linux and related tools
-    (neovim, github ...)
-
-Ealier Projects:
+<!--
+Earlier Projects:
     I did a number of database projects mostly with the Paradox database and
-    some mySql.  These included a law firm conlflict database; large
+    some MySQL.  These included a law firm conflict database; large
     multi-table database for real estate (joint ventures and individual
     properties)
+    
+    -->
 
 
--	
-
+	
+<!--
 vim:linebreak:nospell:nowrap:cul tw=78 fo=tqlnrc foldcolumn=1 cc=+1
+-->
