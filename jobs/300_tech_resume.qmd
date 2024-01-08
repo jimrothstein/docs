@@ -24,19 +24,16 @@ https://www.linkedin.com/in/jimrothstein](https://www.linkedin.com/in/jimrothste
     Regression
 -   R Shiny, reactive programming, dashboard
 -   Quarto, Rmarkdown, latex, pandoc, Katex, knitr, some SCSS, CSS
--   Git/Github - PR, merging
--   Zsh Shell - scripts, regex, configuration
+-   Git/Github: 3+ years,  PR, merging
+-   Zsh Shell: 3+ years  scripts, regex, configuration
 -   Lua - used to configure neovim, plugins including Nvim-R
 -   REST APIs, such as Google APIs, httr packages, JSON. (Gave talk)
--   Linux (Debian, LinuxMint, Ubuntu)
--   Fluent with Ubuntu, shell scripts, markdown, neovim, nvim-R, git.
--   Organized, analytical – yet creative and practical
--   Variety of IT/internet/database experience.
+-   Linux (Debian, LinuxMint, Ubuntu): 4+ years, shell scripts, cron jobs, Rscripts 
 
 ### Recent Projects & Skills {#recent}
 
--   (active) Preliminary analysis Drug Benefit Denials (public data from
-    Center for Medicare and Medicaid (CMS))
+-   (active) Did preliminary analysis Drug Benefit Denials (public data from
+    Center for Medicare and Medicaid (CMS)).  Built initial Shiny app.
 
 -   (active) Used youtube API and `httr` and `httr2` to add/modify
     youtube.com playlists. Used OAUTH tokens scope.
@@ -44,28 +41,30 @@ https://www.linkedin.com/in/jimrothstein](https://www.linkedin.com/in/jimrothste
 -   Used `rrapply` , `tidyr` to unravel deeply nested firefox bookmarks
     in tree/json format to table.
 
+-   (active) Contribute to various Open Source projects (Github)
 
-Contribute R Github projects
 
 ### RELATED WORK HISTORY:
 
 2014 - present **R-Coders** Self-employed R programmer.
 
-Webmaster, community expatriate website in China, 2005 – 2008 Setup,
-maintain, promote expat community-based website in Dalian, China.
-Selected Joomla, hosting company, hired and trained student volunteers.
+1996-2014 Self-employed contractor, including
 
-Capital IT Group, Dalian, China 2004- Mentor Chinese software engineers,
-light project management, pre and post sales.
+- Webmaster, community expatriate website in China, 2005 – 2008 Setup,
+  maintain, promote expat community-based website in Dalian, China. Selected
+  Joomla, hosting company, hired and trained student volunteers.
 
-Center for Electronic Art, San Francisco, 2002 Taught Java, mySQL, jsp
-classes. Also supervised graduate student modeling shipping/ ordering/
-inventory system.
+- Capital IT Group, Dalian, China 2004- Mentor Chinese software engineers,
+  light project management, pre and post sales.
 
-Teaching (1998-2012) Taught classes java, math, internet, statistics and
-SAS in China and community college in US.
+- Center for Electronic Art, San Francisco, 2002 Taught Java, mySQL, jsp
+  classes. Also supervised graduate student modeling shipping/ ordering/
+  inventory system.
 
-Prior Web and Technical Experience Include:
+- Teaching (1998-2012) Taught classes java, math, internet, statistics in China
+  and California community college in US.  Certified to teach math in
+  at California community college.
+
 
 Webmaster, Saratoga Systems, Campbell, CA (1996-1998) Maintain NT and
 IIS server. Various internet projects.
@@ -79,8 +78,8 @@ Access) For example
 
 -   Developed relational database model for insurance company to track debt and
 assets of its multi-billion dollar joint ventures/commercial properties.  
--   Coded order tracking system (paradox).   
--   Coded bank risk management tool (ms access)  
+-   Developed order tracking system (paradox).   
+-   Contributed to bank risk management tool (ms access)  
 
 
 ### Education {#education}
