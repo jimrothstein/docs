@@ -1,3 +1,19 @@
+FOLLOW-up
+state health dept | 
+<https://www.linkedin.com/posts/mandi-pratt-chapman-ba92976_patientnavigation-healthequity-cancercontrol-activity-7151003727028486144-ZQ6R?utm_source=share&utm_medium=member_desktop>
+
+2024-01-16
+-  LI - finally something worked;  posit's federal salesperson gave me some ideas, including openscapes
+2024-01-14
+- r-blogger:  https://www.r-bloggers.com/2022/03/which-data-science-skills-are-important-50000-increase-in-salary-in-6-months/
+- LinkedIn  ... excellent ideas in youtube videos 000_job
+- resume - study examples (see linked in `learning by practice statistcis ??`
+
+2024-01-11
+
+-  Work for IT staffing company on government project??
+-  GSA 986 repos, 9 R repos!  (Is this right way to search??)
+
 2024-01-09
 -  Ore job fare, 1 recruiter VERY good
 -  job description ambiguous?   ask the `recruiter`
@@ -16,6 +32,16 @@
 -  Upwork, refuses to accept resume/linked ... unable to proceeed.
 
 2024-01-01
+
+
+###   DEAD
+-  code.gov, once hot seems gone.
+-  fecgov ,   same ... but now ??
+
+# -----------------------------------
+# -----------------------------------
+
+
 
 ##    Time to find job and zero in.
 

@@ -535,13 +535,8 @@ things and there are some groups you don't want to capture.
 
 21-July-2023:   Rumors, Linux Mint (now based upon Ubuntu/Canonical ) may be moving to **LMDE** (Linux Mint Debian Edition)
 Why?  some issues with Canonical?  Claims that LMDE much firmer ground; Mint will also then be more independent.
+2024-01-13 - Linux Mint updates, seems no problem
 
-
-Wed May 25 20:22:20 PDT 2022
-	-	run GallumOS 18.04
-	- password for Ubuntu, UbuntuOne is icmup.6667.again
-	- Ubuntu could NOT install (wifi issues)
-	- But old laptop runs fine with just linux mode.
 
 section{Lenovo Laptop}
 
@@ -1348,7 +1343,7 @@ Misc Notes:
 "State"  - cookies used to be used; now state carried in headers  
 vim:nospell
 
-####	Mobile, Cell Phone - notes
+####	Android, Mobile, Cell Phone - notes
 
 RETAIL DEMO UNIT ('retail mode'):
 -	ie runs in endless LOOP, no Cell ability, no MEI
@@ -1381,7 +1376,8 @@ Google Pixel 3a XL (my phone)
 -	Bluetooth - wasted plenty of time:  use wired ADB;   some mention Ubuntu &
 	bluetooth never got along.   Either way - TIME SINK;  waste.
 
--	MTP is protocol to move files;  seems imperfect;  PTP for photos
+-	MTP is protocol to move files;  seems imperfect (CLAIM: now
+  standardized, better) ;  PTP for photos
 mtp://[usb:001,085]   where 085 refers to device.  (Run lsusb)
 -	AVOID this stuff;   **stay with ADB and fix those file names**
 
