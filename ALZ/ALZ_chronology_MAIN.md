@@ -394,9 +394,15 @@ trouble?)
 
 ###	28JAN2022 - my ltr in full in files.
 
-	
+### early 2022 - date unknown:
+ALZ seeks new lawyer (emails not returned; lawyer on vacation); 
+- Does not want hearing delayed (related to Alexa visitation proceedings)
+- wants "sanction" since 1st probation violation; not convicted ?,  revocation "seems excessive"
+- various recitals: in online groups. Bridgeway outpatient;  Mom's program;  in counseling; claims passed random UA tests.
+- all this related proceedings re: Alexa in 15DR case before Judge Hart;  letter from Minette Bennett counseler; how Aria/ALZ bond wonderfally;  how Alexa/ALZ bond;  parenting time issues.
+
 ###	Mar 28, 2022 Hearing
-	15CR ALZ letter; new lawyer, see my court PHOTOS
+	15CR ALZ letter; new lawyer, see my court PHOTOS (lawyer Bridges withdraws; lawyer Peterson substituted)
 -	See QUOTE:  (photo)
 
 |	"I know multiple people who have been convicted of multiple felony probation
@@ -485,7 +491,8 @@ resolve.  OK.  See notes in MUNI (above)
 ##	Mon 15Aug2022 - complete waiver info for SALEM MUNI COURT records release
 (to computer file in my case; not to me)
 
-
+##  27OCT 2022 - see my SCANNED  Handwritten notes
+- More of nothing; delays; Judge Zimmerman asks "do you want me to resolve?", nothing of substance.
 
 ##	Sat 24Sep2022	FAX letter to Judge (annex fax=503-588-6822)
 }
@@ -791,7 +798,10 @@ prosecutor to decide what to do; to get records; etc.
 -  cases consolidated (do not understand various abbrev) w/15CR58947-A181840 
 -  ? Trial court file (pub & conf) uploaded to shared drive - No exhibits 
 -  **NO access to APPEALS from court house computer.** (says staff)
--  In criminal case 18CR.. I can see several docs uploaded 2 OCT 2023 but can not open (some marked confidential and others marked public).  DO NOT HaVE Permission
+-  In criminal case 18CR..Appeal.
+    **I can see several docs uploaded 2 OCT 2023 but can not open (some marked confidential and others marked public).  DO NOT HaVE Permission**
+    At least 3 parts:
+    - Case Summary (33 pages) | Index (1 page) | VOL I (public, 253 pages) | VOL II (confidential 64 pages)
 -  Apparently bet July and Now, court transcriber was preparing documents,
    including audio when available for all hearings, cases .... No sign of ALZ
    handwritting; appears to be one by lawyer Nora Coon.

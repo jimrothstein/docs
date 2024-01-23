@@ -32,11 +32,11 @@ https://www.linkedin.com/in/jimrothstein](https://www.linkedin.com/in/jimrothste
 
 ### Recent Projects & Skills {#recent}
 
--   (active) Did preliminary analysis Drug Benefit Denials (public data from
-    Center for Medicare and Medicaid (CMS)).  Built initial Shiny app.
+-   (active) Using Shiny developed preliminary dashboard for analysis of Drug
+  Benefit Denials (public data from Center for Medicare and Medicaid (CMS)).  
 
 -   (active) Used youtube API and `httr` and `httr2` to add/modify
-    youtube.com playlists. Used OAUTH tokens scope.
+    youtube.com playlists. Used OAUTH tokens scope.  Active participant developing book Web APIs with R, using openAPI framework.
 
 -   Used `rrapply` , `tidyr` to unravel deeply nested firefox bookmarks
     in tree/json format to table.
