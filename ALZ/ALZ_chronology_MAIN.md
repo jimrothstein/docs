@@ -64,6 +64,14 @@ As of Thu May 26 14:03:01 PDT 2022
 		-	21CV44156 - name change.
 	-	(TAP) Timindra Ann Pratico
 
+  - Michael McMullen (son) SEE 99C18441 (10/14/99), 98C32499, 98C30511 (custody, paternity, child support)
+  - Kaiden (brother?) 15DR  (10/17/17, 12/6/17 7 witnesses? 10/3-5/2016) 
+  misc notes:
+  - Leon Zimmerman (father) 08-25757 DHS + Leon Zimmerman
+  - Vivient(?) home security cameras (refuesed to remove) see 15CR 11/21/17
+
+  - 10/6/16 (endless motions)
+  ALZ loses custody, pay $300/month; judge criticizes ALZ 
 
 ##	Documents (put into DT)
 {
