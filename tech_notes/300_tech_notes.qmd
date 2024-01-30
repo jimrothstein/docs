@@ -48,6 +48,7 @@ on INDEX C).  Math, R, probability and stats notes **do NOT go here*
 
 ##  QUARTO:
 2023-12-06 -  Try couple of cv or resume templates and one quarto extension.   Seemed to be more work than worth.  Just use Rmarkdown to create resume.
+2024-01-26	READ r4ds Ch 28-29 b/c Quarto and config knitr
 
 ##  {X11, Wayland, video}
 

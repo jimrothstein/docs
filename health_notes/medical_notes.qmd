@@ -2906,7 +2906,7 @@ pulled pull my record, name, dob) Annoying!
   - Next urine/blood labs?  
   - Next MRI (Pancreas) 2025, unless reason for sooner.  
   - Next colonoscopy - ASAP (7 years) 
-```
+
 ## 2023-12-21 :  telephone, Dr. Miyake
 - Urine/protein > 1  didn't seem tooo worried, but must repeat  (exists a diabetes drug that reduces!)
 - Litholink - he will do 
@@ -2918,6 +2918,10 @@ pulled pull my record, name, dob) Annoying!
 
 {{< pagebreak >}}
 
+##  date??  "wellness" with Dr. Mueller
+- PSA, check annual;  a rising PSA (even if still normal) indicates a 'digital' rectal exam' is good idea.  However, DRE will probably also rasise PSA.
+- **parathyroid** is regulator, keeping calcium, phosphorus et al in balance.   Elevated PTH means it is trying to regulate.
+- A1C 5.4 = (approx) 108 glucose (on average)
 
 **2024-01-23** colonoscopy, mri (4 hours - NO FOOD, NO WATER)
 - Eugene:  Oregon Imaging Center can do MRI much sooner than  Kaiser (2 months out - Salem); 
@@ -2942,7 +2946,7 @@ Dr. Lam (urology)
 
 
 ## Stone ?!
-- Sudden changes in **creatinine | BUN | eGFR** in past have been strong indicator of stone.   (Past:  ureter  sotne, hydronephrosis, two times bilateral;  even though I have no pain or symptoms "I am last to know")
+- Sudden changes in **creatinine | BUN | eGFR** in past have been strong indicator of stone.   (Past:  ureter  stone, hydronephrosis, two times bilateral;  even though I have no pain or symptoms "I am last to know")
 - Now:  **slight right flank pain** past month or so (past: not reliable indicator, but now present)
 - Now:	**no blood** in urine (past: had stones with and without visible blood)
 - Now:  healthy diet, but have drifted away from **LOW OXALATE**; so stone, if true, not big surprise

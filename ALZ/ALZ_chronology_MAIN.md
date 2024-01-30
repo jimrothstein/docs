@@ -785,6 +785,8 @@ x-Lawyer (retired) Jim ?? (prop 114 - gun control), met at Downtown Club, says:
     *	Even though I was previously rejected under Civil Procedure, fraud, he
       said to submit it again.
 
+Rmk:  Did file ORCP 71 motion, which was rejected (Dates?)
+Also, in civil case, ALZ did provide Judge with papers that I did not see.  (More tampering?)
 
 ## 2023-08-09 Municipal Court and Legal Dept  (unaware ALZ admitted)
 Muni court seemed to have no info that ALZ admitted probation violation. Nor
