@@ -538,6 +538,11 @@ things and there are some groups you don't want to capture.
 Why?  some issues with Canonical?  Claims that LMDE much firmer ground; Mint will also then be more independent.
 2024-01-13 - Linux Mint updates, seems no problem
 
+Booting ... firmware | bootloader (finds all kernels, os) | grub2 (user
+select) ;   READ >info grub <CR>
+/kernel is MINIMUM to start;  this is why drivers often need separate install,
+not in kernel.
+
 
 section{Lenovo Laptop}
 
