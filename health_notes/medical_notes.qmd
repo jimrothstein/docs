@@ -27,6 +27,10 @@ add to Medical Dictionary:
 b/c  it is 3rd in list :set spellfiles?
 
 -->
+
+Medicare Card ID:   1F98NP7MC68   (see medicare.gov)
+Oregon Imaging (Eugene) 458-215-4050
+
 ##  News
 -   2MAY2023  - convert md file to qmd
 
