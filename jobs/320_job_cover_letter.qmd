@@ -8,37 +8,32 @@ jimrothstein@gmail.com
 # ~/.config/kickstart/skeleton/skeleton.qmd
 ---
 
-In different settings, I have done a range of database-related projects.
-However,  in  past several years I have focused on R, its related packages and
-uses.
+In different settings, I have done a range of database-related, SQL projects.
+However,  I now focus on R, its related packages and uses.
 
 Like many, I could be happy moving ahead to the new challenges in genomics, ML
-and modeling large amounts of data.   However, from my own experience I know a
-better intermediate goal is to solidify what I do know and fill in any gaps or
-weaknesses.  My goal now is to improve the craft of R coding and data science
-in general.
+and modeling large amounts of data.   However, my preferred intermediate goal
+is to solidify what I do know and fill in gaps or weaknesses.  
 
-So for example, I have used various ways to validate inputs and catch
-exceptions, but I have not settled on a preferred way to do this.  I could say
-the same about using tidyverse or much more succinct data.table.  
+This means writing better code and documentation; for example, better testing,
+validating inputs,  catching exceptions. 
 
-The kind of position I feel I could immediately contribute would be a team
-environment, but in support role, for example
+So I could immediately contribute to  a team environment, but in support
+role, for example
 
 -   wrangle data, or improve workflows, pipelines
 -   refactor code
 -   improve function documentation
 -   write tests
--   work through know code issues
+-   work through known code issues
 -   help document project best practices and coding style
    
-Of course, I would like to maintain exposure to modeling process, EDA,
+Of course, I want to continue on to modeling process, EDA,
 graphics.   But this can be done during down time, or my own time.
 
-You will notice a gap in my resume for the years I lived overseas in China.  A
-rich, broaden experience.   I did teach an introductory java course and then
-set up and managed a popular website for both Chinese and foreigners to
-exchange information in and around Dalian, China.
+I also lived overseas in China, where I taught an introductory java course and
+set up and managed a popular, multi-cultural website and forum for both
+Chinese and foreigners Dalian, China.
 
 I hope to be considered for a  role in your group and begin to contribute.
 

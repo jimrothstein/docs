@@ -27,7 +27,7 @@ https://www.linkedin.com/in/jimrothstein](https://www.linkedin.com/in/jimrothste
 -   Git/Github: 3+ years,  PR, merging
 -   Zsh Shell: 3+ years  scripts, regex, configuration
 -   Lua - used to configure neovim, plugins including Nvim-R
--   REST APIs, such as Google APIs, httr packages, JSON. (Gave talk)
+-   REST APIs, such as Google APIs, httr2 packages, JSON. (Gave talk)
 -   Linux (Debian, LinuxMint, Ubuntu): 4+ years, shell scripts, cron jobs, Rscripts 
 
 ### Recent Projects & Skills {#recent}
