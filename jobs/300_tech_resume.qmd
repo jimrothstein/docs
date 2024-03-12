@@ -22,7 +22,7 @@ https://www.linkedin.com/in/jimrothstein](https://www.linkedin.com/in/jimrothste
 -   RStudio, Neovim/Nvim-R as IDE
 -   Exposure to regression models, KNN, Random Forest, Logical
     Regression
--   R Shiny, reactive programming, dashboard
+-   R Shiny, reactive programming, dashboard, bslib themes
 -   Quarto, Rmarkdown, latex, pandoc, Katex, knitr, some SCSS, CSS
 -   Git/Github: 3+ years,  PR, merging
 -   Zsh Shell: 3+ years  scripts, regex, configuration
@@ -38,8 +38,8 @@ https://www.linkedin.com/in/jimrothstein](https://www.linkedin.com/in/jimrothste
 -   (active) Used youtube API and `httr` and `httr2` to add/modify
     youtube.com playlists. Used OAUTH tokens scope.  Active participant developing book Web APIs with R, using openAPI framework.
 
--   Used `rrapply` , `tidyr` to unravel deeply nested firefox bookmarks
-    in tree/json format to table.
+-   Used tools in  `rrapply` , `tidyr` , `vctrs`,   `tibblify` to unravel deeply nested JSONs 
+    in tree/json format to table (from apis)
 
 -   (active) Contribute to various Open Source projects (Github)
 

@@ -822,7 +822,7 @@ Stateless means server keeps no session information.   Each call to server is
 independent.  Examples include HTTP, IP, REST.   But TCP is not stateless.
 
 
-####    RESTFUL API (vs. graphQL) REF:
+####    RESTFUL API (vs. graphQL) REF:  (ODATA is query tool for REST)
 
   -  OpenApi (api doc rules:  openapi.json or openapi.yaml; was Swagger) https://oai.github.io/Documentation/specification.html
   -  Postman - popular testing/setup site, many videos; `code` button to show
