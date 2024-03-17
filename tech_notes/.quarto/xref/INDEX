@@ -29,5 +29,11 @@
   },
   "001_tech_reading.qmd": {
     "001_tech_reading.html": "e77a1853"
+  },
+  "410_R_deeply_nested_lists.qmd": {
+    "410_R_deeply_nested_lists.html": "b91515eb"
+  },
+  "revealjs/410_R_deeply_nested_lists.qmd": {
+    "410_R_deeply_nested_lists.html": "621147c9"
   }
 }
