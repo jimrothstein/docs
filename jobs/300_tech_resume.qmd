@@ -16,7 +16,7 @@ https://www.linkedin.com/in/jimrothstein](https://www.linkedin.com/in/jimrothste
 ### Technical {#technical}
 
 -   R, 4+ years package development, httr2, tidyverse/wrangle,
-    data.table, shiny, quarto (some SCSS), plots (base + ggplot2)
+    data.table, shiny, quarto (some SCSS), webR, plots (base + ggplot2)
     roughly to level of Advanced R book.
 -   SQL: 2+ years, joins, data.table, dplyr; mySQL
 -   RStudio, Neovim/Nvim-R as IDE

@@ -1,15 +1,17 @@
 ---
-title: " R Notes"
+title: " R Notes - STOP Out_of_date"
 date-modified: today 
 date: today
 pdf-engine: lualatex
 format:
-  html: 
-    toc: true
-    html-math-method: katex
-    fontsize: smaller
-    embed-resources: true   
-    number-sections: true
+    revealjs
+    
+#  html: 
+#    toc: true
+#    html-math-method: katex
+#    fontsize: smaller
+#    embed-resources: true   
+#    number-sections: true
     #output-file: docs/R_Notes.html             ## no paths allowed
 #    fontsize: 9pt
 editor:  source
@@ -24,6 +26,10 @@ execute:
   standalone: true
 css:  css_examples.css
 ---
+2024-03-16 - This file is OUT-OF-DATE,   see ~/code/publish/revealjs
+Left here at legacy code
+
+
 2023-12-28
 
 ## Bugzilla < https://bugs.r-project.org/ >
@@ -483,7 +489,7 @@ sum(is.na(starwars[, eval(col) ]) )
 sum(is.na(starwars[, col ]) )
 ```
 
-{{< include _meta_questions.qmd >}}
+## {{< include _meta_questions.qmd >}}
 
 ####    K-nearest neighbors, K is given
 
