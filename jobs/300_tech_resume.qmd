@@ -39,7 +39,7 @@ https://www.linkedin.com/in/jimrothstein](https://www.linkedin.com/in/jimrothste
     youtube.com playlists. Used OAUTH tokens scope.  Active participant developing book Web APIs with R, using openAPI framework.
 
 -   Used tools in  `rrapply` , `tidyr` , `vctrs`,   `tibblify` to unravel deeply nested JSONs 
-    in tree/json format to table (from apis)
+    in tree/json format to table (from REST apis)
 
 -   (active) Contribute to various Open Source projects (Github)
 

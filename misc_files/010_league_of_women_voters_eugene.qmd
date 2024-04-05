@@ -1,0 +1,18 @@
+
+---
+title: skeleton.qmd
+date: last-modified
+# Quarto requires title, if want date to appear
+# ~/.config/kickstart/skeleton/skeleton.qmd
+---
+#   TAGS:   
+
+```{r}
+
+```
+update?
+https://ballotpedia.org/League_of_Women_Voters
+
+7 years old?
+https://www.youtube.com/watch?v=Xt8FdJ9Vom8&t=3s&pp=ygUebGVhZ3VlIG9mIHdvbWVuIHZvdGVycyBldWdlbmUg
+vim:linebreak:nospell:nowrap:cul tw=78 fo=tqlnrc foldcolumn=1 cc=+1
