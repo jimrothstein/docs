@@ -519,19 +519,6 @@ end neovim
 -	for regex reading see 300_tech_reading.md
 
 
-#### Regex grouping:  capture & non-capture
-
-**Perl** PCRE for lookaheads, capture (in R, perl=T)
-from !so
-
-Groups that capture you can use later on in the regex to match OR you can use
-them in the replacement part of the regex. Making a non-capturing group simply
-exempts that group from being used for either of these reasons.
-
-
-Non-capturing groups are great if you are trying to capture many different
-things and there are some groups you don't want to capture. 
-
 ## LINUX/ZSH notes
 
 21-July-2023:   Rumors, Linux Mint (now based upon Ubuntu/Canonical ) may be moving to **LMDE** (Linux Mint Debian Edition)

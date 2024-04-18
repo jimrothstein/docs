@@ -400,7 +400,7 @@ Analysis of Data;  more advanced math, some measure}
         Great way to improve zsh, CLI skills.
 	*		Rothgar  Mastering ZSH: https://github.com/rothgar/mastering-zsh 
 
-
+/home/jim/code/docs/tech_notes/001_tech_reading.qmd
 ####	REGEX  
 Focus:  **grep -P,  regex usage**:\
 
