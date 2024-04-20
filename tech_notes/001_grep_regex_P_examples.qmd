@@ -455,6 +455,11 @@ abc.. (no)
 echo ${line_break}
 echo "a NOT preceeded by by b"
 
+### R or neovim dislikes line begins with reg=  (code appears in RED)
+### Making verbatim RED go away.
+```
+
+
 reg='(?<!b)a'   
 
 echo $reg
@@ -476,6 +481,15 @@ echo $reg
 str=bacade
 echo $str | grep -P '(ab|d)' 
 
+
+# -------------------
+regex="\d+(?=\W|$)"
+# -------------------
+##	Any pattern starts with digit, follwed by end of line or non-word
+##	Can be multiple matches in one string
+##	\W  not a-zA-Z0-9, plus _   ie '[^_[:alnum:]]'
+##	positive lookahead (ie followed by ...)
+echo "56" grep -P ${regex}
 
 regex="(\w*)(.*)\\1"
 
@@ -508,4 +522,5 @@ echo "cd" |  grep -P '[cd]\1'
 
 \end{verbatim}
 
+```
 vim: nospell
