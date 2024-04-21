@@ -1,9 +1,15 @@
 
 # -----------------------
 ##	DOCUMENT REGEX  HERE
+##  (text, no examples in this file)
 # -----------------------
+/home/jim/code/docs/tech_notes/REGEX.md
 
 ##	REGEX info:  consolidate to ~/code/docs/tech_notes/
+
+## this file: ~/code/docs/tech_notes/REGEX.md
+## ~/code/docs/tech_notes/001_grep_regex_P_examples.qmd
+## ~/code/docs/tech_notes/002_grep_examples.md
 ##	SOME regex:  in ~/code/zsh_project/ZSH_SH_FILES/
 
 

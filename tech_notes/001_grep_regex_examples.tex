@@ -1,20 +1,45 @@
 ---
 title: "/tech_notes/001_grep_regex_P_examples.qmd"
 ---
-
+##	THIS IS LEGACY.   Was used for pdf.
+##	2024-04-20
+##	Do not use for HTML
+##	Use quarto .qmd version
 <!--
-USE THIS FILE!
+pdf:
+	number-sections: true
+	colorlinks: true
+	keep-tex:  false
+	include-in-header: 
+		text: |
+		    \usepackage[top=.5in, bottom=.5in, left=.5in, right=.5in]{geometry}
+		    \usepackage{amsmath,amssymb,amstext,amsfonts}
+		    \usepackage{lipsum}
+		    \usepackage{setspace}
+
+		    -->
 
 #### Main Regex file:  ~/code/docs/tech_notes/REGEX.md
-#### USE THIS FILE:  ~/code/docs/tech_notes/001_grep_regex_P_examples.qmd
--->
-
+#### This file:  ~/code/docs/tech_notes/001_grep_regex_P_examples.qmd
 2024-04-20
+---
+
+\footnotesize
+as of \today
+
+\section{To run:}
 
 - quarto preview <file> --to pdf    # (opens in a viewer)
 - quarto render %	; zathura         # not quite right cli
 
 - math mode latex,  seems to work if *outside* R chunk
+$$
+x^2
+$$
+TODO:
+2024-04-16
+-	Lazy (vs greedy) not working
+\section{Purpose}
 
     PURPOSE:   COLLECT EXAMPLES of GREP and regex (-P = Perl) [not a script]
     USAGE:		
@@ -29,6 +54,7 @@ USE THIS FILE!
     GOAL:  
 	-	Capture, document, annotate useful REGEX examples.
 	-	Run and test in zsh shell (simpler and easier than fussing with quarto)
+\section{misc notes}
 assertion
 zero-length
 Lookaround (2 directions)
@@ -38,9 +64,8 @@ Each direction comes  in two flavors, positive assertion and negative assertion
 
 -	!so 3512471 - non-capture (?:)
 
-```
-
-
+\section{basic setup}
+\begin{verbatim}
 line_break="-------------------"
 
 ## match any letter that is NOT ( or )
@@ -67,7 +92,8 @@ regex='Z$'
 echo "Z" | grep -P $regex               # Z
 echo "ZZ" | grep -P $regex              # Z
 
-#### Lazy, not Greedy - NOT WORKING!	
+```
+## Lazy, not Greedy - NOT WORKING!	
 # Find smallest pattern that repeats one or more times
 # (.+?) - ? turns match into lazy (shortest match)
 # ex:  xyzzyx repeats one or more
@@ -82,15 +108,11 @@ echo "bbbbbb" | grep -P $regex
 echo "abcdd" | grep -P '([a-z])\1'
 'dd'
 
-### Lazy
-SEE <https://regex101.com/r/jxXKfj/1>
-with and without `g` flag
-regex="<.*?>"
-Shows effect on multiple "<EM>"  repeated twice in sentence.
+```
+\end{verbatim}
 
-
-### Why PERL? (for lookbacks) 
-
+\section{ Why PERL? (for lookbacks) }
+\begin{verbatim}
 regex='\d(?=x)'
 echo "5x" | grep -E $regex
 
@@ -504,6 +526,7 @@ echo "cd" |  grep -P '[cd]\1'
 ## In R, does what?
   p.5  <- problems(pattern="(\\w*)(.*)\\1)")
 
+\end{verbatim}
 
 ```
 vim: nospell

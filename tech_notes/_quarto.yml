@@ -28,7 +28,6 @@ website:
         text: 250_quarto_cheat
       - href: 300_tech_notes.qmd
         text: 300_tech_notes.qmd
-      - href: TEST.qmd
 
 ##  project-wide
 format:

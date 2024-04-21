@@ -1,9 +1,13 @@
 #!/bin/zsh
+#   002_grep_examples.md
 
 #   PURPOSE:    EXAMPLES of Basic GREP and regex (-E = Extended)
 #   USAGE:      Use as CHEAT Sheet, not interactive, not as script 
 #
 #
+
+#### Main Regex file:  ~/code/docs/tech_notes/REGEX.md
+#### This file: ~/code/docs/tech_notes/002_grep_examples.md
 ```
 #	Goal: remove far right portion of prompt (for clarity)
 {

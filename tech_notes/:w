@@ -2,14 +2,12 @@
 title: "/tech_notes/001_grep_regex_P_examples.qmd"
 ---
 
-<!--
-USE THIS FILE!
 
 #### Main Regex file:  ~/code/docs/tech_notes/REGEX.md
 #### USE THIS FILE:  ~/code/docs/tech_notes/001_grep_regex_P_examples.qmd
--->
-
 2024-04-20
+---
+
 
 - quarto preview <file> --to pdf    # (opens in a viewer)
 - quarto render %	; zathura         # not quite right cli

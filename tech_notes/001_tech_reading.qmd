@@ -26,7 +26,7 @@ LINK:  [TEXT portion](URL portion)
   \url{nytimes.com}
   \href{url}{text}   url itself does NOT print
   \href{nytimes.com}{Click: NY Times}
-
+  <https://nytimes.com>  works with quarto
 pandoc:	
   file <- "001_R_stats_tech_reading.md"
   !pandoc % -t latex -V linkcolor:blue -V fontsize=10pt -V geometry:margin=0.4in -o ~/Downloads/print_and_delete/reading.pdf 
@@ -137,7 +137,7 @@ $$
 
 ### exit
 ```{r}
-knitr::knit_exit()
+#knitr::knit_exit()
 
 ```
 
@@ -400,35 +400,19 @@ Analysis of Data;  more advanced math, some measure}
         Great way to improve zsh, CLI skills.
 	*		Rothgar  Mastering ZSH: https://github.com/rothgar/mastering-zsh 
 
-/home/jim/code/docs/tech_notes/001_tech_reading.qmd
 ####	REGEX  
-Focus:  **grep -P,  regex usage**:\
-
-- https://linuxize.com/post/regular-expressions-in-grep/#grep-regular-expression
-	(overview, not bad place to start)	
--	another overview:	https://bsd.org/regexintro.html
--	!wikipidia - several excellent articles and background.
--	GNU grep documentation:
-	https://www.gnu.org/savannah-checkouts/gnu/grep/manual/grep.html#Top
-- **wikipedia articles!**  
-	Because touch upon many issues: quoting, expansions, quasi-quotation,
-	recursion, definitions which I have stumbled accross but never really
-	understood at appropriate abstraction.  Now it may clarify why do what we do
-	and why the nomenclature is the way it is.
--	!so [regex] FAQ: https://stackoverflow.com/tags/regex/info (specific question (else can get lost in all the permutations.)
-
-Too comprehensive? (docs that cover flavors, usage in languages are too
-confusing to me)
-	
--	(Regex | Jan Goyvaerts) https://www.regular-expressions.info/tutorial.html (regex buddy)
-- https://www.regular-experssions.mobi
--	\href{https://learnbyexample.github.io/tags/regular-expressions/}{https://learnbyexample.github.io - some very intuitive arguments}
--	(iPad) Mastering	Regular Expressions
+- wiki <https://en.wikipedia.org/wiki/Regular_expression#>
+- GNU <https://www.gnu.org/savannah-checkouts/gnu/grep/manual/grep.html#Top)>
+- FAQ: <https://stackoverflow.com/tags/regex/info> 
+- (Regex | Jan Goyvaerts) <https://www.regular-expressions.info/tutorial.html>
+- <https://www.regular-experssions.mobi>
+- \href{https://learnbyexample.github.io/tags/regular-expressions/}{https://learnbyexample.github.io - some very intuitive arguments}
+- (iPad) Mastering	Regular Expressions
 
 Finite Automata?
 
--	https://sodocumentation.net/regex
--	https://swtch.com/~rsc/regexp/regexp1.html
+-	<https://sodocumentation.net/regex>
+-	<https://swtch.com/~rsc/regexp/regexp1.html>
 
 ### Videos
   *   [maththebeautiful - Paul?]( https://www.youtube.com/c/MathTheBeautiful/playlists )

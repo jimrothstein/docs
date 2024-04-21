@@ -136,10 +136,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="./300_tech_notes.html" rel="" target="">
  <span class="menu-text">300_tech_notes.qmd</span></a>
   </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="./TEST.qmd" rel="" target="">
- <span class="menu-text"></span></a>
-  </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto">
 </div>
@@ -158,6 +154,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#algorithms-ml" id="toc-algorithms-ml" class="nav-link active" data-scroll-target="#algorithms-ml">Algorithms &amp; ML</a></li>
   <li><a href="#exit" id="toc-exit" class="nav-link" data-scroll-target="#exit">exit</a></li>
+  <li><a href="#recents" id="toc-recents" class="nav-link" data-scroll-target="#recents">Recents</a></li>
+  <li><a href="#bookclub" id="toc-bookclub" class="nav-link" data-scroll-target="#bookclub">BookClub</a></li>
+  <li><a href="#r---always-learn-something-new" id="toc-r---always-learn-something-new" class="nav-link" data-scroll-target="#r---always-learn-something-new">R - always learn something new:</a></li>
+  <li><a href="#r---documentation-can-beat-searching" id="toc-r---documentation-can-beat-searching" class="nav-link" data-scroll-target="#r---documentation-can-beat-searching">R - Documentation (can beat searching !)</a></li>
+  <li><a href="#r---graphics-base-is-main-package" id="toc-r---graphics-base-is-main-package" class="nav-link" data-scroll-target="#r---graphics-base-is-main-package">R - graphics (base:: is main package)</a></li>
+  <li><a href="#basic-statistics" id="toc-basic-statistics" class="nav-link" data-scroll-target="#basic-statistics">Basic Statistics</a></li>
+  <li><a href="#related-to-islr" id="toc-related-to-islr" class="nav-link" data-scroll-target="#related-to-islr">Related to ISLR</a></li>
+  <li><a href="#linear-algebra-as-mathematics" id="toc-linear-algebra-as-mathematics" class="nav-link" data-scroll-target="#linear-algebra-as-mathematics">Linear Algebra (as mathematics)</a></li>
+  <li><a href="#other-book-statsr-books" id="toc-other-book-statsr-books" class="nav-link" data-scroll-target="#other-book-statsr-books">Other book stats/R books:</a></li>
+  <li><a href="#more-advanced-regessionmodeling-books" id="toc-more-advanced-regessionmodeling-books" class="nav-link" data-scroll-target="#more-advanced-regessionmodeling-books">More advanced regession/modeling books</a></li>
+  <li><a href="#bayes" id="toc-bayes" class="nav-link" data-scroll-target="#bayes">BAYES</a></li>
+  <li><a href="#good-technical-reading" id="toc-good-technical-reading" class="nav-link" data-scroll-target="#good-technical-reading">Good Technical Reading</a></li>
+  <li><a href="#videos" id="toc-videos" class="nav-link" data-scroll-target="#videos">Videos</a></li>
+  <li><a href="#apis-and-r" id="toc-apis-and-r" class="nav-link" data-scroll-target="#apis-and-r">APIs and R</a></li>
+  <li><a href="#neovimlua" id="toc-neovimlua" class="nav-link" data-scroll-target="#neovimlua">NEOVIM/LUA</a></li>
+  <li><a href="#android" id="toc-android" class="nav-link" data-scroll-target="#android">Android</a></li>
   </ul>
 </nav>
     </div>
@@ -181,6 +193,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
+<p>Last updated: 2024-04-06</p>
 <!--
 template has \small font embedded
 !pandoc % -f markdown --template ~/dotfiles/proposed_template.latex -V geometry:margin=0.4in --toc-depth=4 -V toc-title="Reading" -o out.pdf ; zathura out.pdf
@@ -197,7 +210,7 @@ LINK:  [TEXT portion](URL portion)
   \url{nytimes.com}
   \href{url}{text}   url itself does NOT print
   \href{nytimes.com}{Click: NY Times}
-
+  <https://nytimes.com>  works with quarto
 pandoc: 
   file <- "001_R_stats_tech_reading.md"
   !pandoc % -t latex -V linkcolor:blue -V fontsize=10pt -V geometry:margin=0.4in -o ~/Downloads/print_and_delete/reading.pdf 
@@ -301,14 +314,427 @@ SEE 15.2 for logistic; var transform</li>
 <ul>
 <li><a href="https://github.com/mine-cetinkaya-rundel/test-website" class="uri">https://github.com/mine-cetinkaya-rundel/test-website</a></li>
 <li>Rstudio community | SCSS: <a href="https://community.rstudio.com/t/quarto-markdown-list-and-blank-line/160693/4" class="uri">https://community.rstudio.com/t/quarto-markdown-list-and-blank-line/160693/4</a></li>
+<li>good video <a href="https://www.youtube.com/watch?v=k-dQ36sx4Rk" class="uri">https://www.youtube.com/watch?v=k-dQ36sx4Rk</a></li>
 </ul>
 </section>
 </section>
 <section id="exit" class="level3">
 <h3 class="anchored" data-anchor-id="exit">exit</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">knit_exit</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#knitr::knit_exit()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</section>
+<section id="recents" class="level3">
+<h3 class="anchored" data-anchor-id="recents">Recents</h3>
+<ul>
+<li>Bruno, Modern Stats with Tidyverse (Bruno)Bruno Rodrigues <a href="http://modern-rstats.eu/" class="uri">http://modern-rstats.eu/</a> (web) only)</li>
+<li><a href="https://book.rwithoutstatistics.com/index.html">Keyes, R Without Statistics</a></li>
+<li>Racket: HTDP <a href="https://htdp.org/2020-5-6/Book/part_prologue.html" class="uri">https://htdp.org/2020-5-6/Book/part_prologue.html</a></li>
+<li>McElreath, fantastic: <a href="https://www.youtube.com/playlist?list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus" class="uri">https://www.youtube.com/playlist?list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus</a></li>
+</ul>
+</section>
+<section id="bookclub" class="level3">
+<h3 class="anchored" data-anchor-id="bookclub">BookClub</h3>
+<ul>
+<li>Janssens, DS at Command Line: <a href="https://www.datascienceatthecommandline.com/2e/" class="uri">https://www.datascienceatthecommandline.com/2e/</a></li>
+<li>Hadley, <a href="https://mastering-shiny.org/" class="uri">https://mastering-shiny.org/</a></li>
+<li>R, javascript + shiny <a href="https://book.javascript-for-r.com/" class="uri">https://book.javascript-for-r.com/</a></li>
+<li>HTTP Testing (book) <a href="https://books.ropensci.org/http-testing/" class="uri">https://books.ropensci.org/http-testing/</a></li>
+<li>[Deisenroth, et al Math for ML ] <a href="https://mml-book.github.io/book/mml-book.pdf" class="uri">https://mml-book.github.io/book/mml-book.pdf</a></li>
+<li><a href="https://probability4datascience.com/index.html">Chan, Intro Probability for DS</a></li>
+<li>[Meier, ANOVA + MIXED EFFECTS]<a href="https://people.math.ethz.ch/~meier/teaching/anova/index.html" class="uri">https://people.math.ethz.ch/~meier/teaching/anova/index.html</a></li>
+</ul>
+</section>
+<section id="r---always-learn-something-new" class="level3">
+<h3 class="anchored" data-anchor-id="r---always-learn-something-new">R - always learn something new:</h3>
+<ul>
+<li>Burns, R Inferno (not intro book)</li>
+<li>Peng, <a href="https://bookdown.org/rdpeng/rprogdatascience/" class="uri">https://bookdown.org/rdpeng/rprogdatascience/</a> * Peng, <a href="https://bookdown.org/rdpeng/RProgDA/" class="uri">https://bookdown.org/rdpeng/RProgDA/</a></li>
+<li>Peng <a href="https://jhu-advdatasci.github.io/2018/" class="uri">https://jhu-advdatasci.github.io/2018/</a></li>
+<li>Hadley, <a href="https://r4ds.had.co.nz/index.html" class="uri">https://r4ds.had.co.nz/index.html</a></li>
+<li><a href="https://stat545.com/index.html">Jennybc (book)</a> <a href="https://rstats.wtf/">wtf</a> <a href="https://happygitwithr.com/">git</a></li>
+<li>Gillespie, Lovelace (2016) <a href="https://bookdown.org/csgillespie/efficientR/" class="uri">https://bookdown.org/csgillespie/efficientR/</a></li>
+<li>Matloff: Art of R Programming (2011)</li>
+<li>Matloff: <a href="https://github.com/matloff/TidyverseSkeptic" class="uri">https://github.com/matloff/TidyverseSkeptic</a></li>
+<li>de Jong, Intro to Data Cleaning <a href="https://cran.r-project.org/doc/contrib/de_Jonge+van_der_Loo-Introduction_to_data_cleaning_with_R.pdf" class="uri">https://cran.r-project.org/doc/contrib/de_Jonge+van_der_Loo-Introduction_to_data_cleaning_with_R.pdf</a></li>
+<li>Grolemund, 2014 <a href="https://rstudio-education.github.io/hopr/" class="uri">https://rstudio-education.github.io/hopr/</a></li>
+</ul>
+</section>
+<section id="r---documentation-can-beat-searching" class="level3">
+<h3 class="anchored" data-anchor-id="r---documentation-can-beat-searching">R - Documentation (can beat searching !)</h3>
+<ul>
+<li>official R CRAN: <a href="https://cran.r-project.org/manuals.html" class="uri">https://cran.r-project.org/manuals.html</a>
+<ul>
+<li>R intro: <a href="https://cran.r-project.org/doc/manuals/r-release/R-intro.html" class="uri">https://cran.r-project.org/doc/manuals/r-release/R-intro.html</a></li>
+<li>R Lang: <a href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html" class="uri">https://cran.r-project.org/doc/manuals/r-release/R-lang.html</a></li>
+</ul></li>
+<li><a href="https://design.tidyverse.org" class="uri">https://design.tidyverse.org</a></li>
+<li><a href="https://stat.ethz.ch/R-manual/R-devel/library/">ethz</a></li>
+</ul>
+</section>
+<section id="r---graphics-base-is-main-package" class="level3">
+<h3 class="anchored" data-anchor-id="r---graphics-base-is-main-package">R - graphics (base:: is main package)</h3>
+<ul>
+<li><a href="https://rdrr.io/r/graphics/par.html" class="uri">https://rdrr.io/r/graphics/par.html</a></li>
+<li>R intro Ch 12: <a href="https://cran.r-project.org/doc/manuals/r-release/R-intro.html#Graphics" class="uri">https://cran.r-project.org/doc/manuals/r-release/R-intro.html#Graphics</a></li>
+<li>internals - Ch 6 graphics (lower level)</li>
+<li>base Idiot’s guide: <a href="https://rstudio-pubs-static.s3.amazonaws.com/7953_4e3efd5b9415444ca065b1167862c349.html" class="uri">https://rstudio-pubs-static.s3.amazonaws.com/7953_4e3efd5b9415444ca065b1167862c349.html</a></li>
+<li>shipunov - visual statistics, use? <a href="https://stats.libretexts.org/Bookshelves/Introductory_Statistics/Book%3A_Visual_Statistics_Use_R_(Shipunov)" class="uri">https://stats.libretexts.org/Bookshelves/Introductory_Statistics/Book%3A_Visual_Statistics_Use_R_(Shipunov)</a></li>
+</ul>
+</section>
+<section id="basic-statistics" class="level3">
+<h3 class="anchored" data-anchor-id="basic-statistics">Basic Statistics</h3>
+<section id="more-intuitiveexplanatory" class="level4">
+<h4 class="anchored" data-anchor-id="more-intuitiveexplanatory">More Intuitive/Explanatory:</h4>
+<ul>
+<li><a href="https://askgoodquestions.blog/">Rossman, know all the basics? confident? ASK GOOD Q</a></li>
+<li>Przemyslaw Biecek and Tomasz Burzykowski | different ideas | Ch1, 2 Explanatory Model Analysis | <a href="https://ema.drwhy.ai/" class="uri">https://ema.drwhy.ai/</a></li>
+<li>McCullagh &amp; Nelder (classic) <a href="https://www.utstat.toronto.edu/~brunner/oldclass/2201s11/readings/glmbook.pdf" class="uri">https://www.utstat.toronto.edu/~brunner/oldclass/2201s11/readings/glmbook.pdf</a></li>
+<li><a href="https://ml.berkeley.edu/blog/posts/crash-course/part-1/">ML Berkeley:</a></li>
+<li>Goodfellow et al: <a href="https://www.deeplearningbook.org/" class="uri">https://www.deeplearningbook.org/</a> ideas</li>
+<li>Guo: Creative site and book: <a href="https://seeing-theory.brown.edu/#firstPage" class="uri">https://seeing-theory.brown.edu/#firstPage</a></li>
+<li>Huntington “The Effect Book” <a href="https://www.theeffectbook.net/index.html" class="uri">https://www.theeffectbook.net/index.html</a></li>
+<li>navarro (learn statistics with r) review lm() and geometric r^2, Ch15, 16 * Huntington <a href="https://www.theeffectbook.net/index.html" class="uri">https://www.theeffectbook.net/index.html</a> (intutition?)</li>
+<li>Taylor, J “Introduction to Error Analysis - 2nd” unique book, error propogation and calculations.</li>
+</ul>
+</section>
+</section>
+<section id="related-to-islr" class="level3">
+<h3 class="anchored" data-anchor-id="related-to-islr">Related to ISLR</h3>
+<ul>
+<li><p><a href="https://lmlcr.gagolewski.com/">Gagolewski Lightweight ML with R</a> iPad</p></li>
+<li><p><a href="https://cran.r-project.org/doc/contrib/Faraway-PRA.pdf" class="uri">https://cran.r-project.org/doc/contrib/Faraway-PRA.pdf</a> linear algebra</p></li>
+<li><p>Navarro: Ch 15 <a href="https://learningstatisticswithr.com/" class="uri">https://learningstatisticswithr.com/</a></p></li>
+<li><p>residuals, geometry <a href="https://socialsciences.mcmaster.ca/jfox/Papers/matlib-useR2016.pdf" class="uri">https://socialsciences.mcmaster.ca/jfox/Papers/matlib-useR2016.pdf</a></p></li>
+<li><p>matlib (vectors): https://cran.r-project.org/web/packages/matlib/index.html</p></li>
+<li><p>https://github.com/friendly/matlib/</p></li>
+<li><p>Shalizi [2019 Truth About Linear Regression] (http://www.stat.cmu.edu/~cshalizi/TALR/) -deeper/more explanatory. By Ch 11, use of gradient f, matrix derviatives ….</p></li>
+<li><p>Kuiper, Shonda: linear algebra simple, clear: video: <a href="https://www.youtube.com/watch?v=jQkK0XMrAdM" class="uri">https://www.youtube.com/watch?v=jQkK0XMrAdM</a></p></li>
+<li><p>Race, Shaina gentle intro to lin alg:, &lt; https://shainarace.github.io/LinearAlgebra/index.html &gt;</p></li>
+<li><p>Videos - Cohort 05: https://www.youtube.com/playlist?list=PL3x6DOfs2NGjbefZellBVB306_z8Wz1Xd</p></li>
+<li><p>Roback: LINE: <a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-MLRreview.html#assumptions-for-linear-least-squares-regression" class="uri">https://bookdown.org/roback/bookdown-BeyondMLR/ch-MLRreview.html#assumptions-for-linear-least-squares-regression</a> <a href="https://socialsciences.mcmaster.ca/jfox/Papers/matlib-useR2016.pdf" class="uri">https://socialsciences.mcmaster.ca/jfox/Papers/matlib-useR2016.pdf</a></p></li>
+<li><p>Friendly… (adv) geometry and statistical methods <a href="https://bityl.co/JdSp" class="uri">https://bityl.co/JdSp</a></p></li>
+<li><p>Friendly: <a href="http://friendly.github.io/matlib/articles/data-beta.html" class="uri">http://friendly.github.io/matlib/articles/data-beta.html</a></p></li>
+</ul>
+<section id="solid-basic-stats-intros" class="level4">
+<h4 class="anchored" data-anchor-id="solid-basic-stats-intros">Solid, basic stats intros</h4>
+<ul>
+<li>Matloff (Prob book) <a href="https://github.com/matloff/probstatbook/blob/master/ProbStatBookW21.pdf" class="uri">https://github.com/matloff/probstatbook/blob/master/ProbStatBookW21.pdf</a></li>
+<li>PSU Course begin with 414 | | no R * <a href="https://online.stat.psu.edu/stat414/" class="uri">https://online.stat.psu.edu/stat414/</a> * <a href="https://online.stat.psu.edu/stat462/" class="uri">https://online.stat.psu.edu/stat462/</a> * <a href="https://online.stat.psu.edu/stat415/" class="uri">https://online.stat.psu.edu/stat415/</a></li>
+<li>AMS Basic, good intro CLT (but not t)</li>
+<li>Dekking, et al Modern Introduction to Probability &amp; Statistics (2005), no R. <a href="https://cis.temple.edu/~latecki/Courses/CIS2033-Spring13/Modern_intro_probability_statistics_Dekking05.pdf" class="uri">https://cis.temple.edu/~latecki/Courses/CIS2033-Spring13/Modern_intro_probability_statistics_Dekking05.pdf</a></li>
+<li>Frey, Bruce “Statistical Hacks”</li>
+<li>[Dalpiaz, David, Univ of IL] ( https://daviddalpiaz.github.io/appliedstats/ )</li>
+<li>Lindelov: Concise R examples of common stat tests. * Lavine, Statistical Thought: https://people.math.umass.edu/~lavine/Book/book.pdf</li>
+<li>Siegrist <a href="https://www.randomservices.org/random/index.htmli" class="uri">https://www.randomservices.org/random/index.htmli</a> CLT, stats, linear alg | aka randomservices.org | ** best book for introducing Math<br>
+</li>
+<li>Nahim, Dueling Idiots, harder but real world stats/prob problems (pins falling on surfaces)</li>
+</ul>
+</section>
+<section id="r-and-special-topics" class="level4">
+<h4 class="anchored" data-anchor-id="r-and-special-topics">R and Special Topics</h4>
+<pre><code>-   Data Science at Command Line (book) https://datascienceatthecommandline.com/2e/chapter-2-getting-started.html
+    -   videos: https://www.youtube.com/c/R4DSOnlineLearningCommunity  </code></pre>
+</section>
+<section id="blogs" class="level4">
+<h4 class="anchored" data-anchor-id="blogs">Blogs</h4>
+<ul>
+<li><a href="https://towardsdatascience.com" class="uri">https://towardsdatascience.com</a></li>
+<li>R-Blogger - {rweekly.org} - https://www.rstudio.com/blog/software-development-resources-for-data-scientists/ - </li>
+</ul>
+</section>
+<section id="r-the-language-functional-standard-and-non--evaluation-environments-call-stacks" class="level4">
+<h4 class="anchored" data-anchor-id="r-the-language-functional-standard-and-non--evaluation-environments-call-stacks">R, the Language: Functional, Standard and Non- Evaluation, Environments, Call Stacks:</h4>
+<ul>
+<li>Chambers (2008) “Statistics &amp; Computing” (much coverage of R internals) </li>
+<li>Gaslam, Brodie - blog - several good posts * NSE: <a href="https://www.brodieg.com/2020/05/05/on-nse/" class="uri">https://www.brodieg.com/2020/05/05/on-nse/</a> * HP Calculator &amp; Reverse Polish! <a href="https://www.brodieg.com/2019/01/11/reverse-polish-notation-parsing-in-r/" class="uri">https://www.brodieg.com/2019/01/11/reverse-polish-notation-parsing-in-r/</a> * Side Effects, Macros: <a href="https://www.brodieg.com/2019/10/30/visualizing-algorithms/" class="uri">https://www.brodieg.com/2019/10/30/visualizing-algorithms/</a></li>
+<li>Gupta, Suraj - &lt;How R Finds objects: https://blog.obeautifulcode.com/R/How-R-Searches-And-Finds-Stuff/&gt;</li>
+<li>Rnews - Lumley, Macros in R: <a href="https://www.r-project.org/doc/Rnews/Rnews_2001-3.pdf" class="uri">https://www.r-project.org/doc/Rnews/Rnews_2001-3.pdf</a></li>
+<li>Rnews - 2001-2008 has lot of good articles</li>
+<li>rlist use functional ideas with lists: <a href="https://renkun-ken.github.io/rlist/" class="uri">https://renkun-ken.github.io/rlist/</a></li>
+<li>tutorial for rlist: <a href="https://renkun-ken.github.io/rlist-tutorial/" class="uri">https://renkun-ken.github.io/rlist-tutorial/</a></li>
+<li>Gatto: <a href="https://github.com/lgatto/TeachingMaterial/blob/master/_R-functional-programming/functional-programming.pdf" class="uri">https://github.com/lgatto/TeachingMaterial/blob/master/_R-functional-programming/functional-programming.pdf</a></li>
+</ul>
+</section>
+</section>
+<section id="linear-algebra-as-mathematics" class="level3">
+<h3 class="anchored" data-anchor-id="linear-algebra-as-mathematics">Linear Algebra (as mathematics)</h3>
+<ul>
+<li>Beezer Linear Algebra (easier?)</li>
+<li>Herve Adbi | lin alg| no R, no stat, starts simple but gets to decomposition.</li>
+<li>Strang, Linear Algebra (classic)</li>
+<li>Artin, Michael “Algebra” - readable ?</li>
+</ul>
+<section id="haskell" class="level4">
+<h4 class="anchored" data-anchor-id="haskell">Haskell</h4>
+<ul>
+<li>fairly gentle Haskell intro: https://www.cantab.net/users/antoni.diller/haskell/units/unit02.html</li>
+<li>Haskell book: http://book.realworldhaskell.org/read/</li>
+</ul>
+</section>
+</section>
+<section id="other-book-statsr-books" class="level3">
+<h3 class="anchored" data-anchor-id="other-book-statsr-books">Other book stats/R books:</h3>
+<ul>
+<li>Hannay (=rbassett) read, (avoid pkgs ch 11, 12) | <a href="https://faculty.nps.edu/rbassett/_book/" class="uri">https://faculty.nps.edu/rbassett/_book/</a></li>
+<li>Ismay modern dive (2020)</li>
+<li>Kaplan (2017) ch 6.5 <a href="https://dtkaplan.github.io/SM2-bookdown/" class="uri">https://dtkaplan.github.io/SM2-bookdown/</a> (wordy, but exposes nuances)</li>
+<li>Matloff(2020) book</li>
+<li>Mcelreath (videos)</li>
+<li>PENG | art of … (2017) ch 6.5 <a href="https://bookdown.org/rdpeng/artofdatascience/" class="uri">https://bookdown.org/rdpeng/artofdatascience/</a> | r4ds (2019) ch 9.5</li>
+<li><pre><code>mosaic ch 5.6, ch 24</code></pre></li>
+</ul>
+</section>
+<section id="more-advanced-regessionmodeling-books" class="level3">
+<h3 class="anchored" data-anchor-id="more-advanced-regessionmodeling-books">More advanced regession/modeling books</h3>
+<pre><code>-   Cosmo Shalizi:  excellent:
+-  [2019 Truth About Linear Regression] (http://www.stat.cmu.edu/~cshalizi/TALR/) -deeper/more explanatory. By Ch 11, use of gradient f, matrix derviatives ....
+-  Shalizi-2021: Advanced Data Analysis From Elem Point of View:
+    &lt;http://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/ADAfaEPoV.pdf&gt;
+-  &lt;http://www.stat.cmu.edu/~cshalizi/mreg/15/&gt;</code></pre>
+<ul>
+<li>Davidson (Econometric) - Ch 1, 2</li>
+<li><a href="https://web.stanford.edu/~hastie/ISLRv2_website.pdf">ISLRv2:</a> - videos: <a href="https://www.youtube.com/c/R4DSOnlineLearningCommunity" class="uri">https://www.youtube.com/c/R4DSOnlineLearningCommunity</a></li>
+<li>MATLOFF (1st book) | ch3 - lot of useful prproperties of x,y | ch 7 - affine transformations</li>
+<li>Efron, Hastie “Computer Age Statistical Inference” (advanced, but chapter intros put techniques into perspective), no R.</li>
+<li>Kuhn (2019): https://bookdown.org/max/FES/</li>
+<li>RAFAEL dsbook - ch 17.4, ch 18.3.4</li>
+<li><strong>Roback/Legler Beyond Multiple Linear Regression: (2021)</strong>_ <a href="https://bookdown.org/roback/bookdown-BeyondMLR/" class="uri">https://bookdown.org/roback/bookdown-BeyondMLR/</a> (Replaces BYSH) introduces likelihood; ch6 - logistic worked problem</li>
+<li>Siegrist (aka random services.org) * random| (3)expected value 1..11 and |(5) random samples 1-8 (t-dist)</li>
+<li>Taubes, linear alg, statistics, http://people.math.harvard.edu/~knill/teaching/math19b_2011/handouts/chapters1-19.pdf Biology? math? probability? Think this is really an ideas book; not as easy as may appear.</li>
+<li>Liquet <a href="https://deeplearningmath.org/" class="uri">https://deeplearningmath.org/</a> lots of math</li>
+</ul>
+</section>
+<section id="bayes" class="level3">
+<h3 class="anchored" data-anchor-id="bayes">BAYES</h3>
+<ul>
+<li></li>
+<li>Barber, David: Bayesian Reasoning &amp; ML (examples): </li>
+<li>Clyde, Mine et al Intro To Bayesian Thinking (R,intuitive, online only)</li>
+<li>Downey, Allen </li>
+<li>Davidson-Pilon Bayesian for Hackers python, but ideas seem well presented.</li>
+<li>Dekking </li>
+<li>Gimenez: Easy Stats (examples)</li>
+<li>Kurz: Statistial Rethinking reCoded (Bayesian) (R, meant as supplement to McElreath)</li>
+<li>Johnson, Ott et al: </li>
+<li>Lavine (tutorial) https://people.math.umass.edu/~lavine/whatisbayes.pdf</li>
+<li></li>
+<li>McElreath: book, videos Statistical Rethinking </li>
+<li>paulvanderlake (many R resources) 2012 ThinkBayes </li>
+<li>Taubes, Lectures 1-19 </li>
+</ul>
+<!--
+            Repeat using `itemize`
+\begin{itemize}
+\item {Aaronson, Scott: \url{https://www.scottaaronson.com/qclec.pdf}   Information Theory:  CS, Quantum, Bayesian, linear algebra, Probability}  
+\item {Clyde, Mine et al Intro To Bayesian Thinking (R,intuitive, online only) }  
+\item { Downey, Allen "Thinking Bayes" https://www.greenteapress.com/thinkbayes/thinkbayes.pdf  (2012 pdf, clear intutive, but python) }  
+\item {Davidson-Pilon Bayesian for Hackers  python, but ideas seem well     presented.}
+\item { Johnson, Ott et al:  https://www.bayesrulesbook.com/index.html (online, item    no pdf) }
+\item {Kurz: Statistial Rethinking reCoded (Bayesian) \url{https://bookdown.org/content/4857/#how to-use-and-understand-this-project} (R, meant as supplement to McElreath)}
+\item {Paulvanderlake (many R resources) 2012 ThinkBayes}
+\end{itemize}
+-->
+<section id="nd-bayes-books-advanced-or-interesting-ideas" class="level4">
+<h4 class="anchored" data-anchor-id="nd-bayes-books-advanced-or-interesting-ideas">2nd Bayes books | Advanced or Interesting Ideas</h4>
+<ul>
+<li>Aaronson, Scott: Information Theory: CS, Quantum, Bayesian, linear algebra, Probability</li>
+<li>Cunningham, Scott: Mixtape: Causal Inference </li>
+<li>Hunington-Klein The Effect Book wordy </li>
+<li>Gelman: DBA3 </li>
+<li></li>
+</ul>
+</section>
+<section id="shiny" class="level4">
+<h4 class="anchored" data-anchor-id="shiny">Shiny</h4>
+<!-- {{{ -->
+<pre><code>-   R, javascript + shiny https://book.javascript-for-r.com/
+-   Hadley, https://mastering-shiny.org/
+-   https://engineering-shiny.org/
+-   HTTP Testing (book) https://books.ropensci.org/http-testing/</code></pre>
+<!-- }}} -->
+</section>
+<section id="latex-.tex-latex-not-knitr-markdown-pandoc" class="level4">
+<h4 class="anchored" data-anchor-id="latex-.tex-latex-not-knitr-markdown-pandoc">Latex (.tex, latex, not knitr, markdown, pandoc)</h4>
+<ul>
+<li><a href="Good tips">https://learnbyexample.github.io/customizing-pandoc/</a></li>
+<li></li>
+<li>Latex: Latex in 24 hours (iPad)</li>
+<li><a href="https://www.physicsread.com/latex/" class="uri">https://www.physicsread.com/latex/</a> examples of typical useage</li>
+<li>https://mirrors.rit.edu/CTAN/info/beginlatex/html/intro.html#intro</li>
+<li>wikibooks: https://en.wikibooks.org/wiki/LaTeX/Document_Structure</li>
+<li>http://ctan.imsc.res.in/info/first-latex-doc/first-latex-doc.pdf</li>
+<li>https://texfaq.org/FAQ-man-latex</li>
+<li>LuaTex Manual: http://www.pragma-ade.com/general/manuals/luatex.pdf</li>
+<li>LuaTex Background Overleaf: https://www.overleaf.com/learn/latex/Articles/An_Introduction_to_LuaTeX_(Part_1)%3A_What_is_it%E2%80%94and_what_makes_it_so_different%3F</li>
+<li>Fontspec pkg (for LuaTex) https://mirrors.rit.edu/CTAN/macros/unicodetex/latex/fontspec/fontspec.pdf * Video: Michelle … (very clear!)</li>
+</ul>
+<pre><code>Math Mode
+
+*  AMS math  documentation
+     \href{https://www.latex-project.org/help/documentation/amsldoc.pdf}{2017
+     version on ipad}
+*  https://www1.cmc.edu/pages/faculty/aaksoy/latex/latexthree.html#
+*  http://web.mit.edu/rsi/www/pdfs/math.pdf
+*  https://www.atqed.com/latex-column-vector</code></pre>
+</section>
+</section>
+<section id="good-technical-reading" class="level3">
+<h3 class="anchored" data-anchor-id="good-technical-reading">Good Technical Reading</h3>
+<ul>
+<li>Linux: Archiwiki, Debian, FreeBSD</li>
+<li>Gross, Ash et al “Elliptical Tales” - very readable, but must think! (515.983 | ASH | 2012) * Linux- insides: https://0xax.gitbooks.io/linux-insides/content/</li>
+<li>Seefeld, et al Biology &amp; R | https://cran.r-project.org/doc/contrib/Seefeld_StatsRBio.pdf</li>
+<li>Robert Sedgewick and Kevin Wayne (essential info … serious programmers) https://algs4.cs.princeton.edu/home/</li>
+</ul>
+<section id="zsh" class="level4">
+<h4 class="anchored" data-anchor-id="zsh">ZSH</h4>
+<ul>
+<li>Janssens, DS at Command Line: https://www.datascienceatthecommandline.com/2e/<br>
+Great way to improve zsh, CLI skills. * Rothgar Mastering ZSH: https://github.com/rothgar/mastering-zsh</li>
+</ul>
+</section>
+<section id="regex" class="level4">
+<h4 class="anchored" data-anchor-id="regex">REGEX</h4>
+<ul>
+<li>wiki <a href="https://en.wikipedia.org/wiki/Regular_expression#" class="uri">https://en.wikipedia.org/wiki/Regular_expression#</a></li>
+<li>GNU <a href="https://www.gnu.org/savannah-checkouts/gnu/grep/manual/grep.html#Top)" class="uri">https://www.gnu.org/savannah-checkouts/gnu/grep/manual/grep.html#Top)</a></li>
+<li>FAQ: <a href="https://stackoverflow.com/tags/regex/info" class="uri">https://stackoverflow.com/tags/regex/info</a></li>
+<li>(Regex | Jan Goyvaerts) <a href="https://www.regular-expressions.info/tutorial.html" class="uri">https://www.regular-expressions.info/tutorial.html</a></li>
+<li><a href="https://www.regular-experssions.mobi" class="uri">https://www.regular-experssions.mobi</a></li>
+<li></li>
+<li>(iPad) Mastering Regular Expressions</li>
+</ul>
+<p>Finite Automata?</p>
+<ul>
+<li><a href="https://sodocumentation.net/regex" class="uri">https://sodocumentation.net/regex</a></li>
+<li><a href="https://swtch.com/~rsc/regexp/regexp1.html" class="uri">https://swtch.com/~rsc/regexp/regexp1.html</a></li>
+</ul>
+</section>
+</section>
+<section id="videos" class="level3">
+<h3 class="anchored" data-anchor-id="videos">Videos</h3>
+<ul>
+<li><a href="https://www.youtube.com/c/MathTheBeautiful/playlists">maththebeautiful - Paul?</a></li>
+<li><a href="https://statquest.org/video-index/">Statquest - Josh Starmer</a></li>
+<li><a href="https://www.youtube.com/channel/UCdwo4k1RQHTcq_-WS7Cazqg">Bright Side of Math</a></li>
+<li><a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw">3Blue1Brown</a></li>
+<li><pre><code>*   [ML videos/text](https://www.3blue1brown.com/topics/neural-networks)</code></pre></li>
+<li>Zedstatistics</li>
+<li><a href="http://www.lithoguru.com/scientist/statistics/course.html">Chris Mack</a> - practical R, models</li>
+<li><a href="https://statisticsglobe.com/r-programming-language">Statistics Globe</a> * Edward Malthouse - is careful with assumptions. * Prof Christoph Scherber -03 * Lorenzo * Sadum * Tom Raby * Jazon Jiao (Alg + Regression)</li>
+<li><a href="https://www.youtube.com/@SerranoAcademy" class="uri">https://www.youtube.com/@SerranoAcademy</a> covariance, intutition!</li>
+<li>https://www.youtube.com/watch?v=GFDNF3Zfoa4 - uncorrelation, independence, orthogonal Kamlesh Gupta</li>
+<li>Blargoner duality explained: https://www.youtube.com/watch?v=eOIJzb7SItg&amp;list=PL6kPvEdcJ4jRnw91XCtlK4UHRHxc0TtsV</li>
+</ul>
+<!--
+================================================================================================================================
+-->
+<section id="dt-joins-merge" class="level4">
+<h4 class="anchored" data-anchor-id="dt-joins-merge">DT Joins (merge)</h4>
+<ul>
+<li>https://rdatatable.gitlab.io/data.table/index.html</li>
+<li>https://stackoverflow.com/questions/1299871/how-to-join-merge-data-frames-inner-outer-left-right?noredirect=1&amp;lq=1</li>
+<li>[dt, base, tidyverse, clear]<a href="https://jozef.io/r006-merge/" class="uri">https://jozef.io/r006-merge/</a></li>
+<li><a href="https://gist.github.com/nacnudus/ef3b22b79164bbf9c0ebafbf558f22a0" class="uri">https://gist.github.com/nacnudus/ef3b22b79164bbf9c0ebafbf558f22a0</a></li>
+<li><a href="https://stackoverflow.com/questions/1299871/how-to-join-merge-data-frames-inner-outer-left-right" class="uri">https://stackoverflow.com/questions/1299871/how-to-join-merge-data-frames-inner-outer-left-right</a></li>
+<li><a href="https://stackoverflow.com/questions/12773822/why-does-xy-join-of-data-tables-not-allow-a-full-outer-join-or-a-left-join" class="uri">https://stackoverflow.com/questions/12773822/why-does-xy-join-of-data-tables-not-allow-a-full-outer-join-or-a-left-join</a></li>
+<li><a href="https://github.com/LucyNjoki/R-LadiesAbuja_Data-Manipulation-with-data.table-in-R/issues/3#issuecomment-1097736781" class="uri">https://github.com/LucyNjoki/R-LadiesAbuja_Data-Manipulation-with-data.table-in-R/issues/3#issuecomment-1097736781</a></li>
+<li><a href="https://stackoverflow.com/questions/25430986/create-nested-data-tables-by-collapsing-rows-into-new-data-tables" class="uri">https://stackoverflow.com/questions/25430986/create-nested-data-tables-by-collapsing-rows-into-new-data-tables</a></li>
+<li><a href="https://stackoverflow.com/questions/67261777/data-table-join-is-hard-to-understand" class="uri">https://stackoverflow.com/questions/67261777/data-table-join-is-hard-to-understand</a></li>
+<li><a href="https://stackoverflow.com/questions/54312225/which-data-table-syntax-for-left-join-one-column-to-prefer/54313203#54313203" class="uri">https://stackoverflow.com/questions/54312225/which-data-table-syntax-for-left-join-one-column-to-prefer/54313203#54313203</a></li>
+<li><a href="https://rdatatable.gitlab.io/data.table/" class="uri">https://rdatatable.gitlab.io/data.table/</a></li>
+<li><a href="https://themockup.blog/posts/2020-09-04-10-table-rules-in-r/" class="uri">https://themockup.blog/posts/2020-09-04-10-table-rules-in-r/</a></li>
+<li><a href="https://github.com/TysonStanley/tidyfast" class="uri">https://github.com/TysonStanley/tidyfast</a></li>
+<li><a href="https://mkmanu.wordpress.com/2016/04/08/working-with-data-frames-in-r-joins-and-merging/" class="uri">https://mkmanu.wordpress.com/2016/04/08/working-with-data-frames-in-r-joins-and-merging/</a></li>
+<li><a href="https://stackoverflow.com/questions/34124928/can-i-use-the-r-data-table-join-capability-to-select-rows-and-perform-some-opera" class="uri">https://stackoverflow.com/questions/34124928/can-i-use-the-r-data-table-join-capability-to-select-rows-and-perform-some-opera</a></li>
+<li><a href="https://web.archive.org/web/20131114060032/http://rwiki.sciviews.org/doku.php?id=tips%3adata-frames%3amerge" class="uri">https://web.archive.org/web/20131114060032/http://rwiki.sciviews.org/doku.php?id=tips%3adata-frames%3amerge</a></li>
+<li><a href="https://rpubs.com/ronasta/join_data_tables" class="uri">https://rpubs.com/ronasta/join_data_tables</a></li>
+<li><a href="https://johnmackintosh.net/blog/2021-03-22-some-data-table-tips/" class="uri">https://johnmackintosh.net/blog/2021-03-22-some-data-table-tips/</a></li>
+<li><a href="https://rstudio-pubs-static.s3.amazonaws.com/52230_5ae0d25125b544caab32f75f0360e775.html" class="uri">https://rstudio-pubs-static.s3.amazonaws.com/52230_5ae0d25125b544caab32f75f0360e775.html</a></li>
+<li><a href="https://github.com/ggrothendieck/sqldf#readme" class="uri">https://github.com/ggrothendieck/sqldf#readme</a></li>
+<li><a href="https://thoughtbot.com/blog/back-to-basics-sql" class="uri">https://thoughtbot.com/blog/back-to-basics-sql</a></li>
+<li><a href="https://cran.r-project.org/web/packages/dplyr/vignettes/two-table.html" class="uri">https://cran.r-project.org/web/packages/dplyr/vignettes/two-table.html</a></li>
+<li><a href="https://sqlzoo.net/wiki/The_JOIN_operation" class="uri">https://sqlzoo.net/wiki/The_JOIN_operation</a></li>
+<li><a href="https://martinctc.github.io/blog/using-data.table-with-magrittr-pipes-best-of-both-worlds/" class="uri">https://martinctc.github.io/blog/using-data.table-with-magrittr-pipes-best-of-both-worlds/</a></li>
+<li></li>
+</ul>
+</section>
+</section>
+<section id="apis-and-r" class="level3">
+<h3 class="anchored" data-anchor-id="apis-and-r">APIs and R</h3>
+<section id="longer-readingdocumentation" class="level4">
+<h4 class="anchored" data-anchor-id="longer-readingdocumentation">Longer Reading/Documentation</h4>
+<ul>
+<li><a href="https://gargle.r-lib.org/articles/get-api-credentials.html">Gargle docs include discussion of a few Google Cloud features</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">Mozilla MDN</a></li>
+<li><a href="https://stackoverflow.com/questions/978061/http-get-with-request-body">Request body</a></li>
+<li>https://oauth.com (Aaron Parecki)</li>
+<li>web technologies, including RESTFUL, https://www.se.rit.edu/~swen-344/expectations/</li>
+<li><a href="https://www.rfc-editor.org/">RFC Specs</a></li>
+<li>JSON - https://json-schema.org/</li>
+</ul>
+<p></p>
+</section>
+<section id="videos-1" class="level4">
+<h4 class="anchored" data-anchor-id="videos-1">Videos</h4>
+<ul>
+<li></li>
+<li><a href="https://www.youtube.com/watch?v=iLVoA1DTE60">Griffith</a> Curl to make resquests. ggmaps Google Maps API https://www.youtube.com/watch?v=Of_M4kcE9yM&amp;list=PLbcglKxZP5PN07Vw-0ukcDJCxFGY2Crgc</li>
+<li><a href="https://www.youtube.com/watch?v=VywxIQ2ZXw4">freeCodeCamp</a> Postman Intro.</li>
+<li>[Oauth 2.0 - Explain like I am 5] (https://www.youtube.com/watch?v=hHRFjbGTEOk)</li>
+<li> Basic Authentication: urlencode, user:pass, how browser responds, TLS</li>
+<li>Curl’s Creator https://youtu.be/I6id1Y0YuNk?list=PLbcglKxZP5PN07Vw-0ukcDJCxFGY2Crgc</li>
+<li>Postman and GitHub: https://youtu.be/AfuL7AFpFmQ?list=PLbcglKxZP5PN07Vw-0ukcDJCxFGY2Crgc</li>
+<li>Plumber::,R, api https://www.youtube.com/watch?v=J0Th2QRZ7Rk * R4DS all videos: https://www.youtube.com/c/R4DSOnlineLearningCommunity</li>
+</ul>
+<p>CRAN Task Views: Web Technology &amp; Services: https://cran.r-project.org/web/views/WebTechnologies.html * (R &amp; Dropbox) https://github.com/karthik/rdrop2 (2020) * (R &amp; Predictit) https://github.com/kiernann/predictr</p>
+</section>
+<section id="restful-apis-see-0300_tech_notes.md" class="level4">
+<h4 class="anchored" data-anchor-id="restful-apis-see-0300_tech_notes.md">RESTFUL APIS (see 0300_tech_notes.md)</h4>
+</section>
+</section>
+<section id="neovimlua" class="level3">
+<h3 class="anchored" data-anchor-id="neovimlua">NEOVIM/LUA</h3>
+<section id="config" class="level4">
+<h4 class="anchored" data-anchor-id="config">Config</h4>
+<ul>
+<li>https://neovim.io/doc/user/quickref.html#option-list</li>
+<li>Code Ex: | Joel | goal: understand ! |https://github.com/whatsthatsmell/dots/tree/master/public%20dots/vim-nvim<br>
+</li>
+<li>https://cj.rs/blog/my-setup/nvim-0-5/ | go to playlists | view all playlists | choose by length, date etc.</li>
+<li>Statusline: https://elianiva.my.id/post/neovim-lua-statusline#active-statusline</li>
+<li>https://www.jakewiesler.com/blog/getting-started-with-vim | Jake | good but limited.</li>
+<li>blog + https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/</li>
+<li>blog + https://blog.devgenius.io/create-custom-keymaps-in-neovim-with-lua-d1167de0f2c2</li>
+<li>Ex: https://gitlab.com/mcepl/vimdir/-/tree/master/plugin<br>
+</li>
+<li>Ex: https://github.com/samuelludwig/nixrc/tree/master/modules/user/nvim/lua/dot</li>
+<li>300 line challenge: https://neovim.discourse.group/t/the-300-line-init-lua-challenge/227</li>
+<li>https://benfrain.com/refactor-your-neovim-init-lua-single-file-to-modules-with-packer/</li>
+<li>https://github.com/nanotee/nvim-lua-guide</li>
+<li>kickstart: https://github.com/nvim-lua/kickstart.nvim/blob/master/init.lua</li>
+</ul>
+</section>
+<section id="lua" class="level4">
+<h4 class="anchored" data-anchor-id="lua">Lua</h4>
+
+</section>
+<section id="plugins" class="level4">
+<h4 class="anchored" data-anchor-id="plugins">Plugins</h4>
+</section>
+</section>
+<section id="android" class="level3">
+<h3 class="anchored" data-anchor-id="android">Android</h3>
+<ul>
+<li>\href{https://www.androidauthority.com/lineageos-install-guide-893303/{decent primer:android RoM”</li>
+<li></li>
+</ul>
+<!--
+
+Rscript -e "rmarkdown::render(<file>, output_format='pdf_document')"
+vim:linebreak:nospell:nowrap:cul tw=78 fo=tqlnr foldcolumn=1 cc=+1
+-->
 
 
 </section>
