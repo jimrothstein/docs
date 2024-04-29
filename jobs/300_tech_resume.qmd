@@ -22,12 +22,12 @@ https://www.linkedin.com/in/jimrothstein](https://www.linkedin.com/in/jimrothste
 -   RStudio, Neovim/Nvim-R as IDE
 -   Exposure to regression models, KNN, Random Forest, Logical
     Regression
--   R Shiny, reactive programming, dashboard, bslib themes
+-   R Shiny, modules, reactive programming, dashboard, bslib themes
 -   Quarto, Rmarkdown, latex, pandoc, Katex, knitr, some SCSS, CSS
 -   Git/Github: 3+ years,  PR, merging
 -   Zsh Shell: 3+ years  scripts, regex, configuration
 -   Lua - used to configure neovim, plugins including Nvim-R
--   REST APIs, such as Google APIs, httr2 packages, JSON. (Gave talk)
+-   OpenAPI: wrote R code to prepare code, requests and convert responses to tibbles, inlcuding outh2.
 -   Linux (Debian, LinuxMint, Ubuntu): 4+ years, shell scripts, cron jobs, Rscripts 
 
 ### Recent Projects & Skills {#recent}

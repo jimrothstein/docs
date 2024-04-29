@@ -5,16 +5,16 @@ title: "/tech_notes/001_grep_regex_P_examples.qmd"
 <!--
 USE THIS FILE!
 
-#### Main Regex file:  ~/code/docs/tech_notes/REGEX.md
-#### USE THIS FILE:  ~/code/docs/tech_notes/001_grep_regex_P_examples.qmd
+#### Main Regex file:  ~/code/docs/tech_notes/REGEX/REGEX.md
+#### USE THIS FILE:  ~/code/docs/tech_notes/REGEX/001_grep_regex_P_examples.qmd
 -->
 
+# ----
+TODO
+# ----
 2024-04-20
+	-	fix regex marked TODO
 
-- quarto preview <file> --to pdf    # (opens in a viewer)
-- quarto render %	; zathura         # not quite right cli
-
-- math mode latex,  seems to work if *outside* R chunk
 
     PURPOSE:   COLLECT EXAMPLES of GREP and regex (-P = Perl) [not a script]
     USAGE:		
@@ -29,6 +29,12 @@ USE THIS FILE!
     GOAL:  
 	-	Capture, document, annotate useful REGEX examples.
 	-	Run and test in zsh shell (simpler and easier than fussing with quarto)
+
+QUARTO - do not use; some inference with a few regex expressions
+Notes:
+GREP --color=always is now in the alias for grep
+SEE $ZSH alias
+alias grep='grep --color=always'
 assertion
 zero-length
 Lookaround (2 directions)
@@ -41,15 +47,12 @@ Each direction comes  in two flavors, positive assertion and negative assertion
 ```
 
 
-line_break="-------------------"
-
+# --------------------------------------
 ## match any letter that is NOT ( or )
+# --------------------------------------
 echo "ab(cde)fg" | grep -P "[^()]"
 
 
-GREP --color=always is now in the alias for grep
-SEE $ZSH alias
-alias grep='grep --color=always'
 echo ${line_break}
 
 str="hello"
@@ -82,7 +85,9 @@ echo "bbbbbb" | grep -P $regex
 echo "abcdd" | grep -P '([a-z])\1'
 'dd'
 
+# --------
 ### Lazy
+# --------
 SEE <https://regex101.com/r/jxXKfj/1>
 with and without `g` flag
 regex="<.*?>"
@@ -102,7 +107,9 @@ echo "5x" | grep -P $regex
 
 echo '\\\\' "\\\\"              expect:     \\\\ \\ 
 
+# ------------------
 ####	complex regex
+# ------------------
 str='animal=cat,dog,cat,'
 echo $str
 <!--
@@ -141,11 +148,12 @@ done
 
 
 
-exit
 
 
 
+# -------------------------
 ####	GREEDY and BACKTRACK
+# -------------------------
 Consider the String <A tasty apple>   (excluding the angle brackets)
 And the pattern <.*apple> (again exclude the angle brackets)
 
@@ -269,22 +277,48 @@ echo "abcde " | grep -P $regex
 echo " abcde " | grep -P $regex
 
 
-#	X(?=Y) means X followed by Y
+# ------------------------------
+#	X(?=Y) X followed by Y
+# ------------------------------
 regex='--.*?(?=[^\r\n\S]*$)'
 echo $regex
 echo '--  this is a comment.' | grep -P $regex
 
 
 
-###	LOOKAROUNDS
-echo ${line_break}
-echo "a followed by c"
-echo 'a(?=c)'
+###	
+# ----------------
+a followed by c:
+# ----------------
+'a(?=c)'
 str=bacad
 echo $str | grep -P 'a(?=c)'
 
 
+# ---------------------------
+####	a preceeded by b 
+# ---------------------------
+echo "a preceeded by by b"
+reg='(?<=b)a'
+str=bacad
+echo $str | grep -P '(?<=b)a'
+
+
+# -------------------------------------
 ####  Lookahead, positive or negative
+# -------------------------------------
+
+# ----------------
+a folowed by A-Z
+# ----------------
+'a(?=[A-Z])'
+
+TODO (2024-04-27)
+fails 23&
+1 or more digits followed by non-word  (word = [a-zA-Z_])
+# -----------
+\d+(?=\W|$)
+# -----------
 
 ##	lookahead, positive
 regex='q(?=u)'
@@ -296,7 +330,7 @@ echo "quack" | grep -P $regex
 echo "qq"  | grep -P $regex
 
 
-##	lookahead, negative
+##	lookahead, negative (q NOT followed by u)
 regex='q(?!u)'
 #	match
 echo "qq" | grep -P $regex
@@ -366,8 +400,9 @@ echo "A5C" | grep -P $regex
 regex='A(?=5).(?=[A-Z])'
 echo "A5C" | grep -P $regex
 
-
+# ----------------------------------------
 #### passwords validation (not working) 
+# ----------------------------------------
 REF:	http://www.rexegg.com/regex-lookarounds.html#password
 
 # insist 6-10 char  (rexegg.com) NOPE, no match
@@ -390,13 +425,6 @@ echo "abcdefgh" | grep -P $regex
 
 	##	
 
-####	FIND a st b immediately preceeds
-echo ${line_break}
-echo "a preceeded by by b"
-reg='(?<=b)a'
-echo $reg
-str=bacad
-echo $str | grep -P '(?<=b)a'
 
 
 # LOOK AROUNDS : do not capture

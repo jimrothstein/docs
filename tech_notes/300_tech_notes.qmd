@@ -46,6 +46,11 @@ Misc Tech Notes;  details, notes can be here (but COMMANDS put
 on INDEX C).  Math, R, probability and stats notes **do NOT go here*
 
 
+##	IMPERATIVE v DECLARATIVE
+-	math notation is DECLARATIVE;   indicates meaning, not exact details
+  (example1:  summation sign).  Tell computer what you WANT, leave details to
+  compiler or program.
+-	IMPERATIVE (older, obsolete?) every detail, machine language?
 ##  QUARTO:
 2023-12-06 -  Try couple of cv or resume templates and one quarto extension.   Seemed to be more work than worth.  Just use Rmarkdown to create resume.
 2024-01-26	READ r4ds Ch 28-29 b/c Quarto and config knitr
