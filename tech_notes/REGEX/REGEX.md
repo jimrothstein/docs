@@ -7,6 +7,11 @@
 
 ##	REGEX info:  consolidate to ~/code/docs/tech_notes/
 
+2024-04-30
+-	Use a cheat sheet
+-	Reduce paper
+-	Annotate (here, or in 2 files) ONLY when needs
+
 ## this file: ~/code/docs/tech_notes/REGEX.md
 ## ~/code/docs/tech_notes/001_grep_regex_P_examples.qmd
 ## ~/code/docs/tech_notes/002_grep_examples.md
@@ -19,7 +24,6 @@ TODO:
 	- emphasize goal:  use grep -P, regex to understand how REGEX works.  Tired
 	of every 6 months learning all over again.
 	-	greedy/not greedy  and backtrack .   Think like a regex engine!
-	-	see Blue pg 29.
 	-	How to aerate regex !
 	-	regex can be used to:
 		-	find
@@ -27,8 +31,6 @@ TODO:
 		-	replace/insert
 		-	split
 		-	...
-		-	But GOAL know is simply HOW it works. (grep -P)
-		-	2nd Goal is do in R, but suspect much, much easier.
 		- When whiz, can do summersaults with CLI, zsh tools (sed, grep , cut ...)
 		and regex.  Not NOW.
 

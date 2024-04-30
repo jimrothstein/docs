@@ -46,6 +46,26 @@ Each direction comes  in two flavors, positive assertion and negative assertion
 
 ```
 
+match X-Y (hyphen); 2 groups, 1st can have hyphen
+# -------------
+^([^-]*)-(.*)
+# -------------
+
+boundary \b - more complex than expected
+equivalent to: 4 groups, (not)lookback; lookahead any word \w=[0-9a-zA-Z_]; OR, lookback; followed by not
+# ---------------------------
+(?<!w)(?=\w)| (?<=\w)(?!\w)
+# ---------------------------
+
+match any single char, can repeat, aa, ddd
+# ------
+(.)\1+
+# ------
+
+# ----------
+match abca
+(.)(.*)\1+
+# ----------
 
 # --------------------------------------
 ## match any letter that is NOT ( or )
@@ -315,10 +335,12 @@ a folowed by A-Z
 
 TODO (2024-04-27)
 fails 23&
-1 or more digits followed by non-word  (word = [a-zA-Z_])
+1 or more digits followed by non-word  (word = [0-9a-zA-Z_])
 # -----------
 \d+(?=\W|$)
 # -----------
+
+
 
 ##	lookahead, positive
 regex='q(?=u)'
@@ -426,6 +448,12 @@ echo "abcdefgh" | grep -P $regex
 	##	
 
 
+# -------------------------------
+# TODO: 
+##	capture v non-capture, email
+# -------------------------------
+(?: signals non-capture; ie must match,  but ....
+([a-zA-Z0-9_]+@[a-zA-Z0-9_]+\.(?:com|edu|org|gov))
 
 # LOOK AROUNDS : do not capture
 echo " " 
@@ -496,6 +524,7 @@ echo $str | grep -P '(ab|d)'
 
 # -------------------
 regex="\d+(?=\W|$)"
+
 # -------------------
 ##	Any pattern starts with digit, follwed by end of line or non-word
 ##	Can be multiple matches in one string
