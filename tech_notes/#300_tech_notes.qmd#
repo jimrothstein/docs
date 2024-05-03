@@ -23,7 +23,7 @@ execute:
       For PDF Version
       SEE  300.....OLD_PDF.qmd
     -->
-
+(print (font-family-list))
 ##  TODO
     -   USEFUL ??
     -   quarto:  focus on html (not pdf)
@@ -799,6 +799,157 @@ Do you sell new battery for this ACER laptop?
 CB3-431-C7EX  (manuf 3/22/18)
 SNID:  81201450072
 \end{verbatim}
+
+\newpage
+
+## REST RESTful, HTTP Protocol , JSON, RFC, API and Web Technologies
+
+-	HTTP - best is Mozilla introduction
+-	In practice, Restful API means built upon HTTP. (do $\exists$ non-HTTP )
+*	originally URL linked to file or webpage.
+*	more recenty, URI links to payload,  HTML/JSON/XML
+*	RESTFUL provides stateless operations, architecture (vs SOAP, or others)
+* VERBS include GET/POST/ etc etc
+Stateless means server keeps no session information.   Each call to server is
+independent.  Examples include HTTP, IP, REST.   But TCP is not stateless.
+
+
+####    RESTFUL API (vs. graphQL) REF:  (ODATA is query tool for REST)
+
+  -  OpenApi (api doc rules:  openapi.json or openapi.yaml; was Swagger) https://oai.github.io/Documentation/specification.html
+  -  Postman - popular testing/setup site, many videos; `code` button to show
+		 cURL, httr, curlR and many others
+    -  30-day tutorial: https://www.postman.com/postman/workspace/f1c6b0a9-b930-4165-9aa4-f655dd7051b5/overview
+  -  https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm;
+  -  https://en.wikipedia.org/wiki/Representational_state_transfer#Architectural_constraints
+  -  https://restfulapi.net/
+  -  http://www.cse.lehigh.edu/~spear/cse216_tutorials/tut_spark/index.html
+  -  Openstack (Cloud) https://docs.openstack.org/api-quick-start/
+
+
+#### REST & OAUTH2 Vocabulary  
+
+(also:   [https://developer.mozilla.org/en-US/docs/Glossary](https://developer.mozilla.org/en-US/docs/Glossary) )     
+BEST VIDEO:	oath2 5/27/20 "Like I am 5"
+
+-	USER - owns the 'resource'
+-	client - your restful api software (aka app, 3rd party, wants to access USER's resource;  usually must register with the resource.  Can be desktop or mobile app, or web app.
+-	**Authorization** Server - asks USER to approve request
+-	**Authorization** Code - returns to client software
+-	**Access** Token - short term access (~ 1 hour).  Server gives to client.
+-	**BEARER** **TOKEN** - type of HEADER, indicates Access Token
+-	**Refresh** Token - As needed client passes to server (+ secrets) in exchange for new Access
+Token.  Refresh Token is longer lived.  Why this way?   Security mechanism.
+	-	Still need to know secrets to gain Access Token. Possession is
+		insufficient.
+	-	**Implicit,** **password** - out-of-favor; do not use.
+	-	**GRANT** **TYPES** - several; use only ...?
+	-	**PKCE**	-	additional security b/c authorization code can be compromised.
+	-	**PAT or Personal Access Token (Github)** - Github's authentication method, of form
+	-	user:token (NOT user:password)
+	-	Google Service Account -	for non-interactive, machine-to-machine (so far I -have no need)
+	-	serialize - encode a string/object as .....?
+
+-	endpoint
+-	url
+- uri
+-	credentials - see RFC 6749
+- redirect_uri	
+-	oob -	only google used, considered obsolete mechanism in authorization
+	process.
+-	httpuv, libuv -	low-level, set up sockets, I/O, events;  cross platform
+-	JWT
+-	native
+-	policy
+-	webhook -	client request and **listen**  Specify event and callback url.
+	Server responds only when event occurs.  CLAIM:  smart phones can not use
+	webhook (why?)
+
+
+
+
+#### Curl REF:   
+  *  [https://everything.curl.dev/](https://everything.curl.dev/)  
+  *  https://stackoverflow.com/users/93747/daniel-stenberg
+  *  https://daniel.haxx.se/blog/
+
+#### HTTP REF:
+  *  Command Line book:      https://datascienceatthecommandline.com/2e/index.html
+  *  JSON   https://cran.r-project.org/web/packages/jsonlite/index.html
+  *  HTTP protocol MDN https://developer.mozilla.org/en-US/docs/Web/HTTP
+  *  HTTP Header Fields https://en.wikipedia.org/wiki/List_of_HTTP_header_fields, Media types (MIME):   https://www.iana.org/assignments/media-types/media-types.xhtml
+  *  HTTPS,  HTTP over TLS or SSL:  https://en.wikipedia.org/wiki/HTTPS 
+  *  HTTP  mentioned by Hadley Wickham:
+    -  https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177
+    -  https://www.jmarshall.com/easy/http/
+  	*	https://docs.python-requests.org/en/master/user/quickstart/
+	*  BNF notation, see !w
+
+Media Types (was MIME): https://en.wikipedia.org/wiki/Media_type   
+                        https://docs.github.com/en/rest/overview/media-types
+#### RFC REF: 
+  -  RFC 2616 HTTP protocol and terms:  https://www.rfc-editor.org/rfc/rfc2616  
+  -  RFC 2617 Basic Authentication:	 https://www.rfc-editor.org/rfc/rfc2617  
+  -  RFC 3986 + RFC 8820 URI/URL
+  *  RFC 6749 OAUTH 2.0 https://www.rfc-editor.org/rfc/rfc6749  
+  *  RFC 6750 Bearer Token: https://datatracker.ietf.org/doc/html/rfc6750  
+SOAP https://en.wikipedia.org/wiki/SOAP
+URI  https://en.wikipedia.org/wiki/Uniform_Resource_Identifier
+
+
+#### OAUTH 2.0,  Security , Authentication, REF
+
+  *  Token, Service Account:  https://gargle.r-lib.org/articles/get-api-credentials.html#service-account-token
+  *  OAuth 2.0 Protocol (https://datatracker.ietf.org/doc/html/rfc6749)  
+  *  oob (out-of-band)  https://docs.auth3.dev/grant-types/urn-ietf-wg-oauth-2.0-oob (use their
+  identity server for standard RFC methods)
+  *  openSSL
+  *  https://developer.okta.com/
+  *  https://oauth.net
+  *  microsoft/open_id:  https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-protocols-oidc
+  *  auth0.com: https://auth0.com/docs/get-started
+	*  openID:  https://en.wikipedia.org/wiki/OpenID
+	*  letsencrypt.org | ISRG.org ? | source for free?  CA
+
+#### Popular APIs 
+  *  GitHub API https://docs.github.com/en/rest
+  *  GitLab API https://vulpes.cba.mit.edu/help/api/index.md
+  *  Spotify (api + authorization): https://developer.spotify.com/documentation/general/guides/
+  *  Spotify & Postman:  https://www.youtube.com/watch?v=5TNQf2gBrd8
+  *  Dropbox: https://www.dropbox.com/developers
+  *  Predictit.org: https://www.predictit.org/api/marketdata/all/  (xml dump,
+  must write you own functions)
+  *  ConstantContact: https://v3.developer.constantcontact.com/
+	*  Glitch - site acts like server in-between API source and user	?
+
+
+####	Google Specific
+  *  Google Identity (https://developers.google.com/identity)
+  *  Google OAuth2.0 implementation (https://developers.google.com/identity/protocols/oauth2#installed)
+  *  google people api  https://developers.google.com/people/
+  *  google web fonts api
+  *  Google Cloud  https://cloud.google.com/
+  *  Google Cloud Platform  https://console.developers.google.com/products https://en.wikipedia.org/wiki/Google_Cloud_Platform
+  *  For Youtube (installed apps, like R): https://developers.google.com/youtube/v3/guides/auth/installed-apps
+
+#### R and related
+
+  -  curl::  (based on C library used in cURL) https://jeroen.cran.dev/curl/index.html
+  -  cloudyR project
+  -  curlconverter:: https://github.com/hrbrmstr/curlconverter
+  -  fakerapi.it fakerapi https://fakerapi.it/en
+  -  gargle::   good intro (https://www.tidyverse.org/blog/2021/07/gargle-1-2-0/)
+  -  httptest2:: https://enpiar.com/httptest2/index.html
+  -  httpuv, libuv
+    -  https://cran.r-project.org/package=httpuv
+    -  https://nikhilm.github.io/uvbook/introduction.html  (low-level, C code, but good sense of what is happening)
+  -  httr2::
+    -  github https://github.com/r-lib/httr2
+    -  cran https://cloud.r-project.org/web/packages/httr2/index.html
+  -  plumber
+
+
+\newpage
 
 #### epub, Calibre, iPad, iCloud, eReader, pdf
 

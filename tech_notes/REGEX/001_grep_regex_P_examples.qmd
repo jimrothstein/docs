@@ -9,9 +9,13 @@ USE THIS FILE!
 #### USE THIS FILE:  ~/code/docs/tech_notes/REGEX/001_grep_regex_P_examples.qmd
 -->
 
-# ----
-TODO
-# ----
+
+* TODO
+
+2024-05-02
+  - switch to org mode (M-x org-mode)
+  - Create outline.
+
 2024-04-20
 	-	fix regex marked TODO
 
@@ -30,10 +34,8 @@ TODO
 	-	Capture, document, annotate useful REGEX examples.
 	-	Run and test in zsh shell (simpler and easier than fussing with quarto)
 
-QUARTO - do not use; some inference with a few regex expressions
-Notes:
-GREP --color=always is now in the alias for grep
-SEE $ZSH alias
+*** Notes ***
+QUARTO and regex: quarto sometimes does not like.
 alias grep='grep --color=always'
 assertion
 zero-length
@@ -46,6 +48,29 @@ Each direction comes  in two flavors, positive assertion and negative assertion
 
 ```
 
+** simple, class **
+match 0,1 or more of ANY of prior (zy, x, zyy ...)
+[xyz]*    
+
+** boundary **
+
+\b = boundary
+\w = any word character
+
+\bc\w+  matches all words begin with `c`
+ 
+\b\w+\b  caputure word, not space between (not *a because * is not word char)
+
+\bin\b   only "in"   not inning , riding 
+
+\b(\w)\w+\1\b
+1st and last must be same
+
+matches:  pop poop bob
+
+
+match everything except the paranthesies   a(bc)d , would omit ()
+[^()]
 match X-Y (hyphen); 2 groups, 1st can have hyphen
 # -------------
 ^([^-]*)-(.*)
@@ -83,6 +108,8 @@ echo $str | grep -E "$regex" -
 echo abc.x | echo -E '[.]'             # matches the dot (ie literal)
 
 **greedy**
+l.*k  matches:   look,lok, looooook
+
 echo aZZ | grep -E Z                    # ZZ
 
 **not** **greedy**
@@ -328,6 +355,8 @@ echo $str | grep -P '(?<=b)a'
 ####  Lookahead, positive or negative
 # -------------------------------------
 
+** Don't make errror (sic) here**  (highlights errror)
+   \b\w+\b\s(?=\(sic\))
 # ----------------
 a folowed by A-Z
 # ----------------
