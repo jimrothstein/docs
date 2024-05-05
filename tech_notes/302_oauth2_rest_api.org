@@ -1,9 +1,22 @@
 
-* Two Years OLD - do not use 
+** Two Years OLD - do not use** 
+  
+*bold*
+
+_underline_
+
+[ [nytimes][https://nytimes.com] ]
+
+
+#+BEGIN_CENTER
+hi
+#+END_CENTER
 
 
 
-:
+
+<2024-05-04 Sat>:
+
 ## REST RESTful, HTTP Protocol , JSON, RFC, API and Web Technologies
 
 -	HTTP - best is Mozilla introduction
@@ -12,7 +25,7 @@ do $\exists$ non-HTTP )
 *	originally URL linked to file or webpage.
 *	more recenty, URI links to payload,  HTML/JSON/XML
 *	RESTFUL provides stateless operations, architecture (vs SOAP, or others)
-* VERBS include GET/POST/ etc etc
+** VERBS include GET/POST/ etc etc
 Stateless means server keeps no session information.   Each call to server is
 independent.  Examples include HTTP, IP, REST.   But TCP is not stateless.
 
@@ -30,17 +43,17 @@ independent.  Examples include HTTP, IP, REST.   But TCP is not stateless.
   -  Openstack (Cloud) https://docs.openstack.org/api-quick-start/
 
 
-#### REST & OAUTH2 Vocabulary  
+** REST & OAUTH2 Vocabulary  
 
 (also:   [https://developer.mozilla.org/en-US/docs/Glossary](https://developer.mozilla.org/en-US/docs/Glossary) )     
 BEST VIDEO:	oath2 5/27/20 "Like I am 5"
 
--	USER - owns the 'resource'
--	client - your restful api software (aka app, 3rd party, wants to access USER's resource;  usually must register with the resource.  Can be desktop or mobile app, or web app.
--	**Authorization** Server - asks USER to approve request
+- USER - owns the 'resource'
+- client - your restful api software (aka app, 3rd party, wants to access USER's resource;  usually must register with the resource.  Can be desktop or mobile app, or web app.
+- **Authorization** Server - asks USER to approve request
 -	**Authorization** Code - returns to client software
--	**Access** Token - short term access (~ 1 hour).  Server gives to client.
--	**BEARER** **TOKEN** - type of HEADER, indicates Access Token
+-	**Access**  - short term access (~ 1 hour).  Server gives to client.
+-	**BEARER** **TOKEN** - an Access Token of type BEARER; exchanged via header.
 -	**Refresh** Token - As needed client passes to server (+ secrets) in exchange for new Access
 Token.  Refresh Token is longer lived.  Why this way?   Security mechanism.
 	-	Still need to know secrets to gain Access Token. Possession is
@@ -90,14 +103,18 @@ Token.  Refresh Token is longer lived.  Why this way?   Security mechanism.
 
 Media Types (was MIME): https://en.wikipedia.org/wiki/Media_type   
                         https://docs.github.com/en/rest/overview/media-types
+#### OAUTH 2.1 (draft, expires July 2024) https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-10
+(replaces and obsoletes the OAuth 2.0 Authorization Framework described in RFC 6749 and the Bearer Token Usage in RFC 6750.)
+
 #### RFC REF: 
   -  RFC 2616 HTTP protocol and terms:  https://www.rfc-editor.org/rfc/rfc2616  
   -  RFC 2617 Basic Authentication:	 https://www.rfc-editor.org/rfc/rfc2617  
   -  RFC 3986 + RFC 8820 URI/URL
-  *  RFC 6749 OAUTH 2.0 https://www.rfc-editor.org/rfc/rfc6749  
-  *  RFC 6750 Bearer Token: https://datatracker.ietf.org/doc/html/rfc6750  
+  *  RFC 6749 OAUTH 2.0 https://www.rfc-editor.org/rfc/rfc6749   (SEE OAUTH 2.1)
+  *  RFC 6750 Bearer Token: https://datatracker.ietf.org/doc/html/rfc6750 (SEE OAUTH 2.1) 
 SOAP https://en.wikipedia.org/wiki/SOAP
 URI  https://en.wikipedia.org/wiki/Uniform_Resource_Identifier
+
 
 
 #### OAUTH 2.0,  Security , Authentication, REF
