@@ -11,6 +11,9 @@ USE THIS FILE!
 
 
 * TODO
+  :PROPERTIES:
+  :ID:       d677459a-98d7-41e7-a74c-837e62a178e5
+  :END:
 
 2024-05-02
   - switch to org mode (M-x org-mode)
@@ -495,7 +498,20 @@ reg='\w+\s(?=costs)'
 echo "Penguin costs 2.99, and whale costs 5.99 but I only have 2.01 left"
 echo "Penguin costs 2.99, and whale costs 5.99 but I only have 2.01 left" | grep -P $reg
 
+##  NAMED CAPTURE GROUP
+-  dupe is NAME of capture group.
+-  does not capture 'dupe' !
+ - captures string, possiblly followed by char(s),  that repeat, but separated by non-word
+ (?'name'\w+)\W\k'name'
+(?'dupe'\w+)\W\k'dupe'
+jim jim - yes
+jim is a .. jim - NO
+thought the anse - t at end of 1st word & t at beg of 2nd word match
 
+## named capture group, 
+- match 1st and last char if separated by only w chars
+
+\b(?'joke'\w)\w+\k'joke'\b
 # -------
 ## TODO
 # -------
