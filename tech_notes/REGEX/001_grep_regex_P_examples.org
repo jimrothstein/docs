@@ -1,12 +1,12 @@
----
-title: "/tech_notes/001_grep_regex_P_examples.qmd"
----
+#+TITLE: "/tech_notes/001_grep_regex_P_examples.qmd"
 
 <!--
 USE THIS FILE!
 
-#### Main Regex file:  ~/code/docs/tech_notes/REGEX/REGEX.md
-#### USE THIS FILE:  ~/code/docs/tech_notes/REGEX/001_grep_regex_P_examples.qmd
+*Main Regex file:  ~/code/docs/tech_notes/REGEX/REGEX.md*
+*THIS FILE IS:  ~/code/docs/tech_notes/REGEX/001_grep_regex_P_examples.qmd*
+#+OPTIONS: toc:nil        (no TOC at all)
+
 -->
 
 
@@ -609,3 +609,10 @@ echo "cd" |  grep -P '[cd]\1'
 
 ```
 vim: nospell
+** also in R (033_)
+
+#+BEGIN_SRC
+   (f)(o+)  replace with \1_\2_
+   foo becomes f_oo_
+#+END_SRC
+

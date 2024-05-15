@@ -85,6 +85,13 @@ file <- "R_INSTALL_CONFIG.qmd"
 -   but `install.packages( ..., lib="~/R/x86....")`does not work either.
 -   Bottom Line, use RStudio
 
+    ### R update April 2024  (waste of time)
+Tried to install matlib (for linear algebra, vectors).   It wanted rgl.
+Upgrade linux to linuxmint 21.3 (Virgina), which is base on Ubuntu 22.04 (jammy) and this is based on Debian  (Bookmark)
+
+R refuses to update.   stuck.  Little info in error.
+
+
 
 }
 

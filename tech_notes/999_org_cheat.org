@@ -1,0 +1,22 @@
+Org mode Cheat Sheet
+
+
+** Two Years OLD - do not use** 
+*bold*
+_underline_
+[ [nytimes][https://nytimes.com] ]
+
+#+BEGIN_CENTER
+hi
+#+END_CENTER
+
+
+Do not use markdown
+
+##
+
+
+<2024-05-04 Sat>:
+
+## REST RESTful, HTTP Protocol , JSON, RFC, API and Web Technologies
+

@@ -1,23 +1,21 @@
+#+title:  oauth notes 
+#+author: jim 
+#+date:   2020-10-27
+
+<2024-05-04 Sat>:
+\footnotesize
 
 ** Two Years OLD - do not use** 
-  
 *bold*
-
 _underline_
-
 [ [nytimes][https://nytimes.com] ]
-
 
 #+BEGIN_CENTER
 hi
 #+END_CENTER
 
 
-
-
-<2024-05-04 Sat>:
-
-## REST RESTful, HTTP Protocol , JSON, RFC, API and Web Technologies
+** REST RESTful, HTTP Protocol , JSON, RFC, API and Web Technologies
 
 -	HTTP - best is Mozilla introduction
 -	In practice, Restful API means built upon HTTP. (
@@ -30,7 +28,7 @@ Stateless means server keeps no session information.   Each call to server is
 independent.  Examples include HTTP, IP, REST.   But TCP is not stateless.
 
 
-####    RESTFUL API (vs. graphQL) REF:  (ODATA is query tool for REST)
+***    RESTFUL API (vs. graphQL) REF:  (ODATA is query tool for REST)
 
   -  OpenApi (api doc rules:  openapi.json or openapi.yaml; was Swagger) https://oai.github.io/Documentation/specification.html
   -  Postman - popular testing/setup site, many videos; `code` button to show
@@ -43,18 +41,40 @@ independent.  Examples include HTTP, IP, REST.   But TCP is not stateless.
   -  Openstack (Cloud) https://docs.openstack.org/api-quick-start/
 
 
-** REST & OAUTH2 Vocabulary  
+*** REST & OAUTH2 Vocabulary  
 
 (also:   [https://developer.mozilla.org/en-US/docs/Glossary](https://developer.mozilla.org/en-US/docs/Glossary) )     
 BEST VIDEO:	oath2 5/27/20 "Like I am 5"
 
+
+*Source of confusion?*    Bearer scheme is one of several authentication schemes https://www.iana.org/assignments/http-authschemes/http-authschemes.xhtml#authschemes; oauth is another.
+Bearer token is same/different?    These definitions were created at different times for difference purposes:  hence confusion:
+Think of Bearer token as just string rides in each request header. Authorization:   Bearer <token>   where token follows format for a bearer token.   Maybe do not add more than this?
+ 
 - USER - owns the 'resource'
-- client - your restful api software (aka app, 3rd party, wants to access USER's resource;  usually must register with the resource.  Can be desktop or mobile app, or web app.
+- client - your restful api software (aka app, R code, 3rd party, wants to access USER's resource;  usually must register with the resource.  Can be desktop or mobile app, or web app.
+- *authorization code* - type of *grant*  for use case the resource owner is at keyboard/monitor to approve.
+
 - **Authorization** Server - asks USER to approve request
--	**Authorization** Code - returns to client software
--	**Access**  - short term access (~ 1 hour).  Server gives to client.
--	**BEARER** **TOKEN** - an Access Token of type BEARER; exchanged via header.
--	**Refresh** Token - As needed client passes to server (+ secrets) in exchange for new Access
+- **Authorization** Code - returns to client software
+- **Access**  - short term access (~ 1 hour).  Server gives to client.
+- **BEARER** **TOKEN** - an Access Token of type BEARER; exchanged via header.
+What is called bearer token is nothing more than something like:
+- rides in header, with requests, 
+Authorization:  Bearer <access_token>
+- is a string, with constructed with 1 or alpha, digit, 
+ - 
+  ```
+The syntax for Bearer credentials is as follows:
+
+     b64token    = 1*( ALPHA / DIGIT /
+                       "-" / "." / "_" / "~" / "+" / "/" ) *"="
+     credentials = "Bearer" 1*SP b64token
+```
+
+Authorization: Bearer AbCdEf123456
+
+- **Refresh** Token - As needed client passes to server (+ secrets) in exchange for new Access
 Token.  Refresh Token is longer lived.  Why this way?   Security mechanism.
 	-	Still need to know secrets to gain Access Token. Possession is
 		insufficient.
@@ -170,3 +190,4 @@ URI  https://en.wikipedia.org/wiki/Uniform_Resource_Identifier
 
 
 \newpage
+

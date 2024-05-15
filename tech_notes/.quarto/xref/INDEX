@@ -42,5 +42,8 @@
   "001_grep_regex_P_examples.qmd": {
     "001_grep_regex_P_examples.tex": "2eb3c7e8",
     "001_grep_regex_P_examples.html": "618f45a6"
+  },
+  "oauth.md": {
+    "oauth.tex": "421715bd"
   }
 }
