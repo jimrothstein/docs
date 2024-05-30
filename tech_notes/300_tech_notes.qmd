@@ -33,6 +33,15 @@ execute:
     -   Break this document into separate files, merge into one big one?
 	
   -	
+
+
+##  29-May-2024:   Upgrade to R 4.4,  Linux Mint 21.3 (Virginia)
+-   This is a nightmare.  There are  several discrete steps;  Do one at time!
+-   gpg  keys;  Debian: see apt-secure,  READ carefully, but it doeswork.
+-   need  the correct  deb line,   for /etc/apt/sources.list
+-   In current setup,   I actually on    Ubuntu 22.04, "jammy" (and not Debian,  not `linuxmint`   b/c it  is uusing Ubuntu)
+-   So   MESSAGE:   when apt  update  shows errors  -   FIX  them and you will be on right path!
+
 ##  CHANGES:
 -  22-July-2023 LinuxMint upgrade  to 21.2 'victoria' via menu: upgrade, no issues.
                 version: /etc/linuxmint/info 
