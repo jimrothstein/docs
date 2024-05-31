@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-05-30 Thu 17:15 -->
+<!-- 2024-05-30 Thu 17:14 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>oauth notes</title>
@@ -269,12 +269,12 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgbf65b87">1. Two Years OLD - do not use**</a></li>
-<li><a href="#orge53a9a1">2. REST RESTful, HTTP Protocol , JSON, RFC, API and Web Technologies</a></li>
-<li><a href="#orge3a8a63">3. VERBS include GET/POST/ etc etc</a>
+<li><a href="#org570345a">1. Two Years OLD - do not use**</a></li>
+<li><a href="#org44d1cd9">2. REST RESTful, HTTP Protocol , JSON, RFC, API and Web Technologies</a></li>
+<li><a href="#org8d875cb">3. VERBS include GET/POST/ etc etc</a>
 <ul>
-<li><a href="#orgcb41396">3.1. RESTFUL API (vs. graphQL) REF:  (ODATA is query tool for REST)</a></li>
-<li><a href="#org068fbe4">3.2. REST &amp; OAUTH2 Vocabulary</a></li>
+<li><a href="#org9d7d13a">3.1. RESTFUL API (vs. graphQL) REF:  (ODATA is query tool for REST)</a></li>
+<li><a href="#orgb136709">3.2. REST &amp; OAUTH2 Vocabulary</a></li>
 </ul>
 </li>
 </ul>
@@ -285,8 +285,8 @@ for the JavaScript code in this tag.
 \footnotesize
 </p>
 
-<div id="outline-container-orgbf65b87" class="outline-2">
-<h2 id="orgbf65b87"><span class="section-number-2">1</span> Two Years OLD - do not use**</h2>
+<div id="outline-container-org570345a" class="outline-2">
+<h2 id="org570345a"><span class="section-number-2">1</span> Two Years OLD - do not use**</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 <b>bold</b>
@@ -303,8 +303,8 @@ hi
 </div>
 
 
-<div id="outline-container-orge53a9a1" class="outline-2">
-<h2 id="orge53a9a1"><span class="section-number-2">2</span> REST RESTful, HTTP Protocol , JSON, RFC, API and Web Technologies</h2>
+<div id="outline-container-org44d1cd9" class="outline-2">
+<h2 id="org44d1cd9"><span class="section-number-2">2</span> REST RESTful, HTTP Protocol , JSON, RFC, API and Web Technologies</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li>HTTP - best is Mozilla introduction</li>
@@ -324,8 +324,8 @@ do \(\exists\) non-HTTP )
 </p>
 </div>
 </div>
-<div id="outline-container-orge3a8a63" class="outline-2">
-<h2 id="orge3a8a63"><span class="section-number-2">3</span> VERBS include GET/POST/ etc etc</h2>
+<div id="outline-container-org8d875cb" class="outline-2">
+<h2 id="org8d875cb"><span class="section-number-2">3</span> VERBS include GET/POST/ etc etc</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Stateless means server keeps no session information.   Each call to server is
@@ -334,8 +334,8 @@ independent.  Examples include HTTP, IP, REST.   But TCP is not stateless.
 </div>
 
 
-<div id="outline-container-orgcb41396" class="outline-3">
-<h3 id="orgcb41396"><span class="section-number-3">3.1</span> RESTFUL API (vs. graphQL) REF:  (ODATA is query tool for REST)</h3>
+<div id="outline-container-org9d7d13a" class="outline-3">
+<h3 id="org9d7d13a"><span class="section-number-3">3.1</span> RESTFUL API (vs. graphQL) REF:  (ODATA is query tool for REST)</h3>
 <div class="outline-text-3" id="text-3-1">
 <ul class="org-ul">
 <li>OpenApi (api doc rules:  openapi.json or openapi.yaml; was Swagger) <a href="https://oai.github.io/Documentation/specification.html">https://oai.github.io/Documentation/specification.html</a></li>
@@ -354,8 +354,8 @@ cURL, httr, curlR and many others
 </div>
 
 
-<div id="outline-container-org068fbe4" class="outline-3">
-<h3 id="org068fbe4"><span class="section-number-3">3.2</span> REST &amp; OAUTH2 Vocabulary</h3>
+<div id="outline-container-orgb136709" class="outline-3">
+<h3 id="orgb136709"><span class="section-number-3">3.2</span> REST &amp; OAUTH2 Vocabulary</h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
 (also:   [<a href="https://developer.mozilla.org/en-US/docs/Glossary">https://developer.mozilla.org/en-US/docs/Glossary</a>](<a href="https://developer.mozilla.org/en-US/docs/Glossary">https://developer.mozilla.org/en-US/docs/Glossary</a>) )     
@@ -593,7 +593,7 @@ must write you own functions)
 <div id="postamble" class="status">
 <p class="date">Date: 2020-10-27</p>
 <p class="author">Author: jim</p>
-<p class="date">Created: 2024-05-30 Thu 17:15</p>
+<p class="date">Created: 2024-05-30 Thu 17:14</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
