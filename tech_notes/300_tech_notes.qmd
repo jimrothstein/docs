@@ -37,10 +37,20 @@ execute:
 
 ##  29-May-2024:   Upgrade to R 4.4,  Linux Mint 21.3 (Virginia)
 -   This is a nightmare.  There are  several discrete steps;  Do one at time!
+-   get public key;  import;  convert .asc to .gpg (if needed); cp .gpg   to Debian's ring
+
 -   gpg  keys;  Debian: see apt-secure,  READ carefully, but it doeswork.
+-   gpg  --list-keys
+
 -   need  the correct  deb line,   for /etc/apt/sources.list
 -   In current setup,   I actually on    Ubuntu 22.04, "jammy" (and not Debian,  not `linuxmint`   b/c it  is uusing Ubuntu)
 -   So   MESSAGE:   when apt  update  shows errors  -   FIX  them and you will be on right path!
+
+##  PGP
+-   KEY SIGNING:  (summary)   I can create public-private keypair.   If I 'sign'  doc with private key,   then anyone with my public key can READ and  will  know   ONLY  I could have encryted the file.
+-   Encrypt with my PUBLIC KEY,   then only  someone with my PRIVATE  KEy can   read it.
+-   ALL  keys  belong on  Debian key ring.
+
 
 ##  CHANGES:
 -  22-July-2023 LinuxMint upgrade  to 21.2 'victoria' via menu: upgrade, no issues.
