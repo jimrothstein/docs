@@ -32,6 +32,7 @@ Medicare Card ID:   1F98NP7MC68   (see medicare.gov)
 Oregon Imaging (Eugene) 458-215-4050
 
 ##  News
+-   3JUNE2024 - convert qmd to  emacs org
 -   2MAY2023  - convert md file to qmd
 
 <!--
@@ -2777,4 +2778,14 @@ I bet the assholes pried hand lose; injurint pingky.   The pinky has NOT bothere
 Doing pinky exercises helps, but ... stick getting 'stuck'
 
 30 years! 5 colonoscopy?   How did they fuck this up?
+
+
+** 3 June 2024
+   Diarerha episodes twice in  past two weeks.   Think now stable.  Last diarerha 7  days ago;  daily bowel movements last 3 days.
+
+QUESTION   now  is diet   and blood   sugar.  
+Have  been eating white potatoes, white rice, white breads; some egg, some greens  thrown in  and large amounts of yoguart.  Terrible diet.
+
+My usual diet is heavy on greens, fiber  and limited starch,  daily yogurt.
+Fear A1C is huge.
 
