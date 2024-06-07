@@ -1,30 +1,4 @@
----
-title: "300_tech_notes.qmd"
-author: "jr"
-date: "5/22/2021"
-pdf-engine: lualatex
-format:
-    html:
-        toc: true
-        html-math-method: katex
-        css: styles.css
-        embed-resources: true
-output-dir: docs
-editor_options: 
-  chunk_output_type: console
-execute: 
-  error: true                   ## include errors in output
-  warning: true
-  collapse: true
-  standalone: true
----
-
-<!--  
-      For PDF Version
-      SEE  300.....OLD_PDF.qmd
-    -->
-
-##  TODO
+**  TODO
     -   USEFUL ??
     -   quarto:  focus on html (not pdf)
     -   use folds, to simplify navigating this document
@@ -35,7 +9,7 @@ execute:
   -	
 
 
-##  29-May-2024:   Upgrade to R 4.4,  Linux Mint 21.3 (Virginia)
+**  29-May-2024:   Upgrade to R 4.4,  Linux Mint 21.3 (Virginia)
 -   This is a nightmare.  There are  several discrete steps;  Do one at time!
 -   get public key;  import;  convert .asc to .gpg (if needed); cp .gpg   to Debian's ring
 
@@ -46,26 +20,53 @@ execute:
 -   In current setup,   I actually on    Ubuntu 22.04, "jammy" (and not Debian,  not `linuxmint`   b/c it  is uusing Ubuntu)
 -   So   MESSAGE:   when apt  update  shows errors  -   FIX  them and you will be on right path!
 
-##  PGP
+**  PGP
 -   KEY SIGNING:  (summary)   I can create public-private keypair.   If I 'sign'  doc with private key,   then anyone with my public key can READ and  will  know   ONLY  I could have encryted the file.
 -   Encrypt with my PUBLIC KEY,   then only  someone with my PRIVATE  KEy can   read it.
 -   ALL  keys  belong on  Debian key ring.
 
 
-##  CHANGES:
+** CHANGES:
 -  22-July-2023 LinuxMint upgrade  to 21.2 'victoria' via menu: upgrade, no issues.
                 version: /etc/linuxmint/info 
     -  18APR 2023  LinuxMint .. removed Timeshift program and all files (it retains
       daily/weekly/ image of drive) and fills root (\) partition in no time.
 
 
+** Changes to this document:
+- 05JUNE2024  - converting to emacs  org (from quarto .qmd)
 
-##  PURPOSE:		
+**  PURPOSE:		
 Misc Tech Notes;  details, notes can be here (but COMMANDS put
 on INDEX C).  Math, R, probability and stats notes **do NOT go here*
 
 
-##	IMPERATIVE v DECLARATIVE
+** fat32, for copiers
+To  make fat32 usb device.(for copier)
+1) (optional; too slow)  can put all zeros (optional, slow - ~ 5MB/s  or 200  seconds for 1 GB  on   USB 2.0)
+2) sudo parted /dev/sda mklabel msdos   (makes empty partition table, of form MBR)
+3) sudo parted /dev/sda mkpart primary fat32 0% 100%  (makes partition)
+4) sudo mkfs.fat -F32 /dev/sda   (format  this partiion,  if says   to use -I  do  so!)
+5) sudo parted /dev/sdb print   (confirms fat32)
+
+
+** usb_device
+- format, partition etc.
+
+check fs:
+df -Th /dev/sda
+
+format
+sudo mkfs.exfat /dev/sda
+
+
+
+mount
+mount /dev/sda /media/a_mt_point
+(a_mt_point must already exist)
+
+
+**	IMPERATIVE v DECLARATIVE
 -	math notation is DECLARATIVE;   indicates meaning, not exact details
   (example1:  summation sign).  Tell computer what you WANT, leave details to
   compiler or program.
@@ -74,7 +75,8 @@ on INDEX C).  Math, R, probability and stats notes **do NOT go here*
 2023-12-06 -  Try couple of cv or resume templates and one quarto extension.   Seemed to be more work than worth.  Just use Rmarkdown to create resume.
 2024-01-26	READ r4ds Ch 28-29 b/c Quarto and config knitr
 
-##  {X11, Wayland, video}
+
+**  {X11, Wayland, video}
 
 **Warning:**  Stay with X11 (proven, well-supported, works)
 
@@ -87,9 +89,9 @@ and users should be minimal.  Wayland shrinks X;  much functional now in Linux
 kernel.  
 
 
-## {PDF, Pandoc, Latex}
+** {PDF, Pandoc, Latex}
 
-### PDF Notes   [ignores html, css; also ignores YAML header (pandoc & ::render()]
+*** PDF Notes   [ignores html, css; also ignores YAML header (pandoc & ::render()]
 2023-12-30
 -	tlmgr controls much latex install: fonts, *.sty, but lately Yuhi seems
   to embedded tlmgr and never explicitly need to use it and never explicitly
@@ -141,7 +143,7 @@ I do **not** know how to create fancy HTML files from knitr, pandoc.
 pandoc balks at processing straight text if it thinks it sees markdown.
 If lucky, !pandoc % -o file.pdf will work.
 
-###  section{LATEX NOTES}
+***  section{LATEX NOTES}
 
 -	Tikz seems to be most popular way to gaphics vs **pstricks**.
 
@@ -167,7 +169,7 @@ value for
 $$\pi = \directlua{tex.sprint(math.pi)}$$
 
 
-## section(R}
+** section(R}
 -	No R;  use 310_
 
 ##	GIT commands   SEE INDEX Cars
@@ -175,9 +177,9 @@ HEAD - can point to branch (tip) or a commit (detached HEAD). Commits are
 immutable. HEADS can move around.
 
 
-***
 
-##  section{Lua}
+
+**  section{Lua}
 
 -   TODo:  move lua into lua_project as code; or index or .....
 
@@ -278,12 +280,11 @@ vim.bo.shiftwidth = 4
 
 --end
 
-***
 
 
-##	NEOVIM NOTES
+** NEOVIM NOTES
 
-#### neovim, nvim, vim  update to latest version
+*** neovim, nvim, vim  update to latest version
 {
  Tue  02 Nov 2021 (also 30 DEC 2021)
 -  download nvim.appimage | place in ~/bin/ | will overwrite prior
@@ -303,7 +304,7 @@ See #75 Vimcast
 noremap <leader>tl Vy<C-w>wpa<CR><C-\><C-n><C-w>pj
 }
 
-#### VIM writing_notes
+*** VIM writing_notes
 
 *jim_writing_notes1*
 
@@ -323,10 +324,10 @@ setlocal foldcolumn=3 		"trick, to set left margin
 Long parapgarapja l;akdsjf asalkfjas d; asdfk;ladsjf  lk;adjf a;lkaf as;l
 asdfjl; adsfl;kj d;as fasdj;lkj afds;lkj 
 
-####  Folds
+***  Folds
 26FEB2022  set to use treesitter;  don't seem to work
 
-####	Turn off indents
+***	Turn off indents
 
 (no c indents)
 
@@ -335,9 +336,8 @@ setlocal nocindent
 setlocal nosmartindent  
 setlocal indentexpr=  
 
-***
 
-### HELPTAGS and Ctags are NOT related (do not confuse).
+*** HELPTAGS and Ctags are NOT related (do not confuse).
 
 for ctags:
 :h tags-file-format
@@ -352,7 +352,7 @@ Run :helptags ALL to regenerate file called tags
 
 
 
-#### VIM help 1
+*** VIM help 1
 
 :h windows.txt
 :h vert
@@ -389,7 +389,7 @@ Run :helptags ALL to regenerate file called tags
 :h startinsert
 
 
-####  Help for common tasks
+****  Help for common tasks
 
 :h :abbreviate
 :h :augroup
@@ -421,14 +421,14 @@ Run :helptags ALL to regenerate file called tags
 $VIMRUNTIME (inside the image app)
 :!ls $VIMRUNTIME
 
-#### Windows, splits
+*** Windows, splits
 :h usr_07.txt
 :h usr_08.txt
 :h windows.txt
 :h CTRL-W    
 
 
-#### statusline  %m (modify?) %y (filetype) ...
+*** statusline  %m (modify?) %y (filetype) ...
 :h statusline
 :echo expand("%m")  
 :set statusline=%t
@@ -441,7 +441,7 @@ Ranges (in file)
 3 lines below to end - 5 lines
 :.+3, $-5
 
-#### insert mode
+*** insert mode
 :h insert.txt
 :h insert-index
 :h i_CTRL-R
@@ -456,12 +456,12 @@ Insert in bulk:
 :i or :a  followed by . when done
 
 
-#### Registers
+Registers
 :echo @a 
 :let @a="hello"
 
 
-#### Plugins
+Plugins
 :h Vimux
 :call VimuxRunCommand("ls")
 :VimuxPromptCommand<CR>
@@ -473,20 +473,20 @@ To Close:
 :VimuxCloseRunner<CR>
 
 
-#### Syntax Highlighting
+Syntax Highlighting
 :h usr_06.txt
 
-#### vim initialize
+vim initialize
 :vert h nvim_R
 :tab help
 
 :vert h nvim-R  " opens help to right
 :let R_nvimpager = "vertical" default, (can be "tab", "tabnew")
 
-#### vim & grep (search both *.R and *.Rmd - note | is escaped)
+vim & grep (search both *.R and *.Rmd - note | is escaped)
 :grep -EHRn 'binomial' ~/code/**/*.(R\|Rmd)
 
-#### vim tabs
+vim tabs
 tabs   :tabn :tabp :tabnew
 
 READ: cmds to open windows at various localations:  bo, above ...
@@ -510,7 +510,7 @@ READ: cmds to open windows at various localations:  bo, above ...
 :h motions.txt (jumps, motions, find next } etc)
 
 
-#### search
+*** search
     /foo/+1    find foo  and move +1 line down 
 /foo/0     find .... but move to beginning of line 
 /foo/e-1    find ... then move back 1 character.
@@ -535,15 +535,14 @@ end neovim
 
 \newpage
 
-***
 
-###	REGEX
+** REGEX
 
 -	see ./tech_notes/REGEX.md
 -	for regex reading see 300_tech_reading.md
 
 
-## LINUX/ZSH notes
+** LINUX/ZSH notes
 
 21-July-2023:   Rumors, Linux Mint (now based upon Ubuntu/Canonical ) may be moving to **LMDE** (Linux Mint Debian Edition)
 Why?  some issues with Canonical?  Claims that LMDE much firmer ground; Mint will also then be more independent.
@@ -557,7 +556,7 @@ not in kernel.
 
 section{Lenovo Laptop}
 
-### Terminal
+Terminal
 {
 - w/ costini, only terminals work:  built-in and `terminator`
 - terminals:  kitty (very, very popular), wez ... do NOT work.
@@ -569,11 +568,11 @@ section{Lenovo Laptop}
 }
 
 
-#### Use exit to exit .sh early
+Use exit to exit .sh early
 
-#### completion
+completion
 	Use zstyle
-#### sudo vs su ....
+sudo vs su ....
 {
 
 	-	su jim  change to User 'jim'
@@ -599,7 +598,7 @@ section{Lenovo Laptop}
 
 \newpage
 
-### drive info
+drive info
 
 {
 	# succinct, useful info
@@ -607,7 +606,7 @@ section{Lenovo Laptop}
 }
 
 
-###	xev  keyboard
+xev  keyboard
 
 {
 	-	Keyboard specific, find what *keycode* a button is mapped to:
@@ -622,7 +621,7 @@ section{Lenovo Laptop}
 FIX:   now using **setxkbmap -option caps:escape (in .xinitrc) **
 DEPRECATES anything before 17JULY 2023
 
-###	xxd 
+xxd 
 
 {
 
@@ -633,7 +632,7 @@ DEPRECATES anything before 17JULY 2023
 	-	 SEE ROTHGAR
 }
 
-### remap capslock to escape
+** remap capslock to escape
 
 {
 #		PURPOSE:	**maps ChromeBox "capslock" key to Escape.**
@@ -652,7 +651,7 @@ setkbmap seems to suggest using caps:swapescape and not caps:escape, but xmodmap
 
 }
 
-####	cron job, crontab
+**	cron job, crontab
 
 {
 	grep jim /var/log/syslog  # see cron jobs that ran
@@ -765,7 +764,7 @@ Output from zle -al (~403 cmds)
 
 
 
-### XFCE4
+** XFCE4
 
 Shortcuts: https://docs.xfce.org/apps/terminal/start#keyboard_shortcuts
 HELP:   https://docs.xfce.org/apps/terminal/4.12/start
@@ -776,7 +775,7 @@ ALT-F10  toggle bet min/max (NOPE!)
 
 ALT-TAB  rotate through open windows?
 
-####  X11
+***  X11
 
 -	XFCE - many distros, suite of apps, use GTK+ toolkit
 -	-	DESKTOP Mgr=Xfdesktop (colors, images, wallpaper)
@@ -819,7 +818,7 @@ CB3-431-C7EX  (manuf 3/22/18)
 SNID:  81201450072
 \end{verbatim}
 
-#### epub, Calibre, iPad, iCloud, eReader, pdf
+epub, Calibre, iPad, iCloud, eReader, pdf
 
 -	Claim:  iPad does not support Calibre; free Readers for iPad, everyone has fav.
 		No, no, no.    Download Calibre software for osx to iPad.   What  does not
@@ -827,7 +826,7 @@ SNID:  81201450072
 -	Goodreader for pdf ($20?) - many say best iPad reader.?
 - Marvin - no pdf support, but excellent otherwise?
 
-####	eReader:   Fujistu Quaderno A4 GEN 2  (A4 or A5)
+eReader:   Fujistu Quaderno A4 GEN 2  (A4 or A5)
 
 My use is almost entirely PDF technical documents (code, some math, technical
 notes).    No need to draw anything fancy; and no need for android apps.   
@@ -836,7 +835,7 @@ Plus is "Distraction Free" (ie meant for reading and some note taking) Most impo
 
 Curious what others with similar requirements chose.   Fujistu Quanderno A4 GEN 2 (order from eBay) is currently my top choice.
 
-#### KNITR
+*** KNITR
 
 
 **knitr -> R & rmarkdown -> Bookdown (~2016) -> Blogdown -> netlify (Hugo, static)**
@@ -858,9 +857,9 @@ for my needs!  (at this time.)
 \newpage
 
 
-####	CURL + youtube api
+*** CURL + youtube api
 	
-##  Google API
+**  Google API
 
  PURPOSE:		Focus is Google API, youtube in particular. This is summary of
  using cURL to obtain authorization_code and then proceed querying youtube.
@@ -878,7 +877,7 @@ for my needs!  (at this time.)
 
 REF:  https://stackoverflow.com/questions/53357741/how-to-perform-oauth-2-0-using-the-curl-cli#53357742et CLIENT_ID=Replace_with_your_Client_ID
 
-#### Youtube constants
+ Youtube constants
 auth_url=https://accounts.google.com/o/oauth2/v2/auth
 token_url=https://oauth2.googleapis.com/token 
 base_url=https://www.googleapis.com/youtube/v3
@@ -888,7 +887,7 @@ scope='https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/y
 
 client_id=$(Rscript -e "cat(Sys.getenv('OAUTH2_ID'))")
 
-#### Youtube Pagination
+Youtube Pagination
 (in .tex, use math {)
 part= snippet, content...
 
@@ -897,7 +896,7 @@ fields=nextPageToken,items(id,snippet(title,description,publishedAt))
 fields=nextPageToken,items(snippet(topLevelComment(snippet(videoId,textDisplay))))
 fields=pageInfo.totalResults
 
-####	Run this in neovim terminal, copy+paste into browser, which asks user
+Run this in neovim terminal, copy+paste into browser, which asks user
 \begin{verbatim}
 permission and then returns auth.code !
 echo \
@@ -906,7 +905,7 @@ echo \
 '&scope='$scope'&response_type=code'
 \end{verbatim
 
-####	We now have auth code.
+We now have auth code.
 
 
 
