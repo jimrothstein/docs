@@ -41,6 +41,18 @@ Misc Tech Notes;  details, notes can be here (but COMMANDS put
 on INDEX C).  Math, R, probability and stats notes **do NOT go here*
 
 
+** SETUP/CONFIG new machine 
+   June 9, 2024 (HP Elitebook, 845, G8 - 2nd HP laptop)
+   - create_soft_links.sh  VERY helpful
+   - must re-install:   wezterm (see webpage), i3, zsh, git, emacs,  ZSH, gh
+   - keys .. read debian's guide
+   - zsh change shell:   chsh -s $(which zsh)
+   - ESC/CAPSLOCK use /etc/default/keyboard
+   - emacs:  must first install/config 'use-package'
+     
+    - websites:  Google 1st,  then Firefox (rest should follow)
+
+
 ** format fat32, for copiers
 To  make fat32 usb device.(for copier)
 1) (optional; too slow)  can put all zeros (optional, slow - ~ 5MB/s  or 200  seconds for 1 GB  on   USB 2.0)
@@ -176,8 +188,8 @@ $$\pi = \directlua{tex.sprint(math.pi)}$$
 HEAD - can point to branch (tip) or a commit (detached HEAD). Commits are
 immutable. HEADS can move around.
 
-
-
+** Install R
+   - on Ubuntu,  or mintlinux virgina,  use  jammy and  follow https://cran.r-project.org/bin/linux/ubuntu/ (works)   
 
 **  section{Lua}
 
