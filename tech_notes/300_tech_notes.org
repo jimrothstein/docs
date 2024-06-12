@@ -43,14 +43,14 @@ on INDEX C).  Math, R, probability and stats notes **do NOT go here*
 
 ** SETUP/CONFIG new machine 
    June 9, 2024 (HP Elitebook, 845, G8 - 2nd HP laptop)
-   - create_soft_links.sh  VERY helpful
+   - *~/dotfiles/create_soft_links.sh*  VERY helpful
    - must re-install:   wezterm (see webpage), i3, zsh, git, emacs,  ZSH, gh
-   - keys .. read debian's guide
+   - public keys .. read debian's guide
    - zsh change shell:   chsh -s $(which zsh)
-   - ESC/CAPSLOCK use /etc/default/keyboard
-   - emacs:  must first install/config 'use-package'
-     
-    - websites:  Google 1st,  then Firefox (rest should follow)
+   - ESC/CAPSLOCK use */etc/default/keyboard*
+   - emacs:  must first install/config *'use-package'*
+   - websites:  Google 1st,  then Firefox (rest should follow)
+   - *keep* sh files, links, config files up-to-date AND in dotfiles/backup!
 
 
 ** format fat32, for copiers
