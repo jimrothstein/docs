@@ -209,10 +209,6 @@ Lua + neovim:
 
 --  These are vim api ,  called by lua
 
--- [[  multi-
--- line
--- comments
--- ]]
 
 -- shortcuts:
 local cmd = vim.cmd
@@ -587,6 +583,35 @@ General:
 SEE VCS_INFO (version control) used with zstyle <configure> <VCS_INFO> <OUTPUT>
 https://arjanvandergaag.nl/blog/customize-zsh-prompt-with-vcs-info.html
 
+*** zle = zsh line editor/keymaps/widgets/
+SEE Serge Gebhardt
+widgets correspond to commands, often with shortcut
+
+Given a widget (ex:  '\eb',  ie esc b)
+bindkey '\eb' #returns backward-word; ie ESC-b, aka M-b   goes back one word !  
+binddky '^b'  # returns backward-charac
+
+bindkey  '\ef' # returns foward-word
+
+bindkey '^a'  # returns beginning-of-line 
+
+zle -al # list of widgets
+
+keymaps=collection of shortcuts
+bindkey -l  # vi modes?
+
+To see mapping:
+1. cat <CR>; type key; <C-C> ends   (try M-b)
+2. <C-V> ; type key
+
+invoke widget:
+1. <C-A> bind to shortcut
+2. zle <widget>   # to execut
+3. sp widget <execute-named-command>
+   
+TERMCAP - obsolete
+
+ 
 sudo vs su ....
 {
 
