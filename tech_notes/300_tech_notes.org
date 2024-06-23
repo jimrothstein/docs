@@ -41,6 +41,10 @@ Misc Tech Notes;  details, notes can be here (but COMMANDS put
 on INDEX C).  Math, R, probability and stats notes **do NOT go here*
 
 
+** emacs/org mode/eLisp
+
+- annotated examples: https://gitlab.com/taonaw/taonah/-/blob/master/public/emacs_settings.org
+
 ** SETUP/CONFIG new machine 
    June 9, 2024 (HP Elitebook, 845, G8 - 2nd HP laptop)
    - *~/dotfiles/create_soft_links.sh*  VERY helpful
@@ -562,14 +566,21 @@ select) ;   READ >info grub <CR>
 not in kernel.
 
 
+*ZSH*
+SEE MANUAL: https://zsh.sourceforge.io/Doc/Release/
 
 ** completion, Use zstyle
 man zshcompsys
-zstyle + 3rd party scripts - do MANY things (completion, modify settings ...)
+zstyle + 3rd party scripts - do MANY things (completion, modify settings, config VCS_INFO ...)
 SEE:  https://thevaluable.dev/zsh-completion-guide-examples/
 
-USAGE:  zstyle <pattern> <style> <values>  and is NOT so OBVIOUS !
+*VCS_INFO* is a function, used to populate variables (prompt, for ex) *retrieved from vcs, ie git*
+SEE: https://arjanvandergaag.nl/blog/customize-zsh-prompt-with-vcs-info.html
+SEE: https://zsh.sourceforge.io/Doc/Release/User-Contributions.html#Version-Control-Information
+
+USAGE:  *zstyle* <pattern> <style> <values>  and is NOT so OBVIOUS !
 if match, apply the style
+USAGE:  zstyle <configure><VCS_INFO><OUTPUT>
 
 Completion:  ex:  cd <TAB> completion
 zstyle ':completion:*:*:cp:'
@@ -580,8 +591,9 @@ General:
 - command (cd, rm, etc)
 - <tag> (could be files, users, options ??)
 
-SEE VCS_INFO (version control) used with zstyle <configure> <VCS_INFO> <OUTPUT>
-https://arjanvandergaag.nl/blog/customize-zsh-prompt-with-vcs-info.html
+*precmd* is hook function, runs before ZSH prompt (SEE manual 9.3.1)
+SEE:  https://zsh.sourceforge.io/Doc/Release/Functions.html#Special-Functions 
+
 
 *** zle = zsh line editor/keymaps/widgets/
 SEE Serge Gebhardt
@@ -671,7 +683,6 @@ xxd
 	-  terminal displays coding (^[a)
 	-	 SEE ROTHGAR
 }
-
 
 ** remap capslock to escape
 
