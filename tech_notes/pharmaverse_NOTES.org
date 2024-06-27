@@ -1,11 +1,21 @@
 
 ** organizations
 PHUSE (UK) 
-pharmaR
+pharmaR (original attempt)  -> pharmaverse
 R Validation Hub (~50 companies)
 
+[[R Submissions Working Group [https://rconsortium.github.io/submissions-wg/]]]
+- pilot submissions to FDA
 
 
+** Reading
+https://pharmaverse.github.io/admiraldev/articles/programming_strategy.html
+
+video:  new contributors https://www.youtube.com/watch?v=MhEyod3Sevc&list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4&index=3
+
+** R packages (Admiral, teal, ...)
+  
+- Admiral overview:  Ben S https://www.youtube.com/watch?v=5PF6mHeQNS4
 
 ** tools
 phuse.org/valtools (nice spreadsheet)
