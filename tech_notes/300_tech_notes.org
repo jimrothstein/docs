@@ -9,6 +9,15 @@
   -	
 
 
+<2024-06-29 Sat>
+- got flycheck,  usethis::use-tidy_style working; lintr now auto works.
+- M-: ess-style reports 'Rstudio'
+- NEED to do:
+  - fix "_"
+  - get styler to auto format upon file save.
+  - do not understand: ess-r-mode; define-key; add-hook 
+
+
 **  29-May-2024:   Upgrade to R 4.4,  Linux Mint 21.3 (Virginia)
 -   This is a nightmare.  There are  several discrete steps;  Do one at time!
 -   get public key;  import;  convert .asc to .gpg (if needed); cp .gpg   to Debian's ring
@@ -47,6 +56,8 @@ on INDEX C).  Math, R, probability and stats notes **do NOT go here*
 - isearch
 - shell mode (C-c M-o) clears
 
+- use-package  replaces need to download/config install
+https://ianyepan.github.io/posts/setting-up-use-package/
 
 ** SETUP/CONFIG new machine 
    June 9, 2024 (HP Elitebook, 845, G8 - 2nd HP laptop)
@@ -189,6 +200,12 @@ value for
 
 $$\pi = \directlua{tex.sprint(math.pi)}$$
 
+** make
+- Make:  seldom use; but I did collect many examples of zsh, ls + regex examples, zsh commands re:  disk, storage, files ..., R to create packages
+- Therefore, do not discard make_project directory
+- https://github.com/jimrothstein/make_project
+-https://github.com/mxenoph/cheat_sheets/blob/master/make_cheatsheet.pdf
+  
 
 ** section(R}
 -	No R;  use 310_
@@ -573,8 +590,15 @@ not in kernel.
 
 *ZSH*
 SEE MANUAL: https://zsh.sourceforge.io/Doc/Release/
+SEE ZSH GUIDE (2003, Stephenson) https://zsh.sourceforge.io/Guide/zshguide.html
+ZSH FAQ (2010) https://zsh.sourceforge.io/FAQ/
 
-** completion, Use zstyle
+~/dotfiles/.zshrc
+~/dotfiles/.zshenv
+zsh -x  *.sh   # prints line then executes
+#!/bin/zsh  -xv # verbose
+
+*** completion, Use zstyle
 man zshcompsys
 zstyle + 3rd party scripts - do MANY things (completion, modify settings, config VCS_INFO ...)
 SEE:  https://thevaluable.dev/zsh-completion-guide-examples/
@@ -599,6 +623,11 @@ General:
 *precmd* is hook function, runs before ZSH prompt (SEE manual 9.3.1)
 SEE:  https://zsh.sourceforge.io/Doc/Release/Functions.html#Special-Functions 
 
+*** printf
+- string(%s), digit(%d); example: digit,pad with by 5 
+printf "%05d\n" ${x}
+
+- R:  see sprintf https://www.r-bloggers.com/2010/05/number-formatting/
 
 *** zle = zsh line editor/keymaps/widgets/
 SEE Serge Gebhardt

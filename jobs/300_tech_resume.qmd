@@ -32,6 +32,8 @@ https://www.linkedin.com/in/jimrothstein](https://www.linkedin.com/in/jimrothste
 
 ### Recent Projects & Skills {#recent}
 
+-   (active) Fix issues in Pharamaverse Admiral and sdmtchecks R packages.
+
 -   (active) Using Shiny developed preliminary dashboard for analysis of Drug
   Benefit Denials (public data from Center for Medicare and Medicaid (CMS)).  
 
