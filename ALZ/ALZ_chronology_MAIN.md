@@ -815,6 +815,9 @@ prosecutor to decide what to do; to get records; etc.
 -  Apparently bet July and Now, court transcriber was preparing documents,
    including audio when available for all hearings, cases .... No sign of ALZ
    handwritting; appears to be one by lawyer Nora Coon.
+   
+-  12/22/23 Appeal is Denied (by Judge Zimmerman); unable to see any documents.
+-  ALZ's manager (officer, oversight...) is 15703 Dana Bennett;  earliest release is 11/7/25
 
 
 

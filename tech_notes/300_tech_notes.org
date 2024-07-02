@@ -8,7 +8,11 @@
 	
   -	
 
-
+<2024-07-01 Mon>
+- ex looks very useful!
+- another attempt with lintr, styler, ... (did some reading)
+- SO(3) - not sure what I am asking;  normal subgroups, symmetries?
+  
 <2024-06-29 Sat>
 - got flycheck,  usethis::use-tidy_style working; lintr now auto works.
 - M-: ess-style reports 'Rstudio'

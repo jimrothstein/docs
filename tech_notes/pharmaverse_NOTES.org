@@ -14,9 +14,31 @@ https://pharmaverse.github.io/admiraldev/articles/programming_strategy.html
 
 video:  new contributors https://www.youtube.com/watch?v=MhEyod3Sevc&list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4&index=3
 
+
 ** R packages (Admiral, teal, ...)
   
 - Admiral overview:  Ben S https://www.youtube.com/watch?v=5PF6mHeQNS4
+
+- Intro (for Pharma Users):  https://pharmaverse.github.io/admiral/
+- Getting Started (vignette, introducing code) https://pharmaverse.github.io/admiral/articles/admiral.html
+
+ Developers:
+- Contributing: https://pharmaverse.github.io/admiral/CONTRIBUTING.html
+- Contribution Model:  broken link  
+- FAQ (some background)https://pharmaverse.github.io/admiral/articles/faq.html
+
+
+- PR intro:   https://pharmaverse.github.io/admiraldev/articles/pr_review_guidance.html
+
+- Admiraldev (some background) https://pharmaverse.github.io/admiraldev/articles/admiraldev.html
+Details:
+
+- (2nd) Programming Strategy https://pharmaverse.github.io/admiraldev/articles/programming_strategy.html
+- (2nd) Coding (rlang etc)https://pharmaverse.github.io/admiral/articles/concepts_conventions.html
+- (2nd) PR overview https://pharmaverse.github.io/admiraldev/articles/pr_review_guidance.html
+- (2nd) PR/branches/commits/ https://pharmaverse.github.io/admiraldev/articles/git_usage.html
+
+
 
 ** tools
 phuse.org/valtools (nice spreadsheet)
@@ -33,6 +55,7 @@ eCTR = electronic communications ..
 SDTM =  Study Data Tabulation Model
 
 TLF = Tables, Listings ..
+
 
 ** SAS
 Good validation (CDISC STDM/Admiral standard)
