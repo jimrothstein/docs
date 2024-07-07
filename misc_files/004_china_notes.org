@@ -1,5 +1,8 @@
 ﻿
 
+<2024-07-05 Fri>
+- fixing outline
+
 21JUNE2024
 - begin using .org
   
@@ -19,23 +22,27 @@ Last Update:
 8. Quotes
 9. Interesting Observations
 10. China NGO, other organizations
+
 Questions
 * Mao's Compromises to (a) get power <1949 (b) unify state >1949
 * Who was Walter (Henry?) Judd, missionary in 1930s, tried to warn US of Japan
 * Why didn’t China industrialize? Many theories 
 * luck (England had coal) ?
-   * Decreased Church power in West (enlightenment, reformation, rise of Protestant & work of individual)?
-   * China - relative stablility, whole; which led to inward thinking (ex: cancel Naval exploraton)
-   * Europe - 500 warring states, forced nobles to be more open to technology?
-   * China - Confucism - inward, passive?
 
-   * Did China peak too early?
-   * had technology, gov't (Confucian burearacy), relative wealth & stability
-   * but by 18thC corrupt, aging, overpopulated  ==> foreigners can dominate (humiliating to China) 
-   *            
+* China
+
+    Decreased Church power in West (enlightenment, reformation, rise of Protestant & work of individual)?
+    China - relative stablility, whole; which led to inward thinking (ex: cancel Naval exploraton)
+    Europe - 500 warring states, forced nobles to be more open to technology?
+    China - Confucism - inward, passive?
+
+    Did China peak too early?
+    had technology, gov't (Confucian burearacy), relative wealth & stability
+    but by 18thC corrupt, aging, overpopulated  ==> foreigners can dominate (humiliating to China) 
+               
 
 
-Timeline
+* Timeline
 
 
 2C-3C (BC) Hsiung-nu (on eastern steppe)
@@ -323,6 +330,32 @@ MacArthur, in Japan, need for Christianity and democracy in Asia.   (What happen
 
 
 ** China, CIA, 
+
+*** Own Lattimore (1920's)
+Deep understanding/research/hands-on:   Saw "Inner Asia Frontier" as 2000 year 'war' between farmer Chinese and nomads of steppes.  No winner; till China industrialized.
+FDR listens;  Truman has no interest.
+
+*** Who Lost China?
+US Hawks:   see Communists, when it is nationalism.   Mogols, Kazahs, .... have no interest in China's civil war.  The issue for them is to run their own affairs.  
+US Hawks often accepted Chiang Kia Sheck's  opinions as fact.  (No, NW not belong to China)
+
+OSS becomes Army SSU and eventually CIA. (many people just carried over)
+
+At end of WWII, several things at once occur in NW.
+- Civil War,  losing because of corruption.
+- Mao's army expected to invade Tibet.
+- US realizes bomb can not remain secret;  BUT US can control world uraniium supplies. ("Murray Hill" plan)
+- Very capable US engineer [[https://en.wikipedia.org/wiki/Douglas_Mackiernan]]  develops remote LISTENING devices; transmit back to US (to detect nuclear explosion).  So US knew when and almost where it happened.
+  (SEE Gen Hegenberger, 1948, AFOAT-1)
+- NW happens to have uranium.  Russia happy to form alliance with tribes to have access to UR.  And the tribes happy to work with anyone to keep Chinese at bay.   (Nothing to do with ideologies).
+- Mongols did work with Soviet, but Kazaks did not like Russian trucks/mining destroying GRAZING areas.
+- ETR = East Turkestan Republic.
+- US Hawks envision positioning fighter bombers in NW China; to strike  Soviet industry.
+- US shuts down Urumuqui Consulate just as Mao's army approaches.
+- CIA - first offcier death (Mackierman) (  https://en.wikipedia.org/wiki/Battle_of_Baitag_Bogd aka Peitaishan Incident)
+
+Geography:  [Altai Mts] [[https://en.wikipedia.org/wiki/Altai_Mountains]]; Gobi Desert; Peitzemiao Valley; Chingil River 
+
 
 - White Paper written by *W. Walton Butterworth* (US State, intelligence, promoted by Acheson, rising star) in 1949 explains the Chiang corruption is reason for fall of KMP in late summer 1949 (Chiang didn't even pay his troops).  Truman knows white paper is correct, but *silent* till late 1960s.
 By March 1950, Achenson, under attack removes Butterworth with *DEAN RUSK* (you are either against Communism or you are pro-).   Anyone in US State who understood Asia was purged.   Specifically, if you argued that central Asia motivated by *nationalism* (independence for Mongolia, Tibet, Kazah...) means you danger.  

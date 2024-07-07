@@ -30,7 +30,7 @@ video:  new contributors https://www.youtube.com/watch?v=MhEyod3Sevc&list=PLbcgl
 
 - PR intro:   https://pharmaverse.github.io/admiraldev/articles/pr_review_guidance.html
 
-- Admiraldev (some background) https://pharmaverse.github.io/admiraldev/articles/admiraldev.html
+- *Admiraldev* (some background) https://pharmaverse.github.io/admiraldev/articles/admiraldev.html
 Details:
 
 - (2nd) Programming Strategy https://pharmaverse.github.io/admiraldev/articles/programming_strategy.html
@@ -38,7 +38,16 @@ Details:
 - (2nd) PR overview https://pharmaverse.github.io/admiraldev/articles/pr_review_guidance.html
 - (2nd) PR/branches/commits/ https://pharmaverse.github.io/admiraldev/articles/git_usage.html
 
+  :w
 
+*random.cdisc.data* package:  create random AdAM datasets?
+https://cran.r-project.org/web/packages/random.cdisc.data/random.cdisc.data.pdf
+
+*TLG*  (tables, graphics ... ie display data)
+https://pharmaverse.org/e2eclinical/tlg/
+
+*metecore*
+store standardized specs
 
 ** tools
 phuse.org/valtools (nice spreadsheet)
@@ -55,6 +64,15 @@ eCTR = electronic communications ..
 SDTM =  Study Data Tabulation Model
 
 TLF = Tables, Listings ..
+
+
+*** ADSL  - required dataset format for CDISC (Adam) ; 
+attempt to capture treatments/interventions in a STUDY; must be flexible, yet rigourous.
+(clear) https://www.linkedin.com/pulse/decoding-adsl-treatment-variables-study-designs-clinical-baghai-hhzfe/
+
+*** LOCF https://www.lexjansen.com/nesug/nesug09/po/PO12.pdf
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4785044/
+- missing observtions?    assume last reported value continues.
 
 
 ** SAS
