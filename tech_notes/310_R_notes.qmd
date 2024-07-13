@@ -1,24 +1,14 @@
 ---
-title: " R Notes - STOP Out_of_date"
+title: " R Language, NSE, "
 date-modified: today 
 date: today
 pdf-engine: lualatex
 format:
     revealjs
-    
-#  html: 
-#    toc: true
-#    html-math-method: katex
-#    fontsize: smaller
-#    embed-resources: true   
-#    number-sections: true
-    #output-file: docs/R_Notes.html             ## no paths allowed
-#    fontsize: 9pt
 editor:  source
 output-dir:  docs 
 editor_options: 
   chunk_output_type: console
-margin: 1
 execute: 
   error: true
   cache: false
@@ -26,42 +16,33 @@ execute:
   standalone: true
 css:  css_examples.css
 ---
-2024-03-16 - This file is OUT-OF-DATE,   see ~/code/publish/revealjs
-Left here at legacy code
 
 
-2023-12-28
-
-## Bugzilla < https://bugs.r-project.org/ >
--	Besides R bugs good place to see intersection of documentation, R and bugs.
-
--	<https://vroom.r-lib.org> package uses new internal data structure *ALTREP* <https://www.r-project.org/dsc/2017/slides/dsc2017.pdf>
-	 	
-***
-
-::: {.callout-note}
-All R, math, statistics  notes here. 
-:::
-
-[call](https://stat.ethz.ch/R-manual/R-devel/RHOME/library/base/html/call.html)
-[expression](https://stat.ethz.ch/R-manual/R-devel/RHOME/library/base/html/expression.html)
-[language](https://stat.ethz.ch/R-manual/R-devel/RHOME/library/base/html/is.language.html)
-
-[mode]](https://stat.ethz.ch/R-manual/R-devel/RHOME/library/base/html/mode.html)
-[typeof](https://stat.ethz.ch/R-manual/R-devel/RHOME/library/base/html/typeof.html)
-[vector](https://stat.ethz.ch/R-manual/R-devel/RHOME/library/base/html/vector.html)
-[substitute](https://stat.ethz.ch/R-manual/R-devel/RHOME/library/base/html/substitute.html)
+	PURPOSE:  Collect all notes, links, references for R to here.
 
 
-{{< include _future_work.qmd >}}
-### Environemnts, Namespacds
--   conflicted package.
 
-{{< include _references.qmd >}}
 
-a term
-:   its definition
-{{< pagebreak >}}
+## Compare
+```{r}
+#| echo: true
+#| eval: false
+a=c(1,1,1)
+b=c(2,2,2)
+`+`(a,b)
+a+b
+sum(a+b)
+```   
+```{r}
+#| echo: false
+#| eval: true
+a=c(1,1,1)
+b=c(2,2,2)
+`+`(a,b)
+a+b
+sum(a+b)
+```
+
 
 
 **attach**
@@ -575,3 +556,33 @@ code improves upon bquote.
 
 ### Shiny and DT
 - embed html, see !so 69471577
+
+```
+## Bugzilla < https://bugs.r-project.org/ >
+-	Besides R bugs good place to see intersection of documentation, R and bugs.
+
+-	<https://vroom.r-lib.org> package uses new internal data structure *ALTREP* <https://www.r-project.org/dsc/2017/slides/dsc2017.pdf>
+
+	 	
+***
+
+::: {.callout-note}
+All R, math, statistics  notes here. 
+:::
+
+[call](https://stat.ethz.ch/R-manual/R-devel/RHOME/library/base/html/call.html)
+[expression](https://stat.ethz.ch/R-manual/R-devel/RHOME/library/base/html/expression.html)
+[language](https://stat.ethz.ch/R-manual/R-devel/RHOME/library/base/html/is.language.html)
+
+[mode]](https://stat.ethz.ch/R-manual/R-devel/RHOME/library/base/html/mode.html)
+[typeof](https://stat.ethz.ch/R-manual/R-devel/RHOME/library/base/html/typeof.html)
+[vector](https://stat.ethz.ch/R-manual/R-devel/RHOME/library/base/html/vector.html)
+[substitute](https://stat.ethz.ch/R-manual/R-devel/RHOME/library/base/html/substitute.html)
+
+
+## {{< include _future_work.qmd >}}
+## Environemnts, Namespacds
+-   conflicted package.
+
+#{{< include _references.qmd >}}
+```

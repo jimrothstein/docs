@@ -39,11 +39,14 @@
 -   ALL  keys  belong on  Debian key ring.
 
 
+
+
+
 ** CHANGES:
 -  22-July-2023 LinuxMint upgrade  to 21.2 'victoria' via menu: upgrade, no issues.
-                version: /etc/linuxmint/info 
-    -  18APR 2023  LinuxMint .. removed Timeshift program and all files (it retains
-      daily/weekly/ image of drive) and fills root (\) partition in no time.
+	    version: /etc/linuxmint/info 
+-  18APR 2023  LinuxMint .. removed Timeshift program and all files (it retains
+    daily/weekly/ image of drive) and fills root (\) partition in no time.
 
 
 ** Changes to this document:
@@ -55,6 +58,18 @@ on INDEX C).  Math, R, probability and stats notes **do NOT go here*
 
 
 ** emacs/org mode/eLisp
+
+*** yasnippets
+
+- put in ~/.emacs.d/snippets/ESS-mode/<snip>
+- in that folder, use test.R to practice
+
+*** RTFM
+- Ch 1; Mode Line, Menu Bar (F10)
+- Ch 11; Help (in detai) https://www.gnu.org/software/emacs/manual/html_node/emacs/Help.html
+  - C-h a dired  (help for topics apropro 'dired')
+  - C-h C-f  FAQ
+
 
 - annotated examples: https://gitlab.com/taonaw/taonah/-/blob/master/public/emacs_settings.org
 - isearch
@@ -169,6 +184,9 @@ EXAMPLE:  In .tex file, write lua:  directlua is new primitive; lua api inside
 value for  
 
 $$\pi = \directlua{tex.sprint(math.pi)}$$
+
+*** revealjs slides with Quarto
+
 
 
 ** make

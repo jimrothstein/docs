@@ -27,8 +27,23 @@ execute:
   standalone: true
 ---
 
+
+
+	PURPOSE: Collect misc stuff related to quarto and HTML
+
+	- quarto 
+	- css, SCSS
+	- revealjs   (SEE:  examples in code_publish)
+	- HTML
+
+
 **Quarto looks to _quarto.yml in current dir, in parent ...**
 This takes dominance over any scsc file in yaml in the .qmd file.
+
+### *Run quarto create project* to create any quarto project, including slides with revealjs.  For revealjs, choose presentation when create document (in Rstudio)
+
+### Revealjs
+SEE ~/docs/code_project/revealjs
 
 ### Quarto & CSS | SCSS (see  _quarto.yml cosmo + custom.scss)
 
@@ -107,6 +122,38 @@ PURPOSE: Collect of HTML and PDF inline commands to control output
 *   Bootstrap:   predefined `class` <https://getbootstrap.com/docs/3.4/css/#helper-classes>
 
     in YAML, use `date`, fails in YAML: `r format(Sys.time(), '%d %B %Y')`
+
+in chunks:
+- OLD:  ```{r style="xxx"; class=""}
+- NEW   ```{r .name }  where .name is defined in .CSS or .SCSS
+- Examples:    { .border}  `{.smaller}`
+
+
+- 
+`dev` means container
+
+:::  blocks are called *fences* and complies to <div ...>
+
+.SCSS complies to .CSS
+
+These are same:
+::::{.X}
+
+and
+::::{X}  where X is defined in CSS/SCSS
+- 
+** BE SURE to use _quarto.yml in base directory ** and this file should identify css or SCSS file.
+
+Quarto uses `themes` from Bootstrap,   in special file format (\* .... *\)
+OR, use existing SCSS
+
+
+
+HTTP and escaping:   things like <  >  mean something   (tags) ot HTML
+- Why? 
+- so use &gt; &lt; &amp; must be used in HTTP and avoid overlap with HTML.   &gt; is called ESCAPED version of >
+- 
+
 
 NOTE: No documentation here
 :::
