@@ -562,9 +562,124 @@ end neovim
 
 
 ** REGEX
+- TODO import (?) all REGEX/* files to here
 
--	see ./tech_notes/REGEX.md
--	for regex reading see 300_tech_reading.md
+- for regex reading see 300_tech_reading.md
+  
+
+# -----------------------
+##	DOCUMENT REGEX  HERE
+##  (text, no examples in this file)
+# -----------------------
+/home/jim/code/docs/tech_notes/REGEX.md
+
+
+2024-04-30
+-	Use a cheat sheet
+-	Reduce paper
+-	Annotate (here, or in 2 files) ONLY when needs
+
+## this file: ~/code/docs/tech_notes/REGEX.md
+## ~/code/docs/tech_notes/001_grep_regex_P_examples.qmd
+## ~/code/docs/tech_notes/002_grep_examples.md
+##	SOME regex:  in ~/code/zsh_project/ZSH_SH_FILES/
+
+
+##	REGEX
+TODO:
+	-	sed, when to use?
+	- emphasize goal:  use grep -P, regex to understand how REGEX works.  Tired
+	of every 6 months learning all over again.
+	-	greedy/not greedy  and backtrack .   Think like a regex engine!
+	-	How to aerate regex !
+	-	regex can be used to:
+		-	find
+		-	validate
+		-	replace/insert
+		-	split
+		-	...
+		- When whiz, can do summersaults with CLI, zsh tools (sed, grep , cut ...)
+		and regex.  Not NOW.
+
+
+-	Separate learning REGEX (grep -P, regex) and using REGEX in R, which I think
+	is a tad easier.
+
+###	DEFINTIIONS - as always, crucial
+	-	regex is a string;  do not forget this.
+	-	META CHARACTERS - ascii (?) characters which by-default have
+		non-literal meaning to engine that digests them.  **Engine** specific.
+		Must ESCAPE these characters to use as literals.  Other contexts, such
+		as unix shell, have similar idea:  `<`, `>' for example, refer to
+		**redirect** .    In C, sprintf, `%` indicates formatting and literal
+		use.
+	-	**To Escape** indicate to underlying engine that this meta character
+		should be handled as though literal.
+
+	-	POSIX:
+		-	backslash \
+		-	[ ]
+		-	{ }
+		-	( )
+		-	caret ^
+		-	$
+		-	dot .
+		-	pipe |
+		-	?
+		-	asterisk *
+		-	`+ -`
+		-	``+ - ''
+		-	\verbX + - X
+		-	\begin{verbatim} 
+			+ - 
+			\end{verbatim}
+
+
+###	Render REGEX Verbatim - 4 ways (latex?)
+
+`+ -`
+
+``+ - ''
+
+\verb; + - ;
+
+\verb;+ -;
+
+\begin{verbatim} 
++ - 
+\end{verbatim}
+
+
+-	**Character Class**  Things like [0-9].  
+Rmk:  [0-9]+ means repeat one or more of the prior **Character class**   So both 321 and 333 match this regex.
+
+
+###	Specific to vim/neovim
+-	magic = \v   no need to escape (wait till know what doing first) - well, um.
+
+-	magic = `\v`   no need to escape (wait till know what doing first)
+
+###	Specific to R
+-	Before regex library (engine) sees code, the **compiler** (byte code?) gets
+it first.  Must use double backslash for just one backslash to be seen by
+regex engine.   Shell interpreters have no such compiler and single backslash
+suffices.
+
+#### Regex grouping:  capture & non-capture
+
+**Perl** PCRE for lookaheads, capture (in R, perl=T)
+from !so
+
+Groups that capture you can use later on in the regex to match OR you can use
+them in the replacement part of the regex. Making a non-capturing group simply
+exempts that group from being used for either of these reasons.
+
+
+Non-capturing groups are great if you are trying to capture many different
+things and there are some groups you don't want to capture. 
+
+
+
 
 
 ** LINUX/
@@ -1071,31 +1186,44 @@ RETAIL DEMO UNIT ('retail mode'):
 	wifi device.  Locked means bootloder hard-coded insist OS match a code.
 -	if CAN unlock bootloader , BARGAIN.    Beware endless hours otherwise.
 
-Google Pixel 3a XL (my phone)
+*** Google Pixel 3a XL (my phone)
 -	Android 12 = final google update.
 - DO expect "unofficial" Android 13 for this phone (sooner or lalter).
 
-**OEM Unlock**
--	greyed out?   (like mine) then not possible to unlock bootloader itself.
-	Means:  no root.   **no ROM install** **no TWRP**
--	my pixel is VERISON (sprint?) phone;  not a Google phone;  b/c IMEI begins with 35...  NO way to change bootloader.
 
--	ADB DEBUG:  a "mode" that allows installing apps, read logs on Android, file
+*** **OEM Unlock**
+- greyed out?   (like mine) then not possible to unlock bootloader itself.
+	Means:  no root.   **no ROM install** **no TWRP**
+- my pixel is VERISON (sprint?) phone;  not a Google phone;  b/c IMEI begins with 35...  NO way to change bootloader.
+
+
+*** ADB
+
+- *ADB* DEBUG:  a "mode" that allows installing apps, read logs on Android, file
 	transfer... Works by running TCP sever on host (PC) and daemon on device
 	(phone) Works by running TCP sever on host (PC) and daemon on device (phone)
 
--	Photo tranfer, different.
--	**FASTBOOT**  purpose to `flash` ROM on device;  level beyond ADB.
--	**mp3 file transfer** ADB appears to be FUSSY:  remove things like `?` from
+- SEE https://www.howtogeek.com/192732/android-usb-connections-explained-mtp-ptp-and-usb-mass-storage/
+  - adb --help
+  - adb shell <command>
+  - adb shell df -h
+    - adb shell ls /system/bin  (available cmds)
+
+  - adb push [ -- sync ]   # only push if newer
+
+
+- Photo tranfer, different.
+- **mp3 file transfer** ADB appears to be FUSSY:  remove things like `?` from
 	file names or foregin char.   ADB sucks at error messages; chokes; just seem
 	to stall.	Just fix the file names and adb will work;  speed is very good;
 	but even 25 MB/s  ~ 1.8 GB/min.   Be patient with 40 GB. 
 
--	Bluetooth - wasted plenty of time:  use wired ADB;   some mention Ubuntu &
+- Bluetooth - wasted plenty of time:  use wired ADB;   some mention Ubuntu &
 	bluetooth never got along.   Either way - TIME SINK;  waste.
 
--	MTP is protocol to move files;  seems imperfect (CLAIM: now
+- *MTP* is protocol to move files;  seems imperfect (CLAIM: now
   standardized, better) ;  PTP for photos
+
 mtp://[usb:001,085]   where 085 refers to device.  (Run lsusb)
 -	AVOID this stuff;   **stay with ADB and fix those file names**
 
@@ -1105,9 +1233,12 @@ mtp://[usb:001,085]   where 085 refers to device.  (Run lsusb)
 	install ROM).  Google's rules, annoyances - must remove.  do not want G-
 	ecosystem to point to each of its sister apps.
 
+
+*** Android os
 -   Android is U/I to actual OS, which is **Dalik**, uses java VM **Recovery
     Mode** is separate partition(?) contains just enough code to boot in this
     mode.  Replacing this code is **custom** recovery vs **stock** recovery.
+- **FASTBOOT**  purpose to `flash` ROM on device;  level beyond ADB.
 
 
 ** section{Laptop Buying Notes}

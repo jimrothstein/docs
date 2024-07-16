@@ -1,0 +1,11 @@
+#+title:  math notes
+#+author: jim 
+#+date:   2020-10-27
+
+<2024-05-04 Sat>:
+\footnotesize
+
+- vector means 'direction' and 'magnitude' (no coordinate system).
+  With this DEF, 2 vectors are the *same* if have same direction and
+  magnitude.  (Translation seems implicit; but we have no coordinate
+  system)
