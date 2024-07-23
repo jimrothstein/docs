@@ -26,8 +26,11 @@
 -   This is a nightmare.  There are  several discrete steps;  Do one at time!
 -   get public key;  import;  convert .asc to .gpg (if needed); cp .gpg   to Debian's ring
 
+ -  apt-secure - ONLY 2 line to run.  Just do what Cran R says to do for Debian, key-ring:
+   https://ftp.osuosl.org/pub/cran/.   Then reboot, update apt.
 -   gpg  keys;  Debian: see apt-secure,  READ carefully, but it doeswork.
 -   gpg  --list-keys
+
 
 -   need  the correct  deb line,   for /etc/apt/sources.list
 -   In current setup,   I actually on    Ubuntu 22.04, "jammy" (and not Debian,  not `linuxmint`   b/c it  is uusing Ubuntu)
@@ -206,6 +209,11 @@ immutable. HEADS can move around.
 
 ** Install R
    - on Ubuntu,  or mintlinux virgina,  use  jammy and  follow https://cran.r-project.org/bin/linux/ubuntu/ (works)   
+   - on Debian (such as LMDE) follow https://cran.r-project.org/bin/linux/debian/
+     (1) Add: sudo vim.tiny /etc/apt/sources.list
+     (2) insert:  the deb XXX link 
+     (3) save, run as jim, sudo apt install r-base etc.
+
 
 
 **  section{Lua}
@@ -701,11 +709,13 @@ not in kernel.
 *** SETUP/CONFIG new machine 
    June 9, 2024 (HP Elitebook, 845, G8 - 2nd HP laptop)
    - *~/dotfiles/create_soft_links.sh*  VERY helpful
+   - Emacs:  must link emacs files in ~/dotfiles files in ~/emacs.d*   =
    - must re-install:   wezterm (see webpage), i3, zsh, git, emacs,  ZSH, gh
    - public keys .. read debian's guide
-   - zsh change shell:   chsh -s $(which zsh)
+   - zsh change shell:   chsh -s $(which zsh) jim
    - ESC/CAPSLOCK use */etc/default/keyboard*
-   - emacs:  FIRST install/config *'use-package'*
+   - emacs:  FIRST install/config *'use-package'*  always a pane:
+     - Cinnamen:  hardward/keyboard/layout/options  choice to set CAPSLOCK to ESC (works)
    - websites:  Google 1st,  then Firefox (rest should follow)
    - *keep* sh files, links, config files up-to-date AND in dotfiles/backup!
 
