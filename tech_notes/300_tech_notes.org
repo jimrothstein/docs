@@ -1,4 +1,6 @@
 **  TODO
+- Note taken on [2024-07-25 Thu 16:34]
+- Note taken on [2024-07-25 Thu 16:34]
     -   USEFUL ??
     -   quarto:  focus on html (not pdf)
     -   use folds, to simplify navigating this document
@@ -82,6 +84,11 @@ on INDEX C).  Math, R, probability and stats notes **do NOT go here*
 https://ianyepan.github.io/posts/setting-up-use-package/
 
 
+
+** functional programming (julia, rust, lisp)
+- Julia easier?
+- RUST learning curve,  but high performance
+- Both have functional?,   but seems to learn functional stay with lisp, racket, haskell or any similar
 
 **	IMPERATIVE v DECLARATIVE
 -	math notation is DECLARATIVE;   indicates meaning, not exact details

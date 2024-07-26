@@ -11,6 +11,21 @@
 
   [[[*PHARMAVERSE*][/Go to top/]]
   
+** Todo 
+- tidyr, tlg?
+- roxygen2, now with markdown and latex?
+- devtools:  manual - fails
+- run @examples;  only when pkg is installed?
+- templates, blocks of code?
+- study code:  derive_vars_merged derive_vars_cat or similar
+  
+
+** Questions
+- Fake/synthetic data; many sources;  which one?
+- Adam implementation guide?
+  
+  
+
 ** Terminology:  organizations & standards
 PHUSE (UK) 
 pharmaR (original attempt)  -> pharmaverse
@@ -24,10 +39,13 @@ Adam, SDTM are standards from CDISC
 -SDTM - result of collecting organizing all the RAW DATA, spreadsheets and standardizing to this standard.
 - PHUSE ?  maintains examples of both.
 
+define.xml (metadata, table, fields...)
+
 
 ** Videos 
 2023 Pharmaverse workshop:  https://www.youtube.com/watch?v=nHbDmxjVqRM&list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4&index=7
 2022
+
 ** Reading
    - (coding) https://pharmaverse.github.io/admiral/articles/concepts_conventions.html
    - (programming strategy, ie naming) https://pharmaverse.github.io/admiraldev/articles/programming_strategy.html
@@ -37,7 +55,7 @@ video:  new contributors https://www.youtube.com/watch?v=MhEyod3Sevc&list=PLbcgl
 
 ** R packages (Admiral, teal, ...)
    Begin here: https://pharmaverse.org/e2eclinical/
-  
+ 
 - **Admiral** overview:  Ben S https://www.youtube.com/watch?v=5PF6mHeQNS4
 
 - Intro (for Pharma Users):  https://pharmaverse.github.io/admiral/
@@ -72,11 +90,15 @@ holds metadata specs as object; data may arrive in spreasheets or db for ... (co
   tools to develop, work with metacore objects (ex:  companies may have different names to describe one entity)
   does some preliminary checks  (harder analysis is done in admiral)
 
+- *oak*
+  
 - *random.cdisc.data* package:  create random AdAM datasets?
 https://cran.r-project.org/web/packages/random.cdisc.data/random.cdisc.data.pdf
 
 - *sdtmchecks*
   SEE:  https://www.youtube.com/watch?v=tBL0Eo6CBdw&list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4&index=5
+
+- PharmaR:    *riskmetric* package  and a shiny app:  *Riskasessment*
 
 - *TLG*  (tables, graphics ... ie display data)
 https://pharmaverse.org/e2eclinical/tlg/
@@ -85,10 +107,8 @@ https://pharmaverse.org/e2eclinical/tlg/
 
 ** tools
 phuse.org/valtools (nice spreadsheet)
-pharamverse
 
 
-PharmaR:    *riskmetric* package  and a shiny app:  *Riskasessment*
 
 
 
