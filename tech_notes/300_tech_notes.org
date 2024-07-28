@@ -112,6 +112,7 @@ Because Wayland accepts same toolkits (Qt, GTK) as X, the impact for developers
 and users should be minimal.  Wayland shrinks X;  much functional now in Linux
 kernel.  
 
+- Xserver:   'display' server, runs locally, makes display and keyboard available to apps (either local or network)
 ~/.xsession-errors - Unlike cli, GUIs have no console;   errors err redirected to this file
 ~/.Xauthority - is random code to control which progams output to my X11 session
 
