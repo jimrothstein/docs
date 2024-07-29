@@ -1,0 +1,26 @@
+# Fdb version 4
+["pdflatex"] 1722209645.58542 "2024_07_26_Kiaser.tex" "2024_07_26_Kiaser.pdf" "2024_07_26_Kiaser" 1722209645.69091 2
+  "/home/jim/.TinyTeX/texmf-dist/fonts/tfm/jknappen/ec/ecrm1095.tfm" 1136768653 3584 929cdff2b7a8c11bd4d49fd68cb0ae70 ""
+  "/home/jim/.TinyTeX/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1136768653 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
+  "/home/jim/.TinyTeX/texmf-dist/tex/latex/base/article.cls" 1717359999 20144 67a5f8e0f9e445e8ec6834e595cebdc9 ""
+  "/home/jim/.TinyTeX/texmf-dist/tex/latex/base/fontenc.sty" 1717359999 5275 b64d8404d74d2860b9c6558239dd0784 ""
+  "/home/jim/.TinyTeX/texmf-dist/tex/latex/base/inputenc.sty" 1717359999 5048 7ebf0f2edf1ef6783e8fe2201a95d0e8 ""
+  "/home/jim/.TinyTeX/texmf-dist/tex/latex/base/size11.clo" 1717359999 8464 6b4d01be31907866396cf4ac23881d2d ""
+  "/home/jim/.TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1465944070 1224 978390e9c2234eab29404bc21b268d1e ""
+  "/home/jim/.TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def" 1713382759 19440 9da9dcbb27470349a580fca7372d454b ""
+  "/home/jim/.TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty" 1717359999 18363 b79c83eab17bf475b508f05e9807e605 ""
+  "/home/jim/.TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty" 1717359999 8010 6f2ad8c2b2ffbd607af6475441c7b5e4 ""
+  "/home/jim/.TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty" 1717359999 2671 70891d50dac933918b827d326687c6e8 ""
+  "/home/jim/.TinyTeX/texmf-dist/tex/latex/graphics/trig.sty" 1717359999 4023 2c9f39712cf7b43d3eb93a8bbd5c8f67 ""
+  "/home/jim/.TinyTeX/texmf-dist/tex/latex/tools/longtable.sty" 1717359999 15033 652f156c2f139501300900190cae68c4 ""
+  "/home/jim/.TinyTeX/texmf-dist/web2c/texmf.cnf" 1719785820 42007 0b741a3c21a5ca32b40e3846e75b3548 ""
+  "/home/jim/.TinyTeX/texmf-var/web2c/pdftex/pdflatex.fmt" 1722050046 6829339 9b36a587b274d568299c79c37572351c ""
+  "/home/jim/.TinyTeX/texmf.cnf" 1722112710.8728 679 e95db49b3971c649270bd42ba2e598f9 ""
+  "2024_07_26_Kiaser.aux" 1722203470.92539 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "2024_07_26_Kiaser.tex" 1722209645.42901 4089 0cd9185bb366ae3a8aef72f87dce2a3e ""
+  "wrapfig.sty" 0 -1 0 ""
+  (generated)
+  "2024_07_26_Kiaser.aux"
+  "2024_07_26_Kiaser.log"
+  "2024_07_26_Kiaser.pdf"
+  (rewritten before read)
