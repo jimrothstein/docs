@@ -1,4 +1,4 @@
-[[*PHARMAVERSE*]]
+#+OPTIONS: broken-links:mark
 
 <2024-07-15 Mon>
 - Reorganizing, in process
@@ -13,11 +13,8 @@
   
 ** Todo 
 - tidyr, tlg?
-- roxygen2, now with markdown and latex?
-- devtools:  manual - fails
 - run @examples;  only when pkg is installed?
 - templates, blocks of code?
-- study code:  derive_vars_merged derive_vars_cat or similar
   
 
 ** Questions
@@ -34,30 +31,35 @@ R Validation Hub (~50 companies)
 [[R Submissions Working Group [https://rconsortium.github.io/submissions-wg/]]]
 - pilot submissions to FDA
 
-Adam, SDTM are standards from CDISC
+CDISC Glossary:  https://evs.nci.nih.gov/ftp1/CDISC/Glossary/CDISC%20Glossary.html
+CDISC Video Primer: (how good?) https://www.cdisc.org/primer
+
+Adam, SDTM are structures of standards data from CDISC
 -Adam 
 -SDTM - result of collecting organizing all the RAW DATA, spreadsheets and standardizing to this standard.
 - PHUSE ?  maintains examples of both.
 
 define.xml (metadata, table, fields...)
 
-
 ** Videos 
-2023 Pharmaverse workshop:  https://www.youtube.com/watch?v=nHbDmxjVqRM&list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4&index=7
+2024 excellent videso:
+- Clinical Submissions with R(Ben): https://www.youtube.com/watch?v=5PF6mHeQNS4&list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4&index=9
+- 2023 Pharmaverse workshop (Admiral walkthrough - good, Ross):  https://www.youtube.com/watch?v=nHbDmxjVqRM&list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4&index=7
 2022
+Coursera: https://www.coursera.org/learn/hands-on-clinical-reporting-using-r
+New contributors https://www.youtube.com/watch?v=MhEyod3Sevc&list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4&index=3
+
 
 ** Reading
    - (coding) https://pharmaverse.github.io/admiral/articles/concepts_conventions.html
    - (programming strategy, ie naming) https://pharmaverse.github.io/admiraldev/articles/programming_strategy.html
-
-video:  new contributors https://www.youtube.com/watch?v=MhEyod3Sevc&list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4&index=3
 
 
 ** R packages (Admiral, teal, ...)
    Begin here: https://pharmaverse.org/e2eclinical/
  
 - **Admiral** overview:  Ben S https://www.youtube.com/watch?v=5PF6mHeQNS4
-
+- functions create ADaM structures
 - Intro (for Pharma Users):  https://pharmaverse.github.io/admiral/
 - Getting Started (vignette, introducing code) https://pharmaverse.github.io/admiral/articles/admiral.html
 
@@ -78,9 +80,12 @@ Details:
 - *datacutr* https://www.youtube.com/watch?v=ZyK-Tiqw5hU&list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4&index=6
   has sample data; functions to restrict data to ONE date, or patients ... a slice of data
 
-- *metacore* 
-ds_ref holds name, purpose of each dataset AE (adverse events), DM (demogrpahic), 
-ds_var holds each field variable, purpse
+- *metacore*  (Atorus, up to 6 datasets, info re:  tables, columns, ... )
+SEE:  https://github.com/atorus-research/metacore
+ds_spec  - dataset name, purupse (ex: AE, DM) info
+ds_vars holds each field (columns) of dataset 
+var_spec
+
 ...
 File with reference datasets:ds ... https://github.com/atorus-research/metacore/blob/main/tests/testthat/test-reader.R
 holds metadata specs as object; data may arrive in spreasheets or db for ... (company-specific)
