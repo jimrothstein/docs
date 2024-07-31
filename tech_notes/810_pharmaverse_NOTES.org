@@ -24,11 +24,11 @@
   
 
 ** Terminology:  organizations & standards
-PHUSE (UK) 
-pharmaR (original attempt)  -> pharmaverse
-R Validation Hub (~50 companies)
-
-[[R Submissions Working Group [https://rconsortium.github.io/submissions-wg/]]]
+- PHUSE (UK) - lots of conferences, relevance to coding? Wed webinar
+[https://phuse.global/Communications/Webinar_Wednesday]
+- pharmaR (original attempt)  -> pharmaverse
+- R Validation Hub (~50 companies)
+- [[R Submissions Working Group [https://rconsortium.github.io/submissions-wg/]]]
 - pilot submissions to FDA
 
 CDISC Glossary:  https://evs.nci.nih.gov/ftp1/CDISC/Glossary/CDISC%20Glossary.html
