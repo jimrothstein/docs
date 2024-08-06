@@ -1,4 +1,9 @@
 #+OPTIONS: broken-links:mark
+#+STARTUP: content
+
+show2levels
+
+
 
 <2024-07-15 Mon>
 - Reorganizing, in process
@@ -6,6 +11,27 @@
 - Added original *Progamming Strategy* (from Admiral, .Rmd file) to this document.
 - First, pandoc -f markdown -t org -o orgmode.org RMDfile.Rmd
 - Intent is to do add *my annotations*
+
+<2024-08-02 Fri>
+Attached is messy pencil sketch.   It is my comprehension of pharmaverse at this moment: confused!
+
+It is snapshot in time, mostly for me not you guys.  
+
+As I see it, the overall process is a sequence of database 'states'
+and 'transitions'. The sketch should depict the tables, key fields, links
+between  at each state. The specific terms (CDISC, derived_var_*)  are less important at this level.
+An R or database programmer should readily get the idea,
+even if clueless about the context or purpose.
+
+So Admiral or other package function too low level for this.
+
+Next:   I want to fill in the gaps, errors  roughness so I gradually see how the pieces fit together.
+
+If it will be useful as REFERENCE, I will be happy to aim for that.
+Now I am just trying to figure out what I know/what I do not know.
+
+Most of this from Coursera and two recent videos you and Ross did.
+Then github package documentation begins to make much more sense.
 
 * My Notes
 
@@ -24,10 +50,11 @@
   
 
 ** Terminology:  organizations & standards
-- PHUSE (UK) - lots of conferences, relevance to coding? Wed webinar
+
+- *PHUSE (UK)* - lots of conferences, relevance to coding? Wed webinar
 [https://phuse.global/Communications/Webinar_Wednesday]
-- pharmaR (original attempt)  -> pharmaverse
-- R Validation Hub (~50 companies)
+- *pharmaR* (original attempt)  -> pharmaverse
+- *R Validation Hub* (~50 companies)
 - [[R Submissions Working Group [https://rconsortium.github.io/submissions-wg/]]]
 - pilot submissions to FDA
 
@@ -41,11 +68,39 @@ Adam, SDTM are structures of standards data from CDISC
 
 define.xml (metadata, table, fields...)
 
+** REFE
+
+
+
+
+
+
+
 ** Videos 
 2024 excellent videso:
-- Clinical Submissions with R(Ben): https://www.youtube.com/watch?v=5PF6mHeQNS4&list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4&index=9
-- 2023 Pharmaverse workshop (Admiral walkthrough - good, Ross):  https://www.youtube.com/watch?v=nHbDmxjVqRM&list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4&index=7
-2022
+- Clinical Submissions with R(Ben):
+
+  #+BEGIN_VERSE
+  Example:  Using admiral functions  to convert from SDTM (from pharmaversesdtm) to adsl (ADAM; sl=subject level)
+  (@ 25:30) https://www.youtube.com/watch?v=5PF6mHeQNS4 //
+  [Getting Started][https://pharmaverse.github.io/admiral/articles/admiral.html]] 
+  (@ 36:01) 
+  Template (admiral code, convert specific SDTM (ADEG to Adam version)
+  #+END_VERSE
+
+  #+BEGIN_VERSE
+- 2023 Pharmaverse workshop (Admiral walkthrough - good, Ross @ 7:00):
+  (@ 7:00) https://www.youtube.com/watch?v=nHbDmxjVqRM
+- 2022
+#+END_VERSE
+
+#+BEGIN_VERSE
+2022 
+Day #1
+https://www.youtube.com/watch?v=9eod8MLF5ys
+@ 23:12 - diagram, package handoffs...
+#+END_VERSE
+
 Coursera: https://www.coursera.org/learn/hands-on-clinical-reporting-using-r
 New contributors https://www.youtube.com/watch?v=MhEyod3Sevc&list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4&index=3
 
@@ -114,9 +169,6 @@ https://pharmaverse.org/e2eclinical/tlg/
 phuse.org/valtools (nice spreadsheet)
 
 
-
-
-
 ** US FDA
 eCTR = electronic communications ..
 
@@ -142,7 +194,6 @@ R has many packages, but who validates?
 
 
 
-20JUNE ..  next project?
 
 
 https://github.com/pharmaverse/ggsurvfit (seems interesting)
