@@ -1,3 +1,6 @@
+folds:  use za or (define-key evil-normal-state-map (kbd "<tab>") 'evil-toggle-fold)
+
+
 **  TODO
 - Note taken on [2024-07-25 Thu 16:34]
 - Note taken on [2024-07-25 Thu 16:34]
@@ -37,6 +40,17 @@
 -   need  the correct  deb line,   for /etc/apt/sources.list
 -   In current setup,   I actually on    Ubuntu 22.04, "jammy" (and not Debian,  not `linuxmint`   b/c it  is uusing Ubuntu)
 -   So   MESSAGE:   when apt  update  shows errors  -   FIX  them and you will be on right path!
+
+** junk
+junk2
+junk1
+
+*** sub-junk
+s junk1
+s junk2
+
+
+
 
 **  PGP
 -   KEY SIGNING:  (summary)   I can create public-private keypair.   If I 'sign'  doc with private key,   then anyone with my public key can READ and  will  know   ONLY  I could have encryted the file.

@@ -9,3 +9,10 @@
   With this DEF, 2 vectors are the *same* if have same direction and
   magnitude.  (Translation seems implicit; but we have no coordinate
   system)
+
+*** Gamma Function
+- (intution) https://www.youtube.com/watch?v=Qjeswpm0cWY
+    - Consider 0!, 1!, 2! ... Plot;  What would pi!  .5!
+- In other words, find the function that fits all integers of x, but works for any x real.
+
+  
