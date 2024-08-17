@@ -586,3 +586,7 @@ All R, math, statistics  notes here.
 
 #{{< include _references.qmd >}}
 ```
+
+### parquet, database (r4ds Chapter 22)
+- parquet file is now popular, esp large datasets (csv too slow)
+- Arrow package set of tools; to convert csv to parquet; to translate queries from dplyr and run them againt parquet
