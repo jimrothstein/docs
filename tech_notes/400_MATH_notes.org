@@ -15,4 +15,6 @@
     - Consider 0!, 1!, 2! ... Plot;  What would pi!  .5!
 - In other words, find the function that fits all integers of x, but works for any x real.
 
-  
+
+*** Bayes
+- Video, Ox series: https://youtu.be/U1HbB0ATZ_A?si=ljknvvraM7Fn4hz3
