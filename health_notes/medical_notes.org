@@ -1,23 +1,3 @@
----
-title: "medical_notes.qmd"
-author: "jr"
-date: "5/22/2021"
-pdf-engine: lualatex
-format:
-    html:
-        toc: true
-        html-math-method: katex
-        css: styles.css
-        embed-resources: true
-output-dir: docs
-editor_options: 
-  chunk_output_type: console
-execute: 
-  error: true                   ## include errors in output
-  warning: true
-  collapse: true
-  standalone: true
----
 ## /home/jim/code/docs/health_notes/medical_notes.qmd
 <!--
 !pandoc % -f markdown --toc -t latex -V linkcolor:blue -V fontsize=11pt -V geometry:margin=0.5in -o ~/Downloads/print_and_delete/medical_notes.md.pdf
@@ -2842,7 +2822,7 @@ July 2024
  
     
 <2024-08-09 Fri>
-- Colonoscopy set,  7-day liquid Plus 3-day Gavilight  (will near death)
+- *Colonoscopy set,  7-day liquid Plus 3-day Gavilight  (will near death)*
 - no progress on getting MRI read, GI appointmnet is 9/26.
 - Still waiting for Pacific Source, ICM ('intensive case manager')
   **WILL YOU OK**
@@ -2851,6 +2831,29 @@ July 2024
   - colonoscopy at Kaiser
   - Your 'denial' is wrong:   chart review; not colonosocopy
   - Your doctor sat on MRI for now 6 months, falsely claiming not covered and getting annoyed with me when I ask WHO denied it
+
+    The system is setup up so that NO one person knows more than their job + where to transfer you to.   When Pac Source calls, they leave only a first name.
+    the upshot:  spend a lot time on hold; transfer to someone else; that someone does not know what you are talking about; the info conflicts with something you heard before.
+    Relationship between CCO and "Oregon Health Plan"  condused;  thought talking to one, but it was actually other.  Kaiser not much better:  go to memberhsip, but that takes an hour.:w
+    CCO is awful;  insurance company.
+    *Bottom Line*  Until I figure *WHO* can handle, just waste time.
   
      
-    
+ <2024-08-19 Mon> finish 24-hour urine
+ - 24-hour urine (end today;  3600 ml, didn't feel well)
+ - LItholink no longer does blood work;   go to Kaiser for Dr. Miyake's labs (done:  8/20)
+ - 
+
+<2024-08-22 Thu>  Ins, doctors in PDX ?   Pac Source.
+- At this date, ready to give up on any more calls.
+- Last set:  last week was routed again to what Pac Source says is "Intensvie Case Mgmt"
+- This time, Kim, calls back within 1 day and leaves msg;   I call back and leave msg:  Please approve colonoscopy and Kaiser PDX doctors;  Please take charge; no need to call me ....Can you get this squared away?
+- Of course, she calls  back; no mention of my request.
+- Calls again (her 3rd call) ; if I ever need ICM ...blah blah   I think waste of time to continue.  told her what I wanted.
+
+- Fear (1) out of blue, someone will cancel colonoscopy;  (2) more games with Mueller
+- Option?   How to complain at RIGHT LEVEL?
+
+
+
+  
