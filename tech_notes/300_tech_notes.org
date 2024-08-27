@@ -13,6 +13,14 @@ folds:  use za or (define-key evil-normal-state-map (kbd "<tab>") 'evil-toggle-f
 	
   -	
 
+<2024-08-26 Mon> 
+- do not use emacs as "DESKTOP"  - everything on the screen at once.
+- humans can not multitask;  keep window only used for current work.
+- computers great for keeping lists of buffers, search when you move to next task.
+- tools like ivy can recall things like split window, code 1 side; dir on other
+- exist tools to maintain buffers in 'projects'
+- EXWM still not sure.
+
 <2024-07-01 Mon>
 - ex looks very useful!
 - another attempt with lintr, styler, ... (did some reading)
@@ -41,15 +49,6 @@ folds:  use za or (define-key evil-normal-state-map (kbd "<tab>") 'evil-toggle-f
 -   In current setup,   I actually on    Ubuntu 22.04, "jammy" (and not Debian,  not `linuxmint`   b/c it  is uusing Ubuntu)
 -   So   MESSAGE:   when apt  update  shows errors  -   FIX  them and you will be on right path!
 
-** junk
-junk2
-junk1
-
-*** sub-junk
-s junk1
-s junk2
-
-
 
 
 **  PGP
@@ -61,13 +60,6 @@ s junk2
 
 
 
-** CHANGES:
--  22-July-2023 LinuxMint upgrade  to 21.2 'victoria' via menu: upgrade, no issues.
-	    version: /etc/linuxmint/info 
--  18APR 2023  LinuxMint .. removed Timeshift program and all files (it retains
-    daily/weekly/ image of drive) and fills root (\) partition in no time.
-
-
 ** Changes to this document:
 - 05JUNE2024  - converting to emacs  org (from quarto .qmd)
 
@@ -77,6 +69,9 @@ on INDEX C).  Math, R, probability and stats notes **do NOT go here*
 
 
 ** emacs/org mode/eLisp
+
+*** Info mode, read
+- not all manuals installed in emacs;  may need to sudo apt install others
 
 *** yasnippets
 

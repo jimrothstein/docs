@@ -4,8 +4,9 @@ S-<TAB> cycles
 C-ENTER new line, at same level
 
 lintr::lint()
-styler::style_pkg()
 
+Use these:
+styler::style_pkg()
 devtools::lint()
 devtools::spell_check()
 
