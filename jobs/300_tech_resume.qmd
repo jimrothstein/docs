@@ -11,9 +11,14 @@ https://github.com/jimrothstein](Github:https://github.com/jimrothstein)\
 https://www.linkedin.com/in/jimrothstein](https://www.linkedin.com/in/jimrothstein)
 [https://jimrothstein.github.io/](https://jimrothstein.github.io) ------
 
-### Seeking position to use R coding skills.
+### Seek R Developer Role with Clinical Trials data (ADaM, Admiral, pharmaverse) 
+
+https://www.hireitpeople.com/resume-database/63-net-developers-architects-resumes/100270-r-programmer-data-scientist-resume-san-francisco-ca
 
 ### Technical {#technical}
+(vs Technical Skills)
+(vs Languages:   R, SQL, 
+OS: linux
 
 -   R, 4+ years package development, httr2, tidyverse/wrangle,
     data.table, shiny, quarto (some SCSS), webR, plots (base + ggplot2)
