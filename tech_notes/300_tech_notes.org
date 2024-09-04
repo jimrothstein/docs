@@ -841,6 +841,21 @@ ZSH FAQ (2010) https://zsh.sourceforge.io/FAQ/
 zsh -x  *.sh   # prints line then executes
 #!/bin/zsh  -xv # verbose
 
+
+*** unix, zsh permissions
+u      g         o
+owner--in group--others
+
+r=4
+w=2
+x=1
+chmod 700         rwx --- ---
+"public" 644      rw- r-- r-- 
+"private" 600     rw- --- ---
+
+
+*** zsh commands in emacs (SEE:  zsh_project)
+
 *** completion, Use zstyle
 man zshcompsys
 zstyle + 3rd party scripts - do MANY things (completion, modify settings, config VCS_INFO ...)
