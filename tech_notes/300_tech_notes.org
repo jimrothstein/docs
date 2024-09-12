@@ -14,7 +14,7 @@ folds:  use za or (define-key evil-normal-state-map (kbd "<tab>") 'evil-toggle-f
   -	
 
 <2024-08-26 Mon> 
-- do not use emacs as "DESKTOP"  - everything on the screen at once.
+- do not use emacs as "DESKTOP"  - everything, windows  on the screen at once.
 - humans can not multitask;  keep window only used for current work.
 - computers great for keeping lists of buffers, search when you move to next task.
 - tools like ivy can recall things like split window, code 1 side; dir on other
@@ -78,7 +78,7 @@ on INDEX C).  Math, R, probability and stats notes **do NOT go here*
 - put in ~/.emacs.d/snippets/ESS-mode/<snip>
 - in that folder, use test.R to practice
 
-*** RTFM
+*** RTFM - emacs
 - Ch 1; Mode Line, Menu Bar (F10)
 - Ch 11; Help (in detai) https://www.gnu.org/software/emacs/manual/html_node/emacs/Help.html
   - C-h a dired  (help for topics apropro 'dired')
@@ -109,8 +109,8 @@ https://ianyepan.github.io/posts/setting-up-use-package/
 2024-01-26	READ r4ds Ch 28-29 b/c Quarto and config knitr
 
 
-**  {X11, Wayland, video}
 
+**  {X11, Wayland, video}
 **Warning:**  Stay with X11 (proven, well-supported, works)
 
 Wayland is open source \textit{protocol} replacement for X windows, (widgets
@@ -213,7 +213,7 @@ $$\pi = \directlua{tex.sprint(math.pi)}$$
 - Make:  seldom use; but I did collect many examples of zsh, ls + regex examples, zsh commands re:  disk, storage, files ..., R to create packages
 - Therefore, do not discard make_project directory
 - https://github.com/jimrothstein/make_project
--https://github.com/mxenoph/cheat_sheets/blob/master/make_cheatsheet.pdf
+- https://github.com/mxenoph/cheat_sheets/blob/master/make_cheatsheet.pdf
   
 
 ** section(R}

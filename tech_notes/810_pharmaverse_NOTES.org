@@ -5,7 +5,7 @@ C-ENTER new line, at same level
 
 lintr::lint()
 
-Use these:
+**Use these:**
 styler::style_pkg()
 devtools::lint()
 devtools::spell_check()
@@ -208,6 +208,11 @@ https://cran.r-project.org/web/packages/random.cdisc.data/random.cdisc.data.pdf
 
 - PharmaR:    *riskmetric* package  and a shiny app:  *Riskasessment*
 
+- *Teal*
+  Examples: Teal + ShinyLive (ie WebR; no need server) https://pharmaverse.github.io/examples/interactive/teal.html
+  2024 Workshop:  https://github.com/pharmaverse/tealworkshop-phuseusconnect2024/tree/main/code
+  Teal itself (Github) https://github.com/insightsengineering/teal (70 issues, very active)
+
 - *TLG*  (tables, graphics ... ie display data)
 https://pharmaverse.org/e2eclinical/tlg/
 
@@ -248,7 +253,6 @@ https://github.com/pharmaverse/ggsurvfit (seems interesting)
 
 https://github.com/pharmaverse/envsetup (plumbing can be intersting)
 
-https://github.com/insightsengineering/teal (70 issues, very active)
 
 https://github.com/pharmaverse/pharmaverseadam/issues/58
 

@@ -255,7 +255,10 @@ create class "myColor" | use in paragraph | and div block|
 <p class="myColor"> myColor  </p>
 
 ::: {class="myColor"}
+file missing
+```
 {{< include _future_work.qmd >}}
+```
 :::
 
 ***

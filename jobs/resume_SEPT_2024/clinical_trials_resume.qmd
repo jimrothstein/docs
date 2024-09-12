@@ -5,25 +5,24 @@ editor_options:
 ---
 ## jim Rothstein
 
-### R Coder/Data Analysis
-
+### Clinical Trials Package Developer (R)
 [jimrothstein\@gmail.com](jimrothstein@gmail.com)\
 (831) 824-4304 (messages)
 
-[Github:
-https://github.com/jimrothstein](Github:https://github.com/jimrothstein)\
-[Linkedin:
-https://www.linkedin.com/in/jimrothstein](https://www.linkedin.com/in/jimrothstein)
-[https://jimrothstein.github.io/](https://jimrothstein.github.io) ------
+<https://www.linkedin.com/in/jimrothstein>
+
+<https://github.com/jimrothstein>
 
 ### Seek R Developer Role with Clinical Trials data (ADaM, Admiral, pharmaverse) 
 
-https://www.hireitpeople.com/resume-database/63-net-developers-architects-resumes/100270-r-programmer-data-scientist-resume-san-francisco-ca
+### Overview
+I am seeking developer role with Clinicial Trials.  Have worked with Admiral and other Pharmaverse Packages.
 
-### Technical {#technical}
-(vs Technical Skills)
-(vs Languages:   R, SQL, 
-OS: linux
+
+
+### Technical Skills {#technical}
+::: {style="color: lightblue; border: green; font-size: 20px;"}
+
 
 -   R, 4+ years package development, httr2, tidyverse/wrangle,
     data.table, shiny, quarto (some SCSS), webR, plots (base + ggplot2)
@@ -39,6 +38,8 @@ OS: linux
 -   Lua - used to configure neovim, plugins including Nvim-R
 -   OpenAPI: wrote R code to prepare code, requests and convert responses to tibbles, inlcuding outh2.
 -   Linux (Debian, LinuxMint, Ubuntu): 4+ years, shell scripts, cron jobs, Rscripts 
+
+:::
 
 ### Recent Projects & Skills {#recent}
 

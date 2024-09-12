@@ -3,6 +3,8 @@ title: "Tech Reading"
 ---
 \footnotesize
 
+*bold* books = particularly good (at least at one point)
+
 <2024-07-15 Mon>
 - Change from .rmd to .org
 - Add `current` reading.
@@ -47,7 +49,7 @@ As of \today
 -  Akalin <https://compgenomr.github.io/book/> - very good, genomics
 -  [Berkeley, excellent glossary:](https://www.stat.berkeley.edu/~stark/SticiGui/Text/gloss.htm)
 -	 Berkeley CRASH  ML <https://mlberkeley.substack.com/p/part-1>
-- Bishop (2006)  Ch1 nice intro: <https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf>
+-  Bishop (2006)  Ch1 nice intro: <https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf>
 -  Breiman,   2 cultures: <https://www.jstor.org/stable/2676681>
 -  Chollet, Deep Learning for R (not online, no pdf)  python:   
   <https://docs.google.com/viewer?a=v&pid=sites&srcid=dW10LmVkdS5wa3xzbmxwfGd4Ojc1ODc1ODY2OTZiOTUzOGQ>
@@ -55,7 +57,7 @@ As of \today
     -	great ideas book! <http://compeau.cbd.cmu.edu/>  
     -	<http://compeau.cbd.cmu.edu/programming-for-lovers/> cmu -	ch 8, 9 esp collinear.  
 -  Boehmke Hands on ML | <https://bradleyboehmke.github.io/HOML/> Ch 4,5
--  Bohm Statistics for Physics <https://www-library.desy.de/preparch/books/vstatmp_engl.pdf> change of variables (SEE 3.4.1, density as volume)
+-  *Bohm Statistics for Physics* <https://www-library.desy.de/preparch/books/vstatmp_engl.pdf> change of variables (SEE 3.4.1, density as volume)
 -  *Chan, Stanley <https://probability4datascience.com/index.html> more math and uses Likelikhood*
 -  Clark, M.  https://m-clark.github.io/book-of-models/  lighter, seems to address WHY we do what we do.
 -  Davidson  http://qed.econ.queensu.ca/ETM/etm-info.html
@@ -75,11 +77,11 @@ As of \today
 - Kaplan  2021, 2E, Data <https://dtkaplan.github.io/DataComputingEbook/> see
 - Kaplan  2020, Calculus with R <https://dtkaplan.github.io/RforCalculus/index.html> mosaic and mosaicCalc packages (fitting to curves)
   ML, chapter 18, plus interesting other chapters
-- Lindholm, "Machine Learning:  A first course for engineers" PDF  more math <http://smlbook.org/> <http://smlbook.org/book/sml-book-draft-latest.pdf>
+- *Lindholm, "Machine Learning:  A first course for engineers"* PDF  more math <http://smlbook.org/> <http://smlbook.org/book/sml-book-draft-latest.pdf>
 - Matloff (Prob book) <https://github.com/matloff/probstatbook/blob/master/ProbStatBookW21.pdf> \
   SEE 15.2 for logistic; var transform
 - mcelreath: <https://github.com/rmcelreath/stat_rethinking_2022> (videos)
-- Molnar <https://christophm.github.io/interpretable-ml-book/> Ch 5.2 logistical regression  (explanations!) 
+- *Molnar* <https://christophm.github.io/interpretable-ml-book/> Ch 5.2 logistical regression  (explanations!) 
 - Oehlert: 
 - Random Services <https://www.randomservices.org/random/dist/Transformations.html> 
 - Siegrist: <https://stats.libretexts.org/Bookshelves/Probability_Theory/Probability_Mathematical_Statistics_and_Stochastic_Processes_(Siegrist)/>
@@ -233,7 +235,7 @@ propogation and calculations.
 
 #### Solid, basic stats intros
   *  Matloff (Prob book) <https://github.com/matloff/probstatbook/blob/master/ProbStatBookW21.pdf>
-  *  PSU Course begin with 414 | | no R
+  *  *PSU Course begin with 414 | | no R*
     *   <https://online.stat.psu.edu/stat414/>
     *   <https://online.stat.psu.edu/stat462/>
     *   <https://online.stat.psu.edu/stat415/>
@@ -243,7 +245,7 @@ propogation and calculations.
   *  [Dalpiaz, David, Univ of IL] ( https://daviddalpiaz.github.io/appliedstats/ )
   *  Lindelov:  Concise R examples of common stat tests.
 	*		Lavine, Statistical Thought: https://people.math.umass.edu/~lavine/Book/book.pdf
-  *  Siegrist <https://www.randomservices.org/random/index.htmli>
+  *  *Siegrist <https://www.randomservices.org/random/index.html>*
       CLT, stats, linear alg | aka randomservices.org |  ** best book for introducing Math  
   *  Nahim,  Dueling Idiots, harder but real world stats/prob problems (pins
       falling on surfaces)

@@ -1,25 +1,10 @@
----
-title: " R Language, NSE, "
-date-modified: today 
-date: today
-pdf-engine: lualatex
-format:
-    revealjs
-editor:  source
-output-dir:  docs 
-editor_options: 
-  chunk_output_type: console
-execute: 
-  error: true
-  cache: false
-  collapse: true
-  standalone: true
-css:  css_examples.css
----
-
-
 	PURPOSE:  Collect all notes, links, references for R to here.
 
+<!--
+
+KEEP as .qmd file
+
+-->
 
 
 
@@ -45,11 +30,36 @@ sum(a+b)
 
 
 
-**attach**
-    -   add df/list/datafile/env to search list, at a `pos` and `name`
-    -   added to R ~1988   [Add Link]
-    -   compare to `with`
+**AST**
+Diagram expression into various parts (calls, symbols, constants?)
+Metacode refers to manipulation of this tree.
+NSE refers to tinker with how fct evaluates arguments.
 
+**attach**
+    - add df/list/datafile/env to *search list*, at a `pos` and `name`
+    - for database, can access column names, unquoted.
+	- detach(mtcars) to remove from search list
+    - compare to `with`
+      - https://stat.ethz.ch/R-manual/R-devel/library/base/html/attach.html
+```{r}
+search()
+
+mtcars
+hp   # object 'hp' not found
+
+# add to search list
+?attach
+attach(mtcars)
+search()
+hp  # no error
+
+# remove 
+detach(mtcars)
+
+# remove package 
+detach(package:lobstr)
+search()
+```
 explain process:  capture unevaluated code; manipulate it; later evaluate
 
 -	defuse, substitution, quasiquotation, 
@@ -121,6 +131,9 @@ access to these functions.  REF:  R Internals 1.4
 access; use JIT compiler or interpeter
 
 **Deparse** See **parse**.
+
+**defuse**
+Synonym for capture unevaluated  code, stop immediate evaluation, 
 
 **Evaluation or execution environment** In R, a function runs in an environment
 specific to that function. Also referred to as frame or context. This frame
@@ -212,6 +225,8 @@ attached and form part of the search path.
 
 Treat code as data:   ability to manipulate code before evaluated.
 **NSE, Non-Standard Evaluation**
+- https://edwinth.github.io/blog/nse/
+- https://thomasadventure.blog/posts/understanding-nse-part1/  $ (uses NSE), [[ (does not)
 
 **Standard evaluation**
 In se expressions are evaluated immediately, ie the code and all variables are
@@ -228,12 +243,24 @@ Example: $f'(x) = g(x)$
 f, the g has the parent frame (aka calling environment) that is execution
 environment of f. DRAW Diagram
 
-**Parse** Convert a string (character vector) into an R Expression (ie code), which is
+**Parse** 
+Convert a string (character vector) into an R Expression (ie code), which is
 NOT a string. Motivation is to setup R object for manipulation *before*
 evaluation. Parse(\*.R) removes comments. Note:  after parsing, the result is
 NOT character(1), a string.
 
 **Deparse** converts an R Expression to a string (character vector) .
+```{r}
+x="a + b"
+parse(text=x)   # expression(a+b)
+
+# but, does not evaluate, b/c it quotes immediately
+lobstr::ast(parse(text=x))
+
+# 
+lobstr::ast(parse(text=!!x))
+?ast
+```
 
 Parse & Deparse are NOT? opposites. See Murdoch
 
@@ -308,6 +335,11 @@ identical(quote(x), quote(6))               ##  F
 
 **Referencial Semantics** Changes to values are done in memory. There is no
 copy.   (Example:  why important.   Also other properties of functions, inverse, etc)
+
+**Search List**
+Heirarchy of packages:  First is globalenv, followed by packages in reverse order.
+Loading a package not necessary attach.
+library() will load and attach.
 
 **side effect**
 A function may access global and formal variables read-only.  Only local variables may be modified.
