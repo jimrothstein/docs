@@ -1,6 +1,0 @@
----
-title: "Untitled"
-editor: source
----
-
-### Quarto practice & play

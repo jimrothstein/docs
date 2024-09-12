@@ -1,8 +1,10 @@
 ---
 output: html_document
-editor_options: 
-  chunk_output_type: console
+editor: 
+  markdown: 
+    wrap: 72
 ---
+
 ## jim Rothstein
 
 ### R Coder/Data Analysis
@@ -16,14 +18,13 @@ https://github.com/jimrothstein](Github:https://github.com/jimrothstein)\
 https://www.linkedin.com/in/jimrothstein](https://www.linkedin.com/in/jimrothstein)
 [https://jimrothstein.github.io/](https://jimrothstein.github.io) ------
 
-### Seek R Developer Role with Clinical Trials data (ADaM, Admiral, pharmaverse) 
+### Seek R Developer Role with Clinical Trials data (ADaM, Admiral, pharmaverse)
 
 https://www.hireitpeople.com/resume-database/63-net-developers-architects-resumes/100270-r-programmer-data-scientist-resume-san-francisco-ca
 
 ### Technical {#technical}
-(vs Technical Skills)
-(vs Languages:   R, SQL, 
-OS: linux
+
+(vs Technical Skills) (vs Languages: R, SQL, OS: linux
 
 -   R, 4+ years package development, httr2, tidyverse/wrangle,
     data.table, shiny, quarto (some SCSS), webR, plots (base + ggplot2)
@@ -34,27 +35,31 @@ OS: linux
     Regression
 -   R Shiny, modules, reactive programming, dashboard, bslib themes
 -   Quarto, Rmarkdown, latex, pandoc, Katex, knitr, some SCSS, CSS
--   Git/Github: 3+ years,  PR, merging
--   Zsh Shell: 3+ years  scripts, regex, configuration
+-   Git/Github: 3+ years, PR, merging
+-   Zsh Shell: 3+ years scripts, regex, configuration
 -   Lua - used to configure neovim, plugins including Nvim-R
--   OpenAPI: wrote R code to prepare code, requests and convert responses to tibbles, inlcuding outh2.
--   Linux (Debian, LinuxMint, Ubuntu): 4+ years, shell scripts, cron jobs, Rscripts 
+-   OpenAPI: wrote R code to prepare code, requests and convert
+    responses to tibbles, inlcuding outh2.
+-   Linux (Debian, LinuxMint, Ubuntu): 4+ years, shell scripts, cron
+    jobs, Rscripts
 
 ### Recent Projects & Skills {#recent}
 
--   (active) Fix issues in Pharamaverse Admiral and sdmtchecks R packages.
+-   (active) Fix issues in Pharamaverse Admiral and sdmtchecks R
+    packages.
 
--   (active) Using Shiny developed preliminary dashboard for analysis of Drug
-  Benefit Denials (public data from Center for Medicare and Medicaid (CMS)).  
+-   (active) Using Shiny developed preliminary dashboard for analysis of
+    Drug Benefit Denials (public data from Center for Medicare and
+    Medicaid (CMS)).
 
 -   (active) Used youtube API and `httr` and `httr2` to add/modify
-    youtube.com playlists. Used OAUTH tokens scope.  Active participant developing book Web APIs with R, using openAPI framework.
+    youtube.com playlists. Used OAUTH tokens scope. Active participant
+    developing book Web APIs with R, using openAPI framework.
 
--   Used tools in  `rrapply` , `tidyr` , `vctrs`,   `tibblify` to unravel deeply nested JSONs 
-    in tree/json format to table (from REST apis)
+-   Used tools in `rrapply` , `tidyr` , `vctrs`, `tibblify` to unravel
+    deeply nested JSONs in tree/json format to table (from REST apis)
 
 -   (active) Contribute to various Open Source projects (Github)
-
 
 ### RELATED WORK HISTORY:
 
@@ -62,21 +67,21 @@ OS: linux
 
 1996-2014 Self-employed contractor, including
 
-- Webmaster, community expatriate website in China, 2005 – 2008 Setup,
-  maintain, promote expat community-based website in Dalian, China. Selected
-  Joomla, hosting company, hired and trained student volunteers.
+-   Webmaster, community expatriate website in China, 2005 – 2008 Setup,
+    maintain, promote expat community-based website in Dalian, China.
+    Selected Joomla, hosting company, hired and trained student
+    volunteers.
 
-- Capital IT Group, Dalian, China 2004- Mentor Chinese software engineers,
-  light project management, pre and post sales.
+-   Capital IT Group, Dalian, China 2004- Mentor Chinese software
+    engineers, light project management, pre and post sales.
 
-- Center for Electronic Art, San Francisco, 2002 Taught Java, mySQL, jsp
-  classes. Also supervised graduate student modeling shipping/ ordering/
-  inventory system.
+-   Center for Electronic Art, San Francisco, 2002 Taught Java, mySQL,
+    jsp classes. Also supervised graduate student modeling shipping/
+    ordering/ inventory system.
 
-- Teaching (1998-2012) Taught classes java, math, internet, statistics in China
-  and California community college in US.  Certified to teach math in
-  at California community college.
-
+-   Teaching (1998-2012) Taught classes java, math, internet, statistics
+    in China and California community college in US. Certified to teach
+    math in at California community college.
 
 Webmaster, Saratoga Systems, Campbell, CA (1996-1998) Maintain NT and
 IIS server. Various internet projects.
@@ -88,11 +93,11 @@ Contract Programming Assignments: Chicago, IL (1986-1996) Designed and
 developed variety of business database applications (Paradox, Delphi,
 Access) For example
 
--   Developed relational database model for insurance company to track debt and
-assets of its multi-billion dollar joint ventures/commercial properties.  
--   Developed order tracking system (paradox).   
--   Contributed to bank risk management tool (ms access)  
-
+-   Developed relational database model for insurance company to track
+    debt and assets of its multi-billion dollar joint
+    ventures/commercial properties.\
+-   Developed order tracking system (paradox).\
+-   Contributed to bank risk management tool (ms access)
 
 ### Education {#education}
 
