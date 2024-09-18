@@ -70,29 +70,7 @@ on INDEX C).  Math, R, probability and stats notes **do NOT go here*
 
 ** emacs/org mode/eLisp
 
-*** Info mode, read
-- not all manuals installed in emacs;  may need to sudo apt install others
-
-*** yasnippets
-
-- put in ~/.emacs.d/snippets/ESS-mode/<snip>
-- in that folder, use test.R to practice
-
-*** RTFM - emacs
-- Ch 1; Mode Line, Menu Bar (F10)
-- Ch 11; Help (in detai) https://www.gnu.org/software/emacs/manual/html_node/emacs/Help.html
-  - C-h a dired  (help for topics apropro 'dired')
-  - C-h C-f  FAQ
-
-
-- annotated examples: https://gitlab.com/taonaw/taonah/-/blob/master/public/emacs_settings.org
-- isearch
-- shell mode (C-c M-o) clears
-
-- use-package  replaces need to download/config install
-https://ianyepan.github.io/posts/setting-up-use-package/
-
-
+SEE:  Separate emacs/org documentation
 
 ** functional programming (julia, rust, lisp)
 - Julia easier?

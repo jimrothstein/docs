@@ -2,7 +2,6 @@
 
 S-<TAB> cycles
 C-ENTER new line, at same level
-
 lintr::lint()
 
 **Use these:**
@@ -10,6 +9,39 @@ styler::style_pkg()
 devtools::lint()
 devtools::spell_check()
 
+
+<2024-09-16 Mon>
+- Still to do, create:
+  -data/admiral_adsl.rda
+  -data/admiral_adlb.rda;
+  -verify that Hy's Law template creates same dataset.
+
+- As I understand things,  to do this,  I need
+  (1) functions from admiral,  inluding
+  inst/templates/ad_adlb.R
+  inst/templates/ad_adsl.R
+  and,
+
+  (2) minimal datasets from  package:pharmaversesdtm.
+
+- Said another way, we are **using admiral package itself to create datasets for the admiral package**!! (chicken & egg?)
+
+- This makes me a little nervous;  especially since I have not worked through most of code base
+- For example, merely by loading **admiral** I populate ("pollute") the  environment and specifically add
+  -data/admiral_adlb.rda,
+  - and admiral_adsl.rda
+
+- These are very datasets I am trying to create from scratch..
+
+- I have not tried since Friday, but keeping track of what already exists vs what I am creating was getting messy.
+
+-   Is there a better way?
+    That's where I am.  I have some thoughts, but first - is there a problem?   Or am I making up a problem ??
+    
+
+    
+  
+  
 
 ** FAQ
 

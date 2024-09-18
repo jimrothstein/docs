@@ -1,22 +1,20 @@
 ---
-title: "250_quarto_cheat.qmd "
+title: "280_emacs_notes.qmd "
 author: "JR"
 date: "5/22/2021"
 pdf-engine: lualatex
 format:
-    html:
-        toc: true
-        html-math-method: katex
-        css: styles.css
-        embed-resources: true ## if standalone, all 1 file 
-format:
   html:
+    toc: true
+    html-math-method: katex
     theme: cosmo
     code-link: true
     code-overflow: wrap
     fig-align: center
     fig-cap-location: bottom
     fig-responsive: true
+    embed-resources: true ## if standalone, all 1 file 
+    css: css.styles
   pdf:
     documentclass: krantz
     keep-tex: true     ## each .tex from each .qmd file saved
@@ -40,22 +38,20 @@ execute:
   standalone: true
 ---
 
-## INJECT YAML (for pdf, latex)
+This document is about **emacs**, but written in quarto to practice quarto decorations
+SEE: https://protesilaos.com/codelog/2022-01-31-learning-emacs/
+
+## HELP
+^h v  display-line-number \
+^h a  evail   # any emacs/gnu topic? \
+^h k  F10     # enter keystroke to see binding \
+
+M-x describe-bindings
+M-x describe-mode
 ```{r}
-files <- fs::dir_ls(here("quarto"), glob = "*.qmd")
-
-walk(files, \(f) quarto_render(f, "pdf", pandoc_args = c("--metadata-file", here("quarto", "params.yml"))))
 ```
 
-```
-##  SHINY:    
-Misc Notes re:  SHINY
-```
 
-PURPOSE:  Misc notes re: SHINY 
-to control output
-NOTE:      No documentation here
-```
 
 Create a footnote: [^1]
 
@@ -63,7 +59,6 @@ Create a footnote: [^1]
 
 ::: {.content-visible when-format="html"}
 :::
-***
 
 ```
 <!--
@@ -77,8 +72,6 @@ Create a footnote: [^1]
 
 ##  PDF
 
-
-
 ::: {.content-visible when-format="pdf"}
 TODO pdf - fix greater than equa
   pdf: 
@@ -90,7 +83,6 @@ TODO pdf - fix greater than equa
         \usepackage{lipsum}
 :::
 
-***
 
 
 ::: {.content-visible when-format="pdf"}
@@ -101,8 +93,4 @@ Will only appear in HTML.
 \\section(Definitions}
 :::
 
-***
 
-```
-### Display HTML/CSS
--   type slider()  in console
