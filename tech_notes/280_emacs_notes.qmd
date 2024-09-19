@@ -51,6 +51,13 @@ M-x describe-mode
 ```{r}
 ```
 
+## ELISP
+- short guide: https://github.com/chrisdone-archive/elisp-guide?tab=readme-ov-file#programming-in-emacs-lisp
+- practical:  https://gigamonkeys.com/book/
+- gnu elisp https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html 
+- Toretzky Gentle Common Lisp http://www.cs.cmu.edu/~dst/LispBook/
+
+
 
 
 Create a footnote: [^1]
