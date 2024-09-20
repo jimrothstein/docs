@@ -218,10 +218,14 @@ variable bindings in effect when created.
 
 **namespace:**
 REF: https://cran.r-project.org/doc/manuals/r-release/R-ints.html#Namespaces
-| Namespaces are environments associated with packages (and once again the base
-package is special and will be considered separately). A package pkg defines
-two environments namespace:pkg and package:pkg: it is package:pkg that can be
-attached and form part of the search path.
+Namespaces are environments associated with packages ( + base pkg,
+special) A package pkg defines two environments namespace:pkg and
+package:pkg: it is package:pkg that can be attached and form part of
+the search path.
+
+- Tieryn(2003) http://homepage.divms.uiowa.edu/~luke/R/namespaces/morenames.pdf
+
+examples:   SEE 9009_
 
 Treat code as data:   ability to manipulate code before evaluated.
 **NSE, Non-Standard Evaluation**

@@ -52,6 +52,7 @@ M-x describe-mode
 ```
 
 ## ELISP
+^x p e  for eShell
 - short guide: https://github.com/chrisdone-archive/elisp-guide?tab=readme-ov-file#programming-in-emacs-lisp
 - practical:  https://gigamonkeys.com/book/
 - gnu elisp https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html 

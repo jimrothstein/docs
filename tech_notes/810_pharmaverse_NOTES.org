@@ -56,6 +56,26 @@ SAP which influences the eCRF (electronic Case Report Form) and
 determines what data is collected.However, you will always have an
 ADSL dataset!!
 
+History of package datasets
+https://app.slack.com/client/T028PB489D3/D07DL8CP00G
+
+I'm not worried about creating the data in admiral.  I believe this is
+the way forward that you have been working on.We have been doing it
+for 3 years now just not using the recommended data/data-raw
+convention.The pharmaverseadam package was created to allow folks to
+load ADaM data for other projects rather than having to load admiral.
+We actually used to have all those ADaMs in admiral but it bloated the
+package and decided to remove them.  So pharamverseadam came later and
+it is a little confusing as our templates make those ADaMs and so adsl
+is identical between the two packages.The templates should create the
+datasets (adsl and adlb).  admiral_adlb should require some subsetting
+with the proposed Subjects.  If the data is not an exact match, then
+it would be nice to understand what is not matching.  The diffdf
+package is very nice for this.If it doesn't match, then lets figure
+out why and it might just be a minor updates to the templates that
+have been done over the last few years.  AGain I'm not particular
+worried as the package hasn't changed so drastically that the Hy's
+Vignette would become unusable. (edited)
 
 *SAP* - Statistical Analysis Plan |  Example: https://cdn.clinicaltrials.gov/large-docs/80/NCT04182880/SAP_001.pdf
 
@@ -165,6 +185,11 @@ define.xml (metadata, table, fields...)
 
 2023 | pharmaverse workshop (admiral, metatools, metacore  walkthrough - good, ross @ 7:00):
 - (@7:00 or so) https://youtu.be/nHbDmxjVqRM?si=usfW_i9zdQyBKA0D
+
+2022 | CI/CD; pharmaverse github workflow (ben)
+- https://www.youtube.com/watch?v=OcNzurpCCpY
+- https://github.com/bms63/demo  
+ 
 
 2022 | Day #1 (good) https://www.youtube.com/watch?v=9eod8MLF5ys
 @ 23:12 - diagram, package handoffs...
