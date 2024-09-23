@@ -51,6 +51,15 @@ M-x describe-mode
 ```{r}
 ```
 
+## LEARNING
+emacswiki: (look for newbie) https://www.emacswiki.org/
+
+daviwil:  emacs from scratch: videos + config
+https://github.com/daviwil/emacs-from-scratch/tree/8c302a79bf5700f6ef0279a3daeeb4123ae8bd59
+
+## EVIL
+Read & re-read:  https://github.com/noctuid/evil-guide
+
 ## ELISP
 ^x p e  for eShell
 - short guide: https://github.com/chrisdone-archive/elisp-guide?tab=readme-ov-file#programming-in-emacs-lisp
@@ -60,6 +69,15 @@ M-x describe-mode
 
 
 
+## Org mode
+only in .org mode?
+also M-x org-insert-link
+[[nytimes.com]][nytimes]
+	[['file:280_emacs_notes.qmd']][emacs notes]
+
+## Watch Every Command ! 
+M-x global-command-log-mode
+M-x clm/open-command-log-buffer
 
 Create a footnote: [^1]
 

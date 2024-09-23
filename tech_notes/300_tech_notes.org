@@ -1,6 +1,8 @@
 folds:  use za or (define-key evil-normal-state-map (kbd "<tab>") 'evil-toggle-fold)
 
-
+[[nytimes.com]][nytimes]
+[['file:280_emacs_notes.qmd']][emacs notes]
+[[https://www.nytimes.com][nytimes.com]]
 **  TODO
 - Note taken on [2024-07-25 Thu 16:34]
 - Note taken on [2024-07-25 Thu 16:34]
