@@ -6,9 +6,14 @@ lintr::lint()
 
 **Use these:**
 styler::style_pkg()
+
 devtools::lint()
 devtools::spell_check()
 
+(see lintr package - many options to control nolint)
+https://lintr.r-lib.org/articles/lintr.html
+lintr::lint(filename="")
+lintr::lint_package(path="")
 
 <2024-09-16 Mon>
 - Still to do, create:

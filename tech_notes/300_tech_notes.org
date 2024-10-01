@@ -38,27 +38,31 @@ folds:  use za or (define-key evil-normal-state-map (kbd "<tab>") 'evil-toggle-f
 
 
 **  29-May-2024:   Upgrade to R 4.4,  Linux Mint 21.3 (Virginia)
--   This is a nightmare.  There are  several discrete steps;  Do one at time!
--   get public key;  import;  convert .asc to .gpg (if needed); cp .gpg   to Debian's ring
 
+
+
+
+
+<2024-09-25 Wed>
+
+**  PGP
+-  install public key: *gpg --recv-keys XXX*,  where XXX= 16 alphanumber
+-  KEY SIGNING:  (summary)   I can create public-private keypair.
+  If I 'sign' doc with private key, then anyone with my public key can
+  READ and will know ONLY I could have encryted the file.
+-   Encrypt with my PUBLIC KEY,   then only  someone with my PRIVATE  KEy can   read it.
+
+*** R
+-   This is a nightmare.  There are  several discrete steps;  Do one at time!
+-   sketch:  get public key;  import;  convert .asc to .gpg (if needed); cp .gpg   to Debian's ring
+ -  USE gpg;  DO NOT USE apt-key 
  -  apt-secure - ONLY 2 line to run.  Just do what Cran R says to do for Debian, key-ring:
    https://ftp.osuosl.org/pub/cran/.   Then reboot, update apt.
 -   gpg  keys;  Debian: see apt-secure,  READ carefully, but it doeswork.
 -   gpg  --list-keys
 
-
--   need  the correct  deb line,   for /etc/apt/sources.list
--   In current setup,   I actually on    Ubuntu 22.04, "jammy" (and not Debian,  not `linuxmint`   b/c it  is uusing Ubuntu)
--   So   MESSAGE:   when apt  update  shows errors  -   FIX  them and you will be on right path!
-
-
-
-**  PGP
--   KEY SIGNING:  (summary)   I can create public-private keypair.   If I 'sign'  doc with private key,   then anyone with my public key can READ and  will  know   ONLY  I could have encryted the file.
--   Encrypt with my PUBLIC KEY,   then only  someone with my PRIVATE  KEy can   read it.
+*** Debian key ring?
 -   ALL  keys  belong on  Debian key ring.
-
-
 
 
 
