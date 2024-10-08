@@ -693,6 +693,12 @@ things and there are some groups you don't want to capture.
 
 ** LINUX/
 
+<2024-10-04 Fri>  Cinnamon and i3 do not mix well (at this point)
+- Both are "desktop environment" (others:  xfce4, gnome?)
+- When lightdm (login manager) runs, user can choose 'desktop envir"  AND authenticates.
+- SEE for "rules"   https://forums.linuxmint.com/viewtopic.php?p=2533879#p2533879
+- LMDE is meant to run Cinnamon (and not i3);  I got i3 to run using testing Debian.  But this breaks LMDE (Cinnamon).
+
 21-July-2023:   Rumors, Linux Mint (now based upon Ubuntu/Canonical ) may be moving to **LMDE** (Linux Mint Debian Edition)
 Why?  some issues with Canonical?  Claims that LMDE much firmer ground; Mint will also then be more independent.
 2024-01-13 - Linux Mint updates, seems no problem

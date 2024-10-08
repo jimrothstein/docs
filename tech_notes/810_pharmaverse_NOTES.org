@@ -50,6 +50,44 @@ lintr::lint_package(path="")
 
 ** FAQ
 
+Skills to focus on:
+https://pharmaverse.slack.com/archives/D07DL8CP00G/p1728234941977779
+ `templates, documentation & navigation, pkgdown & organization, R environments`
+
+
+Data:
+https://pharmaverse.slack.com/archives/D07DL8CP00G/p1722857716071859
+
+What is "starting date" ?
+    When is example data contrived, from CDISC, a subset etc. the data usually starts at Informed Consent - RFISDTC
+
+When to use metacore/metatools ?   Or,   admiral?   Seems to be overlap.
+
+    Yes there are lots of overlap between the packages.  For example, there are functions in metatools to bring copies of variables from SDTM or you could just use dplyr or base R to bring them over.  We built them independent so you didn't have to commit to them if you wanted to use one or the other.  I use both in my ADaM programming and work well together.  I think the example site has best example.
+
+How many "ADaM(s)" are there?
+
+    3 types of Adam (ADSL, BDS, occ...)   Is there ONE ADSL or many kinds;  was very confused about this.
+
+    There is only one ADSL in each study, but each study's ADSL will
+    look different depending on what is needed for Subject-level data
+    as defined in the Study SAP (Statistical Analysis Plan), for
+    example baseline tables and endpoints.  There is a forth ADaM
+    called ADaM Other - which captures some exotic ADaM structures.
+   
+
+Templates:
+(not FAQ, a direction) We are trying to compare things from the templates in CI Workflow; use of diffdf
+
+Why do we use both library(pharmaversesdtm::ae) and ae=pharamaversesdtm::ae
+
+We are just trying to be explicit on where the data is coming from as
+we are assuming folks are not super familiar with R yet if they are
+using our template programs.  Yes we could drop the library() call,
+but the comment on the datasets origin is important to also point out
+to new users.
+
+
 What topics does bi-weekly Admiral meetings cover?
 
 A lot of what we make is based on the Study Design and questions being
@@ -60,6 +98,12 @@ something called the Protocol that is a higher-level version of the
 SAP which influences the eCRF (electronic Case Report Form) and
 determines what data is collected.However, you will always have an
 ADSL dataset!!
+
+We have bi-weekly meetings on Wednesdays at 10 AM US EST.  They are
+not mandatory to be in the group but highly encouraged.  You get to
+meet various people and participate in discussions.  However, we
+understand that can be tough with full-time job needs.  Occasionally
+we split out into Working Groups to tackle various topics.
 
 History of package datasets
 https://app.slack.com/client/T028PB489D3/D07DL8CP00G
@@ -81,6 +125,16 @@ out why and it might just be a minor updates to the templates that
 have been done over the last few years.  AGain I'm not particular
 worried as the package hasn't changed so drastically that the Hy's
 Vignette would become unusable. (edited)
+
+What is SAP?
+A lot of what we make is based on the Study Design and questions
+being asked in the study to prove the safety and efficacy of the drug
+through something called the SAP (Statistical Analysis Plan).  So
+which ADaMs, TLFs you pick is really dependent on the SAP.  There is
+something called the Protocol that is a higher-level version of the
+SAP which influences the eCRF (electronic Case Report Form) and
+determines what data is collected.
+
 
 *SAP* - Statistical Analysis Plan |  Example: https://cdn.clinicaltrials.gov/large-docs/80/NCT04182880/SAP_001.pdf
 
