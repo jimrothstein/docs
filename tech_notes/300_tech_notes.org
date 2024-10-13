@@ -1325,7 +1325,7 @@ carfax: https://www.autovhr.com/CFReports-ran/AutoVhr-CFreport_1728671601.html
 waiting: Travis has receipt for last; and battery: 12V or hybrid 
 ---
 ------------------------  Jack
-JACK, 2012/preisC/111K/$8.9/JTDKDTB30C1023315
+JACK, 2012/preisC/111K/$8.9/JTDKDTB30C1023315  (dealer offered him $7k trade-in)
 Waiting:  his battery, recent records
 car:  WHTIE, https://portland.craigslist.org/mlt/cto/d/portland-2012-toyota-prius/7789997037.html
 carfax:  see pdf  (shows battery replaced;  Jack says it wasn't)
