@@ -44,6 +44,19 @@ folds:  use za or (define-key evil-normal-state-map (kbd "<tab>") 'evil-toggle-f
 
 <2024-09-25 Wed>
 
+** ex
+- simple, vi-like editor  (see https://www.geeksforgeeks.org/ex-command-in-linux-with-examples/)
+-  :w , :wq
+-  print    : 1,3    or :1,3p     :4 (print line 4)
+-  delete   : 1,2d 
+-  print all lines  g /the/ p
+-  : 3 s/this/that  (line 3)
+-  /he/   he, help, heading...
+- /\<he\>/   "he"   only
+- /\<.he\>/  not "he", but "she", "the" will pass 
+- : /<a    move to first line where "a" begins
+  : />last$
+
 **  PGP
 -  install public key: *gpg --recv-keys XXX*,  where XXX= 16 alphanumber
 -  KEY SIGNING:  (summary)   I can create public-private keypair.
@@ -207,9 +220,12 @@ $$\pi = \directlua{tex.sprint(math.pi)}$$
 ** section(R}
 -	No R;  use 310_
 
-##	GIT commands   SEE INDEX Cars
+** GIT commands   
 HEAD - can point to branch (tip) or a commit (detached HEAD). Commits are
 immutable. HEADS can move around.
+- git merge --no-ff --no-commit main   (no fastforward, *dry-run*) 
+
+- git restore --source master~2 path/file    (2 commits back, give path to file)
 
 
 ** Install R
@@ -693,6 +709,8 @@ things and there are some groups you don't want to capture.
 
 
 ** LINUX/
+- Debian:  shutdown when sytem hangs?   CTRL-ALT-DEL  or ALT-printScreen
+- *gnome-control-center* is cli to manage linux, X11, ..(even with cinnamon/lightdm)
 
 <2024-10-04 Fri>  Cinnamon and i3 do not mix well (at this point)
 - Both are "desktop environment" (others:  xfce4, gnome?)
@@ -1155,16 +1173,6 @@ request.
 
 
 ** MOVE !
-
-Source:  Rose Pesotta (HD6509.P47)
-1881 - ass'n Alexander III
-repression; ends period of limited reform
-BUT seed planted during liberalization remains, now underground discussions, travelers, variety of ideas, esp in shetls.   Boys faced constription, but girls if so radicalized faced reality of Jewish culture (babies, domestic work, religion...)
-1881 - 1914 1/3 of East Europian Jews go to US.
-
-1760
-George III (~ 17) educated, but poor understanding ppl.
-Continent (esp France) respect English power, but not English culture, resistance to change, a Parliament that acquiases.   FRANCE is the country with ideas, innovation.
 
 
 
