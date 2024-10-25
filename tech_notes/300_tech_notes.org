@@ -1,5 +1,10 @@
 folds:  use za or (define-key evil-normal-state-map (kbd "<tab>") 'evil-toggle-fold)
-
+need package for evil/folds
+- za open fold
+- zc close fold
+- zr open all folds
+- zm close all folds
+- C-3 S-TAB   (show outline upto level 3)
 
 [[nytimes.com]][nytimes]
 [['file:280_emacs_notes.qmd']][emacs notes]
@@ -44,7 +49,7 @@ folds:  use za or (define-key evil-normal-state-map (kbd "<tab>") 'evil-toggle-f
 
 <2024-09-25 Wed>
 
-** ex
+** "ex"  editor
 - simple, vi-like editor  (see https://www.geeksforgeeks.org/ex-command-in-linux-with-examples/)
 -  :w , :wq
 -  print    : 1,3    or :1,3p     :4 (print line 4)
@@ -63,7 +68,7 @@ folds:  use za or (define-key evil-normal-state-map (kbd "<tab>") 'evil-toggle-f
   If I 'sign' doc with private key, then anyone with my public key can
   READ and will know ONLY I could have encryted the file.
 -   Encrypt with my PUBLIC KEY,   then only  someone with my PRIVATE  KEy can   read it.
-
+-   ALL  keys  belong on  Debian key ring.
 *** R
 -   This is a nightmare.  There are  several discrete steps;  Do one at time!
 -   sketch:  get public key;  import;  convert .asc to .gpg (if needed); cp .gpg   to Debian's ring
@@ -72,10 +77,6 @@ folds:  use za or (define-key evil-normal-state-map (kbd "<tab>") 'evil-toggle-f
    https://ftp.osuosl.org/pub/cran/.   Then reboot, update apt.
 -   gpg  keys;  Debian: see apt-secure,  READ carefully, but it doeswork.
 -   gpg  --list-keys
-
-*** Debian key ring?
--   ALL  keys  belong on  Debian key ring.
-
 
 ** i3, i3wm
 Videos:
@@ -87,8 +88,6 @@ basic config: https://www.youtube.com/watch?v=88o2XuH3E08&list=PLbcglKxZP5PMTWVe
 **  PURPOSE:		
 Misc Tech Notes;  details, notes can be here (but COMMANDS put
 on INDEX C).  Math, R, probability and stats notes **do NOT go here*
-
-
 ** emacs/org mode/eLisp
 
 SEE:  Separate emacs/org documentation
@@ -109,7 +108,7 @@ SEE:  Separate emacs/org documentation
 
 
 
-**  {X11, Wayland, video}
+** {X11, Wayland, video}
 **Warning:**  Stay with X11 (proven, well-supported, works)
 
 Wayland is open source \textit{protocol} replacement for X windows, (widgets
@@ -123,7 +122,6 @@ kernel.
 - Xserver:   'display' server, runs locally, makes display and keyboard available to apps (either local or network)
 ~/.xsession-errors - Unlike cli, GUIs have no console;   errors err redirected to this file
 ~/.Xauthority - is random code to control which progams output to my X11 session
-
 
 ** {PDF, Pandoc, Latex}
 
@@ -181,7 +179,7 @@ I do **not** know how to create fancy HTML files from knitr, pandoc.
 pandoc balks at processing straight text if it thinks it sees markdown.
 If lucky, !pandoc % -o file.pdf will work.
 
-***  section{LATEX NOTES}
+*** section{LATEX NOTES}
 
 -	Tikz seems to be most popular way to gaphics vs **pstricks**.
 
@@ -209,17 +207,11 @@ $$\pi = \directlua{tex.sprint(math.pi)}$$
 *** revealjs slides with Quarto
 
 
-
 ** make
 - Make:  seldom use; but I did collect many examples of zsh, ls + regex examples, zsh commands re:  disk, storage, files ..., R to create packages
 - Therefore, do not discard make_project directory
 - https://github.com/jimrothstein/make_project
 - https://github.com/mxenoph/cheat_sheets/blob/master/make_cheatsheet.pdf
-  
-
-** section(R}
--	No R;  use 310_
-
 ** GIT commands   
 HEAD - can point to branch (tip) or a commit (detached HEAD). Commits are
 immutable. HEADS can move around.
@@ -227,365 +219,12 @@ immutable. HEADS can move around.
 
 - git restore --source master~2 path/file    (2 commits back, give path to file)
 
-
 ** Install R
    - on Ubuntu,  or mintlinux virgina,  use  jammy and  follow https://cran.r-project.org/bin/linux/ubuntu/ (works)   
    - on Debian (such as LMDE) follow https://cran.r-project.org/bin/linux/debian/
      (1) Add: sudo vim.tiny /etc/apt/sources.list
      (2) insert:  the deb XXX link 
      (3) save, run as jim, sudo apt install r-base etc.
-**  section{Lua}
-
--   TODo:  move lua into lua_project as code; or index or .....
-
--   luarocks - project to allow developers to integrate lua modules, dependenices into their lua code.
-
--   In lua, nil or false evaluate to:  false
-0 or '', evaluate to: true
-
-
-Lua + neovim:
-    *  code is lua.
-    *  but calls the neovim API | look careful, can see the vim
-        *  api.nvim...command("enew") -- creates new file and edits.
-        *  vim.bo[0],buftype=nofile
-
---  These are vim api ,  called by lua
-
-
--- shortcuts:
-local cmd = vim.cmd
-cmd("pwd")   -- execute vim Ex: command 
-
--- current file name:  
-:lua print(vim.fn.expand('%')  
-
---  set vim options
-:lua vim.api.nvim_command('set nonumber')   
-:lua vim.api.nvim_command('set number!')        -- toggle
-:lua vim.api.nvim_command('echo "Hello, Nvim!"')
-
---  list buffers, vim.cmd is alias for vim.api.nvim_exec()
-:lua vim.cmd('buffers') 
-
--- print
-:lua print(_VERSION)
-:lua print("hi")
-
--- print, datatypes
--- Data types are converted correctly
-print(vim.api.nvim_eval('1 + 1')) -- 2
-print(vim.inspect(vim.api.nvim_eval('[1, 2, 3]'))) -- { 1, 2, 3 }
-print(vim.inspect(vim.api.nvim_eval('{"foo": "bar", "baz": "qux"}'))) -- { baz = "qux", foo = "bar" }
-print(vim.api.nvim_eval('v:true')) -- true
-print(vim.api.nvim_eval('v:null')) -- nil
-
-
-vim.api.nvim_command('new')
-
--- To run a lua file
-:luafile %
-x = 41
-if x > 40 then
-  print('over 40')
-else
-  print('under')
-end
-
--- verb (in init.vim)
--- y{motion} will highlight for you!
--- :au TextYankPost * silent! lua vim.highlight.on_yank() 
-
--- This is a .lua file
--- To source it from .vim:   :luafile <file>
--- :luafile % will also work.
-x = "hello"
-print(x)
-
--- tools.lua
-local api = vim.api
-local M = {}
-function M.makeScratch()
-  api.nvim.command('enew') -- equal to :enew
-  vim.bo[0].buftype=md
-end
-return M
-
-
--- in vim
--- create new command (fails)
--- :command! Scratch lua require'0001_tools'.makeScratch()
---
-
-
-
--- :lua vim.wo.number = true
--- vim.api.nvim_set_win_option('number', true)
--- lua print(vim.wo.number)
-
--- in a lua file only need following  (and reload)
-vim.wo.number = true
-vim.wo.number = false
-vim.bo.shiftwidth = 4    
-  
-
---end
-
-
-
-** NEOVIM NOTES
-
-*** neovim, nvim, vim  update to latest version
-{
- Tue  02 Nov 2021 (also 30 DEC 2021)
--  download nvim.appimage | place in ~/bin/ | will overwrite prior
--  change permissions to  764
--  do not touch soft link nvim --> nvim.appimage
--  nothing more than this.
-
- Wed  09 Feb 2022
-
--   neovim TERMINAL BUFFER has 2 modes:  Normal (move around as usual, gf, y
-etc) and a NEW MODE:  Terminal mode.  This mode means we see BASH cursor.
-Anything entered goes there.  There is NO INSERT/EDIT Mode.  You deal with
-Terminal mode at the ACTIVE line only.
-See #75 Vimcast
-
--   This mapping copies line , inserts into terminal buffer and runs
-noremap <leader>tl Vy<C-w>wpa<CR><C-\><C-n><C-w>pj
-}
-
-*** VIM writing_notes
-
-*jim_writing_notes1*
-
-http://www.terminally-incoherent.com/blog/2013/06/17/using-vim-for-writing-prose/
-:h help-writing
-## hard wrap is friend  
-
-a=automatic reformat
-t=wrap at textwidth
-
-setlocal formatoptions=ant
-setlocal textwidth=80
-setlocal wrapmargin=0
-setlocal foldcolumn=3 		"trick, to set left margin	 
-
-
-Long parapgarapja l;akdsjf asalkfjas d; asdfk;ladsjf  lk;adjf a;lkaf as;l
-asdfjl; adsfl;kj d;as fasdj;lkj afds;lkj 
-
-***  Folds
-26FEB2022  set to use treesitter;  don't seem to work
-
-***	Turn off indents
-
-(no c indents)
-
-setlocal noautoindent  
-setlocal nocindent  
-setlocal nosmartindent  
-setlocal indentexpr=  
-
-
-*** HELPTAGS and Ctags are NOT related (do not confuse).
-
-for ctags:
-:h tags-file-format
-
-To change file:  edit this file as regular file.
-Dislike Highighting?   :set syntax=off
-Add a tag:     surround new tag with * ; plus prose to describe tag
-Add a hotlink:   ONLY in same file (I think) surround new tag with |
-
-Run :helptags ALL to regenerate file called tags
-/doc file (singular) :  should see this .txt file and tags file
-
-
-
-*** VIM help 1
-
-:h windows.txt
-:h vert
-:h splitright
-
-
-:h new   " open new WINDOW
-:h enew  " new buffer, in current window
-
-*jim_system_stuff*
-:view $VIMRUNTIME
-:view $TEMPLATES
-
-*jim_auto_commands*
-:h autocmd
-:h au
-
-
-
-[all docs files](~/docs/)
-[code files](~/code/)
-
-:h abbreviation
-:h help-summary
-:h helphelp
-:h help.txt
-:h helpgrep
-:h usr_toc.txt
-:h index
-
-:h startup
-:h cmdline 
-:h exe    (use cmd line to run normal cmds?)
-:h startinsert
-
-
-****  Help for common tasks
-
-:h :abbreviate
-:h :augroup
-:h :changes
-:h :highlight
-:h :syntax
-:h :command
-:h :file
-:h :filetype
-:h :messages
-:h :options  :h options.txt  :h :set
-:h :omni
-:h :complete  "NOTE:  nvim does NOT have cmd-line completion like C-N, C-P
-:h map-listing
-
-:h :scriptnames
-:h man  (use vim for manpages)
-
-
-*jim_split*
-:h :split
-:vert help    " open help in vertical split
-
-(N) !!date, insert date
-
-:resize -3 <CR>  " reduce size of window
-:vertical resize -3 <CR>
-
-$VIMRUNTIME (inside the image app)
-:!ls $VIMRUNTIME
-
-*** Windows, splits
-:h usr_07.txt
-:h usr_08.txt
-:h windows.txt
-:h CTRL-W    
-
-
-*** statusline  %m (modify?) %y (filetype) ...
-:h statusline
-:echo expand("%m")  
-:set statusline=%t
-:set statusline+=%{&ff}
-
-Ranges (in file)
-:h range
-:., 'a
-:., +2
-3 lines below to end - 5 lines
-:.+3, $-5
-
-*** insert mode
-:h insert.txt
-:h insert-index
-:h i_CTRL-R
-
-<C-R>% inserts file name:
-/home/jim/docs/misc_files/005_tech_notes.md
-
-<C-R>=system("ls")  inserts listing
-
-
-Insert in bulk:
-:i or :a  followed by . when done
-
-
-Registers
-:echo @a 
-:let @a="hello"
-
-
-Plugins
-:h Vimux
-:call VimuxRunCommand("ls")
-:VimuxPromptCommand<CR>
-Lazy:	review ~/.localshare/kickstart/lazy
-(some have ftplugins/after)
--	ftplugin one method of adding ft specific code (vs autocmd)
-
-To Close:
-:VimuxCloseRunner<CR>
-
-
-Syntax Highlighting
-:h usr_06.txt
-
-vim initialize
-:vert h nvim_R
-:tab help
-
-:vert h nvim-R  " opens help to right
-:let R_nvimpager = "vertical" default, (can be "tab", "tabnew")
-
-vim & grep (search both *.R and *.Rmd - note | is escaped)
-:grep -EHRn 'binomial' ~/code/**/*.(R\|Rmd)
-
-vim tabs
-tabs   :tabn :tabp :tabnew
-
-READ: cmds to open windows at various localations:  bo, above ...
-
-
-:h reference_toc
-:h help
-:h help-summary
-:h cmd   (:h ls)
-:helpgrep fold*  (no quotes)
-
-"all tags
-:h quickref.txt 
-
-"index
-:h usr_toc.txt
-
-:h reference_toc   (all *.txt files)
-:h local-additions (plugins)
-
-:h motions.txt (jumps, motions, find next } etc)
-
-
-*** search
-    /foo/+1    find foo  and move +1 line down 
-/foo/0     find .... but move to beginning of line 
-/foo/e-1    find ... then move back 1 character.
-
-
-:h i_{}      (insert, delete, visual, ...)
-
-:h :ex_cmd
-
-:h 'option'
-
-:h func()
-
-:h /[     (escape regex character)
-
-:h ft-r-indent    (for plugin r)
-:h ft-json-....   (for plugin json)
-
-end neovim 
-
-
-
-\newpage
-
 
 ** REGEX
 - TODO import (?) all REGEX/* files to here
@@ -856,7 +495,6 @@ ZSH FAQ (2010) https://zsh.sourceforge.io/FAQ/
 zsh -x  *.sh   # prints line then executes
 #!/bin/zsh  -xv # verbose
 
-
 *** unix, zsh permissions
 u      g         o
 owner--in group--others
@@ -867,7 +505,6 @@ x=1
 chmod 700         rwx --- ---
 "public" 644      rw- r-- r-- 
 "private" 600     rw- --- ---
-
 
 *** zsh commands in emacs (SEE:  zsh_project)
 
@@ -1027,7 +664,6 @@ Output from zle -al (~403 cmds)
 "^H" vi-backward-delete-char
 "^I" expand-or-complete
 
-
 ** Google, API, curl
 (1APR2022)
 Google's example, with loop for uri_redirect
@@ -1171,17 +807,9 @@ playlistId  =  "PLlXfTHzgMRUIqYrutsFXCOmiqKUgOgGJ5"  # Pavel Grinfeld, Linear Al
   -  If I have this right, this will (1) get the access token and (2) complete REST
 request.
 
-
-** MOVE !
-
-
-
-
-
 ** Pandoc
 PANDOC:
 !pandoc --metadata=project:xxx --lua-filter doc/panvimdoc/scripts/skip-blocks.lua --lua-filter doc/panvimdoc/scripts/include-files.lua -t doc/panvimdoc/scripts/panvimdoc.lua % -o doc/jimHelp.txt
-
 
 ** MORE CURL
 CURL Examples:
@@ -1219,7 +847,6 @@ Misc Notes:
 Misc Notes:
 "State"  - cookies used to be used; now state carried in headers  
 vim:nospell
-
 
 ** ANDROID
 
