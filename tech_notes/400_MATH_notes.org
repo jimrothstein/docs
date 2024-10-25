@@ -18,3 +18,23 @@
 
 *** Bayes
 - Video, Ox series: https://youtu.be/U1HbB0ATZ_A?si=ljknvvraM7Fn4hz3
+
+*** Explain \( s^2 \) vs \( \hat{\sigma}^2 \)
+
+\( s^2 \) refers to sample variance 
+\( \frac{1}{N}\sum_n(x-\bar{x})^2 \)
+
+\( \hat{\sigma}^2 \) refers to population variance estimator
+
+
+\(s^2)\ is biased (toward values closer to mean). And if N=1, \(s^2\) we get 0, hardly believable population variance.
+(The reason is subtle, when N is small odds are it will not capture enough of outliars.  SEE LSR)
+
+$ \sum_{k=1}^{n}x_k $ 
+
+\begin{equation}                        % arbitrary environments,
+x=\sqrt{b}                              % even tables, figures, etc
+\end{equation}
+
+If $a^2=b$ and \( b=2 \), then the solution must be
+either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
