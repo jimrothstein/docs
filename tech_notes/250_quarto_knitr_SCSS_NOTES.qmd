@@ -65,6 +65,19 @@ PURPOSE: Collect misc stuff related to quarto and HTML
 - HTML
 ```
 
+
+## Pandoc only (cli) - pdf,  \footenotesize
+To render ascii document with small font (for printing):
+
+- in <file>, use ```  for verbatum
+- very top:   \footenotesize
+- pandoc -f  markdown -o out.pdf <file>
+- pandoc -f  markdown -V geometry:margin=2cm -o out.pdf <file>
+
+
+## Pandoc only (cli) - html, embed :::small-font  (need SCSS)
+- need example, not tried yet
+
 ### Why use Rstudio?
 
 -   Visual Mode = menu driven, simplifies decorattion
