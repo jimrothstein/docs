@@ -4,6 +4,7 @@ S-<TAB> cycles
 C-ENTER new line, at same level
 lintr::lint()
 
+
 **Use these:**
 styler::style_pkg()
 
@@ -224,6 +225,8 @@ How to document this?
 
 - *CDISC Glossary:*  https://evs.nci.nih.gov/ftp1/CDISC/Glossary/CDISC%20Glossary.html
 - *CDISC Video Primer:* (how good?) https://www.cdisc.org/primer
+- The *CDISC Analysis Results Data (ARD) Model* is an emerging standard for encoding statistical analysis summaries in a machine-readable format.
+  ( https://www.danieldsjoberg.com/ARD-RinPharma-workshop-2024/)
 
 *SAP* - Statistical Analysis Plan |  Example: https://cdn.clinicaltrials.gov/large-docs/80/NCT04182880/SAP_001.pdf
 
@@ -241,6 +244,7 @@ define.xml (metadata, table, fields...)
 - (@ 36.01 ) template; sdtm -> adam (for adeg)
   [getting started][https://pharmaverse.github.io/admiral/articles/admiral.html]]
   check:  so idea is start with adsl structure, add necessary columns, rows
+
 
 2023 | pharmaverse workshop (admiral, metatools, metacore  walkthrough - good, ross @ 7:00):
 - (@7:00 or so) https://youtu.be/nHbDmxjVqRM?si=usfW_i9zdQyBKA0D

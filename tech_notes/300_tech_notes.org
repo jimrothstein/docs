@@ -350,6 +350,8 @@ things and there are some groups you don't want to capture.
 ** LINUX/
 - Debian:  shutdown when sytem hangs?   CTRL-ALT-DEL  or ALT-printScreen
 - *gnome-control-center* is cli to manage linux, X11, ..(even with cinnamon/lightdm)
+- autologin, if using lightdm, as root edit /etc/lightdm/lightdm.confg
+  - in [seat:*], uncomment user and timeout line;  set user to "jim" (no spaces around =)
 
 <2024-10-04 Fri>  Cinnamon and i3 do not mix well (at this point)
 - Both are "desktop environment" (others:  xfce4, gnome?)
