@@ -488,6 +488,7 @@ This is block with 3 back ticks AND vimdoc:  boring!
 ** ZSH notes
 
 *ZSH*
+ZSH REF CARD: (start) https://www.bash2zsh.com/zsh_refcard/refcard.pdf
 SEE MANUAL: https://zsh.sourceforge.io/Doc/Release/
 SEE ZSH GUIDE (2003, Stephenson) https://zsh.sourceforge.io/Guide/zshguide.html
 ZSH FAQ (2010) https://zsh.sourceforge.io/FAQ/
@@ -495,7 +496,44 @@ ZSH FAQ (2010) https://zsh.sourceforge.io/FAQ/
 ~/dotfiles/.zshrc
 ~/dotfiles/.zshenv
 zsh -x  *.sh   # prints line then executes
+
+# ------------------------  script header
 #!/bin/zsh  -xv # verbose
+
+# ------------------------  diff -y file1 file2 (2 columns)
+
+
+- SEE github, zsh_project
+- arrays,  SEE 008_array, ordered, unordered, append, typeset, unset, array + glob
+- structures:   for, case ... see 032_
+- find:  028_ and others 
+- prompt, ansi, echo $fg_bold[green']hi   SEE: 
+- also:  grep, ${var}, tee,  (( string_to_numbers)), do..done
+
+# ------------------------  widgets 
+- software chunk, "beginning of line", "kill-line"
+- to invoke:  user types <C-A>, <ALT-B> <CTRL-[-B>  (using vim notation)
+- but notation:  '^a', '\eb' '^[b'
+- '\e' = <ESC>
+- '^[' = also <ESC>
+
+# ------------------------ bind to widget
+- bindkey '^k' kill-line   (binkey.shortcut.existing widget)
+
+# ------------------------  glob vs extended-glob  (SEE Guide 5.9.7):w
+
+
+
+# ------------------------  parameter expansion
+SEE 000_PE_examples.sh
+- ${var/old/new}  1 replace
+- ${var//old/new} all
+- ${f#*.} is x.y where f = file.x.y (remove left)
+- ${f#*.} is x.y where f = file.x.y (remove left)
+- ${f##*.} is y  (greedy, remove all left)
+
+- SEE FAQ73, https://mywiki.wooledge.org/ , GNU Bash Ref Manual 3.5.3
+
 
 *** unix, zsh permissions
 u      g         o
@@ -510,7 +548,7 @@ chmod 700         rwx --- ---
 
 *** zsh commands in emacs (SEE:  zsh_project)
 
-*** completion, Use zstyle
+# ------------------------ completion, Use zstyle
 man zshcompsys
 zstyle + 3rd party scripts - do MANY things (completion, modify settings, config VCS_INFO ...)
 SEE:  https://thevaluable.dev/zsh-completion-guide-examples/
@@ -535,7 +573,7 @@ General:
 *precmd* is hook function, runs before ZSH prompt (SEE manual 9.3.1)
 SEE:  https://zsh.sourceforge.io/Doc/Release/Functions.html#Special-Functions 
 
-*** printf
+# ------------------------ printf
 - string(%s), digit(%d); example: digit,pad with by 5 
 printf "%05d\n" ${x}
 
