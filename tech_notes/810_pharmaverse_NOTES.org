@@ -3,6 +3,9 @@
 S-<TAB> cycles
 C-ENTER new line, at same level
 lintr::lint()
+# nolint start
+...
+# nolint end
 
 
 **Use these:**
@@ -10,6 +13,7 @@ styler::style_pkg()
 
 devtools::lint()
 devtools::spell_check()
+spelling::update_wordlist(pkg=".") # runs spell and asks to update WORDLIST
 
 (see lintr package - many options to control nolint)
 https://lintr.r-lib.org/articles/lintr.html
