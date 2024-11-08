@@ -275,6 +275,7 @@ New contributors https://www.youtube.com/watch?v=MhEyod3Sevc&list=PLbcglKxZP5PPB
    - (list ADAM variables & admiral function to create)https://pharmaverse.github.io/admiraldiscovery/articles/reactable.html
    - (examples: repo  ) https://github.com/pharmaverse/examples
    - (examples:  run in Posit Cloud) https://pharmaverse.github.io/examples/
+   - Imputed Dates: (discussion) https://advance.hub.phuse.global/wiki/spaces/WEL/pages/26807243/Imputing+Partial+Dates
 
 *** Additional Reading (maybe older topics or presentations)
 - (using tidyverse to maninpulate SDTM tibbles) https://www.pharmasug.org/proceedings/2023/QT/PharmaSUG-2023-QT-280.pdf
