@@ -44,6 +44,10 @@ need package for evil/folds
   - do not understand: ess-r-mode; define-key; add-hook 
 
 
+
+** Posit Connect Cloud (new)
+- works with Shiny;  gets code and manifest (json, with all R dependencies) from github (works)
+
 **  29-May-2024:   Upgrade to R 4.4,  Linux Mint 21.3 (Virginia)
 
 
