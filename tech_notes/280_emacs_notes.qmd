@@ -61,9 +61,12 @@ https://github.com/daviwil/emacs-from-scratch/tree/8c302a79bf5700f6ef0279a3daeeb
 Read & re-read:  https://github.com/noctuid/evil-guide
 
 ## ELISP
+Run lisp ?  or REPL:   open  ~/code/elisp_project/010_basic_elisp.el
+
 ^x p e  for eShell
+^h i m Elisp RET (read manual) not working
 - short guide: https://github.com/chrisdone-archive/elisp-guide?tab=readme-ov-file#programming-in-emacs-lisp
-- practical:  https://gigamonkeys.com/book/
+- practical: (REPL)  https://gigamonkeys.com/book/
 - gnu elisp https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html 
 - Toretzky Gentle Common Lisp http://www.cs.cmu.edu/~dst/LispBook/
 
