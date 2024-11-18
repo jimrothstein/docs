@@ -1,3 +1,6 @@
+* My Notes
+** intro notes
+
 (define-key evil-normal-state-map (kbd "<tab>") 'evil-toggle-fold)
 
 S-<TAB> cycles
@@ -8,17 +11,19 @@ lintr::lint()
 # nolint end
 
 
-**Use these:**
+**Package:  Use these:**
 styler::style_pkg()
-
-devtools::lint()
-devtools::spell_check()
+devtools::lint()   # package
+devtools::spell_check(use_wordlist = TRUE) # package
+devtools::test_coverage_active_file()
 spelling::update_wordlist(pkg=".") # runs spell and asks to update WORDLIST
 
+**File:  Use these:**
+styler::style_file(path = )   # dir, file
+lintr::lint(filename="")
+spelling::update_wordlist(pkg=".") # runs spell and asks to update WORDLIST
 (see lintr package - many options to control nolint)
 https://lintr.r-lib.org/articles/lintr.html
-lintr::lint(filename="")
-lintr::lint_package(path="")
 
 <2024-09-16 Mon>
 - Still to do, create:
@@ -47,11 +52,6 @@ lintr::lint_package(path="")
 
 -   Is there a better way?
     That's where I am.  I have some thoughts, but first - is there a problem?   Or am I making up a problem ??
-    
-
-    
-  
-  
 
 ** FAQ
 
@@ -216,7 +216,6 @@ How to document this?
 
 
 
-* My Notes
 
 ------------------------ Organizations
 
@@ -302,6 +301,10 @@ Details:
 
 - (2nd) Programming Strategy https://pharmaverse.github.io/admiraldev/articles/programming_strategy.html
 - (2nd) Coding (rlang etc)https://pharmaverse.github.io/admiral/articles/concepts_conventions.html
+*** expr() example 
+call:  f(mtcars, var=expr(hp))  # no need to use "hp" (string)
+f = function(ds, var) { dplyr::select(ds, !!var)}
+
 - (2nd) PR overview https://pharmaverse.github.io/admiraldev/articles/pr_review_guidance.html
 - (2nd) PR/branches/commits/ https://pharmaverse.github.io/admiraldev/articles/git_usage.html
 
