@@ -14,11 +14,14 @@ lintr::lint()
 **Package:  Use these:**
 styler::style_pkg()
 devtools::lint()   # package
-devtools::spell_check(use_wordlist = TRUE) # package
 devtools::test_coverage_active_file()
+
+devtools::spell_check(use_wordlist = TRUE) # package
 spelling::update_wordlist(pkg=".") # runs spell and asks to update WORDLIST
 
 **File:  Use these:**
+active_fie =  rstudioapi::getSourceEditorContext()$path
+
 styler::style_file(path = )   # dir, file
 lintr::lint(filename="")
 spelling::update_wordlist(pkg=".") # runs spell and asks to update WORDLIST

@@ -217,11 +217,14 @@ $$\pi = \directlua{tex.sprint(math.pi)}$$
 - https://github.com/jimrothstein/make_project
 - https://github.com/mxenoph/cheat_sheets/blob/master/make_cheatsheet.pdf
 ** GIT commands   
+
 HEAD - can point to branch (tip) or a commit (detached HEAD). Commits are
 immutable. HEADS can move around.
 - git merge --no-ff --no-commit main   (no fastforward, *dry-run*) 
 
 - git restore --source master~2 path/file    (2 commits back, give path to file)
+
+- git log  MANY USEFUL!    See Book 2.3 (https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History), Refernce (https://git-scm.com/docs/git-log) 
 
 ** Install R
    - on Ubuntu,  or mintlinux virgina,  use  jammy and  follow https://cran.r-project.org/bin/linux/ubuntu/ (works)   
@@ -913,6 +916,23 @@ vim:nospell
 ** ANDROID
 
 ####	Android, Mobile, Cell Phone - notes
+
+*Nov 2024* - need wireless phone? or working wifi-only phone? (mine does not work)
+
+*Carrier*
+- 5G or `slower` 4G/LTE 
+- 1-5 GB per month seems OK for some video, streaming ...
+- podcasts ~ 1MB/minute of talk  (use wifi)
+- want unlimited text/talk
+- MintMobile (owned by T-Mobile) claims  $15 per month
+- US 
+- SIMS:  physical or eSim, if device supports
+- not my current onePlus 3T, 
+
+- device must support 5G?  GSM? Volte? ..
+- device should also support wifi (for mp3 downloads)
+
+
 
 RETAIL DEMO UNIT ('retail mode'):
 -	ie runs in endless LOOP, no Cell ability, no MEI
