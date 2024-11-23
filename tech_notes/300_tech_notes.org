@@ -216,6 +216,7 @@ $$\pi = \directlua{tex.sprint(math.pi)}$$
 - Therefore, do not discard make_project directory
 - https://github.com/jimrothstein/make_project
 - https://github.com/mxenoph/cheat_sheets/blob/master/make_cheatsheet.pdf
+
 ** GIT commands   
 
 HEAD - can point to branch (tip) or a commit (detached HEAD). Commits are
@@ -225,6 +226,9 @@ immutable. HEADS can move around.
 - git restore --source master~2 path/file    (2 commits back, give path to file)
 
 - git log  MANY USEFUL!    See Book 2.3 (https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History), Refernce (https://git-scm.com/docs/git-log) 
+
+- git diff HEAD~ HEAD #show change between prior and most recent commit ("https://git-scm.com/docs/git-diff_) book: (https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository.html#_git_diff_staged)
+- git diff HEAD -- path/to/file.R   # this file only, show diff
 
 ** Install R
    - on Ubuntu,  or mintlinux virgina,  use  jammy and  follow https://cran.r-project.org/bin/linux/ubuntu/ (works)   
