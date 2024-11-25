@@ -45,6 +45,13 @@ need package for evil/folds
 
 
 
+** github actions
+- do not guess, do not play:   READ DOCS
+- render quarto (in gfm, github format, SEE  *gh_actions_project/quarto,  SEE main.yaml*
+  - will render  qmd to md file (github format)
+  - do not soft link qmd files,  actual file or copy must in project
+  - of course, can render to md locally and merely push to github;
+  - do not know branch and yaml the same  (ie not both main...)
 ** Posit Connect Cloud (new)
 - works with Shiny;  gets code and manifest (json, with all R dependencies) from github (works)
 
