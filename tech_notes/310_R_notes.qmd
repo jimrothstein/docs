@@ -46,7 +46,7 @@ NSE refers to tinker with how fct evaluates arguments.
 search()
 
 mtcars
-hp   # object 'hp' not found
+# hp   # object 'hp' not found
 
 # add to search list
 ?attach
@@ -58,7 +58,6 @@ hp  # no error
 detach(mtcars)
 
 # remove package 
-detach(package:lobstr)
 search()
 ```
 explain process:  capture unevaluated code; manipulate it; later evaluate
@@ -219,7 +218,7 @@ variable bindings in effect when created.
 
 **namespace:**
 REF: https://cran.r-project.org/doc/manuals/r-release/R-ints.html#Namespaces
-Namespaces are environments associated with packages ( + base pkg,
+Namespaces are *environments* associated with packages ( + base pkg,
 special) A package pkg defines two environments namespace:pkg and
 package:pkg: it is package:pkg that can be attached and form part of
 the search path.

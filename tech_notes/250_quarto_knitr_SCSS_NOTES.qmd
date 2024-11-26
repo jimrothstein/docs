@@ -317,9 +317,6 @@ Example 2
 ::: myColor
 This is a Div defined by CSS, inline
 
-```         
-{{< include _future_work.qmd >}}
-```
 :::
 
 #### Header uses in-file CSS class {.myColor}
