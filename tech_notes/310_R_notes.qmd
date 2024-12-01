@@ -175,6 +175,35 @@ object and returns expression.  Note:  a `statement` is code that may do things
 Hadley defines expression as an "object that stores quoted code without evaluating it." (tidyr cheat sheet)
 SEE evaluation.
 
+from **Mailund** (metaprogramming, Chapter 3)
+"Every statement you have in your programs is also an expression that
+evaluates to some value (which, of course, might be NULL). This
+includes control structures and function bodies. You can consider
+everything an expression; it’s just that some expressions involve
+evaluating several contained expressions for their side effects before
+returning the result of the last expression they evaluate. From a
+metaprogramming perspective, though, you are most interested in
+expressions you can get **your hands on and examine, modify, or evaluate
+within a program.**"
+Examples:
+```{r}
+# expression examples:
+rlang::is_expression(quote(x)) #T
+rlang::is_expression(quote(1)) #T
+rlang::is_expression(quote(x <- 3 + y))   #T
+rlang::is_expression(quote(if (x  > z) print("yes")))   #T
+
+# body of function
+rlang::is_expression(body(f = function() x^y))   # T
+
+# manipulate expression:
+e= quote(x + y + z)  # x + y + z
+length(e)   # 3
+
+e[[3]]  <- quote(z + 3)
+e # x + y + (z + 3)
+```
+
 **Expression v Language** R expressions based on list and can be broken down
 further. Often these are language pieces. Lanugage use pairlists.
 
