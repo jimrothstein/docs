@@ -728,17 +728,24 @@ https://statisticsglobe.com/parse-deparse-expression-r-function
 
 Holiday Reading !??
 
-Many years ago, one of my freshman college roommates arrived speaking high praises for LISP.  
-For some of us, it takes a longer to catch on.  I read through the
+Many years ago, one of my freshman college roommates walked in the door speaking high praises for LISP.  
+For some of us, it takes a longer to catch on.  Over the weekend, I read through the
 "EVAL" chapter (Chapter 3) of Common LISP ( https://www.cs.cmu.edu/~dst/LispBook/)
-(Tourteszky, Introduction to Common LISP - 1990).  "So that's what R
-is trying to do!"  Seems that LISP is cleaner way to introduce the
+(Tourteszky, Introduction to Common LISP - 1990).  
+
+"So that's what R is trying to do!"  
+
+Seems that LISP is cleaner way to introduce the
 many list-like structures of R and how they built, passed, evaluated
 or otherwise manipulated.
 
-Then ...  this book will make more sense (before finally returning to
-Advanced R): Metaprogramming in R
+Then I read a chapter of this book and it too greatly helped with R.   More light bulbs went on.
+
+Metaprogramming in R
 (https://www.amazon.com/exec/obidos/ASIN/1484228804/acmorg-20) by
 Thomas Mailund (also:
+
+
+More from Thomas Mailund:
 https://mailund.github.io/r-programmer-blog/2018/09/20/scoping-rules-and-nse/)
 
