@@ -131,6 +131,29 @@ access; use JIT compiler or interpeter
 **defuse**
 Synonym for capture unevaluated  code, stop immediate evaluation, 
 
+**eval()**
+Note:  rlang::expr(x) quotes (or converts ) arg to expression
+```{r}
+x = 2
+y = 10
+try ( 
+eval(x)
+)
+try(
+  {
+  eval(expr(x))
+  eval(expr(x + y))
+  eval(expr(x + y), list(x = 10, y=20))    # 
+  eval(expr(x + y), rlang::env(x = 10, y=20))  # new envir
+  # eval does not quote 1st argument
+  eval(print(x+1), rlang::env(x=2000))  # 3, not 2001
+  eval(expr(print(x + 1)), list(x=1000))  # 3
+  eval(print(x+1)) #3
+  }
+)
+
+is_expression(rlang::expr(x)) #T
+```
 **Evaluation or execution environment** In R, a function runs in an environment
 specific to that function. Also referred to as frame or context. This frame
 holds evaluation environment. The frame ends when the function completes.
@@ -214,9 +237,41 @@ function. Example: lapply(list(), mean)
 Environment, in R, is property of function, where it looks to find non-local
 variables.
 
-**Function, properties** formals(f) arguments in function defintion body(f)
+**Function**
+- formals(f) returns formal arguments of function, with default values, but NO evaluation, NO look in environment.  formals are actually pairlist.  Can obtain/modify this pairlist.  Formal arguments become promises in the evaluation environment.
+```{r}
+w = 2
+f = function(x,y = 1, z = w + function() print("hi"))  x + y + z
+formals(f)
+formals(f) |> class()   # pairlist
+
+# can obtain, modify formals
+formals(f)[[2]]
+formals(f)[[2]]
+formals(f)[[2]] <- quote(a) 
+f    # changed
+```
+- body(f) returns an expression, the R code to run, unevaluated, no substitution
+```{r}
+body(f)
+body(f) |> class()  # call
+body(f) |> rlang::is_expression()   # T
+```
+- environment(f)
+```{r}
+environment(f)
+# attributes of function
+```
+Obtain attributes, even names and defualt values
+```{r}
+attributes(formals(f))
+names(formals(f))
+formals(f)[["y"]]   # a
+```
 code environment(f) finds values of non-formal (non-local) variables where the
-function was created. **Higher Order Function** Function that takes another
+function was created. 
+
+**Higher Order Function** Function that takes another
 function as an argument and ...
 
 **immutable**

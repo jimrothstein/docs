@@ -245,8 +245,7 @@ define.xml (metadata, table, fields...)
 
 ** Videos 
 2024 |  clinical submissions with r(ben):
-
-- (@ 25:30) https://www.youtube.com/watch?v=5pf6mheqns4 ; merge, to from adsl
+- (@ 25:30) https://www.youtube.com/watch?v=5PF6mHeQNS4  to from adsl
 - (@ 36.01 ) template; sdtm -> adam (for adeg)
   [getting started][https://pharmaverse.github.io/admiral/articles/admiral.html]]
   check:  so idea is start with adsl structure, add necessary columns, rows
@@ -272,6 +271,7 @@ New contributors https://www.youtube.com/watch?v=MhEyod3Sevc&list=PLbcglKxZP5PPB
 
 
 ** Reading
+   - (overview) Ben, 2024 https://pharmasug.org/proceedings/2024/SD/PharmaSUG-2024-SD-343.pdf
    - (coding) https://pharmaverse.github.io/admiral/articles/concepts_conventions.html
    - (*Programming Strategy*) https://pharmaverse.github.io/admiraldev/articles/programming_strategy.html
    - (list ADAM variables & admiral function to create)https://pharmaverse.github.io/admiraldiscovery/articles/reactable.html

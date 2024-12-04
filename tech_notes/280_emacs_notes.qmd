@@ -42,10 +42,16 @@ This document is about **emacs**, but written in quarto to practice quarto decor
 SEE: https://protesilaos.com/codelog/2022-01-31-learning-emacs/
 
 ## HELP
+- help for variable
 ^h v  display-line-number \
+
 ^h a  evail   # any emacs/gnu topic? \
 ^h k  F10     # enter keystroke to see binding \
 
+- help for function
+^h f current-buffer
+
+M-x apropos-documenation eval
 M-x describe-bindings
 M-x describe-mode
 ```{r}
