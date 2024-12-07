@@ -454,6 +454,7 @@ sudo mkfs.exfat /dev/sda
 mount /dev/sda /media/a_mt_point
 (a_mt_point must already exist)
 
+
 *** remap capslock to escape
 
 {
