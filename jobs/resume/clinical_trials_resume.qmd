@@ -51,7 +51,7 @@ ADaM, SDTM. Seek to focus on Clinical Trials R package development.
 ### Recent Projects & Skills {#recent}
 
 -   (active) Fix issues in Pharamaverse Admiral and sdmtchecks R
-    packages.
+    packages.  Attend developer meetings.
 
 -   (active) Using Shiny developed preliminary dashboard for analysis of
     Drug Benefit Denials (public data from Center for Medicare and
