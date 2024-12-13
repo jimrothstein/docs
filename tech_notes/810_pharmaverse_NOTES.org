@@ -59,7 +59,15 @@ https://lintr.r-lib.org/articles/lintr.html
 
 ** FAQ
 
-Is my version of admiraldev, pharamverse*, out-of-date?
+*In tests, how to check correct error/warning is issued?*
+
+-Please use expect_snapshot() to ensure that the correct error message is issued.
+By the way, unit test for errors and warnings should never accept any
+error or warning but always check that the expected one is issued (by
+using expect_snapshot() or the class argument of
+expect_error()/expect_warning() ).
+
+*Is my version of admiraldev, pharamverse, out-of-date?*
 - Check:  Namespace file & packageVersion("admiraldev")
 - install latest from github by using devtools::install_github("pharmaverse/admiraldev"
 
@@ -71,22 +79,22 @@ Imports:
 It used to be the case, that Remotes: would re-install all pkgs listed in Remotes upon installation of the pkg, but that is no longer the case after pak replaced remotes for GH intallations.
 
 
-Skills to focus on:
+*Skills to focus on:*
 https://pharmaverse.slack.com/archives/D07DL8CP00G/p1728234941977779
  `templates, documentation & navigation, pkgdown & organization, R environments`
 
 
-Data:
+*Data:*
 https://pharmaverse.slack.com/archives/D07DL8CP00G/p1722857716071859
 
-What is "starting date" ?
+*What is "starting date" ?*
     When is example data contrived, from CDISC, a subset etc. the data usually starts at Informed Consent - RFISDTC
 
-When to use metacore/metatools ?   Or,   admiral?   Seems to be overlap.
+*When to use metacore/metatools ?   Or,   admiral?   Seems to be overlap.*
 
     Yes there are lots of overlap between the packages.  For example, there are functions in metatools to bring copies of variables from SDTM or you could just use dplyr or base R to bring them over.  We built them independent so you didn't have to commit to them if you wanted to use one or the other.  I use both in my ADaM programming and work well together.  I think the example site has best example.
 
-How many "ADaM(s)" are there?
+*How many "ADaM(s)" are there?*
 
     3 types of Adam (ADSL, BDS, occ...)   Is there ONE ADSL or many kinds;  was very confused about this.
 
@@ -97,7 +105,7 @@ How many "ADaM(s)" are there?
     called ADaM Other - which captures some exotic ADaM structures.
    
 
-Templates:
+*Templates:*
 (not FAQ, a direction) We are trying to compare things from the templates in CI Workflow; use of diffdf
 
 Why do we use both library(pharmaversesdtm::ae) and ae=pharamaversesdtm::ae
@@ -109,7 +117,7 @@ but the comment on the datasets origin is important to also point out
 to new users.
 
 
-What topics does bi-weekly Admiral meetings cover?
+*What topics does bi-weekly Admiral meetings cover?*
 
 A lot of what we make is based on the Study Design and questions being
 asked in the study to prove the safety and efficacy of the drug
@@ -126,7 +134,7 @@ meet various people and participate in discussions.  However, we
 understand that can be tough with full-time job needs.  Occasionally
 we split out into Working Groups to tackle various topics.
 
-History of package datasets
+*History of package datasets*
 https://app.slack.com/client/T028PB489D3/D07DL8CP00G
 
 I'm not worried about creating the data in admiral.  I believe this is
@@ -147,7 +155,7 @@ have been done over the last few years.  AGain I'm not particular
 worried as the package hasn't changed so drastically that the Hy's
 Vignette would become unusable. (edited)
 
-What is SAP?
+*What is SAP?*
 A lot of what we make is based on the Study Design and questions
 being asked in the study to prove the safety and efficacy of the drug
 through something called the SAP (Statistical Analysis Plan).  So
