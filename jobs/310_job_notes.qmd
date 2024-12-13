@@ -1,6 +1,19 @@
+COVER LETTER (see **bottom**)
+
 FOLLOW-up
 state health dept | 
 <https://www.linkedin.com/posts/mandi-pratt-chapman-ba92976_patientnavigation-healthequity-cancercontrol-activity-7151003727028486144-ZQ6R?utm_source=share&utm_medium=member_desktop>
+
+2024-12-12
+- zero in:  ADaM, cdisc, SDTM, TEAL?, 
+- find better search:  Indeed, Zip, etc ...  DDg, google maybe better than website's search;  
+Too many SAS; too much digging;  can not single out "R"
+- Navits Partners - MANY posts on Indeed/zip (mostly Indian; probably job shop)
+- LinkedIn - note to "Ben Jones", recruiter ... Can I start chats with a few recruiters??
+**- TALK TO PEOPLE; click, click, click is time sink**
+
+- Indeed (https://www.indeed.com/advanced_search?q=R%20regression&l=) too many SAS, 
+- Zip
 
 2024-09-12
 - 2 resumes, SEE  ~/code/docs/jobs
@@ -77,3 +90,11 @@ Not going to buy this one, but example of $6000+ used EV (car + needed repairs);
    <https://www.autotrader.com/marketplace/buy/nissan/leaf/2012/JN1AZ0CP3CT017447?listingId=689873778>
 
 4.  `On bright side`, this time for first time in **many years** began actively  looking for work (resumes, *contacting* people).  Though I have plenty of minuses, the area of softwareI know has fairly high demand.  (Not as high as kidneys or kidney doctors, but still ample).  There is work for a regular company (on-side) and then there is `project work`; which is often remote via internet or on-site.   Eugene is not ideal place, though I remain very comfortable here.  Important:  must stay with this and NOT be distracted by *cars*.
+
+**Cover letter (Dec 2024)**
+I am an R developer with a Pharmaverse project, working on various
+issues, documentation, coding related to ADaM, Admiral, CDISC
+standards.  The work is entirely in R and R packages, plus github
+tools, to insure adherence to tidyverse style, 97% + testing coverage
+and the like.  Some TEAL (shiny) and related R experience roughly upto
+metaprogamming.

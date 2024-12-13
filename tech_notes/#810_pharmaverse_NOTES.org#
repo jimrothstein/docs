@@ -59,18 +59,6 @@ https://lintr.r-lib.org/articles/lintr.html
 
 ** FAQ
 
-Is my version of admiraldev, pharamverse*, out-of-date?
-- Check:  Namespace file & packageVersion("admiraldev")
-- install latest from github by using devtools::install_github("pharmaverse/admiraldev"
-
-When we depend on a dev version of a package, we should also indicated this in our DESCRIPTION file FYI
-
-Imports:
-    admiraldev (>= 1.1.0.9006),
-
-It used to be the case, that Remotes: would re-install all pkgs listed in Remotes upon installation of the pkg, but that is no longer the case after pak replaced remotes for GH intallations.
-
-
 Skills to focus on:
 https://pharmaverse.slack.com/archives/D07DL8CP00G/p1728234941977779
  `templates, documentation & navigation, pkgdown & organization, R environments`
@@ -126,7 +114,7 @@ meet various people and participate in discussions.  However, we
 understand that can be tough with full-time job needs.  Occasionally
 we split out into Working Groups to tackle various topics.
 
-History of package datasets
+*History of package datasets*
 https://app.slack.com/client/T028PB489D3/D07DL8CP00G
 
 I'm not worried about creating the data in admiral.  I believe this is
