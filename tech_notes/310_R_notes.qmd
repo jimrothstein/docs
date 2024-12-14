@@ -78,7 +78,7 @@ explain process:  capture unevaluated code; manipulate it; later evaluate
 ### create a call
 -   See:  R-lang 6.5, call, sys.call v match.call
 
-```{r}
+```{r calls}
 #| label: intro_call
 #| collapse: true
 #| include: true
@@ -100,16 +100,8 @@ call("f", 2+3)
 # call("f", sin(x))
 call("f", sin(x <- pi/2))
 # call("f", sin (x + y))
-
-
-# local leaves nothing inenviron after running
-local({
-a <- 10
-b <- 100
-f <- function(x,y) x + y
-call("f", list(a,b))
-})
 ```
+
 
 Like symbol, expression, call is typeof 'language'.
 ```
@@ -313,6 +305,17 @@ Scheme added (?) Portion of code in which binding applies to a variable??
 
 In R, an "evaluator" find any "unbound symbols" (in an expression) by using
 variable bindings in effect when created.
+
+**local**
+```{r local}
+# local leaves nothing inenviron after running
+local({
+a <- 10
+b <- 100
+f <- function(x,y) x + y
+call("f", list(a,b))
+})
+```
 
 **match** - match.arg - match.call - match.fun
 
