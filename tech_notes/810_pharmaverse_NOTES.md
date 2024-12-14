@@ -1,0 +1,440 @@
+
+
+QMD file
+
+# My Notes
+
+## intro notes
+
+(define-key evil-normal-state-map (kbd “<tab>”) ’evil-toggle-fold)
+
+S-<TAB> cycles C-ENTER new line, at same level
+
+## Tools
+
+For Package: Use these:
+
+styler::style_pkg()  
+devtools::lint() \# package  
+devtools::test_coverage() \# entire package
+devtools::spell_check(use_wordlist = TRUE) \# package
+spelling::update_wordlist(pkg=“.”) \# runs spell AND asks to update
+WORDLIST
+
+For File: Use these:
+
+active_fie = rstudioapi::getSourceEditorContext()\$path
+
+devtools::test_active_file()
+
+devtools::test_coverage_active_file()
+
+styler::style_file(path = ) \# dir, file
+
+lintr::lint(filename=““)
+
+spelling::update_wordlist(pkg=“.”) \# runs spell and asks to update
+WORDLIST
+
+(see lintr package - many options to control nolint)
+https://lintr.r-lib.org/articles/lintr.html lintr::lint()
+
+    # nolint start
+    ...
+    # nolint end
+
+## FAQ
+
+*In tests, how to check correct error/warning is issued?*
+
+-Please use expect_snapshot() to ensure that the correct error message
+is issued. By the way, unit test for errors and warnings should never
+accept any error or warning but always check that the expected one is
+issued (by using expect_snapshot() or the class argument of
+expect_error()/expect_warning() ).
+
+*Is my version of admiraldev, pharamverse, out-of-date?* - Check:
+Namespace file & packageVersion(“admiraldev”) - install latest from
+github by using devtools::install_github(“pharmaverse/admiraldev”
+
+When we depend on a dev version of a package, we should also indicated
+this in our DESCRIPTION file FYI
+
+Imports: admiraldev (\>= 1.1.0.9006),
+
+It used to be the case, that Remotes: would re-install all pkgs listed
+in Remotes upon installation of the pkg, but that is no longer the case
+after pak replaced remotes for GH intallations.
+
+*Skills to focus on:*
+https://pharmaverse.slack.com/archives/D07DL8CP00G/p1728234941977779
+`templates, documentation & navigation, pkgdown & organization, R environments`
+
+*Data:*
+https://pharmaverse.slack.com/archives/D07DL8CP00G/p1722857716071859
+
+*What is “starting date” ?* When is example data contrived, from CDISC,
+a subset etc. the data usually starts at Informed Consent - RFISDTC
+
+*When to use metacore/metatools ? Or, admiral? Seems to be overlap.*
+
+    Yes there are lots of overlap between the packages.  For example, there are functions in metatools to bring copies of variables from SDTM or you could just use dplyr or base R to bring them over.  We built them independent so you didn't have to commit to them if you wanted to use one or the other.  I use both in my ADaM programming and work well together.  I think the example site has best example.
+
+*How many “ADaM(s)” are there?*
+
+    3 types of Adam (ADSL, BDS, occ...)   Is there ONE ADSL or many kinds;  was very confused about this.
+
+    There is only one ADSL in each study, but each study's ADSL will
+    look different depending on what is needed for Subject-level data
+    as defined in the Study SAP (Statistical Analysis Plan), for
+    example baseline tables and endpoints.  There is a forth ADaM
+    called ADaM Other - which captures some exotic ADaM structures.
+
+*Templates:* (not FAQ, a direction) We are trying to compare things from
+the templates in CI Workflow; use of diffdf
+
+Why do we use both library(pharmaversesdtm::ae) and
+ae=pharamaversesdtm::ae
+
+We are just trying to be explicit on where the data is coming from as we
+are assuming folks are not super familiar with R yet if they are using
+our template programs. Yes we could drop the library() call, but the
+comment on the datasets origin is important to also point out to new
+users.
+
+*What topics does bi-weekly Admiral meetings cover?*
+
+A lot of what we make is based on the Study Design and questions being
+asked in the study to prove the safety and efficacy of the drug through
+something called the SAP (Statistical Analysis Plan). So which ADaMs,
+TLFs you pick is really dependent on the SAP. There is something called
+the Protocol that is a higher-level version of the SAP which influences
+the eCRF (electronic Case Report Form) and determines what data is
+collected.However, you will always have an ADSL dataset!!
+
+We have bi-weekly meetings on Wednesdays at 10 AM US EST. They are not
+mandatory to be in the group but highly encouraged. You get to meet
+various people and participate in discussions. However, we understand
+that can be tough with full-time job needs. Occasionally we split out
+into Working Groups to tackle various topics.
+
+*History of package datasets*
+https://app.slack.com/client/T028PB489D3/D07DL8CP00G
+
+I’m not worried about creating the data in admiral. I believe this is
+the way forward that you have been working on.We have been doing it for
+3 years now just not using the recommended data/data-raw convention.The
+pharmaverseadam package was created to allow folks to load ADaM data for
+other projects rather than having to load admiral. We actually used to
+have all those ADaMs in admiral but it bloated the package and decided
+to remove them. So pharamverseadam came later and it is a little
+confusing as our templates make those ADaMs and so adsl is identical
+between the two packages.The templates should create the datasets (adsl
+and adlb). admiral_adlb should require some subsetting with the proposed
+Subjects. If the data is not an exact match, then it would be nice to
+understand what is not matching. The diffdf package is very nice for
+this.If it doesn’t match, then lets figure out why and it might just be
+a minor updates to the templates that have been done over the last few
+years. AGain I’m not particular worried as the package hasn’t changed so
+drastically that the Hy’s Vignette would become unusable. (edited)
+
+*What is SAP?* A lot of what we make is based on the Study Design and
+questions being asked in the study to prove the safety and efficacy of
+the drug through something called the SAP (Statistical Analysis Plan).
+So which ADaMs, TLFs you pick is really dependent on the SAP. There is
+something called the Protocol that is a higher-level version of the SAP
+which influences the eCRF (electronic Case Report Form) and determines
+what data is collected.
+
+*SAP* - Statistical Analysis Plan \| Example:
+https://cdn.clinicaltrials.gov/large-docs/80/NCT04182880/SAP_001.pdf
+
+*TLG* - https://pharmaverse.org/e2eclinical/tlg/ *R Consortium Tables
+Working Group*: https://rconsortium.github.io/rtrs-wg/
+
+*How I join bi-weekly Admiral meetings?*
+https://github.com/pharmaverse/admiral/discussions/2169#discussioncomment-10376594
+
+Once you do a few more successfully merged PRs I will propose to core
+team that you be included! Be great to have you involved.
+
+*Reviewers: PR* (Ben) So I see everything that happens in admiral:
+issues, conversations, PRs, etc as I have my settings that way. Yes
+always assign a reviewer. You can ping people you have interacted with
+and ask for review or use @pharmaverse/admiral teams to ask for
+additional reviewers. If crickets, ping on slack as well; Stefan is the
+best for thorough code review. Edoardo and I are okay for code, but we
+are very user focused and pay close attention to documentation of
+usability of the function. there are a few others out there but you
+haven’t interacted with them much yet
+
+\*\* Terminology: organizations & standards
+
+- *PHUSE (UK)* - lots of conferences\|
+  \[https://phuse.global/Communications/Webinar_Wednesday\]
+  \[https://phuse.global/Working_Groups\]\[PHUSE Working Groups\]
+
+- *pharmaR* (original attempt) -\> pharmaverse
+
+- *R Validation Hub* (~50 companies) \|
+
+- *R Consortium Working Group*
+  \[\[https://rconsortium.github.io/submissions-wg/\]\[R Consortium\]\]
+  \[\[R Submissions Working Group\]
+  \[https://rconsortium.github.io/submissions-wg/\]\]
+
+- *CDISC* - create standards for ADaM, etc
+
+- *CDISC Glossary:*
+  https://evs.nci.nih.gov/ftp1/CDISC/Glossary/CDISC%20Glossary.html
+
+- *CDISC Video Primer:* (how good?) https://www.cdisc.org/primer
+
+- The *CDISC Analysis Results Data (ARD or ARDG) Model* is an emerging
+  standard for encoding statistical analysis summaries in a
+  machine-readable format. (
+  https://www.danieldsjoberg.com/ARD-RinPharma-workshop-2024/) Pilot 4
+  ARDG https://rpodcast.quarto.pub/pilot4-webassembly-adrg/#introduction
+
+*SAP* - Statistical Analysis Plan \| Example:
+https://cdn.clinicaltrials.gov/large-docs/80/NCT04182880/SAP_001.pdf
+
+- PHUSE ? maintains examples of both ADaM, SDTM datasets.
+
+define.xml (metadata, table, fields…)
+
+\*\* Videos
+
+2024 \| clinical submissions with r(ben): - (@ 25:30)
+https://www.youtube.com/watch?v=5PF6mHeQNS4 to from adsl - (@ 36.01 )
+template; sdtm -\> adam (for adeg) \[getting
+started\]\[https://pharmaverse.github.io/admiral/articles/admiral.html\]\]
+check: so idea is start with adsl structure, add necessary columns, rows
+
+2023 \| pharmaverse workshop (admiral, metatools, metacore walkthrough -
+good, ross @ 7:00): - (@7:00 or so)
+https://youtu.be/nHbDmxjVqRM?si=usfW_i9zdQyBKA0D
+
+2022 \| CI/CD; pharmaverse github workflow (ben) -
+https://www.youtube.com/watch?v=OcNzurpCCpY -
+https://github.com/bms63/demo
+
+2022 \| Day \#1 (good) https://www.youtube.com/watch?v=9eod8MLF5ys @
+23:12 - diagram, package handoffs… @ 48:00 - Admiral, design flow of
+derive_var\_… (good)
+
+Coursera:
+https://www.coursera.org/learn/hands-on-clinical-reporting-using-r New
+contributors
+https://www.youtube.com/watch?v=MhEyod3Sevc&list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4&index=3
+
+\*\* Reading - (overview) Ben, 2024
+https://pharmasug.org/proceedings/2024/SD/PharmaSUG-2024-SD-343.pdf -
+(coding)
+https://pharmaverse.github.io/admiral/articles/concepts_conventions.html -
+(*Programming Strategy*)
+https://pharmaverse.github.io/admiraldev/articles/programming_strategy.html -
+(list ADAM variables & admiral function to
+create)https://pharmaverse.github.io/admiraldiscovery/articles/reactable.html -
+(examples: repo ) https://github.com/pharmaverse/examples - (examples:
+run in Posit Cloud) https://pharmaverse.github.io/examples/ - Imputed
+Dates: (discussion)
+https://advance.hub.phuse.global/wiki/spaces/WEL/pages/26807243/Imputing+Partial+Dates
+
+\*\*\* Additional Reading (maybe older topics or presentations) - (using
+tidyverse to maninpulate SDTM tibbles)
+https://www.pharmasug.org/proceedings/2023/QT/PharmaSUG-2023-QT-280.pdf
+
+\*\* R packages (Admiral, teal, …)
+
+Begin here: https://pharmaverse.org/e2eclinical/
+
+- **Admiral** overview: Ben S
+  https://www.youtube.com/watch?v=5PF6mHeQNS4
+- functions create ADaM structures
+- Intro (for Pharma Users): https://pharmaverse.github.io/admiral/
+- Getting Started (vignette, introducing code)
+  https://pharmaverse.github.io/admiral/articles/admiral.html
+
+*Developers:* - Contributing:
+https://pharmaverse.github.io/admiral/CONTRIBUTING.html - Contribution
+Model: broken link  
+- FAQ (some
+background)https://pharmaverse.github.io/admiral/articles/faq.html
+
+- *Admiraldev* (some background)
+  https://pharmaverse.github.io/admiraldev/articles/admiraldev.html
+  Details:
+
+- (2nd) Programming Strategy
+  https://pharmaverse.github.io/admiraldev/articles/programming_strategy.html
+
+- (2nd) Coding (rlang
+  etc)https://pharmaverse.github.io/admiral/articles/concepts_conventions.html
+  \*\*\* expr() example call: f(mtcars, var=expr(hp)) \# no need to use
+  “hp” (string) f = function(ds, var) { dplyr::select(ds, !!var)}
+
+- (2nd) PR overview
+  https://pharmaverse.github.io/admiraldev/articles/pr_review_guidance.html
+
+- (2nd) PR/branches/commits/
+  https://pharmaverse.github.io/admiraldev/articles/git_usage.html
+
+- *datacutr*
+  https://www.youtube.com/watch?v=ZyK-Tiqw5hU&list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4&index=6
+  has sample data; functions to restrict data to ONE date, or patients …
+  a slice of data
+
+- *metacore* (Atorus, up to 6 datasets, info re: tables, columns, … )
+  SEE: https://github.com/atorus-research/metacore ds_spec - dataset
+  name, purupse (ex: AE, DM) info ds_vars holds each field (columns) of
+  dataset var_spec
+
+… File with reference datasets:ds …
+https://github.com/atorus-research/metacore/blob/main/tests/testthat/test-reader.R
+holds metadata specs as object; data may arrive in spreasheets or db for
+… (company-specific)
+
+- *metatools* https://github.com/pharmaverse/metatools
+
+  tools to develop, work with metacore objects (ex: companies may have
+  different names to describe one entity) does some preliminary checks
+  (harder analysis is done in admiral)
+
+- *oak*
+
+- *random.cdisc.data* package: create random AdAM datasets?
+  https://cran.r-project.org/web/packages/random.cdisc.data/random.cdisc.data.pdf
+
+- *sdtmchecks* SEE:
+  https://www.youtube.com/watch?v=tBL0Eo6CBdw&list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4&index=5
+
+- PharmaR: *riskmetric* package and a shiny app: *Riskasessment*
+
+- *Teal* Examples: Teal + ShinyLive (ie WebR; no need server)
+  https://pharmaverse.github.io/examples/interactive/teal.html 2024
+  Workshop:
+  https://github.com/pharmaverse/tealworkshop-phuseusconnect2024/tree/main/code
+  Teal itself (Github) https://github.com/insightsengineering/teal (70
+  issues, very active)
+
+- *TLG* (tables, graphics … ie display data)
+  https://pharmaverse.org/e2eclinical/tlg/
+
+\*\* tools phuse.org/valtools (nice spreadsheet)
+
+\*\* US FDA eCTR = electronic communications ..
+
+SDTM = Study Data Tabulation Model
+
+TLF = Tables, Listings ..
+
+\*\*\* ADSL - required dataset format for CDISC (Adam);
+patient/treatment level ; attempt to capture treatments/interventions in
+a STUDY; must be flexible, yet rigourous. (clear)
+https://www.linkedin.com/pulse/decoding-adsl-treatment-variables-study-designs-clinical-baghai-hhzfe/
+
+\*\*\* LOCF https://www.lexjansen.com/nesug/nesug09/po/PO12.pdf
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4785044/ - missing
+observtions? assume last reported value continues.
+
+\*\* SAS Good validation (CDISC STDM/Admiral standard)
+
+R has many packages, but who validates?
+
+https://github.com/pharmaverse/ggsurvfit (seems interesting)
+
+https://github.com/pharmaverse/envsetup (plumbing can be intersting)
+
+https://github.com/pharmaverse/pharmaverseadam/issues/58
+
+\*\* R Working Group \*\*\* Pilot 4 \*\*\* Pilot 5 \*\* Chronology
+
+\<2024-09-16 Mon\> - Still to do, create: -data/admiral_adsl.rda
+-data/admiral_adlb.rda; -verify that Hy’s Law template creates same
+dataset.
+
+- As I understand things, to do this, I need
+
+  1)  functions from admiral, inluding inst/templates/ad_adlb.R
+      inst/templates/ad_adsl.R and,
+
+  2)  minimal datasets from package:pharmaversesdtm.
+
+- Said another way, we are **using admiral package itself to create
+  datasets for the admiral package**!! (chicken & egg?)
+
+- This makes me a little nervous; especially since I have not worked
+  through most of code base
+
+- For example, merely by loading **admiral** I populate (“pollute”) the
+  environment and specifically add -data/admiral_adlb.rda,
+
+  - and admiral_adsl.rda
+
+- These are very datasets I am trying to create from scratch..
+
+- I have not tried since Friday, but keeping track of what already
+  exists vs what I am creating was getting messy.
+
+- Is there a better way? That’s where I am. I have some thoughts, but
+  first - is there a problem? Or am I making up a problem ??
+
+\<2024-07-15 Mon\> - Reorganizing, in process \<2024-07-08 Mon\> - Added
+original *Progamming Strategy* (from Admiral, .Rmd file) to this
+document. - First, pandoc -f markdown -t org -o orgmode.org
+RMDfile.Rmd - Intent is to do add *my annotations*
+
+    <2024-08-02 Fri> Attached is messy pencil sketch.
+    It is my comprehension of pharmaverse at this moment: confused! It
+    is snapshot in time, mostly for me not you guys. As I see it, the
+    overall process is a sequence of database 'states' and
+    'transitions'. The sketch should depict the tables, key fields,
+    links between at each state. The specific terms (CDISC,
+    derived_var_*) are less important at this level. An R or database
+    programmer should readily get the idea, even if clueless about the
+    context or purpose. So Admiral or other package function too low
+    level for this. Next: I want to fill in the gaps, errors roughness
+    so I gradually see how the pieces fit together. If it will be
+    useful as REFERENCE, I will be happy to aim for that. Now I am
+    just trying to figure out what I know/what I do not know. Most of
+    this from Coursera and two recent videos you and Ross did. Then
+    github package documentation begins to make much more
+    sense.
+
+    <2024-08-21 Wed>
+    Updated Plan for Issue # Situation
+
+    SITUATION NOW:
+
+1.  *data/*.rda\* Path to created data.
+2.  *inst/example_scripts/\*.R* Path to \*.R files, create \*.rda files.
+
+AFTER:
+
+1.  (NO CHANGE) *data/\*.rda* Path to original data.
+2.  (NEW) data-raw/\*.R Path to new code.
+3.  (REMOVE?) inst/example_scripts/\*.R Path to old code.
+
+To effect this, propose these intermediate steps:
+
+1.  (Temporary) Add: old_data/ folder to hold copy of \*.rda files.
+2.  Empty: data/ .
+3.  Run: new code (data-raw/*.R) New data saved in data/*.rda
+4.  Run: test.R (or equivalent as testthat) verify old and new code
+    produces IDENTICAL \*.rda files.
+5.  Pause for review/discuss
+
+As a final step
+
+1.  Remove folder and old code inst/example_scripts/\*.R  
+2.  Remove old_data/\*.rda (copies of orginal data)
+3.  Remove test.R,
+4.  PR
+
+As initial run through: 1. Do this for example_qs.rda ONLY 2. Pause for
+review/discuss. 3. Then to for all remaining \*.rda files
+
+How to document this?
+
+\*\*

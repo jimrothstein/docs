@@ -18,8 +18,8 @@ C-ENTER new line, at same level
 
 For Package:  Use these:
 
-styler::style_pkg()   
-devtools::lint()   # package   
+styler::style_pkg() \
+devtools::lint()   # package   \
 devtools::test_coverage()   # entire package 
 devtools::spell_check(use_wordlist = TRUE) # package 
 spelling::update_wordlist(pkg=".") # runs spell AND asks to update WORDLIST  

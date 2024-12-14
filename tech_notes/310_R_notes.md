@@ -166,16 +166,6 @@ call("f", 2+3)
 call("f", sin(x <- pi/2))
 ## f(1)
 # call("f", sin (x + y))
-
-
-# local leaves nothing inenviron after running
-local({
-a <- 10
-b <- 100
-f <- function(x,y) x + y
-call("f", list(a,b))
-})
-## f(list(10, 100))
 ```
 
 Like symbol, expression, call is typeof ‘language’.
@@ -499,6 +489,22 @@ variable??
 In R, an “evaluator” find any “unbound symbols” (in an expression) by
 using variable bindings in effect when created.
 
+**local**
+
+local leaves nothing inenviron after running; easy to use; (TODO) study
+internals
+
+``` r
+local({
+a <- 10
+b <- 100
+f <- function(x,y) x + y
+call("f", list(a,b))
+})
+```
+
+    f(list(10, 100))
+
 **match** - match.arg - match.call - match.fun
 
 **namespace:** REF:
@@ -533,10 +539,14 @@ function g. Example: $f'(x) = g(x)$
 function f, the g has the parent frame (aka calling environment) that is
 execution environment of f. DRAW Diagram
 
-**Parse** Convert a string (character vector) into an R Expression (ie
-code), which is NOT a string. Motivation is to setup R object for
+**Parse** (TODO) Parse returns expression or creates ast structure?
+Convert a string (character vector, such as “x+y”) into an R Expression
+(ie code), which is NOT a string. Motivation is to setup R object for
 manipulation *before* evaluation. Parse(\*.R) removes comments. Note:
 after parsing, the result is NOT character(1), a string.
+
+*parse_expr()* returns string, given an expression (tip: should not do
+this often) Hadley 18.4
 
 **Deparse** converts an R Expression to a string (character vector) .
 
@@ -572,6 +582,8 @@ Parse & Deparse are NOT? opposites. See Murdoch
 (latex) parse: string ==`>` R expression (error if invalid) deparse: R
 expression ==`>` string (actually: structure(expression(), scrfile)
 
+**promise** Hadley: 18.4 captures expression and environment
+
 **options** Temporary vs global vs local. Read R manual.(TODO)
 
 - `if`, `+`, sin, sqrt
@@ -601,6 +613,7 @@ quote(sqrt)
 quote(`if`)
 quote(`+`)
 deparse(y)
+# TODO add class()
 data.frame(object = y,
            typeof = sapply(y, typeof),
            is.primitive = sapply(y, is.primitive),
@@ -610,30 +623,24 @@ data.frame(object = y,
 **R** R has two parents: S, based on C, Fortran for statistics. R also
 has functional component, based on Scheme.
 
-    It is possible to abuse R, using it more like S code. (?)
+It is possible to abuse R, using it more like S code. (?)
 
-    **Reification** Abstract idea to treat all code as "data", including functions, structures, etc. This means all such objects can be modified by code. C has. (TODO)
+**Reification** Abstract idea to treat all code as “data”, including
+functions, structures, etc. This means all such objects can be modified
+by code. C has. (TODO)
 
+**Referencial Transparency**
 
-    **  Referencial Transparency
+A function f is IF replacing x (an expression) with its value returns
+same.
 
-    A function f is \textbf{referencial  transparent} IF replacing x (an expression) with its value
-    returns same.
-
-    ::: {.cell}
-
-    ```{.r .cell-code}
-    f = function(x) x
-    x = 6
-    identical(f(x), f(6))
-
-<div class="cell-output cell-output-stdout">
+``` r
+f = function(x) x
+x = 6
+identical(f(x), f(6))
+```
 
     [1] TRUE
-
-</div>
-
-:::
 
 However, not all R functions have this property.
 
@@ -644,9 +651,15 @@ identical(quote(x), quote(6))               ##  F
 
     [1] FALSE
 
-**Referencial Semantics** Changes to values are done in memory. There is
-no copy. (Example: why important. Also other properties of functions,
-inverse, etc)
+**quote** (Scheme) does not look for bindings
+
+**quosure** REF: Advanced-R ~ 6.5 Data structure with expression +
+environment. WHY? With dot (…) often pass several of these
+rlang::eval_tidy() \# takes 1 arg (simpler) but base:eval(, ) \#
+requires 2 args **Referencial Semantics** Changes to values are done in
+memory. There is no copy. (Example: why important. Also other properties
+of functions, inverse, etc) R passes by value. (So argument is evaluated
+before the call?)
 
 **Search List** Heirarchy of packages: First is globalenv, followed by
 packages in reverse order. Loading a package not necessary attach.
@@ -661,7 +674,7 @@ only. The srcref contains original code, plus comments and formatting.
 
 **Substitution** When used in function with formal variable, substitute
 stops evaluation, captures the user’s code and returns a call (ie
-unevaluated )
+unevaluated ) Substitution is NOT eval.
 
   substitute returns the parse tree for the (unevaluated) expression
 expr, substituting any variables bound in env.
@@ -831,9 +844,10 @@ parse(text= '2^2')
     expression(2^2)
 
 ``` r
-## fails, does not know a is.
-# parse(text= '2a')
+parse(text= '2*a')
 ```
+
+    expression(2 * a)
 
 **call**
 
