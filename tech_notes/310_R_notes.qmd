@@ -39,18 +39,20 @@ NSE refers to tinker with how fct evaluates arguments.
 	- detach(mtcars) to remove from search list
     - compare to `with`
       - https://stat.ethz.ch/R-manual/R-devel/library/base/html/attach.html
-```{r}
+```{r why}
+library(rlang)
 search()
 
 mtcars
-# hp   # object 'hp' not found
+tryCatch(hp,    # object 'hp' not found ,
+        error = function(e) print(" There is no hp in environent \n")
+)
 
 # add to search list
 ?attach
 attach(mtcars)
 search()
-hp  # no error
-
+hp  # now no error
 # remove 
 detach(mtcars)
 
@@ -93,6 +95,20 @@ cl
 
 ##  To evaluate a call.
     eval(cl)
+
+call("f", 2+3)
+# call("f", sin(x))
+call("f", sin(x <- pi/2))
+# call("f", sin (x + y))
+
+
+# local leaves nothing inenviron after running
+local({
+a <- 10
+b <- 100
+f <- function(x,y) x + y
+call("f", list(a,b))
+})
 ```
 
 Like symbol, expression, call is typeof 'language'.
@@ -134,7 +150,7 @@ Synonym for capture unevaluated  code, stop immediate evaluation,
 
 **eval()**
 Note:  rlang::expr(x) quotes (or converts ) arg to expression
-```{r}
+```{r eval}
 x = 2
 y = 10
 try ( 
@@ -153,7 +169,7 @@ try(
   }
 )
 
-is_expression(rlang::expr(x)) #T
+rlang::is_expression(rlang::expr(x)) #T
 ```
 **Evaluation or execution environment** In R, a function runs in an environment
 specific to that function. Also referred to as frame or context. This frame
@@ -274,6 +290,9 @@ function was created.
 
 **Higher Order Function** Function that takes another
 function as an argument and ...
+
+**inject** insert expression into AST?
+
 
 **immutable**
 
@@ -722,7 +741,10 @@ All R, math, statistics  notes here.
   -   https://rpubs.com/lionel-/superstache
     Brodie Gaslam
     -   https://www.brodieg.com/2020/05/05/on-nse/
-
+	, Mailund
+	-  Metaprogramming
+	R Journal, Murdock
+	R Language Definition
 
 ### Articles
 

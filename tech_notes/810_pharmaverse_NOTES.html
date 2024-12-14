@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>pharmaverse_notes</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="810_pharmaverse_NOTES_files/libs/clipboard/clipboard.min.js"></script>
+<script src="810_pharmaverse_NOTES_files/libs/quarto-html/quarto.js"></script>
+<script src="810_pharmaverse_NOTES_files/libs/quarto-html/popper.min.js"></script>
+<script src="810_pharmaverse_NOTES_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="810_pharmaverse_NOTES_files/libs/quarto-html/anchor.min.js"></script>
+<link href="810_pharmaverse_NOTES_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="810_pharmaverse_NOTES_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="810_pharmaverse_NOTES_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="810_pharmaverse_NOTES_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="810_pharmaverse_NOTES_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+
+<p>QMD file</p>
+<section id="my-notes" class="level1">
+<h1>My Notes</h1>
+<section id="intro-notes" class="level2">
+<h2 class="anchored" data-anchor-id="intro-notes">intro notes</h2>
+<p>(define-key evil-normal-state-map (kbd “<tab>”) ’evil-toggle-fold)</tab></p>
+<p>S-<tab> cycles C-ENTER new line, at same level</tab></p>
+</section>
+<section id="tools" class="level2">
+<h2 class="anchored" data-anchor-id="tools">Tools</h2>
+<p>For Package: Use these:</p>
+<p>styler::style_pkg()<br>
+devtools::lint() # package<br>
+devtools::test_coverage() # entire package devtools::spell_check(use_wordlist = TRUE) # package spelling::update_wordlist(pkg=“.”) # runs spell AND asks to update WORDLIST</p>
+<p>For File: Use these:</p>
+<p>active_fie = rstudioapi::getSourceEditorContext()$path</p>
+<p>devtools::test_active_file()</p>
+<p>devtools::test_coverage_active_file()</p>
+<p>styler::style_file(path = ) # dir, file</p>
+<p>lintr::lint(filename=““)</p>
+<p>spelling::update_wordlist(pkg=“.”) # runs spell and asks to update WORDLIST</p>
+<p>(see lintr package - many options to control nolint) https://lintr.r-lib.org/articles/lintr.html lintr::lint()</p>
+<pre><code># nolint start
+...
+# nolint end</code></pre>
+</section>
+<section id="faq" class="level2">
+<h2 class="anchored" data-anchor-id="faq">FAQ</h2>
+<p><em>In tests, how to check correct error/warning is issued?</em></p>
+<p>-Please use expect_snapshot() to ensure that the correct error message is issued. By the way, unit test for errors and warnings should never accept any error or warning but always check that the expected one is issued (by using expect_snapshot() or the class argument of expect_error()/expect_warning() ).</p>
+<p><em>Is my version of admiraldev, pharamverse, out-of-date?</em> - Check: Namespace file &amp; packageVersion(“admiraldev”) - install latest from github by using devtools::install_github(“pharmaverse/admiraldev”</p>
+<p>When we depend on a dev version of a package, we should also indicated this in our DESCRIPTION file FYI</p>
+<p>Imports: admiraldev (&gt;= 1.1.0.9006),</p>
+<p>It used to be the case, that Remotes: would re-install all pkgs listed in Remotes upon installation of the pkg, but that is no longer the case after pak replaced remotes for GH intallations.</p>
+<p><em>Skills to focus on:</em> https://pharmaverse.slack.com/archives/D07DL8CP00G/p1728234941977779 <code>templates, documentation &amp; navigation, pkgdown &amp; organization, R environments</code></p>
+<p><em>Data:</em> https://pharmaverse.slack.com/archives/D07DL8CP00G/p1722857716071859</p>
+<p><em>What is “starting date” ?</em> When is example data contrived, from CDISC, a subset etc. the data usually starts at Informed Consent - RFISDTC</p>
+<p><em>When to use metacore/metatools ? Or, admiral? Seems to be overlap.</em></p>
+<pre><code>Yes there are lots of overlap between the packages.  For example, there are functions in metatools to bring copies of variables from SDTM or you could just use dplyr or base R to bring them over.  We built them independent so you didn't have to commit to them if you wanted to use one or the other.  I use both in my ADaM programming and work well together.  I think the example site has best example.</code></pre>
+<p><em>How many “ADaM(s)” are there?</em></p>
+<pre><code>3 types of Adam (ADSL, BDS, occ...)   Is there ONE ADSL or many kinds;  was very confused about this.
+
+There is only one ADSL in each study, but each study's ADSL will
+look different depending on what is needed for Subject-level data
+as defined in the Study SAP (Statistical Analysis Plan), for
+example baseline tables and endpoints.  There is a forth ADaM
+called ADaM Other - which captures some exotic ADaM structures.</code></pre>
+<p><em>Templates:</em> (not FAQ, a direction) We are trying to compare things from the templates in CI Workflow; use of diffdf</p>
+<p>Why do we use both library(pharmaversesdtm::ae) and ae=pharamaversesdtm::ae</p>
+<p>We are just trying to be explicit on where the data is coming from as we are assuming folks are not super familiar with R yet if they are using our template programs. Yes we could drop the library() call, but the comment on the datasets origin is important to also point out to new users.</p>
+<p><em>What topics does bi-weekly Admiral meetings cover?</em></p>
+<p>A lot of what we make is based on the Study Design and questions being asked in the study to prove the safety and efficacy of the drug through something called the SAP (Statistical Analysis Plan). So which ADaMs, TLFs you pick is really dependent on the SAP. There is something called the Protocol that is a higher-level version of the SAP which influences the eCRF (electronic Case Report Form) and determines what data is collected.However, you will always have an ADSL dataset!!</p>
+<p>We have bi-weekly meetings on Wednesdays at 10 AM US EST. They are not mandatory to be in the group but highly encouraged. You get to meet various people and participate in discussions. However, we understand that can be tough with full-time job needs. Occasionally we split out into Working Groups to tackle various topics.</p>
+<p><em>History of package datasets</em> https://app.slack.com/client/T028PB489D3/D07DL8CP00G</p>
+<p>I’m not worried about creating the data in admiral. I believe this is the way forward that you have been working on.We have been doing it for 3 years now just not using the recommended data/data-raw convention.The pharmaverseadam package was created to allow folks to load ADaM data for other projects rather than having to load admiral. We actually used to have all those ADaMs in admiral but it bloated the package and decided to remove them. So pharamverseadam came later and it is a little confusing as our templates make those ADaMs and so adsl is identical between the two packages.The templates should create the datasets (adsl and adlb). admiral_adlb should require some subsetting with the proposed Subjects. If the data is not an exact match, then it would be nice to understand what is not matching. The diffdf package is very nice for this.If it doesn’t match, then lets figure out why and it might just be a minor updates to the templates that have been done over the last few years. AGain I’m not particular worried as the package hasn’t changed so drastically that the Hy’s Vignette would become unusable. (edited)</p>
+<p><em>What is SAP?</em> A lot of what we make is based on the Study Design and questions being asked in the study to prove the safety and efficacy of the drug through something called the SAP (Statistical Analysis Plan). So which ADaMs, TLFs you pick is really dependent on the SAP. There is something called the Protocol that is a higher-level version of the SAP which influences the eCRF (electronic Case Report Form) and determines what data is collected.</p>
+<p><em>SAP</em> - Statistical Analysis Plan | Example: https://cdn.clinicaltrials.gov/large-docs/80/NCT04182880/SAP_001.pdf</p>
+<p><em>TLG</em> - https://pharmaverse.org/e2eclinical/tlg/ <em>R Consortium Tables Working Group</em>: https://rconsortium.github.io/rtrs-wg/</p>
+<p><em>How I join bi-weekly Admiral meetings?</em> https://github.com/pharmaverse/admiral/discussions/2169#discussioncomment-10376594</p>
+<p>Once you do a few more successfully merged PRs I will propose to core team that you be included! Be great to have you involved.</p>
+<p><em>Reviewers: PR</em> (Ben) So I see everything that happens in admiral: issues, conversations, PRs, etc as I have my settings that way. Yes always assign a reviewer. You can ping people you have interacted with and ask for review or use <span class="citation" data-cites="pharmaverse/admiral">@pharmaverse/admiral</span> teams to ask for additional reviewers. If crickets, ping on slack as well; Stefan is the best for thorough code review. Edoardo and I are okay for code, but we are very user focused and pay close attention to documentation of usability of the function. there are a few others out there but you haven’t interacted with them much yet</p>
+<p>** Terminology: organizations &amp; standards</p>
+<ul>
+<li><p><em>PHUSE (UK)</em> - lots of conferences| [https://phuse.global/Communications/Webinar_Wednesday] [https://phuse.global/Working_Groups][PHUSE Working Groups]</p></li>
+<li><p><em>pharmaR</em> (original attempt) -&gt; pharmaverse</p></li>
+<li><p><em>R Validation Hub</em> (~50 companies) |</p></li>
+<li><p><em>R Consortium Working Group</em> [[https://rconsortium.github.io/submissions-wg/][R Consortium]] [[R Submissions Working Group] [https://rconsortium.github.io/submissions-wg/]]</p></li>
+<li><p><em>CDISC</em> - create standards for ADaM, etc</p></li>
+<li><p><em>CDISC Glossary:</em> https://evs.nci.nih.gov/ftp1/CDISC/Glossary/CDISC%20Glossary.html</p></li>
+<li><p><em>CDISC Video Primer:</em> (how good?) https://www.cdisc.org/primer</p></li>
+<li><p>The <em>CDISC Analysis Results Data (ARD or ARDG) Model</em> is an emerging standard for encoding statistical analysis summaries in a machine-readable format. ( https://www.danieldsjoberg.com/ARD-RinPharma-workshop-2024/) Pilot 4 ARDG https://rpodcast.quarto.pub/pilot4-webassembly-adrg/#introduction</p></li>
+</ul>
+<p><em>SAP</em> - Statistical Analysis Plan | Example: https://cdn.clinicaltrials.gov/large-docs/80/NCT04182880/SAP_001.pdf</p>
+<ul>
+<li>PHUSE ? maintains examples of both ADaM, SDTM datasets.</li>
+</ul>
+<p>define.xml (metadata, table, fields…)</p>
+<p>** Videos</p>
+<p>2024 | clinical submissions with r(ben): - (@ 25:30) https://www.youtube.com/watch?v=5PF6mHeQNS4 to from adsl - (@ 36.01 ) template; sdtm -&gt; adam (for adeg) [getting started][https://pharmaverse.github.io/admiral/articles/admiral.html]] check: so idea is start with adsl structure, add necessary columns, rows</p>
+<p>2023 | pharmaverse workshop (admiral, metatools, metacore walkthrough - good, ross @ 7:00): - (<span class="citation" data-cites="7:00">@7:00</span> or so) https://youtu.be/nHbDmxjVqRM?si=usfW_i9zdQyBKA0D</p>
+<p>2022 | CI/CD; pharmaverse github workflow (ben) - https://www.youtube.com/watch?v=OcNzurpCCpY - https://github.com/bms63/demo</p>
+<p>2022 | Day #1 (good) https://www.youtube.com/watch?v=9eod8MLF5ys @ 23:12 - diagram, package handoffs… @ 48:00 - Admiral, design flow of derive_var_… (good)</p>
+<p>Coursera: https://www.coursera.org/learn/hands-on-clinical-reporting-using-r New contributors https://www.youtube.com/watch?v=MhEyod3Sevc&amp;list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4&amp;index=3</p>
+<p>** Reading - (overview) Ben, 2024 https://pharmasug.org/proceedings/2024/SD/PharmaSUG-2024-SD-343.pdf - (coding) https://pharmaverse.github.io/admiral/articles/concepts_conventions.html - (<em>Programming Strategy</em>) https://pharmaverse.github.io/admiraldev/articles/programming_strategy.html - (list ADAM variables &amp; admiral function to create)https://pharmaverse.github.io/admiraldiscovery/articles/reactable.html - (examples: repo ) https://github.com/pharmaverse/examples - (examples: run in Posit Cloud) https://pharmaverse.github.io/examples/ - Imputed Dates: (discussion) https://advance.hub.phuse.global/wiki/spaces/WEL/pages/26807243/Imputing+Partial+Dates</p>
+<p>*** Additional Reading (maybe older topics or presentations) - (using tidyverse to maninpulate SDTM tibbles) https://www.pharmasug.org/proceedings/2023/QT/PharmaSUG-2023-QT-280.pdf</p>
+<p>** R packages (Admiral, teal, …)</p>
+<p>Begin here: https://pharmaverse.org/e2eclinical/</p>
+<ul>
+<li><strong>Admiral</strong> overview: Ben S https://www.youtube.com/watch?v=5PF6mHeQNS4</li>
+<li>functions create ADaM structures</li>
+<li>Intro (for Pharma Users): https://pharmaverse.github.io/admiral/</li>
+<li>Getting Started (vignette, introducing code) https://pharmaverse.github.io/admiral/articles/admiral.html</li>
+</ul>
+<p><em>Developers:</em> - Contributing: https://pharmaverse.github.io/admiral/CONTRIBUTING.html - Contribution Model: broken link<br>
+- FAQ (some background)https://pharmaverse.github.io/admiral/articles/faq.html</p>
+<ul>
+<li><p><em>Admiraldev</em> (some background) https://pharmaverse.github.io/admiraldev/articles/admiraldev.html Details:</p></li>
+<li><p>(2nd) Programming Strategy https://pharmaverse.github.io/admiraldev/articles/programming_strategy.html</p></li>
+<li><p>(2nd) Coding (rlang etc)https://pharmaverse.github.io/admiral/articles/concepts_conventions.html *** expr() example call: f(mtcars, var=expr(hp)) # no need to use “hp” (string) f = function(ds, var) { dplyr::select(ds, !!var)}</p></li>
+<li><p>(2nd) PR overview https://pharmaverse.github.io/admiraldev/articles/pr_review_guidance.html</p></li>
+<li><p>(2nd) PR/branches/commits/ https://pharmaverse.github.io/admiraldev/articles/git_usage.html</p></li>
+<li><p><em>datacutr</em> https://www.youtube.com/watch?v=ZyK-Tiqw5hU&amp;list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4&amp;index=6 has sample data; functions to restrict data to ONE date, or patients … a slice of data</p></li>
+<li><p><em>metacore</em> (Atorus, up to 6 datasets, info re: tables, columns, … ) SEE: https://github.com/atorus-research/metacore ds_spec - dataset name, purupse (ex: AE, DM) info ds_vars holds each field (columns) of dataset var_spec</p></li>
+</ul>
+<p>… File with reference datasets:ds … https://github.com/atorus-research/metacore/blob/main/tests/testthat/test-reader.R holds metadata specs as object; data may arrive in spreasheets or db for … (company-specific)</p>
+<ul>
+<li><p><em>metatools</em> https://github.com/pharmaverse/metatools</p>
+<p>tools to develop, work with metacore objects (ex: companies may have different names to describe one entity) does some preliminary checks (harder analysis is done in admiral)</p></li>
+<li><p><em>oak</em></p></li>
+<li><p><em>random.cdisc.data</em> package: create random AdAM datasets? https://cran.r-project.org/web/packages/random.cdisc.data/random.cdisc.data.pdf</p></li>
+<li><p><em>sdtmchecks</em> SEE: https://www.youtube.com/watch?v=tBL0Eo6CBdw&amp;list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4&amp;index=5</p></li>
+<li><p>PharmaR: <em>riskmetric</em> package and a shiny app: <em>Riskasessment</em></p></li>
+<li><p><em>Teal</em> Examples: Teal + ShinyLive (ie WebR; no need server) https://pharmaverse.github.io/examples/interactive/teal.html 2024 Workshop: https://github.com/pharmaverse/tealworkshop-phuseusconnect2024/tree/main/code Teal itself (Github) https://github.com/insightsengineering/teal (70 issues, very active)</p></li>
+<li><p><em>TLG</em> (tables, graphics … ie display data) https://pharmaverse.org/e2eclinical/tlg/</p></li>
+</ul>
+<p>** tools phuse.org/valtools (nice spreadsheet)</p>
+<p>** US FDA eCTR = electronic communications ..</p>
+<p>SDTM = Study Data Tabulation Model</p>
+<p>TLF = Tables, Listings ..</p>
+<p>*** ADSL - required dataset format for CDISC (Adam); patient/treatment level ; attempt to capture treatments/interventions in a STUDY; must be flexible, yet rigourous. (clear) https://www.linkedin.com/pulse/decoding-adsl-treatment-variables-study-designs-clinical-baghai-hhzfe/</p>
+<p>*** LOCF https://www.lexjansen.com/nesug/nesug09/po/PO12.pdf https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4785044/ - missing observtions? assume last reported value continues.</p>
+<p>** SAS Good validation (CDISC STDM/Admiral standard)</p>
+<p>R has many packages, but who validates?</p>
+<p>https://github.com/pharmaverse/ggsurvfit (seems interesting)</p>
+<p>https://github.com/pharmaverse/envsetup (plumbing can be intersting)</p>
+<p>https://github.com/pharmaverse/pharmaverseadam/issues/58</p>
+<p>** R Working Group *** Pilot 4 *** Pilot 5 ** Chronology</p>
+<p>&lt;2024-09-16 Mon&gt; - Still to do, create: -data/admiral_adsl.rda -data/admiral_adlb.rda; -verify that Hy’s Law template creates same dataset.</p>
+<ul>
+<li><p>As I understand things, to do this, I need</p>
+<ol type="1">
+<li><p>functions from admiral, inluding inst/templates/ad_adlb.R inst/templates/ad_adsl.R and,</p></li>
+<li><p>minimal datasets from package:pharmaversesdtm.</p></li>
+</ol></li>
+<li><p>Said another way, we are <strong>using admiral package itself to create datasets for the admiral package</strong>!! (chicken &amp; egg?)</p></li>
+<li><p>This makes me a little nervous; especially since I have not worked through most of code base</p></li>
+<li><p>For example, merely by loading <strong>admiral</strong> I populate (“pollute”) the environment and specifically add -data/admiral_adlb.rda,</p>
+<ul>
+<li>and admiral_adsl.rda</li>
+</ul></li>
+<li><p>These are very datasets I am trying to create from scratch..</p></li>
+<li><p>I have not tried since Friday, but keeping track of what already exists vs what I am creating was getting messy.</p></li>
+<li><p>Is there a better way? That’s where I am. I have some thoughts, but first - is there a problem? Or am I making up a problem ??</p></li>
+</ul>
+<p>&lt;2024-07-15 Mon&gt; - Reorganizing, in process &lt;2024-07-08 Mon&gt; - Added original <em>Progamming Strategy</em> (from Admiral, .Rmd file) to this document. - First, pandoc -f markdown -t org -o orgmode.org RMDfile.Rmd - Intent is to do add <em>my annotations</em></p>
+<pre><code>&lt;2024-08-02 Fri&gt; Attached is messy pencil sketch.
+It is my comprehension of pharmaverse at this moment: confused! It
+is snapshot in time, mostly for me not you guys. As I see it, the
+overall process is a sequence of database 'states' and
+'transitions'. The sketch should depict the tables, key fields,
+links between at each state. The specific terms (CDISC,
+derived_var_*) are less important at this level. An R or database
+programmer should readily get the idea, even if clueless about the
+context or purpose. So Admiral or other package function too low
+level for this. Next: I want to fill in the gaps, errors roughness
+so I gradually see how the pieces fit together. If it will be
+useful as REFERENCE, I will be happy to aim for that. Now I am
+just trying to figure out what I know/what I do not know. Most of
+this from Coursera and two recent videos you and Ross did. Then
+github package documentation begins to make much more
+sense.
+
+&lt;2024-08-21 Wed&gt;
+Updated Plan for Issue # Situation
+
+SITUATION NOW:</code></pre>
+<ol type="1">
+<li><em>data/</em>.rda* Path to created data.</li>
+<li><em>inst/example_scripts/*.R</em> Path to *.R files, create *.rda files.</li>
+</ol>
+<p>AFTER:</p>
+<ol type="1">
+<li>(NO CHANGE) <em>data/*.rda</em> Path to original data.</li>
+<li>(NEW) data-raw/*.R Path to new code.</li>
+<li>(REMOVE?) inst/example_scripts/*.R Path to old code.</li>
+</ol>
+<p>To effect this, propose these intermediate steps:</p>
+<ol type="1">
+<li>(Temporary) Add: old_data/ folder to hold copy of *.rda files.</li>
+<li>Empty: data/ .</li>
+<li>Run: new code (data-raw/<em>.R) New data saved in data/</em>.rda</li>
+<li>Run: test.R (or equivalent as testthat) verify old and new code produces IDENTICAL *.rda files.</li>
+<li>Pause for review/discuss</li>
+</ol>
+<p>As a final step</p>
+<ol type="1">
+<li>Remove folder and old code inst/example_scripts/*.R<br>
+</li>
+<li>Remove old_data/*.rda (copies of orginal data)</li>
+<li>Remove test.R,</li>
+<li>PR</li>
+</ol>
+<p>As initial run through: 1. Do this for example_qs.rda ONLY 2. Pause for review/discuss. 3. Then to for all remaining *.rda files</p>
+<p>How to document this?</p>
+<p>**</p>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

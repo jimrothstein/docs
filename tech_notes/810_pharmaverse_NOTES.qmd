@@ -1,32 +1,30 @@
-### STOP ###
-(13 DEC 2024)
-This org file,  use ~/code/docs/tech_notes/810_pharmaverse_NOTES.qmd
-### STOP ###
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+QMD file
 
-* My Notes
+# My Notes
 
-** intro notes
+## intro notes
 
 (define-key evil-normal-state-map (kbd "<tab>") 'evil-toggle-fold)
 
 S-<TAB> cycles
 C-ENTER new line, at same level
 
-** Tools
+## Tools
 
-*Package:  Use these:*
+For Package:  Use these:
 
-styler::style_pkg() 
-
-devtools::lint()   # package 
-
+styler::style_pkg()   
+devtools::lint()   # package   
 devtools::test_coverage()   # entire package 
-
 devtools::spell_check(use_wordlist = TRUE) # package 
-
 spelling::update_wordlist(pkg=".") # runs spell AND asks to update WORDLIST  
 
-*File:  Use these:*
+For File:  Use these:
 
 active_fie =  rstudioapi::getSourceEditorContext()$path 
 
@@ -43,14 +41,17 @@ spelling::update_wordlist(pkg=".") # runs spell and asks to update WORDLIST
 (see lintr package - many options to control nolint)
 https://lintr.r-lib.org/articles/lintr.html
 lintr::lint()
+
+```
 # nolint start
 ...
 # nolint end
+ ```
 
 
 
 
-** FAQ
+## FAQ
 
 *In tests, how to check correct error/warning is issued?*
 

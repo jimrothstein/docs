@@ -33,12 +33,14 @@ detach(mtcars) to remove from search list - compare to `with` -
 https://stat.ethz.ch/R-manual/R-devel/library/base/html/attach.html
 
 ``` r
+library(rlang)
 search()
 ```
 
-    [1] ".GlobalEnv"        "package:stats"     "package:graphics" 
-    [4] "package:grDevices" "package:utils"     "package:datasets" 
-    [7] "package:methods"   "Autoloads"         "package:base"     
+     [1] ".GlobalEnv"        "package:rlang"     "package:stats"    
+     [4] "package:graphics"  "package:grDevices" "package:utils"    
+     [7] "package:datasets"  "package:methods"   "Autoloads"        
+    [10] "package:base"     
 
 ``` r
 mtcars
@@ -79,21 +81,27 @@ mtcars
     Volvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2
 
 ``` r
-# hp   # object 'hp' not found
+tryCatch(hp,    # object 'hp' not found ,
+        error = function(e) print(" There is no hp in environent \n")
+)
+```
 
+    [1] " There is no hp in environent \n"
+
+``` r
 # add to search list
 ?attach
 attach(mtcars)
 search()
 ```
 
-     [1] ".GlobalEnv"        "mtcars"            "package:stats"    
-     [4] "package:graphics"  "package:grDevices" "package:utils"    
-     [7] "package:datasets"  "package:methods"   "Autoloads"        
-    [10] "package:base"     
+     [1] ".GlobalEnv"        "mtcars"            "package:rlang"    
+     [4] "package:stats"     "package:graphics"  "package:grDevices"
+     [7] "package:utils"     "package:datasets"  "package:methods"  
+    [10] "Autoloads"         "package:base"     
 
 ``` r
-hp  # no error
+hp  # now no error
 ```
 
      [1] 110 110  93 110 175 105 245  62  95 123 123 180 180 180 205 215 230  66  52
@@ -107,9 +115,10 @@ detach(mtcars)
 search()
 ```
 
-    [1] ".GlobalEnv"        "package:stats"     "package:graphics" 
-    [4] "package:grDevices" "package:utils"     "package:datasets" 
-    [7] "package:methods"   "Autoloads"         "package:base"     
+     [1] ".GlobalEnv"        "package:rlang"     "package:stats"    
+     [4] "package:graphics"  "package:grDevices" "package:utils"    
+     [7] "package:datasets"  "package:methods"   "Autoloads"        
+    [10] "package:base"     
 
 explain process: capture unevaluated code; manipulate it; later evaluate
 
@@ -150,6 +159,23 @@ cl
 ##  To evaluate a call.
     eval(cl)
 ## [1] 9
+
+call("f", 2+3)
+## f(5)
+# call("f", sin(x))
+call("f", sin(x <- pi/2))
+## f(1)
+# call("f", sin (x + y))
+
+
+# local leaves nothing inenviron after running
+local({
+a <- 10
+b <- 100
+f <- function(x,y) x + y
+call("f", list(a,b))
+})
+## f(list(10, 100))
 ```
 
 Like symbol, expression, call is typeof ‘language’.
@@ -188,6 +214,45 @@ access; use JIT compiler or interpeter
 
 **defuse** Synonym for capture unevaluated code, stop immediate
 evaluation,
+
+**eval()** Note: rlang::expr(x) quotes (or converts ) arg to expression
+
+``` r
+x = 2
+y = 10
+try ( 
+eval(x)
+)
+```
+
+    [1] 2
+
+``` r
+try(
+  {
+  eval(expr(x))
+  eval(expr(x + y))
+  eval(expr(x + y), list(x = 10, y=20))    # 
+  eval(expr(x + y), rlang::env(x = 10, y=20))  # new envir
+  # eval does not quote 1st argument
+  eval(print(x+1), rlang::env(x=2000))  # 3, not 2001
+  eval(expr(print(x + 1)), list(x=1000))  # 3
+  eval(print(x+1)) #3
+  }
+)
+```
+
+    [1] 3
+    [1] 1001
+    [1] 3
+
+    [1] 3
+
+``` r
+rlang::is_expression(rlang::expr(x)) #T
+```
+
+    [1] TRUE
 
 **Evaluation or execution environment** In R, a function runs in an
 environment specific to that function. Also referred to as frame or
@@ -236,6 +301,63 @@ Note: a `statement` is code that may do things (side effects) but does
 not return anything. Hadley defines expression as an “object that stores
 quoted code without evaluating it.” (tidyr cheat sheet) SEE evaluation.
 
+from **Mailund** (metaprogramming, Chapter 3) “Every statement you have
+in your programs is also an expression that evaluates to some value
+(which, of course, might be NULL). This includes control structures and
+function bodies. You can consider everything an expression; it’s just
+that some expressions involve evaluating several contained expressions
+for their side effects before returning the result of the last
+expression they evaluate. From a metaprogramming perspective, though,
+you are most interested in expressions you can get **your hands on and
+examine, modify, or evaluate within a program.**” Examples:
+
+``` r
+# expression examples:
+rlang::is_expression(quote(x)) #T
+```
+
+    [1] TRUE
+
+``` r
+rlang::is_expression(quote(1)) #T
+```
+
+    [1] TRUE
+
+``` r
+rlang::is_expression(quote(x <- 3 + y))   #T
+```
+
+    [1] TRUE
+
+``` r
+rlang::is_expression(quote(if (x  > z) print("yes")))   #T
+```
+
+    [1] TRUE
+
+``` r
+# body of function
+rlang::is_expression(body(f = function() x^y))   # T
+```
+
+    [1] TRUE
+
+``` r
+# manipulate expression:
+e= quote(x + y + z)  # x + y + z
+length(e)   # 3
+```
+
+    [1] 3
+
+``` r
+e[[3]]  <- quote(z + 3)
+e # x + y + (z + 3)
+```
+
+    x + y + (z + 3)
+
 **Expression v Language** R expressions based on list and can be broken
 down further. Often these are language pieces. Lanugage use pairlists.
 
@@ -246,10 +368,114 @@ function. Example: lapply(list(), mean)
 Environment, in R, is property of function, where it looks to find
 non-local variables.
 
-**Function, properties** formals(f) arguments in function defintion
-body(f) code environment(f) finds values of non-formal (non-local)
-variables where the function was created. **Higher Order Function**
-Function that takes another function as an argument and …
+**Function** - formals(f) returns formal arguments of function, with
+default values, but NO evaluation, NO look in environment. formals are
+actually pairlist. Can obtain/modify this pairlist. Formal arguments
+become promises in the evaluation environment.
+
+``` r
+w = 2
+f = function(x,y = 1, z = w + function() print("hi"))  x + y + z
+formals(f)
+```
+
+    $x
+
+
+    $y
+    [1] 1
+
+    $z
+    w + function() print("hi")
+
+``` r
+formals(f) |> class()   # pairlist
+```
+
+    [1] "pairlist"
+
+``` r
+# can obtain, modify formals
+formals(f)[[2]]
+```
+
+    [1] 1
+
+``` r
+formals(f)[[2]]
+```
+
+    [1] 1
+
+``` r
+formals(f)[[2]] <- quote(a) 
+f    # changed
+```
+
+    function (x, y = a, z = w + function() print("hi")) 
+    x + y + z
+
+- body(f) returns an expression, the R code to run, unevaluated, no
+  substitution
+
+``` r
+body(f)
+```
+
+    x + y + z
+
+``` r
+body(f) |> class()  # call
+```
+
+    [1] "call"
+
+``` r
+body(f) |> rlang::is_expression()   # T
+```
+
+    [1] TRUE
+
+- environment(f)
+
+``` r
+environment(f)
+```
+
+    <environment: R_GlobalEnv>
+
+``` r
+# attributes of function
+```
+
+Obtain attributes, even names and defualt values
+
+``` r
+attributes(formals(f))
+```
+
+    $names
+    [1] "x" "y" "z"
+
+``` r
+names(formals(f))
+```
+
+    [1] "x" "y" "z"
+
+``` r
+formals(f)[["y"]]   # a
+```
+
+    a
+
+code environment(f) finds values of non-formal (non-local) variables
+where the function was created.
+
+**Higher Order Function** Function that takes another function as an
+argument and …
+
+**inject** insert expression into AST?
 
 **immutable**
 
@@ -832,7 +1058,8 @@ Here are few points that might clarify where I am:
 - https://rpubs.com/lionel-/tidyeval-dplyr-recipes
 - {{}} \* https://www.tidyverse.org/blog/2019/06/rlang-0-4-0/
 - https://rpubs.com/lionel-/superstache Brodie Gaslam -
-  https://www.brodieg.com/2020/05/05/on-nse/
+  https://www.brodieg.com/2020/05/05/on-nse/ , Mailund - Metaprogramming
+  R Journal, Murdock R Language Definition
 
 ### Articles
 
@@ -933,17 +1160,25 @@ LISP & R
 
 Holiday Reading !??
 
-Many years ago, one of my freshman college roommates arrived speaking
-high praises for LISP.  
-For some of us, it takes a longer to catch on. I read through the “EVAL”
-chapter (Chapter 3) of Common LISP (
+Many years ago, one of my freshman college roommates walked in the door
+speaking high praises for LISP.  
+For some of us, it takes a longer to catch on. Over the weekend, I read
+through the “EVAL” chapter (Chapter 3) of Common LISP (
 https://www.cs.cmu.edu/~dst/LispBook/) (Tourteszky, Introduction to
-Common LISP - 1990). “So that’s what R is trying to do!” Seems that LISP
-is cleaner way to introduce the many list-like structures of R and how
-they built, passed, evaluated or otherwise manipulated.
+Common LISP - 1990).
 
-Then … this book will make more sense (before finally returning to
-Advanced R): Metaprogramming in R
+“So that’s what R is trying to do!”
+
+Seems that LISP is cleaner way to introduce the many list-like
+structures of R and how they built, passed, evaluated or otherwise
+manipulated.
+
+Then I read a chapter of this book and it too greatly helped with R.
+More light bulbs went on.
+
+Metaprogramming in R
 (https://www.amazon.com/exec/obidos/ASIN/1484228804/acmorg-20) by Thomas
 Mailund (also:
+
+More from Thomas Mailund:
 https://mailund.github.io/r-programmer-blog/2018/09/20/scoping-rules-and-nse/)
