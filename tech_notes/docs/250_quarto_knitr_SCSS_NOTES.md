@@ -182,6 +182,12 @@ These are same: `::::{.X}`
 
 and `::::{X}` where X is defined in CSS/SCSS -
 
+<div class="small">
+
+Is this .small?
+
+</div>
+
 BE SURE to use \_quarto.yml in base directory and this file should
 identify css or SCSS file.
 
