@@ -336,9 +336,19 @@ head(mtcars, n=2)
 This is small
 ```
 
+::: small
+Inside the colon blocks
+:::
+
 ```{.very_small}
 Very small
 ```
+
+::: very_small
+Inside colon blocks
+:::
+
+```{.
 
 
 ### Display code and chunk options
