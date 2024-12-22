@@ -451,6 +451,30 @@ identical(quote(x), quote(6))               ##  F
 (Scheme) does not look for bindings
 
 **quosure**
+
+expression is evaluated in given env
+```{r}
+# evaluates to 2
+new_quosure(expr(a + 1), env(a = 1)) |> eval_tidy()
+
+# 11
+new_quosure(expr(a + 1), env(a = 10)) |> eval_tidy()
+```
+
+However, teal::   qenv stores resulting env, after evala
+```{r}
+library(teal.code)
+teal.code::qenv() |> within({a <- 1; b <- a + 2}) |> get_env() |> as.list()
+
+#$a [1] 1
+
+#$b [1] 3
+```
+Please see **quo** as a tool for evaluation to better control **evaluation
+environment** whereas qenv more as a tool for reproducibility that
+**captures the outcome of evaluation**.  One is "before" and the other one
+is "after".
+
 REF: Advanced-R ~ 6.5
 Data structure with expression + environment.
 WHY?  With dot (...) often pass several of these
@@ -571,6 +595,20 @@ https://stackoverflow.com/questions/8846628/what-exactly-is-a-symbol-in-lisp-sch
 \* formals,x:    f = function(x= ... )\  formalArgs()
 \* local,a:       f = function() {a =10}\
 \* free, unbound, global, z:    f = function() (print(z))
+
+### within()
+Given an environ, evaluate expresson (also useful with datasets)
+```{r}
+a=100
+b=200
+z = with(globalenv(), expr = {z= a+b} )
+z
+
+z = with(mtcars, expr = {z = log(hp)})  # column only
+z = within(mtcars, expr = {z=log(hp)})  # entire dataset
+head(z)
+
+```
 
 ------------------------------------------------------------------------
 
