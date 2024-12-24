@@ -63,6 +63,7 @@ emacswiki: (look for newbie) https://www.emacswiki.org/
 daviwil:  emacs from scratch: videos + config
 https://github.com/daviwil/emacs-from-scratch/tree/8c302a79bf5700f6ef0279a3daeeb4123ae8bd59
 
+
 ## EVIL
 Read & re-read:  https://github.com/noctuid/evil-guide
 
@@ -75,6 +76,10 @@ Run lisp ?  or REPL:   open  ~/code/elisp_project/010_basic_elisp.el
 - practical: (REPL)  https://gigamonkeys.com/book/
 - gnu elisp https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html 
 - Toretzky Gentle Common Lisp http://www.cs.cmu.edu/~dst/LispBook/
+
+[SICPv2](https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/6515/sicp.zip/full-text/book/book-Z-H-1.html)
+[[https://www2.lib.uchicago.edu/keith/tcl-course/emacs-tutorial.html][emacs, with explanatons!]]
+
 
 
 

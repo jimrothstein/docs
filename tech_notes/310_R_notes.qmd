@@ -117,6 +117,13 @@ Calling environment refers to environment of the calling function. Also called
 parent environment. Not to be confused with a function environment. See example
 ??  The `calling function` is function actually making the call.
 f = function()g()  # f is calling function
+```{r calling}
+# x is evaluated in calling env (globalenv()) here), but value of x,y is not changed in that environment
+y=pi/2
+sin(x = y + .001)
+y
+x
+```
 
 **Currying** Takes a function, partially evaluates, and returns as new
 function. Example: f(x,y,z) evaluated at z=a, returns g(x,y) = f(x,y,a)

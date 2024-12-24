@@ -1,3 +1,11 @@
+
+####
+23 DEC 2024 - change to .qmd (standardize)
+
+#### Hardware
+23 DEC 2024 - wireless mouse, $10, bestbuy, M220 logitech, 18 month
+batter life, plain vanilla is just fine.
+
 folds:  use za or (define-key evil-normal-state-map (kbd "<tab>") 'evil-toggle-fold)
 need package for evil/folds
 - za open fold
