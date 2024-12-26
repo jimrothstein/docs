@@ -509,6 +509,28 @@ contains original code, plus comments and formatting.
 evaluation, captures the user's code and returns a call (ie unevaluated )
 Substitution is NOT eval.
 
+
+In globalenv, substitute returns symbol or call.
+```{r}
+x = 3
+substitute(x)
+is.symbol(substitute(x)) #T
+
+substitute(x+y)
+is.symbol(substitute(x+y)) #F
+is.call(substitute(x+y))   #T
+```
+
+But in a function, `substitute` captures unevaluated expression; use `deparse` for string representation.
+```{r}
+f = function(x) substitute(x)
+x = 3
+f(x+ y+z)   # x + y + z
+
+g = function(x) deparse(substitute(x))
+g(x + y + z)   # "x+y+z"
+```
+
 |   substitute returns the parse tree for the (unevaluated) expression expr, substituting any variables bound in env.
 
 **syntax** How code looks, is { in right place, a grammar.
@@ -754,8 +776,17 @@ code improves upon bquote.
     be composed.  Function factories can be useful, esp where variables can be
     'stored' in environment.   SEE BRUNO video.
 
-}
-
+### Shiny, ShinyLive, webR, webassembly
+	**webassembly** Code, assembler-like?, byte-code-like? with very compact binary format and has API **javascript** can natively(?) use; runs fast.  C, Rust et al can be compiled (with tools) to webassembly.  Why **JS** ?  JS easily talks to HTML widget, components ...
+	**webR::** package downloads installs R binaries for use in webassembly.
+	**ShinyLive** 4 pieces, shinylive assets (includes version of webR to Run R in browser, plus View()), R Shiny package; python version; quarto extension 
+	
+	Regular Shiny app can run in browser (no external server).  All the pieces R, Shiny app, Shiny server converted to webassembly or otherise hosted in browser and/or cache.
+	Read:   https://blog.djnavarro.net/posts/2023-04-09_webr/, 
+	It is not magic:  much parsing, grammar and generating JS modules:  
+	-  https://github.com/TravisYeah/lezer-r
+	-  https://lezer.codemirror.net/
+	-  For parsing R, see R Language Manuals, Ch 10 parsing.
 
 ### Shiny and DT
 - embed html, see !so 69471577
