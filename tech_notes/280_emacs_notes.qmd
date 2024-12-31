@@ -100,11 +100,6 @@ Create a footnote: [^1]
 ::: {.content-visible when-format="html"}
 :::
 
-	
-### leave (for future)
-```
-{{< include _future_work.qmd >}}
-```
 
 ***
 ::: {.content-visible when-format="html"}

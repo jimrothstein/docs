@@ -5,17 +5,22 @@
 KEEP as .qmd file
 -->
 
+```{r, setup, include=FALSE}
+knitr::opts_chunk$set(
+  comment = '', fig.width = 6, fig.height = 6, collapse = TRUE
+)
+```
+## TODO
+explain process:  capture unevaluated code; manipulate it; later evaluate
+
+-	defuse, substitution, quasiquotation, 
+-	injection (into unevaluated expression)
+-	defuse &  inject are opposites
+-	embrase {{}}, tells function must first evalute the unevaluated content inside {{}}
+-   one idea is to carry unevaluated code and envir to another function; for either maniputlation or evalution.
+
 
 ## Compare
-```{r}
-#| echo: true
-#| eval: false
-a=c(1,1,1)
-b=c(2,2,2)
-`+`(a,b)
-a+b
-sum(a+b)
-```   
 ```{r}
 #| echo: false
 #| eval: true
@@ -25,7 +30,6 @@ b=c(2,2,2)
 a+b
 sum(a+b)
 ```
-
 
 
 **AST**
@@ -49,34 +53,28 @@ tryCatch(hp,    # object 'hp' not found ,
 )
 
 # add to search list
-?attach
 attach(mtcars)
 search()
 hp  # now no error
-# remove 
+
+# remove from search list
 detach(mtcars)
 
 # remove package 
 search()
 ```
-explain process:  capture unevaluated code; manipulate it; later evaluate
-
--	defuse, substitution, quasiquotation, 
--	injection (into unevaluated expression)
--	defuse &  inject are opposites
--	embrase {{}}, tells function must first evalute the unevaluated content inside {{}}
 
 **bindings:**
 -   link between name (symbol) and an object
--   EX:   f (name) and the definition (function(x) {...})
+-   EX:   `f` as a symbol and `function definition` (function(x) {...})
 -   https://r-pkgs.org/dependencies-mindset-background.html#sec-dependencies-search
 
 **bquote**  SEE String Interpolation
 **Call** A call is an unevaluated function, together with arguments that are
 (Rmk:   .Call() is unrelated, calls C function)
 
-### create a call
--   See:  R-lang 6.5, call, sys.call v match.call
+**create a call**
+-   See:  R-lang 6.5, call, sys.call vs match.call
 
 ```{r calls}
 #| label: intro_call
@@ -814,7 +812,6 @@ All R, math, statistics  notes here.
 [substitute](https://stat.ethz.ch/R-manual/R-devel/RHOME/library/base/html/substitute.html)
 
 
-## {{< include _future_work.qmd >}}
 ## Environemnts, Namespacds
 -   conflicted package.
 

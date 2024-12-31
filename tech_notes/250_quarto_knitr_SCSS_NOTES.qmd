@@ -31,6 +31,12 @@ editor:
     wrap: 72
 ---
 
+```{r, setup, include=FALSE}
+knitr::opts_chunk$set(
+  comment = '', fig.width = 6, fig.height = 6, collapse = TRUE
+)
+```
+
 ## Preliminaries
 ::: callout
 KEEP as QUARTO .qmd file (to learn to decorate)
