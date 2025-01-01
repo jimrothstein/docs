@@ -226,13 +226,18 @@ $$\pi = \directlua{tex.sprint(math.pi)}$$
 *** revealjs slides with Quarto
 
 
-** make
-- Make:  seldom use; but I did collect many examples of zsh, ls + regex examples, zsh commands re:  disk, storage, files ..., R to create packages
-- Therefore, do not discard make_project directory
-- https://github.com/jimrothstein/make_project
-- https://github.com/mxenoph/cheat_sheets/blob/master/make_cheatsheet.pdf
+**make**
 
-** GIT commands   
+- Make:  seldom use; but I did collect many examples of zsh, ls + regex examples, zsh commands re:  disk, storage, files ..., R to create packages
+- tips:
+FILES=$(wildcard *.R) 
+SHELL := /bin/zsh 
+lots of useful zsh commands buried in make_project 
+- Therefore, **do not discard make_project directory** 
+- https://github.com/jimrothstein/make_project
+- CHEAT https://github.com/mxenoph/cheat_sheets/blob/master/make_cheatsheet.pdf
+
+### GIT commands   
 
 HEAD - can point to branch (tip) or a commit (detached HEAD). Commits are
 immutable. HEADS can move around.
