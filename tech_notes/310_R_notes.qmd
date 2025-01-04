@@ -681,7 +681,6 @@ res  <- substitute(x+a)
 res
 is.call(res)
 ```
-:::
 
 ##  Questions
 ```{r}
@@ -693,7 +692,6 @@ sum(is.na(starwars[, eval(col) ]) )
 sum(is.na(starwars[, col ]) )
 ```
 
-## {{< include _meta_questions.qmd >}}
 
 ####    K-nearest neighbors, K is given
 
@@ -815,7 +813,6 @@ All R, math, statistics  notes here.
 ## Environemnts, Namespacds
 -   conflicted package.
 
-#{{< include _references.qmd >}}
 ```
 
 ### parquet, database (r4ds Chapter 22)

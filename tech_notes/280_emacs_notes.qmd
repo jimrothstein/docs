@@ -2,44 +2,25 @@
 title: "280_emacs_notes.qmd "
 author: "JR"
 date: "5/22/2021"
-pdf-engine: lualatex
-format:
-  html:
-    toc: true
-    html-math-method: katex
-    theme: cosmo
-    code-link: true
-    code-overflow: wrap
-    fig-align: center
-    fig-cap-location: bottom
-    fig-responsive: true
-    embed-resources: true ## if standalone, all 1 file 
-    css: css.styles
-  pdf:
-    documentclass: krantz
-    keep-tex: true     ## each .tex from each .qmd file saved
-                       ## SEE https://rfordatascience.slack.com/archives/CV1AGK1LY/p1687365502978109 
-    include-in-header:
-      text: |
-        \usepackage{makeidx}
-        \makeindex
-    include-after-body:
-      text: |
-        \printindex
-    fig-align: center
-    fig-cap-location: bottom
-output-dir: docs            ## NO indent, also _quarto.yml for entier project
+output:  html_document
 editor_options: 
   chunk_output_type: console
-execute: 
-  error: true                   ## include errors in output
-  warning: true
-  collapse: true
-  standalone: true
 ---
+
+**vim** is a terminal program.
+**emacs** is a gui program;  can run in terminal but better to use **emacs --daemon**
 
 This document is about **emacs**, but written in quarto to practice quarto decorations
 SEE: https://protesilaos.com/codelog/2022-01-31-learning-emacs/
+
+::: callout-note
+Note:  
+
+i3 and emacs can conflict.    SEE: https://sqrtminusone.xyz/posts/2021-10-04-emacs-i3/ 
+emacs is a gui program;  no need to run it from terminal. (Can, but not best)
+vim is terminal program;  do need to run from terminal.
+:::
+
 
 ## HELP
 - help for variable
@@ -54,10 +35,12 @@ SEE: https://protesilaos.com/codelog/2022-01-31-learning-emacs/
 M-x apropos-documenation eval
 M-x describe-bindings
 M-x describe-mode
+
 ```{r}
 ```
 
 ## LEARNING
+tutorial (^h t) - shows in red when evil remapped an emacs key.
 emacswiki: (look for newbie) https://www.emacswiki.org/
 
 daviwil:  emacs from scratch: videos + config

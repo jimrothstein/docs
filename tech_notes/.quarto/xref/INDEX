@@ -1,57 +1,5 @@
 {
-  "300_tech_notes.qmd": {
-    "300_tech_notes.html": "3e726d7b"
-  },
-  "junk.qmd": {
-    "junk.html": "f7d8e874"
-  },
-  "310_R_notes.qmd": {
-    "310_R_notes.html": "ebb27aa6",
-    "310_R_notes.tex": "e6567801"
-  },
-  "400_rlang_proposal.md": {
-    "400_rlang_proposal.html": "3086fdfc"
-  },
-  "400_rlang_proposal.qmd": {
-    "400_rlang_proposal.html": "290b42df"
-  },
-  "JUNK.qmd": {
-    "JUNK.html": "52b3e7c8"
-  },
-  "250_quarto_snippets.qmd": {
-    "250_quarto_snippets.html": "6dcb0f5b"
-  },
-  "250_quarto_cheat.qmd": {
-    "250_quarto_cheat.html": "c8478ea2"
-  },
-  "TEST.qmd": {
-    "TEST.html": "c357edb8"
-  },
   "001_tech_reading.qmd": {
-    "001_tech_reading.html": "e77a1853"
-  },
-  "410_R_deeply_nested_lists.qmd": {
-    "410_R_deeply_nested_lists.html": "b91515eb"
-  },
-  "revealjs/410_R_deeply_nested_lists.qmd": {
-    "410_R_deeply_nested_lists.html": "621147c9"
-  },
-  "002_grep_examples.md": {
-    "002_grep_examples.html": "0f138145"
-  },
-  "001_grep_regex_P_examples.qmd": {
-    "001_grep_regex_P_examples.tex": "2eb3c7e8",
-    "001_grep_regex_P_examples.html": "618f45a6"
-  },
-  "oauth.md": {
-    "oauth.tex": "421715bd"
-  },
-  "250_quarto_knitr_CSS_cheat.qmd": {
-    "250_quarto_knitr_CSS_cheat.html": "dd2e6921"
-  },
-  "250_quarto_knitr_SCSS_NOTES.qmd": {
-    "250_quarto_knitr_SCSS_NOTES.html": "479933e3",
-    "250_quarto_knitr_SCSS_NOTES.md": "c045a460",
-    "250_quarto_knitr_SCSS_NOTES.epub": "e09c025f"
+    "out.html": "7f668460"
   }
 }
