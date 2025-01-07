@@ -1,4 +1,5 @@
 
+
 ---
 title: Current Prescriptions
 date: last-modified
@@ -6,11 +7,8 @@ date: last-modified
 # ~/.config/kickstart/skeleton/skeleton.qmd
 ---
 TAGS:  current_prescriptions
-```{r}
 
-```
-
-#### Current Prescriptions  ( 2024-02-09)
+#### Current Prescriptions  ( 2025-01-09)
 
 Prescription (as of \today):
 
@@ -22,9 +20,9 @@ Prescription (as of \today):
 - Flomax (Tamsulosin) - 0.4 mg
 - Norvasc (Amlodipine) - 10 mg
 - Lopid (Gemfibrozil) - 600 mg (x 1, not x 2 as prescribed)
+- Effexor (Venlafaxime) - 75 mg
 - Finasteride - 0 mg (was 5 mg)
 -	Zenpep ZERO
--	Effexor ZERO
 
 
 External
@@ -34,22 +32,23 @@ External
 - 0.05% Clobetasol Propionate (psoriasis arm, butt)
 - (NEW) 2-3 drops mineral oil - very infrequent
 
-OTC
+**OTC**
 
 - Psyllium (1 -2 Tbsp)
 - KAL Calcium Citrate 4 pills/d, total=1300 mg (Ca); NOTE: contains no vitamin D3 (hard to find)
 - D3 14,000 IU per week>
--	B vitamin - continue
+- B vitamin - continue
 
 ---
 
 
 
 ## Changes:  
+**2025**
+
 **2024**
 
-7FEB 2024
-
+**7FEB 2024**
 - Finesteride - NOW zero   (was 5 mg for several years)7FEB 2024
 * Mineral Oil - 2-3 drops in each ear;  now RARELY do so. (twice per year?)
 

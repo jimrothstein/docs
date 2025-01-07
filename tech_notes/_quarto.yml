@@ -1,1 +1,41 @@
-/home/jim/dotfiles/_quarto.yml
+project:
+  type: website
+  title: misc
+  output-dir: docs            ## NO indent, also _quarto.yml for entier project
+
+author: "jim"
+date: "12/20/2023"      # date started project
+# pdf-engine: lualatex
+# bibliography: references.bib
+
+#      - custom.scss
+execute:
+    error: true
+    warning: true
+    collapse: true
+    standalone: true
+    enabled: true    ##false: do not run chunks
+    cache: true     ## knitr caches R chunks
+
+format:
+  html:
+    theme:
+      - custom.scss
+    html-math-method: katex
+    code-fold: false
+    toc: true
+    toc_depth: 5
+    toc_float: true
+    number-sections: true
+    number-depth: 3   #book feature only?
+      #number-offset: 2
+    #toc_location: body
+    embed-resources:  true
+    code-block-bg: true
+    code-block-border-left: "#31BAE9"
+    indent: false
+    code-link: true             # hyperlink R functions
+#   pdf:
+#     documentclass: report
+#     margin-left: 30mm
+#     margin-right: 30mm

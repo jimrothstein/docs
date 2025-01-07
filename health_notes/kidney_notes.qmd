@@ -9,9 +9,6 @@
 - thiazide??
 - super low protein diet to delay dialysis?
 
-**\*\*\* DO NOT USE \*\*\***
-
-**SEE DOWNLOAD to .md**
 
 **\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\***
 
@@ -190,6 +187,11 @@ Reference https://www.physicsforums.com/threads/ph-citric-acid.164118/
 \-- CLAIM:   purpose of kidney Citrate  production is balance urine acidity.   If low urine pH (acid), citrate levels are maintained and kidney produces less.   If high urine pH (base), kidney will increase citrate production.  Urine pH usually slightly acidic (5.5-7.0; desired is 6.5-7.0) https://en.wikipedia.org/wiki/Urine\#pH
 
 **COLLAGEN \--** protein.   Tendons, bone-muscle, and Ligaments, bone-bone, are collagen.
+
+**Colonoscopy** - SEE **Large Intenstine**
+- Prep - subject to varation by doctor;  not a science (?)
+- PN vs PEG
+- I have 'extended colon'  - twists, turns ... harder to empty.
 
 **CREATININE** \- Waste product in blood, kidney should remove.   Urinary Creatinine excretion is relatively stable, day-to-day. \~8-20g/kg
 
@@ -406,8 +408,20 @@ Claim:   milk (12 g Lactose) but yogurt (9 g) can’t be.   Ice cream 3g.     I 
 * PROXIMAL \- first ⅔ of COLON  
 * DISTAL \- last ⅓ of COLON  
 * Cecum is beginning of COLON, rich in bacteria.   (Appendex attaches here)
+* A complete colonoscopy *includes* "cecal intubation"
 
-Over 99% of the bacteria in the [gut flora](https://en.wikipedia.org/wiki/Gut_flora) are [anaerobes](https://en.wikipedia.org/wiki/Anaerobe),[\[4\]](https://en.wikipedia.org/wiki/Cecum#cite_note-Guarner_and_Malagelada_2003b-4)[\[5\]](https://en.wikipedia.org/wiki/Cecum#cite_note-Sears-5)[\[6\]](https://en.wikipedia.org/wiki/Cecum#cite_note-University_of_Glasgow-6)[\[7\]](https://en.wikipedia.org/wiki/Cecum#cite_note-Beaugerie_L_and_Petit_JC-7)[\[8\]](https://en.wikipedia.org/wiki/Cecum#cite_note-Vedantam-8) but in the cecum, [aerobic bacteria](https://en.wikipedia.org/wiki/Aerobic_bacteria) reach high densities.[\[4\]](https://en.wikipedia.org/wiki/Cecum#cite_note-Guarner_and_Malagelada_2003b-4)
+Over 99% of the bacteria in the [gut flora](https://en.wikipedia.org/wiki/Gut_flora) 
+are [anaerobes](https://en.wikipedia.org/wiki/Anaerobe),
+
+(https://en.wikipedia.org/wiki/Cecum#cite_note-Guarner_and_Malagelada_2003b-4)
+(https://en.wikipedia.org/wiki/Cecum#cite_note-Sears-5)
+
+(https://en.wikipedia.org/wiki/Cecum#cite_note-University_of_Glasgow-6)
+
+[\[7\]](https://en.wikipedia.org/wiki/Cecum#cite_note-Beaugerie_L_and_Petit_JC-7)
+[\[8\]](https://en.wikipedia.org/wiki/Cecum#cite_note-Vedantam-8) but in the cecum, [aerobic bacteria](https://en.wikipedia.org/wiki/Aerobic_bacteria) reach high densities.
+
+[\[4\]](https://en.wikipedia.org/wiki/Cecum#cite_note-Guarner_and_Malagelada_2003b-4)
 
 “LEAKY GUT” (discredited) \- increased permeability of intenstine (beyond normal).   Due to illness? toxins?  In this theory, responsible for many illnesses (autism).
 
