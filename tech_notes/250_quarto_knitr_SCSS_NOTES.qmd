@@ -57,9 +57,6 @@ behavior. To customize an existing Bootstrap theme with your own set
 of variables and/or rules, just provide the base theme and then your
 custom theme file(s):"
 
-
-
-
 ```         
 PURPOSE: Collect misc stuff related to quarto and HTML
 
@@ -69,16 +66,15 @@ PURPOSE: Collect misc stuff related to quarto and HTML
 - HTML
 ```
 
-
 ## Pandoc only (cli) - pdf,  
-\footenotesize
+\footnotesize
 To render ascii document with small font (for printing):
 
 - in <file>, use ```  for verbatum
 - very top:   \footenotesize
 - pandoc -f  markdown -o out.pdf <file>
 - pandoc -f  markdown -V geometry:margin=2cm -o out.pdf <file>
-
+- quarto render <file> --to gfm --output <output_file.md>
 
 ## Pandoc only (cli) - html, embed :::small-font  (need SCSS)
 - need example, not tried yet
@@ -87,7 +83,6 @@ To render ascii document with small font (for printing):
 
 -   Visual Mode = menu driven, simplifies decorattion
 -   Renders automatically.
-
 
 ## Quarto -  basics
 
@@ -128,6 +123,8 @@ Need footnote one here: [^1]
 
 ***
 
+### Call out - examples:
+
 ::: {.content-visible when-format="html"}
 HTML  - Why suddenly two columns?
 :::
@@ -152,7 +149,7 @@ This is secret
 
 ## CSS vs SCSS
 
--   Include few examples with CSS in-line
+-   Include few examples with CSS in-line (SEE Bottom)
 -   But shift to external SCSS generally.
 -   Avoid external \*.css files
 
@@ -161,20 +158,11 @@ Quarto looks to \_quarto.yml in current dir, in parent ... This
 takes dominance over any scsc file in yaml in the .qmd file.
 
 
-
 ------------------------------------------------------------------------
 
 ### Quarto & CSS \| SCSS (see \_quarto.yml cosmo + custom.scss)
 
 (need more content)
-
-## CSS (mostly)
-
-### CSS in-line examples.
-
-::: myDiv
-PURPOSE: Collect of HTML and PDF inline commands to control output
-:::
 
 in YAML, use `date`, fails in YAML: `r format(Sys.time(), '%d %B %Y')`
 
@@ -199,6 +187,7 @@ An aside
 
 :::{#hello .greeting .message style="color: lime;"}
 Hello **world**!
+is this CSS or SCSS?
 :::
 
 
@@ -242,103 +231,6 @@ decorate that chunk
 
 ------------------------------------------------------------------------
 
-###  in-file, CSS examples
-
-<!--  Define inline CSS classes -->
-
-```{=html}
-<style>
-
-#title-block-header {
-  margin-block-end: 1rem;
-  position: relative;
-  margin-top: -1px;
-  height: 75px;
-}
-.quarto-title-banner {
-  margin-block-end: 1rem;
-  position: relative;
-  margin-top: -30px;
-  height: 85%;
-}
-.myDiv {
-  border: 5px outset red;
-  background-color: lightblue;
-  text-align: center;
-}
-
-.blackbox {
-  padding: 1em;
-  background: black;
-  color: white;
-  border: 2px solid orange;
-  border-radius: 10px;
-}
-
-.greybox {
-  padding: 1em;
-  background: grey;
-  color: white;
-  border: 2px solid orange;
-  border-radius: 10px;
-}
-
-.center {
-  text-align: center;
-}
-</style>
-```
-#
-
-### Quarto: In-line CSS Examples for HTML, PDF {style="color: lime"}
-
-<font size="1"> Very small </font>
-
-### Inline {style="color: black"}
-
-We can apply styles to a sentence or a word by creating spans using `[]`
-to surround the sentence or word that we want to style and use `{}` to
-define the style that we want to apply. For example,
-
-The color of this word is [red]{style="color: red;"}. And [this line has
-a yellow background]{style="background-color: yellow"}.
-
-------------------------------------------------------------------------
-------------------------------------------------------------------------
-
-### Create a CSS class (inline)
-
-```         
-create class "myColor" (red) inline | use in paragraph | and div block| 
-```
-
-```{=html}
-<style>
-
-.myColor {
-  color:red;
-  fontsize=1; 
-}
-</style>
-```
-Example 1
-<p class="myColor">
-myColor
-</p>
-
-Example 2
-
-::: myColor
-This is a Div defined by CSS, inline
-
-:::
-
-#### Header uses in-file CSS class {.myColor}
-
-```{r}
-#| label: mtcars
-head(mtcars, n=2)
-```
 
 ### SCSS examples (mostly)
 
@@ -491,4 +383,112 @@ SEE \~/docs/code_project/revealjs
 
 ```{r}
 knitr::knit_exit()
+```
+
+***
+<!--   CSS below this line -->
+## CSS here
+
+### CSS in-line examples.
+
+::: myDiv
+PURPOSE: Collect of HTML and PDF inline commands to control output
+:::
+
+###  in-file, CSS examples
+
+<!--  Define inline CSS classes -->
+
+```{=html}
+<style>
+
+#title-block-header {
+  margin-block-end: 1rem;
+  position: relative;
+  margin-top: -1px;
+  height: 75px;
+}
+.quarto-title-banner {
+  margin-block-end: 1rem;
+  position: relative;
+  margin-top: -30px;
+  height: 85%;
+}
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;
+  text-align: center;
+}
+
+.blackbox {
+  padding: 1em;
+  background: black;
+  color: white;
+  border: 2px solid orange;
+  border-radius: 10px;
+}
+
+.greybox {
+  padding: 1em;
+  background: grey;
+  color: white;
+  border: 2px solid orange;
+  border-radius: 10px;
+}
+
+.center {
+  text-align: center;
+}
+</style>
+```
+#
+
+### Quarto: In-line CSS Examples for HTML, PDF {style="color: lime"}
+
+<font size="1"> Very small </font>
+
+### Inline {style="color: black"}
+
+We can apply styles to a sentence or a word by creating spans using `[]`
+to surround the sentence or word that we want to style and use `{}` to
+define the style that we want to apply. For example,
+
+The color of this word is [red]{style="color: red;"}. And [this line has
+a yellow background]{style="background-color: yellow"}.
+
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+
+### Create a CSS class (inline)
+
+```         
+create class "myColor" (red) inline | use in paragraph | and div block| 
+```
+
+```{=html}
+<style>
+
+.myColor {
+  color:red;
+  fontsize=1; 
+}
+</style>
+```
+Example 1
+<p class="myColor">
+myColor
+</p>
+
+Example 2
+
+::: myColor
+This is a Div defined by CSS, inline
+
+:::
+
+#### Header uses in-file CSS class {.myColor}
+
+```{r}
+#| label: mtcars
+head(mtcars, n=2)
 ```

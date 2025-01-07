@@ -41,6 +41,7 @@ To render ascii document with small font (for printing):
 - very top:
 - pandoc -f markdown -o out.pdf <file>
 - pandoc -f markdown -V geometry:margin=2cm -o out.pdf <file>
+- quarto render <file> –to gfm –output \<output_file.md\>
 
 ## Pandoc only (cli) - html, embed :::small-font (need SCSS)
 
@@ -89,6 +90,8 @@ Need footnote one here: [^1]
 
 ------------------------------------------------------------------------
 
+### Call out - examples:
+
 > [!NOTE]
 >
 > A callout note
@@ -113,7 +116,7 @@ This is secret
 
 ## CSS vs SCSS
 
-- Include few examples with CSS in-line
+- Include few examples with CSS in-line (SEE Bottom)
 - But shift to external SCSS generally.
 - Avoid external \*.css files
 
@@ -126,16 +129,6 @@ takes dominance over any scsc file in yaml in the .qmd file.
 ### Quarto & CSS \| SCSS (see \_quarto.yml cosmo + custom.scss)
 
 (need more content)
-
-## CSS (mostly)
-
-### CSS in-line examples.
-
-<div class="myDiv">
-
-PURPOSE: Collect of HTML and PDF inline commands to control output
-
-</div>
 
 in YAML, use `date`, fails in YAML: 07 January 2025
 
@@ -162,7 +155,7 @@ An aside
 
 <div id="hello" class="greeting message" style="color: lime;">
 
-Hello **world**!
+Hello **world**! is this CSS or SCSS?
 
 </div>
 
@@ -208,99 +201,6 @@ Decorate?
 decorate that chunk
 
 ------------------------------------------------------------------------
-
-### in-file, CSS examples
-
-<!--  Define inline CSS classes -->
-
-<style>
-&#10;#title-block-header {
-  margin-block-end: 1rem;
-  position: relative;
-  margin-top: -1px;
-  height: 75px;
-}
-.quarto-title-banner {
-  margin-block-end: 1rem;
-  position: relative;
-  margin-top: -30px;
-  height: 85%;
-}
-.myDiv {
-  border: 5px outset red;
-  background-color: lightblue;
-  text-align: center;
-}
-&#10;.blackbox {
-  padding: 1em;
-  background: black;
-  color: white;
-  border: 2px solid orange;
-  border-radius: 10px;
-}
-&#10;.greybox {
-  padding: 1em;
-  background: grey;
-  color: white;
-  border: 2px solid orange;
-  border-radius: 10px;
-}
-&#10;.center {
-  text-align: center;
-}
-</style>
-
-# 
-
-### Quarto: In-line CSS Examples for HTML, PDF
-
-<font size="1"> Very small </font>
-
-### Inline
-
-We can apply styles to a sentence or a word by creating spans using `[]`
-to surround the sentence or word that we want to style and use `{}` to
-define the style that we want to apply. For example,
-
-The color of this word is <span style="color: red;">red</span>. And
-<span style="background-color: yellow">this line has a yellow
-background</span>.
-
-## ————————————————————————
-
-### Create a CSS class (inline)
-
-    create class "myColor" (red) inline | use in paragraph | and div block| 
-
-<style>
-&#10;.myColor {
-  color:red;
-  fontsize=1; 
-}
-</style>
-
-Example 1
-<p class="myColor">
-
-myColor
-</p>
-
-Example 2
-
-<div class="myColor">
-
-This is a Div defined by CSS, inline
-
-</div>
-
-#### Header uses in-file CSS class
-
-``` r
-head(mtcars, n=2)
-              mpg cyl disp  hp drat    wt  qsec vs am gear carb
-Mazda RX4      21   6  160 110  3.9 2.620 16.46  0  1    4    4
-Mazda RX4 Wag  21   6  160 110  3.9 2.875 17.02  0  1    4    4
-```
 
 ### SCSS examples (mostly)
 
@@ -360,6 +260,9 @@ Example of Bootstrap classes:
 
 ``` r
 mtcars[1:5, "mpg"]
+```
+
+``` bg-warning
 [1] 21.0 21.0 22.8 21.4 18.7
 ```
 
@@ -369,13 +272,14 @@ argument `drop = FALSE`. Now we use the chunk option
 
 ``` r
 mtcars[1:5, "mpg", drop = FALSE]
-                   mpg
-Mazda RX4         21.0
-Mazda RX4 Wag     21.0
-Datsun 710        22.8
-Hornet 4 Drive    21.4
-Hornet Sportabout 18.7
 ```
+
+                       mpg
+    Mazda RX4         21.0
+    Mazda RX4 Wag     21.0
+    Datsun 710        22.8
+    Hornet 4 Drive    21.4
+    Hornet Sportabout 18.7
 
 ------------------------------------------------------------------------
 
@@ -417,19 +321,21 @@ Annotate line 2
 
 ``` r
 mtcars[1:3, 1:2]
-               mpg cyl
-Mazda RX4     21.0   6
-Mazda RX4 Wag 21.0   6
-Datsun 710    22.8   4
 ```
+
+                   mpg cyl
+    Mazda RX4     21.0   6
+    Mazda RX4 Wag 21.0   6
+    Datsun 710    22.8   4
 
 ``` r
 mtcars[1:3, 1:2]
-               mpg cyl
-Mazda RX4     21.0   6
-Mazda RX4 Wag 21.0   6
-Datsun 710    22.8   4
 ```
+
+                   mpg cyl
+    Mazda RX4     21.0   6
+    Mazda RX4 Wag 21.0   6
+    Datsun 710    22.8   4
 
 ------------------------------------------------------------------------
 
