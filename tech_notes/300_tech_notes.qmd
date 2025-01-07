@@ -1045,14 +1045,13 @@ SSD is much better, but more expensive.
 - *macro* is code that runs at COMPILE time;  inserts compiled code sections.
   (Saves programmer from needing to write common code over and over.)
 
-vim:linebreak:nospell:nowrap:cul tw=78 fo=tqlnr foldcolumn=1 cc=+1
  
 *CAR NOTES*
 https://check-vin.org/
 
 my VIN:  1HGEM22911L031079
 ------------------------
----
+
 BLACK, Prius 5 - 4 door ,  all owners in family (?) Chicago
 car: https://corvallis.craigslist.org/cto/d/corvallis-2011-toyota-prius-4dr/7791577925.html
 carfax: https://www.autovhr.com/CFReports-ran/AutoVhr-CFreport_1728601520.html
@@ -1063,7 +1062,7 @@ car: https://portland.craigslist.org/wsc/cto/d/portland-upgraded-base-model-priu
 carfax: https://www.autovhr.com/CFReports-ran/AutoVhr-CFreport_1728671601.html
 
 waiting: Travis has receipt for last; and battery: 12V or hybrid 
----
+
 ------------------------  Jack
 JACK, 2012/preisC/111K/$8.9/JTDKDTB30C1023315  (*dealer offered him $7k trade-in*)
 Waiting:  his battery, recent records
