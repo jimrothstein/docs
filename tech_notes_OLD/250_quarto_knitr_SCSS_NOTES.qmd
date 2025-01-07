@@ -8,7 +8,7 @@ format:
     html:
         code-fold: true
         toc: true 
-        number-sections: false
+        number-sections: true 
         html-math-method: katex
 #        css: styles.css
         scss: custom.scss
@@ -43,7 +43,6 @@ KEEP as QUARTO .qmd file (to learn to decorate)
 RStudio also - easy to post completed quarto to Posit Cloud
 :::
 
-
 REF
 
 - Mimi - quarto, some CSS, SCSS (see her actual code):      https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/ \
@@ -51,12 +50,7 @@ REF
 - SASS R pkg:  https://cran.r-project.org/web/packages/sass/vignettes/sass.html \
 - Quarto Themes + modify with SCSS:   https://quarto.org/docs/output-formats/html-themes.html#basic-options \ 
 
-"Sass theme files can define both variables that globally set things
-like colors and fonts, as well as rules that define more fine grained
-behavior. To customize an existing Bootstrap theme with your own set
-of variables and/or rules, just provide the base theme and then your
-custom theme file(s):"
-
+"Sass theme files can define both variables that globally set things like colors and fonts, as well as rules that define more fine grained behavior. To customize an existing Bootstrap theme with your own set of variables and/or rules, just provide the base theme and then your custom theme file(s):
 
 
 
@@ -70,8 +64,7 @@ PURPOSE: Collect misc stuff related to quarto and HTML
 ```
 
 
-## Pandoc only (cli) - pdf,  
-\footenotesize
+## Pandoc only (cli) - pdf,  \footenotesize
 To render ascii document with small font (for printing):
 
 - in <file>, use ```  for verbatum
@@ -97,7 +90,7 @@ best to avoid direct HTML insertion, use tools:
 -   knitr:: can be useful functions:
     <https://cran.r-project.org/web/packages/knitr/knitr.pdf>
 
--   rmarkdown cookbook: <https://bookdown.org/yihui/rmarkdown-cookbook>
+-   rmarkdown cookbook: <https://bookdown.org/yihui/rmarkdown-cookbook/>
 
 -   markdown:: adds to rmarkdown: <link>
 
@@ -105,10 +98,16 @@ best to avoid direct HTML insertion, use tools:
 
 -   Pandoc's version of markdown: <link>
 
--   Bootstrap: predefined SEE getbootstrap.com css help-classes
+-   Bootstrap: predefined `class`
+    <https://getbootstrap.com/docs/3.4/css/#helper-classes>
+:::
 
 ### quarto examples
-SEE  namespace file
+- ~/code/try_things_here/envir/9009_namespace
+-   <https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans>
+-   More examples: \~/code/QUARTO/QUARTO/
+
+
 
 ### Run quarto (CLI) create project to create any quarto project, including slides with revealjs.
 
@@ -119,17 +118,13 @@ For revealjs, choose presentation when create document (in Rstudio)
 [underline text, where defined?]{.underline} 
 
 [text with border, defined?]{.border}
-
 ### Create a footnote:
 
 Need footnote one here: [^1]
 
 [^1]: This is footnote one.
 
-***
-
 ::: {.content-visible when-format="html"}
-HTML  - Why suddenly two columns?
 :::
 
 ::: callout-note
@@ -143,13 +138,11 @@ Date: Set programmatically?
 
 ::: aside
 keep a secret? USE {.hidden}
-:::
 
 ::: hidden
 This is secret
 :::
-
-
+:::
 ## CSS vs SCSS
 
 -   Include few examples with CSS in-line
@@ -227,11 +220,9 @@ HTTP and escaping: things like \< \> mean something (tags) ot HTML -
 Why? - so use \> \< & must be used in HTTP and avoid overlap with HTML.
 \> is called ESCAPED version of \> -
 
-NOTE: No documentation here 
+NOTE: No documentation here :::
 
-::: aside 
-SEE References 
-:::
+::: aside SEE References :
 
 Interactive? javascript widgets or **Shiny** Fiddle with code? use
 **WebR**
@@ -452,17 +443,15 @@ col = function(text, color){           # <1>
 
 ### Fancy Theorems
 
-```
-not working
-
 ::: column-margin
 We know from *the first fundamental theorem of calculus* that for $x$ in
 $[a, b]$:
 
 $$\frac{d}{dx}\left( \int_{a}^{x} f(u)\,du\right)=f(x).$$
-
 :::
-```
+
+
+------------------------------------------------------------------------
 
 
 ## R chunks with decorations
@@ -488,7 +477,3 @@ This does what?
 ## Revealjs
 
 SEE \~/docs/code_project/revealjs
-
-```{r}
-knitr::knit_exit()
-```
