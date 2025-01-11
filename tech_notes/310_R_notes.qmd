@@ -783,6 +783,8 @@ code improves upon bquote.
 	-  https://github.com/TravisYeah/lezer-r
 	-  https://lezer.codemirror.net/
 	-  For parsing R, see R Language Manuals, Ch 10 parsing.
+### Shiny - Reactive
+- observers register callback with reactive values objects (which passes to server, to monitor all the callbacks), best article: https://shiny.posit.co/r/articles/build/understanding-reactivity/
 
 ### Shiny and DT
 - embed html, see !so 69471577

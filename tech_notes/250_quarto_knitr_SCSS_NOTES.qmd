@@ -37,6 +37,13 @@ knitr::opts_chunk$set(
 )
 ```
 
+```r
+#| code-fold: true
+#| code-summmary: Show code.
+
+Show me
+```
+
 ## Preliminaries
 ::: callout
 KEEP as QUARTO .qmd file (to learn to decorate)
@@ -123,35 +130,52 @@ Need footnote one here: [^1]
 
 ***
 
+### Call out
+::: {.callout-note}
+This is .callout-note:  
+Note that there are five types of callouts, including:
+`note`, `warning`, `important`, `tip`, and `caution`.
+:::
+
+REF:  https://quarto.org/docs/authoring/callouts.html
+
+::: {.callout-tip}
+## Tip with Title
+
+This is an example of a callout with a title.
+:::
+
+::: {.callout-caution collapse="true"}
+### Expand To Learn About Collapse
+
+This is an example of a 'folded' caution callout that can be expanded by the user. You can use `collapse="true"` to collapse it by default or `collapse="false"` to make a collapsible callout that is expanded by default.
+:::
+
+***
+
 ### Call out - examples:
 
 ::: {.content-visible when-format="html"}
-HTML  - Why suddenly two columns?
+HTML  - a call out visible only when HTML.
 :::
 
-::: callout-note
-A callout note
-:::
 
 
 ::: aside
-Date: Set programmatically?
+1. An aside.  
 :::
 
 ::: aside
-keep a secret? USE {.hidden}
+2. Another aside; 
+3. contains a hidden keep a secret? USE {.hidden}
 :::
 
 ::: hidden
-This is secret
+4 This is secret
 :::
 
+***
 
-## CSS vs SCSS
-
--   Include few examples with CSS in-line (SEE Bottom)
--   But shift to external SCSS generally.
--   Avoid external \*.css files
 
 Quarto looks to \_quarto.yml in current dir, in parent ... This
 
@@ -162,27 +186,40 @@ takes dominance over any scsc file in yaml in the .qmd file.
 
 ### Quarto & CSS \| SCSS (see \_quarto.yml cosmo + custom.scss)
 
-(need more content)
+in YAML, I used  `date:  today`		  
+but in inline r `r format(Sys.time(), '%d %B %Y')`
 
-in YAML, use `date`, fails in YAML: `r format(Sys.time(), '%d %B %Y')`
-
+1 verbatim:
 ```         
-in chunks: - OLD: `{r style="xxx"; class=""} 
-- NEW`{r .name } where .name is defined in .CSS or .SCSS 
+in chunks: 
+- OLD way: `{r style="xxx"; class=""} 
+- NEW way: `{r .name } where .name is defined in .CSS or .SCSS 
 ```
+
+::: callout-note
+2nd way:
+
+in chunks: 
+- OLD way: `{r style="xxx"; class=""}  
+
+- NEW way: `{r .name } where .name is defined in .CSS or .SCSS
+
+:::
+
+
+***
 
 :::{.greybox}
 -   Div Examples, defined in prior CSS block as `greybox`
 :::
 
--   `div` means container
 
 ------------------------------------------------------------------------
 
 ### Custom Blocks (rmarkdown-9.6)
 
 ::: aside
-An aside
+(aside) Custom Blocks
 :::
 
 :::{#hello .greeting .message style="color: lime;"}
@@ -191,32 +228,41 @@ is this CSS or SCSS?
 :::
 
 
-`::: blocks` are called *fences* and complies to \<div ...\>
+- `div` means container
+- `::: blocks` are called *fences* and complies to \<div ...\>
 
 https://www.sitepoint.com/understanding-and-using-rem-units-in-css/
-.em - height of entire metal type block, not the character alone.
-.rem - size relative to the HTML root tag (~ 16 px)
 
+- .em - height of entire metal type block, not the character alone.
+- .rem - size relative to the HTML root tag (~ 16 px)
 
-These are same: `::::{.X}`
+***
 
-and `::::{X}` where X is defined in CSS/SCSS -
+These are same: `::::{.X}` and `::::{X}` where X is defined in CSS/SCSS.
 
+```
+This example ... renders as:
+:::{.small}
+Is this .small?
+:::
+```
+	
 :::{.small}
 Is this .small?
 :::
 
-BE SURE to use \_quarto.yml in base directory and this file should
-identify css or SCSS file.
+*** 
 
-Quarto uses `themes` from Bootstrap, in special file format (\* .... \*)
+-  BE SURE to use `_quarto.yml` in base directory. 
+
+- `_quarto.yml` identifies css or SCSS file.
+
+- Quarto uses `themes` from Bootstrap, in special file format (\* .... \*)
 OR, use existing SCSS
 
-HTTP and escaping: things like \< \> mean something (tags) ot HTML -
-Why? - so use \> \< & must be used in HTTP and avoid overlap with HTML.
-\> is called ESCAPED version of \> -
+- Because `<`, `>` have meaning in HTML, use `escaped` version `<&` in HTTP
+```
 
-NOTE: No documentation here 
 
 ::: aside 
 SEE References 
@@ -234,24 +280,25 @@ decorate that chunk
 
 ### SCSS examples (mostly)
 
+***
+
 ``` {.small}
-This is small
+1. This is small b/c I used `.small` 
 ```
 
 ::: small
-Inside the colon blocks
+2. But this time, `small` is inside the colon blocks
 :::
 
 ```{.very_small}
-Very small
+3. Very small
 ```
 
 ::: very_small
-Inside colon blocks
+4. Inside colon blocks
 :::
 
-```{.
-
+***
 
 ### Display code and chunk options
 
