@@ -6,5 +6,29 @@
     "250_quarto_knitr_SCSS_NOTES.html": "1933a51a",
     "quarto_NOTES.md": "b603059a",
     "250_knitr_SCSS_NOTES.md": "e0b22321"
+  },
+  "280_emacs_notes.qmd": {
+    "280_emacs_notes.html": "ab932f18"
+  },
+  "810_pharmaverse_NOTES.qmd": {
+    "810_pharmaverse_NOTES.html": "19049e9f"
+  },
+  "001_grep_regex_P_examples.qmd": {
+    "001_grep_regex_P_examples.html": "c923ac03"
+  },
+  "2021_ZSH_ZZAPPERS_CHEAT.qmd": {
+    "2021_ZSH_ZZAPPERS_CHEAT.html": "59e91362"
+  },
+  "002_grep_examples.qmd": {
+    "002_grep_examples.html": "a30dadd4"
+  },
+  "300_tech_notes.qmd": {
+    "300_tech_notes.html": "35fb3408"
+  },
+  "310_R_notes.qmd": {
+    "310_R_notes.html": "6fe8ac66"
+  },
+  "500_ML_Notes.qmd": {
+    "500_ML_Notes.html": "80dcbcf5"
   }
 }

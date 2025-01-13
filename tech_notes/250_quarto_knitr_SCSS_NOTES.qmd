@@ -37,9 +37,72 @@ knitr::opts_chunk$set(
 )
 ```
 
+*this is italics*
 
-Note:  use of `class-source` and `class-output`, define .custombox_*  in SCSS
-class-source not working.
+<u>this is underline</u>
+
+::: {.underline}
+this is also underlined, using definition in SCSS
+:::
+
+## Preliminaries
+
+::: callout
+KEEP as QUARTO .qmd file (to learn to decorate) RStudio also - easy to
+post completed quarto to Posit Cloud
+:::
+
+### REF
+
+::: {.callout-tip collapse="true" title="References, click to expand"}
+-   Mimi - quarto, some CSS, SCSS (see her actual code):
+    https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/\
+-   Themes, SASS: https://quartoand.me/front-end\
+-   SASS R pkg:
+    https://cran.r-project.org/web/packages/sass/vignettes/sass.html\
+-   Quarto Themes + modify with SCSS:
+    https://quarto.org/docs/output-formats/html-themes.html#basic-options
+     
+:::
+
+"Sass theme files can define both variables that globally set things
+like colors and fonts, as well as rules that define more fine grained
+behavior. To customize an existing Bootstrap theme with your own set of
+variables and/or rules, just provide the base theme and then your custom
+theme file(s):"
+
+```         
+PURPOSE: Collect misc stuff related to quarto and HTML
+
+- quarto 
+- css, SCSS
+- revealjs   (SEE:  examples in code_publish)
+- HTML
+```
+
+### Misc quarto tips
+
+-   Quarto looks to \_quarto.yml in current dir, then in parent dir.
+-   This takes dominance over any scsc file in yaml in the .qmd file.
+    (check !!)
+-   `div` means container
+-   `::: blocks` are called *fences* and complies to \<div ...\>
+
+https://www.sitepoint.com/understanding-and-using-rem-units-in-css/
+
+-   .em - height of entire metal type block, not the character alone.
+-   .rem - size relative to the HTML root tag (\~ 16 px)
+
+------------------------------------------------------------------------
+
+These are same: `::::{.X}` and `::::{X}` where X is defined in CSS/SCSS.
+<!-- end of preliminaries -->
+
+### Output chunks
+
+Note: use of `class-source` and `class-output`, define .custombox\_\* in
+SCSS class-source not working.
+
 ```{r}
 #| class-source: custombox_white
 #| class-output: custombox_yellow
@@ -61,66 +124,39 @@ x=1
 y = x +2
 y
 ```
-```r
+
+``` r
 #| code-fold: true
 #| code-summmary: Show code.
 
 Show me
 ```
 
-## Preliminaries
-::: callout
-KEEP as QUARTO .qmd file (to learn to decorate)
-RStudio also - easy to post completed quarto to Posit Cloud
-:::
+## Pandoc only (cli) - pdf,
 
-
-### REF
-::: {.callout-tip collapse="true" title="References, click to expand" }
-
-- Mimi - quarto, some CSS, SCSS (see her actual code):      https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/ \
-- Themes, SASS:  https://quartoand.me/front-end \
-- SASS R pkg:  https://cran.r-project.org/web/packages/sass/vignettes/sass.html \
-- Quarto Themes + modify with SCSS:   https://quarto.org/docs/output-formats/html-themes.html#basic-options \ 
-:::
-
-"Sass theme files can define both variables that globally set things
-like colors and fonts, as well as rules that define more fine grained
-behavior. To customize an existing Bootstrap theme with your own set
-of variables and/or rules, just provide the base theme and then your
-custom theme file(s):"
-
-```         
-PURPOSE: Collect misc stuff related to quarto and HTML
-
-- quarto 
-- css, SCSS
-- revealjs   (SEE:  examples in code_publish)
-- HTML
-```
-
-## Pandoc only (cli) - pdf,  
 \footnotesize
+
 To render ascii document with small font (for printing):
 
-- in <file>, use ```  for verbatum
-- very top:   \footenotesize
-- pandoc -f  markdown -o out.pdf <file>
-- pandoc -f  markdown -V geometry:margin=2cm -o out.pdf <file>
-- quarto render <file> --to gfm --output <output_file.md>
+-   in <file>, use \`\`\` for verbatum
+-   very top: \footenotesize
+-   pandoc -f markdown -o out.pdf <file>
+-   pandoc -f markdown -V geometry:margin=2cm -o out.pdf <file>
+-   quarto render <file> --to gfm --output \<output_file.md\>
 
-## Pandoc only (cli) - html, embed :::small-font  (need SCSS)
-- need example, not tried yet
+## Pandoc only (cli) - html, embed :::small-font (need SCSS)
+
+-   need example, not tried yet
 
 ### Why use Rstudio?
 
 -   Visual Mode = menu driven, simplifies decorattion
 -   Renders automatically.
 
-## Quarto -  basics
+## Quarto - basics
 
-markdown does NOT offer all tools (ex: change color)
-best to avoid direct HTML insertion, use tools:
+markdown does NOT offer all tools (ex: change color) best to avoid
+direct HTML insertion, use tools:
 
 -   knitr:: can be useful functions:
     <https://cran.r-project.org/web/packages/knitr/knitr.pdf>
@@ -136,7 +172,8 @@ best to avoid direct HTML insertion, use tools:
 -   Bootstrap: predefined SEE getbootstrap.com css help-classes
 
 ### quarto examples
-SEE  namespace file
+
+SEE namespace file
 
 ### Run quarto (CLI) create project to create any quarto project, including slides with revealjs.
 
@@ -144,7 +181,7 @@ For revealjs, choose presentation when create document (in Rstudio)
 
 ### Quarto - markup, callouts
 
-[underline text, where defined?]{.underline} 
+[underline text, where defined?]{.underline}
 
 [text with border, defined?]{.border}
 
@@ -154,42 +191,47 @@ Need footnote one here: [^1]
 
 [^1]: This is footnote one.
 
-***
+------------------------------------------------------------------------
 
 <!-- Call out examples -->
 
 ## Call out examples
 
-REF:  https://quarto.org/docs/authoring/callouts.html
+REF: https://quarto.org/docs/authoring/callouts.html
 
 ### .callout-note
-::: {.callout-note}
-This is .callout-note:  
-Note that there are five types of callouts, including:
-`note`, `warning`, `important`, `tip`, and `caution`.
+
+::: callout-note
+This is .callout-note:\
+Note that there are five types of callouts, including: `note`,
+`warning`, `important`, `tip`, and `caution`.
 :::
 
-
 ### .callout-tip
-::: {.callout-tip}
+
+::: callout-tip
 This is an example of a callout with a title.
 :::
 
 ### .callout-caution, collapse
+
 ::: {.callout-caution collapse="true"}
 Expand To Learn About Collapse
 
-This is an example of a 'folded' caution callout that can be expanded by the user. You can use `collapse="true"` to collapse it by default or `collapse="false"` to make a collapsible callout that is expanded by default.
+This is an example of a 'folded' caution callout that can be expanded by
+the user. You can use `collapse="true"` to collapse it by default or
+`collapse="false"` to make a collapsible callout that is expanded by
+default.
 :::
 
-### .content-visible when-format=html 
+### .content-visible when-format=html
 
 ::: {.content-visible when-format="html"}
-HTML  - a call out visible only when HTML.
+HTML - a call out visible only when HTML.
 :::
 
-
 <!-- extended callout-tip, collapse, to show source code -->
+
 ::: {.callout-tip collapse="true" title="Expand for Full Code Walkthrough"}
 ```{r, eval = FALSE}
 library(admiral)
@@ -224,36 +266,57 @@ derive_vars_crit_flag(
 <!-- END  of Callouts -->
 
 ### aside
+
 ::: aside
-1. An aside.  
+1.  An aside.\
 :::
 
 ::: aside
-2. Another aside; 
-3. contains a hidden keep a secret? USE {.hidden}
+2.  Another aside;
+3.  contains a hidden keep a secret? USE {.hidden}
 :::
 
 ### hidden
+
 ::: hidden
 4 This is secret
 :::
 
-***
+------------------------------------------------------------------------
 
+<!-- TWO columns -->
 
-Quarto looks to \_quarto.yml in current dir, in parent ... This
+### Two columns
 
-takes dominance over any scsc file in yaml in the .qmd file.
+:::::: columns
+::: {.column width="70%"}
+I would like to have text here
 
+Sentence becomes longer, it should automatically stay in their column
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="20%"}
+and here
+
+More text
+:::
+::::::
+
+------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 
 ### Quarto & CSS \| SCSS (see \_quarto.yml cosmo + custom.scss)
 
-in YAML, I used  `date:  today`		  
+in YAML, I used `date:  today`\
 but in inline r `r format(Sys.time(), '%d %B %Y')`
 
 1 verbatim:
+
 ```         
 in chunks: 
 - OLD way: `{r style="xxx"; class=""} 
@@ -263,24 +326,20 @@ in chunks:
 ::: callout-note
 2nd way:
 
-in chunks: 
-- OLD way: `{r style="xxx"; class=""}  
+in chunks: - OLD way: \`{r style="xxx"; class=""}
 
-- NEW way: `{r .name } where .name is defined in .CSS or .SCSS
-
+-   NEW way: \`{r .name } where .name is defined in .CSS or .SCSS
 :::
 
+------------------------------------------------------------------------
 
-***
-
-::: {.custombox_white}
+::: custombox_white
 Defined in SCSS (.custombox_white)
 :::
 
-:::{.greybox}
+::: greybox
 -   Div Examples, defined in prior CSS block as `greybox`
 :::
-
 
 ------------------------------------------------------------------------
 
@@ -290,46 +349,36 @@ Defined in SCSS (.custombox_white)
 (aside) Custom Blocks
 :::
 
-:::{#hello .greeting .message style="color: lime;"}
-Hello **world**!
-is this CSS or SCSS?
+::: {#hello .greeting .message style="color: lime;"}
+Hello **world**! is this CSS or SCSS?
 :::
 
+------------------------------------------------------------------------
 
-- `div` means container
-- `::: blocks` are called *fences* and complies to \<div ...\>
-
-https://www.sitepoint.com/understanding-and-using-rem-units-in-css/
-
-- .em - height of entire metal type block, not the character alone.
-- .rem - size relative to the HTML root tag (~ 16 px)
-
-***
-
-These are same: `::::{.X}` and `::::{X}` where X is defined in CSS/SCSS.
-
-```
+```         
 This example ... renders as:
 :::{.small}
 Is this .small?
 :::
 ```
-	
-:::{.small}
+
+::: small
 Is this .small?
 :::
 
-*** 
+------------------------------------------------------------------------
 
--  BE SURE to use `_quarto.yml` in base directory. 
+-   BE SURE to use `_quarto.yml` in base directory.
 
-- `_quarto.yml` identifies css or SCSS file.
+-   `_quarto.yml` identifies css or SCSS file.
 
-- Quarto uses `themes` from Bootstrap, in special file format (\* .... \*)
-OR, use existing SCSS
+-   Quarto uses `themes` from Bootstrap, in special file format (\* ....
+    \*) OR, use existing SCSS
 
-- Because `<`, `>` have meaning in HTML, use `escaped` version `<&` in HTTP
-```
+-   Because `<`, `>` have meaning in HTML, use `escaped` version `<&` in
+    HTTP
+
+```         
 
 
 ::: aside 
@@ -355,18 +404,18 @@ decorate that chunk
 ```
 
 ::: small
-2. But this time, `small` is inside the colon blocks
+2.  But this time, `small` is inside the colon blocks
 :::
 
-```{.very_small}
+``` very_small
 3. Very small
 ```
 
 ::: very_small
-4. Inside colon blocks
+4.  Inside colon blocks
 :::
 
-***
+------------------------------------------------------------------------
 
 ### Display code and chunk options
 
@@ -385,23 +434,19 @@ x+y
 TODO pdf - fix greater than equa pdf: toc: false include-in-header:
 text: \|
 
-```{=tex}
 \usepackage[top=.5in, bottom=.5in, left=.7in, right=.5in]{geometry}
         \usepackage{amsmath,amssymb,amstext,amsfonts}
         \usepackage{lipsum}
-```
 :::
 
 ::: {.content-visible when-format="pdf"}
 Will only appear in PDF. \renewcommand{\familydefault}{\sfdefault}
 
-```{=tex}
 \section{R Definitions \& Examples   (TERSE)}
 \section{Manuals}
-```
+
 \\section(Definitions}
 :::
-
 
 ------------------------------------------------------------------------
 
@@ -436,8 +481,6 @@ mtcars[1:5, "mpg", drop = FALSE]
 
 ------------------------------------------------------------------------
 
-
-
 ### Annotate code and create code to change font color:
 
 Use knitr to create <span> for red font, rmarkdown cookbook 5.1
@@ -459,7 +502,7 @@ col = function(text, color){           # <1>
 
 ### Fancy Theorems
 
-```
+```         
 not working
 
 ::: column-margin
@@ -470,7 +513,6 @@ $$\frac{d}{dx}\left( \int_{a}^{x} f(u)\,du\right)=f(x).$$
 
 :::
 ```
-
 
 ## R chunks with decorations
 
@@ -492,8 +534,8 @@ mtcars[1:3, 1:2]
 This does what?
 :::
 
-
 <!-- END -->
+
 ## Revealjs
 
 SEE \~/docs/code_project/revealjs
@@ -502,8 +544,10 @@ SEE \~/docs/code_project/revealjs
 knitr::knit_exit()
 ```
 
-***
+------------------------------------------------------------------------
+
 <!--   CSS below this line -->
+
 ## CSS here
 
 ### CSS in-line examples.
@@ -512,7 +556,7 @@ knitr::knit_exit()
 PURPOSE: Collect of HTML and PDF inline commands to control output
 :::
 
-###  in-file, CSS examples
+### in-file, CSS examples
 
 <!--  Define inline CSS classes -->
 
@@ -558,7 +602,8 @@ PURPOSE: Collect of HTML and PDF inline commands to control output
 }
 </style>
 ```
-#
+
+# 
 
 ### Quarto: In-line CSS Examples for HTML, PDF {style="color: lime"}
 
@@ -573,8 +618,7 @@ define the style that we want to apply. For example,
 The color of this word is [red]{style="color: red;"}. And [this line has
 a yellow background]{style="background-color: yellow"}.
 
-------------------------------------------------------------------------
-------------------------------------------------------------------------
+## ------------------------------------------------------------------------
 
 ### Create a CSS class (inline)
 
@@ -591,16 +635,19 @@ create class "myColor" (red) inline | use in paragraph | and div block|
 }
 </style>
 ```
+
 Example 1
+
 <p class="myColor">
+
 myColor
+
 </p>
 
 Example 2
 
 ::: myColor
 This is a Div defined by CSS, inline
-
 :::
 
 #### Header uses in-file CSS class {.myColor}
