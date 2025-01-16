@@ -1,6 +1,7 @@
-#+title:  math notes
-#+author: jim 
-#+date:   2020-10-27
+
+<!--   Leave as .qmd file -->
+
+### REF:   See: https://github.com/jimrothstein/code_publish/blob/master/MATH/0002_math_equations.qmd
 
 <2024-05-04 Sat>:
 \footnotesize
@@ -38,3 +39,53 @@ x=\sqrt{b}                              % even tables, figures, etc
 
 If $a^2=b$ and \( b=2 \), then the solution must be
 either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
+
+
+**entropy, information**  $H$(X) 
+
+Given a random variable X, what is amount of `suprise` when learning value of X?
+The definition:
+
+is chosen because it has `nice` properties that we expect of `information`.
+
+
+Example:
+
+How many binary questions need to ask?
+prob(X) =   a (1/2), b(1/4), c(1/4)
+
+$\mathbb{P}$ \
+
+$\mathcal{P}$
+
+
+$$
+\begin{equation}
+ \mathbb{P} 
+\end{equation}
+$$
+
+
+$$
+\begin{equation*}
+Prob(x) =
+\begin{cases}
+-x & \text{if } x < 0,\\
+0 & \text{if } x = 0,\\
+x & \text{if } x > 0.
+\end{cases}
+\end{equation*}
+$$
+
+
+$$
+\begin{equation*}
+\mathcal{P}(X) =
+\begin{cases}
+a & \frac {1}{2},  \\
+a & \text{if } x < 0,\\
+b & \text{if } x = 0,\\
+c & \text{if } x > 0.
+\end{cases}
+\end{equation*}
+$$
