@@ -4776,7 +4776,9 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#git-commands" id="toc-git-commands" class="nav-link active" data-scroll-target="#git-commands"><span class="header-section-number">0.0.1</span> GIT commands</a></li>
+  <li><a href="#github-actions" id="toc-github-actions" class="nav-link active" data-scroll-target="#github-actions"><span class="header-section-number">0.0.1</span> Github actions</a></li>
+  <li><a href="#ex-editor" id="toc-ex-editor" class="nav-link" data-scroll-target="#ex-editor"><span class="header-section-number">0.0.2</span> “ex” editor</a></li>
+  <li><a href="#git-commands" id="toc-git-commands" class="nav-link" data-scroll-target="#git-commands"><span class="header-section-number">0.0.3</span> GIT commands</a></li>
   <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"><span class="header-section-number">1</span> ———————–</a>
   <ul class="collapse">
   <li><a href="#document-regex-here" id="toc-document-regex-here" class="nav-link" data-scroll-target="#document-regex-here"><span class="header-section-number">1.1</span> DOCUMENT REGEX HERE</a></li>
@@ -4795,25 +4797,30 @@ window.Quarto = {
   <li><a href="#specific-to-vimneovim" id="toc-specific-to-vimneovim" class="nav-link" data-scroll-target="#specific-to-vimneovim"><span class="header-section-number">2.5.3</span> Specific to vim/neovim</a></li>
   <li><a href="#specific-to-r" id="toc-specific-to-r" class="nav-link" data-scroll-target="#specific-to-r"><span class="header-section-number">2.5.4</span> Specific to R</a></li>
   </ul></li>
-  </ul></li>
-  <li><a href="#script-header" id="toc-script-header" class="nav-link" data-scroll-target="#script-header"><span class="header-section-number">3</span> ———————— script header</a></li>
-  <li><a href="#diff--y-file1-file2-2-columns" id="toc-diff--y-file1-file2-2-columns" class="nav-link" data-scroll-target="#diff--y-file1-file2-2-columns"><span class="header-section-number">4</span> ———————— diff -y file1 file2 (2 columns)</a></li>
-  <li><a href="#widgets" id="toc-widgets" class="nav-link" data-scroll-target="#widgets"><span class="header-section-number">5</span> ———————— widgets</a></li>
-  <li><a href="#bind-to-widget" id="toc-bind-to-widget" class="nav-link" data-scroll-target="#bind-to-widget"><span class="header-section-number">6</span> ———————— bind to widget</a></li>
-  <li><a href="#glob-vs-extended-glob-see-guide-5.9.7w" id="toc-glob-vs-extended-glob-see-guide-5.9.7w" class="nav-link" data-scroll-target="#glob-vs-extended-glob-see-guide-5.9.7w"><span class="header-section-number">7</span> ———————— glob vs extended-glob (SEE Guide 5.9.7):w</a></li>
-  <li><a href="#parameter-expansion" id="toc-parameter-expansion" class="nav-link" data-scroll-target="#parameter-expansion"><span class="header-section-number">8</span> ———————— parameter expansion</a></li>
-  <li><a href="#completion-use-zstyle" id="toc-completion-use-zstyle" class="nav-link" data-scroll-target="#completion-use-zstyle"><span class="header-section-number">9</span> ———————— completion, Use zstyle</a></li>
-  <li><a href="#printf" id="toc-printf" class="nav-link" data-scroll-target="#printf"><span class="header-section-number">10</span> ———————— printf</a>
+  <li><a href="#zsh-notes" id="toc-zsh-notes" class="nav-link" data-scroll-target="#zsh-notes"><span class="header-section-number">2.6</span> ZSH notes</a>
   <ul class="collapse">
-  <li><a href="#bindkey" id="toc-bindkey" class="nav-link" data-scroll-target="#bindkey"><span class="header-section-number">10.0.1</span> BINDKEY</a></li>
-  <li><a href="#finally-request-appropriate-query-sent-to" id="toc-finally-request-appropriate-query-sent-to" class="nav-link" data-scroll-target="#finally-request-appropriate-query-sent-to"><span class="header-section-number">10.0.2</span> Finally, Request: appropriate query sent to:</a></li>
-  <li><a href="#from-explorer" id="toc-from-explorer" class="nav-link" data-scroll-target="#from-explorer"><span class="header-section-number">10.0.3</span> From Explorer</a></li>
-  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3"><span class="header-section-number">10.0.4</span> </a></li>
-  <li><a href="#from-google-playground" id="toc-from-google-playground" class="nav-link" data-scroll-target="#from-google-playground"><span class="header-section-number">10.0.5</span> From Google Playground</a></li>
+  <li><a href="#script-header" id="toc-script-header" class="nav-link" data-scroll-target="#script-header"><span class="header-section-number">2.6.1</span> script header</a></li>
+  <li><a href="#diff--y-file1-file2-2-columns" id="toc-diff--y-file1-file2-2-columns" class="nav-link" data-scroll-target="#diff--y-file1-file2-2-columns"><span class="header-section-number">2.6.2</span> diff -y file1 file2 (2 columns)</a></li>
+  <li><a href="#widgets" id="toc-widgets" class="nav-link" data-scroll-target="#widgets"><span class="header-section-number">2.6.3</span> widgets</a></li>
+  <li><a href="#bind-to-widget" id="toc-bind-to-widget" class="nav-link" data-scroll-target="#bind-to-widget"><span class="header-section-number">2.6.4</span> bind to widget</a></li>
+  <li><a href="#glob-vs-extended-glob-see-guide-5.9.7w" id="toc-glob-vs-extended-glob-see-guide-5.9.7w" class="nav-link" data-scroll-target="#glob-vs-extended-glob-see-guide-5.9.7w"><span class="header-section-number">2.6.5</span> glob vs extended-glob (SEE Guide 5.9.7):w</a></li>
+  <li><a href="#parameter-expansion" id="toc-parameter-expansion" class="nav-link" data-scroll-target="#parameter-expansion"><span class="header-section-number">2.6.6</span> parameter expansion</a></li>
+  <li><a href="#zshunix-permissions" id="toc-zshunix-permissions" class="nav-link" data-scroll-target="#zshunix-permissions"><span class="header-section-number">2.6.7</span> zsh/unix permissions</a></li>
+  <li><a href="#completion-use-zstyle" id="toc-completion-use-zstyle" class="nav-link" data-scroll-target="#completion-use-zstyle"><span class="header-section-number">2.6.8</span> completion, Use zstyle</a></li>
+  <li><a href="#printf" id="toc-printf" class="nav-link" data-scroll-target="#printf"><span class="header-section-number">2.6.9</span> printf</a></li>
+  <li><a href="#sudo-vs-su-." id="toc-sudo-vs-su-." class="nav-link" data-scroll-target="#sudo-vs-su-."><span class="header-section-number">2.6.10</span> sudo vs su ….</a></li>
+  <li><a href="#glob" id="toc-glob" class="nav-link" data-scroll-target="#glob"><span class="header-section-number">2.6.11</span> GLOB</a></li>
+  <li><a href="#zle" id="toc-zle" class="nav-link" data-scroll-target="#zle"><span class="header-section-number">2.6.12</span> ZLE</a></li>
+  <li><a href="#bindkey" id="toc-bindkey" class="nav-link" data-scroll-target="#bindkey"><span class="header-section-number">2.6.13</span> BINDKEY</a></li>
+  <li><a href="#finally-request-appropriate-query-sent-to" id="toc-finally-request-appropriate-query-sent-to" class="nav-link" data-scroll-target="#finally-request-appropriate-query-sent-to"><span class="header-section-number">2.6.14</span> Finally, Request: appropriate query sent to:</a></li>
+  <li><a href="#from-explorer" id="toc-from-explorer" class="nav-link" data-scroll-target="#from-explorer"><span class="header-section-number">2.6.15</span> From Explorer</a></li>
+  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3"><span class="header-section-number">2.6.16</span> </a></li>
+  <li><a href="#from-google-playground" id="toc-from-google-playground" class="nav-link" data-scroll-target="#from-google-playground"><span class="header-section-number">2.6.17</span> From Google Playground</a></li>
   </ul></li>
-  <li><a href="#curl-youtube-api-google-api-oauth-2.0" id="toc-curl-youtube-api-google-api-oauth-2.0" class="nav-link" data-scroll-target="#curl-youtube-api-google-api-oauth-2.0"><span class="header-section-number">11</span> CURL | YOUTUBE API | GOOGLE API | OAUTH 2.0 |</a>
+  </ul></li>
+  <li><a href="#curl-youtube-api-google-api-oauth-2.0" id="toc-curl-youtube-api-google-api-oauth-2.0" class="nav-link" data-scroll-target="#curl-youtube-api-google-api-oauth-2.0"><span class="header-section-number">3</span> CURL | YOUTUBE API | GOOGLE API | OAUTH 2.0 |</a>
   <ul class="collapse">
-  <li><a href="#my-vin-1hgem22911l031079" id="toc-my-vin-1hgem22911l031079" class="nav-link" data-scroll-target="#my-vin-1hgem22911l031079"><span class="header-section-number">11.1</span> my VIN: 1HGEM22911L031079</a></li>
+  <li><a href="#my-vin-1hgem22911l031079" id="toc-my-vin-1hgem22911l031079" class="nav-link" data-scroll-target="#my-vin-1hgem22911l031079"><span class="header-section-number">3.1</span> my VIN: 1HGEM22911L031079</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -4871,10 +4878,42 @@ window.Quarto = {
 </ul>
 <p>&lt;2024-07-01 Mon&gt; - ex looks very useful! - another attempt with lintr, styler, … (did some reading) - SO(3) - not sure what I am asking; normal subgroups, symmetries?</p>
 <p>&lt;2024-06-29 Sat&gt; - got flycheck, usethis::use-tidy_style working; lintr now auto works. - M-: ess-style reports ‘Rstudio’ - NEED to do: - fix “_” - get styler to auto format upon file save. - do not understand: ess-r-mode; define-key; add-hook</p>
-<p>** github actions - do not guess, do not play: READ DOCS - render quarto (in gfm, github format, SEE <em>gh_actions_project/quarto, SEE main.yaml</em> - will render qmd to md file (github format) - do not soft link qmd files, actual file or copy must in project - of course, can render to md locally and merely push to github; - do not know branch and yaml the same (ie not both main…) ** Posit Connect Cloud (new) - works with Shiny; gets code and manifest (json, with all R dependencies) from github (works)</p>
+</section>
+<section id="github-actions" class="level3" data-number="0.0.1">
+<h3 data-number="0.0.1" class="anchored" data-anchor-id="github-actions"><span class="header-section-number">0.0.1</span> Github actions</h3>
+<ul>
+<li>do not guess, do not play: READ DOCS</li>
+<li>render quarto (in gfm, github format, SEE <em>gh_actions_project/quarto, SEE main.yaml</em>
+<ul>
+<li>will render qmd to md file (github format)</li>
+<li>do not soft link qmd files, actual file or copy must in project</li>
+<li>of course, can render to md locally and merely push to github;</li>
+<li>do not know branch and yaml the same (ie not both main…) ** Posit Connect Cloud (new)</li>
+</ul></li>
+<li>works with Shiny; gets code and manifest (json, with all R dependencies) from github (works)</li>
+</ul>
 <p>** 29-May-2024: Upgrade to R 4.4, Linux Mint 21.3 (Virginia)</p>
 <p>&lt;2024-09-25 Wed&gt;</p>
-<p>** “ex” editor - simple, vi-like editor (see https://www.geeksforgeeks.org/ex-command-in-linux-with-examples/) - :w , :wq - print : 1,3 or :1,3p :4 (print line 4) - delete : 1,2d - print all lines g /the/ p - : 3 s/this/that (line 3) - /he/ he, help, heading… - /&lt;he&gt;/ “he” only - /&lt;.he&gt;/ not “he”, but “she”, “the” will pass - : /&lt;a move to first line where “a” begins : /&gt;last$</p>
+</section>
+<section id="ex-editor" class="level3" data-number="0.0.2">
+<h3 data-number="0.0.2" class="anchored" data-anchor-id="ex-editor"><span class="header-section-number">0.0.2</span> “ex” editor</h3>
+<ul>
+<li>simple, vi-like editor (see https://www.geeksforgeeks.org/ex-command-in-linux-with-examples/)</li>
+<li>:w , :wq</li>
+<li>print : 1,3 or :1,3p :4 (print line 4)</li>
+<li>delete : 1,2d</li>
+<li>print all lines g /the/ p</li>
+<li>: 3 s/this/that (line 3)</li>
+<li>/he/ he, help, heading…</li>
+<li>/&lt;he&gt;/ “he” only</li>
+<li>/&lt;.he&gt;/ not “he”, but “she”, “the” will pass</li>
+<li><dl>
+<dt>: /&lt;a move to first line where “a” begins</dt>
+<dd>
+/&gt;last$
+</dd>
+</dl></li>
+</ul>
 <p>** PGP - install public key: <em>gpg –recv-keys XXX</em>, where XXX= 16 alphanumber - KEY SIGNING: (summary) I can create public-private keypair. If I ‘sign’ doc with private key, then anyone with my public key can READ and will know ONLY I could have encryted the file. - Encrypt with my PUBLIC KEY, then only someone with my PRIVATE KEy can read it. - ALL keys belong on Debian key ring. *** R - This is a nightmare. There are several discrete steps; Do one at time! - sketch: get public key; import; convert .asc to .gpg (if needed); cp .gpg to Debian’s ring - USE gpg; DO NOT USE apt-key - apt-secure - ONLY 2 line to run. Just do what Cran R says to do for Debian, key-ring: https://ftp.osuosl.org/pub/cran/. Then reboot, update apt. - gpg keys; Debian: see apt-secure, READ carefully, but it doeswork. - gpg –list-keys</p>
 <p>** i3, i3wm Videos: basic config: https://www.youtube.com/watch?v=88o2XuH3E08&amp;list=PLbcglKxZP5PMTWVe1KhZX3Jvo0xqk8h5I&amp;index=1</p>
 <p>** Changes to this document: - 05JUNE2024 - converting to emacs org (from quarto .qmd)</p>
@@ -4929,8 +4968,8 @@ Therefore, <strong>LuaTex</strong> added primitives, more open (can use tex or l
 <li>CHEAT https://github.com/mxenoph/cheat_sheets/blob/master/make_cheatsheet.pdf</li>
 </ul>
 </font></section><font>
-<section id="git-commands" class="level3" data-number="0.0.1">
-<h3 data-number="0.0.1" class="anchored" data-anchor-id="git-commands"><span class="header-section-number">0.0.1</span> GIT commands</h3>
+<section id="git-commands" class="level3" data-number="0.0.3">
+<h3 data-number="0.0.3" class="anchored" data-anchor-id="git-commands"><span class="header-section-number">0.0.3</span> GIT commands</h3>
 <p>HEAD - can point to branch (tip) or a commit (detached HEAD). Commits are immutable. HEADS can move around. - git merge –no-ff –no-commit main (no fastforward, <em>dry-run</em>)</p>
 <ul>
 <li><p>git restore –source master~2 path/file (2 commits back, give path to file)</p></li>
@@ -5088,19 +5127,20 @@ Rmk: [0-9]+ means repeat one or more of the prior <strong>Character class</stron
 - NOT an issue with GalliumOS (based on 18.04 ubuntu - so stuck here for
     now)</code></pre>
 <p>This is block with 3 back ticks AND vimdoc: boring!</p>
-<p>** ZSH notes</p>
+<!-- begin  ZSH -->
+</section>
+</section>
+</section>
+<section id="zsh-notes" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="zsh-notes"><span class="header-section-number">2.6</span> ZSH notes</h2>
 <p><em>ZSH</em> ZSH REF CARD: (start) https://www.bash2zsh.com/zsh_refcard/refcard.pdf SEE MANUAL: https://zsh.sourceforge.io/Doc/Release/ SEE ZSH GUIDE (2003, Stephenson) https://zsh.sourceforge.io/Guide/zshguide.html ZSH FAQ (2010) https://zsh.sourceforge.io/FAQ/</p>
 <p>~/dotfiles/.zshrc ~/dotfiles/.zshenv zsh -x *.sh # prints line then executes</p>
-</section>
-</section>
-</section>
-</section>
-<section id="script-header" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> ———————— script header</h1>
+<section id="script-header" class="level3" data-number="2.6.1">
+<h3 data-number="2.6.1" class="anchored" data-anchor-id="script-header"><span class="header-section-number">2.6.1</span> script header</h3>
 <p>#!/bin/zsh -xv # verbose</p>
 </section>
-<section id="diff--y-file1-file2-2-columns" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> ———————— diff -y file1 file2 (2 columns)</h1>
+<section id="diff--y-file1-file2-2-columns" class="level3" data-number="2.6.2">
+<h3 data-number="2.6.2" class="anchored" data-anchor-id="diff--y-file1-file2-2-columns"><span class="header-section-number">2.6.2</span> diff -y file1 file2 (2 columns)</h3>
 <ul>
 <li>SEE github, zsh_project</li>
 <li>arrays, SEE 008_array, ordered, unordered, append, typeset, unset, array + glob</li>
@@ -5110,8 +5150,8 @@ Rmk: [0-9]+ means repeat one or more of the prior <strong>Character class</stron
 <li>also: grep, ${var}, tee, (( string_to_numbers)), do..done</li>
 </ul>
 </section>
-<section id="widgets" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> ———————— widgets</h1>
+<section id="widgets" class="level3" data-number="2.6.3">
+<h3 data-number="2.6.3" class="anchored" data-anchor-id="widgets"><span class="header-section-number">2.6.3</span> widgets</h3>
 <ul>
 <li>software chunk, “beginning of line”, “kill-line”</li>
 <li>to invoke: user types <c-a>, <alt-b> &lt;CTRL-[-B&gt; (using vim notation)</alt-b></c-a></li>
@@ -5120,27 +5160,30 @@ Rmk: [0-9]+ means repeat one or more of the prior <strong>Character class</stron
 <li>‘^[’ = also <esc></esc></li>
 </ul>
 </section>
-<section id="bind-to-widget" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> ———————— bind to widget</h1>
+<section id="bind-to-widget" class="level3" data-number="2.6.4">
+<h3 data-number="2.6.4" class="anchored" data-anchor-id="bind-to-widget"><span class="header-section-number">2.6.4</span> bind to widget</h3>
 <ul>
 <li>bindkey ‘^k’ kill-line (binkey.shortcut.existing widget)</li>
 </ul>
 </section>
-<section id="glob-vs-extended-glob-see-guide-5.9.7w" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> ———————— glob vs extended-glob (SEE Guide 5.9.7):w</h1>
+<section id="glob-vs-extended-glob-see-guide-5.9.7w" class="level3" data-number="2.6.5">
+<h3 data-number="2.6.5" class="anchored" data-anchor-id="glob-vs-extended-glob-see-guide-5.9.7w"><span class="header-section-number">2.6.5</span> glob vs extended-glob (SEE Guide 5.9.7):w</h3>
 </section>
-<section id="parameter-expansion" class="level1" data-number="8">
-<h1 data-number="8"><span class="header-section-number">8</span> ———————— parameter expansion</h1>
+<section id="parameter-expansion" class="level3" data-number="2.6.6">
+<h3 data-number="2.6.6" class="anchored" data-anchor-id="parameter-expansion"><span class="header-section-number">2.6.6</span> parameter expansion</h3>
 <p>SEE 000_PE_examples.sh - ${var/old/new} 1 replace - ${var//old/new} all - ${f#<em>.} is x.y where f = file.x.y (remove left) - ${f#</em>.} is x.y where f = file.x.y (remove left) - ${f##*.} is y (greedy, remove all left)</p>
 <ul>
 <li>SEE FAQ73, https://mywiki.wooledge.org/ , GNU Bash Ref Manual 3.5.3</li>
 </ul>
+</section>
+<section id="zshunix-permissions" class="level3" data-number="2.6.7">
+<h3 data-number="2.6.7" class="anchored" data-anchor-id="zshunix-permissions"><span class="header-section-number">2.6.7</span> zsh/unix permissions</h3>
 <p>*** unix, zsh permissions u g o owner–in group–others</p>
 <p>r=4 w=2 x=1 chmod 700 rwx — — “public” 644 rw- r– r– “private” 600 rw- — —</p>
 <p>*** zsh commands in emacs (SEE: zsh_project)</p>
 </section>
-<section id="completion-use-zstyle" class="level1" data-number="9">
-<h1 data-number="9"><span class="header-section-number">9</span> ———————— completion, Use zstyle</h1>
+<section id="completion-use-zstyle" class="level3" data-number="2.6.8">
+<h3 data-number="2.6.8" class="anchored" data-anchor-id="completion-use-zstyle"><span class="header-section-number">2.6.8</span> completion, Use zstyle</h3>
 <p>man zshcompsys zstyle + 3rd party scripts - do MANY things (completion, modify settings, config VCS_INFO …) SEE: https://thevaluable.dev/zsh-completion-guide-examples/</p>
 <p><em>VCS_INFO</em> is a function, used to populate variables (prompt, for ex) <em>retrieved from vcs, ie git</em> SEE: https://arjanvandergaag.nl/blog/customize-zsh-prompt-with-vcs-info.html SEE: https://zsh.sourceforge.io/Doc/Release/User-Contributions.html#Version-Control-Information</p>
 USAGE: <em>zstyle</em> <pattern>
@@ -5151,14 +5194,15 @@ USAGE: <em>zstyle</em> <pattern>
 <p>General: :completion:<fun>:<complete>:<command>:<arguments>:<tag> - command (cd, rm, etc) - <tag> (could be files, users, options ??)</p>
 <p><em>precmd</em> is hook function, runs before ZSH prompt (SEE manual 9.3.1) SEE: https://zsh.sourceforge.io/Doc/Release/Functions.html#Special-Functions</p>
 </section>
-<section id="printf" class="level1" data-number="10">
-<h1 data-number="10"><span class="header-section-number">10</span> ———————— printf</h1>
+<section id="printf" class="level3" data-number="2.6.9">
+<h3 data-number="2.6.9"><span class="header-section-number">2.6.9</span> printf</h3>
 <ul>
 <li><p>string(%s), digit(%d); example: digit,pad with by 5 printf “%05d” ${x}</p></li>
 <li><p>R: see sprintf https://www.r-bloggers.com/2010/05/number-formatting/</p></li>
 </ul>
 <p>*** zle = zsh line editor/keymaps/widgets/</p>
-<p>*** misc zsh SEE Serge Gebhardt widgets correspond to commands, often with shortcut</p>
+<p>*** misc zsh</p>
+<p>SEE Serge Gebhardt widgets correspond to commands, often with shortcut</p>
 <p>Given a widget (ex: ‘’, ie esc b) bindkey ‘’ #returns backward-word; ie ESC-b, aka M-b goes back one word !<br></br>
 binddky ‘^b’ # returns backward-charac</p>
 <p>bindkey ‘’ # returns foward-word</p>
@@ -5168,7 +5212,10 @@ binddky ‘^b’ # returns backward-charac</p>
 <p>To see mapping: 1. cat <CR>; type key; <C-C> ends (try M-b) 2. <C-V> ; type key</p>
 <p>invoke widget: 1. <C-A> bind to shortcut 2. zle <widget> # to execut 3. sp widget <execute-named-command></p>
 <p>TERMCAP - obsolete</p>
-<p>sudo vs su …. {</p>
+</section>
+<section id="sudo-vs-su-." class="level3" data-number="2.6.10">
+<h3 data-number="2.6.10"><span class="header-section-number">2.6.10</span> sudo vs su ….</h3>
+<p>{</p>
 <pre><code>-   su jim  change to User 'jim'
 - sudo cmd 
     -   last ~ 15'  (temporary use of root privileges)
@@ -5184,6 +5231,7 @@ binddky ‘^b’ # returns backward-charac</p>
     subshell for scripts)</code></pre>
 <p>!askubuntu 376199 !askubuntu 1225041</p>
 <p>}</p>
+<!-- end ZSH -->
 <p>drive info</p>
 <p>{ # succinct, useful info lsblk –output NAME,UUID,PARTUUID }</p>
 <p>xev keyboard</p>
@@ -5198,32 +5246,39 @@ binddky ‘^b’ # returns backward-charac</p>
 -  terminal displays coding (^[a)
 -    SEE ROTHGAR</code></pre>
 <p>}</p>
-<p>*** more zsh</p>
+</section>
+<section id="glob" class="level3" data-number="2.6.11">
+<h3 data-number="2.6.11"><span class="header-section-number">2.6.11</span> GLOB</h3>
 <p>grep_vs_ls</p>
 <p><em>Grep</em> always finds words that match a pattern and returns file names of matches.</p>
-<p>ls (+ glob) finds filenames that match a pattern. Very different. (same in vim)</p>
+<p>ls (+ glob) <strong>finds filenames that match a pattern</strong>. Very different from grep. (same in vim)</p>
 <p><em>jim_GLOB_examples</em> Mostly of form ls or ll or print -l and **/* example: print -l ~/code/**/*.(R|Rmd) # any level, return all .R and .Rmd files</p>
-<p>See my zsh GLOG handwritten notes (till typed in here) ZLE = Zsh line editor | NOT GNU readline<br></br>
+<p>See my zsh GLOG handwritten notes (till typed in here)</p>
+</section>
+<section id="zle" class="level3" data-number="2.6.12">
+<h3 data-number="2.6.12"><span class="header-section-number">2.6.12</span> ZLE</h3>
+<p>ZLE = Zsh line editor | NOT GNU readline<br></br>
 <em>zle_widgets</em> (all commands)</p>
 <p>Output from zle -al (~403 cmds) <snip></p>
-<section id="bindkey" class="level3" data-number="10.0.1">
-<h3 data-number="10.0.1"><span class="header-section-number">10.0.1</span> BINDKEY</h3>
+</section>
+<section id="bindkey" class="level3" data-number="2.6.13">
+<h3 data-number="2.6.13"><span class="header-section-number">2.6.13</span> BINDKEY</h3>
 <p><em>bindkey</em> # results, all shortcuts</p>
 <p>(sample) “<sup>A”-”</sup>C” self-insert “^D” list-choices “<sup>E”-”</sup>F” self-insert “^G” list-expand “^H” vi-backward-delete-char “^I” expand-or-complete</p>
 <p>** Google, API, curl (1APR2022) Google’s example, with loop for uri_redirect https://accounts.google.com/o/oauth2/v2/auth? scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube.readonly& response_type=code& state=security_token%3D138r5719ru3e1%26url%3Dhttps%3A%2F%2Foauth2.example.com%2Ftoken& redirect_uri=http%3A//127.0.0.1%3A9004& client_id=client_id</p>
 <pre><code>-  Google's authorization server: https://accounts.google.com/o/oauth2/v2/auth</code></pre>
 </section>
-<section id="finally-request-appropriate-query-sent-to" class="level3" data-number="10.0.2">
-<h3 data-number="10.0.2"><span class="header-section-number">10.0.2</span> Finally, Request: appropriate query sent to:</h3>
+<section id="finally-request-appropriate-query-sent-to" class="level3" data-number="2.6.14">
+<h3 data-number="2.6.14"><span class="header-section-number">2.6.14</span> Finally, Request: appropriate query sent to:</h3>
 <p>GET https://www.googleapis.com/youtube/v3/commentThreads</p>
 </section>
-<section id="from-explorer" class="level3" data-number="10.0.3">
-<h3 data-number="10.0.3"><span class="header-section-number">10.0.3</span> From Explorer</h3>
+<section id="from-explorer" class="level3" data-number="2.6.15">
+<h3 data-number="2.6.15"><span class="header-section-number">2.6.15</span> From Explorer</h3>
 <p>GET https://youtube.googleapis.com/youtube/v3/playlists?part=snippet%2CcontentDetails&maxResults=5&mine=true&key=[YOUR_API_KEY] HTTP/1.1</p>
 <p>Authorization: Bearer [YOUR_ACCESS_TOKEN] Accept: application/json</p>
 </section>
-<section id="section-3" class="level3" data-number="10.0.4">
-<h3 data-number="10.0.4"><span class="header-section-number">10.0.4</span> </h3>
+<section id="section-3" class="level3" data-number="2.6.16">
+<h3 data-number="2.6.16"><span class="header-section-number">2.6.16</span> </h3>
 <p>same, but as Curl</p>
 <p>curl<br></br>
 ‘https://youtube.googleapis.com/youtube/v3/playlists?part=snippet%2CcontentDetails&maxResults=5&mine=true&key=[YOUR_API_KEY]’<br></br>
@@ -5231,13 +5286,14 @@ binddky ‘^b’ # returns backward-charac</p>
 –header ‘Accept: application/json’<br></br>
 –compressed</p>
 </section>
-<section id="from-google-playground" class="level3" data-number="10.0.5">
-<h3 data-number="10.0.5"><span class="header-section-number">10.0.5</span> From Google Playground</h3>
+<section id="from-google-playground" class="level3" data-number="2.6.17">
+<h3 data-number="2.6.17"><span class="header-section-number">2.6.17</span> From Google Playground</h3>
 <p>https://youtube.googleapis.com/youtube/v3/commentThreads?videoId=Mec9sw1cJk8&part=snippet,replies ###</p>
 </section>
 </section>
-<section id="curl-youtube-api-google-api-oauth-2.0" class="level1" data-number="11">
-<h1 data-number="11"><span class="header-section-number">11</span> CURL | YOUTUBE API | GOOGLE API | OAUTH 2.0 |</h1>
+</section>
+<section id="curl-youtube-api-google-api-oauth-2.0" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> CURL | YOUTUBE API | GOOGLE API | OAUTH 2.0 |</h1>
 <p>client = oauth_client(id= client_id, token_url = token_url, secret = client_secret, key = API_KEY, auth = “body”, # header or body</p>
 <pre><code>    name = "youtube_ONE_video_ALL_comments")</code></pre>
 <p>req <- request(“https://www.googleapis.com/youtube/v3/commentThreads?videoId=Mec9sw1cJk8&part=snippet,replies”) %>% req_oauth_auth_code(client = client, auth_url = auth_url, token_params=scope[[1]])</p>
@@ -5356,8 +5412,8 @@ vim:nospell</p>
 </ul>
 <p><em>CAR NOTES</em> https://check-vin.org/</p>
 </section>
-<section id="my-vin-1hgem22911l031079" class="level2" data-number="11.1">
-<h2 data-number="11.1"><span class="header-section-number">11.1</span> my VIN: 1HGEM22911L031079</h2>
+<section id="my-vin-1hgem22911l031079" class="level2" data-number="3.1">
+<h2 data-number="3.1"><span class="header-section-number">3.1</span> my VIN: 1HGEM22911L031079</h2>
 <p>BLACK, Prius 5 - 4 door , all owners in family (?) Chicago car: https://corvallis.craigslist.org/cto/d/corvallis-2011-toyota-prius-4dr/7791577925.html carfax: https://www.autovhr.com/CFReports-ran/AutoVhr-CFreport_1728601520.html -carfax clean no records, post-2018</p>
 <hr></hr>
 <p>Ingrid 2009/Prius Hatch 4D/112k/$9/(carfax: says $8.4) (JTDKB20U3 93503700) car: https://portland.craigslist.org/wsc/cto/d/portland-upgraded-base-model-prius-2009/7786557907.html carfax: https://www.autovhr.com/CFReports-ran/AutoVhr-CFreport_1728671601.html</p>
@@ -5796,4 +5852,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </body>
 
 </html>
-</style></pattern></section></font></main></div></body></html>
+</style></pattern></section></section></section></font></main></div></body></html>

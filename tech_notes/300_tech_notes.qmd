@@ -53,7 +53,7 @@ need package for evil/folds
 
 
 
-** github actions
+### Github actions
 - do not guess, do not play:   READ DOCS
 - render quarto (in gfm, github format, SEE  *gh_actions_project/quarto,  SEE main.yaml*
   - will render  qmd to md file (github format)
@@ -68,7 +68,7 @@ need package for evil/folds
 
 <2024-09-25 Wed>
 
-** "ex"  editor
+### "ex"  editor
 - simple, vi-like editor  (see https://www.geeksforgeeks.org/ex-command-in-linux-with-examples/)
 -  :w , :wq
 -  print    : 1,3    or :1,3p     :4 (print line 4)
@@ -533,24 +533,26 @@ u g o   (user group other)
 This is block with 3 back ticks AND vimdoc:  boring!
 
 
-** ZSH notes
+<!-- begin  ZSH -->
+
+## ZSH notes
 
 *ZSH*
 ZSH REF CARD: (start) https://www.bash2zsh.com/zsh_refcard/refcard.pdf
 SEE MANUAL: https://zsh.sourceforge.io/Doc/Release/
 SEE ZSH GUIDE (2003, Stephenson) https://zsh.sourceforge.io/Guide/zshguide.html
 ZSH FAQ (2010) https://zsh.sourceforge.io/FAQ/
+ZSH REF: Lots of simple GLOB examples here:
+http://reasoniamhere.com/2014/01/11/outrageously-useful-tips-to-master-your-z-shell/
 
 ~/dotfiles/.zshrc
 ~/dotfiles/.zshenv
 zsh -x  *.sh   # prints line then executes
 
-# ------------------------  script header
+### script header
 #!/bin/zsh  -xv # verbose
 
-# ------------------------  diff -y file1 file2 (2 columns)
-
-
+### diff -y file1 file2 (2 columns)
 - SEE github, zsh_project
 - arrays,  SEE 008_array, ordered, unordered, append, typeset, unset, array + glob
 - structures:   for, case ... see 032_
@@ -558,21 +560,28 @@ zsh -x  *.sh   # prints line then executes
 - prompt, ansi, echo $fg_bold[green']hi   SEE: 
 - also:  grep, ${var}, tee,  (( string_to_numbers)), do..done
 
-# ------------------------  widgets 
+### widgets 
 - software chunk, "beginning of line", "kill-line"
 - to invoke:  user types <C-A>, <ALT-B> <CTRL-[-B>  (using vim notation)
 - but notation:  '^a', '\eb' '^[b'
 - '\e' = <ESC>
 - '^[' = also <ESC>
 
-# ------------------------ bind to widget
+### bind to widget
 - bindkey '^k' kill-line   (binkey.shortcut.existing widget)
 
-# ------------------------  glob vs extended-glob  (SEE Guide 5.9.7):w
+### glob vs extended-glob  (SEE Guide 5.9.7):w
 
+- ll demo/**/*.txt
+- ls -l demo/**/*<1-10>.txt
+- ls -l demo/**/[a]*.txt  (begins with `a`)
+- ls -l demo/**/[^cC]*.txt  (do not begin with `c` or `C`)
+- print -l **/*(/)   # just dir (recurse)
+- print -l **/*(.)   # just files (recurse)
+- ls -ldh demo/**/*(DOL[1,6])  # 6 largest files
+- Lots of syntax to select JUST what you want!
 
-
-# ------------------------  parameter expansion
+### parameter expansion
 SEE 000_PE_examples.sh
 - ${var/old/new}  1 replace
 - ${var//old/new} all
@@ -582,6 +591,7 @@ SEE 000_PE_examples.sh
 
 - SEE FAQ73, https://mywiki.wooledge.org/ , GNU Bash Ref Manual 3.5.3
 
+### zsh/unix permissions
 
 *** unix, zsh permissions
 u      g         o
@@ -596,7 +606,7 @@ chmod 700         rwx --- ---
 
 *** zsh commands in emacs (SEE:  zsh_project)
 
-# ------------------------ completion, Use zstyle
+### completion, Use zstyle
 man zshcompsys
 zstyle + 3rd party scripts - do MANY things (completion, modify settings, config VCS_INFO ...)
 SEE:  https://thevaluable.dev/zsh-completion-guide-examples/
@@ -621,7 +631,7 @@ General:
 *precmd* is hook function, runs before ZSH prompt (SEE manual 9.3.1)
 SEE:  https://zsh.sourceforge.io/Doc/Release/Functions.html#Special-Functions 
 
-# ------------------------ printf
+### printf
 - string(%s), digit(%d); example: digit,pad with by 5 
 printf "%05d\n" ${x}
 
@@ -630,6 +640,7 @@ printf "%05d\n" ${x}
 *** zle = zsh line editor/keymaps/widgets/
 
 *** misc zsh
+
 SEE Serge Gebhardt
 widgets correspond to commands, often with shortcut
 
@@ -658,7 +669,7 @@ invoke widget:
 TERMCAP - obsolete
 
  
-sudo vs su ....
+### sudo vs su ....
 {
 
 	-	su jim  change to User 'jim'
@@ -681,6 +692,7 @@ sudo vs su ....
 
 }
 
+<!-- end ZSH -->
 
 \newpage
 
@@ -718,14 +730,14 @@ xxd
 	-	 SEE ROTHGAR
 }
 
-*** more zsh
+### GLOB
 
 grep_vs_ls
 
 *Grep* always finds words that match a pattern and returns file names of
 matches.
 
-ls (+ glob) finds filenames that match a pattern.  Very different.
+ls (+ glob) **finds filenames that match a pattern**.  Very different from grep.
 (same in vim)
 
 *jim_GLOB_examples*
@@ -734,6 +746,9 @@ example:   print -l ~/code/**/*.(R|Rmd)   # any level, return all .R and .Rmd
 files
 
 See my zsh GLOG handwritten notes (till typed in here)
+
+### ZLE
+
 ZLE	= Zsh line editor | NOT GNU readline\
 *zle_widgets* (all commands)
 
