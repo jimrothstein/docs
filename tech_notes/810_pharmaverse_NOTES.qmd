@@ -43,6 +43,14 @@ lintr::lint()
 # nolint end
  ```
 
+### Rhino
+Ref: good video https://www.youtube.com/watch?v=QmyilJr7jXs
+- framework, method to keep shiny apps organized and modular: by using
+  separate file/directory for config (.yml files); testing, logic
+  (code without shiny), view (ui), global
+- when needed, use by pieces or whole.
+- box container-like in R
+
 
 
 
