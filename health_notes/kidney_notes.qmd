@@ -8,6 +8,8 @@
 **Q for doctors**
 - thiazide??
 - super low protein diet to delay dialysis?
+- Claim:  Nephrologists **do not** recommend treatment PRE-dialysis?  Apparently, controversal, many skeptics.  Besides, govt pays for dialysis!
+
 
 
 **\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\***
@@ -501,6 +503,8 @@ Others say no clinical trials to support Mg supplements decrease risk  in otherw
 
 **OXALATE** (Ox--) forms \- Salt of Oxalic Acid, Ex: CaOx, MgOx;   Also Ester of Oxalic Acid.  Oxalic acid is very reactive H2C2O4, removes rust.  Plants, no kidneys,  use oxalate to store excess calcium from soil, water etc  as CaOx , esp. In older leaves..   Younger leaves hold the Oxalic acid form, which has higher bioavailability in humans.   **Oxalate 88 mg/1 mmoL   44 mg/f1 mEq**
 
+**Secondary Oxalate Nephropathy** - longer-term affects of excess oxalate in kidney; not well-studied; calcium deposits in kidney's tubules.
+
 **\-- OXALATE Absorption** \- Theory?  Absorption to blood depends on Ox solubility of foods.    Foods high in Ox may not have same bioavailability.  Once Ox absorbed 90% of it will appear in urine 24-36 hours later.
 
 \-- [OXALIC ACID](https://en.wikipedia.org/wiki/Oxalic_acid) (C2O4H2) dissociates into OX,  conjugation base( C2O4 \-2)  and H+.  (pKc=1.27)  or 2 H+ (pKa=4.27) Relatively strong acid (?); simplest diCarboxylic acid (wiki**: [https://en.wikipedia.org/wiki/Carboxylic\_acid](https://en.wikipedia.org/wiki/Carboxylic_acid))**     Known for transporting metals.   pKa for \-2 to 10 (weak acids) strong acids pka \<-2
@@ -558,7 +562,11 @@ Goal:  PCR < 1.3  (I was 1.5g/kd/d)
 
 **PDI (Percussion Diuresis Inversion)** Claim:    Especially after SWL good way to eliminate ‘sand’   “Hang upsidedown”    Inclinded plane on back (like situps) or use chair, 10-15’, back on floor, feet raised on chair.     Hand over head.   Caution may raise BP
 
-PHYSIOLOGICALLY \- how organ works, its function, chemical and physical processes
+**pancrease**
+- fecal fat: normal ~7 / gram (units?);  but ME:  44/grm (1st)  
+- elaste-1 enzyme ME: 29 (very LOW)
+
+**PHYSIOLOGICALLY** \- how organ works, its function, chemical and physical processes
 
 **POTASSIUM** \- Hypokalemia  (K+ too low);  Hyperkalemia (too high and needs to be monitored)
 
