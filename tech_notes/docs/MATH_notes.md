@@ -1,94 +1,68 @@
----
-title: "`r knitr::current_input()`"
-date: "`r paste('last updated', 
-    format(lubridate::now(), ' %d %B %Y'))`"
-output:   
-  html_document:  
-        code_folding: show
-        toc: true 
-        toc_depth: 2
-        toc_float: true
-  pdf_document:   
-    latex_engine: xelatex  
-    toc: true
-    toc_depth:  2   
-fontsize: 11pt   
-geometry: margin=0.5in,top=0.25in   
----
+# 400_MATH_notes.rmarkdown
+jim
+2025-01-19
 
 <!--   Leave as .qmd file -->
 
-### REF:   See: https://github.com/jimrothstein/code_publish/blob/master/MATH/0002_math_equations.qmd
+### REF: See: https://github.com/jimrothstein/code_publish/blob/master/MATH/0002_math_equations.qmd
 
-<2024-05-04 Sat>:
-\footnotesize
+\<2024-05-04 Sat\>:
 
-- vector means 'direction' and 'magnitude' (no coordinate system).
-  With this DEF, 2 vectors are the *same* if have same direction and
-  magnitude.  (Translation seems implicit; but we have no coordinate
+- vector means ‘direction’ and ‘magnitude’ (no coordinate system). With
+  this DEF, 2 vectors are the *same* if have same direction and
+  magnitude. (Translation seems implicit; but we have no coordinate
   system)
 
-*** Gamma Function
-- (intution) https://www.youtube.com/watch?v=Qjeswpm0cWY
-    - Consider 0!, 1!, 2! ... Plot;  What would pi!  .5!
-- In other words, find the function that fits all integers of x, but works for any x real.
+\*\*\* Gamma Function - (intution)
+https://www.youtube.com/watch?v=Qjeswpm0cWY - Consider 0!, 1!, 2! …
+Plot; What would pi! .5! - In other words, find the function that fits
+all integers of x, but works for any x real.
 
+\*\*\* Bayes - Video, Ox series:
+https://youtu.be/U1HbB0ATZ_A?si=ljknvvraM7Fn4hz3
 
-*** Bayes
-- Video, Ox series: https://youtu.be/U1HbB0ATZ_A?si=ljknvvraM7Fn4hz3
+\*\*\* Explain ( s^2 ) vs ( ^2 )
 
-*** Explain \( s^2 \) vs \( \hat{\sigma}^2 \)
+( s^2 ) refers to sample variance ( \_n(x-{x})^2 )
 
-\( s^2 \) refers to sample variance 
-\( \frac{1}{N}\sum_n(x-\bar{x})^2 \)
+( ^2 ) refers to population variance estimator
 
-\( \hat{\sigma}^2 \) refers to population variance estimator
+(s^2) is biased (toward values closer to mean). And if N=1, (s^2) we get
+0, hardly believable population variance. (The reason is subtle, when N
+is small odds are it will not capture enough of outliars. SEE LSR)
 
+\$ \_{k=1}^{n}x_k \$
 
-\(s^2)\ is biased (toward values closer to mean). And if N=1, \(s^2\) we get 0, hardly believable population variance.
-(The reason is subtle, when N is small odds are it will not capture enough of outliars.  SEE LSR)
+If $a^2=b$ and ( b=2 ), then the solution must be either
+$$ a=+\sqrt{2} $$ or \[ a=- \].
 
-$ \sum_{k=1}^{n}x_k $ 
-
-\begin{equation}                        % arbitrary environments,
-x=\sqrt{b}                              % even tables, figures, etc
-\end{equation}
-
-If $a^2=b$ and \( b=2 \), then the solution must be
-either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
-
-
-**entropy, information**  $H$(X) 
+**entropy, information** $H$(X)
 
 REF: https://archive.org/details/elementsofinform0000cove_l9p7
 
-Given a random variable X, what is amount of `suprise` when learning value of X?
-The definition:
+Given a random variable X, what is amount of `suprise` when learning
+value of X? The definition:
 
-is chosen because it has `nice` properties that we expect of `information`.
-
+is chosen because it has `nice` properties that we expect of
+`information`.
 
 $$
 \begin{equation}
  \mathbb{P} = - \
 \end{equation}
-$$
-Example:
+$$ Example:
 
-How many binary questions need to ask?
-prob(X) =   a (1/2), b(1/4), c(1/4)
+How many binary questions need to ask? prob(X) = a (1/2), b(1/4), c(1/4)
 
-$\mathbb{P}$ \
+$\mathbb{P}$  
 
 $\mathcal{P}$
-
 
 $$
 \begin{equation}
  \mathbb{P} 
 \end{equation}
 $$
-
 
 $$
 \begin{equation*}
@@ -100,7 +74,6 @@ x & \text{if } x > 0.
 \end{cases}
 \end{equation*}
 $$
-
 
 $$
 \begin{equation*}
@@ -114,40 +87,19 @@ c & \text{if } x > 0.
 \end{equation*}
 $$
 
-
-
-
 sums, regression
 
 ### Embed `modified` latex equations inside Rmd; compile with knitr
+
 ### Seems to work Great (as long as no latex packages needed)
+
 **SEE 0004** for adding dependencies to YAML.
 
-```{r setup, include=FALSE		}
-knitr::opts_chunk$set(echo = TRUE,
-                      comment = "      ##",
-                      error = TRUE,
-                      collapse = FALSE   ) # easier to read
-```
-
-
-```{r library, include=FALSE		}
-file  <- knitr::current_input() 
-``` 
-
-
-
-***
-
-```{r knit_exit(), include = FALSE  , eval=FALSE } 
-# knitr::knit_exit()
-```
-
+------------------------------------------------------------------------
 
 hello $\emph{world}$.
 
-
-###  Summations
+### Summations
 
 ### Without Indices
 
@@ -179,7 +131,6 @@ $$\mu_{\hat{p}_{1} - \hat{p}_{2}} = p_{1} - p_{2}$$
 
 $$\sigma_{\hat{p}_{1} - \hat{p}_{2}}^2 = \frac {p_{1}(1 - p_{1})}{n_{1}} + \frac {p_{2}(1 - p_{2})}{n_{2}}$$
 
-
 ### Pooled Sample Variance
 
 $$s_{p}^2 = \frac {(n_{1} - 1)s_{1}^2 + (n_{2} - 1)s_{2}^2}{n_{1} + n_{2} - 2}$$
@@ -192,7 +143,6 @@ $$\hat{p} = \frac {n_{1}\hat{p}_1 + n_{2}\hat{p}_{2}}{n_{1} + n_{2}}$$
 
 $$\chi^2 = \sum \frac {(O - E)^2}{E}$$
 
-
 ### Correlations
 
 $${SS}_{xx} = \sum (x - \bar{x})^2 = \sum x^2 - \frac {(\sum x)^2}{n}$$
@@ -200,7 +150,6 @@ $${SS}_{xx} = \sum (x - \bar{x})^2 = \sum x^2 - \frac {(\sum x)^2}{n}$$
 $${SS}_{xy} = \sum (x - \bar{x})(y - \bar{y}) = \sum xy - \frac {(\sum x)(\sum y)}{n}$$
 
 $$r = \frac {{SS}_{xy}}{\sqrt {{SS}_{xx}{SS}_{yy}}}$$
-
 
 ### Regression
 
@@ -214,14 +163,13 @@ $$var(y) = \sigma^2$$
 
 $$\hat{y} = a + bx$$
 
-where 
+where
 
 $$b = \frac {{SS}_{xy}}{{SS}_{xx}}$$
 
-and 
+and
 
 $$\bar{y} = a + b\bar{x}$$
-
 
 #### Residual Sum of Squares
 
@@ -239,7 +187,6 @@ for prediction:
 
 $$se(y - \hat{y}) = s_{e} \sqrt {1 + \frac {1}{n} + \frac {(x - \bar{x})^2}{{SS}_{xx}}}$$
 
-
 ### Variance
 
 $$SSTr = \frac {T_{1}^2}{n_{1}} + \frac {T_{2}^2}{n_{2}} + ... + \frac {T_{k}^2}{n_{k}} - \frac {T^2}{n}$$
@@ -250,14 +197,14 @@ $$SSE = SSTo - SSTr$$
 
 /newpage
 
-```{r plot_density, eval=FALSE  }
+``` r
 density_object <- density(mpg$hwy)
 pdf("~/Downloads/print_and_delete/out.pdf")
 plot(density_object)
 dev.off()
 ```
 
-```{r plot_png_example, eval=FALSE  }
+``` r
 filename  <- "~/Downloads/print_and_delete/out.png"
 png(filename = filename,
          width = 480, height = 480, units = "px", pointsize = 12)
