@@ -58,6 +58,8 @@ If $a^2=b$ and \( b=2 \), then the solution must be
 either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
 
 
+### Entropy
+
 **entropy, information**  $H$(X) 
 
 REF: https://archive.org/details/elementsofinform0000cove_l9p7
@@ -67,7 +69,15 @@ The definition:
 
 is chosen because it has `nice` properties that we expect of `information`.
 
+X is discrete random variable
+	try H, T  each prob = 1/2
 
+$$
+\begin{equation}
+  \mathcal{P(X)} = \sum {i=1}^n p(x)log(p(x))
+  \end{equation}
+  $$
+  
 $$
 \begin{equation}
  \mathbb{P} = - \
@@ -139,9 +149,6 @@ file  <- knitr::current_input()
 
 ***
 
-```{r knit_exit(), include = FALSE  , eval=FALSE } 
-# knitr::knit_exit()
-```
 
 
 hello $\emph{world}$.
@@ -248,7 +255,6 @@ $$SSTo = x_{1}^2 + x_{2}^2 + ... + x_{k}^2 - \frac {T^2}{n}$$
 
 $$SSE = SSTo - SSTr$$
 
-/newpage
 
 ```{r plot_density, eval=FALSE  }
 density_object <- density(mpg$hwy)
@@ -263,4 +269,8 @@ png(filename = filename,
          width = 480, height = 480, units = "px", pointsize = 12)
 plot(density_object)
 dev.off()
+```
+
+```{r knit_exit(), include = FALSE  , eval=FALSE } 
+# knitr::knit_exit()
 ```

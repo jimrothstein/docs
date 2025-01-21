@@ -1,8 +1,10 @@
 12/29/2024
 
+::: callout-note
 - **This is quarto file**
 - retrived this file from Google docs
 - could not find newer versions (this is from 2017??)
+:::
 
 
 **Q for doctors**
@@ -165,14 +167,24 @@ B**UTYRATE** \- short-chain fatty acid, produced by gut bacteria   CLAIM:  in la
 
 \--    **Urine Citrate \- Regulated by Kidney.**   To prevent Ca stones, risk is urine citrate dependant (not urine pH)   Higher citrate, lower calcium in urine, lower the risk.  ( But uric acid stones, the risk is pH dependent:  goal is \~pH=6.)   KIDNEY tries to balance URINE ACIDITY (explain) (normal urine pH=5.5-7.0, better is 6.5-7.0)  
 
-\--	**CITRAT**E \- Kidney also produces or absorb.   .  Per AUA, healthy urinary citrate \> 640 mg/day (population mean)   Debate:  Is it Citrate per day, or concentration?   pH role?   To know Citrate content in a fluid, , need to know pH and total amount of citric acid.  Do Not Believe Label  (Coe).  Diet 7-up (10 mEq/L) and Crystal Light Lemonade (21.7 mEq/L)... are good sources of CITRATE\!   1 KCitrate pill=10mEq
+\-- **CITRAT**E \- Kidney also produces or absorb.  .  Per AUA,
+healthy urinary citrate \> 640 mg/day (population mean) Debate: Is it
+Citrate per day, or concentration?  pH role?  To know Citrate content
+in a fluid, , need to know pH and total amount of citric acid.  Do Not
+Believe Label (Coe).  Diet 7-up (10 mEq/L) and Crystal Light Lemonade
+(21.7 mEq/L)... are good sources of CITRATE\!  1 KCitrate pill=10mEq
 
 \--	**CaCitrate** exists in 3 crystal forms (1 is rare)
 
 \--	**Avoid DIET drinks** to supplement Citrate.   Crystal Light Lemonade has 21.7 mEq Citrate/L (=2 KCitrate pills), Diet 7-Up \= 10 mEq/L  
-Reason:   Per NURSES STUDY, above age 40 GFR decreases \~ 1 mL/min per year, normal.    1 such DIET drink per day is no problem.    But those who drank 2 such DIET drinks per day, lost on average 3 mL/min per year.
+Reason: Per NURSES STUDY, above age 40 GFR decreases \~ 1 mL/min per
+year, normal.  1 such DIET drink per day is no problem.  But those who
+drank 2 such DIET drinks per day, lost on average 3 mL/min per year.
 
-\--     **Tamarind i**s excellent Citrate source, Tartaric Acid= sour taste,  HCA \= Citric \+ extra OH? (derivative of citric acid) , Citrate Lyase ([https://en.wikipedia.org/wiki/Tartaric\_acid](https://en.wikipedia.org/wiki/Tartaric_acid))
+\-- **Tamarind i**s excellent Citrate source, Tartaric Acid= sour
+taste, HCA \= Citric \+ extra OH? (derivative of citric acid) ,
+Citrate Lyase
+([https://en.wikipedia.org/wiki/Tartaric\_acid](https://en.wikipedia.org/wiki/Tartaric_acid))
 
 \--	**Lemon Juice**  in acidic solution is primarily citric acid, not in Citrate form (Coe)   At higher pH( 6.5), Citrate form dominates
 
@@ -186,13 +198,17 @@ Reference https://www.physicsforums.com/threads/ph-citric-acid.164118/
 
 **CITRATURIA** \--presence of citrate in urine.   I have HYPOCITRATURIA (def:\<320 mg/day ).  Stone-formers are told to keep 500-800 mg/day.
 
-\-- CLAIM:   purpose of kidney Citrate  production is balance urine acidity.   If low urine pH (acid), citrate levels are maintained and kidney produces less.   If high urine pH (base), kidney will increase citrate production.  Urine pH usually slightly acidic (5.5-7.0; desired is 6.5-7.0) https://en.wikipedia.org/wiki/Urine\#pH
+\-- CLAIM: purpose of kidney Citrate production is balance urine
+acidity.  If low urine pH (acid), citrate levels are maintained and
+kidney produces less.  If high urine pH (base), kidney will increase
+citrate production.  Urine pH usually slightly acidic (5.5-7.0;
+desired is 6.5-7.0) https://en.wikipedia.org/wiki/Urine\#pH
 
 **COLLAGEN \--** protein.   Tendons, bone-muscle, and Ligaments, bone-bone, are collagen.
 
 **Colonoscopy** - SEE **Large Intenstine**
 - Prep - subject to varation by doctor;  not a science (?)
-- PN vs PEG
+- PN vs PEG,  **new OST,  a sulfate-based capsule; not absorbed**
 - I have 'extended colon'  - twists, turns ... harder to empty.
 
 **CREATININE** \- Waste product in blood, kidney should remove.   Urinary Creatinine excretion is relatively stable, day-to-day. \~8-20g/kg
@@ -222,7 +238,12 @@ Inspection of stomach to 2nd part of 4 of duodenum, which itself is 1st of 3 par
 
 Normal: The esophagus, stomach, and duodenum should be smooth and of normal color.
 
-Sounds like looking for irritation, ulcers, anything other than smooth tissue.   This may include one of several issues from Crohn’s disease (an autoimmune response, one of Inflamatory Bowel Diseases) to   ….     Symptoms of IBD  (which I don’t have) can indicate one of several problems, which visual inspection can detrmine (no blood test, for example).
+Sounds like looking for irritation, ulcers, anything other than smooth
+tissue.  This may include one of several issues from Crohn’s disease
+(an autoimmune response, one of Inflamatory Bowel Diseases) to ….
+Symptoms of IBD (which I don’t have) can indicate one of several
+problems, which visual inspection can detrmine (no blood test, for
+example).
 
 **ENDOCRINOLOGY** \-  ([wiki)](https://en.wikipedia.org/wiki/Endocrinology) study of glands and their secretions, particularly the \*diseases\* related to
 
@@ -244,7 +265,14 @@ Sounds like looking for irritation, ulcers, anything other than smooth tissue.  
 
 \--Normal: fat is absorbed in small intestine, little reaches COLON.
 
-\--Abnormal:  Fat reaches COLON.   Since FAT tends to combine with Ca (why?), Ox will be free in colon for absorption.   Many possible reasons.    Hard water ([https://en.wikipedia.org/wiki/Hard\_water](https://en.wikipedia.org/wiki/Hard_water)) is rich in minerales like Mg, Ca.  Residue forms with Ca(‘goo’) when using hand soap (fatty acid).   If fat reaches large COLON, will react with Ca.     Leaving less Ca to bind to  free OX and increasing Ox  absorbed.
+\--Abnormal: Fat reaches COLON.  Since FAT tends to combine with Ca
+(why?), leaving Ox free in colon for absorption.  Many possible
+reasons.  Hard water
+([https://en.wikipedia.org/wiki/Hard\_water](https://en.wikipedia.org/wiki/Hard_water))
+is rich in minerales like Mg, Ca.  Residue forms with Ca(‘goo’) when
+using hand soap (fatty acid).  If fat reaches large COLON, will react
+with Ca.  Leaving less Ca to bind to free OX and increasing Ox
+absorbed.
 
 \-- Related (?)  Fatty Acid: Arachidonic Acid (20 chain) traps Ca+, Mg+ in intestine, leading to increased UrOx
 
@@ -258,7 +286,14 @@ Sounds like looking for irritation, ulcers, anything other than smooth tissue.  
 
  **\--  ENDOSPERM** \- starch cells
 
-\-- **RESISTIVE STARCH ([wiki](https://en.wikipedia.org/wiki/Resistant_starch))** Resistant to amylolytic degradation in cooked/processed foods.  Not digested by human gut; increasingly found useful to feed microbiome who produce host of beneficial effects to us, the host.    African diet (beans, grains) 3-4 x Chinese or Indian diet, which in turn are multiples of western diets.  Bacteria extract energy and nutrition from these carbohydrates via fermentation.
+\-- **RESISTIVE STARCH
+([wiki](https://en.wikipedia.org/wiki/Resistant_starch))** Resistant
+to amylolytic degradation in cooked/processed foods.  Not digested by
+human gut; increasingly found useful to feed microbiome who produce
+host of beneficial effects to us, the host.  African diet (beans,
+grains) 3-4 x Chinese or Indian diet, which in turn are multiples of
+western diets.  Bacteria extract energy and nutrition from these
+carbohydrates via fermentation.
 
 \-- **STARCH** \- glucose storage, branched molecule (amylose) or unbranched (amylopectin)
 
@@ -437,6 +472,8 @@ are [anaerobes](https://en.wikipedia.org/wiki/Anaerobe),
 
 1. Liver biopsy documenting **alanine-glyoxylate aminotransferase (AGT) activity below t**he normal reference range confirming PH type 1 OR,  
 2.  Liver biopsy documenting **glyoxylate reductase/hydroxypyruvate reductase (GR/HPR)** activity below the normal reference range confirming PH type 2
+Liver enzymes include **AST**, **ALT**, **Bilirubin**
+Pancreas enzymes include **amaylase**, **lipase**
 
 **LOW-OXALATE DIE**T (LOX) \- Variously mentioned as \<40 mg, \<50 mg, \<75 mg per day.
 
@@ -501,11 +538,39 @@ Others say no clinical trials to support Mg supplements decrease risk  in otherw
 
 **OSMOLES**:   Once dissolved, \# moles/L.    Example   1 mole NaCL  becomes 2 osmoles in water (both Na & Cl).    But 1 mole of glucose remains 1 osmole because it does not dissociate.
 
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Oxalate mg</th>
+            <th>mmol</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>44</td>
+            <td>1/2</td>
+        </tr>
+        <tr>
+            <td>88</td>
+            <td>1 mmol</td>
+        </tr>
+            <td>100</td>
+            <td>_mmol</td>
+        </tr>
+		<tr>
+            <td>196/td>
+            <td>2 mmol</td>
+        </tr>
+    </tbody>
+</table>
+
 **OXALATE** (Ox--) forms \- Salt of Oxalic Acid, Ex: CaOx, MgOx;   Also Ester of Oxalic Acid.  Oxalic acid is very reactive H2C2O4, removes rust.  Plants, no kidneys,  use oxalate to store excess calcium from soil, water etc  as CaOx , esp. In older leaves..   Younger leaves hold the Oxalic acid form, which has higher bioavailability in humans.   **Oxalate 88 mg/1 mmoL   44 mg/f1 mEq**
 
 **Secondary Oxalate Nephropathy** - longer-term affects of excess oxalate in kidney; not well-studied; calcium deposits in kidney's tubules.
 
 **\-- OXALATE Absorption** \- Theory?  Absorption to blood depends on Ox solubility of foods.    Foods high in Ox may not have same bioavailability.  Once Ox absorbed 90% of it will appear in urine 24-36 hours later.
+
+Note:  if colon mucosa is damaged, oxalate can cross.  This damage is too small to be detected in colonoscopy.
 
 \-- [OXALIC ACID](https://en.wikipedia.org/wiki/Oxalic_acid) (C2O4H2) dissociates into OX,  conjugation base( C2O4 \-2)  and H+.  (pKc=1.27)  or 2 H+ (pKa=4.27) Relatively strong acid (?); simplest diCarboxylic acid (wiki**: [https://en.wikipedia.org/wiki/Carboxylic\_acid](https://en.wikipedia.org/wiki/Carboxylic_acid))**     Known for transporting metals.   pKa for \-2 to 10 (weak acids) strong acids pka \<-2
 
@@ -635,6 +700,8 @@ Suble genetic differences characterize PH.   Check:
 Ex:  HCL, salts:  NaCL, KCl, CaCl
 
 Other SALT examples:   acid \+ base;  metal \+ acid (Ca \+ oxalic acid), others
+
+**SAPONIFication** Bile + Ca + Mg bind.   This leaves OX free.
 
 **SLC26 \-** family of proteins, transport in kidney; exchange Ox for sulfate|chloride
 

@@ -14,7 +14,7 @@ This document is about **emacs**, but written in quarto to practice quarto decor
 SEE: https://protesilaos.com/codelog/2022-01-31-learning-emacs/
 
 ::: callout-note
-Note:  
+Note: 
 
 i3 and emacs can conflict.    SEE: https://sqrtminusone.xyz/posts/2021-10-04-emacs-i3/ 
 emacs is a gui program;  no need to run it from terminal. (Can, but not best)

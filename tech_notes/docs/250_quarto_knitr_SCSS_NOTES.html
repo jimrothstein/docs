@@ -5,7 +5,7 @@
 <meta name="generator" content="quarto-1.6.39">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="author" content="JR">
-<meta name="dcterms.date" content="2025-01-11">
+<meta name="dcterms.date" content="2025-01-21">
 <title>250_quarto_cheat.qmd – misc</title>
 <style>
 code{white-space: pre-wrap;}
@@ -4779,6 +4779,7 @@ vertical-align: -.125em;
   <li><a href="#quarto-css-scss-see-_quarto.yml-cosmo-custom.scss" id="toc-quarto-css-scss-see-_quarto.yml-cosmo-custom.scss" class="nav-link" data-scroll-target="#quarto-css-scss-see-_quarto.yml-cosmo-custom.scss">Quarto &amp; CSS | SCSS (see _quarto.yml cosmo + custom.scss)</a></li>
   <li><a href="#custom-blocks-rmarkdown-9.6" id="toc-custom-blocks-rmarkdown-9.6" class="nav-link" data-scroll-target="#custom-blocks-rmarkdown-9.6">Custom Blocks (rmarkdown-9.6)</a></li>
   <li><a href="#display-code-and-chunk-options" id="toc-display-code-and-chunk-options" class="nav-link" data-scroll-target="#display-code-and-chunk-options">Display code and chunk options</a></li>
+  <li><a href="#table-with-scss" id="toc-table-with-scss" class="nav-link" data-scroll-target="#table-with-scss">table with scss</a></li>
   </ul>
 </li>
   
@@ -4830,7 +4831,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 11, 2025</p>
+      <p class="date">January 21, 2025</p>
     </div>
   </div>
   
@@ -4842,7 +4843,7 @@ vertical-align: -.125em;
 </header><p><em>this is italics</em></p>
 <p><u>this is underline</u></p>
 <div class="underline">
-<p>this is also underlined</p>
+<p>this is also underlined, using definition in SCSS</p>
 </div>
 <section id="preliminaries" class="level2"><h2 class="anchored" data-anchor-id="preliminaries">Preliminaries</h2>
 <div class="callout callout-style-simple callout-none no-icon">
@@ -5049,14 +5050,14 @@ Expand for Full Code Walkthrough
 <span>  <span class="st">&quot;ALT&quot;</span>,    <span class="fl">51</span></span>
 <span><span class="op">)</span></span>
 <span><span class="co"># Create a criterion flag with values &quot;Y&quot; and NA</span></span>
-<span><span class="fu">derive_vars_crit_flag</span><span class="op">(</span></span>
+<span><span class="fu"><a href="https://pharmaverse.github.io/admiral/reference/derive_vars_crit_flag.html">derive_vars_crit_flag</a></span><span class="op">(</span></span>
 <span>  <span class="va">adbds</span>,</span>
 <span>  condition <span class="op">=</span> <span class="va">AVAL</span> <span class="op">&gt;</span> <span class="fl">50</span>,</span>
 <span>  description <span class="op">=</span> <span class="st">&quot;Absolute value &gt; 50&quot;</span></span>
 <span><span class="op">)</span></span>
 <span><span class="co"># Create criterion flag with values &quot;Y&quot;, &quot;N&quot;, and NA and parameter dependent</span></span>
 <span><span class="co"># criterion description</span></span>
-<span><span class="fu">derive_vars_crit_flag</span><span class="op">(</span></span>
+<span><span class="fu"><a href="https://pharmaverse.github.io/admiral/reference/derive_vars_crit_flag.html">derive_vars_crit_flag</a></span><span class="op">(</span></span>
 <span>  <span class="va">adbds</span>,</span>
 <span>  crit_nr <span class="op">=</span> <span class="fl">2</span>,</span>
 <span>  condition <span class="op">=</span> <span class="va">AVAL</span> <span class="op">&gt;</span> <span class="fl">50</span>,</span>
@@ -5103,7 +5104,7 @@ Expand for Full Code Walkthrough
 <hr>
 <hr></section><section id="quarto-css-scss-see-_quarto.yml-cosmo-custom.scss" class="level3"><h3 class="anchored" data-anchor-id="quarto-css-scss-see-_quarto.yml-cosmo-custom.scss">Quarto &amp; CSS | SCSS (see _quarto.yml cosmo + custom.scss)</h3>
 <p>in YAML, I used <code>date:  today</code><br>
-but in inline r 11 January 2025</p>
+but in inline r 21 January 2025</p>
 <p>1 verbatim:</p>
 <pre><code>in chunks: 
 - OLD way: `{r style=&quot;xxx&quot;; class=&quot;&quot;} 
@@ -5205,6 +5206,55 @@ decorate that chunk
 </div>
 </div>
 <hr>
+<hr></section><section id="table-with-scss" class="level3"><h3 class="anchored" data-anchor-id="table-with-scss">table with scss</h3>
+<table class="table table-bordered">
+<thead><tr>
+<th>
+First Name
+</th>
+<th>
+Last Name
+</th>
+<th>
+Super Hero
+</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+Peter
+</td>
+<td>
+Parker
+</td>
+<td>
+Spiderman
+</td>
+</tr>
+<tr>
+<td>
+Bruce
+</td>
+<td>
+Wayne
+</td>
+<td>
+Batman
+</td>
+</tr>
+<tr>
+<td>
+Clark
+</td>
+<td>
+Kent
+</td>
+<td>
+Superman
+</td>
+</tr>
+</tbody>
+</table>
 <hr>
 <p>HTML</p>
 <hr></section></section><section id="r-chunks-with-decorations" class="level2"><h2 class="anchored" data-anchor-id="r-chunks-with-decorations">R chunks with decorations</h2>

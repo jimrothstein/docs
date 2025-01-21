@@ -3,7 +3,9 @@ output: html_document
 editor_options: 
   chunk_output_type: console
 ---
-QMD file
+folds: 
+za
+zo
 
 # My Notes
 
@@ -191,9 +193,9 @@ with them much yet
 
 
 
+### Buzz words
 
-
-** Terminology:  organizations & standards
+**Terminology:  organizations & standards**
 
 - *PHUSE (UK)* - lots of conferences| https://phuse.global/Communications/Webinar_Wednesday https://phuse.global/Working_Groups [PHUSE Working Groups]
 - *pharmaR* (original attempt)  -> pharmaverse
@@ -479,3 +481,24 @@ Each element of this list is result of applying `params` function to all    and 
 
 The first argument of this derivation function is a dataset (required)
 
+## Pilot 5
+**R6**  
+- Advanced R Chapter 14
+
+**datajson**
+- (github) https://github.com/atorus-research/datasetjson
+- (getting started) https://atorus-research.github.io/datasetjson/articles/getting_started.html
+
+**box**
+
+**rhino**
+- good intro,box https://youtu.be/QmyilJr7jXs
+
+**Teal**
+- May 16, 2023 Overview of Teal framework (no code) https://youtu.be/D2DJQYo3Nag
+- October 20, 2023:(Dony| very good walk through of config modules,  filters, teal_slice(),  in basic teal app) https://www.youtube.com/watch?v=3S4_WROtFK8
+- October 24, 2024 (Dony | intro to teal module) https://youtu.be/WnTgIWU59RM?list=PLbcglKxZP5PPrBVVV9AItiVXUCFcTQb9J 
+
+**TLG**
+- October 20, 2023 (rtables) https://www.youtube.com/watch?v=3S4_WROtFK8  j  k
+- Pawel Rucki:  WebR to TLG https://youtu.be/vaoDUrUscZA?list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4

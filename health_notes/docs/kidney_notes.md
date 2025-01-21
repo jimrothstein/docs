@@ -3,9 +3,11 @@ jim
 
 12/29/2024
 
-- **This is quarto file**
-- retrived this file from Google docs
-- could not find newer versions (this is from 2017??)
+> [!NOTE]
+>
+> - **This is quarto file**
+> - retrived this file from Google docs
+> - could not find newer versions (this is from 2017??)
 
 **Q for doctors** - thiazide?? - super low protein diet to delay
 dialysis? - Claim: Nephrologists **do not** recommend treatment
@@ -289,8 +291,9 @@ production. Urine pH usually slightly acidic (5.5-7.0; desired is
 are collagen.
 
 **Colonoscopy** - SEE **Large Intenstine** - Prep - subject to varation
-by doctor; not a science (?) - PN vs PEG - I have ‘extended colon’ -
-twists, turns … harder to empty.
+by doctor; not a science (?) - PN vs PEG, **new OST, a sulfate-based
+capsule; not absorbed** - I have ‘extended colon’ - twists, turns …
+harder to empty.
 
 **CREATININE** - Waste product in blood, kidney should remove. Urinary
 Creatinine excretion is relatively stable, day-to-day. ~8-20g/kg
@@ -359,7 +362,7 @@ considered a 3rd source of Ox
 --Normal: fat is absorbed in small intestine, little reaches COLON.
 
 --Abnormal: Fat reaches COLON. Since FAT tends to combine with Ca
-(why?), Ox will be free in colon for absorption. Many possible reasons.
+(why?), leaving Ox free in colon for absorption. Many possible reasons.
 Hard water (<https://en.wikipedia.org/wiki/Hard_water>) is rich in
 minerales like Mg, Ca. Residue forms with Ca(‘goo’) when using hand soap
 (fatty acid). If fat reaches large COLON, will react with Ca. Leaving
@@ -726,7 +729,8 @@ dense is lipoprotein (less dense cream rises to top of milk)
     OR,  
 2.  Liver biopsy documenting **glyoxylate reductase/hydroxypyruvate
     reductase (GR/HPR)** activity below the normal reference range
-    confirming PH type 2
+    confirming PH type 2 Liver enzymes include **AST**, **ALT**,
+    **Bilirubin** Pancreas enzymes include **amaylase**, **lipase**
 
 **LOW-OXALATE DIE**T (LOX) - Variously mentioned as \<40 mg, \<50 mg,
 \<75 mg per day.
@@ -838,6 +842,67 @@ and is due to compromised kidney glomeruli or its capillaries??
 osmoles in water (both Na & Cl). But 1 mole of glucose remains 1 osmole
 because it does not dissociate.
 
+<table class="table table-bordered">
+
+<thead>
+
+<tr>
+
+<th>
+
+Oxalate mg
+</th>
+
+<th>
+
+mmol
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+
+44
+</td>
+
+<td>
+
+1/2
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+88
+</td>
+
+<td>
+
+1 mmol
+</td>
+
+</tr>
+
+    <td>100</td>
+            <td>_mmol</td>
+        </tr>
+        <tr>
+            <td>196/td>
+            <td>2 mmol</td>
+        </tr>
+    </tbody>
+
+</table>
+
 **OXALATE** (Ox–) forms - Salt of Oxalic Acid, Ex: CaOx, MgOx; Also
 Ester of Oxalic Acid. Oxalic acid is very reactive H2C2O4, removes rust.
 Plants, no kidneys, use oxalate to store excess calcium from soil, water
@@ -852,6 +917,9 @@ tubules.
 **-- OXALATE Absorption** - Theory? Absorption to blood depends on Ox
 solubility of foods. Foods high in Ox may not have same bioavailability.
 Once Ox absorbed 90% of it will appear in urine 24-36 hours later.
+
+Note: if colon mucosa is damaged, oxalate can cross. This damage is too
+small to be detected in colonoscopy.
 
 -- [OXALIC ACID](https://en.wikipedia.org/wiki/Oxalic_acid) (C2O4H2)
 dissociates into OX, conjugation base( C2O4 -2) and H+. (pKc=1.27) or 2
@@ -973,7 +1041,9 @@ compromised kidneys, diabetes … Normal kidneys readily re-absorb blood
 protein and do not pass it to urine MONITOR urine protein is key to
 manage GFR (?)
 
-    **Albuminuria** \- common protein found in urine when kidneys fail to filter; a large molecule should not be able to pass. No such thing as “micro”  albuminuria, use terms: 
+**Albuminuria** - common protein found in urine when kidneys fail to
+filter; a large molecule should not be able to pass. No such thing as
+“micro” albuminuria, use terms:
 
 - **A1** represents normal to mildly increased urinary
   albumin/creatinine ratio (\<30 mg/g or \< 3 mg/mmmol);  
@@ -1086,6 +1156,8 @@ Ex: HCL, salts: NaCL, KCl, CaCl
 
 Other SALT examples: acid + base; metal + acid (Ca + oxalic acid),
 others
+
+**SAPONIFication** Bile + Ca + Mg bind. This leaves OX free.
 
 **SLC26 -** family of proteins, transport in kidney; exchange Ox for
 sulfate\|chloride
