@@ -4720,8 +4720,15 @@ vertical-align: -.125em;
   <li><a href="#my-notes" id="toc-my-notes" class="nav-link active" data-scroll-target="#my-notes"><span class="header-section-number">1</span> My Notes</a>
   <ul class="collapse">
   <li><a href="#intro-notes" id="toc-intro-notes" class="nav-link" data-scroll-target="#intro-notes"><span class="header-section-number">1.1</span> intro notes</a></li>
-  <li><a href="#tools" id="toc-tools" class="nav-link" data-scroll-target="#tools"><span class="header-section-number">1.2</span> Tools</a></li>
-  <li><a href="#faq" id="toc-faq" class="nav-link" data-scroll-target="#faq"><span class="header-section-number">1.3</span> FAQ</a></li>
+  <li><a href="#tools" id="toc-tools" class="nav-link" data-scroll-target="#tools"><span class="header-section-number">1.2</span> Tools</a>
+  <ul class="collapse">
+  <li><a href="#rhino" id="toc-rhino" class="nav-link" data-scroll-target="#rhino"><span class="header-section-number">1.2.1</span> Rhino</a></li>
+  </ul></li>
+  <li><a href="#faq" id="toc-faq" class="nav-link" data-scroll-target="#faq"><span class="header-section-number">1.3</span> FAQ</a>
+  <ul class="collapse">
+  <li><a href="#buzz-words" id="toc-buzz-words" class="nav-link" data-scroll-target="#buzz-words"><span class="header-section-number">1.3.1</span> Buzz words</a></li>
+  </ul></li>
+  <li><a href="#pilot-5" id="toc-pilot-5" class="nav-link" data-scroll-target="#pilot-5"><span class="header-section-number">1.4</span> Pilot 5</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -4759,7 +4766,7 @@ vertical-align: -.125em;
 </header>
 
 
-<p>QMD file</p>
+<p>folds: za zo</p>
 <section id="my-notes" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> My Notes</h1>
 <section id="intro-notes" class="level2" data-number="1.1">
@@ -4792,6 +4799,10 @@ vertical-align: -.125em;
 <pre><code># nolint start
 ...
 # nolint end</code></pre>
+<section id="rhino" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="rhino"><span class="header-section-number">1.2.1</span> Rhino</h3>
+<p>Ref: good video https://www.youtube.com/watch?v=QmyilJr7jXs - framework, method to keep shiny apps organized and modular: by using separate file/directory for config (.yml files); testing, logic (code without shiny), view (ui), global - when needed, use by pieces or whole. - box container-like in R</p>
+</section>
 </section>
 <section id="faq" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="faq"><span class="header-section-number">1.3</span> FAQ</h2>
@@ -4830,7 +4841,9 @@ called ADaM Other - which captures some exotic ADaM structures.</code></pre>
 <p><em>How I join bi-weekly Admiral meetings?</em> https://github.com/pharmaverse/admiral/discussions/2169#discussioncomment-10376594</p>
 <p>Once you do a few more successfully merged PRs I will propose to core team that you be included! Be great to have you involved.</p>
 <p><em>Reviewers: PR</em> (Ben) So I see everything that happens in admiral: issues, conversations, PRs, etc as I have my settings that way. Yes always assign a reviewer. You can ping people you have interacted with and ask for review or use <span class="citation" data-cites="pharmaverse/admiral">@pharmaverse/admiral</span> teams to ask for additional reviewers. If crickets, ping on slack as well; Stefan is the best for thorough code review. Edoardo and I are okay for code, but we are very user focused and pay close attention to documentation of usability of the function. there are a few others out there but you haven’t interacted with them much yet</p>
-<p>** Terminology: organizations &amp; standards</p>
+<section id="buzz-words" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="buzz-words"><span class="header-section-number">1.3.1</span> Buzz words</h3>
+<p><strong>Terminology: organizations &amp; standards</strong></p>
 <ul>
 <li><p><em>PHUSE (UK)</em> - lots of conferences| https://phuse.global/Communications/Webinar_Wednesday https://phuse.global/Working_Groups [PHUSE Working Groups]</p></li>
 <li><p><em>pharmaR</em> (original attempt) -&gt; pharmaverse</p></li>
@@ -4966,6 +4979,17 @@ SITUATION NOW:</code></pre>
 <p>#’ <span class="citation" data-cites="param">@param</span> variable_params A <code>list</code> of function arguments that are different across iterations. #’ Each set of function arguments must be created using [<code>params()</code>].</p>
 <p>Each element of this list is result of applying <code>params</code> function to all and includes all the arguments passed to the derivation function.</p>
 <p>The first argument of this derivation function is a dataset (required)</p>
+</section>
+</section>
+<section id="pilot-5" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="pilot-5"><span class="header-section-number">1.4</span> Pilot 5</h2>
+<p><strong>R6</strong><br>
+- Advanced R Chapter 14</p>
+<p><strong>datajson</strong> - (github) https://github.com/atorus-research/datasetjson - (getting started) https://atorus-research.github.io/datasetjson/articles/getting_started.html</p>
+<p><strong>box</strong></p>
+<p><strong>rhino</strong> - good intro,box https://youtu.be/QmyilJr7jXs</p>
+<p><strong>Teal</strong> - May 16, 2023 Overview of Teal framework (no code) https://youtu.be/D2DJQYo3Nag - October 20, 2023:(Dony| very good walk through of config modules, filters, teal_slice(), in basic teal app) https://www.youtube.com/watch?v=3S4_WROtFK8 - October 24, 2024 (Dony | intro to teal module) https://youtu.be/WnTgIWU59RM?list=PLbcglKxZP5PPrBVVV9AItiVXUCFcTQb9J</p>
+<p><strong>TLG</strong> - October 20, 2023 (rtables) https://www.youtube.com/watch?v=3S4_WROtFK8 j k - Pawel Rucki: WebR to TLG https://youtu.be/vaoDUrUscZA?list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4</p>
 
 
 </section>

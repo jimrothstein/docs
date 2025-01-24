@@ -5133,7 +5133,7 @@ Rmk: [0-9]+ means repeat one or more of the prior <strong>Character class</stron
 </section>
 <section id="zsh-notes" class="level2" data-number="2.6">
 <h2 data-number="2.6" class="anchored" data-anchor-id="zsh-notes"><span class="header-section-number">2.6</span> ZSH notes</h2>
-<p><em>ZSH</em> ZSH REF CARD: (start) https://www.bash2zsh.com/zsh_refcard/refcard.pdf SEE MANUAL: https://zsh.sourceforge.io/Doc/Release/ SEE ZSH GUIDE (2003, Stephenson) https://zsh.sourceforge.io/Guide/zshguide.html ZSH FAQ (2010) https://zsh.sourceforge.io/FAQ/</p>
+<p><em>ZSH</em> ZSH REF CARD: (start) https://www.bash2zsh.com/zsh_refcard/refcard.pdf SEE MANUAL: https://zsh.sourceforge.io/Doc/Release/ SEE ZSH GUIDE (2003, Stephenson) https://zsh.sourceforge.io/Guide/zshguide.html ZSH FAQ (2010) https://zsh.sourceforge.io/FAQ/ ZSH REF: Lots of simple GLOB examples here: http://reasoniamhere.com/2014/01/11/outrageously-useful-tips-to-master-your-z-shell/</p>
 <p>~/dotfiles/.zshrc ~/dotfiles/.zshenv zsh -x *.sh # prints line then executes</p>
 <section id="script-header" class="level3" data-number="2.6.1">
 <h3 data-number="2.6.1" class="anchored" data-anchor-id="script-header"><span class="header-section-number">2.6.1</span> script header</h3>
@@ -5168,6 +5168,16 @@ Rmk: [0-9]+ means repeat one or more of the prior <strong>Character class</stron
 </section>
 <section id="glob-vs-extended-glob-see-guide-5.9.7w" class="level3" data-number="2.6.5">
 <h3 data-number="2.6.5" class="anchored" data-anchor-id="glob-vs-extended-glob-see-guide-5.9.7w"><span class="header-section-number">2.6.5</span> glob vs extended-glob (SEE Guide 5.9.7):w</h3>
+<ul>
+<li>ll demo/**/*.txt</li>
+<li>ls -l demo/**/*&lt;1-10&gt;.txt</li>
+<li>ls -l demo/**/[a]*.txt (begins with <code>a</code>)</li>
+<li>ls -l demo/**/[^cC]*.txt (do not begin with <code>c</code> or <code>C</code>)</li>
+<li>print -l **/*(/) # just dir (recurse)</li>
+<li>print -l **/*(.) # just files (recurse)</li>
+<li>ls -ldh demo/**/*(DOL[1,6]) # 6 largest files</li>
+<li>Lots of syntax to select JUST what you want!</li>
+</ul>
 </section>
 <section id="parameter-expansion" class="level3" data-number="2.6.6">
 <h3 data-number="2.6.6" class="anchored" data-anchor-id="parameter-expansion"><span class="header-section-number">2.6.6</span> parameter expansion</h3>

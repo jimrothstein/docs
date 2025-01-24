@@ -7,10 +7,12 @@ pdf-engine: lualatex
 format:
     html:
         code-fold: true
+        code-summary: "See Code"
         toc: true 
-        number-sections: false
+        toc-depth: 4
+        toc_float: true
+        number-sections: true
         html-math-method: katex
-#        css: styles.css
         scss: custom.scss
         embed-resources: true ## if standalone, all 1 file 
         code-block-bg: true            # chunk outputs 
@@ -37,6 +39,8 @@ knitr::opts_chunk$set(
 )
 ```
 
+# Section I
+
 *this is italics*
 
 <u>this is underline</u>
@@ -54,10 +58,20 @@ post completed quarto to Posit Cloud
 
 ### REF
 
+* <https://sass-lang.com/documentation/>
+
+* [sass-lang.org](https://sass-lang.com/documentation/ "tip: full scss docs")
+
+* [FOO]: https://sass-lang.com/documentation/ "explicit link"
+
+* [PANDOC LINKS]: https://pandoc.org/MANUAL.html#inline-links "pandoc"
+
+Here is [FOO] and here is [Pandoc links]
+
 ::: {.callout-tip collapse="true" title="References, click to expand"}
 -   Mimi - quarto, some CSS, SCSS (see her actual code):
     https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/\
--   Themes, SASS: https://quartoand.me/front-end\
+-   Themes, SASS: 
 -   SASS R pkg:
     https://cran.r-project.org/web/packages/sass/vignettes/sass.html\
 -   Quarto Themes + modify with SCSS:
@@ -415,6 +429,26 @@ decorate that chunk
 4.  Inside colon blocks
 :::
 
+***
+
+### SCSS hover
+
+``` { .button-container }
+1. hover and see what happends
+```
+``` { .nested_class }
+1. hover and see what happends
+```
+
+::: nested_class
+2. hover and see what happends
+:::
+
+<div class="button-container">
+    <p class="button-text">Click me</p>
+</div>
+
+
 ------------------------------------------------------------------------
 
 ### Display code and chunk options
@@ -486,13 +520,6 @@ HTML
 
 ------------------------------------------------------------------------
 
-## Acknowledgments {.appendix}
-
-I am grateful for the insightful comments offered by the anonymous peer
-reviewers at Books & Texts. The generosity and expertise of one and all
-have improved this study in innumerable ways and saved me from many
-errors; those that inevitably remain are entirely my own responsibility.
-
 ------------------------------------------------------------------------
 
 Example of Bootstrap classes:
@@ -550,14 +577,12 @@ $$\frac{d}{dx}\left( \int_{a}^{x} f(u)\,du\right)=f(x).$$
 
 ```{r class="blackbox"}
 mtcars[1:3, 1:2]
-
 ```
 
 ```{r class="greybox"}
 mtcars[1:3, 1:2]
 
 ```
-
 ------------------------------------------------------------------------
 
 ::: {#special .sidebar}
@@ -566,12 +591,9 @@ This does what?
 
 <!-- END -->
 
-## Revealjs
-
-SEE \~/docs/code_project/revealjs
 
 ```{r}
-knitr::knit_exit()
+# knitr::knit_exit()
 ```
 
 ------------------------------------------------------------------------
@@ -633,8 +655,6 @@ PURPOSE: Collect of HTML and PDF inline commands to control output
 </style>
 ```
 
-# 
-
 ### Quarto: In-line CSS Examples for HTML, PDF {style="color: lime"}
 
 <font size="1"> Very small </font>
@@ -648,7 +668,7 @@ define the style that we want to apply. For example,
 The color of this word is [red]{style="color: red;"}. And [this line has
 a yellow background]{style="background-color: yellow"}.
 
-## ------------------------------------------------------------------------
+***
 
 ### Create a CSS class (inline)
 
@@ -686,3 +706,10 @@ This is a Div defined by CSS, inline
 #| label: mtcars
 head(mtcars, n=2)
 ```
+
+## Acknowledgments {.appendix}
+
+I am grateful for the insightful comments offered by the anonymous peer
+reviewers at Books & Texts. The generosity and expertise of one and all
+have improved this study in innumerable ways and saved me from many
+errors; those that inevitably remain are entirely my own responsibility.
