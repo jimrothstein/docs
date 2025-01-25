@@ -44,6 +44,23 @@ https://do4ds.com/  - range of topics, api, linux ...
 
 As of \today
 
+
+*For better details,  see Big Book of R:*
+
+### Basic Probability/Statistics
+
+- Navarro LSR:  https://stats.libretexts.org/Bookshelves/Applied_Statistics/Learning_Statistics_with_R_-_A_tutorial_for_Psychology_Students_and_other_Beginners_(Navarro) 
+
+- PSU (stat 462) https://online.stat.psu.edu/stat462/node/93/
+*  Roback: LINE:  <https://bookdown.org/roback/bookdown-BeyondMLR/ch-MLRreview.html#assumptions-for-linear-least-squares-regression>
+- Kuiper, Shonda: simple, clear:   video: <https://www.youtube.com/watch?v=jQkK0XMrAdM>
+-  Race, Shaina gentle intro to lin alg:, <https://shainarace.github.io/LinearAlgebra/index.html>
+
+- Linear Regression: https://www.andrew.cmu.edu/user/achoulde/94842/lectures/lecture09/lecture09-94842.html#thinking-more-critically-about-linear-regression
+
+- Stéphanie M. van den Berg https://bookdown.org/pingapang9/linear_models_bookdown/simple.html
+
+
 ###	Algorithms & ML
 
 -  Akalin <https://compgenomr.github.io/book/> - very good, genomics
@@ -98,8 +115,6 @@ As of \today
 
 #### Intro to Linear Alg & Models, 
 
-  *  Kuiper, Shonda: simple, clear:   video: <https://www.youtube.com/watch?v=jQkK0XMrAdM>
-  *  Race, Shaina gentle intro to lin alg:, <https://shainarace.github.io/LinearAlgebra/index.html>
   *  Thomas, Garrett, Math for ML, Berkeley  https://gwthomas.github.io/docs/math4ml.pdf
   *  Bendixcarstensen.com, with R & matrix models (practical; try not use api pkg) http://www.bendixcarstensen.com/APC/linalg-notes-BxC.pdf
   *   Rafael genomics - Chapter 4 matrix  (his older stuff is better, but not
@@ -228,7 +243,6 @@ propogation and calculations.
 *  Race, Shaina gentle intro to lin alg:, < https://shainarace.github.io/LinearAlgebra/index.html  >
 *  Videos - Cohort 05: https://www.youtube.com/playlist?list=PL3x6DOfs2NGjbefZellBVB306_z8Wz1Xd
 
-*  Roback: LINE:  <https://bookdown.org/roback/bookdown-BeyondMLR/ch-MLRreview.html#assumptions-for-linear-least-squares-regression>
 <https://socialsciences.mcmaster.ca/jfox/Papers/matlib-useR2016.pdf>
 
 
@@ -514,35 +528,6 @@ CRAN Task Views:  Web Technology & Services: https://cran.r-project.org/web/view
 
 ####	RESTFUL APIS  (see 0300_tech_notes.md)
 
-###	NEOVIM/LUA
-
-####	Config
-  *	https://neovim.io/doc/user/quickref.html#option-list
-  *	Code Ex:	| Joel | goal: understand ! |https://github.com/whatsthatsmell/dots/tree/master/public%20dots/vim-nvim  
-  *	https://cj.rs/blog/my-setup/nvim-0-5/  | go to playlists | view all
-	playlists | choose by length, date etc. 
-  *	Statusline: https://elianiva.my.id/post/neovim-lua-statusline#active-statusline
-  *	https://www.jakewiesler.com/blog/getting-started-with-vim | Jake | good
-	but limited.
-  *	blog + https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/
-  *	blog + https://blog.devgenius.io/create-custom-keymaps-in-neovim-with-lua-d1167de0f2c2
-  *	Ex: 	https://gitlab.com/mcepl/vimdir/-/tree/master/plugin	
-  *	Ex:	https://github.com/samuelludwig/nixrc/tree/master/modules/user/nvim/lua/dot
-  *	300 line challenge: 	https://neovim.discourse.group/t/the-300-line-init-lua-challenge/227
-  *	https://benfrain.com/refactor-your-neovim-init-lua-single-file-to-modules-with-packer/
-  *	https://github.com/nanotee/nvim-lua-guide
-  *	kickstart:  https://github.com/nvim-lua/kickstart.nvim/blob/master/init.lua
-
-####	Lua
-\begin{enumerate}
-  \item https://www.lua.org/manual/5.4/
-  \item	http://www.lua.org/pil/contents.html (1st ed)
-  \item	https://learnxinyminutes.com/docs/lua/ (learn X in Y)
-  \item	http://lua-users.org/wiki/LuaDirectory (lua tutorial, wiki)
-	\item Lua by example:		https://luabyexample.org/
-\end{enumerate}
-
-####	Plugins
 
 ###	Android
 - \href{https://www.androidauthority.com/lineageos-install-guide-893303/{decent primer:android RoM" 

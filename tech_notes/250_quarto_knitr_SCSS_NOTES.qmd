@@ -146,6 +146,8 @@ y
 Show me
 ```
 
+
+
 ## Pandoc only (cli) - pdf,
 
 \footnotesize
@@ -427,6 +429,51 @@ decorate that chunk
 
 ::: very_small
 4.  Inside colon blocks
+:::
+
+***
+
+### SCSS @mixin (not working)
+
+Put this in custom.scss
+```
+@mixin absolute-center() {
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+}
+.element-1 {
+  @include absolute-center();
+}
+.element-2 {
+  @include absolute-center();
+  color:blue;
+}
+```
+
+Usage:
+```
+@mixin square($width: 40px) {
+  width:$size;
+  height:$size;
+}
+```
+
+::: {.element-1}
+element-1
+:::
+
+::: {.element-2}
+element-2
+:::
+
+::: {.square}
+square
+:::
+
+::: square
+square2
 :::
 
 ***
