@@ -1,7 +1,8 @@
 {
   "001_tech_reading.qmd": {
     "out.html": "7f668460",
-    "001_tech_reading.html": "5c98c855"
+    "001_tech_reading.html": "5c98c855",
+    "reading.md": "a454b37c"
   },
   "250_quarto_knitr_SCSS_NOTES.qmd": {
     "250_quarto_knitr_SCSS_NOTES.html": "1933a51a",
@@ -41,5 +42,8 @@
   },
   "202_ZSH_ZZAPPERS_CHEAT.qmd": {
     "202_ZSH_ZZAPPERS_CHEAT.html": "e0401908"
+  },
+  "play.qmd": {
+    "play.html": "4b5d3a8e"
   }
 }

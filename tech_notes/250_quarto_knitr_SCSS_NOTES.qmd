@@ -32,7 +32,6 @@ editor:
   markdown: 
     wrap: 72
 ---
-
 ```{r, setup, include=FALSE}
 knitr::opts_chunk$set(
   comment = '', fig.width = 6, fig.height = 6, collapse = TRUE
@@ -41,13 +40,52 @@ knitr::opts_chunk$set(
 
 # Section I
 
-*this is italics*
+## TO DO
+In SCSS file, there are
+- tags Example:  h1 { ... }
+- class Example: .important { ... }
+- id    Example:  #title { ...}
 
+Inside the { ... } is SCSS
+
+Once defined, the SCSS can applied in *.qmd file in several ways
+
+- chunk:
+```
+#| class-output:  myclass
+```
+- text:
+add highlight {.highlight}
+
+- div:
+```
+::: {.border}
+ text
+:::
+```
+- inline: 
+[render this text]{.highlight}
+
+
+- via markdown:
+*this is italics*
 <u>this is underline</u>
 
 ::: {.underline}
 this is also underlined, using definition in SCSS
 :::
+
+***
+
+## Absolute positioning example
+
+[I love .small]{.small}
+
+[centering]{.center}
+
+[absolute positioning]{.absolute top="50%" left-"50%"}
+
+[and cake.]{.absolute bottom=0 right=0}
 
 ## Preliminaries
 
@@ -445,6 +483,7 @@ Put this in custom.scss
 }
 .element-1 {
   @include absolute-center();
+  color:green;
 }
 .element-2 {
   @include absolute-center();
@@ -454,9 +493,14 @@ Put this in custom.scss
 
 Usage:
 ```
-@mixin square($width: 40px) {
+@mixin square($size) {
   width:$size;
   height:$size;
+  color:white;
+}
+div {
+  @include square(60px);
+  background-color:#000;
 }
 ```
 
@@ -472,9 +516,6 @@ element-2
 square
 :::
 
-::: square
-square2
-:::
 
 ***
 

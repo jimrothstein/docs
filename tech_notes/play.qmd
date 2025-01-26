@@ -1,0 +1,70 @@
+---
+title: "250_quarto_cheat.qmd "
+author: "JR"
+date: today 
+pdf-engine: lualatex
+#format:  revealjs       # works, but only one format: at a time (?)
+format:
+    html:
+        code-fold: true
+        code-summary: "See Code"
+        toc: true 
+        toc-depth: 4
+        toc_float: true
+        number-sections: true
+        html-math-method: katex
+        scss: custom.scss
+        embed-resources: true ## if standalone, all 1 file 
+        code-block-bg: true            # chunk outputs 
+        code-block-border-left: "#31BAE9"       
+        indent: true
+        code-link: true             # hyperlink R functions
+        reference-location: margin
+output-dir: docs            ## NO indent, also _quarto.yml for entier project
+editor_options: 
+  chunk_output_type: console
+execute: 
+  error: true                   ## include errors in output
+  warning: true
+  collapse: true
+  standalone: true
+editor: 
+  markdown: 
+    wrap: 72
+---
+```{r, setup, include=FALSE}
+knitr::opts_chunk$set(
+  comment = '', fig.width = 6, fig.height = 6, collapse = TRUE
+)
+```
+
+# Section I
+
+
+ loregm
+ loregm
+ loregm
+ loregm
+ loregm
+ loregm
+ loregm
+ loregm
+ loerem 
+ loerem 
+ loerem 
+ loerem 
+ loerem 
+ loerem 
+ loerem 
+ loerem 
+
+\newpage
+
+
+
+
+
+# Section II
+
+[Section I]
+
