@@ -32,6 +32,26 @@ editor:
   markdown: 
     wrap: 72
 ---
+
+<br>
+
+<div class="shadowbox">
+
+<p>
+For CSS,  use:
+
+This is shadowbox in generic 'div' container
+(Note: many ways to put into .qmd)
+SEE: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div
+
+SEE: https://pandoc.org/chunkedhtml-demo/8.18-divs-and-spans.html
+</p>
+</div>
+
+::: {.shadowbox}
+<p> Should also be in shadobx, using pandox's colons </p>
+:::
+
 ```{r, setup, include=FALSE}
 knitr::opts_chunk$set(
   comment = '', fig.width = 6, fig.height = 6, collapse = TRUE

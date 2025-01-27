@@ -73,6 +73,8 @@ search()
 **Call** A call is an unevaluated function, together with arguments that are
 (Rmk:   .Call() is unrelated, calls C function)
 
+### create a call
+
 **create a call**
 -   See:  R-lang 6.5, call, sys.call vs match.call
 
@@ -213,6 +215,7 @@ Hadley defines expression as an "object that stores quoted code without evaluati
 SEE evaluation.
 
 from **Mailund** (metaprogramming, Chapter 3)
+
 "Every statement you have in your programs is also an expression that
 evaluates to some value (which, of course, might be NULL). This
 includes control structures and function bodies. You can consider

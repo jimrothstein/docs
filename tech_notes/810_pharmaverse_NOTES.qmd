@@ -34,6 +34,7 @@ For File:  Use these:
 - styler::style_file(path = )   # dir, file
 - lintr::lint(filename="")
 - spelling::update_wordlist(pkg=".") # runs spell and asks to update WORDLIST
+- urlchecker::url_check()
 
 (see lintr package - many options to control nolint)
 https://lintr.r-lib.org/articles/lintr.html
@@ -482,6 +483,13 @@ Each element of this list is result of applying `params` function to all    and 
 The first argument of this derivation function is a dataset (required)
 
 ## Pilot 5
+
+### Pilot 3:
+scripts, shiny -> generate ADaM (ADSL, ADAE) --> TLF
+
+### Pilot 4:
+container:  webassembly and Podman (not open source)
+
 **R6**  
 - Advanced R Chapter 14
 
@@ -501,4 +509,4 @@ The first argument of this derivation function is a dataset (required)
 
 **TLG**
 - October 20, 2023 (rtables) https://www.youtube.com/watch?v=3S4_WROtFK8  j  k
-- Pawel Rucki:  WebR to TLG https://youtu.be/vaoDUrUscZA?list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4
+- Pawel Rucki:  WebR to TLG, 25NOV2024  (Demo @15:48) https://youtu.be/vaoDUrUscZA?list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4
