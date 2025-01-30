@@ -17,17 +17,11 @@ Oregon Imaging (Eugene) 458-215-4050
 -   2MAY2023  - convert md file to qmd
 
 <!--
-
-    Footnote:   2 steps, as follows:
-
-Create:
+Create Footnote:
         This will be a footnote [^11] 
 
-
 Then add this:
-
         [^11]:  Footnote 1  Footnote 
-
 -->
 
 
@@ -2967,6 +2961,31 @@ Serum Creatine - 1.17 ok
 Protein/Creatinine 1.28,  some protein and some glucose in urine (Jardiance can do this)
 PSA total is very low (good).  But 'free' value is 14% and ideal is > 25%.  (I am always low.)  So dr.lam not concerned (b/c total so low).  HOWEVER, if PSA went to 2 and then 4 and free was 14%, he would CT of prostate and then biopsy.  
 CT scan (was post-colonoscopy) - showed only tiny stone in `meat` of kidney (safe) and no other stones.  CT is much better than KUB, ultrasound.
+
+
+
+
+
+
+### 27JAN2025 Laura - case worker from Pacific Health
+
+You have already done quite a bit work on my behalf.  And I thank you for this.
+
+I want to suggest if we focus on 
+
+
+Prep
+- Extract data from last prep, so staff can see where and when it failed.
+
+- Work out schedule of what *should* happen and *by when*.
+- I think 10-day prep is actually not needed.
+
+- Establish warning signs in advance.
+- Decisions on day procedure day. If pt not ready, discuss options in advance.
+- If procedure fails, and there are options (like CT scan) discuss well in advance.
+
+Post
+- Again, review what happened last 2 prior times.  Several days of 'shit-in-pants' is not what should happen.
 
 
 

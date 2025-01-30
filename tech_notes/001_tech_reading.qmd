@@ -23,7 +23,7 @@ As of \today
 
 - Navarro LSR:  <https://stats.libretexts.org/Bookshelves/Applied_Statistics/Learning_Statistics_with_R_-_A_tutorial_for_Psychology_Students_and_other_Beginners_(Navarro)> 
 
-- 
+- Robinson (short linear algebra summary) <https://bookdown.org/ts_robinson1994/10EconometricTheorems/>
 -  *Bohm Statistics for Physics* <https://www-library.desy.de/preparch/books/vstatmp_engl.pdf> change of variables (SEE 3.4.1, density as volume)
 
 *  [Dalpiaz, David, Univ of IL] <https://daviddalpiaz.github.io/appliedstats/>

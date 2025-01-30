@@ -28,7 +28,27 @@ geometry: margin=0.5in,top=0.25in
   magnitude.  (Translation seems implicit; but we have no coordinate
   system)
 
-*** Gamma Function
+### Law of Large Numbers
+
+
+$$\bar{x}$$
+
+As sample size increases, approach $\mu$
+$$\lim_{n \to \infty}{\bar{x}} =  \mu$$
+
+### But CLT
+
+for any n, compare mean of many k samples will approach $\mu$ much faster
+
+$$\lim_{k \to \infty}{\bar{x_k}} = n * \mu$$
+
+***
+
+$${SS}_{xx} = \sum (x - \bar{x})^2 = \sum x^2 - \frac {(\sum x)^2}{n}$$
+
+***
+
+Gamma Function
 - (intution) https://www.youtube.com/watch?v=Qjeswpm0cWY
     - Consider 0!, 1!, 2! ... Plot;  What would pi!  .5!
 - In other words, find the function that fits all integers of x, but works for any x real.
