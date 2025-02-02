@@ -25,6 +25,14 @@ Goal:  Combine math, linear algebra, statistics, ML (not R)
 
 ### REF:   See: https://github.com/jimrothstein/code_publish/blob/master/MATH/0002_math_equations.qmd
 
+
+### Error
+
+Suppose true function is quadratic and we model as linear.  In most regions error is large and considstently large.  Is this error `bias`?   a failure of the model?
+
+Noise? 
+use `averaging` to minimize
+
 <2024-05-04 Sat>:
 \footnotesize
 
@@ -154,8 +162,6 @@ $$
 
 sums, regression
 
-### Embed `modified` latex equations inside Rmd; compile with knitr
-### Seems to work Great (as long as no latex packages needed)
 **SEE 0004** for adding dependencies to YAML.
 
 ```{r setup, include=FALSE		}
