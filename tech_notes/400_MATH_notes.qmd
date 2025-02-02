@@ -9,7 +9,7 @@ output:
         toc_depth: 2
         toc_float: true
   pdf_document:   
-    latex_engine: xelatex  
+    latex_engine: lualatex
     toc: true
     toc_depth:  2   
 fontsize: 11pt   
@@ -17,6 +17,11 @@ geometry: margin=0.5in,top=0.25in
 ---
 
 <!--   Leave as .qmd file -->
+
+::: {.shadowbox}
+Goal:  Combine math, linear algebra, statistics, ML (not R)
+:::
+
 
 ### REF:   See: https://github.com/jimrothstein/code_publish/blob/master/MATH/0002_math_equations.qmd
 

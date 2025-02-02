@@ -121,7 +121,9 @@ attempt to capture treatments/interventions in a STUDY; must be flexible, yet ri
 
 **CDISC** - create standards for ADaM, etc
 **CDISC Glossary:*  https://evs.nci.nih.gov/ftp1/CDISC/Glossary/CDISC%20Glossary.html
-**CDISC Video Primer:* (how good?) https://www.cdisc.org/primer
+**CDISC Video Primer:* (* start) https://www.cdisc.org/primer
+**CDISC API LIBRARY** (info)  https://www.cdisc.org/cdisc-library
+
 **The *CDISC Analysis Results Data (ARD or ARDG) Model* is an emerging standard for encoding statistical analysis summaries in a machine-readable format.
   ( https://www.danieldsjoberg.com/ARD-RinPharma-workshop-2024/)
 
@@ -137,8 +139,14 @@ https://github.com/cdisc-org/DataExchange-DatasetJson/tree/master/examples
 For anyone interested, **CDISC** has an open source **DataExchange repo** here with examples of the ADaM datasets {ADSL,ADAE,ADLBC,ADTTE,ADADAS} used in Pilot 5. Interesting to compare the  .xpt, .json, and .ndjson file formats and their properties. You can browse through using a Data Viewer. (Robert Devine)
 
 #### JSON, CDISC
-**datasetjson** Convert cdisc data between json and R data.frame (good example code)
+**datasetjson** Convert cdisc data between json and R data.frame (good example code)  (json is usually only the transfer, not stored at either end)
 https://github.com/atorus-research/datasetjson
+
+Blog: how JSON fits <https://swhume.github.io/why-json-for-datasets>
+**Dataset-JSON API specification**  trial, exammple candidate for spec <https://github.com/cdisc-org/DataExchange-DatasetJson-API>
+
+https://github.com/cdisc-org/DataExchange-DatasetJson-API/blob/main/dataset-json-api.html
+**CDISC Dataset-JSON v1.1 specification** https://github.com/cdisc-org/DataExchange-DatasetJson/blob/master/doc/dataset-json1-1.md 
 
 - CDISC JSON v1.1.0 User's Guide <https://wiki.cdisc.org/display/PUB/Dataset-JSON+v1.1+User%27s+Guide> 
 - CDISC data exchange definitions: https://www.cdisc.org/standards/data-exchange
@@ -185,14 +193,25 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4785044/
 - missing observtions?    assume last reported value continues.
 
 - **metacore**  (Atorus, up to 6 datasets, info re:  tables, columns, ... )
-R object to hold metadata 
-define.xml
+creates R object to hold all metadata needed for an ADaM (structure of tables, columns etc)
+Accepts .xslx, or define.xml, several formats that are company-specific.
+This vignette explains the process, if given define.xml <https://github.com/atorus-research/metacore/blob/main/vignettes/Example.Rmd>
 
+For .xml, reads using xml2 package, example: <https://xml2.r-lib.org/reference/read_xml.html#ref-examples>
+
+video:  (10/20/2023, R/Pharma, Intro to Pharmaverse covers the process to ADaM)
+<https://youtu.be/nHbDmxjVqRM?list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4>
+
+Blog Post: <https://posit.co/blog/creating-adsl-with-the-pharmaverse-part-2/>
+
+File with reference datasets:ds ... https://github.com/atorus-research/metacore/blob/main/tests/testthat/test-reader.R
 SEE:  https://github.com/atorus-research/metacore
+
 ds_spec  - dataset name, purupse (ex: AE, DM) info
 ds_vars holds each field (columns) of dataset 
 var_spec
-example: <https://atorus-research.github.io/metacore/articles/Example.html>
+
+
 
 - **metatools** https://github.com/pharmaverse/metatools
   tools to develop, work with metacore objects (ex:  companies may have different names to describe one entity)
@@ -264,8 +283,6 @@ R has many packages, but who validates?
   2024 Workshop:  https://github.com/pharmaverse/tealworkshop-phuseusconnect2024/tree/main/code
   Teal itself (Github) https://github.com/insightsengineering/teal (70 issues, very active)
 
-File with reference datasets:ds ... https://github.com/atorus-research/metacore/blob/main/tests/testthat/test-reader.R
-holds metadata specs as object; data may arrive in spreasheets or db for ... (company-specific)
 
 
 **tools**
