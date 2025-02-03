@@ -5,7 +5,7 @@
 <meta name="generator" content="quarto-1.6.39">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="author" content="JR">
-<meta name="dcterms.date" content="2025-01-28">
+<meta name="dcterms.date" content="2025-02-02">
 <title>250_quarto_cheat.qmd – misc</title>
 <style>
 code{white-space: pre-wrap;}
@@ -4729,7 +4729,61 @@ vertical-align: -.125em;
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script>
+}</script><script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var head = document.getElementsByTagName("head")[0];
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = "https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css";
+      head.appendChild(link);
+
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js";
+      script.async = false;
+      script.addEventListener('load', function() {
+        var mathElements = document.getElementsByClassName("math");
+          var macros = [];
+          for (var i = 0; i < mathElements.length; i++) {
+            var texText = mathElements[i].firstChild;
+            if (mathElements[i].tagName == "SPAN") {
+              window.katex.render(texText.data, mathElements[i], {
+                displayMode: mathElements[i].classList.contains('display'),
+                throwOnError: false,
+                macros: macros,
+                fleqn: false
+              });
+            }
+          }
+      });
+      head.appendChild(script);
+    });
+  </script><script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 </head>
 <body>
 
@@ -4836,7 +4890,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 28, 2025</p>
+      <p class="date">February 2, 2025</p>
     </div>
   </div>
   
@@ -4859,6 +4913,11 @@ SEE: https://pandoc.org/chunkedhtml-demo/8.18-divs-and-spans.html
 Should also be in shadobx, using pandox’s colons
 </p>
 </div>
+<div class="shadowbox">
+<p>Latex, MATH, diagrams: SEE <code>code_publish</code> esp MATH and LATEX (but poor organization)</p>
+</div>
+<p>Embed latex.sty and real latex in quarto https://youtu.be/2DbuqYKOsrY?t=396</p>
+<p>Or, add <code>quarto extensions</code> (format: my_extension) To add latex or HTML forms … Or, some R packages (gt, …) allow you to embed latex in a function. OR, typst (since 2022) - simpler than latex ### typst *.qmd, then template (position things like <span class="math inline">title</span>), then style doc to set title = “Hello” Typt is more English; compare to SCSS to make, say, a box, yellow, with a font …</p>
 <section id="section-i" class="level1 page-columns page-full" data-number="1"><h1 data-number="1">
 <span class="header-section-number">1</span> Section I</h1>
 <section id="to-do" class="level2" data-number="1.1"><h2 data-number="1.1" class="anchored" data-anchor-id="to-do">
@@ -4991,6 +5050,8 @@ References, click to expand
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>Show me</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section></section><section id="pandoc-only-cli---pdf" class="level2" data-number="1.4"><h2 data-number="1.4" class="anchored" data-anchor-id="pandoc-only-cli---pdf">
 <span class="header-section-number">1.4</span> Pandoc only (cli) - pdf,</h2>
+<p>pandoc -D latex # template pandoc -D html</p>
+<p>templates look like <span class="math inline">var</span>, or <span class="math inline">IF</span> etc. trick: Regardless of content, place 3 back ticks at top/bottom will render document as straight text.</p>
 <p>To render ascii document with small font (for printing):</p>
 <ul>
 <li>in <file>, use ``` for verbatum</file>
@@ -5176,7 +5237,7 @@ Expand for Full Code Walkthrough
 <hr></section><section id="quarto-css-scss-see-_quarto.yml-cosmo-custom.scss" class="level3" data-number="1.7.8"><h3 data-number="1.7.8" class="anchored" data-anchor-id="quarto-css-scss-see-_quarto.yml-cosmo-custom.scss">
 <span class="header-section-number">1.7.8</span> Quarto &amp; CSS | SCSS (see _quarto.yml cosmo + custom.scss)</h3>
 <p>in YAML, I used <code>date:  today</code><br>
-but in inline r 28 January 2025</p>
+but in inline r 02 February 2025</p>
 <p>1 verbatim:</p>
 <pre><code>in chunks: 
 - OLD way: `{r style=&quot;xxx&quot;; class=&quot;&quot;} 

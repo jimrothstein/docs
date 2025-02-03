@@ -52,6 +52,24 @@ SEE: https://pandoc.org/chunkedhtml-demo/8.18-divs-and-spans.html
 <p> Should also be in shadobx, using pandox's colons </p>
 :::
 
+::: shadowbox
+Latex, MATH, **diagrams**: SEE `code_publish` esp MATH and LATEX (but poor organization)
+:::
+
+
+Embed latex.sty and real latex in quarto
+https://youtu.be/2DbuqYKOsrY?t=396
+
+Or, add `quarto extensions`  (format: my_extension) To add latex or HTML forms ...
+Or, some R packages (gt, ...) allow you to embed latex in a function.
+OR, typst (since 2022) - simpler than latex
+### typst 
+*.qmd,  then template (position things like  $title$), then style doc to set title = "Hello"
+Typt is more English; compare to SCSS to make, say, a box, yellow, with a font ...
+
+
+
+
 ```{r, setup, include=FALSE}
 knitr::opts_chunk$set(
   comment = '', fig.width = 6, fig.height = 6, collapse = TRUE
@@ -207,6 +225,11 @@ Show me
 
 
 ## Pandoc only (cli) - pdf,
+pandoc -D  latex # template
+pandoc -D  html
+
+templates look like $var$, or $IF$ etc.
+trick:   Regardless of content, place 3 back ticks at top/bottom will render document as straight text.
 
 \footnotesize
 

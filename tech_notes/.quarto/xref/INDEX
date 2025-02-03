@@ -45,5 +45,8 @@
   },
   "play.qmd": {
     "play.html": "4b5d3a8e"
+  },
+  "typst_example.qmd": {
+    "typst_example.typ": "49581076"
   }
 }

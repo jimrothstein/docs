@@ -15,7 +15,7 @@ execute:
     collapse: true
     standalone: true
     enabled: true    ##false: do not run chunks
-    cache: true     ## knitr caches R chunks
+    cache: true     ## knitr caches, SAME directory as *.qmd (2025 - can not control this):w
 
 format:
   html:
