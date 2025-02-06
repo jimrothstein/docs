@@ -15,9 +15,6 @@ USE THIS FILE!
   :ID:       d677459a-98d7-41e7-a74c-837e62a178e5
   :END:
 
-2024-05-02
-  - switch to org mode (M-x org-mode)
-  - Create outline.
 
 2024-04-20
 	-	fix regex marked TODO

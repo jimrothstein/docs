@@ -27,7 +27,7 @@ format:
     toc_depth: 5
     toc_float: true
     number-sections: true
-    number-depth: 3   #book feature only?
+    number-depth: 4   #book feature only?
       #number-offset: 2
     #toc_location: body
     embed-resources:  true
