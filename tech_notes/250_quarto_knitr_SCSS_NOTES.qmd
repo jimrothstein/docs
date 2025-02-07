@@ -74,6 +74,7 @@ Typt is more English; compare to SCSS to make, say, a box, yellow, with a font .
 knitr::opts_chunk$set(
   comment = '', fig.width = 6, fig.height = 6, collapse = TRUE
 )
+# rsconnect::writeManifest()
 ```
 
 # Section I
