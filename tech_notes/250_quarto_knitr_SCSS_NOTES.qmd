@@ -63,12 +63,10 @@ https://youtu.be/2DbuqYKOsrY?t=396
 Or, add `quarto extensions`  (format: my_extension) To add latex or HTML forms ...
 Or, some R packages (gt, ...) allow you to embed latex in a function.
 OR, typst (since 2022) - simpler than latex
+
 ### typst 
 *.qmd,  then template (position things like  $title$), then style doc to set title = "Hello"
 Typt is more English; compare to SCSS to make, say, a box, yellow, with a font ...
-
-
-
 
 ```{r, setup, include=FALSE}
 knitr::opts_chunk$set(
@@ -115,6 +113,29 @@ this is also underlined, using definition in SCSS
 :::
 
 ***
+
+
+## To Publish quarto to connect.posit.cloud 
+https://connect.posit.cloud/jimrothstein
+	
+This is IDE
+(https://posit.cloud/content/yours?sort=name_asc)
+
+- Copy desired *.qmd to this folder:  quarto ... test
+- Run the writeManifest() (below)
+- (Does render work locally?)
+- Check the resulting manifest.json is not bloated with excessive packages/dependencies.
+- commit/push
+
+- On this website: - https://connect.posit.cloud/jimrothstein
+- `Publish`
+- Choose Github, this folder, which *.qmd file
+
+In this folder/project, 
+
+```{r}
+#rsconnect::writeManifest()
+```
 
 ## Absolute positioning example
 

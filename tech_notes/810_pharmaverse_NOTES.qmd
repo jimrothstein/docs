@@ -8,7 +8,19 @@ folds:
 za
 zo
 
+```{r}
+rsconnect::writeManifest()
+```
 # My Notes
+
+## To Do:
+- latest standards, get snippet of what each looks like
+
+## GOAL:
+Understand flow of data and structures, end-to-end:
+- at json file/schema level
+- at R implementation level
+- able to connect the two at different stages  
 
 ## intro notes
 
@@ -112,6 +124,9 @@ Admiral
 - Contribution Model:  broken link  
 - FAQ (some background)https://pharmaverse.github.io/admiral/articles/faq.html
 
+**ADRG** ADaM Data Review Guide (pdf end result !)
+- includes data? templates? ....??
+
 **ADSL**  - required dataset format for CDISC (Adam); patient/treatment level ; 
 attempt to capture treatments/interventions in a STUDY; must be flexible, yet rigourous.
 (clear) https://www.linkedin.com/pulse/decoding-adsl-treatment-variables-study-designs-clinical-baghai-hhzfe/
@@ -136,7 +151,10 @@ From an R developer's point-of-view, this roughly boils down to data tables and 
 Just like an engineer who grows special crystals might benefit from learning a bit about group theory and various symetries, so too an R developer might pick up insights from CDISC abstractions.
 
 
-CDISC -> SDTM -> ADaM ->data analyst
+Depending on abstraction:
+PLAN -> COLLECT -> ORGANIZE -> ANALYSIS -> REPORTS
+OR, 
+CDISC -> CDASH -> SDTM -> ADaM ->data analyst
 
 [CDISC wikipedia](<https://en.wikipedia.org/wiki/Clinical_Data_Interchange_Standards_Consortium>)
  Good, not perfect, one page summary.
@@ -162,6 +180,12 @@ Basic introduction:
 ODM   - At simplest level, ODM is overall guide to formatting data/metadata; what ADaM and SDTM datasets should look like and how to pass as JSON files.
 https://www.cdisc.org/standards/data-exchange/odm-xml/odm-v2-0 \
 
+<ODM>
+<STUDY>
+  <SPONSOR>
+  <VISITS>
+  ...
+
 Example schema:  https://github.com/cdisc-org/DataExchange-ODM/blob/main/schema/ODM-clinicaldata.xsd
 
 
@@ -180,7 +204,9 @@ Controlled Terminology: https://evs.nci.nih.gov/ftp1/CDISC/Define-XML/Define-XML
 Currently: xpt
 Future:  json
 
-### What is dataset-json ?
+### What is dataset-json standard ?
+"dataset exchange format" in JSON file for tabular datasets
+Read https://swhume.github.io/why-json-for-datasets
 
 - XML,  structured document (DOM, body, src, images,...)
 - JSON, structured data
@@ -218,7 +244,31 @@ Substitute(?) for SAS V5 tranfer.
 ### More about json
 - (wikipedia)<https://en.wikipedia.org/wiki/json>  
 - (syntax) <https://www.w3schools.com/js/js_json_syntax.asp>  
-- (create a schema) <https://json-schema.org/learn/getting-started-step-by-step>
+- (** create a schema) <https://json-schema.org/learn/getting-started-step-by-step>
+- Schema keywords and tutorials
+https://json-schema.org/understanding-json-schema/keywords
+
+#### Example schema with properties
+
+```
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/product.schema.json",
+  "title": "Product",
+  "description": "A product from Acme's catalog",
+  "type": "object",
+  "properties": {
+    "productId": {
+      "description": "The unique identifier for a product",
+      "type": "integer"
+    }
+  }
+}
+
+```
+
+
+
 -  LinkML - tool to create & validate schema (json/yaml) <https://linkml.io/linkml/
 
 - (EXAMPLE: schema for atomic vector) <https://artifactdb.github.io/BiocObjectSchemas/>
@@ -310,6 +360,10 @@ var_spec
   tools to develop, work with metacore objects (ex:  companies may have different names to describe one entity)
   does some preliminary checks  (harder analysis is done in admiral)
 
+**ODM**
+
+**ODM-XML** an xml file
+
 **Pilot 3**
 scripts, shiny -> generate ADaM (ADSL, ADAE) --> TLF
 
@@ -340,6 +394,9 @@ https://cran.r-project.org/web/packages/random.cdisc.data/random.cdisc.data.pdf
 **R Consortium Working Group** https://rconsortium.github.io/submissions-wg/ [R Consortium]  R Submissions Working Group] https://rconsortium.github.io/submissions-wg/
 
 **R6** Advanced R Chapter 14
+- object$method (each class: n methods; unlike S3 generic)
+- teal.code R6 chunks ('exprs' & env in container)
+- teal.slice R6 filters
 
 **rhino** good intro,box https://youtu.be/QmyilJr7jXs
 
