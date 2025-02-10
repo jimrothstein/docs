@@ -4,13 +4,20 @@ output: pdf_document
 editor_options: 
   chunk_output_type: console
 ---
+
 folds: 
 za
 zo
+(define-key evil-normal-state-map (kbd "<tab>") 'evil-toggle-fold)
+folds:  S-<TAB> cycles 
+C-ENTER new line, at same level
 
 ```{r}
+#| label: manifest
 rsconnect::writeManifest()
 ```
+[^CDISC_api] [CDISC_api]  <https://wiki.cdisc.org/display/LIBSUPRT/Welcome+Package+for+CDISC+Library+Users> 
+
 # My Notes
 
 ## To Do:
@@ -24,10 +31,10 @@ Understand flow of data and structures, end-to-end:
 
 ## intro notes
 
-(define-key evil-normal-state-map (kbd "<tab>") 'evil-toggle-fold)
 
-S-<TAB> cycles
-C-ENTER new line, at same level
+go to [My Notes]
+
+Take me to the anchor at [bottom](#bottom)
 
 ## Tools
 
@@ -49,14 +56,15 @@ For File:  Use these:
 - spelling::update_wordlist(pkg=".") # runs spell and asks to update WORDLIST
 - urlchecker::url_check()
 
-(see lintr package - many options to control nolint)
-https://lintr.r-lib.org/articles/lintr.html
+(see lintr package - many options to control nolint) [^lintr]
 lintr::lint()
 
 ```
+
 # nolint start
 ...
 # nolint end
+
  ```
 
 
@@ -86,14 +94,14 @@ lintr::lint()
 @ 23:12 - diagram, package handoffs...
 @ 48:00  - Admiral, design flow of derive_var_... (good)
 
-Coursera: https://www.coursera.org/learn/hands-on-clinical-reporting-using-r
+Coursera: [^coursera] 
 New contributors https://www.youtube.com/watch?v=MhEyod3Sevc&list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4&index=3
-
 
 
 ### Reading
 
-   - (overview) Ben, 2024 https://pharmasug.org/proceedings/2024/SD/PharmaSUG-2024-SD-343.pdf
+
+   - Ben2024 (overview) Ben, 2024 https://pharmasug.org/proceedings/2024/SD/PharmaSUG-2024-SD-343.pdf
  https://pharmasug.org/proceedings/2024/SS/PharmaSUG-2024-SS-344.pdf
    - (coding) https://pharmaverse.github.io/admiral/articles/concepts_conventions.html
    - (*Programming Strategy*) https://pharmaverse.github.io/admiraldev/articles/programming_strategy.html
@@ -145,7 +153,7 @@ date()
 
 The "I" is for interchange, ie to move data between computers and applications. In particular, CDISC is an attempt to standardize structure of data that flow from patient through data analysis so things like dates, units, dataset fields are consistent. At the government/regulary agency end, the standardization of data simplifies comparisons.
 
-CDISC is intended to be an improvement over [prior methods](https://www.cdisc.org/kb/articles/short-history-cdisc-and-sas-transport-files) to exchange data.
+CDISC is intended to be an improvement over [prior methods](https://www.cdisc.org/kb/articles/short-history-cdisc-and-sas-transport-files) to exchange data.[^prior_methods]
 
 From an R developer's point-of-view, this roughly boils down to data tables and format.  CDISC is both an abstraction and a guide to choosing the right variables. 
 Just like an engineer who grows special crystals might benefit from learning a bit about group theory and various symetries, so too an R developer might pick up insights from CDISC abstractions.
@@ -156,6 +164,8 @@ PLAN -> COLLECT -> ORGANIZE -> ANALYSIS -> REPORTS
 OR, 
 CDISC -> CDASH -> SDTM -> ADaM ->data analyst
 
+SEE [^wiki_CDISC] [^vendor_def]
+
 [CDISC wikipedia](<https://en.wikipedia.org/wiki/Clinical_Data_Interchange_Standards_Consortium>)
  Good, not perfect, one page summary.
 
@@ -164,7 +174,7 @@ Basic introduction:
 - **CDISC 9 short videos (JAN 2025)** : <https://www.youtube.com/watch?v=muzo9veBOFw&list=PL4vFrmnpUDeRziW2ozobayozgukgAmL1S>
 
 - [**CDISC data exchange definitions**:] (https://www.cdisc.org/standards/data-exchange)
-- **CDISC Genius (AI) :** https://chatgpt.com/g/g-677223310d8081918ca4bdda574a5384-cdisc-genius 
+- **CDISC Genius (AI)[^genius] :** https://chatgpt.com/g/g-677223310d8081918ca4bdda574a5384-cdisc-genius 
 - **CDISC Primer** :  https://www.cdisc.org/primer
 - **cdisc api library** (info)  https://www.cdisc.org/cdisc-library
 
@@ -173,20 +183,22 @@ Basic introduction:
  Example:  In ADaM specify columns, or  the type (string, number etc)  is determined by metacore (metadata) and this in turn is based on ...
 - Goal?  At R level, structure of ADaM, SDTM tables (deliverables) 
 - [CDISC videos](https://www.youtube.com/@CDISCInc/playlists)
-- [CDISC Glossary](https://datascience.cancer.gov/resources/cancer-vocabulary/cdisc-terminology)
+- [^CDISC Glossary](https://datascience.cancer.gov/resources/cancer-vocabulary/cdisc-terminology)
 
 
 ### What exactly are these CDISC specs?
 ODM   - At simplest level, ODM is overall guide to formatting data/metadata; what ADaM and SDTM datasets should look like and how to pass as JSON files.
 https://www.cdisc.org/standards/data-exchange/odm-xml/odm-v2-0 \
 
+```
 <ODM>
 <STUDY>
   <SPONSOR>
   <VISITS>
   ...
+```
 
-Example schema:  https://github.com/cdisc-org/DataExchange-ODM/blob/main/schema/ODM-clinicaldata.xsd
+Example schema: [CDISC_schema]:  https://github.com/cdisc-org/DataExchange-ODM/blob/main/schema/ODM-clinicaldata.xsd
 
 
 ### What is `Controlled Terminology`
@@ -206,7 +218,7 @@ Future:  json
 
 ### What is dataset-json standard ?
 "dataset exchange format" in JSON file for tabular datasets
-Read https://swhume.github.io/why-json-for-datasets
+Read [^swhume] https://swhume.github.io/why-json-for-datasets
 
 - XML,  structured document (DOM, body, src, images,...)
 - JSON, structured data
@@ -616,4 +628,18 @@ With right tool, can validate the JSON data is indeed a valid JSON and follows J
 }
 ```
 
+## Footnotes
+[^lintr]: <https://lintr.r-lib.org/articles/lintr.html>
+[^coursera]: <https://www.coursera.org/learn/hands-on-clinical-reporting-using-r>
+[^prior_methods]: <https://www.cdisc.org/kb/articles/short-history-cdisc-and-sas-transport-files>
+[^wiki_CDISC]: [CDISC wikipedia] <https://en.wikipedia.org/wiki/Clinical_Data_Interchange_Standards_Consortium>
+[^genius]: [CDISC_genius] <https://chatgpt.com/g/g-677223310d8081918ca4bdda574a5384-cdisc-genius>
+[^swhume]: [swhume] <https://swhume.github.io/why-json-for-datasets>
+[^vendor_def]: [vendor_def] <https://www.scian.com/statistical-programming-and-analysis/adam/define-xml/>
+[^CDISC Glossary]: [CDISC_glossary] <https://datascience.cancer.gov/resources/cancer-vocabulary/cdisc-terminology>
+[^CDISC_schema]: [CDISC_schema]  <https://github.com/cdisc-org/DataExchange-ODM/blob/main/schema/ODM-clinicaldata.xsd>
+[^CDISC_api]: [CDISC_api]  <https://wiki.cdisc.org/display/LIBSUPRT/Welcome+Package+for+CDISC+Library+Users> 
 
+
+This is the bottom
+<a name="bottom"></a>

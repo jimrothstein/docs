@@ -5,7 +5,7 @@
 <meta name="generator" content="quarto-1.6.39">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="author" content="JR">
-<meta name="dcterms.date" content="2025-02-03">
+<meta name="dcterms.date" content="2025-02-08">
 <title>250_quarto_cheat.qmd – misc</title>
 <style>
 code{white-space: pre-wrap;}
@@ -4796,72 +4796,75 @@ window.Quarto = {
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
    
   <ul>
-<li>
-<a href="#section-i" id="toc-section-i" class="nav-link active" data-scroll-target="#section-i"><span class="header-section-number">1</span> Section I</a>
+<li><a href="#jim" id="toc-jim" class="nav-link active" data-scroll-target="#jim"><span class="header-section-number">0.0.0.1</span> Jim</a></li>
+  <li><a href="#typst" id="toc-typst" class="nav-link" data-scroll-target="#typst"><span class="header-section-number">0.0.1</span> typst</a></li>
+  <li>
+<a href="#section-i" id="toc-section-i" class="nav-link" data-scroll-target="#section-i"><span class="header-section-number">1</span> Section I</a>
   <ul>
 <li><a href="#to-do" id="toc-to-do" class="nav-link" data-scroll-target="#to-do"><span class="header-section-number">1.1</span> TO DO</a></li>
-  <li><a href="#absolute-positioning-example" id="toc-absolute-positioning-example" class="nav-link" data-scroll-target="#absolute-positioning-example"><span class="header-section-number">1.2</span> Absolute positioning example</a></li>
+  <li><a href="#to-publish-quarto-to-connect.posit.cloud" id="toc-to-publish-quarto-to-connect.posit.cloud" class="nav-link" data-scroll-target="#to-publish-quarto-to-connect.posit.cloud"><span class="header-section-number">1.2</span> To Publish quarto to connect.posit.cloud</a></li>
+  <li><a href="#absolute-positioning-example" id="toc-absolute-positioning-example" class="nav-link" data-scroll-target="#absolute-positioning-example"><span class="header-section-number">1.3</span> Absolute positioning example</a></li>
   <li>
-<a href="#preliminaries" id="toc-preliminaries" class="nav-link" data-scroll-target="#preliminaries"><span class="header-section-number">1.3</span> Preliminaries</a>
+<a href="#preliminaries" id="toc-preliminaries" class="nav-link" data-scroll-target="#preliminaries"><span class="header-section-number">1.4</span> Preliminaries</a>
   <ul class="collapse">
-<li><a href="#ref" id="toc-ref" class="nav-link" data-scroll-target="#ref"><span class="header-section-number">1.3.1</span> REF</a></li>
-  <li><a href="#misc-quarto-tips" id="toc-misc-quarto-tips" class="nav-link" data-scroll-target="#misc-quarto-tips"><span class="header-section-number">1.3.2</span> Misc quarto tips</a></li>
-  <li><a href="#output-chunks" id="toc-output-chunks" class="nav-link" data-scroll-target="#output-chunks"><span class="header-section-number">1.3.3</span> Output chunks</a></li>
+<li><a href="#ref" id="toc-ref" class="nav-link" data-scroll-target="#ref"><span class="header-section-number">1.4.1</span> REF</a></li>
+  <li><a href="#misc-quarto-tips" id="toc-misc-quarto-tips" class="nav-link" data-scroll-target="#misc-quarto-tips"><span class="header-section-number">1.4.2</span> Misc quarto tips</a></li>
+  <li><a href="#output-chunks" id="toc-output-chunks" class="nav-link" data-scroll-target="#output-chunks"><span class="header-section-number">1.4.3</span> Output chunks</a></li>
   </ul>
 </li>
-  <li><a href="#pandoc-only-cli---pdf" id="toc-pandoc-only-cli---pdf" class="nav-link" data-scroll-target="#pandoc-only-cli---pdf"><span class="header-section-number">1.4</span> Pandoc only (cli) - pdf,</a></li>
+  <li><a href="#pandoc-only-cli---pdf" id="toc-pandoc-only-cli---pdf" class="nav-link" data-scroll-target="#pandoc-only-cli---pdf"><span class="header-section-number">1.5</span> Pandoc only (cli) - pdf,</a></li>
   <li>
-<a href="#pandoc-only-cli---html-embed-small-font-need-scss" id="toc-pandoc-only-cli---html-embed-small-font-need-scss" class="nav-link" data-scroll-target="#pandoc-only-cli---html-embed-small-font-need-scss"><span class="header-section-number">1.5</span> Pandoc only (cli) - html, embed :::small-font (need SCSS)</a>
+<a href="#pandoc-only-cli---html-embed-small-font-need-scss" id="toc-pandoc-only-cli---html-embed-small-font-need-scss" class="nav-link" data-scroll-target="#pandoc-only-cli---html-embed-small-font-need-scss"><span class="header-section-number">1.6</span> Pandoc only (cli) - html, embed :::small-font (need SCSS)</a>
   <ul class="collapse">
-<li><a href="#why-use-rstudio" id="toc-why-use-rstudio" class="nav-link" data-scroll-target="#why-use-rstudio"><span class="header-section-number">1.5.1</span> Why use Rstudio?</a></li>
-  </ul>
-</li>
-  <li>
-<a href="#quarto---basics" id="toc-quarto---basics" class="nav-link" data-scroll-target="#quarto---basics"><span class="header-section-number">1.6</span> Quarto - basics</a>
-  <ul class="collapse">
-<li><a href="#quarto-examples" id="toc-quarto-examples" class="nav-link" data-scroll-target="#quarto-examples"><span class="header-section-number">1.6.1</span> quarto examples</a></li>
-  <li><a href="#run-quarto-cli-create-project-to-create-any-quarto-project-including-slides-with-revealjs." id="toc-run-quarto-cli-create-project-to-create-any-quarto-project-including-slides-with-revealjs." class="nav-link" data-scroll-target="#run-quarto-cli-create-project-to-create-any-quarto-project-including-slides-with-revealjs."><span class="header-section-number">1.6.2</span> Run quarto (CLI) create project to create any quarto project, including slides with revealjs.</a></li>
-  <li><a href="#quarto---markup-callouts" id="toc-quarto---markup-callouts" class="nav-link" data-scroll-target="#quarto---markup-callouts"><span class="header-section-number">1.6.3</span> Quarto - markup, callouts</a></li>
-  <li><a href="#create-a-footnote" id="toc-create-a-footnote" class="nav-link" data-scroll-target="#create-a-footnote"><span class="header-section-number">1.6.4</span> Create a footnote:</a></li>
+<li><a href="#why-use-rstudio" id="toc-why-use-rstudio" class="nav-link" data-scroll-target="#why-use-rstudio"><span class="header-section-number">1.6.1</span> Why use Rstudio?</a></li>
   </ul>
 </li>
   <li>
-<a href="#call-out-examples" id="toc-call-out-examples" class="nav-link" data-scroll-target="#call-out-examples"><span class="header-section-number">1.7</span> Call out examples</a>
+<a href="#quarto---basics" id="toc-quarto---basics" class="nav-link" data-scroll-target="#quarto---basics"><span class="header-section-number">1.7</span> Quarto - basics</a>
   <ul class="collapse">
-<li><a href="#callout-note" id="toc-callout-note" class="nav-link" data-scroll-target="#callout-note"><span class="header-section-number">1.7.1</span> .callout-note</a></li>
-  <li><a href="#callout-tip" id="toc-callout-tip" class="nav-link" data-scroll-target="#callout-tip"><span class="header-section-number">1.7.2</span> .callout-tip</a></li>
-  <li><a href="#callout-caution-collapse" id="toc-callout-caution-collapse" class="nav-link" data-scroll-target="#callout-caution-collapse"><span class="header-section-number">1.7.3</span> .callout-caution, collapse</a></li>
-  <li><a href="#content-visible-when-formathtml" id="toc-content-visible-when-formathtml" class="nav-link" data-scroll-target="#content-visible-when-formathtml"><span class="header-section-number">1.7.4</span> .content-visible when-format=html</a></li>
-  <li><a href="#aside" id="toc-aside" class="nav-link" data-scroll-target="#aside"><span class="header-section-number">1.7.5</span> aside</a></li>
-  <li><a href="#hidden" id="toc-hidden" class="nav-link" data-scroll-target="#hidden"><span class="header-section-number">1.7.6</span> hidden</a></li>
-  <li><a href="#two-columns" id="toc-two-columns" class="nav-link" data-scroll-target="#two-columns"><span class="header-section-number">1.7.7</span> Two columns</a></li>
-  <li><a href="#quarto-css-scss-see-_quarto.yml-cosmo-custom.scss" id="toc-quarto-css-scss-see-_quarto.yml-cosmo-custom.scss" class="nav-link" data-scroll-target="#quarto-css-scss-see-_quarto.yml-cosmo-custom.scss"><span class="header-section-number">1.7.8</span> Quarto &amp; CSS | SCSS (see _quarto.yml cosmo + custom.scss)</a></li>
-  <li><a href="#custom-blocks-rmarkdown-9.6" id="toc-custom-blocks-rmarkdown-9.6" class="nav-link" data-scroll-target="#custom-blocks-rmarkdown-9.6"><span class="header-section-number">1.7.9</span> Custom Blocks (rmarkdown-9.6)</a></li>
-  <li><a href="#scss-mixin-not-working" id="toc-scss-mixin-not-working" class="nav-link" data-scroll-target="#scss-mixin-not-working"><span class="header-section-number">1.7.10</span> SCSS <span class="citation" data-cites="mixin">@mixin</span> (not working)</a></li>
-  <li><a href="#scss-hover" id="toc-scss-hover" class="nav-link" data-scroll-target="#scss-hover"><span class="header-section-number">1.7.11</span> SCSS hover</a></li>
-  <li><a href="#display-code-and-chunk-options" id="toc-display-code-and-chunk-options" class="nav-link" data-scroll-target="#display-code-and-chunk-options"><span class="header-section-number">1.7.12</span> Display code and chunk options</a></li>
-  <li><a href="#table-with-scss" id="toc-table-with-scss" class="nav-link" data-scroll-target="#table-with-scss"><span class="header-section-number">1.7.13</span> table with scss</a></li>
-  <li><a href="#annotate-code-and-create-code-to-change-font-color" id="toc-annotate-code-and-create-code-to-change-font-color" class="nav-link" data-scroll-target="#annotate-code-and-create-code-to-change-font-color"><span class="header-section-number">1.7.14</span> Annotate code and create code to change font color:</a></li>
-  <li><a href="#fancy-theorems" id="toc-fancy-theorems" class="nav-link" data-scroll-target="#fancy-theorems"><span class="header-section-number">1.7.15</span> Fancy Theorems</a></li>
+<li><a href="#quarto-examples" id="toc-quarto-examples" class="nav-link" data-scroll-target="#quarto-examples"><span class="header-section-number">1.7.1</span> quarto examples</a></li>
+  <li><a href="#run-quarto-cli-create-project-to-create-any-quarto-project-including-slides-with-revealjs." id="toc-run-quarto-cli-create-project-to-create-any-quarto-project-including-slides-with-revealjs." class="nav-link" data-scroll-target="#run-quarto-cli-create-project-to-create-any-quarto-project-including-slides-with-revealjs."><span class="header-section-number">1.7.2</span> Run quarto (CLI) create project to create any quarto project, including slides with revealjs.</a></li>
+  <li><a href="#quarto---markup-callouts" id="toc-quarto---markup-callouts" class="nav-link" data-scroll-target="#quarto---markup-callouts"><span class="header-section-number">1.7.3</span> Quarto - markup, callouts</a></li>
+  <li><a href="#create-a-footnote" id="toc-create-a-footnote" class="nav-link" data-scroll-target="#create-a-footnote"><span class="header-section-number">1.7.4</span> Create a footnote:</a></li>
   </ul>
 </li>
   <li>
-<a href="#r-chunks-with-decorations" id="toc-r-chunks-with-decorations" class="nav-link" data-scroll-target="#r-chunks-with-decorations"><span class="header-section-number">1.8</span> R chunks with decorations</a>
+<a href="#call-out-examples" id="toc-call-out-examples" class="nav-link" data-scroll-target="#call-out-examples"><span class="header-section-number">1.8</span> Call out examples</a>
   <ul class="collapse">
-<li><a href="#box-rmarkdown-book-9.6" id="toc-box-rmarkdown-book-9.6" class="nav-link" data-scroll-target="#box-rmarkdown-book-9.6"><span class="header-section-number">1.8.1</span> Box (rmarkdown-book 9.6)</a></li>
+<li><a href="#callout-note" id="toc-callout-note" class="nav-link" data-scroll-target="#callout-note"><span class="header-section-number">1.8.1</span> .callout-note</a></li>
+  <li><a href="#callout-tip" id="toc-callout-tip" class="nav-link" data-scroll-target="#callout-tip"><span class="header-section-number">1.8.2</span> .callout-tip</a></li>
+  <li><a href="#callout-caution-collapse" id="toc-callout-caution-collapse" class="nav-link" data-scroll-target="#callout-caution-collapse"><span class="header-section-number">1.8.3</span> .callout-caution, collapse</a></li>
+  <li><a href="#content-visible-when-formathtml" id="toc-content-visible-when-formathtml" class="nav-link" data-scroll-target="#content-visible-when-formathtml"><span class="header-section-number">1.8.4</span> .content-visible when-format=html</a></li>
+  <li><a href="#aside" id="toc-aside" class="nav-link" data-scroll-target="#aside"><span class="header-section-number">1.8.5</span> aside</a></li>
+  <li><a href="#hidden" id="toc-hidden" class="nav-link" data-scroll-target="#hidden"><span class="header-section-number">1.8.6</span> hidden</a></li>
+  <li><a href="#two-columns" id="toc-two-columns" class="nav-link" data-scroll-target="#two-columns"><span class="header-section-number">1.8.7</span> Two columns</a></li>
+  <li><a href="#quarto-css-scss-see-_quarto.yml-cosmo-custom.scss" id="toc-quarto-css-scss-see-_quarto.yml-cosmo-custom.scss" class="nav-link" data-scroll-target="#quarto-css-scss-see-_quarto.yml-cosmo-custom.scss"><span class="header-section-number">1.8.8</span> Quarto &amp; CSS | SCSS (see _quarto.yml cosmo + custom.scss)</a></li>
+  <li><a href="#custom-blocks-rmarkdown-9.6" id="toc-custom-blocks-rmarkdown-9.6" class="nav-link" data-scroll-target="#custom-blocks-rmarkdown-9.6"><span class="header-section-number">1.8.9</span> Custom Blocks (rmarkdown-9.6)</a></li>
+  <li><a href="#scss-mixin-not-working" id="toc-scss-mixin-not-working" class="nav-link" data-scroll-target="#scss-mixin-not-working"><span class="header-section-number">1.8.10</span> SCSS <span class="citation" data-cites="mixin">@mixin</span> (not working)</a></li>
+  <li><a href="#scss-hover" id="toc-scss-hover" class="nav-link" data-scroll-target="#scss-hover"><span class="header-section-number">1.8.11</span> SCSS hover</a></li>
+  <li><a href="#display-code-and-chunk-options" id="toc-display-code-and-chunk-options" class="nav-link" data-scroll-target="#display-code-and-chunk-options"><span class="header-section-number">1.8.12</span> Display code and chunk options</a></li>
+  <li><a href="#table-with-scss" id="toc-table-with-scss" class="nav-link" data-scroll-target="#table-with-scss"><span class="header-section-number">1.8.13</span> table with scss</a></li>
+  <li><a href="#annotate-code-and-create-code-to-change-font-color" id="toc-annotate-code-and-create-code-to-change-font-color" class="nav-link" data-scroll-target="#annotate-code-and-create-code-to-change-font-color"><span class="header-section-number">1.8.14</span> Annotate code and create code to change font color:</a></li>
+  <li><a href="#fancy-theorems" id="toc-fancy-theorems" class="nav-link" data-scroll-target="#fancy-theorems"><span class="header-section-number">1.8.15</span> Fancy Theorems</a></li>
   </ul>
 </li>
   <li>
-<a href="#css-here" id="toc-css-here" class="nav-link" data-scroll-target="#css-here"><span class="header-section-number">1.9</span> CSS here</a>
+<a href="#r-chunks-with-decorations" id="toc-r-chunks-with-decorations" class="nav-link" data-scroll-target="#r-chunks-with-decorations"><span class="header-section-number">1.9</span> R chunks with decorations</a>
   <ul class="collapse">
-<li><a href="#css-in-line-examples." id="toc-css-in-line-examples." class="nav-link" data-scroll-target="#css-in-line-examples."><span class="header-section-number">1.9.1</span> CSS in-line examples.</a></li>
-  <li><a href="#in-file-css-examples" id="toc-in-file-css-examples" class="nav-link" data-scroll-target="#in-file-css-examples"><span class="header-section-number">1.9.2</span> in-file, CSS examples</a></li>
-  <li><a href="#quarto-in-line-css-examples-for-html-pdf" id="toc-quarto-in-line-css-examples-for-html-pdf" class="nav-link" data-scroll-target="#quarto-in-line-css-examples-for-html-pdf"><span class="header-section-number">1.9.3</span> Quarto: In-line CSS Examples for HTML, PDF</a></li>
-  <li><a href="#inline" id="toc-inline" class="nav-link" data-scroll-target="#inline"><span class="header-section-number">1.9.4</span> Inline</a></li>
+<li><a href="#box-rmarkdown-book-9.6" id="toc-box-rmarkdown-book-9.6" class="nav-link" data-scroll-target="#box-rmarkdown-book-9.6"><span class="header-section-number">1.9.1</span> Box (rmarkdown-book 9.6)</a></li>
+  </ul>
+</li>
   <li>
-<a href="#create-a-css-class-inline" id="toc-create-a-css-class-inline" class="nav-link" data-scroll-target="#create-a-css-class-inline"><span class="header-section-number">1.9.5</span> Create a CSS class (inline)</a>
+<a href="#css-here" id="toc-css-here" class="nav-link" data-scroll-target="#css-here"><span class="header-section-number">1.10</span> CSS here</a>
   <ul class="collapse">
-<li><a href="#header-uses-in-file-css-class" id="toc-header-uses-in-file-css-class" class="nav-link" data-scroll-target="#header-uses-in-file-css-class">Header uses in-file CSS class</a></li>
+<li><a href="#css-in-line-examples." id="toc-css-in-line-examples." class="nav-link" data-scroll-target="#css-in-line-examples."><span class="header-section-number">1.10.1</span> CSS in-line examples.</a></li>
+  <li><a href="#in-file-css-examples" id="toc-in-file-css-examples" class="nav-link" data-scroll-target="#in-file-css-examples"><span class="header-section-number">1.10.2</span> in-file, CSS examples</a></li>
+  <li><a href="#quarto-in-line-css-examples-for-html-pdf" id="toc-quarto-in-line-css-examples-for-html-pdf" class="nav-link" data-scroll-target="#quarto-in-line-css-examples-for-html-pdf"><span class="header-section-number">1.10.3</span> Quarto: In-line CSS Examples for HTML, PDF</a></li>
+  <li><a href="#inline" id="toc-inline" class="nav-link" data-scroll-target="#inline"><span class="header-section-number">1.10.4</span> Inline</a></li>
+  <li>
+<a href="#create-a-css-class-inline" id="toc-create-a-css-class-inline" class="nav-link" data-scroll-target="#create-a-css-class-inline"><span class="header-section-number">1.10.5</span> Create a CSS class (inline)</a>
+  <ul class="collapse">
+<li><a href="#header-uses-in-file-css-class" id="toc-header-uses-in-file-css-class" class="nav-link" data-scroll-target="#header-uses-in-file-css-class"><span class="header-section-number">1.10.5.1</span> Header uses in-file CSS class</a></li>
   </ul>
 </li>
   </ul>
@@ -4890,7 +4893,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 3, 2025</p>
+      <p class="date">February 8, 2025</p>
     </div>
   </div>
   
@@ -4899,7 +4902,23 @@ window.Quarto = {
   
 
 
-</header><p><br></p>
+</header><section id="jim" class="level4" data-number="0.0.0.1"><h4 data-number="0.0.0.1" class="anchored" data-anchor-id="jim">
+<span class="header-section-number">0.0.0.1</span> Jim</h4>
+<p>This is text related to JIM</p>
+<hr>
+<hr>
+<dl>
+<dt>Def Word A</dt>
+<dd>
+<p>Word A means …..</p>
+</dd>
+<dt>Word B</dt>
+<dd>
+B means this.
+</dd>
+</dl>
+<hr>
+<p><br></p>
 <div class="shadowbox">
 <p>
 </p>
@@ -4917,9 +4936,13 @@ Should also be in shadobx, using pandox’s colons
 <p>Latex, MATH, <strong>diagrams</strong>: SEE <code>code_publish</code> esp MATH and LATEX (but poor organization)</p>
 </div>
 <p>Embed latex.sty and real latex in quarto https://youtu.be/2DbuqYKOsrY?t=396</p>
-<p>Or, add <code>quarto extensions</code> (format: my_extension) To add latex or HTML forms … Or, some R packages (gt, …) allow you to embed latex in a function. OR, typst (since 2022) - simpler than latex ### typst *.qmd, then template (position things like <span class="math inline">title</span>), then style doc to set title = “Hello” Typt is more English; compare to SCSS to make, say, a box, yellow, with a font …</p>
-<section id="section-i" class="level1 page-columns page-full" data-number="1"><h1 data-number="1">
+<p>Or, add <code>quarto extensions</code> (format: my_extension) To add latex or HTML forms … Or, some R packages (gt, …) allow you to embed latex in a function. OR, typst (since 2022) - simpler than latex</p>
+</section><section id="typst" class="level3" data-number="0.0.1"><h3 data-number="0.0.1" class="anchored" data-anchor-id="typst">
+<span class="header-section-number">0.0.1</span> typst</h3>
+<p>*.qmd, then template (position things like <span class="math inline">title</span>), then style doc to set title = “Hello” Typt is more English; compare to SCSS to make, say, a box, yellow, with a font …</p>
+</section><section id="section-i" class="level1 page-columns page-full" data-number="1"><h1 data-number="1">
 <span class="header-section-number">1</span> Section I</h1>
+<p>go to <a href="#jim">Jim</a></p>
 <section id="to-do" class="level2" data-number="1.1"><h2 data-number="1.1" class="anchored" data-anchor-id="to-do">
 <span class="header-section-number">1.1</span> TO DO</h2>
 <p>In SCSS file, there are - tags Example: h1 { … } - class Example: .important { … } - id Example: #title { …}</p>
@@ -4943,14 +4966,33 @@ Should also be in shadobx, using pandox’s colons
 <div class="underline">
 <p>this is also underlined, using definition in SCSS</p>
 </div>
-<hr></section><section id="absolute-positioning-example" class="level2" data-number="1.2"><h2 data-number="1.2" class="anchored" data-anchor-id="absolute-positioning-example">
-<span class="header-section-number">1.2</span> Absolute positioning example</h2>
+<hr></section><section id="to-publish-quarto-to-connect.posit.cloud" class="level2" data-number="1.2"><h2 data-number="1.2" class="anchored" data-anchor-id="to-publish-quarto-to-connect.posit.cloud">
+<span class="header-section-number">1.2</span> To Publish quarto to connect.posit.cloud</h2>
+<p>https://connect.posit.cloud/jimrothstein</p>
+<p>This is IDE (https://posit.cloud/content/yours?sort=name_asc)</p>
+<ul>
+<li><p>Copy desired *.qmd to this folder: quarto … test</p></li>
+<li><p>Run the writeManifest() (below)</p></li>
+<li><p>(Does render work locally?)</p></li>
+<li><p>Check the resulting manifest.json is not bloated with excessive packages/dependencies.</p></li>
+<li><p>commit/push</p></li>
+<li><p>On this website: - https://connect.posit.cloud/jimrothstein</p></li>
+<li><p><code>Publish</code></p></li>
+<li><p>Choose Github, this folder, which *.qmd file</p></li>
+</ul>
+<p>In this folder/project,</p>
+<div class="cell">
+<details class="code-fold"><summary>See Code</summary><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">#rsconnect::writeManifest()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section><section id="absolute-positioning-example" class="level2" data-number="1.3"><h2 data-number="1.3" class="anchored" data-anchor-id="absolute-positioning-example">
+<span class="header-section-number">1.3</span> Absolute positioning example</h2>
 <p><span class="small">I love .small</span></p>
 <p><span class="center">centering</span></p>
 <p>[absolute positioning]{.absolute top=“50%” left-“50%”}</p>
 <p><span class="absolute" data-bottom="0" data-right="0">and cake.</span></p>
-</section><section id="preliminaries" class="level2" data-number="1.3"><h2 data-number="1.3" class="anchored" data-anchor-id="preliminaries">
-<span class="header-section-number">1.3</span> Preliminaries</h2>
+</section><section id="preliminaries" class="level2" data-number="1.4"><h2 data-number="1.4" class="anchored" data-anchor-id="preliminaries">
+<span class="header-section-number">1.4</span> Preliminaries</h2>
 <div class="callout callout-style-simple callout-none no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -4961,8 +5003,8 @@ Should also be in shadobx, using pandox’s colons
 </div>
 </div>
 </div>
-<section id="ref" class="level3" data-number="1.3.1"><h3 data-number="1.3.1" class="anchored" data-anchor-id="ref">
-<span class="header-section-number">1.3.1</span> REF</h3>
+<section id="ref" class="level3" data-number="1.4.1"><h3 data-number="1.4.1" class="anchored" data-anchor-id="ref">
+<span class="header-section-number">1.4.1</span> REF</h3>
 <ul>
 <li><p><a href="https://sass-lang.com/documentation/" class="uri">https://sass-lang.com/documentation/</a></p></li>
 <li><p><a href="https://sass-lang.com/documentation/" title="tip: full scss docs">sass-lang.org</a></p></li>
@@ -5000,8 +5042,8 @@ References, click to expand
 - css, SCSS
 - revealjs   (SEE:  examples in code_publish)
 - HTML</code></pre>
-</section><section id="misc-quarto-tips" class="level3" data-number="1.3.2"><h3 data-number="1.3.2" class="anchored" data-anchor-id="misc-quarto-tips">
-<span class="header-section-number">1.3.2</span> Misc quarto tips</h3>
+</section><section id="misc-quarto-tips" class="level3" data-number="1.4.2"><h3 data-number="1.4.2" class="anchored" data-anchor-id="misc-quarto-tips">
+<span class="header-section-number">1.4.2</span> Misc quarto tips</h3>
 <ul>
 <li>Quarto looks to _quarto.yml in current dir, then in parent dir.</li>
 <li>This takes dominance over any scsc file in yaml in the .qmd file. (check !!)</li>
@@ -5017,11 +5059,11 @@ References, click to expand
 </ul>
 <hr>
 <p>These are same: <code>::::{.X}</code> and <code>::::{X}</code> where X is defined in CSS/SCSS. <!-- end of preliminaries --></p>
-</section><section id="output-chunks" class="level3" data-number="1.3.3"><h3 data-number="1.3.3" class="anchored" data-anchor-id="output-chunks">
-<span class="header-section-number">1.3.3</span> Output chunks</h3>
+</section><section id="output-chunks" class="level3" data-number="1.4.3"><h3 data-number="1.4.3" class="anchored" data-anchor-id="output-chunks">
+<span class="header-section-number">1.4.3</span> Output chunks</h3>
 <p>Note: use of <code>class-source</code> and <code>class-output</code>, define .custombox_* in SCSS class-source not working.</p>
 <div class="cell">
-<details class="code-fold"><summary>See Code</summary><div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">x</span><span class="op">=</span><span class="fl">1</span></span>
+<details class="code-fold"><summary>See Code</summary><div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">x</span><span class="op">=</span><span class="fl">1</span></span>
 <span><span class="va">y</span> <span class="op">=</span> <span class="va">x</span> <span class="op">+</span><span class="fl">2</span></span>
 <span><span class="va">y</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details><div class="cell-output cell-output-stdout">
@@ -5029,7 +5071,7 @@ References, click to expand
 </div>
 </div>
 <div class="cell">
-<details class="code-fold"><summary>See Code</summary><div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">x</span><span class="op">=</span><span class="fl">1</span></span>
+<details class="code-fold"><summary>See Code</summary><div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">x</span><span class="op">=</span><span class="fl">1</span></span>
 <span><span class="va">y</span> <span class="op">=</span> <span class="va">x</span> <span class="op">+</span><span class="fl">2</span></span>
 <span><span class="va">y</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details><div class="cell-output cell-output-stdout">
@@ -5037,19 +5079,19 @@ References, click to expand
 </div>
 </div>
 <div class="cell">
-<details class="code-fold"><summary>See Code</summary><div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">x</span><span class="op">=</span><span class="fl">1</span></span>
+<details class="code-fold"><summary>See Code</summary><div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">x</span><span class="op">=</span><span class="fl">1</span></span>
 <span><span class="va">y</span> <span class="op">=</span> <span class="va">x</span> <span class="op">+</span><span class="fl">2</span></span>
 <span><span class="va">y</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details><div class="cell-output cell-output-stdout">
 <pre><code>[1] 3</code></pre>
 </div>
 </div>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#| code-fold: true</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| code-summmary: Show code.</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>Show me</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section></section><section id="pandoc-only-cli---pdf" class="level2" data-number="1.4"><h2 data-number="1.4" class="anchored" data-anchor-id="pandoc-only-cli---pdf">
-<span class="header-section-number">1.4</span> Pandoc only (cli) - pdf,</h2>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#| code-fold: true</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| code-summmary: Show code.</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>Show me</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section></section><section id="pandoc-only-cli---pdf" class="level2" data-number="1.5"><h2 data-number="1.5" class="anchored" data-anchor-id="pandoc-only-cli---pdf">
+<span class="header-section-number">1.5</span> Pandoc only (cli) - pdf,</h2>
 <p>pandoc -D latex # template pandoc -D html</p>
 <p>templates look like <span class="math inline">var</span>, or <span class="math inline">IF</span> etc. trick: Regardless of content, place 3 back ticks at top/bottom will render document as straight text.</p>
 <p>To render ascii document with small font (for printing):</p>
@@ -5063,18 +5105,18 @@ References, click to expand
 </li>
 <li>quarto render <file> –to gfm –output &lt;output_file.md&gt;</file>
 </li>
-</ul></section><section id="pandoc-only-cli---html-embed-small-font-need-scss" class="level2" data-number="1.5"><h2 data-number="1.5" class="anchored" data-anchor-id="pandoc-only-cli---html-embed-small-font-need-scss">
-<span class="header-section-number">1.5</span> Pandoc only (cli) - html, embed :::small-font (need SCSS)</h2>
+</ul></section><section id="pandoc-only-cli---html-embed-small-font-need-scss" class="level2" data-number="1.6"><h2 data-number="1.6" class="anchored" data-anchor-id="pandoc-only-cli---html-embed-small-font-need-scss">
+<span class="header-section-number">1.6</span> Pandoc only (cli) - html, embed :::small-font (need SCSS)</h2>
 <ul>
 <li>need example, not tried yet</li>
 </ul>
-<section id="why-use-rstudio" class="level3" data-number="1.5.1"><h3 data-number="1.5.1" class="anchored" data-anchor-id="why-use-rstudio">
-<span class="header-section-number">1.5.1</span> Why use Rstudio?</h3>
+<section id="why-use-rstudio" class="level3" data-number="1.6.1"><h3 data-number="1.6.1" class="anchored" data-anchor-id="why-use-rstudio">
+<span class="header-section-number">1.6.1</span> Why use Rstudio?</h3>
 <ul>
 <li>Visual Mode = menu driven, simplifies decorattion</li>
 <li>Renders automatically.</li>
-</ul></section></section><section id="quarto---basics" class="level2 page-columns page-full" data-number="1.6"><h2 data-number="1.6" class="anchored" data-anchor-id="quarto---basics">
-<span class="header-section-number">1.6</span> Quarto - basics</h2>
+</ul></section></section><section id="quarto---basics" class="level2 page-columns page-full" data-number="1.7"><h2 data-number="1.7" class="anchored" data-anchor-id="quarto---basics">
+<span class="header-section-number">1.7</span> Quarto - basics</h2>
 <p>markdown does NOT offer all tools (ex: change color) best to avoid direct HTML insertion, use tools:</p>
 <ul>
 <li><p>knitr:: can be useful functions: <a href="https://cran.r-project.org/web/packages/knitr/knitr.pdf" class="uri">https://cran.r-project.org/web/packages/knitr/knitr.pdf</a></p></li>
@@ -5084,25 +5126,25 @@ References, click to expand
 <li><p>Pandoc’s version of markdown: <link></p></li>
 <li><p>Bootstrap: predefined SEE getbootstrap.com css help-classes</p></li>
 </ul>
-<section id="quarto-examples" class="level3" data-number="1.6.1"><h3 data-number="1.6.1" class="anchored" data-anchor-id="quarto-examples">
-<span class="header-section-number">1.6.1</span> quarto examples</h3>
+<section id="quarto-examples" class="level3" data-number="1.7.1"><h3 data-number="1.7.1" class="anchored" data-anchor-id="quarto-examples">
+<span class="header-section-number">1.7.1</span> quarto examples</h3>
 <p>SEE namespace file</p>
-</section><section id="run-quarto-cli-create-project-to-create-any-quarto-project-including-slides-with-revealjs." class="level3" data-number="1.6.2"><h3 data-number="1.6.2" class="anchored" data-anchor-id="run-quarto-cli-create-project-to-create-any-quarto-project-including-slides-with-revealjs.">
-<span class="header-section-number">1.6.2</span> Run quarto (CLI) create project to create any quarto project, including slides with revealjs.</h3>
+</section><section id="run-quarto-cli-create-project-to-create-any-quarto-project-including-slides-with-revealjs." class="level3" data-number="1.7.2"><h3 data-number="1.7.2" class="anchored" data-anchor-id="run-quarto-cli-create-project-to-create-any-quarto-project-including-slides-with-revealjs.">
+<span class="header-section-number">1.7.2</span> Run quarto (CLI) create project to create any quarto project, including slides with revealjs.</h3>
 <p>For revealjs, choose presentation when create document (in Rstudio)</p>
-</section><section id="quarto---markup-callouts" class="level3" data-number="1.6.3"><h3 data-number="1.6.3" class="anchored" data-anchor-id="quarto---markup-callouts">
-<span class="header-section-number">1.6.3</span> Quarto - markup, callouts</h3>
+</section><section id="quarto---markup-callouts" class="level3" data-number="1.7.3"><h3 data-number="1.7.3" class="anchored" data-anchor-id="quarto---markup-callouts">
+<span class="header-section-number">1.7.3</span> Quarto - markup, callouts</h3>
 <p><u>underline text, where defined?</u></p>
 <p><span class="border">text with border, defined?</span></p>
-</section><section id="create-a-footnote" class="level3 page-columns page-full" data-number="1.6.4"><h3 data-number="1.6.4" class="anchored" data-anchor-id="create-a-footnote">
-<span class="header-section-number">1.6.4</span> Create a footnote:</h3>
+</section><section id="create-a-footnote" class="level3 page-columns page-full" data-number="1.7.4"><h3 data-number="1.7.4" class="anchored" data-anchor-id="create-a-footnote">
+<span class="header-section-number">1.7.4</span> Create a footnote:</h3>
 <p>Need footnote one here: <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup> This is footnote one.</p></div></div><hr>
-<!-- Call out examples --></section></section><section id="call-out-examples" class="level2 page-columns page-full" data-number="1.7"><h2 data-number="1.7" class="anchored" data-anchor-id="call-out-examples">
-<span class="header-section-number">1.7</span> Call out examples</h2>
+<!-- Call out examples --></section></section><section id="call-out-examples" class="level2 page-columns page-full" data-number="1.8"><h2 data-number="1.8" class="anchored" data-anchor-id="call-out-examples">
+<span class="header-section-number">1.8</span> Call out examples</h2>
 <p>REF: https://quarto.org/docs/authoring/callouts.html</p>
-<section id="callout-note" class="level3" data-number="1.7.1"><h3 data-number="1.7.1" class="anchored" data-anchor-id="callout-note">
-<span class="header-section-number">1.7.1</span> .callout-note</h3>
+<section id="callout-note" class="level3" data-number="1.8.1"><h3 data-number="1.8.1" class="anchored" data-anchor-id="callout-note">
+<span class="header-section-number">1.8.1</span> .callout-note</h3>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -5117,8 +5159,8 @@ Note
 Note that there are five types of callouts, including: <code>note</code>, <code>warning</code>, <code>important</code>, <code>tip</code>, and <code>caution</code>.</p>
 </div>
 </div>
-</section><section id="callout-tip" class="level3" data-number="1.7.2"><h3 data-number="1.7.2" class="anchored" data-anchor-id="callout-tip">
-<span class="header-section-number">1.7.2</span> .callout-tip</h3>
+</section><section id="callout-tip" class="level3" data-number="1.8.2"><h3 data-number="1.8.2" class="anchored" data-anchor-id="callout-tip">
+<span class="header-section-number">1.8.2</span> .callout-tip</h3>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -5132,8 +5174,8 @@ Tip
 <p>This is an example of a callout with a title.</p>
 </div>
 </div>
-</section><section id="callout-caution-collapse" class="level3" data-number="1.7.3"><h3 data-number="1.7.3" class="anchored" data-anchor-id="callout-caution-collapse">
-<span class="header-section-number">1.7.3</span> .callout-caution, collapse</h3>
+</section><section id="callout-caution-collapse" class="level3" data-number="1.8.3"><h3 data-number="1.8.3" class="anchored" data-anchor-id="callout-caution-collapse">
+<span class="header-section-number">1.8.3</span> .callout-caution, collapse</h3>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -5151,8 +5193,8 @@ Caution
 </div>
 </div>
 </div>
-</section><section id="content-visible-when-formathtml" class="level3" data-number="1.7.4"><h3 data-number="1.7.4" class="anchored" data-anchor-id="content-visible-when-formathtml">
-<span class="header-section-number">1.7.4</span> .content-visible when-format=html</h3>
+</section><section id="content-visible-when-formathtml" class="level3" data-number="1.8.4"><h3 data-number="1.8.4" class="anchored" data-anchor-id="content-visible-when-formathtml">
+<span class="header-section-number">1.8.4</span> .content-visible when-format=html</h3>
 <p>HTML - a call out visible only when HTML.</p>
 <!-- extended callout-tip, collapse, to show source code -->
 <div class="callout callout-style-default callout-tip callout-titled" title="Expand for Full Code Walkthrough">
@@ -5168,7 +5210,7 @@ Expand for Full Code Walkthrough
 <div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div class="cell">
-<details class="code-fold"><summary>See Code</summary><div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://pharmaverse.github.io/admiral/">admiral</a></span><span class="op">)</span></span>
+<details class="code-fold"><summary>See Code</summary><div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://pharmaverse.github.io/admiral/">admiral</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tibble.tidyverse.org/">tibble</a></span><span class="op">)</span></span>
 <span><span class="va">adbds</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://tibble.tidyverse.org/reference/tribble.html">tribble</a></span><span class="op">(</span></span>
 <span>  <span class="op">~</span><span class="va">PARAMCD</span>, <span class="op">~</span><span class="va">AVAL</span>,</span>
@@ -5200,8 +5242,8 @@ Expand for Full Code Walkthrough
 </div>
 </div>
 <!-- END  of Callouts -->
-</section><section id="aside" class="level3 page-columns page-full" data-number="1.7.5"><h3 data-number="1.7.5" class="anchored" data-anchor-id="aside">
-<span class="header-section-number">1.7.5</span> aside</h3>
+</section><section id="aside" class="level3 page-columns page-full" data-number="1.8.5"><h3 data-number="1.8.5" class="anchored" data-anchor-id="aside">
+<span class="header-section-number">1.8.5</span> aside</h3>
 
 <div class="no-row-height column-margin column-container"><div class="margin-aside">
 <ol type="1">
@@ -5214,14 +5256,14 @@ Expand for Full Code Walkthrough
 <li>contains a hidden keep a secret? USE {.hidden}</li>
 </ol>
 </div></div>
-</section><section id="hidden" class="level3" data-number="1.7.6"><h3 data-number="1.7.6" class="anchored" data-anchor-id="hidden">
-<span class="header-section-number">1.7.6</span> hidden</h3>
+</section><section id="hidden" class="level3" data-number="1.8.6"><h3 data-number="1.8.6" class="anchored" data-anchor-id="hidden">
+<span class="header-section-number">1.8.6</span> hidden</h3>
 <div class="hidden">
 <p>4 This is secret</p>
 </div>
 <hr>
-<!-- TWO columns --></section><section id="two-columns" class="level3" data-number="1.7.7"><h3 data-number="1.7.7" class="anchored" data-anchor-id="two-columns">
-<span class="header-section-number">1.7.7</span> Two columns</h3>
+<!-- TWO columns --></section><section id="two-columns" class="level3" data-number="1.8.7"><h3 data-number="1.8.7" class="anchored" data-anchor-id="two-columns">
+<span class="header-section-number">1.8.7</span> Two columns</h3>
 <div class="columns">
 <div class="column" style="width:70%;">
 <p>I would like to have text here</p>
@@ -5234,10 +5276,10 @@ Expand for Full Code Walkthrough
 </div>
 </div>
 <hr>
-<hr></section><section id="quarto-css-scss-see-_quarto.yml-cosmo-custom.scss" class="level3" data-number="1.7.8"><h3 data-number="1.7.8" class="anchored" data-anchor-id="quarto-css-scss-see-_quarto.yml-cosmo-custom.scss">
-<span class="header-section-number">1.7.8</span> Quarto &amp; CSS | SCSS (see _quarto.yml cosmo + custom.scss)</h3>
+<hr></section><section id="quarto-css-scss-see-_quarto.yml-cosmo-custom.scss" class="level3" data-number="1.8.8"><h3 data-number="1.8.8" class="anchored" data-anchor-id="quarto-css-scss-see-_quarto.yml-cosmo-custom.scss">
+<span class="header-section-number">1.8.8</span> Quarto &amp; CSS | SCSS (see _quarto.yml cosmo + custom.scss)</h3>
 <p>in YAML, I used <code>date:  today</code><br>
-but in inline r 03 February 2025</p>
+but in inline r 08 February 2025</p>
 <p>1 verbatim:</p>
 <pre><code>in chunks: 
 - OLD way: `{r style=&quot;xxx&quot;; class=&quot;&quot;} 
@@ -5269,8 +5311,8 @@ Note
 </li>
 </ul>
 </div>
-<hr></section><section id="custom-blocks-rmarkdown-9.6" class="level3 page-columns page-full" data-number="1.7.9"><h3 data-number="1.7.9" class="anchored" data-anchor-id="custom-blocks-rmarkdown-9.6">
-<span class="header-section-number">1.7.9</span> Custom Blocks (rmarkdown-9.6)</h3>
+<hr></section><section id="custom-blocks-rmarkdown-9.6" class="level3 page-columns page-full" data-number="1.8.9"><h3 data-number="1.8.9" class="anchored" data-anchor-id="custom-blocks-rmarkdown-9.6">
+<span class="header-section-number">1.8.9</span> Custom Blocks (rmarkdown-9.6)</h3>
 
 <div class="no-row-height column-margin column-container"><div class="margin-aside">
 <p>(aside) Custom Blocks</p>
@@ -5325,8 +5367,8 @@ decorate that chunk
 <li>Inside colon blocks</li>
 </ol>
 </div>
-<hr></section><section id="scss-mixin-not-working" class="level3" data-number="1.7.10"><h3 data-number="1.7.10" class="anchored" data-anchor-id="scss-mixin-not-working">
-<span class="header-section-number">1.7.10</span> SCSS <span class="citation" data-cites="mixin">@mixin</span> (not working)</h3>
+<hr></section><section id="scss-mixin-not-working" class="level3" data-number="1.8.10"><h3 data-number="1.8.10" class="anchored" data-anchor-id="scss-mixin-not-working">
+<span class="header-section-number">1.8.10</span> SCSS <span class="citation" data-cites="mixin">@mixin</span> (not working)</h3>
 <p>Put this in custom.scss</p>
 <pre><code>@mixin absolute-center() {
   position:absolute;
@@ -5361,8 +5403,8 @@ div {
 <div class="square">
 <p>square</p>
 </div>
-<hr></section><section id="scss-hover" class="level3" data-number="1.7.11"><h3 data-number="1.7.11" class="anchored" data-anchor-id="scss-hover">
-<span class="header-section-number">1.7.11</span> SCSS hover</h3>
+<hr></section><section id="scss-hover" class="level3" data-number="1.8.11"><h3 data-number="1.8.11" class="anchored" data-anchor-id="scss-hover">
+<span class="header-section-number">1.8.11</span> SCSS hover</h3>
 <pre class="button-container"><code>1. hover and see what happends</code></pre>
 <pre class="nested_class"><code>1. hover and see what happends</code></pre>
 <div class="nested_class">
@@ -5373,24 +5415,24 @@ div {
 <div class="button-container">
 <pre><code>&lt;p class=&quot;button-text&quot;&gt;Click me&lt;/p&gt;</code></pre>
 </div>
-<hr></section><section id="display-code-and-chunk-options" class="level3" data-number="1.7.12"><h3 data-number="1.7.12" class="anchored" data-anchor-id="display-code-and-chunk-options">
-<span class="header-section-number">1.7.12</span> Display code and chunk options</h3>
+<hr></section><section id="display-code-and-chunk-options" class="level3" data-number="1.8.12"><h3 data-number="1.8.12" class="anchored" data-anchor-id="display-code-and-chunk-options">
+<span class="header-section-number">1.8.12</span> Display code and chunk options</h3>
 <div class="cell">
-<details class="code-fold"><summary>See Code</summary><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb21-1"><a href="#cb21-1"></a><span class="in">```{r}</span></span>
-<span id="cb21-2"><a href="#cb21-2"></a><span class="in">#| label: example</span></span>
-<span id="cb21-3"><a href="#cb21-3"></a><span class="in">#| code-line-numbers: &quot;|5|6&quot;</span></span>
-<span id="cb21-4"><a href="#cb21-4"></a><span class="in">#| echo: fenced # shows these options in output</span></span>
-<span id="cb21-5"><a href="#cb21-5"></a><span class="in">x  &lt;- 1</span></span>
-<span id="cb21-6"><a href="#cb21-6"></a><span class="in">y  &lt;- 2</span></span>
-<span id="cb21-7"><a href="#cb21-7"></a><span class="in">x+y</span></span>
-<span id="cb21-8"><a href="#cb21-8"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details class="code-fold"><summary>See Code</summary><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb22-1"><a href="#cb22-1"></a><span class="in">```{r}</span></span>
+<span id="cb22-2"><a href="#cb22-2"></a><span class="in">#| label: example</span></span>
+<span id="cb22-3"><a href="#cb22-3"></a><span class="in">#| code-line-numbers: &quot;|5|6&quot;</span></span>
+<span id="cb22-4"><a href="#cb22-4"></a><span class="in">#| echo: fenced # shows these options in output</span></span>
+<span id="cb22-5"><a href="#cb22-5"></a><span class="in">x  &lt;- 1</span></span>
+<span id="cb22-6"><a href="#cb22-6"></a><span class="in">y  &lt;- 2</span></span>
+<span id="cb22-7"><a href="#cb22-7"></a><span class="in">x+y</span></span>
+<span id="cb22-8"><a href="#cb22-8"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details><div class="cell-output cell-output-stdout">
 <pre><code>[1] 3</code></pre>
 </div>
 </div>
 <hr>
-<hr></section><section id="table-with-scss" class="level3" data-number="1.7.13"><h3 data-number="1.7.13" class="anchored" data-anchor-id="table-with-scss">
-<span class="header-section-number">1.7.13</span> table with scss</h3>
+<hr></section><section id="table-with-scss" class="level3" data-number="1.8.13"><h3 data-number="1.8.13" class="anchored" data-anchor-id="table-with-scss">
+<span class="header-section-number">1.8.13</span> table with scss</h3>
 <table class="table table-bordered">
 <thead><tr>
 <th>
@@ -5445,14 +5487,14 @@ Superman
 <hr>
 <p>Example of Bootstrap classes:</p>
 <div class="cell">
-<details class="code-fold"><summary>See Code</summary><div class="sourceCode" id="cb23"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">mtcars</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">5</span>, <span class="st">&quot;mpg&quot;</span><span class="op">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details class="code-fold"><summary>See Code</summary><div class="sourceCode" id="cb24"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">mtcars</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">5</span>, <span class="st">&quot;mpg&quot;</span><span class="op">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details><div class="cell-output cell-output-stdout">
 <pre class="bg-warning"><code>[1] 21.0 21.0 22.8 21.4 18.7</code></pre>
 </div>
 </div>
 <p>To make sure that we always get a data frame, we have to use the argument <code>drop = FALSE</code>. Now we use the chunk option <code>class.source = &quot;bg-success&quot;</code>.</p>
 <div class="cell">
-<details class="code-fold"><summary>See Code</summary><div class="sourceCode" id="cb25"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">mtcars</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">5</span>, <span class="st">&quot;mpg&quot;</span>, drop <span class="op">=</span> <span class="cn">FALSE</span><span class="op">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details class="code-fold"><summary>See Code</summary><div class="sourceCode" id="cb26"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">mtcars</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">5</span>, <span class="st">&quot;mpg&quot;</span>, drop <span class="op">=</span> <span class="cn">FALSE</span><span class="op">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details><div class="cell-output cell-output-stdout">
 <pre><code>                   mpg
 Mazda RX4         21.0
@@ -5462,31 +5504,31 @@ Hornet 4 Drive    21.4
 Hornet Sportabout 18.7</code></pre>
 </div>
 </div>
-<hr></section><section id="annotate-code-and-create-code-to-change-font-color" class="level3" data-number="1.7.14"><h3 data-number="1.7.14" class="anchored" data-anchor-id="annotate-code-and-create-code-to-change-font-color">
-<span class="header-section-number">1.7.14</span> Annotate code and create code to change font color:</h3>
+<hr></section><section id="annotate-code-and-create-code-to-change-font-color" class="level3" data-number="1.8.14"><h3 data-number="1.8.14" class="anchored" data-anchor-id="annotate-code-and-create-code-to-change-font-color">
+<span class="header-section-number">1.8.14</span> Annotate code and create code to change font color:</h3>
 <p>Use knitr to create <span> for red font, rmarkdown cookbook 5.1</span></p>
 <div class="cell">
-<details class="code-fold"><summary>See Code</summary><div class="sourceCode" id="annotated-cell-19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">col</span> <span class="op">=</span> <span class="kw">function</span><span class="op">(</span><span class="va">text</span>, <span class="va">color</span><span class="op">)</span><span class="op">{</span></span>
+<details class="code-fold"><summary>See Code</summary><div class="sourceCode" id="annotated-cell-20"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">col</span> <span class="op">=</span> <span class="kw">function</span><span class="op">(</span><span class="va">text</span>, <span class="va">color</span><span class="op">)</span><span class="op">{</span></span>
 <span>    <span class="kw">if</span> <span class="op">(</span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/output_type.html">is_html_output</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
 <span>        <span class="fu"><a href="https://rdrr.io/r/base/sprintf.html">sprintf</a></span><span class="op">(</span><span class="st">&quot;&lt;span style=&#39;color:%s&#39;&gt; %s &lt;/span&gt;&quot;</span>, <span class="va">color</span>, <span class="va">text</span> <span class="op">)</span></span>
 <span>    <span class="op">}</span></span>
 <span><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details><div class="cell-annotation">
 <dl>
-<dt data-target-cell="annotated-cell-19" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-20" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-19" data-code-lines="1" data-code-annotation="1">Annotate line 1</span>
+<span data-code-cell="annotated-cell-20" data-code-lines="1" data-code-annotation="1">Annotate line 1</span>
 </dd>
-<dt data-target-cell="annotated-cell-19" data-target-annotation="2">2</dt>
+<dt data-target-cell="annotated-cell-20" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-19" data-code-lines="2" data-code-annotation="2">Annotate line 2</span>
+<span data-code-cell="annotated-cell-20" data-code-lines="2" data-code-annotation="2">Annotate line 2</span>
 </dd>
 </dl>
 </div>
 </div>
 <p><span style="color:red"> Is this red </span></p>
-<hr></section><section id="fancy-theorems" class="level3" data-number="1.7.15"><h3 data-number="1.7.15" class="anchored" data-anchor-id="fancy-theorems">
-<span class="header-section-number">1.7.15</span> Fancy Theorems</h3>
+<hr></section><section id="fancy-theorems" class="level3" data-number="1.8.15"><h3 data-number="1.8.15" class="anchored" data-anchor-id="fancy-theorems">
+<span class="header-section-number">1.8.15</span> Fancy Theorems</h3>
 <pre><code>not working
 
 ::: column-margin
@@ -5496,12 +5538,12 @@ $[a, b]$:
 $$\frac{d}{dx}\left( \int_{a}^{x} f(u)\,du\right)=f(x).$$
 
 :::</code></pre>
-</section></section><section id="r-chunks-with-decorations" class="level2" data-number="1.8"><h2 data-number="1.8" class="anchored" data-anchor-id="r-chunks-with-decorations">
-<span class="header-section-number">1.8</span> R chunks with decorations</h2>
-<section id="box-rmarkdown-book-9.6" class="level3" data-number="1.8.1"><h3 data-number="1.8.1" class="anchored" data-anchor-id="box-rmarkdown-book-9.6">
-<span class="header-section-number">1.8.1</span> Box (rmarkdown-book 9.6)</h3>
+</section></section><section id="r-chunks-with-decorations" class="level2" data-number="1.9"><h2 data-number="1.9" class="anchored" data-anchor-id="r-chunks-with-decorations">
+<span class="header-section-number">1.9</span> R chunks with decorations</h2>
+<section id="box-rmarkdown-book-9.6" class="level3" data-number="1.9.1"><h3 data-number="1.9.1" class="anchored" data-anchor-id="box-rmarkdown-book-9.6">
+<span class="header-section-number">1.9.1</span> Box (rmarkdown-book 9.6)</h3>
 <div class="cell blackbox">
-<details class="code-fold"><summary>See Code</summary><div class="sourceCode" id="cb28"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">mtcars</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span>, <span class="fl">1</span><span class="op">:</span><span class="fl">2</span><span class="op">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details class="code-fold"><summary>See Code</summary><div class="sourceCode" id="cb29"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">mtcars</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span>, <span class="fl">1</span><span class="op">:</span><span class="fl">2</span><span class="op">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details><div class="cell-output cell-output-stdout">
 <pre><code>               mpg cyl
 Mazda RX4     21.0   6
@@ -5510,7 +5552,7 @@ Datsun 710    22.8   4</code></pre>
 </div>
 </div>
 <div class="cell greybox">
-<details class="code-fold"><summary>See Code</summary><div class="sourceCode" id="cb30"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">mtcars</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span>, <span class="fl">1</span><span class="op">:</span><span class="fl">2</span><span class="op">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details class="code-fold"><summary>See Code</summary><div class="sourceCode" id="cb31"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">mtcars</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span>, <span class="fl">1</span><span class="op">:</span><span class="fl">2</span><span class="op">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details><div class="cell-output cell-output-stdout">
 <pre><code>               mpg cyl
 Mazda RX4     21.0   6
@@ -5524,19 +5566,19 @@ Datsun 710    22.8   4</code></pre>
 </div>
 <!-- END -->
 <div class="cell">
-<details class="code-fold"><summary>See Code</summary><div class="sourceCode" id="cb32"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># knitr::knit_exit()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details class="code-fold"><summary>See Code</summary><div class="sourceCode" id="cb33"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># knitr::knit_exit()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 <hr>
-<!--   CSS below this line --></section></section><section id="css-here" class="level2" data-number="1.9"><h2 data-number="1.9" class="anchored" data-anchor-id="css-here">
-<span class="header-section-number">1.9</span> CSS here</h2>
-<section id="css-in-line-examples." class="level3" data-number="1.9.1"><h3 data-number="1.9.1" class="anchored" data-anchor-id="css-in-line-examples.">
-<span class="header-section-number">1.9.1</span> CSS in-line examples.</h3>
+<!--   CSS below this line --></section></section><section id="css-here" class="level2" data-number="1.10"><h2 data-number="1.10" class="anchored" data-anchor-id="css-here">
+<span class="header-section-number">1.10</span> CSS here</h2>
+<section id="css-in-line-examples." class="level3" data-number="1.10.1"><h3 data-number="1.10.1" class="anchored" data-anchor-id="css-in-line-examples.">
+<span class="header-section-number">1.10.1</span> CSS in-line examples.</h3>
 <div class="myDiv">
 <p>PURPOSE: Collect of HTML and PDF inline commands to control output</p>
 </div>
-</section><section id="in-file-css-examples" class="level3" data-number="1.9.2"><h3 data-number="1.9.2" class="anchored" data-anchor-id="in-file-css-examples">
-<span class="header-section-number">1.9.2</span> in-file, CSS examples</h3>
+</section><section id="in-file-css-examples" class="level3" data-number="1.10.2"><h3 data-number="1.10.2" class="anchored" data-anchor-id="in-file-css-examples">
+<span class="header-section-number">1.10.2</span> in-file, CSS examples</h3>
 <!--  Define inline CSS classes -->
 <style>
 #title-block-header {
@@ -5573,15 +5615,15 @@ border-radius: 10px;
 .center {
 text-align: center;
 }
-</style></section><section id="quarto-in-line-css-examples-for-html-pdf" class="level3" style="color: lime" data-number="1.9.3"><h3 style="color: lime" data-number="1.9.3" class="anchored" data-anchor-id="quarto-in-line-css-examples-for-html-pdf">
-<span class="header-section-number">1.9.3</span> Quarto: In-line CSS Examples for HTML, PDF</h3>
+</style></section><section id="quarto-in-line-css-examples-for-html-pdf" class="level3" style="color: lime" data-number="1.10.3"><h3 style="color: lime" data-number="1.10.3" class="anchored" data-anchor-id="quarto-in-line-css-examples-for-html-pdf">
+<span class="header-section-number">1.10.3</span> Quarto: In-line CSS Examples for HTML, PDF</h3>
 <p><font size="1"> Very small </font></p>
-</section><section id="inline" class="level3" style="color: black" data-number="1.9.4"><h3 style="color: black" data-number="1.9.4" class="anchored" data-anchor-id="inline">
-<span class="header-section-number">1.9.4</span> Inline</h3>
+</section><section id="inline" class="level3" style="color: black" data-number="1.10.4"><h3 style="color: black" data-number="1.10.4" class="anchored" data-anchor-id="inline">
+<span class="header-section-number">1.10.4</span> Inline</h3>
 <p>We can apply styles to a sentence or a word by creating spans using <code>[]</code> to surround the sentence or word that we want to style and use <code><a href="https://rdrr.io/r/base/Paren.html">{}</a></code> to define the style that we want to apply. For example,</p>
 <p>The color of this word is <span style="color: red;">red</span>. And <span style="background-color: yellow">this line has a yellow background</span>.</p>
-<hr></section><section id="create-a-css-class-inline" class="level3" data-number="1.9.5"><h3 data-number="1.9.5" class="anchored" data-anchor-id="create-a-css-class-inline">
-<span class="header-section-number">1.9.5</span> Create a CSS class (inline)</h3>
+<hr></section><section id="create-a-css-class-inline" class="level3" data-number="1.10.5"><h3 data-number="1.10.5" class="anchored" data-anchor-id="create-a-css-class-inline">
+<span class="header-section-number">1.10.5</span> Create a CSS class (inline)</h3>
 <pre><code>create class &quot;myColor&quot; (red) inline | use in paragraph | and div block| </code></pre>
 <style>
 .myColor {
@@ -5597,17 +5639,18 @@ fontsize=1; }
 <div class="myColor">
 <p>This is a Div defined by CSS, inline</p>
 </div>
-<section id="header-uses-in-file-css-class" class="level4 myColor"><h4 class="myColor anchored" data-anchor-id="header-uses-in-file-css-class">Header uses in-file CSS class</h4>
+<section id="header-uses-in-file-css-class" class="level4 myColor" data-number="1.10.5.1"><h4 class="myColor anchored" data-number="1.10.5.1" data-anchor-id="header-uses-in-file-css-class">
+<span class="header-section-number">1.10.5.1</span> Header uses in-file CSS class</h4>
 <div class="cell">
-<details class="code-fold"><summary>See Code</summary><div class="sourceCode" id="cb34"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">mtcars</span>, n<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details class="code-fold"><summary>See Code</summary><div class="sourceCode" id="cb35"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">mtcars</span>, n<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details><div class="cell-output cell-output-stdout">
 <pre><code>              mpg cyl disp  hp drat    wt  qsec vs am gear carb
 Mazda RX4      21   6  160 110  3.9 2.620 16.46  0  1    4    4
 Mazda RX4 Wag  21   6  160 110  3.9 2.875 17.02  0  1    4    4</code></pre>
 </div>
 </div>
-</section></section></section></section><div id="quarto-appendix" class="default"><section id="acknowledgments" class="level2 appendix" data-number="1.10"><h2 class="anchored quarto-appendix-heading">
-<span class="header-section-number">1.10</span> Acknowledgments</h2><div class="quarto-appendix-contents">
+</section></section></section></section><div id="quarto-appendix" class="default"><section id="acknowledgments" class="level2 appendix" data-number="1.11"><h2 class="anchored quarto-appendix-heading">
+<span class="header-section-number">1.11</span> Acknowledgments</h2><div class="quarto-appendix-contents">
 <p>I am grateful for the insightful comments offered by the anonymous peer reviewers at Books &amp; Texts. The generosity and expertise of one and all have improved this study in innumerable ways and saved me from many errors; those that inevitably remain are entirely my own responsibility.</p>
 
 

@@ -1,4 +1,5 @@
-
+jim
+2023-12-20
 
 <!-- 
   using bootstrap 2 column grid
@@ -17,9 +18,10 @@
 
 ### Overview
 
-I am an intermediate level R package developer. Have worked with
-packages in pharmaverse, such as admiral, and CIDC standards, such a
-ADaM, SDTM. Seek to focus on Clinical Trials R package development.
+R package developer. Worked with pharmaverse, including admiral, and
+pilot5 JSON delivery to FDA. Worked with CDISC standards, such a ADaM,
+SDTM, and including schema and REST api. Seek to focus on Clinical
+Trials R package development.
 
 ### Related Skills
 

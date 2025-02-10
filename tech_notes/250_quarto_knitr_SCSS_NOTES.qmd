@@ -33,6 +33,21 @@ editor:
     wrap: 72
 ---
 
+#### Jim
+This is text related to JIM
+
+***
+***
+
+Def Word A
+
+:  Word A means .....
+
+Word B
+:  B means this.
+
+***
+
 <br>
 
 <div class="shadowbox">
@@ -76,6 +91,8 @@ knitr::opts_chunk$set(
 ```
 
 # Section I
+
+go to [Jim]
 
 ## TO DO
 In SCSS file, there are
