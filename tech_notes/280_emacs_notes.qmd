@@ -89,6 +89,9 @@ Create a footnote: [^1]
 :::
 ***
 
+## ESS / R
+tips:  https://stackoverflow.com/questions/2901198/useful-keyboard-shortcuts-and-tips-for-ess-r
+
 ##  PDF
 
 ::: {.content-visible when-format="pdf"}

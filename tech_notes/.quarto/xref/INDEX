@@ -48,6 +48,10 @@
     "play.html": "4b5d3a8e"
   },
   "typst_example.qmd": {
-    "typst_example.typ": "49581076"
+    "typst_example.typ": "49581076",
+    "typst_example.html": "08c502fe"
+  },
+  "410_typst_MATH_notes.qmd": {
+    "410_typst_MATH_notes.typ": "e9da8aef"
   }
 }

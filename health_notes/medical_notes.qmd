@@ -2774,13 +2774,13 @@ July 2024
   
 
 
-<2024-07-15 Mon>
+### <2024-07-15 Mon>
 - Miyake cancels; he's still trying to figure out Litholink.
 
   <2024-07-29 Mon>
 - MRI #3 (2nd in 2024)
 
-<2024-07-31 Wed>
+### <2024-07-31 Wed>
 - hmmm,  daily yogurt:   calms stomach, no sulfur?
 - Send complaint/appeal/ to OHA re: colonoscopy, etc.; Kaiser
   membership said talk to your CCO.
@@ -2792,12 +2792,12 @@ July 2024
  
   
   
-  <2024-08-01 Thu> Christine (Appeals & Grievances) 541-330-4992 Pacific Souce.
+  ### <2024-08-01 Thu> Christine (Appeals & Grievances) 541-330-4992 Pacific Souce.
   Calls:  What's the appeal?   I agree only "chart review" - but she says no denial letter sent.
   Discuss random related things.  For Kaiser pdx, which is 'out-of-network' (she doens't know);  they must file pre-authorization first.
 
   
-<2024-08-06 Tue>
+### <2024-08-06 Tue>
 - Mueller says going in circles;  apparently does not want to tell me WHO denied.
 
 - After 62 min on phone with Kaiser Membership:
@@ -2815,7 +2815,7 @@ July 2024
  Time:   Change COO; move to PDX;  time to change.  For my own health.
  
     
-<2024-08-09 Fri>
+### <2024-08-09 Fri>
 - *Colonoscopy set,  7-day liquid Plus 3-day Gavilight  (will near death)*
 - no progress on getting MRI read, GI appointmnet is 9/26.
 - Still waiting for Pacific Source, ICM ('intensive case manager')
@@ -2833,12 +2833,12 @@ July 2024
     *Bottom Line*  Until I figure *WHO* can handle, just waste time.
   
      
- <2024-08-19 Mon> finish 24-hour urine
+ ### <2024-08-19 Mon> finish 24-hour urine
  - 24-hour urine (end today;  3600 ml, didn't feel well)
  - LItholink no longer does blood work;   go to Kaiser for Dr. Miyake's labs (done:  8/20)
  - 
 
-<2024-08-22 Thu>  Ins, doctors in PDX ?   Pac Source.
+### <2024-08-22 Thu>  Ins, doctors in PDX ?   Pac Source.
 - At this date, ready to give up on any more calls.
 - Last set:  last week was routed again to what Pac Source says is "Intensvie Case Mgmt"
 - This time, Kim, calls back within 1 day and leaves msg;   I call back and leave msg:  Please approve colonoscopy and Kaiser PDX doctors;  Please take charge; no need to call me ....Can you get this squared away?
@@ -2849,7 +2849,7 @@ July 2024
 - Option?   How to complain at RIGHT LEVEL?
 
 
-<2024-09-03 Tue>  Dr. Miyake
+### <2024-09-03 Tue>  Dr. Miyake
 - 24-hour urine protein (Kaiser) will do
 - new med, kidney protective, complements to Losartan, long-term benefit (Jardiance)
 
@@ -2867,7 +2867,7 @@ July 2024
 - URINE Volume:
   Just FYI, 4 L/day does require drinking liquid through-out the day;   once acclimitated, body 
 
- <2024-09-26> Norstrom
+ ### <2024-09-26 > Norstrom
  - no change in cycts over 4 years;  good; none appear pre-cancer.
  Note:  in sense, ALL cycts are pre-cancer b/c they can turn into cancer.
  - When did cysts start?  Can not say.   If had MRI from 30 years showing same, he'd be sure no issue now.
@@ -2881,14 +2881,14 @@ July 2024
     10-day, no science, just practical.
     Can I do 5-day;  His thinking:  if 10-day wasn't enough (and had 36' to clean) then 5-day won't work.  Need to get rid of all fiber.
     
-<2024-10-15 Tue>  Miyake, after 24-hour *protein* urine (kaiser) 
+### <2024-10-15 Tue>  Miyake, after 24-hour *protein* urine (kaiser) 
 -eGFR 63
--Problem is kidney spiling protein, now 1.78g (used to always be under 1.0 g);  above 3.x  is problem
+-Problem is kidney spilling protein, now 1.78g (used to always be under 1.0 g);  above 3.x  is problem
 -
 -Recommendations:   J... medication, protective
 - Walk at least 8,000 steps per day (aeorobic is good for kidney  - does this explain rise in urine protein?)
 
-<2024-10-20 Sun>   Colonoscopy notes:
+### <2024-10-20 Sun>   Colonoscopy notes:
 - 10 day liquid diet =    7 day liquids (ice cream! kiffir choc milk  beet kale juice; celery juice; greens juice;   the *dairy* is very filling!)
   + 3 day clear diet  (coffee, apple juice, HONEY! , bone broth, 8000 ml ~2 gallons Golightly-C;  new:  magnesium citrate)
 - *HOTEL*; Quality Inn, 503-654-1699  (was Days Inn; Clarion ...) improved since
@@ -2942,6 +2942,7 @@ soft.  On me, it is ccomplete MESS.
 
 .
 ### 08JAN2025 - filed as grievance.
+Kaiser does not handle `greivance` - must contact Pacific Source.
 
 - 3rd colonoscopy is pending.
 - family history:  colon cancer, my last colonoscopy 8 years ago.
@@ -2961,11 +2962,6 @@ Serum Creatine - 1.17 ok
 Protein/Creatinine 1.28,  some protein and some glucose in urine (Jardiance can do this)
 PSA total is very low (good).  But 'free' value is 14% and ideal is > 25%.  (I am always low.)  So dr.lam not concerned (b/c total so low).  HOWEVER, if PSA went to 2 and then 4 and free was 14%, he would CT of prostate and then biopsy.  
 CT scan (was post-colonoscopy) - showed only tiny stone in `meat` of kidney (safe) and no other stones.  CT is much better than KUB, ultrasound.
-
-
-
-
-
 
 ### 27JAN2025 Laura - case worker from Pacific Health
 
@@ -2987,11 +2983,29 @@ Prep
 Post
 - Again, review what happened last 2 prior times.  Several days of 'shit-in-pants' is not what should happen.
 
-5 FEB 2025 - Dr. Miyake, phone
+### 5 FEB 2025 - Dr. Miyake, phone
 - every 3 months, urine protein + checkin with him
 - wants protein value < 1.0  (now 1.28)  > 3.0 is concern.
 - BP - goal ~125/75;  not too much lower;  b/c risk for falling increases with age at lower BP.
 
 
+### 27 FEB 2025 - Dr. Nordstrom   colon prep - no conclusion
+
+- His goal:  what prep do you want?  no time to monitor or adjust if not working, take more laxative or abort
+- 30' on phone (then another patient waiting)
+- my bowel is extended, twisted?,  SEEDs accumulate and clog probe's pathway. SEEDS?  I had too many SEEDS.
+- didn't answer how Dr. Wong (8 yrs age) was able to get through
+- I tried to argue more stuff you give me; less OUT.
+- A 2-3 day (like at Eugene, Feb '24) had things moving, just not enough time.   Why do I need 14 day prep??
+- He repeatedly asked:  14 day or 5 day or what do you want?  2x miralax for 7 days;  then 2-3 days Gavilight. 
+- How can I answer? Depends on volume out! and when!  Not sure he grasped that I went to ER b/c nothing coming out.
+- FIND OUT:  how does Gavlight work?   Can I take for 5 days??
+
+- Claims:  75-85 not even necessary;  risk greater than reward.
+- He's annoyed.  He made it clear that this is how they do it. 
+- I said 2nd meeting.  He asked: with him?   I said NO.
+
+
+-  
 
 

@@ -2,7 +2,7 @@
 title: "`r knitr::current_input()`"
 date: "`r paste('last updated', 
     format(lubridate::now(), ' %d %B %Y'))`"
-output:   
+format:
   html_document:  
         code_folding: show
         toc: true 
@@ -90,6 +90,11 @@ x=\sqrt{b}                              % even tables, figures, etc
 If $a^2=b$ and \( b=2 \), then the solution must be
 either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
 
+
+### linear functional
+
+$\phi: R^3 -> R$ \
+$\phi(v) = 4*x -5*y + 2*z$
 
 ### Entropy
 

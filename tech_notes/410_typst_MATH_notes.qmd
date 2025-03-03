@@ -1,0 +1,115 @@
+---
+title: first typst
+format: 
+  typst:
+    keep-typ: true
+---
+
+USE the *typst app* !
+- For typst & math, use this file For Math.
+- For typst & Text, use ... .qmd
+- Typst for pdf (future html?) 
+- latex does seem to work. But plenty does NOT work on this page.
+- BEST:    use typst app
+
+Watch <https://www.youtube.com/watch?v=2DbuqYKOsrY> \
+Tutorial: <https://typst.app/docs/tutorial/writing-in-typst/> 
+
+***
+x=3
+
+$x=3$
+
+***
+$
+forall v, w in V, alpha in KK: alpha dot (v + w) = alpha v + alpha w
+$
+***
+$
+// cont — contour
+integral, integral.cont, integral.double, integral.square, sum.integral\
+
+// lt — less than, gt — greater than
+lt, lt.circle, lt.eq, lt.not, lt.eq.not, lt.tri, lt.tri.eq, lt.tri.eq.not, gt, lt.gt.eq, lt.gt.not
+$
+***
+$arrow.b, triangle.r, angle.l$
+
+$arrow.r, triangle.r, angle.l$
+***
+
+
+#show heading: set text(navy)
+
+= This text goes into the box
+
+#let alert(body, fill: red) = {
+  set text(white)
+  set align(center)
+  rect(
+    fill: fill,
+    inset: 8pt,
+    radius: 4pt,
+    [*Warning:\ #body*],
+  )
+}
+
+#alert[
+  Danger is imminent!
+]
+
+#alert(fill: blue)[
+  KEEP OFF TRACKS
+]
+
+#show math.equation.where(block: true): pad.with(left: 1cm)
+#show math.equation.where(block: true): set align(left)
+
+#sym.arrow.r
+
+$#sym.arrow.r$
+
+$\rightarrow$
+
+$\u{2192}$
+
+arrow.r
+
+->
+
+
+$v := vec(x_1, x_2, x_3)$
+
+The equation $Q = rho A v + C$
+defines the glacial flow rate.
+
+$A = pi r^2$ \
+
+$"area" = pi dot "radius"^2$ \
+
+$cal(A) :=
+    { x in RR | x "is natural" }$ \
+	
+#let x = 5 \
+
+$#x < 17$ \
+
+$x < y => x gt.eq.not y$
+
+$sum_(k=0)^n k
+    &= 1 + ... + n \
+    &= (n(n+1)) / 2$
+
+$frac(a^2, 2)$
+
+$\frac{1}{2}$
+
+$vec(1, 2, delim: "[")$
+
+$mat(1, 2; 3, 4)$
+
+$lim_x = op("lim", limits: #true)x$
+
+=Introduction \
++Chapter1 \
++Chapter2

@@ -159,7 +159,7 @@ tryCatch({signalCondition(
     },
 
          error = function(e) e )
-
+?tryCatch
 # Examine the object returned.
 r  <- tryCatch( {signalCondition(errorCondition("jim1", call="I made this up"))
           print("never gets here")

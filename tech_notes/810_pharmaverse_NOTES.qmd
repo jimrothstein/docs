@@ -5,6 +5,11 @@ editor_options:
   chunk_output_type: console
 ---
 
+```{r}
+date()
+```
+### preliminaries
+
 folds: 
 za
 zo
@@ -18,19 +23,13 @@ rsconnect::writeManifest()
 ```
 [^CDISC_api] [CDISC_api]  <https://wiki.cdisc.org/display/LIBSUPRT/Welcome+Package+for+CDISC+Library+Users> 
 
+ODMv2 api example [^CDISC_hl7_api]
+pinnacle and api [^CDISC_pinnacle_api] https://www.lexjansen.com/pharmasug/2024/MM/PharmaSUG-2024-MM-245.pdf
+
 # My Notes
 
-## To Do:
-- latest standards, get snippet of what each looks like
-
-## GOAL:
-Understand flow of data and structures, end-to-end:
-- at json file/schema level
-- at R implementation level
-- able to connect the two at different stages  
 
 ## intro notes
-
 
 go to [My Notes]
 
@@ -39,26 +38,6 @@ Take me to the anchor at [bottom](#bottom)
 ## Tools
 
 For Package:  Use these:
-
-- styler::style_pkg() \
-- devtools::lint()   # package   \
-- devtools::test_coverage()   # entire package 
-- devtools::spell_check(use_wordlist = TRUE) # package 
-- spelling::update_wordlist(pkg=".") # runs spell AND asks to update WORDLIST  
-
-For File:  Use these:
-
-- active_fie =  rstudioapi::getSourceEditorContext()$path 
-- devtools::test_active_file() 
-- devtools::test_coverage_active_file()
-- styler::style_file(path = )   # dir, file
-- lintr::lint(filename="")
-- spelling::update_wordlist(pkg=".") # runs spell and asks to update WORDLIST
-- urlchecker::url_check()
-
-(see lintr package - many options to control nolint) [^lintr]
-lintr::lint()
-
 ```
 
 # nolint start
@@ -66,8 +45,6 @@ lintr::lint()
 # nolint end
 
  ```
-
-
 ## Videos & Reading
 
 ### Videos
@@ -84,6 +61,7 @@ lintr::lint()
 
 2023 | pharmaverse workshop (admiral, metatools, metacore  walkthrough - good, ross @ 7:00):
 - (@7:00 or so) https://youtu.be/nHbDmxjVqRM?si=usfW_i9zdQyBKA0D
+- with metacore object we have  `specs` (ex: column names and order) => compare to data
 
 2022 | CI/CD; pharmaverse github workflow (ben)
 - https://www.youtube.com/watch?v=OcNzurpCCpY
@@ -129,11 +107,11 @@ Admiral
 
  *for Developers:*
 - Contributing: https://pharmaverse.github.io/admiral/CONTRIBUTING.html
-- Contribution Model:  broken link  
 - FAQ (some background)https://pharmaverse.github.io/admiral/articles/faq.html
 
 **ADRG** ADaM Data Review Guide (pdf end result !)
 - includes data? templates? ....??
+- SEE https://github.com/parmsam/quarto-adrg/blob/main/adrg-pilot4.qmd
 
 **ADSL**  - required dataset format for CDISC (Adam); patient/treatment level ; 
 attempt to capture treatments/interventions in a STUDY; must be flexible, yet rigourous.
@@ -143,11 +121,6 @@ attempt to capture treatments/interventions in a STUDY; must be flexible, yet ri
 
 **box**
 
-\newpage
-
-```{r}
-date()
-```
 
 ### What is CDISC?
 
@@ -200,7 +173,109 @@ https://www.cdisc.org/standards/data-exchange/odm-xml/odm-v2-0 \
 
 Example schema: [CDISC_schema]:  https://github.com/cdisc-org/DataExchange-ODM/blob/main/schema/ODM-clinicaldata.xsd
 
+SDTM schema (snippet)
+```
+"$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CDISC SDTM Dataset",
+  "type": "object",
+  "properties": {
+    "domain": {
+      "type": "string",
+      "description": "The SDTM domain abbreviation (e.g., DM, AE, LB)"
+    },
+    "variables": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "variable_name": { "type": "string" },
+          "label": { "type": "string" },
+          "data_type": { "type": "string", "enum": ["string", "integer", "float", "date"] },
+          "controlled_terminolog
+		  <SNIP>
+```
 
+snippet of ADaM, BDS JSON file (ie with data)
+
+```
+{
+  "dataset_name": "ADLB",
+  "dataset_description": "Analysis Dataset for Laboratory Results",
+  "variables": [
+    {
+      "variable_name": "USUBJID",
+      "label": "Unique Subject Identifier",
+      "data_type": "string",
+      "controlled_terminology": null,
+      "mandatory": true
+    },
+    {
+      "variable_name": "PARAMCD",
+      "label": "Parameter Code",
+      "data_type": "string",
+      "controlled_terminology": "codelist: PARAMCD",
+      "mandatory": true
+    },
+    {
+      "variable_name": "PARAM",
+      "label": "Parameter",
+      "data_type": "string",
+      "controlled_terminology": null,
+      "mandatory": true
+    },
+	```
+	
+<SNIP>
+```
+    {
+      "variable_name": "AVISIT",
+      "label": "Analysis Visit",
+      "data_type": "string",
+      "controlled_terminology": "codelist: AVISIT",
+      "mandatory": true
+    },
+    {
+      "variable_name": "AVAL",
+      "label": "Analysis Value",
+      "data_type": "float",
+      "controlled_terminology": null,
+      "mandatory": true
+    },
+ 
+  
+	  ll,
+      "mandatory": true
+    }
+  ],
+  "data": [
+    {
+      "USUBJID": "SUBJ001",
+      "PARAMCD": "ALT",
+      "PARAM": "Alanine Aminotransferase",
+      "AVISIT": "Week 4",
+      "AVAL": 30.5,
+      "AVALU": "U/L",
+      "BASE": 25.0,
+      "CHG": 5.5,
+      "PCHG": 22.0,
+      "ADT": "2024-02-15"
+    },
+    {
+      "USUBJID": "SUBJ002",
+      "PARAMCD": "AST",
+      "PARAM": "Aspartate Aminotransferase",
+      "AVISIT": "Week 8",
+      "AVAL": 28.0,
+      "AVALU": "U/L",
+      "BASE": 20.0,
+      "CHG": 8.0,
+      "PCHG": 40.0,
+      "ADT": "2024-03-10"
+    }
+  ]
+}
+
+```
 ### What is `Controlled Terminology`
 <https://www.cdisc.org/kb/articles/controlled-terminology-faqs>
 (9-27-2024) https://evs.nci.nih.gov/ftp1/CDISC/Define-XML/Define-XML%20Terminology.html
@@ -209,8 +284,59 @@ Example schema: [CDISC_schema]:  https://github.com/cdisc-org/DataExchange-ODM/b
 **define-xml** describes how to (encapsulate??) metadata needed to create  tabular dataset structure  into a json `container`.
 
 Define-XML (https://www.cdisc.org/standards/foundational/define-xml/define-xml-v2-1-6) 
-Controlled Terminology: https://evs.nci.nih.gov/ftp1/CDISC/Define-XML/Define-XML%20Terminology.html
+
+**Controlled Terminology:** https://evs.nci.nih.gov/ftp1/CDISC/Define-XML/Define-XML%20Terminology.html
 **cdisc define-xml** https://www.linkedin.com/groups/4975366/ - official cdisc define-xml (linkedin) 
+
+#### define-xml (in json)
+{
+  "Study": {
+    "GlobalVariables": {
+      "StudyName": "Example Study",
+      "StudyDescription": "A Phase 3 Clinical Trial",
+      "ProtocolName": "XYZ123"
+    },
+    "ItemGroupDef": [
+      {
+        "OID": "IG.DM",
+        "Name": "Demographics",
+        "Label": "Demographics",
+        "ItemRef": [
+          {
+            "ItemOID": "IT.DM.AGE",
+            "Mandatory": "Yes"
+          },
+          {
+            "ItemOID": "IT.DM.SEX",
+            "Mandatory": "Yes"
+          }
+        ]
+      }
+    ],
+    "ItemDef": [
+      {
+        "OID": "IT.DM.AGE",
+        "Name": "AGE",
+        "Label": "Age",
+        "DataType": "integer",
+        "CodeListRef": {
+          "CodeListOID": "CL.AGEU"
+        }
+      },
+      {
+        "OID": "IT.DM.SEX",
+        "Name": "SEX",
+        "Label": "Sex",
+        "DataType": "text",
+        "CodeListRef": {
+          "CodeListOID": "CL.SEX"
+        }
+      }
+    ]
+  }
+}
+
+
 
 ### Examples: what filetype is end result?
 Currently: xpt
@@ -341,6 +467,29 @@ f = function(ds, var) { dplyr::select(ds, !!var)}
 
 **end-to-end clinical reporting** https://pharmaverse.org/e2eclinical/
 
+**harmonize** - harmonized means consistent metadata/specifications object
+
+
+- styler::style_pkg() \
+- devtools::lint()   # package   \
+- devtools::test_coverage()   # entire package 
+- devtools::spell_check(use_wordlist = TRUE) # package 
+- spelling::update_wordlist(pkg=".") # runs spell AND asks to update WORDLIST  
+
+For File:  Use these:
+
+- active_fie =  rstudioapi::getSourceEditorContext()$path 
+- devtools::test_active_file() 
+- devtools::test_coverage_active_file()
+- styler::style_file(path = )   # dir, file
+- lintr::lint(filename="")
+- spelling::update_wordlist(pkg=".") # runs spell and asks to update WORDLIST
+- urlchecker::url_check()
+
+(see lintr package - many options to control nolint) [^lintr]
+lintr::lint()
+
+
 **GxP** "Good Practice" esp regarding FDA submissions.
 
 **LOCF** https://www.lexjansen.com/nesug/nesug09/po/PO12.pdf
@@ -435,27 +584,34 @@ R has many packages, but who validates?
 
 **sdtmchecks**
   SEE:  https://www.youtube.com/watch?v=tBL0Eo6CBdw&list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4&index=5
+  
+**Shiny**
+
+**supplemental**
+There are the main data domains (= Parent in our example e.g. DM) which contain pre-defined and standard variables. **New variables** which are not as per standard cannot be added to a data domain. If a user has additional data for a domain which cannot be entered into the domain using the standard SDTM variables, then a **supplemental qualifier dataset** must be used (SUPPDM in our example).
 
 **TLG** -  tables, listings, graphics .... https://pharmaverse.org/e2eclinical/tlg/
 - October 20, 2023 (rtables) https://www.youtube.com/watch?v=3S4_WROtFK8  j  k
 - Pawel Rucki:  WebR to TLG, 25NOV2024  (Demo @15:48) https://youtu.be/vaoDUrUscZA?list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4
 
 **Teal**
-  Examples: Teal + ShinyLive (ie WebR; no need server) https://pharmaverse.github.io/examples/interactive/teal.html
+  Teal + ShinyLive (ie WebR; no need server) https://pharmaverse.github.io/examples/interactive/teal.html
   2024 Workshop:  https://github.com/pharmaverse/tealworkshop-phuseusconnect2024/tree/main/code
-  Teal itself (Github) https://github.com/insightsengineering/teal (70 issues, very active)
+
+- May 16, 2023 Overview of Teal framework (no code) https://youtu.be/D2DJQYo3Nag
+- October 20, 2023:(Dony| very good walk through of config modules,  filters, teal_slice(),  in basic teal app) https://www.youtube.com/watch?v=3S4_WROtFK8
+- October 24, 2024 (Dony | intro to teal module) https://youtu.be/WnTgIWU59RM?list=PLbcglKxZP5PPrBVVV9AItiVXUCFcTQb9J 
+
+- teal vidoes 000_teal https://www.youtube.com/playlist?list=PLbcglKxZP5PPrBVVV9AItiVXUCFcTQb9J
+- shiny videos (+ teal) 000_shiny https://www.youtube.com/playlist?list=PLbcglKxZP5PO-TktNs849mfbjY5UeWnoo
+- shiny developer series: https://www.youtube.com/@ShinyDeveloperSeries/playlists
+
+
 
 
 
 **tools**
 phuse.org/valtools (nice spreadsheet)
-
-
-**Teal**
-- May 16, 2023 Overview of Teal framework (no code) https://youtu.be/D2DJQYo3Nag
-- October 20, 2023:(Dony| very good walk through of config modules,  filters, teal_slice(),  in basic teal app) https://www.youtube.com/watch?v=3S4_WROtFK8
-- October 24, 2024 (Dony | intro to teal module) https://youtu.be/WnTgIWU59RM?list=PLbcglKxZP5PPrBVVV9AItiVXUCFcTQb9J 
-
 
 https://github.com/pharmaverse/ggsurvfit (seems interesting)
 
@@ -639,6 +795,9 @@ With right tool, can validate the JSON data is indeed a valid JSON and follows J
 [^CDISC Glossary]: [CDISC_glossary] <https://datascience.cancer.gov/resources/cancer-vocabulary/cdisc-terminology>
 [^CDISC_schema]: [CDISC_schema]  <https://github.com/cdisc-org/DataExchange-ODM/blob/main/schema/ODM-clinicaldata.xsd>
 [^CDISC_api]: [CDISC_api]  <https://wiki.cdisc.org/display/LIBSUPRT/Welcome+Package+for+CDISC+Library+Users> 
+[^CDISC_hl7_api]: <https://www.cdisc.org/kb/articles/use-hl7-fhir-esource-pre-populate-cdash-case-report-forms-using-cdisc-odm-api>
+
+pinnacle and api [^CDISC_pinnacle_api]: https://www.lexjansen.com/pharmasug/2024/MM/PharmaSUG-2024-MM-245.pdf
 
 
 This is the bottom
