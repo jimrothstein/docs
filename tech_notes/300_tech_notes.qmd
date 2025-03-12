@@ -978,7 +978,7 @@ RETAIL DEMO UNIT ('retail mode'):
 - my pixel is VERISON (sprint?) phone;  not a Google phone;  b/c IMEI begins with 35...  NO way to change bootloader.
 
 
-*** ADB
+### ADB
 
 - *ADB* DEBUG:  a "mode" that allows installing apps, read logs on Android, file
 	transfer... Works by running TCP sever on host (PC) and daemon on device
@@ -991,6 +991,7 @@ RETAIL DEMO UNIT ('retail mode'):
     - adb shell ls /system/bin  (available cmds)
 
   - adb push [ -- sync ]   # only push if newer
+  - **adb push * /sdcard/Music   # worked 3/25, push to pixel 4**
 
 
 - Photo tranfer, different.
