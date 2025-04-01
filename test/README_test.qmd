@@ -1,7 +1,10 @@
 ---
 title:  Badge Test
-author: 
+author: jim
 ---
+```{r}
+rsconnect::writeManifest()
+```
 
 # admiral <img src="man/figures/logo.png" align="right" width="200" style="margin-left:50px;"/>
 
