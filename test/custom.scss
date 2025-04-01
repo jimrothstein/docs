@@ -1,0 +1,170 @@
+/*-- scss:defaults --*/
+//  custom.scss
+//	SCSS vs SASS ?   USE SCSS
+//	-	both compile to same; MUCH CONFUSION
+//	-	SASS is indented; without punctuation (; {})
+//	-	SCSS uses punctutation
+
+/*   multiline comment
+Colors (ie create variables)
+*/
+$baby-blue: #d2e3f3;
+$teal: #047C90;
+$dark-blue: #003660;
+$white: #FFFFFF;
+$green: #78A540;
+$magenta: #900C3F;
+$off-white: #F7F7F7;
+$gray: #ADADAD;
+
+// scss variables
+$presentation-title-slide-text-align: "left";
+$body-bg: $white;
+$link-color: $green;
+$code-color: $magenta;
+$code-bg: $off-white;
+$code-block-font-size: 0.9em;   // default font size inside r code chunks
+$code-block-bg: $off-white;
+
+/*--    Works  --*/
+$body-bg:            $off-white;
+//$body-bg:            $teal;   #  (too dark)
+//$body-bg:            $green;
+
+
+/*-- scss:rules --*/
+
+h3 {
+    color: red;
+    font-size: 1.1 em;
+}
+
+.postbox {
+  background-color: lightgrey;
+  font-size:	    2.1em;   // works, 'bigger'
+}
+
+
+/* an experiment */
+
+/* in data tables, this color affects titles, text in columns */
+.small {
+  font-size: 12px;
+  color: black;
+
+}
+.center {
+    text-align: right;
+    font-size: 25px;
+    color: red;
+}
+
+.very_small {
+  font-size: 10px;
+  color: lightred;
+}
+
+.custombox {
+  background-color: pink;
+}
+
+.custombox_blue {
+  color: blue;
+  background-color: white;
+}
+
+.custombox_yellow {
+  background-color: yellow;
+}
+
+.custombox_white {
+    padding: 1em;
+    color: black;
+    background-color: white;
+    border: 2px solid orange;
+    border-radius:  10px;
+}
+    
+.custombox_black {
+  color: black;
+  background-color: lightblue;
+}
+
+.underline {
+    text-decoration: underline red;
+}
+    
+/* nested, used & to indicate child of above */
+.nested_class {
+    background_color: white;
+    &:hover {
+	background_color: orange;
+    }
+}
+
+@mixin btnContainerBlack {
+  background-color: orange;
+  color: white;
+  &:hover {
+    background-color: gray;
+    color: black;
+  }
+}
+
+/* actual element */
+.button-container {
+  @include btnContainerBlack;
+}
+
+/*  from in-line CSS
+
+.blackbox {
+  padding: 1em;
+  background: black;
+  color: white;
+  border: 2px solid orange;
+  border-radius: 10px;
+}
+*/
+
+// ------------------------  @mixin
+
+@mixin absolute-center() {
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+}
+.element-1 {
+  @include absolute-center();
+  left: 40%;
+  color:green;
+}
+.element-2 {
+  @include absolute-center();
+  color:blue;
+}
+
+@mixin square($size) {
+  width:$size;
+  height:$size;
+  color:yellow;
+}
+.square {
+  @include square(60px);
+  background-color:#000;
+}
+
+
+// ------------------------ shadow box
+//
+
+.shadowbox {
+  width: 45em;
+  border: 1px solid #333;
+  box-shadow: 8px 8px 5px #444;
+  padding: 8px 12px;
+  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+}
+
+
