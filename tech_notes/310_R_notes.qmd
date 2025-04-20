@@ -1,5 +1,8 @@
 	PURPOSE:  Collect all notes, links, references for R to here.
 	NO installation (R, Rstudio, etc) in this file
+	
+	write 310_R_notes.qmd AFTER understand! 
+	including link to file where work actually done!
 
 <!--
 KEEP as .qmd file
@@ -236,12 +239,6 @@ rlang::is_expression(quote(if (x  > z) print("yes")))   #T
 # body of function
 rlang::is_expression(body(f = function() x^y))   # T
 
-# manipulate expression:
-e= quote(x + y + z)  # x + y + z
-length(e)   # 3
-
-e[[3]]  <- quote(z + 3)
-e # x + y + (z + 3)
 ```
 
 **Expression v Language** R expressions based on list and can be broken down
@@ -406,30 +403,6 @@ captures expression and environment
 
 -   Do not understand at deeper level
 
-```{r }
-#| label: primitive 
-#| include: true
-#| eval: false
-
-#   TODO
-#   R complains about putting function in data.frame
-
-### check several functions
-y  <- list(sin, "sin", c, switch, typeof, sqrt, `if`, `+`)
-
-quote(sin)
-quote("sin")
-quote(c)
-quote(sqrt)
-quote(`if`)
-quote(`+`)
-deparse(y)
-# TODO add class()
-data.frame(object = y,
-           typeof = sapply(y, typeof),
-           is.primitive = sapply(y, is.primitive),
-           is.function = sapply(y, is.function))
-```
 
 **R** R has two parents: S, based on C, Fortran for statistics. R also has
 functional component, based on Scheme.
@@ -455,8 +428,35 @@ However, not all R functions have this property.
 x=6
 identical(quote(x), quote(6))               ##  F
 ```
-**quote**
+**quote**  SEE
 (Scheme) does not look for bindings
+- returns expression; stops evaluation; 
+- in particular, allows programmer to then manipulate code, essential
+
+```r
+e= quote(x + y + z)  # x + y + z
+length(e)   # 3
+e[[3]]  <- quote(z + 3)
+e # x + y + (z + 3)
+
+### check several functions
+
+# but sin in double quotes is NOT a function
+quote("sin") |> typeof()   # character
+
+# L is list of symbols
+L = list(quote(sin), quote(c), quote(sqrt), quote(`if`), `+`))
+sapply(L, typeof)
+
+# Note:
+quote(sqrt) |> typeof()   # "symbol"
+quote(sqrt) |> typeof()  |> typeof()   # "character"
+
+(data.frame(object = as.character(L),
+           type = sapply(L, typeof)
+           ))
+```
+
 
 **quosure**
 

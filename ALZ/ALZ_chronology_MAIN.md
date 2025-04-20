@@ -3,11 +3,6 @@ output-dir: docs
 ---
 					
 ***
-				
-
-                
-  
-  
 THIS FILE:	 "ALZ_chronology.md"
 re: 18CR66984 - A 18141,  Oregon v Zimmerman, Amy L (#325701, 14080975)
 
@@ -825,6 +820,29 @@ prosecutor to decide what to do; to get records; etc.
 
 }}}
 
+### April 14, 2025  - Call Munipal Court
+- Call Legal Dept, asked for prosectutor Nicole Theobald, but person who answered tried to answer my questions:   could only find 1 of the criminal cases;  thinks dismissed, but not certain.
+- Maria Nava will call me back tomorrow and she probably has more info.
+
 ## re: 18CR66984 - A 18141,  Oregon v Zimmerman, Amy L (#325701, 14080975)
 
+### April 16, 2025 - Note to Oregon Parole Board
+FYI...
+2021-000-5605-CR  (while under probation)
+2021-000-5606-CR  (DUI)
+(today April 16, 2025 I called and told ALZ plead no contest on Jan 23, 2024, sentence 1 year in jail? not certain; not public)
+divorse, custody, 
+court records:  much litigation, many appeals, pro se
+
+A154283, 	Appeal affirms w/o opinion  re:	2013 Employment Appeals Board,
+		Administrative Decision,  13AB0426, CA A 154283 (filed: 4/16/13, decided: 12/24/2014)
+
+		"[Zimmerman] willfully made a misrepresentation and failed to report
+		material fact to obtain benefits"; 242 P3d 1126, page 802?  
+
+
+### 3AUG 2022:  Judge Hart
+    (#12) "Amy has continued to emotionally, mentally and psychologically
+    abuse and attack Timindra through unwarranted court filings and hearings."
+    \
 vim: ts=2 sw=0 expandtab nolinebreak
