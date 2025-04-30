@@ -14,7 +14,8 @@
   },
   "810_pharmaverse_NOTES.qmd": {
     "810_pharmaverse_NOTES.html": "19049e9f",
-    "810_pharmaverse_NOTES.tex": "4cf3b4f8"
+    "810_pharmaverse_NOTES.tex": "4cf3b4f8",
+    "pharma.html": "161b1e45"
   },
   "001_grep_regex_P_examples.qmd": {
     "001_grep_regex_P_examples.html": "c923ac03"
@@ -56,5 +57,8 @@
   },
   "README_test.qmd": {
     "README_test.html": "b4f4971d"
+  },
+  "260_typst_cheat.qmd": {
+    "260_typst_cheat.html": "a291a3a1"
   }
 }

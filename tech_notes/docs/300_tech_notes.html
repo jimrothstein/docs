@@ -4824,6 +4824,7 @@ window.Quarto = {
   </ul></li>
   <li><a href="#curl-youtube-api-google-api-oauth-2.0" id="toc-curl-youtube-api-google-api-oauth-2.0" class="nav-link" data-scroll-target="#curl-youtube-api-google-api-oauth-2.0"><span class="header-section-number">3</span> CURL | YOUTUBE API | GOOGLE API | OAUTH 2.0 |</a>
   <ul class="collapse">
+  <li><a href="#adb" id="toc-adb" class="nav-link" data-scroll-target="#adb"><span class="header-section-number">3.0.1</span> ADB</a></li>
   <li><a href="#my-vin-1hgem22911l031079" id="toc-my-vin-1hgem22911l031079" class="nav-link" data-scroll-target="#my-vin-1hgem22911l031079"><span class="header-section-number">3.1</span> my VIN: 1HGEM22911L031079</a></li>
   </ul></li>
   </ul>
@@ -4862,12 +4863,12 @@ window.Quarto = {
 </header>
 
 
-<section id="section" class="level4">
-<h4 class="anchored" data-anchor-id="section"></h4>
+<section id="section" class="level4" data-number="0.0.0.1">
+<h4 data-number="0.0.0.1" class="anchored" data-anchor-id="section"><span class="header-section-number">0.0.0.1</span> </h4>
 <p>23 DEC 2024 - change to .qmd (standardize)</p>
 </section>
-<section id="hardware" class="level4">
-<h4 class="anchored" data-anchor-id="hardware">Hardware</h4>
+<section id="hardware" class="level4" data-number="0.0.0.2">
+<h4 data-number="0.0.0.2" class="anchored" data-anchor-id="hardware"><span class="header-section-number">0.0.0.2</span> Hardware</h4>
 <p>23 DEC 2024 - wireless mouse, $10, bestbuy, M220 logitech, 18 month batter life, plain vanilla is just fine.</p>
 <p>folds: use za or (define-key evil-normal-state-map (kbd “<tab>”) ’evil-toggle-fold) need package for evil/folds - za open fold - zc close fold - zr open all folds - zm close all folds - C-3 S-TAB (show outline upto level 3)</tab></p>
 <p>[[nytimes.com]][nytimes] [[‘file:280_emacs_notes.qmd’]][emacs notes] [[https://www.nytimes.com][nytimes.com]] ** TODO - Note taken on [2024-07-25 Thu 16:34] - Note taken on [2024-07-25 Thu 16:34] - USEFUL ?? - quarto: focus on html (not pdf) - use folds, to simplify navigating this document - <strong>no R here, no Stats</strong> - includes <em>i3</em>, <em>emacs</em>, <em>Debian</em> - HTTR2 notes = mess - Break this document into separate files, merge into one big one?</p>
@@ -5088,8 +5089,8 @@ Rmk: [0-9]+ means repeat one or more of the prior <strong>Character class</stron
 <ul>
 <li>Before regex library (engine) sees code, the <strong>compiler</strong> (byte code?) gets it first. Must use double backslash for just one backslash to be seen by regex engine. Shell interpreters have no such compiler and single backslash suffices.</li>
 </ul>
-<section id="regex-grouping-capture-non-capture" class="level4">
-<h4 class="anchored" data-anchor-id="regex-grouping-capture-non-capture">Regex grouping: capture &amp; non-capture</h4>
+<section id="regex-grouping-capture-non-capture" class="level4" data-number="2.5.4.1">
+<h4 data-number="2.5.4.1" class="anchored" data-anchor-id="regex-grouping-capture-non-capture"><span class="header-section-number">2.5.4.1</span> Regex grouping: capture &amp; non-capture</h4>
 <p><strong>Perl</strong> PCRE for lookaheads, capture (in R, perl=T) from !so</p>
 <p>Groups that capture you can use later on in the regex to match OR you can use them in the replacement part of the regex. Making a non-capturing group simply exempts that group from being used for either of these reasons.</p>
 <p>Non-capturing groups are great if you are trying to capture many different things and there are some groups you don’t want to capture.</p>
@@ -5137,8 +5138,8 @@ Rmk: [0-9]+ means repeat one or more of the prior <strong>Character class</stron
 <ul>
 <li>see cron Icard (‘linux’) }</li>
 </ul>
-<section id="linux-kernel" class="level4">
-<h4 class="anchored" data-anchor-id="linux-kernel">Linux Kernel</h4>
+<section id="linux-kernel" class="level4" data-number="2.5.5.1">
+<h4 data-number="2.5.5.1" class="anchored" data-anchor-id="linux-kernel"><span class="header-section-number">2.5.5.1</span> Linux Kernel</h4>
 <p>{ - one LTS Ubuntu can have many (upstream) kernels - Mix &amp; Match kernels? X? - Kernel Upgrade - See INDEX C.</p>
 <p>}</p>
 <ul>
@@ -5343,8 +5344,8 @@ lsblk --output NAME,UUID,PARTUUID</code></pre>
 - I am using httr2 to automate things; I’d like to understand things using a little as possible: curl, browser and local server running as localhost.<br></br>
 - Most of the R work is done at lower level, such as packages curl and httpuv.</p>
 <p>begin{verbatim} G O O G L E end{verbatim}</p>
-<section id="httr2---notes-needs-clean-up" class="level4">
-<h4>HTTR2 - NOTES (needs clean up!)</h4>
+<section id="httr2---notes-needs-clean-up" class="level4" data-number="3.0.0.1">
+<h4 data-number="3.0.0.1"><span class="header-section-number">3.0.0.1</span> HTTR2 - NOTES (needs clean up!)</h4>
 <p>PURPOSE: Demonstrate configuration for HTTR2 and OAUTH2 with Google’s Youtube API.</p>
 <pre><code>                        - uses off-the-shelf `httr2::req_oauth_auth_code()` + configuration
                       - uses authorization code flow.
@@ -5375,13 +5376,13 @@ response_type=code"”</p>
 –header ‘Accept: application/json’<br></br>
 –compressed</p>
 </section>
-<section id="needed-scopes" class="level4">
-<h4>NEEDED SCOPES:</h4>
+<section id="needed-scopes" class="level4" data-number="3.0.0.2">
+<h4 data-number="3.0.0.2"><span class="header-section-number">3.0.0.2</span> NEEDED SCOPES:</h4>
 <p>https://www.googleapis.com/auth/youtube Manage your YouTube account https://www.googleapis.com/auth/youtube.force-ssl See, edit, and permanently delete your YouTube videos, ratings, comments and captions</p>
 <p>playlistId = “PLlXfTHzgMRUIqYrutsFXCOmiqKUgOgGJ5” # Pavel Grinfeld, Linear Alg 3</p>
 </section>
-<section id="procedure" class="level4">
-<h4>Procedure:</h4>
+<section id="procedure" class="level4" data-number="3.0.0.3">
+<h4 data-number="3.0.0.3"><span class="header-section-number">3.0.0.3</span> Procedure:</h4>
 <ul>
 <li><pre><code>Follow hadley outlines in Vignette for Github and and getting user's information.  (Requires oauth token)</code></pre></li>
 <li>Change for google - let httr2 handle the details, use this function: httr2::req_oauth_auth_code()</li>
@@ -5400,8 +5401,8 @@ cURL write (to standard) w response after callling example.com
 vim:nospell</p>
 <p>** ANDROID</p>
 </section>
-<section id="android-mobile-cell-phone---notes" class="level4">
-<h4>Android, Mobile, Cell Phone - notes</h4>
+<section id="android-mobile-cell-phone---notes" class="level4" data-number="3.0.0.4">
+<h4 data-number="3.0.0.4"><span class="header-section-number">3.0.0.4</span> Android, Mobile, Cell Phone - notes</h4>
 <p><em>Nov 2024</em> - need wireless phone? or working wifi-only phone? (mine does not work)</p>
 <p><em>Carrier</em> - 5G or <code>slower</code> 4G/LTE - 1-5 GB per month seems OK for some video, streaming … - podcasts ~ 1MB/minute of talk (use wifi) - want unlimited text/talk - MintMobile (owned by T-Mobile) claims $15 per month - US - SIMS: physical or eSim, if device supports - not my current onePlus 3T,</p>
 <ul>
@@ -5411,7 +5412,9 @@ vim:nospell</p>
 <p>RETAIL DEMO UNIT (‘retail mode’): - ie runs in endless LOOP, no Cell ability, no MEI - useable ONLY for wifi - Can be BARGAIN, but … - Must unlock bootloader (to remove ‘endless loop software’ and become regular wifi device. Locked means bootloder hard-coded insist OS match a code. - if CAN unlock bootloader , BARGAIN. Beware endless hours otherwise.</p>
 <p>*** Google Pixel 3a XL (my phone) - Android 12 = final google update. - DO expect “unofficial” Android 13 for this phone (sooner or lalter).</p>
 <p>*** <strong>OEM Unlock</strong> - greyed out? (like mine) then not possible to unlock bootloader itself. Means: no root. <strong>no ROM install</strong> <strong>no TWRP</strong> - my pixel is VERISON (sprint?) phone; not a Google phone; b/c IMEI begins with 35… NO way to change bootloader.</p>
-<p>*** ADB</p>
+</section>
+<section id="adb" class="level3" data-number="3.0.1">
+<h3 data-number="3.0.1"><span class="header-section-number">3.0.1</span> ADB</h3>
 <ul>
 <li><p><em>ADB</em> DEBUG: a “mode” that allows installing apps, read logs on Android, file transfer… Works by running TCP sever on host (PC) and daemon on device (phone) Works by running TCP sever on host (PC) and daemon on device (phone)</p></li>
 <li><p>SEE https://www.howtogeek.com/192732/android-usb-connections-explained-mtp-ptp-and-usb-mass-storage/</p>
@@ -5423,6 +5426,7 @@ vim:nospell</p>
 <li>adb shell ls /system/bin (available cmds)</li>
 </ul></li>
 <li>adb push [ – sync ] # only push if newer</li>
+<li><strong>adb push * /sdcard/Music # worked 3/25, push to pixel 4</strong></li>
 </ul></li>
 <li><p>Photo tranfer, different.</p></li>
 <li><p><strong>mp3 file transfer</strong> ADB appears to be FUSSY: remove things like <code>?</code> from file names or foregin char. ADB sucks at error messages; chokes; just seem to stall. Just fix the file names and adb will work; speed is very good; but even 25 MB/s ~ 1.8 GB/min. Be patient with 40 GB.</p></li>
