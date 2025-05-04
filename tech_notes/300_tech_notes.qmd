@@ -60,6 +60,13 @@ need package for evil/folds
   - do not soft link qmd files,  actual file or copy must in project
   - of course, can render to md locally and merely push to github;
   - do not know branch and yaml the same  (ie not both main...)
+
+- (Github actions) Reading
+  -  Book <https://orchid00.github.io/actions_sandbox/>
+  -  <https://www.r-bloggers.com/2021/01/automatic-rendering-of-a-plot-with-github-actions-3/>
+  -  <https://www.simonpcouch.com/blog/2020-12-27-r-github-actions-commit/index.html>
+  -  <https://fromthebottomoftheheap.net/2020/04/30/rendering-your-readme-with-github-actions/>
+
 ** Posit Connect Cloud (new)
 - works with Shiny;  gets code and manifest (json, with all R dependencies) from github (works)
 

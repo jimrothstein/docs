@@ -41,11 +41,16 @@ M-x describe-mode
 
 ## LEARNING
 tutorial (^h t) - shows in red when evil remapped an emacs key.
+
+
+Beginner: https://protesilaos.com/codelog/2024-11-28-basic-emacs-configuration/
 emacswiki: (look for newbie) https://www.emacswiki.org/
 
 daviwil:  emacs from scratch: videos + config
 https://github.com/daviwil/emacs-from-scratch/tree/8c302a79bf5700f6ef0279a3daeeb4123ae8bd59
 
+## Blog
+https://protesilaos.com/
 
 ## EVIL
 Read & re-read:  https://github.com/noctuid/evil-guide
