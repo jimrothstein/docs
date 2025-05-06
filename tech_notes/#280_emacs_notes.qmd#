@@ -6,12 +6,6 @@ output:  html_document
 editor_options: 
   chunk_output_type: console
 ---
-280_emacs_notes.qmd
-300_tech_notes.qmd
-810_pharmaverse_notes.qmd
-
-## TODO
-- ESS/R and flycheck ...
 
 **vim** is a terminal program.
 **emacs** is a gui program;  can run in terminal but then better to use **emacs --daemon**
@@ -43,9 +37,8 @@ M-x describe-mode
 ## LEARNING
 - tutorial (^h t) - shows in red when evil remapped an emacs key.
 - Beginner: https://protesilaos.com/codelog/2024-11-28-basic-emacs-configuration/
-- Xahlee <http://xahlee.info/emacs/how_to_read.html> 
 - emacswiki: (look for newbie) https://www.emacswiki.org/
-- short emacs guide (1st time: omit lisp): https://github.com/chrisdone-archive/elisp-guide?tab=readme-ov-file#programming-in-emacs-lisp
+- short emacs guide: https://github.com/chrisdone-archive/elisp-guide?tab=readme-ov-file#programming-in-emacs-lisp
 - practical: (REPL)  https://gigamonkeys.com/book/
 - gnu elisp https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html 
 - Toretzky Gentle Common Lisp http://www.cs.cmu.edu/~dst/LispBook/
@@ -97,11 +90,30 @@ Create a footnote: [^1]
 
 ## ESS / R
 tips:  https://stackoverflow.com/questions/2901198/useful-keyboard-shortcuts-and-tips-for-ess-r
+- ESS[R] major mode
+- iESS[R] inferior mode (buffer running R process, `console`
 
-- got flycheck,  usethis::use-tidy_style working; lintr now auto works.
-- M-: ess-style reports 'Rstudio'
+##  PDF
 
-- NEED to do:
-  - fix "_"
-  - get styler to auto format upon file save.
-  - do not understand: ess-r-mode; define-key; add-hook 
+::: {.content-visible when-format="pdf"}
+TODO pdf - fix greater than equa
+  pdf: 
+    toc: false
+    include-in-header: 
+      text: |
+        \usepackage[top=.5in, bottom=.5in, left=.7in, right=.5in]{geometry}
+        \usepackage{amsmath,amssymb,amstext,amsfonts}
+        \usepackage{lipsum}
+:::
+
+
+
+::: {.content-visible when-format="pdf"}
+Will only appear in HTML.
+\renewcommand{\familydefault}{\sfdefault}
+\section{R Definitions \& Examples   (TERSE)}
+\section{Manuals}
+\\section(Definitions}
+:::
+
+

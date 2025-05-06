@@ -11,6 +11,9 @@ editor_options:
 # rsconnect::writeManifest()
 ```
 
+## TODO
+- cleanup !
+
 [^CDISC_api] [CDISC_api]  <https://wiki.cdisc.org/display/LIBSUPRT/Welcome+Package+for+CDISC+Library+Users> 
 
 ODMv2 api example [^CDISC_hl7_api]
@@ -514,16 +517,26 @@ var_spec
 
 **ODM-XML** an xml file
 
+## Pilot
+
+**Pilot 2** - shiny, no webassembly
+
 **Pilot 3**
-scripts, shiny -> generate ADaM (ADSL, ADAE) --> TLF
+scripts, shiny; use admiral to  generate ADaM (ADSL, ADAE) --> TLF
 
 **Pilot 4**
+pilot2 + webassembly and/or container
+- now shiny does not need httpuv
+- Ben likes container (easy transport)
+- But FDA like webassembly, fewer parts to install (done via browser, no server, compile in browser)
 container:  webassembly and Podman (not open source)
 https://rpodcast.quarto.pub/pilot4-webassembly-adrg/#introduction  
 https://github.com/RConsortium/submissions-pilot4-webR
 - no .zip?  Docker?  .tar.gz?
 
 **Pilot 5**
+
+**Pilot future:   Nix OS, can  isolate R in same OS**
 
 **Programming Strategy** https://pharmaverse.github.io/admiraldev/articles/programming_strategy.html
 

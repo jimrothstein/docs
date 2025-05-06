@@ -1,27 +1,23 @@
 
-####
-23 DEC 2024 - change to .qmd (standardize)
-
 #### Hardware
 23 DEC 2024 - wireless mouse, $10, bestbuy, M220 logitech, 18 month
 batter life, plain vanilla is just fine.
 
+#### folds
 folds:  use za or (define-key evil-normal-state-map (kbd "<tab>") 'evil-toggle-fold)
 need package for evil/folds
 - za open fold
 - zc close fold
 - zr open all folds
 - zm close all folds
-- C-3 S-TAB   (show outline upto level 3)
+- C-3 S-TAB   (show outline upto level 3 - WORKS!)
 
+#### url links
 [[nytimes.com]][nytimes]
 [['file:280_emacs_notes.qmd']][emacs notes]
 [[https://www.nytimes.com][nytimes.com]]
-**  TODO
-- Note taken on [2024-07-25 Thu 16:34]
-- Note taken on [2024-07-25 Thu 16:34]
-    -   USEFUL ??
-    -   quarto:  focus on html (not pdf)
+
+## TODO
     -   use folds, to simplify navigating this document
     -   **no R here, no Stats**
     -   includes *i3*, *emacs*, *Debian*
@@ -40,17 +36,8 @@ need package for evil/folds
 
 <2024-07-01 Mon>
 - ex looks very useful!
-- another attempt with lintr, styler, ... (did some reading)
 - SO(3) - not sure what I am asking;  normal subgroups, symmetries?
   
-<2024-06-29 Sat>
-- got flycheck,  usethis::use-tidy_style working; lintr now auto works.
-- M-: ess-style reports 'Rstudio'
-- NEED to do:
-  - fix "_"
-  - get styler to auto format upon file save.
-  - do not understand: ess-r-mode; define-key; add-hook 
-
 
 
 ### Github actions
@@ -112,9 +99,10 @@ prior to 'ex', was 'ed'
 ** i3, i3wm
 Videos:
 basic config: https://www.youtube.com/watch?v=88o2XuH3E08&list=PLbcglKxZP5PMTWVe1KhZX3Jvo0xqk8h5I&index=1
+- man i3  has good help, but quick becomes *x11*
+- review man i3-dmenu-desktop 
 
-** Changes to this document:
-- 05JUNE2024  - converting to emacs  org (from quarto .qmd)
+
 
 **  PURPOSE:		
 Misc Tech Notes;  details, notes can be here (but COMMANDS put
