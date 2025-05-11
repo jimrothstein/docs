@@ -13,11 +13,10 @@ editor_options:
 ## TODO
 - ESS/R and flycheck ...
 
-**vim** is a terminal program.
 **emacs** is a gui program;  can run in terminal but then better to use **emacs --daemon**
 
 This document is about **emacs**, but written in quarto to practice quarto decorations
-SEE: https://protesilaos.com/codelog/2022-01-31-learning-emacs/
+SEE: <https://protesilaos.com/codelog/2022-01-31-learning-emacs/>
 
 ::: callout-note
 Note: 
@@ -25,15 +24,12 @@ Note:
 i3 and emacs can conflict.    SEE: https://sqrtminusone.xyz/posts/2021-10-04-emacs-i3/ 
 :::
 
-
 ## HELP
 - help for variable
 ^h v  display-line-number \
 ^h a  eval   # any emacs/gnu topic? \
 ^h k  F10     # enter keystroke to see binding \
-
-- help for function
-^h f current-buffer
+^h f current-buffer | ^h f ess-eval-region (help for emacs/ESS function)
 
 M-x apropos-documenation eval
 M-x describe-bindings
@@ -53,7 +49,6 @@ M-x describe-mode
 [SICPv2](https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/6515/sicp.zip/full-text/book/book-Z-H-1.html)
 [[https://www2.lib.uchicago.edu/keith/tcl-course/emacs-tutorial.html][emacs, with explanatons!]]
 
-
 ## VIDEOS
 - daviwil:  emacs from scratch: videos + config
 https://github.com/daviwil/emacs-from-scratch/tree/8c302a79bf5700f6ef0279a3daeeb4123ae8bd59
@@ -70,8 +65,6 @@ Run lisp ?  or REPL:   open  ~/code/elisp_project/010_basic_elisp.el
 ^x p e  for eShell
 ^h i m Elisp RET (read manual) not working
 
-
-
 ## Org mode
 only in .org mode?
 also M-x org-insert-link
@@ -86,17 +79,9 @@ Create a footnote: [^1]
 
 [^1]: This is footnote one.
 
-::: {.content-visible when-format="html"}
-:::
-
-
-***
-::: {.content-visible when-format="html"}
-:::
-***
-
 ## ESS / R
 tips:  https://stackoverflow.com/questions/2901198/useful-keyboard-shortcuts-and-tips-for-ess-r
+collection of ESS config/intros: <https://github.com/ess-intro/ess-intro>
 
 - got flycheck,  usethis::use-tidy_style working; lintr now auto works.
 - M-: ess-style reports 'Rstudio'

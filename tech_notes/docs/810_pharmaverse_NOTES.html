@@ -4708,11 +4708,13 @@ vertical-align: -.125em;
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
    
   <ul>
-<li>
-<a href="#my-notes" id="toc-my-notes" class="nav-link active" data-scroll-target="#my-notes"><span class="header-section-number">1</span> My Notes</a>
+<li><a href="#tools" id="toc-tools" class="nav-link active" data-scroll-target="#tools"><span class="header-section-number">0.1</span> TOOLS</a></li>
+  <li><a href="#todo" id="toc-todo" class="nav-link" data-scroll-target="#todo"><span class="header-section-number">0.2</span> TODO</a></li>
+  <li>
+<a href="#my-notes" id="toc-my-notes" class="nav-link" data-scroll-target="#my-notes"><span class="header-section-number">1</span> My Notes</a>
   <ul class="collapse">
 <li><a href="#intro-notes" id="toc-intro-notes" class="nav-link" data-scroll-target="#intro-notes"><span class="header-section-number">1.1</span> intro notes</a></li>
-  <li><a href="#tools" id="toc-tools" class="nav-link" data-scroll-target="#tools"><span class="header-section-number">1.2</span> Tools</a></li>
+  <li><a href="#tools-1" id="toc-tools-1" class="nav-link" data-scroll-target="#tools-1"><span class="header-section-number">1.2</span> Tools</a></li>
   <li>
 <a href="#videos-reading" id="toc-videos-reading" class="nav-link" data-scroll-target="#videos-reading"><span class="header-section-number">1.3</span> Videos &amp; Reading</a>
   <ul class="collapse">
@@ -4739,10 +4741,11 @@ vertical-align: -.125em;
   <li><a href="#after-cdisc-placeholder" id="toc-after-cdisc-placeholder" class="nav-link" data-scroll-target="#after-cdisc-placeholder"><span class="header-section-number">1.4.14</span> after CDISC (placeholder)</a></li>
   </ul>
 </li>
-  <li><a href="#empty-placeholder" id="toc-empty-placeholder" class="nav-link" data-scroll-target="#empty-placeholder"><span class="header-section-number">1.5</span> Empty Placeholder</a></li>
-  <li><a href="#faq" id="toc-faq" class="nav-link" data-scroll-target="#faq"><span class="header-section-number">1.6</span> FAQ</a></li>
-  <li><a href="#working-with-json" id="toc-working-with-json" class="nav-link" data-scroll-target="#working-with-json"><span class="header-section-number">1.7</span> Working with JSON</a></li>
-  <li><a href="#footnotes" id="toc-footnotes" class="nav-link" data-scroll-target="#footnotes"><span class="header-section-number">1.8</span> Footnotes</a></li>
+  <li><a href="#pilot" id="toc-pilot" class="nav-link" data-scroll-target="#pilot"><span class="header-section-number">1.5</span> Pilot</a></li>
+  <li><a href="#empty-placeholder" id="toc-empty-placeholder" class="nav-link" data-scroll-target="#empty-placeholder"><span class="header-section-number">1.6</span> Empty Placeholder</a></li>
+  <li><a href="#faq" id="toc-faq" class="nav-link" data-scroll-target="#faq"><span class="header-section-number">1.7</span> FAQ</a></li>
+  <li><a href="#working-with-json" id="toc-working-with-json" class="nav-link" data-scroll-target="#working-with-json"><span class="header-section-number">1.8</span> Working with JSON</a></li>
+  <li><a href="#footnotes" id="toc-footnotes" class="nav-link" data-scroll-target="#footnotes"><span class="header-section-number">1.9</span> Footnotes</a></li>
   </ul>
 </li>
   </ul></nav>
@@ -4774,15 +4777,37 @@ vertical-align: -.125em;
   
 
 
-</header><p><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> [CDISC_api] <a href="https://wiki.cdisc.org/display/LIBSUPRT/Welcome+Package+for+CDISC+Library+Users" class="uri">https://wiki.cdisc.org/display/LIBSUPRT/Welcome+Package+for+CDISC+Library+Users</a></p>
-<p>ODMv2 api example <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> pinnacle and api [^CDISC_pinnacle_api] <a href="https://www.lexjansen.com/pharmasug/2024/MM/PharmaSUG-2024-MM-245.pdf" class="uri">https://www.lexjansen.com/pharmasug/2024/MM/PharmaSUG-2024-MM-245.pdf</a></p>
-<section id="my-notes" class="level1" data-number="1"><h1 data-number="1">
+</header><section id="tools" class="level2" data-number="0.1"><h2 data-number="0.1" class="anchored" data-anchor-id="tools">
+<span class="header-section-number">0.1</span> TOOLS</h2>
+<p>For pkg - styler::style_pkg()<br>
+- devtools::lint() # package<br>
+- devtools::test_coverage() # entire package - devtools::spell_check(use_wordlist = TRUE) # package - spelling::update_wordlist(pkg=“.”) # runs spell AND asks to update WORDLIST</p>
+<p>For File: Use these:</p>
+<ul>
+<li>active_fie = rstudioapi::getSourceEditorContext()$path</li>
+<li>devtools::test_active_file()</li>
+<li>devtools::test_coverage_active_file()</li>
+<li>styler::style_file(path = ) # dir, file</li>
+<li>styler::style_file(“data-raw/admiral_verify_templates.R”)</li>
+<li>lintr::lint(filename=““)</li>
+<li>spelling::update_wordlist(pkg=“.”) # runs spell and asks to update WORDLIST</li>
+<li>urlchecker::url_check()</li>
+</ul>
+<p>(see lintr package - many options to control nolint) <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> lintr::lint()</p>
+</section><section id="todo" class="level2" data-number="0.2"><h2 data-number="0.2" class="anchored" data-anchor-id="todo">
+<span class="header-section-number">0.2</span> TODO</h2>
+<ul>
+<li>cleanup !</li>
+</ul>
+<p><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> [CDISC_api] <a href="https://wiki.cdisc.org/display/LIBSUPRT/Welcome+Package+for+CDISC+Library+Users" class="uri">https://wiki.cdisc.org/display/LIBSUPRT/Welcome+Package+for+CDISC+Library+Users</a></p>
+<p>ODMv2 api example <a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> pinnacle and api [^CDISC_pinnacle_api] <a href="https://www.lexjansen.com/pharmasug/2024/MM/PharmaSUG-2024-MM-245.pdf" class="uri">https://www.lexjansen.com/pharmasug/2024/MM/PharmaSUG-2024-MM-245.pdf</a></p>
+</section><section id="my-notes" class="level1" data-number="1"><h1 data-number="1">
 <span class="header-section-number">1</span> My Notes</h1>
 <section id="intro-notes" class="level2" data-number="1.1"><h2 data-number="1.1" class="anchored" data-anchor-id="intro-notes">
 <span class="header-section-number">1.1</span> intro notes</h2>
 <p>go to <a href="#my-notes">My Notes</a></p>
 <p>Take me to the anchor at <a href="#bottom">bottom</a></p>
-</section><section id="tools" class="level2" data-number="1.2"><h2 data-number="1.2" class="anchored" data-anchor-id="tools">
+</section><section id="tools-1" class="level2" data-number="1.2"><h2 data-number="1.2" class="anchored" data-anchor-id="tools-1">
 <span class="header-section-number">1.2</span> Tools</h2>
 <p>For Package: Use these:</p>
 <pre><code>
@@ -4805,7 +4830,7 @@ vertical-align: -.125em;
 <p>2023 | pharmaverse workshop (admiral, metatools, metacore walkthrough - good, ross @ 7:00): - (<span class="citation" data-cites="7:00">@7:00</span> or so) <a href="https://youtu.be/nHbDmxjVqRM?si=usfW_i9zdQyBKA0D" class="uri">https://youtu.be/nHbDmxjVqRM?si=usfW_i9zdQyBKA0D</a> - with metacore object we have <code>specs</code> (ex: column names and order) =&gt; compare to data</p>
 <p>2022 | CI/CD; pharmaverse github workflow (ben) - <a href="https://www.youtube.com/watch?v=OcNzurpCCpY" class="uri">https://www.youtube.com/watch?v=OcNzurpCCpY</a> - <a href="https://github.com/bms63/demo" class="uri">https://github.com/bms63/demo</a></p>
 <p>2022 | Day #1 (good) <a href="https://www.youtube.com/watch?v=9eod8MLF5ys" class="uri">https://www.youtube.com/watch?v=9eod8MLF5ys</a> @ 23:12 - diagram, package handoffs… @ 48:00 - Admiral, design flow of derive_var_… (good)</p>
-<p>Coursera: <a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> New contributors <a href="https://www.youtube.com/watch?v=MhEyod3Sevc&amp;list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4&amp;index=3" class="uri">https://www.youtube.com/watch?v=MhEyod3Sevc&amp;list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4&amp;index=3</a></p>
+<p>Coursera: <a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> New contributors <a href="https://www.youtube.com/watch?v=MhEyod3Sevc&amp;list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4&amp;index=3" class="uri">https://www.youtube.com/watch?v=MhEyod3Sevc&amp;list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4&amp;index=3</a></p>
 </section><section id="reading" class="level3" data-number="1.3.2"><h3 data-number="1.3.2" class="anchored" data-anchor-id="reading">
 <span class="header-section-number">1.3.2</span> Reading</h3>
 <ul>
@@ -4859,15 +4884,15 @@ vertical-align: -.125em;
 <section id="what-is-cdisc" class="level3" data-number="1.4.1"><h3 data-number="1.4.1" class="anchored" data-anchor-id="what-is-cdisc">
 <span class="header-section-number">1.4.1</span> What is CDISC?</h3>
 <p>The “I” is for interchange, ie to move data between computers and applications. In particular, CDISC is an attempt to standardize structure of data that flow from patient through data analysis so things like dates, units, dataset fields are consistent. At the government/regulary agency end, the standardization of data simplifies comparisons.</p>
-<p>CDISC is intended to be an improvement over <a href="https://www.cdisc.org/kb/articles/short-history-cdisc-and-sas-transport-files">prior methods</a> to exchange data.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+<p>CDISC is intended to be an improvement over <a href="https://www.cdisc.org/kb/articles/short-history-cdisc-and-sas-transport-files">prior methods</a> to exchange data.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
 <p>From an R developer’s point-of-view, this roughly boils down to data tables and format. CDISC is both an abstraction and a guide to choosing the right variables. Just like an engineer who grows special crystals might benefit from learning a bit about group theory and various symetries, so too an R developer might pick up insights from CDISC abstractions.</p>
 <p>Depending on abstraction: PLAN -&gt; COLLECT -&gt; ORGANIZE -&gt; ANALYSIS -&gt; REPORTS OR, CDISC -&gt; CDASH -&gt; SDTM -&gt; ADaM -&gt;data analyst</p>
-<p>SEE <a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> <a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></p>
+<p>SEE <a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> <a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></p>
 <p><a href="https://en.wikipedia.org/wiki/Clinical_Data_Interchange_Standards_Consortium">CDISC wikipedia</a> Good, not perfect, one page summary.</p>
 </section><section id="where-to-start-with-cdisc" class="level3" data-number="1.4.2"><h3 data-number="1.4.2" class="anchored" data-anchor-id="where-to-start-with-cdisc">
 <span class="header-section-number">1.4.2</span> Where to Start with CDISC?</h3>
 <p>Basic introduction:<br>
-* <strong>CDISC 9 short videos (JAN 2025)</strong> : <a href="https://www.youtube.com/watch?v=muzo9veBOFw&amp;list=PL4vFrmnpUDeRziW2ozobayozgukgAmL1S" class="uri">https://www.youtube.com/watch?v=muzo9veBOFw&amp;list=PL4vFrmnpUDeRziW2ozobayozgukgAmL1S</a> * <a href="https://www.cdisc.org/standards/data-exchange"><strong>CDISC data exchange definitions</strong>:</a> * <strong>CDISC Genius (AI)<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> :</strong> https://chatgpt.com/g/g-677223310d8081918ca4bdda574a5384-cdisc-genius * <strong>CDISC Primer</strong> : <a href="https://www.cdisc.org/primer" class="uri">https://www.cdisc.org/primer</a> * <strong>cdisc api library</strong> (info) <a href="https://www.cdisc.org/cdisc-library" class="uri">https://www.cdisc.org/cdisc-library</a></p>
+* <strong>CDISC 9 short videos (JAN 2025)</strong> : <a href="https://www.youtube.com/watch?v=muzo9veBOFw&amp;list=PL4vFrmnpUDeRziW2ozobayozgukgAmL1S" class="uri">https://www.youtube.com/watch?v=muzo9veBOFw&amp;list=PL4vFrmnpUDeRziW2ozobayozgukgAmL1S</a> * <a href="https://www.cdisc.org/standards/data-exchange"><strong>CDISC data exchange definitions</strong>:</a> * <strong>CDISC Genius (AI)<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> :</strong> https://chatgpt.com/g/g-677223310d8081918ca4bdda574a5384-cdisc-genius * <strong>CDISC Primer</strong> : <a href="https://www.cdisc.org/primer" class="uri">https://www.cdisc.org/primer</a> * <strong>cdisc api library</strong> (info) <a href="https://www.cdisc.org/cdisc-library" class="uri">https://www.cdisc.org/cdisc-library</a></p>
 </section><section id="what-are-the-cdisc-specs" class="level3" data-number="1.4.3"><h3 data-number="1.4.3" class="anchored" data-anchor-id="what-are-the-cdisc-specs">
 <span class="header-section-number">1.4.3</span> What are the CDISC specs?</h3>
 <p>Example: In ADaM specify columns, or the type (string, number etc) is determined by metacore (metadata) and this in turn is based on … - Goal? At R level, structure of ADaM, SDTM tables (deliverables) - <a href="https://www.youtube.com/@CDISCInc/playlists">CDISC videos</a> - <a href="https://datascience.cancer.gov/resources/cancer-vocabulary/cdisc-terminology">^CDISC Glossary</a></p>
@@ -4985,7 +5010,7 @@ vertical-align: -.125em;
 <p>Currently: xpt Future: json</p>
 </section><section id="what-is-dataset-json-standard" class="level3" data-number="1.4.7"><h3 data-number="1.4.7" class="anchored" data-anchor-id="what-is-dataset-json-standard">
 <span class="header-section-number">1.4.7</span> What is dataset-json standard ?</h3>
-<p>“dataset exchange format” in JSON file for tabular datasets Read <a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> https://swhume.github.io/why-json-for-datasets</p>
+<p>“dataset exchange format” in JSON file for tabular datasets Read <a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> https://swhume.github.io/why-json-for-datasets</p>
 <ul>
 <li><p>XML, structured document (DOM, body, src, images,…)</p></li>
 <li><p>JSON, structured data</p></li>
@@ -5074,26 +5099,6 @@ vertical-align: -.125em;
 <p><strong>eCTD</strong> <strong>eCTR</strong> = electronic communications ..</p>
 <p><strong>end-to-end clinical reporting</strong> https://pharmaverse.org/e2eclinical/</p>
 <p><strong>harmonize</strong> - harmonized means consistent metadata/specifications object</p>
-<ul>
-<li>styler::style_pkg()<br>
-</li>
-<li>devtools::lint() # package<br>
-</li>
-<li>devtools::test_coverage() # entire package</li>
-<li>devtools::spell_check(use_wordlist = TRUE) # package</li>
-<li>spelling::update_wordlist(pkg=“.”) # runs spell AND asks to update WORDLIST</li>
-</ul>
-<p>For File: Use these:</p>
-<ul>
-<li>active_fie = rstudioapi::getSourceEditorContext()$path</li>
-<li>devtools::test_active_file()</li>
-<li>devtools::test_coverage_active_file()</li>
-<li>styler::style_file(path = ) # dir, file</li>
-<li>lintr::lint(filename=““)</li>
-<li>spelling::update_wordlist(pkg=“.”) # runs spell and asks to update WORDLIST</li>
-<li>urlchecker::url_check()</li>
-</ul>
-<p>(see lintr package - many options to control nolint) <a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> lintr::lint()</p>
 <p><strong>GxP</strong> “Good Practice” esp regarding FDA submissions.</p>
 <p><strong>LOCF</strong> https://www.lexjansen.com/nesug/nesug09/po/PO12.pdf https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4785044/ - missing observtions? assume last reported value continues.</p>
 <ul>
@@ -5112,10 +5117,14 @@ vertical-align: -.125em;
 </ul>
 <p><strong>ODM</strong></p>
 <p><strong>ODM-XML</strong> an xml file</p>
-<p><strong>Pilot 3</strong> scripts, shiny -&gt; generate ADaM (ADSL, ADAE) –&gt; TLF</p>
-<p><strong>Pilot 4</strong> container: webassembly and Podman (not open source) https://rpodcast.quarto.pub/pilot4-webassembly-adrg/#introduction<br>
+</section></section><section id="pilot" class="level2" data-number="1.5"><h2 data-number="1.5" class="anchored" data-anchor-id="pilot">
+<span class="header-section-number">1.5</span> Pilot</h2>
+<p><strong>Pilot 2</strong> - shiny, no webassembly</p>
+<p><strong>Pilot 3</strong> scripts, shiny; use admiral to generate ADaM (ADSL, ADAE) –&gt; TLF</p>
+<p><strong>Pilot 4</strong> pilot2 + webassembly and/or container - now shiny does not need httpuv - Ben likes container (easy transport) - But FDA like webassembly, fewer parts to install (done via browser, no server, compile in browser) container: webassembly and Podman (not open source) https://rpodcast.quarto.pub/pilot4-webassembly-adrg/#introduction<br>
 https://github.com/RConsortium/submissions-pilot4-webR - no .zip? Docker? .tar.gz?</p>
 <p><strong>Pilot 5</strong></p>
+<p><strong>Pilot future: Nix OS, can isolate R in same OS</strong></p>
 <p><strong>Programming Strategy</strong> https://pharmaverse.github.io/admiraldev/articles/programming_strategy.html</p>
 <p>Coding (rlang etc)https://pharmaverse.github.io/admiral/articles/concepts_conventions.html PR overview https://pharmaverse.github.io/admiraldev/articles/pr_review_guidance.html PR/branches/commits/ https://pharmaverse.github.io/admiraldev/articles/git_usage.html</p>
 <p><strong>PHUSE (UK)</strong> - lots of conferences| https://phuse.global/Communications/Webinar_Wednesday https://phuse.global/Working_Groups [PHUSE Working Groups] <strong>pharmaR</strong> (original attempt) -&gt; pharmaverse</p>
@@ -5147,10 +5156,10 @@ https://github.com/RConsortium/submissions-pilot4-webR - no .zip? Docker? .tar.g
 <p>https://github.com/pharmaverse/envsetup (plumbing can be intersting)</p>
 <p>https://github.com/pharmaverse/pharmaverseadam/issues/58</p>
 <p><strong>XLSX</strong> In Micrsoft Excel, XLSX is an XML-based open file format and XLS is a proprietary Microsoft format.</p>
-</section></section><section id="empty-placeholder" class="level2" data-number="1.5"><h2 data-number="1.5" class="anchored" data-anchor-id="empty-placeholder">
-<span class="header-section-number">1.5</span> Empty Placeholder</h2>
-</section><section id="faq" class="level2" data-number="1.6"><h2 data-number="1.6" class="anchored" data-anchor-id="faq">
-<span class="header-section-number">1.6</span> FAQ</h2>
+</section><section id="empty-placeholder" class="level2" data-number="1.6"><h2 data-number="1.6" class="anchored" data-anchor-id="empty-placeholder">
+<span class="header-section-number">1.6</span> Empty Placeholder</h2>
+</section><section id="faq" class="level2" data-number="1.7"><h2 data-number="1.7" class="anchored" data-anchor-id="faq">
+<span class="header-section-number">1.7</span> FAQ</h2>
 <p><strong>Tests</strong> In tests, how to check correct error/warning is issued?**</p>
 <ul>
 <li>Please use expect_snapshot() to ensure that the correct error message is issued. By the way, unit test for errors and warnings should never accept any error or warning but always check that the expected one is issued (by using expect_snapshot() or the class argument of expect_error()/expect_warning() ).</li>
@@ -5185,8 +5194,8 @@ called ADaM Other - which captures some exotic ADaM structures.</code></pre>
 <p>Once you do a few more successfully merged PRs I will propose to core team that you be included! Be great to have you involved.</p>
 <p><em>Reviewers: PR</em> (Ben) So I see everything that happens in admiral: issues, conversations, PRs, etc as I have my settings that way. Yes always assign a reviewer. You can ping people you have interacted with and ask for review or use <span class="citation" data-cites="pharmaverse/admiral">@pharmaverse/admiral</span> teams to ask for additional reviewers. If crickets, ping on slack as well; Stefan is the best for thorough code review. Edoardo and I are okay for code, but we are very user focused and pay close attention to documentation of usability of the function. there are a few others out there but you haven’t interacted with them much yet</p>
 <p><strong>Steps before release</strong> example of pre-release CRAN checklist https://github.com/pharmaverse/admiral/discussions/2394</p>
-</section><section id="working-with-json" class="level2" data-number="1.7"><h2 data-number="1.7" class="anchored" data-anchor-id="working-with-json">
-<span class="header-section-number">1.7</span> Working with JSON</h2>
+</section><section id="working-with-json" class="level2" data-number="1.8"><h2 data-number="1.8" class="anchored" data-anchor-id="working-with-json">
+<span class="header-section-number">1.8</span> Working with JSON</h2>
 <p>See https://json-schema.org/learn/getting-started-step-by-step</p>
 <p>JSON data, but with more info not really sure of context, can even validate: use JSON Schema!</p>
 <pre><code>{
@@ -5212,23 +5221,23 @@ called ADaM Other - which captures some exotic ADaM structures.</code></pre>
 
    &quot;required&quot;: [ &quot;productId&quot;, &quot;productName&quot;, &quot;price&quot; ]    # these are required
 }</code></pre>
-</section><section id="footnotes" class="level2" data-number="1.8"><h2 data-number="1.8" class="anchored" data-anchor-id="footnotes">
-<span class="header-section-number">1.8</span> Footnotes</h2>
+</section><section id="footnotes" class="level2" data-number="1.9"><h2 data-number="1.9" class="anchored" data-anchor-id="footnotes">
+<span class="header-section-number">1.9</span> Footnotes</h2>
 <p>pinnacle and api [^CDISC_pinnacle_api]: https://www.lexjansen.com/pharmasug/2024/MM/PharmaSUG-2024-MM-245.pdf</p>
 <p>This is the bottom <a name="bottom"></a></p>
 
 
 </section></section><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 <ol>
-<li id="fn1"><p>[CDISC_api] <a href="https://wiki.cdisc.org/display/LIBSUPRT/Welcome+Package+for+CDISC+Library+Users" class="uri">https://wiki.cdisc.org/display/LIBSUPRT/Welcome+Package+for+CDISC+Library+Users</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p><a href="https://www.cdisc.org/kb/articles/use-hl7-fhir-esource-pre-populate-cdash-case-report-forms-using-cdisc-odm-api" class="uri">https://www.cdisc.org/kb/articles/use-hl7-fhir-esource-pre-populate-cdash-case-report-forms-using-cdisc-odm-api</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p><a href="https://www.coursera.org/learn/hands-on-clinical-reporting-using-r" class="uri">https://www.coursera.org/learn/hands-on-clinical-reporting-using-r</a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p><a href="https://www.cdisc.org/kb/articles/short-history-cdisc-and-sas-transport-files" class="uri">https://www.cdisc.org/kb/articles/short-history-cdisc-and-sas-transport-files</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>[CDISC wikipedia] <a href="https://en.wikipedia.org/wiki/Clinical_Data_Interchange_Standards_Consortium" class="uri">https://en.wikipedia.org/wiki/Clinical_Data_Interchange_Standards_Consortium</a><a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p>[vendor_def] <a href="https://www.scian.com/statistical-programming-and-analysis/adam/define-xml/" class="uri">https://www.scian.com/statistical-programming-and-analysis/adam/define-xml/</a> [^CDISC Glossary]: [CDISC_glossary] <a href="https://datascience.cancer.gov/resources/cancer-vocabulary/cdisc-terminology" class="uri">https://datascience.cancer.gov/resources/cancer-vocabulary/cdisc-terminology</a><a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn7"><p>[CDISC_genius] <a href="https://chatgpt.com/g/g-677223310d8081918ca4bdda574a5384-cdisc-genius" class="uri">https://chatgpt.com/g/g-677223310d8081918ca4bdda574a5384-cdisc-genius</a><a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn8"><p>[swhume] <a href="https://swhume.github.io/why-json-for-datasets" class="uri">https://swhume.github.io/why-json-for-datasets</a><a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn9"><p><a href="https://lintr.r-lib.org/articles/lintr.html" class="uri">https://lintr.r-lib.org/articles/lintr.html</a><a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p><a href="https://lintr.r-lib.org/articles/lintr.html" class="uri">https://lintr.r-lib.org/articles/lintr.html</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>[CDISC_api] <a href="https://wiki.cdisc.org/display/LIBSUPRT/Welcome+Package+for+CDISC+Library+Users" class="uri">https://wiki.cdisc.org/display/LIBSUPRT/Welcome+Package+for+CDISC+Library+Users</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p><a href="https://www.cdisc.org/kb/articles/use-hl7-fhir-esource-pre-populate-cdash-case-report-forms-using-cdisc-odm-api" class="uri">https://www.cdisc.org/kb/articles/use-hl7-fhir-esource-pre-populate-cdash-case-report-forms-using-cdisc-odm-api</a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p><a href="https://www.coursera.org/learn/hands-on-clinical-reporting-using-r" class="uri">https://www.coursera.org/learn/hands-on-clinical-reporting-using-r</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p><a href="https://www.cdisc.org/kb/articles/short-history-cdisc-and-sas-transport-files" class="uri">https://www.cdisc.org/kb/articles/short-history-cdisc-and-sas-transport-files</a><a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>[CDISC wikipedia] <a href="https://en.wikipedia.org/wiki/Clinical_Data_Interchange_Standards_Consortium" class="uri">https://en.wikipedia.org/wiki/Clinical_Data_Interchange_Standards_Consortium</a><a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>[vendor_def] <a href="https://www.scian.com/statistical-programming-and-analysis/adam/define-xml/" class="uri">https://www.scian.com/statistical-programming-and-analysis/adam/define-xml/</a> [^CDISC Glossary]: [CDISC_glossary] <a href="https://datascience.cancer.gov/resources/cancer-vocabulary/cdisc-terminology" class="uri">https://datascience.cancer.gov/resources/cancer-vocabulary/cdisc-terminology</a><a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>[CDISC_genius] <a href="https://chatgpt.com/g/g-677223310d8081918ca4bdda574a5384-cdisc-genius" class="uri">https://chatgpt.com/g/g-677223310d8081918ca4bdda574a5384-cdisc-genius</a><a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>[swhume] <a href="https://swhume.github.io/why-json-for-datasets" class="uri">https://swhume.github.io/why-json-for-datasets</a><a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol></section></div></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
