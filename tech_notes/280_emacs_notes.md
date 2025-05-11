@@ -8,12 +8,12 @@ JR
 
 - ESS/R and flycheck …
 
-**vim** is a terminal program. **emacs** is a gui program; can run in
-terminal but then better to use **emacs –daemon**
+**emacs** is a gui program; can run in terminal but then better to use
+**emacs –daemon**
 
 This document is about **emacs**, but written in quarto to practice
 quarto decorations SEE:
-https://protesilaos.com/codelog/2022-01-31-learning-emacs/
+<https://protesilaos.com/codelog/2022-01-31-learning-emacs/>
 
 > [!NOTE]
 >
@@ -27,8 +27,8 @@ https://protesilaos.com/codelog/2022-01-31-learning-emacs/
 - help for variable ^h v display-line-number  
   ^h a eval \# any emacs/gnu topic?  
   ^h k F10 \# enter keystroke to see binding  
-
-- help for function ^h f current-buffer
+  ^h f current-buffer \| ^h f ess-eval-region (help for emacs/ESS
+  function)
 
 M-x apropos-documenation eval M-x describe-bindings M-x describe-mode
 
@@ -80,14 +80,12 @@ M-x global-command-log-mode M-x clm/open-command-log-buffer
 
 Create a footnote: [^1]
 
-------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-
 ## ESS / R
 
 tips:
 https://stackoverflow.com/questions/2901198/useful-keyboard-shortcuts-and-tips-for-ess-r
+collection of ESS config/intros:
+<https://github.com/ess-intro/ess-intro>
 
 - got flycheck, usethis::use-tidy_style working; lintr now auto works.
 
