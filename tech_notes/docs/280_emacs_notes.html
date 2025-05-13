@@ -4705,30 +4705,14 @@ vertical-align: -.125em;
 
 </head>
 
-<body>
+<body class="fullcontent">
 
 <div id="quarto-search-results"></div>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#todo" id="toc-todo" class="nav-link active" data-scroll-target="#todo"><span class="header-section-number">1</span> TODO</a></li>
-  <li><a href="#help" id="toc-help" class="nav-link" data-scroll-target="#help"><span class="header-section-number">2</span> HELP</a></li>
-  <li><a href="#learning" id="toc-learning" class="nav-link" data-scroll-target="#learning"><span class="header-section-number">3</span> LEARNING</a></li>
-  <li><a href="#blog" id="toc-blog" class="nav-link" data-scroll-target="#blog"><span class="header-section-number">4</span> Blog</a></li>
-  <li><a href="#evil" id="toc-evil" class="nav-link" data-scroll-target="#evil"><span class="header-section-number">5</span> EVIL</a></li>
-  <li><a href="#watch-every-command" id="toc-watch-every-command" class="nav-link" data-scroll-target="#watch-every-command"><span class="header-section-number">6</span> Watch Every Command !</a></li>
-  <li><a href="#ess-r" id="toc-ess-r" class="nav-link" data-scroll-target="#ess-r"><span class="header-section-number">7</span> ESS / R</a></li>
-  <li><a href="#org-mode" id="toc-org-mode" class="nav-link" data-scroll-target="#org-mode"><span class="header-section-number">8</span> Org mode</a></li>
-  <li><a href="#lisp" id="toc-lisp" class="nav-link" data-scroll-target="#lisp"><span class="header-section-number">9</span> LISP</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -4763,6 +4747,7 @@ vertical-align: -.125em;
 </header>
 
 
+<div class="small">
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -4778,18 +4763,18 @@ quarto render 280_emacs_notes.qmd –to gfm –output 280_emacs_notes.md</p>
 </div>
 </div>
 <p><a href="./280_emacs_notes.html">280_emacs_notes.qmd</a> 300_tech_notes.qmd 810_pharmaverse_notes.qmd</p>
-<section id="todo" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="todo"><span class="header-section-number">1</span> TODO</h2>
+<section id="todo" class="level4" data-number="0.0.1">
+<h4 data-number="0.0.1" class="anchored" data-anchor-id="todo"><span class="header-section-number">0.0.1</span> TODO</h4>
 <ul>
-<li><p>ESS/R and flycheck …</p></li>
-<li><p>get styler to auto format upon file save.</p></li>
-<li><p>do not understand: ess-r-mode; define-key; add-hook</p></li>
-<li><p><strong>emacs</strong> is a gui program; can run in terminal but then better to use <strong>emacs –daemon</strong></p></li>
-<li><p>i3 and emacs can conflict. SEE: https://sqrtminusone.xyz/posts/2021-10-04-emacs-i3/</p></li>
+<li>ESS/R and flycheck …</li>
+<li>get styler to auto format upon file save.</li>
+<li>do not understand: ess-r-mode; define-key; add-hook</li>
+<li><strong>emacs</strong> is a gui program; can run in terminal but then better to use <strong>emacs –daemon</strong></li>
+<li>i3 and emacs can conflict. SEE: https://sqrtminusone.xyz/posts/2021-10-04-emacs-i3/</li>
 </ul>
 </section>
-<section id="help" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="help"><span class="header-section-number">2</span> HELP</h2>
+<section id="help" class="level4" data-number="0.0.2">
+<h4 data-number="0.0.2" class="anchored" data-anchor-id="help"><span class="header-section-number">0.0.2</span> HELP</h4>
 <ul>
 <li>help for variable ^h v display-line-number<br>
 ^h a eval # any emacs/gnu topic?<br>
@@ -4798,8 +4783,8 @@ quarto render 280_emacs_notes.qmd –to gfm –output 280_emacs_notes.md</p>
 </ul>
 <p>M-x apropos-documenation eval M-x describe-bindings M-x describe-mode</p>
 </section>
-<section id="learning" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="learning"><span class="header-section-number">3</span> LEARNING</h2>
+<section id="learning" class="level4" data-number="0.0.3">
+<h4 data-number="0.0.3" class="anchored" data-anchor-id="learning"><span class="header-section-number">0.0.3</span> LEARNING</h4>
 <ul>
 <li>tutorial (^h t) - shows in red when evil remapped an emacs key.</li>
 <li><a href="https://protesilaos.com/codelog/2024-11-28-basic-emacs-configuration/">Beginner-protesilaos</a></li>
@@ -4811,40 +4796,41 @@ quarto render 280_emacs_notes.qmd –to gfm –output 280_emacs_notes.md</p>
 <li>daviwil: emacs from scratch: videos + config <a href="https://github.com/daviwil/emacs-from-scratch/tree/8c302a79bf5700f6ef0279a3daeeb4123ae8bd59" class="uri">https://github.com/daviwil/emacs-from-scratch/tree/8c302a79bf5700f6ef0279a3daeeb4123ae8bd59</a></li>
 </ul>
 </section>
-<section id="blog" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="blog"><span class="header-section-number">4</span> Blog</h2>
+<section id="blog" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="blog"><span class="header-section-number">1</span> Blog</h2>
 <p><a href="https://protesilaos.com/">protesilaos</a><br>
 <a href="https://protesilaos.com/codelog/" class="uri">https://protesilaos.com/codelog/</a></p>
 </section>
-<section id="evil" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="evil"><span class="header-section-number">5</span> EVIL</h2>
+<section id="evil" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="evil"><span class="header-section-number">2</span> EVIL</h2>
 <p><a href="https://github.com/noctuid/evil-guide">Evil, Read &amp; re-read:</a></p>
 <p>^x p e for eShell<br>
 ^h i m Elisp RET (read manual) not working<br>
 </p>
 </section>
-<section id="watch-every-command" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="watch-every-command"><span class="header-section-number">6</span> Watch Every Command !</h2>
+<section id="watch-every-command" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="watch-every-command"><span class="header-section-number">3</span> Watch Every Command !</h2>
 <p>M-x global-command-log-mode<br>
 M-x clm/open-command-log-buffer<br>
 </p>
 <p>Create a footnote: <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 </section>
-<section id="ess-r" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="ess-r"><span class="header-section-number">7</span> ESS / R</h2>
+<section id="ess-r" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="ess-r"><span class="header-section-number">4</span> ESS / R</h2>
 <p>tips: <a href="https://stackoverflow.com/questions/2901198/useful-keyboard-shortcuts-and-tips-for-ess-r" class="uri">https://stackoverflow.com/questions/2901198/useful-keyboard-shortcuts-and-tips-for-ess-r</a> collection of ESS config/intros: <a href="https://github.com/ess-intro/ess-intro" class="uri">https://github.com/ess-intro/ess-intro</a><br>
 - got flycheck, usethis::use-tidy_style working; lintr now auto works. - M-: ess-style reports ‘Rstudio’</p>
 </section>
-<section id="org-mode" class="level2" data-number="8">
-<h2 data-number="8" class="anchored" data-anchor-id="org-mode"><span class="header-section-number">8</span> Org mode</h2>
+<section id="org-mode" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="org-mode"><span class="header-section-number">5</span> Org mode</h2>
 <p>only in .org mode? also M-x org-insert-link</p>
 </section>
-<section id="lisp" class="level2" data-number="9">
-<h2 data-number="9" class="anchored" data-anchor-id="lisp"><span class="header-section-number">9</span> LISP</h2>
+<section id="lisp" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="lisp"><span class="header-section-number">6</span> LISP</h2>
 <p>Run lisp ? or REPL: open ~/code/elisp_project/010_basic_elisp.el <a href="https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/6515/sicp.zip/full-text/book/book-Z-H-1.html">SICPv2</a> - gnu elisp https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html - Toretzky Gentle Common Lisp http://www.cs.cmu.edu/~dst/LispBook/</p>
-
-
 </section>
+</div>
+
+
 
 
 <div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
