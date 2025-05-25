@@ -20,7 +20,7 @@ For pkg
 - devtools::spell_check(use_wordlist = TRUE) # package 
 - spelling::update_wordlist(pkg=".") # runs spell AND asks to update WORDLIST  
 
-For File:  Use these:
+**For File:  Use these:**
 
 - active_fie =  rstudioapi::getSourceEditorContext()$path 
 - devtools::test_active_file() 

@@ -35,6 +35,7 @@ jobs:
         #quarto render README.Rmd	  --to gfm --output README.md
         quarto render tech_notes/280_emacs_notes.qmd --to gfm --output 280_emacs_notes.md
         #quarto render 250_quarto_knitr_SCSS_NOTES.qmd --to gfm --output 250_quarto_knitr_SCSS_NOTES.md
+        #
 
     # Commit and push changes to README.md
     - name: Commit 280_emacs_notes.md
