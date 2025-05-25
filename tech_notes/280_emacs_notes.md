@@ -2,6 +2,8 @@
 JR
 2021-05-22
 
+<div class="small">
+
 > [!NOTE]
 >
 > This document is about **emacs**, but written in quarto to practice
@@ -11,31 +13,28 @@ JR
 [280_emacs_notes.qmd](280_emacs_notes.qmd) 300_tech_notes.qmd
 810_pharmaverse_notes.qmd
 
-## TODO
+#### TODO
 
 - ESS/R and flycheck …
-
 - get styler to auto format upon file save.
-
 - do not understand: ess-r-mode; define-key; add-hook
-
 - **emacs** is a gui program; can run in terminal but then better to use
   **emacs –daemon**
-
 - i3 and emacs can conflict. SEE:
   https://sqrtminusone.xyz/posts/2021-10-04-emacs-i3/
+- insert url; insert link to related file;
 
-## HELP
+#### HELP
 
-- help for variable ^h v display-line-number  
-  ^h a eval \# any emacs/gnu topic?  
-  ^h k F10 \# enter keystroke to see binding  
-  ^h f current-buffer \| ^h f ess-eval-region (help for emacs/ESS
-  function)
+^h v display-line-number (help for variable)  
+^h a eval \# any emacs/gnu topic?  
+^h k F10 \# enter keystroke to see binding  
+^h f current-buffer \| ^h f ess-eval-region (help for emacs/ESS
+function)
 
 M-x apropos-documenation eval M-x describe-bindings M-x describe-mode
 
-## LEARNING
+#### LEARNING
 
 - tutorial (^h t) - shows in red when evil remapped an emacs key.
 - [Beginner-protesilaos](https://protesilaos.com/codelog/2024-11-28-basic-emacs-configuration/)
@@ -77,10 +76,6 @@ collection of ESS config/intros:
 - got flycheck, usethis::use-tidy_style working; lintr now auto works. -
 M-: ess-style reports ‘Rstudio’
 
-## Org mode
-
-only in .org mode? also M-x org-insert-link
-
 ## LISP
 
 Run lisp ? or REPL: open ~/code/elisp_project/010_basic_elisp.el
@@ -88,5 +83,7 @@ Run lisp ? or REPL: open ~/code/elisp_project/010_basic_elisp.el
 gnu elisp
 https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html -
 Toretzky Gentle Common Lisp http://www.cs.cmu.edu/~dst/LispBook/
+
+</div>
 
 [^1]: This is footnote one.
