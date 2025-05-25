@@ -4,11 +4,11 @@ JR
 
 <div class="small">
 
-i ::: callout-note This document is about **emacs**, but written in
-quarto to practice quarto decorations  
-quarto render 280_emacs_notes.qmd –to gfm –output 280_emacs_notes.md
-
-</div>
+> [!NOTE]
+>
+> This document is about **emacs**, but written in quarto to practice
+> quarto decorations  
+> quarto render 280_emacs_notes.qmd –to gfm –output 280_emacs_notes.md
 
 [280_emacs_notes.qmd](280_emacs_notes.qmd) 300_tech_notes.qmd
 810_pharmaverse_notes.qmd
@@ -84,6 +84,6 @@ gnu elisp
 https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html -
 Toretzky Gentle Common Lisp http://www.cs.cmu.edu/~dst/LispBook/
 
-:::
+</div>
 
 [^1]: This is footnote one.
