@@ -9,7 +9,7 @@ editor_options:
 ---
 ::: {.small}
 
-
+i
 ::: callout-note
 This document is about **emacs**, but written in quarto to practice quarto decorations \
 quarto render 280_emacs_notes.qmd --to gfm --output 280_emacs_notes.md
