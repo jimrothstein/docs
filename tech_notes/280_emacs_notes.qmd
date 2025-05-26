@@ -9,6 +9,7 @@ editor_options:
 ---
 ::: {.small}
 
+change
 
 ::: callout-note
 This document is about **emacs**, but written in quarto to practice quarto decorations \
