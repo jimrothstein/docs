@@ -46,10 +46,10 @@ jobs:
 
     - name: Render Quarto document
       run: |
-        #quarto render README.Rmd	  --to gfm --output README.md
         quarto render ${{ github.event.inputs.selected_filename }}
-	--to gfm --output 280_emacs_notes.md
+        --to gfm --output 280_emacs_notes.md
         #quarto render 250_quarto_knitr_SCSS_NOTES.qmd --to gfm --output 250_quarto_knitr_SCSS_NOTES.md
+        #quarto render README.Rmd	  --to gfm --output README.md
 
     # Commit and push changes to README.md
     - name: Commit 280_emacs_notes.md
