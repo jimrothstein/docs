@@ -2,7 +2,16 @@ name: 100_emacs_notes.yaml
 
 run-name:  run_name is render
 
-on:  [workflow_dispatch]
+on:
+  workflow_dispatch:
+    inputs:
+      selected_filename:
+        description: 'Enter the name of the file.' 
+        required: true
+        type: choice
+        options: 
+        - tech_notes/280_emacs_notes.qmd
+        - tech_notes/300_tech_notes.qmd
 
 permissions:
   contents:  write
@@ -11,7 +20,11 @@ jobs:
   quarto:
     runs-on: ubuntu-latest
 
+
     steps:
+    - name: echo the selected_file
+      echo "You selected this file ${{ github.event.inputs.selected_filename }}"
+
     - uses: r-lib/actions/setup-r@v2
       with:
         use-public-rspm: true
@@ -33,17 +46,16 @@ jobs:
     - name: Render Quarto document
       run: |
         #quarto render README.Rmd	  --to gfm --output README.md
-        quarto render tech_notes/280_emacs_notes.qmd --to gfm --output 280_emacs_notes.md
+        quarto render ${{ github.event.inputs.selected_filename } --to gfm --output 280_emacs_notes.md
         #quarto render 250_quarto_knitr_SCSS_NOTES.qmd --to gfm --output 250_quarto_knitr_SCSS_NOTES.md
-        #
 
     # Commit and push changes to README.md
     - name: Commit 280_emacs_notes.md
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add tech_notes/280_emacs_notes.md
-        git commit -m "Update 280_emacs_notes.md"
+        git add  ${{ github.events.inputs.selected_filename }}
+        git commit -m "Update ${{ github.event.inputs.selected_filename }}"
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
