@@ -1,6 +1,6 @@
 # 250_quarto_cheat.qmd
 JR
-2025-05-25
+2025-05-26
 
 #### Jim
 
@@ -438,7 +438,7 @@ More text
 ### Quarto & CSS \| SCSS (see \_quarto.yml cosmo + custom.scss)
 
 in YAML, I used `date:  today`  
-but in inline r 25 May 2025
+but in inline r 26 May 2025
 
 1 verbatim:
 
