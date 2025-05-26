@@ -46,7 +46,7 @@ jobs:
 
     - name: Render Quarto document
       run: |
-        quarto render ${{ github.event.inputs.selected_filename }}
+        quarto render ${{ github.event.inputs.selected_filename }} \
         --to gfm --output 280_emacs_notes.md
         #quarto render 250_quarto_knitr_SCSS_NOTES.qmd --to gfm --output 250_quarto_knitr_SCSS_NOTES.md
         #quarto render README.Rmd	  --to gfm --output README.md
