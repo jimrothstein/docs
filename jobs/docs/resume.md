@@ -1,4 +1,5 @@
-
+jim
+2023-12-20
 
 <!-- 
   using bootstrap 2 column grid
@@ -18,8 +19,8 @@
 ### Overview
 
 R package developer. Worked with pharmaverse, including admiral, and
-pilot5 JSON delivery to FDA.  Worked with CDISC standards, such a
-ADaM, SDTM, and including schema and REST api.  Seek to focus on Clinical
+pilot5 JSON delivery to FDA. Worked with CDISC standards, such a ADaM,
+SDTM, and including schema and REST api. Seek to focus on Clinical
 Trials R package development.
 
 ### Related Skills
