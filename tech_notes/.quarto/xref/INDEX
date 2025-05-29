@@ -2,12 +2,14 @@
   "001_tech_reading.qmd": {
     "out.html": "7f668460",
     "001_tech_reading.html": "5c98c855",
-    "reading.md": "a454b37c"
+    "reading.md": "a454b37c",
+    "001_tech_reading.md": "8c770715"
   },
   "250_quarto_knitr_SCSS_NOTES.qmd": {
     "250_quarto_knitr_SCSS_NOTES.html": "1933a51a",
     "quarto_NOTES.md": "b603059a",
-    "250_knitr_SCSS_NOTES.md": "e0b22321"
+    "250_knitr_SCSS_NOTES.md": "e0b22321",
+    "250_quarto_knitr_SCSS_NOTES.md": "a52d9bf1"
   },
   "280_emacs_notes.qmd": {
     "280_emacs_notes.html": "ab932f18",
@@ -20,32 +22,39 @@
     "810_pharmaverse_NOTES.md": "5f58b92e"
   },
   "001_grep_regex_P_examples.qmd": {
-    "001_grep_regex_P_examples.html": "c923ac03"
+    "001_grep_regex_P_examples.html": "c923ac03",
+    "001_grep_regex_P_examples.md": "24d9fac5"
   },
   "2021_ZSH_ZZAPPERS_CHEAT.qmd": {
     "2021_ZSH_ZZAPPERS_CHEAT.html": "59e91362"
   },
   "002_grep_examples.qmd": {
-    "002_grep_examples.html": "a30dadd4"
+    "002_grep_examples.html": "a30dadd4",
+    "002_grep_examples.md": "8b94b0fd"
   },
   "300_tech_notes.qmd": {
-    "300_tech_notes.html": "35fb3408"
+    "300_tech_notes.html": "35fb3408",
+    "300_tech_notes.md": "3978be58"
   },
   "310_R_notes.qmd": {
-    "310_R_notes.html": "6fe8ac66"
+    "310_R_notes.html": "6fe8ac66",
+    "310_R_notes.md": "f4b5b9d2"
   },
   "500_ML_Notes.qmd": {
     "500_ML_Notes.html": "80dcbcf5"
   },
   "400_MATH_notes.qmd": {
     "400_MATH_notes.html": "5a9b4ee6",
-    "MATH_notes.md": "4672f0ad"
+    "MATH_notes.md": "4672f0ad",
+    "400_MATH_notes.md": "348dab98"
   },
   "910_basic_conditions_NOTES.qmd": {
-    "910_basic_conditions_NOTES.html": "908dd399"
+    "910_basic_conditions_NOTES.html": "908dd399",
+    "910_basic_conditions_NOTES.md": "7624e283"
   },
   "202_ZSH_ZZAPPERS_CHEAT.qmd": {
-    "202_ZSH_ZZAPPERS_CHEAT.html": "e0401908"
+    "202_ZSH_ZZAPPERS_CHEAT.html": "e0401908",
+    "202_ZSH_ZZAPPERS_CHEAT.md": "f94f5c74"
   },
   "play.qmd": {
     "play.html": "4b5d3a8e"
@@ -55,15 +64,20 @@
     "typst_example.html": "08c502fe"
   },
   "410_typst_MATH_notes.qmd": {
-    "410_typst_MATH_notes.typ": "e9da8aef"
+    "410_typst_MATH_notes.typ": "e9da8aef",
+    "410_typst_MATH_notes.md": "fd0b6f71"
   },
   "README_test.qmd": {
     "README_test.html": "b4f4971d"
   },
   "260_typst_cheat.qmd": {
-    "260_typst_cheat.html": "a291a3a1"
+    "260_typst_cheat.html": "a291a3a1",
+    "260_typst_cheat.md": "8bf5194f"
   },
   "280_emacs_notes.md": {
     "280_emacs_notes.html": "fe975134"
+  },
+  "900_data_pronoun.qmd": {
+    "900_data_pronoun.md": "ea029747"
   }
 }

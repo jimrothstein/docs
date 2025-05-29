@@ -1,14 +1,37 @@
 jim
 2023-12-20
 
+## TOOLS
+
+For pkg - styler::style_pkg()  
+- devtools::lint() \# package  
+- devtools::test_coverage() \# entire package -
+devtools::spell_check(use_wordlist = TRUE) \# package -
+spelling::update_wordlist(pkg=“.”) \# runs spell AND asks to update
+WORDLIST
+
+**For File: Use these:**
+
+- active_fie = rstudioapi::getSourceEditorContext()\$path
+- devtools::test_active_file()
+- devtools::test_coverage_active_file()
+- styler::style_file(path = ) \# dir, file
+- styler::style_file(“data-raw/admiral_verify_templates.R”)
+- lintr::lint(filename=““)
+- spelling::update_wordlist(pkg=“.”) \# runs spell and asks to update
+  WORDLIST
+- urlchecker::url_check()
+
+(see lintr package - many options to control nolint) [^1] lintr::lint()
+
 ## TODO
 
 - cleanup !
 
-[^1] \[CDISC_api\]
+[^2] \[CDISC_api\]
 <https://wiki.cdisc.org/display/LIBSUPRT/Welcome+Package+for+CDISC+Library+Users>
 
-ODMv2 api example [^2] pinnacle and api \[^CDISC_pinnacle_api\]
+ODMv2 api example [^3] pinnacle and api \[^CDISC_pinnacle_api\]
 <https://www.lexjansen.com/pharmasug/2024/MM/PharmaSUG-2024-MM-245.pdf>
 
 # My Notes
@@ -61,7 +84,7 @@ object we have `specs` (ex: column names and order) =\> compare to data
 23:12 - diagram, package handoffs… @ 48:00 - Admiral, design flow of
 derive_var\_… (good)
 
-Coursera: [^3] New contributors
+Coursera: [^4] New contributors
 <https://www.youtube.com/watch?v=MhEyod3Sevc&list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4&index=3>
 
 ### Reading
@@ -128,7 +151,7 @@ comparisons.
 
 CDISC is intended to be an improvement over [prior
 methods](https://www.cdisc.org/kb/articles/short-history-cdisc-and-sas-transport-files)
-to exchange data.[^4]
+to exchange data.[^5]
 
 From an R developer’s point-of-view, this roughly boils down to data
 tables and format. CDISC is both an abstraction and a guide to choosing
@@ -140,7 +163,7 @@ abstractions.
 Depending on abstraction: PLAN -\> COLLECT -\> ORGANIZE -\> ANALYSIS -\>
 REPORTS OR, CDISC -\> CDASH -\> SDTM -\> ADaM -\>data analyst
 
-SEE [^5] [^6]
+SEE [^6] [^7]
 
 [CDISC
 wikipedia](https://en.wikipedia.org/wiki/Clinical_Data_Interchange_Standards_Consortium)
@@ -153,7 +176,7 @@ Basic introduction:
 <https://www.youtube.com/watch?v=muzo9veBOFw&list=PL4vFrmnpUDeRziW2ozobayozgukgAmL1S>
 \* [**CDISC data exchange
 definitions**:](https://www.cdisc.org/standards/data-exchange) \*
-**CDISC Genius (AI)[^7] :**
+**CDISC Genius (AI)[^8] :**
 https://chatgpt.com/g/g-677223310d8081918ca4bdda574a5384-cdisc-genius \*
 **CDISC Primer** : <https://www.cdisc.org/primer> \* **cdisc api
 library** (info) <https://www.cdisc.org/cdisc-library>
@@ -322,7 +345,7 @@ Currently: xpt Future: json
 
 ### What is dataset-json standard ?
 
-“dataset exchange format” in JSON file for tabular datasets Read [^8]
+“dataset exchange format” in JSON file for tabular datasets Read [^9]
 https://swhume.github.io/why-json-for-datasets
 
 - XML, structured document (DOM, body, src, images,…)
@@ -470,26 +493,6 @@ https://www.danieldsjoberg.com/ARD-RinPharma-workshop-2024/)
 
 **harmonize** - harmonized means consistent metadata/specifications
 object
-
-- styler::style_pkg()  
-- devtools::lint() \# package  
-- devtools::test_coverage() \# entire package
-- devtools::spell_check(use_wordlist = TRUE) \# package
-- spelling::update_wordlist(pkg=“.”) \# runs spell AND asks to update
-  WORDLIST
-
-For File: Use these:
-
-- active_fie = rstudioapi::getSourceEditorContext()\$path
-- devtools::test_active_file()
-- devtools::test_coverage_active_file()
-- styler::style_file(path = ) \# dir, file
-- lintr::lint(filename=““)
-- spelling::update_wordlist(pkg=“.”) \# runs spell and asks to update
-  WORDLIST
-- urlchecker::url_check()
-
-(see lintr package - many options to control nolint) [^9] lintr::lint()
 
 **GxP** “Good Practice” esp regarding FDA submissions.
 
@@ -814,26 +817,26 @@ https://www.lexjansen.com/pharmasug/2024/MM/PharmaSUG-2024-MM-245.pdf
 
 This is the bottom <a name="bottom"></a>
 
-[^1]: \[CDISC_api\]
+[^1]: <https://lintr.r-lib.org/articles/lintr.html>
+
+[^2]: \[CDISC_api\]
     <https://wiki.cdisc.org/display/LIBSUPRT/Welcome+Package+for+CDISC+Library+Users>
 
-[^2]: <https://www.cdisc.org/kb/articles/use-hl7-fhir-esource-pre-populate-cdash-case-report-forms-using-cdisc-odm-api>
+[^3]: <https://www.cdisc.org/kb/articles/use-hl7-fhir-esource-pre-populate-cdash-case-report-forms-using-cdisc-odm-api>
 
-[^3]: <https://www.coursera.org/learn/hands-on-clinical-reporting-using-r>
+[^4]: <https://www.coursera.org/learn/hands-on-clinical-reporting-using-r>
 
-[^4]: <https://www.cdisc.org/kb/articles/short-history-cdisc-and-sas-transport-files>
+[^5]: <https://www.cdisc.org/kb/articles/short-history-cdisc-and-sas-transport-files>
 
-[^5]: \[CDISC wikipedia\]
+[^6]: \[CDISC wikipedia\]
     <https://en.wikipedia.org/wiki/Clinical_Data_Interchange_Standards_Consortium>
 
-[^6]: \[vendor_def\]
+[^7]: \[vendor_def\]
     <https://www.scian.com/statistical-programming-and-analysis/adam/define-xml/>
     \[^CDISC Glossary\]: \[CDISC_glossary\]
     <https://datascience.cancer.gov/resources/cancer-vocabulary/cdisc-terminology>
 
-[^7]: \[CDISC_genius\]
+[^8]: \[CDISC_genius\]
     <https://chatgpt.com/g/g-677223310d8081918ca4bdda574a5384-cdisc-genius>
 
-[^8]: \[swhume\] <https://swhume.github.io/why-json-for-datasets>
-
-[^9]: <https://lintr.r-lib.org/articles/lintr.html>
+[^9]: \[swhume\] <https://swhume.github.io/why-json-for-datasets>
