@@ -48,7 +48,7 @@ jobs:
       run:  Rscript -e 'install.packages("knitr")'
 
     - name:  install rmarkdown, et al
-      run:  Rscript -e 'install.packages(c("rmarkdown", "rlang", "lubridate")'
+      run:  Rscript -e 'install.packages(c("rmarkdown", "rlang", "lubridate"))'
 
     - name: Render Quarto document
       run: |
