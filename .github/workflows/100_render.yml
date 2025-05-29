@@ -50,6 +50,9 @@ jobs:
     - name:  install rmarkdown, et al
       run:  Rscript -e 'install.packages(c("rmarkdown", "rlang", "lubridate"))'
 
+    - name: create output file name, then use in next chunk
+      run:  echo '${{ github.event.inputs.selected_filename }}.md'
+
     - name: Render Quarto document
       run: |
         quarto render ${{ github.event.inputs.selected_filename }} \
