@@ -3,7 +3,7 @@ name: 000_render_notes.yaml
 run-name:  000_run_name is render
 
 on:
-  [workflow_dispatch,push]
+  [workflow_dispatch, push]
     inputs:
       selected_filename:
         description: 'Enter the name of the file.' 
