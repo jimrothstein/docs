@@ -51,7 +51,7 @@ ADaM, SDTM. Seek to focus on Clinical Trials R package development.
 ### Recent Projects & Skills {#recent}
 
 -   (active) Fix issues in Pharamaverse Admiral and sdmtchecks R
-    packages.  Attend developer meetings.
+    packages.  Did several small Github Actions workflows.  Attend developer meetings.
 
 -   (2025)  Contribute to R-Consortium's Pilot 5 wg-submissions (JSON)
 
