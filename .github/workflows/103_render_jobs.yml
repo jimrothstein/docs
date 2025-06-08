@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
     inputs:
       selected_filename:
-        description: 'Enter the name of the file.' 
+        description: 'Enter the name of the file.'
         required: true
         type: choice
         options:

@@ -1,15 +1,15 @@
-name: 000_render_notes.yaml
+name: 100_render_notes.yaml
 
-run-name:  000_run_name is render
+run-name:  100_run_name is render
 
 on:
   [workflow_dispatch]
     inputs:
       selected_filename:
-        description: 'Enter the name of the file.' 
+        description: 'Enter the name of the file.'
         required: true
         type: choice
-        options: 
+        options:
         - tech_notes/001_grep_regex_P_examples.qmd
         - tech_notes/002_grep_examples.qmd
         - tech_notes/250_quarto_knitr_SCSS_NOTES.qmd
