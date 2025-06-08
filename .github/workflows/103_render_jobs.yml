@@ -56,7 +56,7 @@ jobs:
 #      uses: quarto-dev/quarto-actions/render@v2
 #      with:
 #        to: gfm
-#       path: jobs/*.qmd
+#       path: jobs/*    # path to source
 
 #        git add  ${{ github.events.inputs.selected_filename }}
 #        git commit -m "Update ${{ github.event.inputs.selected_filename }}" || \
