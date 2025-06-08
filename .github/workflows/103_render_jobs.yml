@@ -46,12 +46,12 @@ jobs:
       run:  Rscript -e 'install.packages(c("rmarkdown", "rlang", "lubridate"))'
 
     - name: create output file name, then use in next chunk
-      run:  echo '${{ github.event.inputs.selected.filename }}.md'
+      run:  echo '${{ github.event.inputs.selected_filename }}.md'
 
     - name: Render Quarto document
       run: |
         quarto render ${{ github.event.inputs.selected_filename }} \
-          --to pdf --output ${{ github.event.inputs.selected.filename}}
+          --to pdf --output ${{ github.event.inputs.selected_filename}}
 
 #    - name: Render Quarto Project (Experiment)
 #      uses: quarto-dev/quarto-actions/render@v2
