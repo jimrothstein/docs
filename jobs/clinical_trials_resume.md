@@ -1,0 +1,113 @@
+
+
+<!-- 
+  using bootstrap 2 column grid
+-->
+
+## jim Rothstein
+
+[jimrothstein@gmail.com](jimrothstein@gmail.com)  
+(831) 824-4304 (messages)
+
+<https://www.linkedin.com/in/jimrothstein>
+
+<https://github.com/jimrothstein>
+
+### Clinical Trials Package Developer (R)
+
+### Overview
+
+I am an intermediate level R package developer. Have worked with
+packages in pharmaverse, such as admiral, and CIDC standards, such a
+ADaM, SDTM. Seek to focus on Clinical Trials R package development.
+
+### Related Skills
+
+<div class="columns">
+
+<div class="column" width="50%">
+
+- R, 4+ years
+- tidyverse, httr2, data.table, shiny + teal, quarto …
+- SQL: 2+ years, joins, dplyr
+- Rstudio, emacs, neovim
+
+</div>
+
+<div class="column" width="50%">
+
+- admiral, admiraldev, sdtmchecks
+- github
+- zsh shell
+- linux
+
+</div>
+
+</div>
+
+### Recent Projects & Skills
+
+- (active) Fix issues in Pharamaverse Admiral and sdmtchecks R packages.
+  Did several small Github Actions workflows. Attend developer meetings.
+
+- 2025) Contribute to R-Consortium’s Pilot 5 wg-submissions (JSON)
+
+- (active) Using Shiny developed preliminary dashboard for analysis of
+  Drug Benefit Denials (public data from Center for Medicare and
+  Medicaid (CMS)).
+
+- (active) Used youtube API and `httr` and `httr2` to add/modify
+  youtube.com playlists. Used OAUTH tokens scope. Active participant
+  developing book Web APIs with R, using openAPI framework.
+
+- Used tools in `rrapply` , `tidyr` , `vctrs`, `tibblify` to unravel
+  deeply nested JSONs in tree/json format to table (from REST apis)
+
+- (active) Contribute to various Open Source projects (Github)
+
+### RELATED WORK HISTORY:
+
+2014 - present **R-Coders** Self-employed R programmer.
+
+1996-2014 Self-employed contractor, including
+
+- Webmaster, community expatriate website in China, 2005 – 2008 Setup,
+  maintain, promote expat community-based website in Dalian, China.
+  Selected Joomla, hosting company, hired and trained student
+  volunteers.
+
+- Capital IT Group, Dalian, China 2004- Mentor Chinese software
+  engineers, light project management, pre and post sales.
+
+- Center for Electronic Art, San Francisco, 2002 Taught Java, mySQL, jsp
+  classes. Also supervised graduate student modeling shipping/ ordering/
+  inventory system.
+
+- Teaching (1998-2012) Taught classes java, math, internet, statistics
+  in China and California community college in US. Certified to teach
+  math in at California community college.
+
+Webmaster, Saratoga Systems, Campbell, CA (1996-1998) Maintain NT and
+IIS server. Various internet projects.
+
+Web Database Development, Microsoft, Redmond, WA (1996) Web database
+applications using Asp, MS SQL; contractor.
+
+Contract Programming Assignments: Chicago, IL (1986-1996) Designed and
+developed variety of business database applications (Paradox, Delphi,
+Access) For example
+
+- Developed relational database model for insurance company to track
+  debt and assets of its multi-billion dollar joint ventures/commercial
+  properties.  
+- Developed order tracking system (paradox).  
+- Contributed to bank risk management tool (ms access)
+
+### Education
+
+    BS MIT, physics
+
+### 
+
+Jim Rothstein – [jimrothstein@gmail.com](jimrothstein@gmail.com) – (831)
+824-4304
