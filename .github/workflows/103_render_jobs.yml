@@ -2,6 +2,8 @@ name: 103_render_jobs.yaml
 
 run-name:  103 HOLDING
 
+## TODO:
+## want render, all job files.qmd  to both pdf, md
 on:
   workflow_dispatch:
     inputs:
@@ -9,7 +11,7 @@ on:
         description: 'Enter the name of the file.' 
         required: true
         type: choice
-        options: 
+        options:
           - jobs/2025_feb_clinical_trials_resume.qmd
 
 permissions:
@@ -46,16 +48,16 @@ jobs:
     - name: create output file name, then use in next chunk
       run:  echo '${{ github.event.inputs.selected_filename }}.md'
 
-#    - name: Render Quarto document
-#      run: |
-#        quarto render ${{ github.event.inputs.selected_filename }} \
-#        --to gfm --output 280_emacs_notes.md
+    - name: Render Quarto document
+      run: |
+        quarto render ${{ github.event.inputs.selected_filename }} \
+          --to pdf --output ${{ github.event.inputs.selected.filename}}
 
-    - name: Render Quarto Project (Experiment)
-      uses: quarto-dev/quarto-actions/render@v2
-      with:
-        to: gfm
-        path: jobs/*.qmd
+#    - name: Render Quarto Project (Experiment)
+#      uses: quarto-dev/quarto-actions/render@v2
+#      with:
+#        to: gfm
+       path: jobs/*.qmd
 
 #        git add  ${{ github.events.inputs.selected_filename }}
 #        git commit -m "Update ${{ github.event.inputs.selected_filename }}" || \
