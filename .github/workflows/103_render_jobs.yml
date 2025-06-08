@@ -50,7 +50,7 @@ jobs:
     - name: Render Quarto document
       run: |
         quarto render ${{ github.event.inputs.selected_filename }} \
-          --to pdf --output ${{ github.event.inputs.selected_filename}}
+          --to pdf --output resume.pdf
 
 #    - name: Render Quarto Project (Experiment)
 #      uses: quarto-dev/quarto-actions/render@v2
