@@ -10,7 +10,7 @@ on:
         required: true
         type: choice
         options: 
-	- jobs/2025_feb_clinical_trials_resume.qmd
+          - jobs/2025_feb_clinical_trials_resume.qmd
 
 permissions:
   contents:  write
