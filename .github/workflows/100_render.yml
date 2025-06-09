@@ -51,7 +51,7 @@ jobs:
       run:  Rscript -e 'install.packages(c("rmarkdown", "rlang", "lubridate"))'
 
     - name: create output file name, then use in next chunk
-      run:  echo '${{ github.event.inputs.selected_filename }}.md'
+      run:  echo  'Create file: ${{ github.event.inputs.selected_filename }}.md'
 
     - name: Render Quarto document
       run: |
@@ -59,6 +59,12 @@ jobs:
         --to gfm --output jobs.md 
         #quarto render 250_quarto_knitr_SCSS_NOTES.qmd --to gfm --output 250_quarto_knitr_SCSS_NOTES.md
         #quarto render README.Rmd	  --to gfm --output README.md
+
+    - name: Render pdf
+      run: |
+        echo "Begin pdf"
+        quarto render ${{ github.event.inputs.selected_filename }} \
+        --to pdf --output jobs
 
     - name: Commit rendered file
       run: |
