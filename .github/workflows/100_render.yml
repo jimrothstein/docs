@@ -1,6 +1,6 @@
-name: 100_render_notes.yaml
-
-run-name:  100_render
+name: 100_render_notes.yml
+## GENERAL form of 100_emacs_notes.yaml
+run-name:  100_render general
 
 on:
   workflow_dispatch:
@@ -65,7 +65,8 @@ jobs:
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add  ${{ github.events.inputs.selected_filename }}
+#        git add  ${{ github.events.inputs.selected_filename }}
+        git add .   # above line did not work?
         git commit -m "Update ${{ github.event.inputs.selected_filename }}" || \
           echo "no changes; nothing to commit"
         git push
