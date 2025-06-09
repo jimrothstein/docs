@@ -18,7 +18,7 @@ on:
         - tech_notes/310_R_notes.qmd
         - tech_notes/810_pharmaverse_NOTES.qmd
         - tech_notes/910_basic_conditions_NOTES.qmd
-	- jobs/clinical_trials_resume.qmd
+        - jobs/clinical_trials_resume.qmd
 
 permissions:
   contents:  write
@@ -59,7 +59,6 @@ jobs:
         --to gfm --output jobs.md 
         #quarto render 250_quarto_knitr_SCSS_NOTES.qmd --to gfm --output 250_quarto_knitr_SCSS_NOTES.md
         #quarto render README.Rmd	  --to gfm --output README.md
-
 
     # Commit and push changes to README.md
     - name: Commit rendered file
