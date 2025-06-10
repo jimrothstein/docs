@@ -51,7 +51,7 @@ jobs:
     - name: pkgs, using setup-r-depend (should read from DESCRIPTION)
       uses: r-lib/actions/setup-r-dependencies@v2
       with:
-        dependencies:  hard
+        dependencies:  '"hard"'    # 
         extra-packages: |
           any::knitr
           any::rmarkdown
