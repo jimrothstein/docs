@@ -46,7 +46,7 @@ jobs:
 
     - name:  install knitr, etc
       run:  Rscript -e \
-         'install.packages("knitr", "rmarkdown", "rlang", "lubridge")'
+         'install.packages(c("knitr", "rmarkdown", "rlang", "lubridge"))'
 
 
     - name: create output file name, then use in next chunk
