@@ -1,0 +1,762 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrartcl}
+
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+
+\usepackage{bookmark}
+
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdfauthor={jim},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\author{jim}
+\date{2023-12-20}
+
+\begin{document}
+
+
+\#+TITLE: ``/tech\_notes/001\_grep\_regex\_P\_examples.qmd''
+
+\begin{itemize}
+\tightlist
+\item
+  TODO :PROPERTIES: :ID: d677459a-98d7-41e7-a74c-837e62a178e5 :END:
+\end{itemize}
+
+2024-04-20 - fix regex marked TODO
+
+\begin{verbatim}
+PURPOSE:   COLLECT EXAMPLES of GREP and regex (-P = Perl) [not a script]
+USAGE:      
+-   Collect as
+  - echo "..." | grep -P "regex string"
+EXAMPLES:   
+echo "hello" | grep -P "h"
+str = "hello"
+regex="h"
+echo $str | grep -P $regex
+
+GOAL:  
+-   Capture, document, annotate useful REGEX examples.
+-   Run and test in zsh shell (simpler and easier than fussing with quarto)
+\end{verbatim}
+
+*** Notes *** QUARTO and regex: quarto sometimes does not like. alias
+grep=`grep --color=always' assertion zero-length Lookaround (2
+directions) - lookahead - lookbehind Each direction comes in two
+flavors, positive assertion and negative assertion
+
+\begin{itemize}
+\tightlist
+\item
+  !so 3512471 - non-capture (?:)
+\end{itemize}
+
+\begin{verbatim}
+
+** simple, class **
+match 0,1 or more of ANY of prior (zy, x, zyy ...)
+[xyz]*    
+
+** boundary **
+
+\b = boundary
+\w = any word character
+
+\bc\w+  matches all words begin with `c`
+ 
+\b\w+\b  caputure word, not space between (not *a because * is not word char)
+
+\bin\b   only "in"   not inning , riding 
+
+\b(\w)\w+\1\b
+1st and last must be same
+
+matches:  pop poop bob
+
+
+match everything except the paranthesies   a(bc)d , would omit ()
+[^()]
+match X-Y (hyphen); 2 groups, 1st can have hyphen
+# -------------
+^([^-]*)-(.*)
+# -------------
+
+boundary \b - more complex than expected
+equivalent to: 4 groups, (not)lookback; lookahead any word \w=[0-9a-zA-Z_]; OR, lookback; followed by not
+# ---------------------------
+(?<!w)(?=\w)| (?<=\w)(?!\w)
+# ---------------------------
+
+match any single char, can repeat, aa, ddd
+# ------
+(.)\1+
+# ------
+
+# ----------
+match abca
+(.)(.*)\1+
+# ----------
+
+# --------------------------------------
+## match any letter that is NOT ( or )
+# --------------------------------------
+echo "ab(cde)fg" | grep -P "[^()]"
+
+
+echo ${line_break}
+
+str="hello"
+regex="h"
+echo $str | grep -E "$regex" -
+
+#   literal dot (use quotes)
+echo abc.x | echo -E '[.]'             # matches the dot (ie literal)
+
+**greedy**
+l.*k  matches:   look,lok, looooook
+
+echo aZZ | grep -E Z                    # ZZ
+
+**not** **greedy**
+regex='Z$'
+echo "Z" | grep -P $regex               # Z
+echo "ZZ" | grep -P $regex              # Z
+
+#### Lazy, not Greedy - NOT WORKING!    
+# Find smallest pattern that repeats one or more times
+# (.+?) - ? turns match into lazy (shortest match)
+# ex:  xyzzyx repeats one or more
+regex="^(.+?)\1+$"
+echo "xyzzyxxyzzyxxyzzyx" | grep -P $regex 
+REF: https://rubular.com/r/Fa10P9Q3fB
+      xyzzyxxyzzyxxyzzyx
+
+echo "bbbbbb" | grep -P $regex 
+**find adjacent repeated letters**
+
+echo "abcdd" | grep -P '([a-z])\1'
+'dd'
+
+# --------
+### Lazy
+# --------
+SEE <https://regex101.com/r/jxXKfj/1>
+with and without `g` flag
+regex="<.*?>"
+Shows effect on multiple "<EM>"  repeated twice in sentence.
+
+
+### Why PERL? (for lookbacks) 
+
+regex='\d(?=x)'
+echo "5x" | grep -E $regex
+
+#   sees nothing
+echo "5x" | grep -P $regex
+
+
+\section{Explain !}
+
+echo '\\\\' "\\\\"              expect:     \\\\ \\ 
+
+# ------------------
+####    complex regex
+# ------------------
+str='animal=cat,dog,cat,'
+echo $str
+<!--
+quarto compile complains this line:
+regex='(?:animal)(?:=)(\w+)(,)(?:.*)\1\2'
+-->
+echo ${regex}
+echo $str | grep -P $regex
+echo 'animal=dog,cat,dog,deer,dog,' | grep -P $regex
+
+\section{Anchors are zero-length assertions}
+
+\begin{verbatim}
+
+
+### Remarks:
+#   echoing ONE expression; grep does not see 4 expressions
+echo "A Z AZ AAAAAAZ" | grep -P $regex
+
+# no dice
+echo "A" "Z" "AZ" "AAAAAZ" | grep -P $regex
+
+#   works, echo several expressoins
+dotfiles=("a" "b" "c")
+for j in "${dotfiles[@]}"
+do
+    echo "${j}" 
+done
+
+#   not work with grep
+dotfiles=("A" "Z" "AZ" "AAAAAZ")
+for j in "${dotfiles[@]}"
+do
+    echo "${j}"  | grep -P $regex
+done
+
+
+
+
+
+
+# -------------------------
+####    GREEDY and BACKTRACK
+# -------------------------
+Consider the String <A tasty apple>   (excluding the angle brackets)
+And the pattern <.*apple> (again exclude the angle brackets)
+
+
+initially, .* portion makes the entire string, but then can't make apple
+str="A tasty apple"
+regex='.*apple'
+echo $str | grep -P $regex
+echo $str | grep -P ".*" 
+
+
+#### AAA  (fix)
+str="AAA"
+echo $str | grep -P "A+"
+echo $str | grep -P "(A)+"
+
+echo $str | grep -P "(AA)+"
+echo $str | grep -P "(A)+\1"
+echo $str | grep -P "(A).\1"
+echo $str | grep -P "(A)\1"
+
+# no match!
+echo $str | grep -P "(AA)+\1"
+
+# greedy
+str="AAA"
+regex='A*'
+echo $str | grep -P $regex
+
+regex='A*?'
+echo $str | grep -P $regex
+
+regex='A+?'
+echo $str | grep -P $regex
+
+str='-- comment'
+regex='--(?:.*\S)?'
+echo $str | grep -P $regex
+
+####    judy followed by digit (Fails)
+
+###  This ENDS dquote>
+    echo "
+
+#   Works
+    echo "judy is 3" | grep -P '\d'
+
+
+# new topic 
+    echo "Find Judith followed somewhere by digit"
+
+##  ALL FAIL
+echo "Judith is 10 on scale of 10!"  | grep -P "Judith(?=.*?[0-9]\S)"
+echo "Judith is 10 on scale of 10!"  | grep -P 'Judith(?=.*?[0-9])'
+echo "'"
+
+echo "\'"
+echo "\""
+
+
+
+regex='Judith(?=.*?[0-9])'
+echo ${regex}
+
+## FAIL
+echo "Judith is 10 on scale of 10!"  | grep -P ${regex} 
+
+echo ${line_break}
+echo "Find digits"
+echo "Judith is 10 on scale of 10!"  | grep -P '\d'
+echo "Judith is 10 on scale of 10!"  | grep -P \d
+echo "Judith is 10 on scale of 10!"  | grep -P "\d"
+
+
+
+echo "
+
+##  Works
+echo "digit IF followed by somewhere by x"
+echo "3 ....a ...a" | grep -P '\d(?=.*x)'
+echo "3 ....x ...x" | grep -P '\d(?=.*x)'
+
+
+##  Works
+    echo ${line_break}
+    echo "digit IF followed immediately by x"
+    
+    ##  compare:
+    echo "A: 3 ....x ...x" | grep -P '\d(?=x)'
+    echo "B: ....3x ...x" | grep -P '\d(?=x)'
+
+
+##  WORKS
+    echo ${line_break}
+    echo "Match x and digits in either order; C does not match"
+    echo "B works because followed by is zero width; sees x, so it meets criteria"
+    echo "C does not"
+
+    echo "A: ...x3"  | grep -P '^(?=.*x).*\d'
+    echo "B: ...3x"  | grep -P '^(?=.*x).*\d'
+    echo "C: ...3"  | grep -P '^(?=.*x).*\d'
+
+echo ${line_break}
+echo "to be or not to be" | grep -P '(to)(be) or not \1 \2'
+echo "to be or not to be" | grep -P '(to)(be)(?:or not) \1 \2'
+
+echo "2021-12-13" | grep -P '(\d{4})-(\d{2})'
+echo "2021-12-13" | grep -P '(\d{4})-\d{2}\1'
+
+echo "2021-12-13" | grep -P '(\d{4})-(\d{2})-(\d{2})\3' #MONTH\1'
+
+####    trim extra space [ nothing works here]
+regex='^[\t]+|[ \t]+$'
+regex='^[\s]+|[\s]+$'
+echo $regex
+
+echo " abcde" | grep -P $regex
+echo "abcde " | grep -P $regex
+
+# Fails
+echo " abcde " | grep -P $regex
+
+
+# ------------------------------
+#   X(?=Y) X followed by Y
+# ------------------------------
+regex='--.*?(?=[^\r\n\S]*$)'
+echo $regex
+echo '--  this is a comment.' | grep -P $regex
+
+
+
+### 
+# ----------------
+a followed by c:
+# ----------------
+'a(?=c)'
+str=bacad
+echo $str | grep -P 'a(?=c)'
+
+
+# ---------------------------
+####    a preceeded by b 
+# ---------------------------
+echo "a preceeded by by b"
+reg='(?<=b)a'
+str=bacad
+echo $str | grep -P '(?<=b)a'
+
+
+# -------------------------------------
+####  Lookahead, positive or negative
+# -------------------------------------
+
+** Don't make errror (sic) here**  (highlights errror)
+   \b\w+\b\s(?=\(sic\))
+# ----------------
+a folowed by A-Z
+# ----------------
+'a(?=[A-Z])'
+
+TODO (2024-04-27)
+fails 23&
+1 or more digits followed by non-word  (word = [0-9a-zA-Z_])
+# -----------
+\d+(?=\W|$)
+# -----------
+
+
+
+##  lookahead, positive
+regex='q(?=u)'
+echo "quack" | grep -P $regex
+
+#       Rmk:    grep highlights subset meets criteria or null set 
+
+# no match
+echo "qq"  | grep -P $regex
+
+
+##  lookahead, negative (q NOT followed by u)
+regex='q(?!u)'
+#   match
+echo "qq" | grep -P $regex
+
+#   no match
+echo "quack" | grep -P $regex
+
+
+
+
+echo "bacadc"
+echo ${line_break}
+echo "a NOT followed by c"
+echo 'a(?!c)'
+str=bacad
+str=bacadc
+echo $str | grep -P 'a(?!c)'
+
+
+
+
+
+####  `(?=) FIND A, followed by ...
+# match
+echo "AA5" | grep -P 'A(?=5)'
+echo "A2BA5" | grep -P 'A(?=5)'
+
+# not a match
+echo "AB25" | grep -P 'A(?=5)'
+
+
+
+####  `(?!) FIND A, NOT followed by ...
+regex='A(?!5)'
+echo "A5 AB5" | grep -P $regex
+
+regex='A(?!5*5)'
+echo "AB25" | grep -P $regex
+echo "A5 A5555555555" | grep -P $regex
+
+
+## not sure about this:
+regex='A(?!5*3)'
+echo "A5 A5555555555" | grep -P $regex
+
+##  Remarks:
+# do not do this:
+regex='A(?=[^5])'
+echo "AB25 AB5 A5" | grep -P $regex
+
+# match ends in `5`, A followed by 0,1, or more not `5`
+regex='A(?=[^5]*5)'
+echo "AB25" | grep -P $regex
+
+
+####    Lookaheads, misc examples (fix this)
+#   lookaheads do NOT move ineex
+#   no match
+regex='A(?=5)(?=[A-Z])'
+echo "A5C" | grep -P $regex
+
+## this will match  
+regex='A(?=5[A-Z])'
+echo "A5C" | grep -P $regex
+
+##  allow 1 char; match
+regex='A(?=5).(?=[A-Z])'
+echo "A5C" | grep -P $regex
+
+# ----------------------------------------
+#### passwords validation (not working) 
+# ----------------------------------------
+REF:    http://www.rexegg.com/regex-lookarounds.html#password
+
+# insist 6-10 char  (rexegg.com) NOPE, no match
+regex='(?=^\w{6,10}$)'
+echo "abcdef" | grep -P $regex
+
+regex='(?=\w{6,10}$)'
+
+regex='(?=\w)'
+echo "abcdef" | grep -P $regex
+
+regex='(?=^\w{6,10}$)'
+echo "abcdef" | grep -P $regex
+regex='(?=^\w{6-10}$)'
+echo "abcdef" | grep -P $regex
+echo "abcdef" | grep -P $regex
+echo "abcdefgh" | grep -P $regex
+
+##  3 conseq [A-Z}
+
+    ##  
+
+
+# -------------------------------
+# TODO: 
+##  capture v non-capture, email
+# -------------------------------
+(?: signals non-capture; ie must match,  but ....
+([a-zA-Z0-9_]+@[a-zA-Z0-9_]+\.(?:com|edu|org|gov))
+
+# LOOK AROUNDS : do not capture
+echo " " 
+reg='(?<=costs)\s\d\.\d{2}'
+echo "Penguin costs 2.99, and whale costs 5.99 but I only have 2.01 left"
+echo "Penguin costs 2.99, and whale costs 5.99 but I only have 2.01 left" | grep -P $reg
+
+echo " " 
+reg='\w+\s(?=costs)'
+echo "Penguin costs 2.99, and whale costs 5.99 but I only have 2.01 left"
+echo "Penguin costs 2.99, and whale costs 5.99 but I only have 2.01 left" | grep -P $reg
+
+##  NAMED CAPTURE GROUP
+-  dupe is NAME of capture group.
+-  does not capture 'dupe' !
+ - captures string, possiblly followed by char(s),  that repeat, but separated by non-word
+ (?'name'\w+)\W\k'name'
+(?'dupe'\w+)\W\k'dupe'
+jim jim - yes
+jim is a .. jim - NO
+thought the anse - t at end of 1st word & t at beg of 2nd word match
+
+## named capture group, 
+- match 1st and last char if separated by only w chars
+
+\b(?'joke'\w)\w+\k'joke'\b
+# -------
+## TODO
+# -------
+[^.] do not understand ... see:
+<https://rubular.com/r/dKHqlUBWGUH4CE>
+
+^(.*\.)[^.]+$
+1st group, greedy
+can not have 2nd . after first
+abc. (ok)
+abc.. (no)
+
+
+^([^-]*)-(.*)#
+
+# ----
+#   TODO
+# ----
+\A https://rubular.com/r/wwaAwX73g4LSSI
+-   What is multiline mode?
+-\b words in sentence
+
+
+
+
+echo ${line_break}
+echo "a NOT preceeded by by b"
+
+### R or neovim dislikes line begins with reg=  (code appears in RED)
+### Making verbatim RED go away.
+\end{verbatim}
+
+reg=`(?\textless!b)a'
+
+echo \$reg str=bacad echo \$str \textbar{} grep -P `(?\textless!b)a'
+
+echo \$\{line\_break\} echo ``Precendent'' reg=`((ab\textbar d)e)' echo
+\$reg str=bacade echo \$str \textbar{} grep -P `((ab\textbar d)e)'
+
+echo \$\{line\_break\} echo ``Alternative'' reg=`(ab\textbar d)e' echo
+\$reg str=bacade echo \$str \textbar{} grep -P `(ab\textbar d)'
+
+\section{-------------------}\label{section}
+
+regex=``\d+(?=\W\textbar\$)''
+
+\section{-------------------}\label{section-1}
+
+\subsection{Any pattern starts with digit, follwed by end of line or
+non-word}\label{any-pattern-starts-with-digit-follwed-by-end-of-line-or-non-word}
+
+\subsection{Can be multiple matches in one
+string}\label{can-be-multiple-matches-in-one-string}
+
+\subsection{\texorpdfstring{\W  not a-zA-Z0-9, plus \_ ie
+`{[}\^{}\_{[}:alnum:{]}{]}'}{not a-zA-Z0-9, plus \_ ie `{[}\^{}\_{[}:alnum:{]}{]}'}}\label{not-a-za-z0-9-plus-_-ie-_alnum}
+
+\subsection{positive lookahead (ie followed by
+\ldots)}\label{positive-lookahead-ie-followed-by}
+
+echo ``56'' grep -P \$\{regex\}
+
+regex=``(\w*)(.*)\textbackslash1''
+
+regex='(\w*)(.*)\textbackslash1' echo ``wordXABC'' \textbar{} grep -P
+\$\{regex\} echo ``word;word'' \textbar{} grep -P \$\{regex\} echo
+``word;word1'' \textbar{} grep -P \$\{regex\}
+
+\section{matches ``word'' only}\label{matches-word-only}
+
+echo ``word{[}{]}'' \textbar{} grep -P `(\w*)'
+
+\paragraph{\texorpdfstring{Backreference
+\texttt{\textbackslash{}1}}{Backreference \textbackslash1}}\label{backreference-1}
+
+regex=`(cat\textbar dog)\textbackslash1' echo ``catXcat'' \textbar{}
+grep -P \$regex echo ``catcatX'' \textbar{} grep -P \$regex echo
+``catdogX'' \textbar{} grep -P \$regex echo ``cd'' \textbar{} grep -P
+`{[}cd{]}\textbackslash1'
+
+\section{Remark:}\label{remark}
+
+\section{\texorpdfstring{\texttt{catdog} fails because backreference
+matches RESULT of grouping; not
+a}{catdog fails because backreference matches RESULT of grouping; not a}}\label{catdog-fails-because-backreference-matches-result-of-grouping-not-a}
+
+class \#\# ERROR, makes no sense. echo ``cd'' \textbar{} grep -P
+`{[}cd{]}\textbackslash1'
+
+\subsection{In R, does what?}\label{in-r-does-what}
+
+p.5 \textless-
+problems(pattern=``(\textbackslash w\emph{)(.})\textbackslash1)'')
+
+``` vim: nospell ** also in R (033\_)
+
+\#+BEGIN\_SRC (f)(o+) replace with \textbackslash1\_\textbackslash2\_
+foo becomes f\_oo\_ \#+END\_SRC
+
+
+
+
+\end{document}

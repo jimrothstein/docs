@@ -44,11 +44,10 @@ jobs:
       with:
         version: LATEST
 
-    - name:  install knitr
-      run:  Rscript -e 'install.packages("knitr")'
+    - name:  install knitr, etc
+      run:  Rscript -e \
+         'install.packages("knitr", "rmarkdown", "rlang", "lubridge")'
 
-    - name:  install rmarkdown, et al
-      run:  Rscript -e 'install.packages(c("rmarkdown", "rlang", "lubridate"))'
 
     - name: create output file name, then use in next chunk
       run:  echo '${{ github.event.inputs.selected_filename }}.md'
@@ -58,6 +57,7 @@ jobs:
 #        quarto render ${{ github.event.inputs.selected_filename }} \
 #        --to gfm --output 280_emacs_notes.md
 
+# entire dir
     - name: Render Quarto Project (Experiment)
       uses: quarto-dev/quarto-actions/render@v2
       with:
