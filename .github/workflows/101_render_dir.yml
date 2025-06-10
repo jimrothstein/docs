@@ -1,6 +1,6 @@
 name: 101_render_dir.yaml
 
-run-name:  101 HOLDING
+run-name:  101 render_dir
 
 on:
   workflow_dispatch:
@@ -48,6 +48,16 @@ jobs:
       run:  Rscript -e \
          'install.packages(c("knitr", "rmarkdown", "rlang", "lubridge", "lobstr"))'
 
+    - name: pkgs, using setup-r-depend (should read from DESCRIPTION)
+      uses: r-lib/actions/setup-r-dependencies@v2
+      with:
+        dependencies:  hard
+        extra-packages: |
+          any::knitr
+          any::rmarkdown
+          any::rlang
+          any::lubridate
+          any::lobstr
 
     - name: create output file name, then use in next chunk
       run:  echo '${{ github.event.inputs.selected_filename }}.md'
