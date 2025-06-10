@@ -78,6 +78,7 @@ jobs:
 
 # pdf, entire dir
     - name:  render pdf
+      if: ${{ !cancelled() }}
       run: |
         quarto render --to pdf
 
