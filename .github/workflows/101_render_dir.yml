@@ -58,6 +58,7 @@ jobs:
           any::rlang
           any::lubridate
           any::lobstr
+          any::teal.code
 
     - name: create output file name, then use in next chunk
       run:  echo '${{ github.event.inputs.selected_filename }}.md'
