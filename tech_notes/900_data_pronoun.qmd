@@ -18,7 +18,7 @@ bquote(mtcars[[.(x)]])
 
 r = bquote(mtcars[[.(x)]])
 r
-eval(r)
+# eval(r) error
 y = "mpg"
 
 

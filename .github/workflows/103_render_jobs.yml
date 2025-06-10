@@ -21,7 +21,6 @@ jobs:
   quarto:
     runs-on: ubuntu-latest
 
-
     steps:
     - name: echo the selected_file
       run: |
