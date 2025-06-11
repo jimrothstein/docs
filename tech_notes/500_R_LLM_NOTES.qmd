@@ -18,18 +18,6 @@ quarto render <file.qmd> --to gfm --output 280_emacs_notes.md
 300_tech_notes.qmd
 810_pharmaverse_notes.qmd
 
-^h v  display-line-number (help for variable) \
-^h a  eval   # any emacs/gnu topic? \
-^h k  F10     # enter keystroke to see binding \
-^h f current-buffer | ^h f ess-eval-region (help for emacs/ESS function)
-
-^x p e  for eShell \
-^h i m Elisp RET (read manual) not working \
-
-M-x apropos-documenation eval
-M-x describe-bindings
-M-x describe-mode
-
 ##### ------------------------ footnote 
 
 Create a footnote: [^1]
@@ -49,7 +37,7 @@ Create a footnote: [^1]
 Chat examples
 
 - Shiny assistant <https://shiny.posit.co/blog/posts/shiny-assistant/>
-- query chat <https://github.com/posit-dev/querychat/blob/main/r-package/README.md>
+- query chat <https://github.com/posit-dev/querychat  
   Given a db, write query in English; LLM adjusts shiny app to show graphs, data
 
 - dev article <https://docs.continue.dev/customize/overview> 

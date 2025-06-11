@@ -80,7 +80,7 @@ jobs:
     - name:  render pdf
       if: ${{ !cancelled() }}
       run: |
-        quarto render --to pdf
+        quarto render tech_notes/*.qmd --to pdf
 
 #        git add  ${{ github.events.inputs.selected_filename }}
 #        git commit -m "Update ${{ github.event.inputs.selected_filename }}" || \
