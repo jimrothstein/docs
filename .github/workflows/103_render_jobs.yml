@@ -48,6 +48,7 @@ jobs:
       run:  echo '${{ github.event.inputs.selected_filename }}.md'
     - name: Render Quarto document
       run: |
+        quarto install tinytex     # github actions wants
         quarto render ${{ github.event.inputs.selected_filename }} \
           --to pdf --output resume.pdf
 

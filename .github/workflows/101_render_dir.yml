@@ -80,7 +80,7 @@ jobs:
     - name:  render pdf
       if: ${{ !cancelled() }}
       run: |
-        quarto install tinytex  # github wants 
+        quarto install tinytex  # github want
         quarto render tech_notes/*.qmd --to pdf
 
 #        git add  ${{ github.events.inputs.selected_filename }}
