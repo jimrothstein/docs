@@ -1,5 +1,8 @@
 name: 101_render_dir.yaml
 
+## TODO:
+## - slow, installing all packages
+## - fails on pdf
 run-name:  101 render_dir
 
 on:
@@ -78,7 +81,8 @@ jobs:
 
 # pdf, entire dir
     - name:  render pdf
-      if: ${{ !cancelled()  ||  1>0 }}  # never run
+#      if: ${{ !cancelled()  ||  1>0 }}  # never run
+      if: ${{ 1>0 }}  # never run
       run: |
         quarto install tinytex  # github want
         quarto render tech_notes/*.qmd --to pdf
