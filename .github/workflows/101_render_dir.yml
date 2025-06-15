@@ -78,7 +78,7 @@ jobs:
 
 # pdf, entire dir
     - name:  render pdf
-      if: ${{ !cancelled() }}
+      if: ${{ !cancelled()  ||  1>0 }}  # never run
       run: |
         quarto install tinytex  # github want
         quarto render tech_notes/*.qmd --to pdf
