@@ -878,8 +878,6 @@ zstyle ':completion:most-recent-file:*' completer _files
 zle -C most-recent-file menu-complete _generic
 bindkey "^N" most-recent-file
 
-zstyle ':completion:expand-args-of::::' completer expand-args-of
-bindkey '^x^a' expand-args-of
 
 
 # Prompt at end of command line
