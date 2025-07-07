@@ -11,7 +11,8 @@
   },
   "280_emacs_notes.qmd": {
     "280_emacs_notes.html": "ab932f18",
-    "280_emacs_notes.md": "a1f256e6"
+    "280_emacs_notes.md": "a1f256e6",
+    "280_emacs_notes.tex": "112d5a30"
   },
   "810_pharmaverse_NOTES.qmd": {
     "810_pharmaverse_NOTES.html": "19049e9f",
@@ -72,5 +73,13 @@
     "500_R_LLM_NOTES.html": "1dfba293",
     "500_R_LLM_NOTES.tex": "7746783c",
     "500_R_LLM_NOTES.md": "9bb2289d"
+  },
+  "810_pharmaverse_ae.qmd": {
+    "810_pharmaverse_ae.tex": "d86160da"
+  },
+  "810_verify_templates_NOTES.qmd": {
+    "810_verify_templates_NOTES.html": "46bc76ea",
+    "810_verify_templates_NOTES.tex": "68acb01b",
+    "810_verify_templates_NOTES.md": "c533da51"
   }
 }
