@@ -62,7 +62,8 @@ NOW:
 Intermediate files are now stored in several temporary `tempdir()` R directories and therefore disappear when code ends.  
 This makes debugging a little more difficult.  Also USER running this interactively clobbers results of previous run.
 
-Proposed:  Store intermediate results in permanent directories. Cleanup after run.  Allow user to aluse the cleanup. 
+Proposed:  Store intermediate results in permanent directories. Cleanup after run.  
+  Allow user to also call cleanup. 
 
 ### Related - Use tibble, not lists
 Currently, using several names lists (for each ADaM, list for templates, another for dir, ...) Confusing.
@@ -91,7 +92,7 @@ Example:
 REF:
 <https://github.com/pharmaverse/admiral/blob/55c003ddb2fbcda6321795e45411131e185520de/data-raw/admiral_verify_templates.R#L16-L23>
 
-Propose
+Propose  
 Use tibble as lookup.
 One row for each ADaM, columns for location of each template, directories etc.
 Populate as exact strings, constructed ONCE?   
@@ -148,6 +149,7 @@ Use of key fields;  removed
 
 
 ###  Minor Issues, code checks?
-	- <https://github.com/pharmaverse/admiral/pull/2773#discussion_r2159570703>
+
+- <https://github.com/pharmaverse/admiral/pull/2773#discussion_r2159570703>
 
 
