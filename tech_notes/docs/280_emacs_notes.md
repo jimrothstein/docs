@@ -1,6 +1,8 @@
 # 280_emacs_notes.qmd
-JR
-2021-05-22
+jim
+2025-07-27
+
+To render to PDF (via quarto’s typst cli) quarto render \<file.qmd\>
 
 > [!NOTE]
 >
@@ -30,15 +32,21 @@ M-x apropos-documenation eval M-x describe-bindings M-x describe-mode
 
 - [Beginner-protesilaos](https://protesilaos.com/codelog/2024-11-28-basic-emacs-configuration/)
 - [Xahlee](http://xahlee.info/emacs/how_to_read.html)
-- [emacswiki: (look for newbie)](https://www.emacswiki.org/)
+- [ESS Manual](ess.r-project.org/manual)
+- \[Emacs Manual\]
+- [emacswiki: (look for newbie \| self-doc)](https://www.emacswiki.org/)
 - [emacs, with
   explanatons!](https://www2.lib.uchicago.edu/keith/tcl-course/emacs-tutorial.html)
 - [short emacs guide (1st time: omit
   lisp):](https://github.com/chrisdone-archive/elisp-guide?tab=readme-ov-file#programming-in-emacs-lisp)
 - [practical: (REPL)- gigamonkeys](https://gigamonkeys.com/book/)
-- daviwil: emacs from scratch: videos + config
-  <https://github.com/daviwil/emacs-from-scratch/tree/8c302a79bf5700f6ef0279a3daeeb4123ae8bd59>
 - [Evil, Read & re-read:](https://github.com/noctuid/evil-guide)
+- \[SFU\] videos + web
+
+**Videos** - daviwil: emacs from scratch: videos + config
+<https://github.com/daviwil/emacs-from-scratch/tree/8c302a79bf5700f6ef0279a3daeeb4123ae8bd59> -
+Tsoding - Protesillaos - Goparism - tdhock (12 videos + R) - hacking
+vanilla
 
 **Blog** - [protesilaos](https://protesilaos.com/)  
 - <https://protesilaos.com/codelog/>
@@ -58,6 +66,10 @@ tips:
 collection of ESS config/intros:
 <https://github.com/ess-intro/ess-intro>  
 - got flycheck, usethis::use-tidy_style working; lintr now auto works.
+
+#### Quarto
+
+M-x quarto-prese… C-c C-c m re-render
 
 #### LISP
 

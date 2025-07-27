@@ -1,12 +1,16 @@
 ---
-title: "280_emacs_notes.qmd "
-author: "JR"
-date: "5/22/2021"
-output:  html_document
-toc:  false
-editor_options: 
-  chunk_output_type: console
+title: 280_emacs_notes.qmd
+format:
+  typst:
+    papersize: a5
+    margin:
+      x: 1cm
+      y: 1cm
+    columns: 1
 ---
+
+To render to PDF (via quarto's typst cli)
+quarto render <file.qmd>
 
 
 ::: callout-note
