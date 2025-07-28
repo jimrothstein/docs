@@ -33,7 +33,10 @@ editor:
     wrap: 72
 ---
 
-*USE TYPST here*
+*For Quarto -> TYPST -> PDF, see example:  280_emacs_notes.qmd*
+
+* HERE:  USE native TYPST app,  use 250_quarto_cheat.typ*
+*For pure typst SEE 410_typst_MATH_notes.typ"
 
 USE the *typst app* !
 - For typst & math, use this file For Math.

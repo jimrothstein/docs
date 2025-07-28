@@ -14,31 +14,37 @@ quarto render <file.qmd>
 
 
 ::: callout-note
+
+quarto render <file.qmd> (uses quarto/typst cli to generate pdf)
 quarto render 280_emacs_notes.qmd --to gfm --output 280_emacs_notes.md
 :::
 
 ::: {.regular_text}
 
 [280_emacs_notes.qmd](280_emacs_notes.qmd) 
-300_tech_notes.qmd 
-810_pharmaverse_notes.qmd 
 
 #### TODO
 - i3 and emacs can conflict.    SEE: https://sqrtminusone.xyz/posts/2021-10-04-emacs-i3/
 
 #### HELP
-^h v  display-line-number (help for variable) \
-^h a  eval   # any emacs/gnu topic? \
-^h k  F10     # enter keystroke to see binding \
-^h f current-buffer | ^h f ess-eval-region (help for emacs/ESS function)
+^h v  ......       display-line-number ( variable) \
+^h a  ......       eval   # any emacs/gnu topic? \
+^h k  ......       F10     # keystroke  \
+^h f current-buffer \ ^h f ess-eval-region (help for emacs/ESS function)
 
-M-x apropos-documenation eval
-M-x describe-bindings
+M-x apropos-documenation eval \
+M-x describe-bindings \
 M-x describe-mode
 
 #### LEARNING
-- [Beginner-protesilaos](https://protesilaos.com/codelog/2024-11-28-basic-emacs-configuration/)
-- [Xahlee](http://xahlee.info/emacs/how_to_read.html)
+```{=typst}
+#show link: underline
+
+- #link [Beginner-protesilaos](https://protesilaos.com/codelog/2024-11-28-basic-emacs-configuration/)
+- #link [Xahlee](http://xahlee.info/emacs/how_to_read.html)
+- http://xahlee.info/emacs/how_to_read.html
+```
+
 - [ESS Manual](ess.r-project.org/manual)
 - [Emacs Manual]
 - [emacswiki: (look for newbie | self-doc)](https://www.emacswiki.org/)
