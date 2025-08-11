@@ -8,9 +8,8 @@ vim:linebreak:spell:nowrap tw=78 fo=tqlnr foldcolumn=3
 -H header
 -V or --variable
 --pdf-engine=xelatex
-
-
 -->
+
 Germany
 [failing nytimes.com](www.nytimes.com)
 
@@ -97,7 +96,9 @@ French warships to Holy Land.  Now UK is nervous.
     land, able to live by collecting rent.  Some actually wealthier  than
     nobles. 
 \section{England - 17th}
-1649 - Charles I beheaded (impeached)
+James I (1st Stuart)
+1649 - Charles I beheaded (impeached) (blamed for allowing uprisings rebellions)
+Cromwell (gifted solider, gifted govenor; established republic, defeated royalism; restored stability in 1650s, statesman;   - 1658)
 1684 - James II (Catholic) succeeds brother Charles II.
 1689 - William III (from Netherlands) removes James II .  **Glorious
 Revolution** was actual neither.   Replaced one king with another - EXCEPT
@@ -534,6 +535,18 @@ Esther Cooper Jackson (1917-2022),
   *  April 1945, Secy War Stimpson tells Truman of bomb; (As Sen Truman had been poking close to secret funding A-Bomb, in 1944;  Stimpson then had cut him off)
   *  Even, After 2 bombs and Soviet invasion,  Japanese top leaders deadlock 3-3 on surrender.  (Military wants to fight)
   
+# Tokyo War Crimes Trials ( May 3, 1946 - )
+
+- MacAurther/Truman, various quarrels over judges, rules ...
+- 28 Class A War Criminals (defendents); have good US lawyers
+- Head of Trial:  Webb (Australia);   chief US prosecetuor Keenan
+- no Japanese judges (No, even if `victor judgement`; do not to allow Japanese to say we convicted all the criminals; rest of us innocent)
+- 55 counts, several backed by earlier treaties
+Criminal conspiracy | Aggressive War | Crimes against PoW | Crimes against civilan popululation | Crimes against humanity (enslavement, extermination) | Wanton destruction of cities (no mention arial bombardment, like US) | Crimes Against Peace (1907 Treaty that Jap must declare war before hostilities;  Therefore, Pearl Harbor, HK, ... MURDER).   No mention of Korea, no mention of Unit 731 (bioweapons); no Manchuria; rape (only 1 !)
+- Victims were the `empires`  (ie British Empire, Netherlands;  not Burma, Philipenese)
+- No emperor endictment (NYTimes asks if his cooperation now balances his role in war??)
+- At least 1 indicted actually apposed Peal Harbor attack.
+- annoyance that Russia troops remain in Manchuria; Russian judge adheres to Soviet line.
 
 
 
