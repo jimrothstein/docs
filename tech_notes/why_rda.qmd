@@ -1,22 +1,29 @@
 
 ## NOTES on \*.rda
 
+### Two key points
+- Admiral uses `*.rda` (and not `.rds`) because data in packages must be in this form.  There is more flexibility with intermediate or prepared datasets, but admiral continues with `.rda` 
+- As to loading `*.rda` datasets, admiral uses a few different ways and there does not appear any standardization.
+
+
+### Details
+
 1. Why use \*.rda?
-   Data included in package must be *.rda format; CRAN checks (?) 
+   Data included in a package must be *.rda format; CRAN checks (?) 
    
    SEE:
 - Thomas-Neitmann, Nov 2022: ("https://github.com/pharmaverse/admiral/issues/1562)
   also #1501
-- !so
+- stackoverflow examples 
 - pkg book, section 7.1 (https://r-pkgs.org/data.html#sec-data-data)
 
-2. The load() function retrieves an \*.rda dataset as a side-effect.  It returns it to the current environment (typically globalenv()) and clobber existing file with same name.   The load() function can cause confusion and one reason why people often prefer *.rds. [`loadRDS()`  behaves the way we expect for *.rds files].
+2. The load() function retrieves an \*.rda dataset as a side-effect.  It returns it to the current environment (typically globalenv()) and clobbers existing file with same name.   The load() function can cause confusion and one reason why people often prefer *.rds. [`loadRDS()`  behaves the way we expect for *.rds files].
 
 3.  Because, load() returns the dataset as a side-effect, I observe in admiral a few different (and clever) techniques to work with it.
 
-### Examples
+### A few  examples of admiral code to load `*.rda` files
 
-retrieve - method 1, also clobbers \
+retrieve  also clobbers \
 (returns ds to globalenv) \
 ```
 load(file.path("./BASE","XXX.rda"))
@@ -49,29 +56,36 @@ from roak_pilot
 #' invisible(lapply(rdas, load, envir = oak_pkg_env))
 ```
 
-admiral data-raw/create-dose ...., alternative method to SAVE rda
+
+4. NOTE:  For files included in package, the admiral is using an easiest way may be:
+```
+library(pharmaverseadam)
+adae <- pharmaverse::adae
+```
+
+5. There are similar differences when saving *.rda files
+
 
 with usethis::
 ```
 #  create dose_freq_lookup.rda in data/
 usethis::use_data(dose_freq_lookup, overwrite = TRUE)
 ```
-
+save() method has option for compresssion;  
 from tidytlg,  no bzip2?
 ```r
 save(cdisc_adsl, file = "data/cdisc_adsl.rda")
 ```
 
-4. NOTE:  For files included in package, the easiest way may be:
-```
-library(pharmaverseadam)
-adae <- pharmaverse::adae
-```
+5. To minimize confusion,  I want to suggest picking a common way to save and retrieve intermediate *.rda files.
 
+
+6. (TODO) Any significant memory difference when loading *.rda one way or another?
 But I want to check memory usage (TODO)
 ```r
 library(lobstr)
 (m0 = lobstr::mem_used())
+
 library(pharmaverseadam)
 (m1 = lobstr::mem_used())
 
@@ -82,7 +96,5 @@ advs <- pharmaverseadam::advs
 adsl <- pharmaverseadam::adsl
 lobstr::mem_used()
 ```
-```
 
-5. To minimize confusion, therefore, I want to suggest picking a common way to saving and retrieving intermediate *.rda files.
 
