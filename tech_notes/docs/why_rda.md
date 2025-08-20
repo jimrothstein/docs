@@ -65,8 +65,8 @@ from roak_pilot
 
     #' invisible(lapply(rdas, load, envir = oak_pkg_env))
 
-4.  NOTE: For files included in package, the admiral is using an easiest
-    way may be:
+4.  NOTE: For files included in package, the admiral is using an easy
+    way:
 
 <!-- -->
 
@@ -87,8 +87,8 @@ from tidytlg, no bzip2?
 save(cdisc_adsl, file = "data/cdisc_adsl.rda")
 ```
 
-5.  To minimize confusion, I want to suggest picking a common way to
-    save and retrieve intermediate \*.rda files.
+5.  *To minimize confusion, I suggest picking a common way to save and
+    retrieve intermediate *.rda files.\*
 
 6.  (TODO) Any significant memory difference when loading \*.rda one way
     or another? But I want to check memory usage (TODO)
