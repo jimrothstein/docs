@@ -4,8 +4,8 @@
 ## NOTES on \*.rda
 
 ### Two key points
-- Admiral uses `*.rda` (and not `.rds`) because data in packages must be in this form.  There is more flexibility with intermediate or prepared datasets, but admiral continues with `.rda` 
-- As to loading `*.rda` datasets, admiral uses a few different ways and there does not appear any standardization.
+- ~~Admiral~~ **Pharmaverse** uses `*.rda` (and not `.rds`) because data in packages must be in this form.  There is more flexibility with intermediate or prepared datasets, but admiral continues with `.rda` 
+- As to loading `*.rda` datasets, ~~admiral~~ **Pharmaverse** uses a few different ways and there does not appear any standardization.
 
 
 ### Details
@@ -23,7 +23,7 @@
 
 3.  Because, load() returns the dataset as a side-effect, I observe in admiral a few different (and clever) techniques to work with it.
 
-### A few  examples of admiral code to load `*.rda` files
+### A few  examples of ~~admiral~~ **Pharmaverse** code to load `*.rda` files
 
 retrieve  also clobbers \
 (returns ds to globalenv) \
@@ -58,12 +58,22 @@ from roak_pilot
 #' invisible(lapply(rdas, load, envir = oak_pkg_env))
 ```
 
+from pharamaverseadam/create_adams_data.R
+```
+load_rda <- function(fileName) {
+  load(fileName)
+  get(ls()[ls() != "fileName"])
+}
+```
+<hr>
 
 4. NOTE:  For files included in package, the admiral is using an easy way: 
 ```
+
 library(pharmaverseadam)
 adae <- pharmaverse::adae
 ```
+
 
 5. There are similar differences when saving *.rda files
 
