@@ -80,6 +80,7 @@ search()
 
 **create a call**
 -   See:  R-lang 6.5, call, sys.call vs match.call
+-   See:  Ch 18.3 `call objects`
 
 ```{r calls}
 #| label: intro_call
@@ -87,22 +88,23 @@ search()
 #| include: true
 f  <- function(x) {
     x^2}
-cl  <- call("f", 3)
-# display f as unevaluated f(3)
-cl
+cl  <- call("f", 2)   # f(2)
+cl  <- call("f", 3+2) # f(5); f not eval; but arg are evaluated
+cl  <- call("f", 3+a) # error, b/c a is undefined
 
 ##  Test for call.
-    is.call(f)
-    is.call("f")
-    is.call(cl)
+    is.call(f)   # F
+    is.call("f") # F
+    is.call(cl)  # T
 
-##  To evaluate a call.
+# Two ways to create call, identical !
+identical(cl, quote(f(2)))   #T
+##  To evaluate a call, ie get value
     eval(cl)
 
 call("f", 2+3)
-# call("f", sin(x))
-call("f", sin(x <- pi/2))
-# call("f", sin (x + y))
+call("f", sin(x <- pi/2))   # f(1)  arg is evaulated
+call("f", sin (x + y))      # error arg can not be evaluated
 ```
 
 
@@ -177,18 +179,28 @@ rlang::is_expression(rlang::expr(x)) #T
 specific to that function. Also referred to as frame or context. This frame
 holds evaluation environment. The frame ends when the function completes.
 
-**Evaluation**  parser, evaluator SEE R-lang definitions 2.1.3 
+**Evaluation**  (parse, deparse), evaluator SEE R-lang definitions 2.1.3 
 ```
 When a user types a command at the prompt (or when an expression is read from a
 file) the first thing that happens to it is that the command is transformed by
-the parser into an internal representation. The evaluator executes parsed R
+the parser into an internal representation. 
+The evaluator executes parsed R
 expressions and returns the value of the expression. All expressions have a
-value. This is the core of the language. 
+value. 
 ```
  https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Evaluation-of-expressions
+ 
+ 
+deparse():  Takes an expression and returns as character. 
+```r
+q = quote(a+b)
+deparse(q)   # "a + b"
 
-**Expression** 
+q=expression(a+b)
+is.expression(q)
+```
 
+**Expression object** 
 
 [R language definition](https://cran.r-project.org/doc/manuals/R-lang.html#Evaluation)
 From r-lang 2.1.4 
@@ -208,11 +220,43 @@ From r-lang 2.1.4
 
 
 
-Interactively, a single, valid R statement that returns an value is  called an expression. 
+Interactively, a single, valid R statement that returns an value is  called an expression object.
 
-
+**DO NOT CONFUSE call and expression**
 An expression also a formal language construction with list structure.  The function expression() takes an R
-object and returns expression.  Note:  a `statement` is code that may do things
+object and returns expression object.  
+
+**STUDY** Compare q1 (a call) , q2 (expression object)
+```r
+# call
+q1 = quote(a+b)
+
+deparse(q)   # "a + b"
+mode(q1)  # call
+typeof(q1) # "language"
+is.expression(q1) # FALSE
+
+# expression object
+q2=expression(a+b)
+
+deparse(q2)  # "expression(a + b)"
+mode(q2)  # "expression"
+typeof(q2) # "expression"
+is.expression(q2)  # TRUE
+
+# neither is list
+is.list(q1) # F
+is.list(q2) # F
+
+# but has some list properties
+q1[[1]] # `+`
+q2[[1]] # a + b
+identical(q1,q2)  # FALSE
+
+```
+
+
+Note:  a `statement` is code that may do things
 (side effects) but does not return anything.
 Hadley defines expression as an "object that stores quoted code without evaluating it." (tidyr cheat sheet)
 SEE evaluation.
@@ -310,6 +354,29 @@ Scheme added (?) Portion of code in which binding applies to a variable??
 
 In R, an "evaluator" find any "unbound symbols" (in an expression) by using
 variable bindings in effect when created.
+
+**mode** (typeof)
+| Both mode and storage.mode return a character string giving the (storage) mode of the object — often the same — both relying on the output of typeof(x), see the example below. 
+
+`x` is R Object
+`typeof` returns character
+
+Mode uses typeof; typeof refers to internal storage. 
+
+
+SEE:  https://stat.ethz.ch/R-manual/R-devel/library/base/html/mode.html
+SEE:  https://stat.ethz.ch/R-manual/R-devel/library/base/html/typeof.html
+```r
+q <- quote(sin(x))
+mode(q)   # "call"
+
+Current values for typeof(x):
+vector types "logical", "integer", "double", "complex", "character", "raw" and "list", "NULL", "closure" (function), "special" and "builtin" (basic functions and operators), "environment", "S4" (some S4 objects) and ...
+
+several not usually seen at user level
+("symbol", "pairlist", "promise", "object", "language", "char", "...", "any", "expression", "externalptr", "bytecode" and "weakref").
+
+```
 
 **local**
 
