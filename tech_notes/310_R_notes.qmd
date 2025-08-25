@@ -152,6 +152,39 @@ access; use JIT compiler or interpeter
 **defuse**
 Synonym for capture unevaluated  code, stop immediate evaluation, 
 
+**expression**
+Unevaluated code.
+The correct interpretation of expression, also Hadley's, is
+any set of base objects (scalar, constant, symbol, call objects, pairlist and ....)
+
+R uses this definition, but ALSO can mean a certain type of object also called `expression` (confusing !).   Hadley refers to this a `expression vector`
+
+SEE:  https://adv-r.hadley.nz/expressions.html
+
+**expression vector**
+R is sloppy about expression.  
+
+(1) Sometimes it agrees with Hadley's definition.
+(2) But it is also one of the typeof() called `expression`, Hadley calls this `expression vectors` and is not what Hadley means by `expression`
+
+is.expression() T means it is `expression vector`, list-like
+parse() and expression() return object of type `expression` (ie is.expression() = T)
+
+Examples of sloppy meaning of `expression` (if typeof = expression)
+```r
+q=expression(a + b)
+q   # expression(a + b)
+typeof(q) # "expresson"
+
+a = 2
+q = expression(a + b)   # unevaluated
+q   # expression(a + b)
+
+q = parse(text= "a + b")
+
+typeof(q)  # expression
+is.expression(q) # T
+```
 **eval()**
 Note:  rlang::expr(x) quotes (or converts ) arg to expression
 ```{r eval}
