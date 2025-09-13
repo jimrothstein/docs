@@ -873,7 +873,15 @@ jim
   blame on the customer.  All I wanted was not to be cold!
 
 
+**2025-09-03  Agreement with Jill at Mindshare**
+-July 9, 2025 $162.18 (at Nexus), includes credit card fee.
+-Aug 9, 2025  No pull (at Nexus); use the 1 month deposit
+-Aug 25, 2025 Mindshare -1st day
+-Sep 3, 2025 on Credit Card:   $159 1 mont deposit 
+-Sep 9, 2025 on Credit Card:   $159+$20 (locker)  for Sept 9-Oct 9
+-Oct 9, 2025 on Credit Card:   $159+$20 (locker)  for Oct 9 - Nov 9
+...
+Deal with Jill is 12 months at $159 per month.
 
 
-   vim:linebreak nowrap tw=81 fo=tqlnr foldcolumn=3 
 
