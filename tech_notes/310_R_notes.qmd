@@ -1,12 +1,27 @@
+---
+title: 310_R_notes.qmd
+format:
+  typst:
+    papersize: "us-letter" 
+    fontsize: 8pt
+    margin:
+      x: .3cm
+      y: .3cm
+    columns: 1
+    keep-typ: true
+---
+
+<!--
+Render quarto  (will use typst)
+KEEP as .qmd file
+-->
+
 	PURPOSE:  Collect all notes, links, references for R to here.
 	NO installation (R, Rstudio, etc) in this file
 	
 	write 310_R_notes.qmd AFTER understand! 
 	including link to file where work actually done!
 
-<!--
-KEEP as .qmd file
--->
 
 ```{r, setup, include=FALSE}
 knitr::opts_chunk$set(
@@ -489,20 +504,6 @@ captures expression and environment
 
 **options** Temporary vs global vs local. Read R manual.(TODO)
 
-\subsection{Primitive vs Internal function}
-
--   `if`, `+`, sin, sqrt
-
--   C functions
-
--   SEE ADV-R Chapter 6, code: 059 (myoldcode)
-
--   SEE https://nsaunders.wordpress.com/2018/06/22/idle-thoughts-lead-to-r-internals-how-to-count-function-arguments/
-
--   SEE R Internals/Ch 2
-
--   Do not understand at deeper level
-
 
 **R** R has two parents: S, based on C, Fortran for statistics. R also has
 functional component, based on Scheme.
@@ -528,16 +529,23 @@ However, not all R functions have this property.
 x=6
 identical(quote(x), quote(6))               ##  F
 ```
-**quote**  SEE
+**quote**  
+
 (Scheme) does not look for bindings
 - returns expression; stops evaluation; 
-- in particular, allows programmer to then manipulate code, essential
+- in particular, allows programmer to then manipulate code, eval in different context
 
-```r
-e= quote(x + y + z)  # x + y + z
-length(e)   # 3
-e[[3]]  <- quote(z + 3)
-e # x + y + (z + 3)
+```{r quote}
+x=10
+quote(2 + 3)  # 2 + 3; no evaluation
+quote(2 + x) # 2 + x; no eval; no insertion
+
+
+# manipulate
+    e= quote(x + y + z)  # x + y + z
+    length(e)   # 3
+    e[[3]]  <- quote(z + 3)
+    e # x + y + (z + 3)
 
 ### check several functions
 
@@ -545,16 +553,18 @@ e # x + y + (z + 3)
 quote("sin") |> typeof()   # character
 
 # L is list of symbols
-L = list(quote(sin), quote(c), quote(sqrt), quote(`if`), `+`))
-sapply(L, typeof)
-
-# Note:
-quote(sqrt) |> typeof()   # "symbol"
-quote(sqrt) |> typeof()  |> typeof()   # "character"
-
+    L = list(quote(sin), quote(c), quote(sqrt), quote(`if`))
+    sapply(L, typeof)   # all symbols
+# same, as nice df
 (data.frame(object = as.character(L),
            type = sapply(L, typeof)
            ))
+
+# Note:
+quote(sqrt) |> typeof()   # "symbol"
+quote(sqrt()) |> typeof()   # language
+quote(`sqrt`) |> typeof()   # symbol
+
 ```
 
 
@@ -653,8 +663,10 @@ SEE: https://www.r-bloggers.com/2018/03/math-notation-for-r-plot-titles-expressi
 
 bquote examples  SEE 410
 ```{r}
-x = 5 
-bquote(x == .(x))
+x  <-  5 
+z = bquote(y == .(x))   #  y == 5, but no `y`created global
+z  # y == 5
+z |> typeof()  # languate
 ```
 
 ### Symbol

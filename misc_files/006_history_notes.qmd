@@ -1,6 +1,14 @@
-
-vim:linebreak:spell:nowrap tw=78 fo=tqlnr foldcolumn=3 
-
+---
+title: 006_history_notes.qmd 
+format:
+  typst:
+    papersize: "us-letter" 
+    fontsize: 8pt
+    margin:
+      x: .3cm
+      y: .3cm
+    columns: 1
+---
 
 <!--
 !pandoc % -t latex -V linkcolor:blue -V fontsize=12pt -V geometry:margin=0.5in -o ~/Downloads/print_and_delete/out.pdf
@@ -426,6 +434,28 @@ to her being ostracized in high of red scare.
 SNCC;
 
 <!-- }}} -->
+
+** Japan**
+1928 - militarization of Japan;  extreme earthquate (year?), disarray
+1931 - Kwatong Army (guarding RR) seizes all of Manchuria.
+Baron Shidehara Kijura PM in 1920s had opposed militarists, invasion of Manchuria; peaceful;
+
+
+Toyko War Crimes Trials
+- all blame on Tojo, to spare Hirhito;
+- US, China and others want militarists removed;  China wants Japan army completely de-armed and seeks $87 billion - in 1946 money),  BuT China heeds to MacArther
+Emperor had in fact given support to Kwantang army;  but MacAurther now needs him as smybol to keep peace (ie not "white man" annexing Japan).  Hirhito untouched and lives a long life.
+
+** India **
+
+Subhas Chandra Bose (aka Netaji) - an icon, sought Hitler and then Tojo's aid in fighting British; contrast to Gandi; forceful;  dies in plane crash; influence to this day;  
+by 1946: question:  anti-colonial vs Hindu-nationalism
+
+** July 4, 1946 - US leaves Philippines **
+Roxas had colloberated with Japanese, but MacAuther defends do never tried.
+Delfin Jaranilla, US educated, admired MacAruther, treated badly at Batann death march. Judge (very biased) at Tokyo War Crimes Trial.
+
+
 
 ## Rise of Hard Right:  anti_New Deal.
   *  hate National Recovery Act's price controls; profanity to business.
