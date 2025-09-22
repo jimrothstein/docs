@@ -50,6 +50,15 @@ sum(a+b)
 ```
 
 
+**assign** TODO
+Difference between `=` and `<-`
+Ch 6 in Advanced R; possible Ch 18 (AST)
+SEE:  https://colinfay.me/r-assignment/
+
+compare:   f(x=4) and f(x <-4);  not the same!
+f(x <-4) creates variable x in calling env. evaluates and sets its value to 4.
+f(x = 4) does not touch global env
+
 **AST**
 Diagram expression into various parts (calls, symbols, constants?)
 Metacode refers to manipulation of this tree.
@@ -89,7 +98,7 @@ search()
 
 **bquote**  SEE String Interpolation
 **Call** A call is an unevaluated function, together with arguments that are
-(Rmk:   .Call() is unrelated, calls C function)
+(Rmk:   .Call() is unrelated, calls C function).  The form `do.call(f, args) is useful when programming. `args` is list of arguments, plus things like rm.na
 
 ### create a call
 
@@ -123,7 +132,7 @@ call("f", sin (x + y))      # error arg can not be evaluated
 ```
 
 
-Like symbol, expression, call is typeof 'language'.
+Like symbol, expression, call is typeof 'language'-- avoid!  SEE Adv-R Ch 18
 ```
 three kinds of language objects that are available for modification, calls,
 expressions, and functions
@@ -159,8 +168,10 @@ stack)  TODO  - do not understand.
 Contexts are Not counted, not reported, not on stack, and coder has no
 access to these functions.  REF:  R Internals 1.4
 
-**byte code** "Readable" concise instructions; not machine code; no user
-access; use JIT compiler or interpeter
+**byte code** (TODO) "Readable" concise instructions; not machine code; no user
+access; use JIT compiler or interpeter.<bytecode: 0x1327...>   
+(TODO) Compare this to r-wasm.  Both start with AST, but one builds, compiles into `assembler` code.
+
 
 **Deparse** See **parse**.
 
@@ -330,7 +341,6 @@ rlang::is_expression(quote(if (x  > z) print("yes")))   #T
 
 # body of function
 rlang::is_expression(body(f = function() x^y))   # T
-
 ```
 
 **Expression v Language** R expressions based on list and can be broken down
@@ -344,18 +354,27 @@ Environment, in R, is property of function, where it looks to find non-local
 variables.
 
 **Function**
-- formals(f) returns formal arguments of function, with default values, but NO evaluation, NO look in environment.  formals are actually pairlist.  Can obtain/modify this pairlist.  Formal arguments become promises in the evaluation environment.
+- formals(f) returns formal arguments of function, with default values, but NO evaluation, NO look in environment.  (SEE pairlist)
+
+```{r function}
+f  <- function(x=NULL) {
+    x^2
+}
+
+formals(f)      ## pairlist
+body(f)         ## language, $\code{call}$
+environment(f)  ## environment
+args(f)         ## closure
+
+L <- list(formals(f), body(f), environment(f), args(f))
+sapply(L, typeof)
+```
+
 ```{r}
 w = 2
 f = function(x,y = 1, z = w + function() print("hi"))  x + y + z
 formals(f)
 formals(f) |> class()   # pairlist
-
-# can obtain, modify formals
-formals(f)[[2]]
-formals(f)[[2]]
-formals(f)[[2]] <- quote(a) 
-f    # changed
 ```
 - body(f) returns an expression, the R code to run, unevaluated, no substitution
 ```{r}
@@ -382,7 +401,6 @@ function as an argument and ...
 
 **inject** insert expression into AST?
 
-
 **immutable**
 
 **Interactive vs. Non-Interactive** R, or S, originally designed to be
@@ -393,10 +411,13 @@ interactive, ie command and response at console. .R, .Rmd, Rscript, R CMD BATCH
 abstraction. (x,y) --\> x\^2 + y\^2. Or instead of g(x) = x + 2; write
 lambdax.x+2. Easy to chain
 
-**Lexical Scope** How R function finds *unbound* variables: in environment
-where function was created. **Dynamic Scope** Method to find variables in Call
-Stack at runtime. R uses Lexical Scope, however the R Language allows coder to
-select environment to evaluate variables. (REF: June Choe Slack/Nov 3 2021)
+**Lexical Scope** How R function finds *unbound* function variables: in environment
+where function was created. Note: that is env, but as we know, env can change.  Lexical scope says nothing about *when* to check/evaluate.
+R finds unbound `functions` in similar way. (SEE ADV-R, Chapter 6) 
+*Dynamic lookup* (not scope).  Lexical is WHERE to look for unbound, not when.  Because of lazy evaluation (promises), *when* to lookup is called dynamic lookup (SEE ADV-R, Chapter 6.4.4)
+**Dynamic Scope** Method to find variables in Call
+Stack at runtime. Note: the R Language allows coder to
+select/manipulate environment to evaluate variables. (REF: June Choe Slack/Nov 3 2021)
 
 Scheme added (?) Portion of code in which binding applies to a variable??
 
@@ -411,7 +432,6 @@ variable bindings in effect when created.
 
 Mode uses typeof; typeof refers to internal storage. 
 
-
 SEE:  https://stat.ethz.ch/R-manual/R-devel/library/base/html/mode.html
 SEE:  https://stat.ethz.ch/R-manual/R-devel/library/base/html/typeof.html
 ```r
@@ -423,7 +443,6 @@ vector types "logical", "integer", "double", "complex", "character", "raw" and "
 
 several not usually seen at user level
 ("symbol", "pairlist", "promise", "object", "language", "char", "...", "any", "expression", "externalptr", "bytecode" and "weakref").
-
 ```
 
 **local**
@@ -465,8 +484,26 @@ Example: $f'(x) = g(x)$
 
 **package:**
 
-**Pairlist**
+**pairlist**
+formals of function are pairlist.  Can obtain/modify this pairlist.  Formal arguments become promises in the evaluation environment.   Hadley says treat like list, relic of past. Ch 18.6.1
 
+```r
+f <- function(x, y = 10) x + y
+formals(f)  |> typeof()
+```
+
+```{r}
+w = 2
+f = function(x,y = 1, z = w + function() print("hi"))  x + y + z
+formals(f)
+formals(f) |> class()   # pairlist
+
+# can obtain, modify formals
+formals(f)[[2]]
+formals(f)[[2]]
+formals(f)[[2]] <- quote(a) 
+f    # changed
+```
 **Parent Frame of function** If function g() is called inside body of function
 f, the g has the parent frame (aka calling environment) that is execution
 environment of f. DRAW Diagram
@@ -500,7 +537,7 @@ expression ==`>` string (actually: structure(expression(), scrfile)
 
 **promise**
 Hadley: 18.4
-captures expression and environment
+captures expression and environment (?) Consider `promise` with 4 slots (value, expression, envir, evaluated?) Expression is raw, unevaluated code; value is result *when* evaluated.
 
 **options** Temporary vs global vs local. Read R manual.(TODO)
 
@@ -540,14 +577,11 @@ x=10
 quote(2 + 3)  # 2 + 3; no evaluation
 quote(2 + x) # 2 + x; no eval; no insertion
 
-
 # manipulate
     e= quote(x + y + z)  # x + y + z
     length(e)   # 3
     e[[3]]  <- quote(z + 3)
     e # x + y + (z + 3)
-
-### check several functions
 
 # but sin in double quotes is NOT a function
 quote("sin") |> typeof()   # character
@@ -555,7 +589,7 @@ quote("sin") |> typeof()   # character
 # L is list of symbols
     L = list(quote(sin), quote(c), quote(sqrt), quote(`if`))
     sapply(L, typeof)   # all symbols
-# same, as nice df
+# same, but as nice df
 (data.frame(object = as.character(L),
            type = sapply(L, typeof)
            ))
@@ -564,9 +598,7 @@ quote("sin") |> typeof()   # character
 quote(sqrt) |> typeof()   # "symbol"
 quote(sqrt()) |> typeof()   # language
 quote(`sqrt`) |> typeof()   # symbol
-
 ```
-
 
 **quosure**
 
@@ -588,7 +620,9 @@ teal.code::qenv() |> within({a <- 1; b <- a + 2}) |> get_env() |> as.list()
 
 #$b [1] 3
 ```
-Please see **quo** as a tool for evaluation to better control **evaluation
+** quo v qenv **
+
+**quo** as a tool for evaluation to better control **evaluation
 environment** whereas qenv more as a tool for reproducibility that
 **captures the outcome of evaluation**.  One is "before" and the other one
 is "after".
@@ -598,6 +632,7 @@ Data structure with expression + environment.
 WHY?  With dot (...) often pass several of these
 rlang::eval_tidy()  # takes 1 arg (simpler)
 but base:eval(, )   # requires 2 args
+
 **Referencial Semantics** Changes to values are done in memory. There is no
 copy.   (Example:  why important.   Also other properties of functions, inverse, etc)
 R passes by value.  (So argument is evaluated before the call?)
@@ -670,65 +705,54 @@ z |> typeof()  # languate
 ```
 
 ### Symbol
+SEE Adv-R Chapter 18:   goal is obtain unevaluated expression to eval, manipulate, modify ...
 
+See **R Lang Ref: 2.1.3.1**   Symbol (aka name), usually name of R object.  Use
+`as.name() to coerce to symbol or quote() or atoms of parse() (Hadley: true in base R only) 
+
+https://stackoverflow.com/questions/8846628/what-exactly-is-a-symbol-in-lisp-scheme
 [3.1.2 Symbol lookup](https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Symbol-lookup) 
-| In this small example y is a symbol and its value is 4. A symbol is an R object too, 
-
-Q:  This is true, mathematically:    a*(b+c) = a*b + a*c.   In practice, I get
-to choose to evaluate (insert values) with the LHS  or the RHS, expecting the
-exact same result had I done the other.  Relationship to Symbol in
-Metaprogramming?
 
 **symbol** - human readale, points to area in memory, immutable, not a
 string, not a value, not set of instructions.  In LISP (and R?) you
 EVALUATE symbols to get a value.
 
+Easily confused with character; Hadley:  use `symbol` and not `name` which can have multiple meanins
+
+
 stored in a lookup table?   Two symbols can be compared, if equal then same memory.
 (is symbol evulated ??)
 SEE: https://stackoverflow.com/questions/8846628/what-exactly-is-a-symbol-in-lisp-scheme
 
+Not a symbol
 ```{r}
-y = 4
-y
-is.symbol(y)
-is.name(y)
-is.object(y)
+y = 4    # y  <- 4 won't work either
+is.symbol(y)  # F
+is.name(y)  # F
+is.object(y) #F
 
 # but
 y = as.symbol(y)
-is.symbol(y)
-y
+is.symbol(y)   # T
+y   # `4`
+```
+create a symbol
+```{r}
+ls()
+rm(list = ls())
+
+quote(y) |> is.symbol()   # T
+
+# also
+str(quote(y))   # symbol y
+
+rlang::expr(y) |> is.symbol()   # T
+rlang::sym("y") |> is.symbol()  # T,  sym() takes chacter, returns symbol
+
+# b is symbol, 3 is constant, a?
+ast(list(a=1, b, 3))
 ```
 
-See **R Lang Ref: 2.1.3.1**   Symbol (aka name), usually name of R object.  Use
-`as.name() to coerce to symbol or quote() or atoms of parse()
-
-```
-In order to manipulate symbols we need a new element in our language: the
-ability to quote a data object. Suppose we want to construct the list (a
-b). We can’t accomplish this with (list a b), because this expression
-constructs a list of the values of a and b rather than the symbols
-themselves. This issue is well known in the context of natural languages,
-where words and sentences may be regarded either as semantic entities or as
-character strings (syntactic entities). The common practice in natural
-languages is to use quotation marks to indicate that a word or a sentence
-is to be treated literally as a string of characters. For instance, the
-first letter of “John” is clearly “J.” If we tell somebody “say your name
-aloud,” we expect to hear that person’s name. However, if we tell somebody
-“say ‘your name’ aloud,” we expect to hear the words “your name.” Note that
-we are forced to nest quotation marks to describe what somebody else might
-say. We can follow this same practice to identify lists and symbols that
-are to be treated as data objects rather than as expressions to be
-evaluated. However, our format for quoting differs from that of natural
-languages in that we place a quotation mark (traditionally, the single
-quote symbol ’) only at the beginning of the object to be quoted. We can
-get away with this in Scheme syntax because we rely on blanks and
-parentheses to delimit objects. Thus, the meaning of the single quote
-character is to quote the next object. Now we can distinguish between
-symbols and their values:
-
-```
-https://stackoverflow.com/questions/8846628/what-exactly-is-a-symbol-in-lisp-scheme
 ##  Tidy Evaluation
 -   pronouns, to distinguish between objects in environment ls() .env$cyl and
   not associated with the df and data columns in df .data$cyl (df)
@@ -749,24 +773,9 @@ z
 z = with(mtcars, expr = {z = log(hp)})  # column only
 z = within(mtcars, expr = {z=log(hp)})  # entire dataset
 head(z)
-
 ```
 
 ------------------------------------------------------------------------
-
-**function**
-
-```{r function}
-f  <- function(x=NULL) {
-    x^2
-}
-
-formals(f)      ## pairlist
-body(f)         ## language, $\code{call}$
-environment(f)  ## environment
-
-args(f)         ## closure
-```
 
 ```{r parse}
 ## returns expression

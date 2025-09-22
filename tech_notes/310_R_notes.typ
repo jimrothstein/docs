@@ -296,7 +296,7 @@
       affiliation: [],
       email: [] ),
     ),
-  date: [2025-09-18],
+  date: [2025-09-19],
   margin: (x: .3cm,y: .3cm,),
   paper: "us-letter",
   fontsize: 8pt,
@@ -626,8 +626,33 @@ rlang::is_expression(body(f = function() x^y))   # T
 
 #strong[Frame vs Environment] Frame refers to the calling stack of functions. Environment, in R, is property of function, where it looks to find non-local variables.
 
-#strong[Function] - formals(f) returns formal arguments of function, with default values, but NO evaluation, NO look in environment. formals are actually pairlist. Can obtain/modify this pairlist. Formal arguments become promises in the evaluation environment.
+#strong[Function] - formals(f) returns formal arguments of function, with default values, but NO evaluation, NO look in environment. (SEE pairlist)
 
+#block[
+```r
+f  <- function(x=NULL) {
+    x^2
+}
+
+formals(f)      ## pairlist
+$x
+NULL
+body(f)         ## language, $\code{call}$
+{
+    x^2
+}
+environment(f)  ## environment
+<environment: R_GlobalEnv>
+args(f)         ## closure
+function (x = NULL) 
+NULL
+
+L <- list(formals(f), body(f), environment(f), args(f))
+sapply(L, typeof)
+[1] "pairlist"    "language"    "environment" "closure"    
+```
+
+]
 #block[
 ```r
 w = 2
@@ -643,16 +668,6 @@ $z
 w + function() print("hi")
 formals(f) |> class()   # pairlist
 [1] "pairlist"
-
-# can obtain, modify formals
-formals(f)[[2]]
-[1] 1
-formals(f)[[2]]
-[1] 1
-formals(f)[[2]] <- quote(a) 
-f    # changed
-function (x, y = a, z = w + function() print("hi")) 
-x + y + z
 ```
 
 ]
@@ -689,7 +704,7 @@ $names
 names(formals(f))
 [1] "x" "y" "z"
 formals(f)[["y"]]   # a
-a
+[1] 1
 ```
 
 ]
@@ -762,8 +777,41 @@ Treat code as data: ability to manipulate code before evaluated. #strong[NSE, No
 
 #strong[package:]
 
-#strong[Pairlist]
+#strong[pairlist] formals of function are pairlist. Can obtain/modify this pairlist. Formal arguments become promises in the evaluation environment. Hadley says treat like list, relic of past. Ch 18.6.1
 
+```r
+f <- function(x, y = 10) x + y
+formals(f)  |> typeof()
+```
+
+#block[
+```r
+w = 2
+f = function(x,y = 1, z = w + function() print("hi"))  x + y + z
+formals(f)
+$x
+
+
+$y
+[1] 1
+
+$z
+w + function() print("hi")
+formals(f) |> class()   # pairlist
+[1] "pairlist"
+
+# can obtain, modify formals
+formals(f)[[2]]
+[1] 1
+formals(f)[[2]]
+[1] 1
+formals(f)[[2]] <- quote(a) 
+f    # changed
+function (x, y = a, z = w + function() print("hi")) 
+x + y + z
+```
+
+]
 #strong[Parent Frame of function] If function g() is called inside body of function f, the g has the parent frame (aka calling environment) that is execution environment of f.~DRAW Diagram
 
 #strong[Parse] (TODO) Parse returns expression or creates ast structure? Convert a string (character vector, such as "x+y") into an R Expression (ie code), which is NOT a string. Motivation is to setup R object for manipulation #emph[before] evaluation. Parse(\*.R) removes comments. Note: after parsing, the result is NOT character(1), a string.
@@ -840,7 +888,6 @@ quote(2 + 3)  # 2 + 3; no evaluation
 quote(2 + x) # 2 + x; no eval; no insertion
 2 + x
 
-
 # manipulate
     e= quote(x + y + z)  # x + y + z
     length(e)   # 3
@@ -848,8 +895,6 @@ quote(2 + x) # 2 + x; no eval; no insertion
     e[[3]]  <- quote(z + 3)
     e # x + y + (z + 3)
 x + y + (z + 3)
-
-### check several functions
 
 # but sin in double quotes is NOT a function
 quote("sin") |> typeof()   # character
@@ -859,7 +904,7 @@ quote("sin") |> typeof()   # character
     L = list(quote(sin), quote(c), quote(sqrt), quote(`if`))
     sapply(L, typeof)   # all symbols
 [1] "symbol" "symbol" "symbol" "symbol"
-# same, as nice df
+# same, but as nice df
 (data.frame(object = as.character(L),
            type = sapply(L, typeof)
            ))
@@ -918,9 +963,13 @@ $b
 ```
 
 ]
-Please see #strong[quo] as a tool for evaluation to better control #strong[evaluation environment] whereas qenv more as a tool for reproducibility that #strong[captures the outcome of evaluation];. One is "before" and the other one is "after".
+\*\* quo v qenv \*\*
 
-REF: Advanced-R \~ 6.5 Data structure with expression + environment. WHY? With dot (…) often pass several of these rlang::eval\_tidy() \# takes 1 arg (simpler) but base:eval(, ) \# requires 2 args #strong[Referencial Semantics] Changes to values are done in memory. There is no copy. (Example: why important. Also other properties of functions, inverse, etc) R passes by value. (So argument is evaluated before the call?)
+#strong[quo] as a tool for evaluation to better control #strong[evaluation environment] whereas qenv more as a tool for reproducibility that #strong[captures the outcome of evaluation];. One is "before" and the other one is "after".
+
+REF: Advanced-R \~ 6.5 Data structure with expression + environment. WHY? With dot (…) often pass several of these rlang::eval\_tidy() \# takes 1 arg (simpler) but base:eval(, ) \# requires 2 args
+
+#strong[Referencial Semantics] Changes to values are done in memory. There is no copy. (Example: why important. Also other properties of functions, inverse, etc) R passes by value. (So argument is evaluated before the call?)
 
 #strong[Search List] Heirarchy of packages: First is globalenv, followed by packages in reverse order. Loading a package not necessary attach. library() will load and attach.
 
@@ -1004,13 +1053,11 @@ stored in a lookup table? Two symbols can be compared, if equal then same memory
 #block[
 ```r
 y = 4
-y
-[1] 4
-is.symbol(y)
+is.symbol(y)  # F
 [1] FALSE
-is.name(y)
+is.name(y)  # F
 [1] FALSE
-is.object(y)
+is.object(y) #F
 [1] FALSE
 
 # but
@@ -1019,35 +1066,18 @@ is.symbol(y)
 [1] TRUE
 y
 `4`
+
+
+ls()
+ [1] "a"  "b"  "cl" "e"  "f"  "g"  "L"  "w"  "x"  "y"  "z" 
+rm(list = ls())
+
+quote(y) |> is.symbol()   # T
+[1] TRUE
 ```
 
 ]
 See #strong[R Lang Ref: 2.1.3.1] Symbol (aka name), usually name of R object. Use \`as.name() to coerce to symbol or quote() or atoms of parse()
-
-```
-In order to manipulate symbols we need a new element in our language: the
-ability to quote a data object. Suppose we want to construct the list (a
-b). We can’t accomplish this with (list a b), because this expression
-constructs a list of the values of a and b rather than the symbols
-themselves. This issue is well known in the context of natural languages,
-where words and sentences may be regarded either as semantic entities or as
-character strings (syntactic entities). The common practice in natural
-languages is to use quotation marks to indicate that a word or a sentence
-is to be treated literally as a string of characters. For instance, the
-first letter of “John” is clearly “J.” If we tell somebody “say your name
-aloud,” we expect to hear that person’s name. However, if we tell somebody
-“say ‘your name’ aloud,” we expect to hear the words “your name.” Note that
-we are forced to nest quotation marks to describe what somebody else might
-say. We can follow this same practice to identify lists and symbols that
-are to be treated as data objects rather than as expressions to be
-evaluated. However, our format for quoting differs from that of natural
-languages in that we place a quotation mark (traditionally, the single
-quote symbol ’) only at the beginning of the object to be quoted. We can
-get away with this in Scheme syntax because we rely on blanks and
-parentheses to delimit objects. Thus, the meaning of the single quote
-character is to quote the next object. Now we can distinguish between
-symbols and their values:
-```
 
 https:\/\/stackoverflow.com/questions/8846628/what-exactly-is-a-symbol-in-lisp-scheme \#\# Tidy Evaluation - pronouns, to distinguish between objects in environment ls() .env$c y l a n d n o t a s s o c i a t e d w i t h t h e d f a n d d a t a c o l u m n s i n d f . d a t a$cyl (df)
 
@@ -1083,30 +1113,6 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1 4.653960
 
 #horizontalrule
 
-#strong[function]
-
-#block[
-```r
-f  <- function(x=NULL) {
-    x^2
-}
-
-formals(f)      ## pairlist
-$x
-NULL
-body(f)         ## language, $\code{call}$
-{
-    x^2
-}
-environment(f)  ## environment
-<environment: R_GlobalEnv>
-
-args(f)         ## closure
-function (x = NULL) 
-NULL
-```
-
-]
 #block[
 ```r
 ## returns expression
@@ -1126,7 +1132,7 @@ f  <- function(x=NULL) {
 }
 
 cl
-f(c(4, 4, 4))
+Error: object 'cl' not found
 cl  <- call("f", list(x=2))
 is.function(cl)
 [1] FALSE
