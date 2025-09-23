@@ -568,6 +568,13 @@ identical(quote(x), quote(6))               ##  F
 ```
 **quote**  
 
+PURPOSE:  READ (https://www.milesmcbain.com/posts/the-roots-of-quotation/)
+In LISP, quote is way to separate code from data.
+
+Set variable's value to "myvalue".  The  variable 'myvar tells LISP not to evaluate myvar, not code.   quote or 'myvar returns symbolic structure of tokens/symbols or AST, unevaluated
+
+(set 'myvar "myvalue")
+
 (Scheme) does not look for bindings
 - returns expression; stops evaluation; 
 - in particular, allows programmer to then manipulate code, eval in different context
