@@ -86,5 +86,11 @@
   },
   "why_rda.qmd": {
     "why_rda.md": "c08b8677"
+  },
+  "260_typst_example.qmd": {
+    "260_typst_example.typ": "a99b4f1e"
+  },
+  "003_tech_reading.qmd": {
+    "003_tech_reading.typ": "b912a35c"
   }
 }

@@ -9,6 +9,9 @@ format:
     columns: 1
 ---
 
+This is a quarto file, with format: typst
+Only 1 chunk uses actual `typst`
+
 To render to PDF (via quarto's typst cli)
 quarto render <file.qmd>
 

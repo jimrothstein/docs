@@ -1,0 +1,56 @@
+---
+title: "Hello Typst!"
+format:
+  typst:
+    toc: true
+    section-numbering: 1.1.a
+    columns: 2
+keep-typ: false
+knitr:
+  opts_chunk: 
+    collapse: true
+    comment: "#>" 
+    R.options:
+      knitr.graphics.auto_pdf: true
+---
+
+This is a quarto (.qmd) file.  
+Embeds raw `typst` (ex: math)  and `r` chunks.  
+To render:   quarto render 260_typst_example.qmd
+
+Note:  use of knitr to get most of R, chunks.  (optional)
+
+
+## Simple R   (use `{r}`)
+```{r}
+1+2
+```
+
+## Linear Algebra
+
+### with special symbols
+```{=typst}
+$
+forall v, w in V, alpha in KK: alpha dot (v + w) = alpha v + alpha w
+$
+```
+
+### unicode
+
+$$
+∀ v, w ∈ V, α ∈ 𝕂: α ⋅ (v + w) = α v + α w
+$$
+
+### SVD
+
+A can be any matrix
+
+```{=typst}
+$A = U Sigma V$
+Phi
+
+2 + x = ?
+```
+
+This renders as PDF.  It uses quarto via its built-in typst cli to render pdf.
+REF:   https://quarto.org/docs/output-formats/typst.html

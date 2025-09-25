@@ -550,6 +550,12 @@ It is possible to abuse R, using it more like S code. (?)
 **Reification** Abstract idea to treat all code as "data", including functions, structures, etc. This means all such objects can be modified by code. C has. (TODO)
 
 
+**Referencial Integrety**
+
+This is NOT referential integrity:
+If x is reference to object.   And y <- x.  Two references to same object.
+But if change one object, it is copied to new object with new value.  The other reference is untouched.  There are now two objects  
+
 **Referencial Transparency**
 
 A function f is \textbf{referencial  transparent} IF replacing x (an expression) with its value

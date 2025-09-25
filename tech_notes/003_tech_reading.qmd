@@ -1,6 +1,24 @@
 ---
-title: "Tech Reading"
+title: Tech Reading 
+format:
+  typst:
+    toc: true
+    section-numbering: 1.1.a
+    columns: 2
+keep-typ: false
+knitr:
+  opts_chunk: 
+    collapse: true
+    comment: "#>" 
+    R.options:
+      knitr.graphics.auto_pdf: true
 ---
+
+This is a quarto (.qmd) file.  
+Embeds raw `typst` (ex: math)  and `r` chunks and even legacy `latex`
+To render:   quarto render 260_typst_example.qmd
+
+Note:  use of knitr to get most of R, chunks.  (optional)
 \footnotesize
 
 
@@ -24,7 +42,7 @@ As of \today
 - Navarro LSR:  <https://stats.libretexts.org/Bookshelves/Applied_Statistics/Learning_Statistics_with_R_-_A_tutorial_for_Psychology_Students_and_other_Beginners_(Navarro)> 
 
 - Robinson (short linear algebra summary) <https://bookdown.org/ts_robinson1994/10EconometricTheorems/>
--  *Bohm Statistics for Physics* <https://www-library.desy.de/preparch/books/vstatmp_engl.pdf> change of variables (SEE 3.4.1, density as volume)
+- *Bohm Statistics for Physics* <https://www-library.desy.de/preparch/books/vstatmp_engl.pdf> change of variables (SEE 3.4.1, density as volume); Ch 6 Likelihood
 
 *  [Dalpiaz, David, Univ of IL] <https://daviddalpiaz.github.io/appliedstats/>
 
@@ -36,16 +54,11 @@ As of \today
 
 - Linear Regression: <https://www.andrew.cmu.edu/user/achoulde/94842/lectures/lecture09/lecture09-94842.html#thinking-more-critically-about-linear-regression>
 
-- Stéphanie M. van den Berg <https://bookdown.org/pingapang9/linear_models_bookdown/simple.html>
+- Stéphanie M. van den Berg <https://bookdown.org/pingapang9/linear_models_bookdown/simple.html>, uses R, intro book with good explanations.
+
 - Darrin Speegle and Bryan Clair <https://probstatsdata.com/>
 - <r-statistics.co/>
 
-
-
-### exit
-```{r}
-knitr::knit_exit()
-```
 
 ###	Algorithms & ML
 
@@ -145,20 +158,12 @@ $$
 - Rstudio community | SCSS: <https://community.rstudio.com/t/quarto-markdown-list-and-blank-line/160693/4>
 - good video <https://www.youtube.com/watch?v=k-dQ36sx4Rk>
 
-
-### exit
-```{r}
-#knitr::knit_exit()
-
-```
-
 ### Recents 
 -   Bruno, Modern Stats with Tidyverse (Bruno)Bruno Rodrigues <http://modern-rstats.eu/> (web)
 only)
 -   [Keyes, R Without Statistics](https://book.rwithoutstatistics.com/index.html)
 -   Racket:  HTDP <https://htdp.org/2020-5-6/Book/part_prologue.html>
 -   McElreath, fantastic:  <https://www.youtube.com/playlist?list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus>
-
 
 ###	BookClub
 - Janssens, DS at Command Line: <https://www.datascienceatthecommandline.com/2e/>
@@ -515,12 +520,64 @@ CRAN Task Views:  Web Technology & Services: https://cran.r-project.org/web/view
 ####	RESTFUL APIS  (see 0300_tech_notes.md)
 
 
-###	Android
-- \href{https://www.androidauthority.com/lineageos-install-guide-893303/{decent primer:android RoM" 
-- \href{https://developer.android.com/studio/command-line/adb}{adb documentation}
 
 <!--
-
 Rscript -e "rmarkdown::render(<file>, output_format='pdf_document')"
-vim:linebreak:nospell:nowrap:cul tw=78 fo=tqlnr foldcolumn=1 cc=+1
 -->
+
+---
+title: "Hello Typst!"
+format:
+  typst:
+    toc: true
+    section-numbering: 1.1.a
+    columns: 2
+keep-typ: false
+knitr:
+  opts_chunk: 
+    collapse: true
+    comment: "#>" 
+    R.options:
+      knitr.graphics.auto_pdf: true
+---
+
+This is a quarto (.qmd) file.  
+Embeds raw `typst` (ex: math)  and `r` chunks.  
+To render:   quarto render 260_typst_example.qmd
+
+Note:  use of knitr to get most of R, chunks.  (optional)
+
+
+## Simple R   (use `{r}`)
+```{r}
+1+2
+```
+
+## Linear Algebra
+
+### with special symbols
+```{=typst}
+$
+forall v, w in V, alpha in KK: alpha dot (v + w) = alpha v + alpha w
+$
+```
+
+### unicode
+
+$$
+∀ v, w ∈ V, α ∈ 𝕂: α ⋅ (v + w) = α v + α w
+$$
+
+### SVD
+
+A can be any matrix
+
+```{=typst}
+$A = U Sigma V$
+Phi
+
+2 + x = ?
+```
+
+This renders as PDF.  It uses quarto via its built-in typst cli to render pdf.
+REF:   https://quarto.org/docs/output-formats/typst.html
