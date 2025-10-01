@@ -18,6 +18,19 @@ This is a quarto (.qmd) file.
 Embeds raw `typst` (ex: math)  and `r` chunks.  
 To render:   quarto render 260_typst_example.qmd
 
+```{=typst}
+
+#set align(center)
+#block(
+  fill: rgb("f58025"),
+  inset: 14pt,
+  width: 100%,
+[Can use typ file, but then use `typst` ecosystem to render]
+)
+
+```
+
+
 Note:  use of knitr to get most of R, chunks.  (optional)
 
 

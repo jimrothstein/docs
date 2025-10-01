@@ -1,3 +1,21 @@
+---
+title: "300_tech_notes.qmd"
+format:
+  typst:
+    toc: true
+    section-numbering: 1.1.a
+    columns: 1
+keep-typ: false
+knitr:
+  opts_chunk: 
+    collapse: true
+    comment: "#>" 
+    R.options:
+      knitr.graphics.auto_pdf: true
+---
+
+This is quarto file, and render as quarto.
+Contains raw typst chunks.
 
 #### Hardware
 23 DEC 2024 - wireless mouse, $10, bestbuy, M220 logitech, 18 month
@@ -787,11 +805,9 @@ curl \
    https://youtube.googleapis.com/youtube/v3/commentThreads?videoId=Mec9sw1cJk8&part=snippet,replies
 ###
 
-\newpage
 #   CURL |  YOUTUBE API | GOOGLE API |  OAUTH 2.0 | 
 
 
-\newpage
 
 client = oauth_client(id=  client_id,
         token_url  = token_url,
@@ -816,7 +832,6 @@ Some Remarks:
   -	Most of the R work is done at lower level, such as packages curl and httpuv.  
 	
 
-\newpage
 
 begin{verbatim}
 				G O O G L E
@@ -962,9 +977,26 @@ RETAIL DEMO UNIT ('retail mode'):
 	wifi device.  Locked means bootloder hard-coded insist OS match a code.
 -	if CAN unlock bootloader , BARGAIN.    Beware endless hours otherwise.
 
-*** Google Pixel 3a XL (my phone)
+- bootloader lock - at least TWO kinds
+- carrier lock - that carrier only and even if unlocked software may persist
+- factory lock - seems many are carrier unlocked; but less or factory unlocked.
+
+*** Google Pixel **3a XL** (my phone,  6.3"  good size) - screen broken Aug '25
 -	Android 12 = final google update.
 - DO expect "unofficial" Android 13 for this phone (sooner or lalter).
+
+-  Pixel 4a (5.8", too small)  cheaper glass than pixel 3a; practical gone (Aug '25)
+- OnePlus 
+
+```{=typst}
+#set align(center)
+#block(
+  fill: rgb("f58025"),
+  inset: 14pt,
+  width: 100%,
+[=debloat:   adb -d shell   -d for device, not emulator then use pm command to list/remove packages]
+)
+```
 
 
 *** **OEM Unlock**
