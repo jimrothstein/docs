@@ -47,18 +47,17 @@ As of \today
 ### Basic Probability/Statistics
 
 - Navarro LSR:  <https://stats.libretexts.org/Bookshelves/Applied_Statistics/Learning_Statistics_with_R_-_A_tutorial_for_Psychology_Students_and_other_Beginners_(Navarro)> 
-- Robinson (short linear algebra summary) <https://bookdown.org/ts_robinson1994/10EconometricTheorems/>
 - *Bohm Statistics for Physics* <https://www-library.desy.de/preparch/books/vstatmp_engl.pdf> change of variables (SEE 3.4.1, density as volume); Ch 6 Likelihood
 *  [Dalpiaz, David, Univ of IL] <https://daviddalpiaz.github.io/appliedstats/>
 - PSU (stat 462) <https://online.stat.psu.edu/stat462/node/93/>
 *  Roback: LINE:  <https://bookdown.org/roback/bookdown-BeyondMLR/ch-MLRreview.html#assumptions-for-linear-least-squares-regression>
 - Kuiper, Shonda: simple, clear:   video: <https://www.youtube.com/watch?v=jQkK0XMrAdM>
-- Race, Shaina gentle intro to lin alg:, <https://shainarace.github.io/LinearAlgebra/index.html>
 - Linear Regression: <https://www.andrew.cmu.edu/user/achoulde/94842/lectures/lecture09/lecture09-94842.html#thinking-more-critically-about-linear-regression>
 - Stéphanie M. van den Berg <https://bookdown.org/pingapang9/linear_models_bookdown/simple.html>, uses R, intro book with good explanations.
 - Darrin Speegle and Bryan Clair <https://probstatsdata.com/>
 - <r-statistics.co/>
 - <https://cran.r-project.org/doc/contrib/Faraway-PRA.pdf> linear algebra, Faraway
+- kaplan, 3rd Ed, Modern DS  https://mdsr-book.github.io/mdsr3e/
 
 
 ### Textbooks - MS level
@@ -130,6 +129,9 @@ As of \today
   *   Rafael, Book2: <http://rafalab.dfci.harvard.edu/dsbook-part-2/> (2020?), esp
     Linear Models and ML chapters
   *   Gallier,  advanced linear alg <https://www.seas.upenn.edu/~cis5150/linalg-I.pdf>
+- Robinson (short linear algebra summary) <https://bookdown.org/ts_robinson1994/10EconometricTheorems/>
+- Race, Shaina gentle intro to lin alg:, <https://shainarace.github.io/LinearAlgebra/index.html>
+- Magalit/Rabinoff: https://math.libretexts.org/Bookshelves/Linear_Algebra/Interactive_Linear_Algebra_(Margalit_and_Rabinoff)
 
 
 #### Logistic Regression (binary response)
