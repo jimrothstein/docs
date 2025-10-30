@@ -11,11 +11,6 @@ b/c  it is 3rd in list :set spellfiles?
 Medicare Card ID:   1F98NP7MC68   (see medicare.gov)
 Oregon Imaging (Eugene) 458-215-4050
 
-##  News
--  23DEC2024 - convert  back to qmd !  (standardize on one markdown file type)
--   3JUNE2024 - convert qmd to  emacs org
--   2MAY2023  - convert md file to qmd
-
 <!--
 Create Footnote:
         This will be a footnote [^11] 
@@ -3092,7 +3087,7 @@ As service from Express Scripts, review meds with Pharmacist ...Actually got som
 ### 1 OCT 2025 - flu + covid-19 shots
 - definitely felt both shots in arm.
 - first 12 hours only sore arm
-- but that night - sick, poor sleep, fever, sniffles.....
+- but that night - sick, poor sleep, fever, sniffles..... I assume due to flu shot.
 - and next day - still out of it.
 - 48 hours after shot - feel normal.   48 hours
 
