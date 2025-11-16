@@ -96,6 +96,10 @@ As of \today
 - Kazdan |  normal equations, linear alg<https://www2.math.upenn.edu/~kazdan/312S14/>
 - Kazdan, many good references: <https://www2.math.upenn.edu/~kazdan/>
 
+
+
+#### LLM/Generative AI
+- 
 #### Intro to Linear Alg & Models, 
 
   *  Kuiper, Shonda: simple, clear:   video: <https://www.youtube.com/watch?v=jQkK0XMrAdM>
