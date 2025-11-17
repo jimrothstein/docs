@@ -3091,3 +3091,4 @@ As service from Express Scripts, review meds with Pharmacist ...Actually got som
 - and next day - still out of it.
 - 48 hours after shot - feel normal.   48 hours
 
+### STOP   go to 2025_medical_notes.typ 

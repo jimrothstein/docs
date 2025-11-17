@@ -1,3 +1,7 @@
+
+
+=== prior, see medical_notes.qmd,   continue here:
+
 Nov 10, 2025
 
 From:    Jim Rothstein (Kaiser #53662095, DOB 12/23/1955)
@@ -85,4 +89,16 @@ I have known about gallstones for 15 years.  I find the odds that gallbladder ge
 
 
 
+
+SUN 16 NOV 2025 - Colonoscopy - What an ordeal!
+7 NOV - 2nd colonsocpy - success
+8 NOV - ER/hosptal
+9 NOV - release hospital, return Eugene
+10 NOV (Mon) - no BM
+11 NOV (T)  - BM, very light, slender, "normal"
+12 NOV (W)  - BM, bit more
+13 NOV (R)  - do not feel right, 4 pm - bamm - big mud pile in pants!; many BM
+14 NOV (F)  - BM every couple hours; nothing stays
+15 NOV (Sa) - less BM, but still can stay
+16 NOV (S) - better, eating, stays in;   
 

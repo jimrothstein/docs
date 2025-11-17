@@ -28,18 +28,3 @@ Create a footnote: [^1]
 \pagebreak
 
 
-## ------------------------  R & LLM
-- Large LLMs book (@ 2/1/2025):  <https://luisdva.github.io/llmsr-book/before-start.html>
-
-
-- ellmer <https://github.com/tidyverse/ellmer/>
-
-Chat examples
-
-- Shiny assistant <https://shiny.posit.co/blog/posts/shiny-assistant/>
-- query chat <https://github.com/posit-dev/querychat  
-  Given a db, write query in English; LLM adjusts shiny app to show graphs, data
-
-- dev article <https://docs.continue.dev/customize/overview> 
-- R, ollama, deepseek <https://drmowinckels.io/blog/2025/ollama/>
-
