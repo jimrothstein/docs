@@ -845,4 +845,20 @@ A154283, 	Appeal affirms w/o opinion  re:	2013 Employment Appeals Board,
     (#12) "Amy has continued to emotionally, mentally and psychologically
     abuse and attack Timindra through unwarranted court filings and hearings."
     \
-vim: ts=2 sw=0 expandtab nolinebreak
+
+
+### 20 NOV 2025 - visor.oregon.gov 
+Date:  20 NOV 2025
+AMY LYNN ZIMMERMAN
+ID#
+14080975
+
+Local #
+24000530
+Status:   Under supervision
+
+Location
+Marion County Community Corrections  (here? https://www.co.marion.or.us/SO/Probation,   ZIMMERMAN, AMY LYNN 14080975 WITKOWSKI, ANTONIETTA =  PO)
+
+Location Type: Detention Center
+3610 Aumsville Hwy SE
