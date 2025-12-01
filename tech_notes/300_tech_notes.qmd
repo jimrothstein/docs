@@ -431,18 +431,29 @@ things and there are some groups you don't want to capture.
 - LMDE is meant to run Cinnamon (and not i3);  I got i3 to run using testing Debian.  But this breaks LMDE (Cinnamon).
 
 21-July-2023:   Rumors, Linux Mint (now based upon Ubuntu/Canonical ) may be moving to **LMDE** (Linux Mint Debian Edition)
-Why?  some issues with Canonical?  Claims that LMDE much firmer ground; Mint will also then be more independent.
-2024-01-13 - Linux Mint updates, seems no problem
+- 2024 - tried Mint; I think had some issues with i3; tried Debian
+- 2025 - Debian 13
 
 - Booting ... firmware | bootloader (finds all kernels, os) | grub2 (user
 select) ;   
 - READ >info grub <CR>
+
 - /kernel is MINIMUM to start;  this is why drivers often need separate install,
 not in kernel.
 - SWAP - latest Linuxmint built-in, no need
 - LinuxMint - installer sets mountpoints
 - PARTIONs - \home is separate;  \ for all else (~30-40GB enough)
 - Boot drive - needs flag `boot` and `esp` (?)
+
+#### GRUB2
+- 1st: do not panic
+- pre-linux boot
+- Usally all it wants is to know which partition is root 
+- Read:  any simple article on this. (ex: https://www.dedoimedo.com/computers/grub-2.html)
+- May see (hd0) or (hd0,gpt2), (hd0,gpt3) refer to hard drive and partition
+- In my case (hd0, 2), and command ~ set root=(hd0,gpt2)
+- May involve updates to /etc/default/grub (use their tool)
+- 
 
 *** SETUP/CONFIG new HP Elitebook machine 
    <2024-10-10 Thu>  HP Elitebook but with pure Debian/Cinnamon & i3
@@ -472,7 +483,7 @@ sda      8:0    0 238.5G  0 disk
 ├─sda3   8:3    0   977M  0 part [SWAP]
 └─sda4   8:4    0 209.1G  0 part /home
 
-du -f (run on 11NOV2024)
+**du -f (run on 11NOV2024)**
 Filesystem      Size  Used Avail Use% Mounted on
 udev            7.5G     0  7.5G   0% /dev
 tmpfs           1.5G  1.7M  1.5G   1% /run
@@ -494,10 +505,10 @@ To burn iso on usb (I never got gui's to work)
 1) sudo dd bs=4M if=/path/to/file.iso of=/dev/sda status=progress oflag=sync
 
 
-*** mount usb_device (thumb drive)
+- mount usb_device (thumb drive)
 - format, partition etc.
 check fs:
-df -Th /dev/sda
+**df -Th /dev/sda**
 
 -format -NO!  use fat32 (above) to work with  other devices
 sudo mkfs.exfat /dev/sda
@@ -525,7 +536,7 @@ setkbmap seems to suggest using caps:swapescape and not caps:escape, but xmodmap
 
 }
 
-**	cron job, crontab
+**cron job, crontab**
 
 {
 	grep jim /var/log/syslog  # see cron jobs that ran
