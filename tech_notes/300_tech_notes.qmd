@@ -288,7 +288,15 @@ immutable. HEADS can move around.
 
 - git diff HEAD~ HEAD #show change between prior and most recent commit ("https://git-scm.com/docs/git-diff_) book: (https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository.html#_git_diff_staged)
 - git diff HEAD -- path/to/file.R   # this file only, show diff
+(Ex:   git diff play dev  # merge back into dev, but 1st see changes)
 
+- [ ] UNDO one or more commits (many ways)
+Detach head by git checkout <SHA>, then build out new branch (git checkout -b new)
+git revert <SHA>   # keeps history, undo one past commit
+git revert HEAD~2..HEAD  #  keep history, but undo last 2 commits
+
+- git reflog  # how HEAD jumped around
+- git checkout HEAD@{n}  # move back to n
 ** Install R
    - on Ubuntu,  or mintlinux virgina,  use  jammy and  follow https://cran.r-project.org/bin/linux/ubuntu/ (works)   
    - on Debian (such as LMDE) follow https://cran.r-project.org/bin/linux/debian/

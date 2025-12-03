@@ -102,3 +102,7 @@ SUN 16 NOV 2025 - Colonoscopy - What an ordeal!
 15 NOV (Sa) - less BM, but still can stay
 16 NOV (S) - better, eating, stays in;   
 
+
+Monday 1 DEC 2025 - 2nd 24 hour of year (Kaiser) (4200 ml) fasting
+- diet includes assorted healthy items, but also ...
+- beans, 1 colard green, brown rice, assorted lettuc mix; dairy; 
