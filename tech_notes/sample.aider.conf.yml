@@ -1,0 +1,45 @@
+# Aider configuration file
+# This file contains settings for aider, an AI-powered code assistant
+
+# aider --model openrouter/kwaipilot/kat-coder-pro:free
+# Model configuration
+model:
+  provider: openrouter
+  model: kwaipilot/kat-coder-pro:free
+
+# Prompt configuration
+prompts:
+  file: prompts.md
+
+# Git configuration
+git:
+  auto_commit: true
+  commit_message: "Auto-commit from aider"
+
+# LLM provider configuration
+openrouter:
+  api_key: ${OPENROUTER_API_KEY}
+  # You can add more openrouter specific settings here
+
+# Environment variables
+env:
+  - OPENROUTER_API_KEY
+
+# Additional settings
+settings:
+  # Enable verbose output
+  verbose: true
+  
+  # Allow aider to edit files
+  allow_edits: true
+  
+  # Set the default branch for git operations
+  default_branch: main
+
+# System prompt
+system_prompt: |
+  You are an expert R programmer and emacs user. 
+  You are working on a Debian 13 system.
+  Goal is to read .qmd files (R markdown) and write a new file in typst format (*.typ)
+  Your responses should be concise and to the point.
+  Focus on practical solutions and best practices.

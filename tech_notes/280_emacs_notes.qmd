@@ -16,11 +16,6 @@ To render to PDF (via quarto's typst cli)
 quarto render <file.qmd>
 
 
-::: callout-note
-
-quarto render <file.qmd> (uses quarto/typst cli to generate pdf)
-quarto render 280_emacs_notes.qmd --to gfm --output 280_emacs_notes.md
-:::
 
 ::: {.regular_text}
 
@@ -28,6 +23,8 @@ quarto render 280_emacs_notes.qmd --to gfm --output 280_emacs_notes.md
 
 #### TODO
 - i3 and emacs can conflict.    SEE: https://sqrtminusone.xyz/posts/2021-10-04-emacs-i3/
+- Under video, see Prot's HELP video
+- Under ess-intro, see github website 
 
 #### HELP
 ^h v  ......       display-line-number ( variable) \
@@ -61,7 +58,7 @@ M-x describe-mode
 - daviwil:  emacs from scratch: videos + config
 <https://github.com/daviwil/emacs-from-scratch/tree/8c302a79bf5700f6ef0279a3daeeb4123ae8bd59>
 - Tsoding 
-- Protesillaos
+- Protesillaos, see HELP video
 - Goparism
 - tdhock (12 videos + R)
 - hacking vanilla
@@ -97,4 +94,10 @@ Run lisp ?  or REPL:   open  ~/code/elisp_project/010_basic_elisp.el
 - gnu elisp https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html 
 - Toretzky Gentle Common Lisp http://www.cs.cmu.edu/~dst/LispBook/
 
+:::
+
+::: callout-note
+
+quarto render <file.qmd> (uses quarto/typst cli to generate pdf)
+quarto render 280_emacs_notes.qmd --to gfm --output 280_emacs_notes.md
 :::

@@ -17,6 +17,16 @@ knitr:
 This is quarto file, and render as quarto.
 Contains raw typst chunks.
 
+
+### Dec 2025 - HP boot reports amdgpu psp gfx failed, but continues
+-Status:  unresolved
+-HP 845 G8, laptop;  otherwise runs fine.
+-sudo dmesg
+-sudo journalctr -b 
+- secureddisplay?  LOAD_TA(0x1)
+
+
+
 #### LLM
 
 Chris Brown:  setup in R, ellmer, copilot, openRouter...
@@ -278,8 +288,10 @@ lots of useful zsh commands buried in make_project
 
 ### GIT commands   
 
-HEAD - can point to branch (tip) or a commit (detached HEAD). Commits are
-immutable. HEADS can move around.
+HEAD - normally points to branch (tip) but can point to commit (detached HEAD). 
+**Goes where you go, like a shadow.** Commits are
+immutable. HEADS can move around.    
+
 - git merge --no-ff --no-commit main   (no fastforward, *dry-run*) 
 
 - git restore --source master~2 path/file    (2 commits back, give path to file)
