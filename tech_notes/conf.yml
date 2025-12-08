@@ -4,6 +4,7 @@
 # Model configuration
 model: gpt-4o
 editor-model: gpt-4o-mini
+# Additional model: openrouter/kwaipilot/kat-coder-pro:free
 
 # Repository settings
 auto-commits: true
