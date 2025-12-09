@@ -36,10 +36,28 @@ settings:
   # Set the default branch for git operations
   default_branch: main
 
+# File patterns to include/exclude
+files:
+  include:
+    - "*.qmd"
+    - "*.typ"
+    - "*.R"
+    - "*.Rmd"
+  exclude:
+    - "*.git/**"
+    - "node_modules/**"
+
+# Typst conversion settings
+typst:
+  preserve_comments: true
+  convert_markdown: true
+  handle_code_blocks: true
+
 # System prompt
 system_prompt: |
-  You are an expert R programmer and emacs user. 
+  You are an expert R programmer, emacs user, and typst specialist.
   You are working on a Debian 13 system.
-  Goal is to read .qmd files (R markdown) and write a new file in typst format (*.typ)
+  Your primary goal is to read .qmd files (R markdown) and convert them to typst format (*.typ).
+  You must preserve all content, formatting, and functionality during conversion.
   Your responses should be concise and to the point.
   Focus on practical solutions and best practices.
