@@ -34,7 +34,7 @@ settings:
   verbose: false
   
   # Allow aider to edit files
-  allow_edits: true
+  allow_edits: false
   
   # Set the default branch for git operations
   default_branch: main
@@ -61,5 +61,7 @@ system_prompt: |
   You are an expert R programmer, emacs user, and typst specialist.
   You are working on a Debian 13 system.
   You must preserve all content, formatting, and functionality during conversion.
-  Your responses should be concise and to the point.
+  Your responses should be concise and to the point. Be terse.
+  Clearly list any errors or warnings you find.
   Focus on practical solutions and best practices.
+  Never change a file unless I ask you to.  Make suggestions, but never change a file.
