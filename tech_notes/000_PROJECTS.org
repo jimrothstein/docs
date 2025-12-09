@@ -1,18 +1,18 @@
-Org mode Cheat Sheet
 
-;; MUST BE in init.el
-;; run bash shell in or
-(org-babel-do-load-languages
- 'org-babel-load-languages
- '(
-   (shell . t)
-   ;; Add other languages as needed
-   ))
+at: <2025-12-08 Mon>
+* Projects - TODO 
+* Learn Org mode 
+Goal is START organizing projects and NEXT TODO for each;  replacing paper.
+Second step:  Org mode vs denote vs ?  
+* TODO set org-agenda-files to collect ALL TODOs. 
+** Cheat Sheet
+- [ [tutorial][https://emacsclub.github.io/html/org_tutorial.html] ]
+- [ [another tutorial][https://orgmode.org/worg/org-tutorials/orgtutorial_dto.html] ]
+** TODO Examples:  "*.ogg"
+* Learn Help Files
+* Learn: Denote
+* Legacy ??
 
-** Two Years OLD - do not use** 
-*bold*
-_underline_
-[ [nytimes][https://nytimes.com] ]
 
 #+BEGIN_CENTER
 hi
