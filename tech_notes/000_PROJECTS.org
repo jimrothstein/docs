@@ -11,6 +11,10 @@ Second step:  Org mode vs denote vs ?
 ** TODO Examples:  "*.ogg"
 * Learn Help Files
 * Learn: Denote
+* Algebra, Math, Statistics
+
+Using typst (learning curve to get symbols and format right).
+Convert Math (qmd) to typst (typ)
 * Legacy ??
 
 

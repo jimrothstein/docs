@@ -5,8 +5,6 @@
 # aider --model openrouter/kwaipilot/kat-coder-pro:free
 # Model configuration
 model: openrouter/kwaipilot/kat-coder-pro:free
-  #provider: openrouter
-  #model: kwaipilot/kat-coder-pro:free
 
 # Prompt configuration
 prompts:
@@ -14,7 +12,7 @@ prompts:
 
 # Git configuration
 git:
-  auto_commits: true 
+  auto_commits: false 
   commit_message: "Auto-commit from aider"
   dry-run: true
 
@@ -27,13 +25,16 @@ openrouter:
 env:
   - OPENROUTER_API_KEY
 
+# add validation
+validate_env: true
+
 # Additional settings
 settings:
   # Enable verbose output
   verbose: false
   
   # Allow aider to edit files
-  allow_edits: false
+  allow_edits: true
   
   # Set the default branch for git operations
   default_branch: main
