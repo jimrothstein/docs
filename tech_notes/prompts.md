@@ -11,5 +11,3 @@ When you reply to me, please try to identify categories:   for example, lines of
 
 If you are not sure, please ask me to clarify.  Thanks!
 
-
-
