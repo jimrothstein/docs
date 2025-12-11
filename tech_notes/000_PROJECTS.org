@@ -4,28 +4,33 @@ at: <2025-12-08 Mon>
 * Learn Org mode 
 Goal is START organizing projects and NEXT TODO for each;  replacing paper.
 Second step:  Org mode vs denote vs ?  
-* TODO set org-agenda-files to collect ALL TODOs. 
-** Cheat Sheet
+TODO: set org-agenda-files to collect ALL TODOs. 
 - [ [tutorial][https://emacsclub.github.io/html/org_tutorial.html] ]
 - [ [another tutorial][https://orgmode.org/worg/org-tutorials/orgtutorial_dto.html] ]
-** TODO Examples:  "*.ogg"
 * Learn Help Files
 * Learn: Denote
 * Algebra, Math, Statistics
-
-Using typst (learning curve to get symbols and format right).
-Convert Math (qmd) to typst (typ)
+- write simple Baysian example
+- write ellipse transformation to cononical coordinates. 
+- Calculus:  polar coordnates (r, theta),  r can be negative!
+* i3
+- don't waste time
+- video? study others?
+* Typst
+USE online typst editor to debug
+Basic:  000_simple.typ Using typst (learning curve to get symbols and format right).
+Math:  
+Convert Math (qmd) to typst (typ)?
+* R
+- typst:  Ch 1,2 my Advanced R notes
+* Next Phone
+- Pixel 3a XT?
 * Legacy ??
 
 
 #+BEGIN_CENTER
 hi
 #+END_CENTER
-
-
-Do not use markdown
-
-##
 
 
 <2024-05-04 Sat>:
@@ -35,19 +40,4 @@ Do not use markdown
 #+BEGIN_SRC bash
   git status
 #+END_SRC
-
-#+RESULTS:
-| On        | branch                                    | main              |            |         |         |         |                |         |            |            |      |
-| Your      | branch                                    | is                | up         | to      | date    | with    | 'origin/main'. |         |            |            |      |
-|           |                                           |                   |            |         |         |         |                |         |            |            |      |
-| Changes   | not                                       | staged            | for        | commit: |         |         |                |         |            |            |      |
-| (use      | "git                                      | add               | <file>..." | to      | update  | what    | will           | be      | committed) |            |      |
-| (use      | "git                                      | restore           | <file>..." | to      | discard | changes | in             | working | directory) |            |      |
-|           | modified:                                 | 999_org_cheat.org |            |         |         |         |                |         |            |            |      |
-|           |                                           |                   |            |         |         |         |                |         |            |            |      |
-| Untracked | files:                                    |                   |            |         |         |         |                |         |            |            |      |
-| (use      | "git                                      | add               | <file>..." | to      | include | in      | what           | will    | be         | committed) |      |
-|           | ../jobs/#2025_clinical_trials_resume.qmd# |                   |            |         |         |         |                |         |            |            |      |
-|           |                                           |                   |            |         |         |         |                |         |            |            |      |
-| no        | changes                                   | added             | to         | commit  | (use    | "git    | add"           | and/or  | "git       | commit     | -a") |
 

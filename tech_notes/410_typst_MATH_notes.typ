@@ -1,382 +1,268 @@
-// Some definitions presupposed by pandoc's typst output.
-#let blockquote(body) = [
-  #set text( size: 0.92em )
-  #block(inset: (left: 1.5em, top: 0.2em, bottom: 0.2em))[#body]
-]
+#set document(title: "0002_math_equations")
+#set page(margin: 0.5in)
+#set text(size: 11pt)
 
-#let horizontalrule = [
-  #line(start: (25%,0%), end: (75%,0%))
-]
+// Goal: Combine math, linear algebra, statistics, ML (not R)
 
-#let endnote(num, contents) = [
-  #stack(dir: ltr, spacing: 3pt, super[#num], contents)
-]
+Goal: Combine math, linear algebra, statistics, ML (not R)
 
-#show terms: it => {
-  it.children
-    .map(child => [
-      #strong[#child.term]
-      #block(inset: (left: 1.5em, top: -0.4em))[#child.description]
-      ])
-    .join()
+== REF:
+See: #link("https://github.com/jimrothstein/code_publish/blob/master/MATH/0002_math_equations.qmd")
+
+== Error
+
+Suppose true function is quadratic and we model as linear. In most regions error is large and consistently large. Is this error *bias*? a failure of the model?
+
+Noise?
+use *averaging* to minimize
+
+"2024-05-04 Sat":
+- vector means 'direction' and 'magnitude' (no coordinate system).
+  With this DEF, 2 vectors are the *same* if have same direction and
+  magnitude. (Translation seems implicit; but we have no coordinate
+  system)
+
+== Law of Large Numbers
+
+$ bar(x) $
+
+As sample size increases, approach $mu$
+$lim_(n -> infinity) bar(x) = mu$
+
+== But CLT
+
+for any n, compare mean of many k samples will approach $mu$ much faster
+
+$lim_(k -> infinity) bar(x_k) = n * mu$
+
+---
+
+$SS_(x) = sum (x - bar(x))^2 = sum x^2 - ( (sum x)^2 ) / n$
+
+---
+
+== Gamma Function
+- (intution) #link("https://www.youtube.com/watch?v=Qjeswpm0cWY")
+  - Consider $0!$, $1!$, $2!$ ... Plot; What would $pi!$ $0.5!$
+- In other words, find the function that fits all integers of $x$, but works for any $x$ real.
+
+---
+
+== Bayes
+- Video, Ox series: #link("https://youtu.be/U1HbB0ATZ_A?si=ljknvvraM7Fn4hz3")
+
+== Explain $s^2$ vs $hat(sigma)^2$
+
+$s^2$ refers to sample variance
+$(1 / N) sum_n (x - bar(x))^2$
+
+$hat(sigma)^2$ refers to population variance estimator
+
+$s^2$ is biased (toward values closer to mean). And if $N=1$, $s^2$ we get $0$, hardly believable population variance.
+(The reason is subtle, when $N$ is small odds are it will not capture enough of outliers. SEE LSR)
+
+$sum_(k=1)^n x_k$
+
+$x = sqrt(b)$
+
+If $a^2=b$ and $b=2$, then the solution must be
+either $a = +sqrt(2)$ or $a = -sqrt(2)$.
+
+== linear functional
+
+$phi : R^3 -> R$
+$phi(v) = 4 dot x - 5 dot y + 2 dot z$
+
+== Entropy
+
+*entropy, information* $ H(X) $
+Better to find information about a variable that very uncertain, against variable more predictable
+
+REF: #link("https://archive.org/details/elementsofinform0000cove_l9p7")
+
+Given a random variable $X$, what is amount of *surprise* when learning value of $X$?
+The definition:
+
+is chosen because it has *nice* properties that we expect of *information*.
+
+$X$ is discrete random variable
+try $H$, $T$ each prob = 1/2
+
+$cal(P)(X) = sum_(i=1)^n p(x) log(p(x))$
+
+"double-struck(P) = -"
+
+Example:
+
+How many binary questions need to ask?
+ Prob(X) = a (1/2), b(1/4), c(1/4) 
+
+double-struck(P)
+
+$ cal(P) $
+
+double-struck(P)
+
+$ P[ ] $
+
+ Prob(x) = cases(
+  -x, "if " x < 0,
+  0, "if " x = 0,
+  x, "if " x > 0,
+) 
+
+$ cal(P)(X) = cases(
+  a, 1/2,
+  a, "if " x < 0,
+  b, "if " x = 0,
+  c, "if " x > 0,
+) $
+
+sums, regression
+
+// R code chunks (setup and library omitted as R-specific)
+
+---
+
+hello _world_.
+
+== Summations
+
+```
+// Without Indices
+
+$sum x_i$
+
+$sum x_i^2$
+
+$sum x_i y_i$
+
+// With Indices - Inline Form
+
+$sum_(i=1)^n x_i$
+
+$sum_(i=1)^n x_i^2$
+
+$sum_(i=1)^n x_i y_i$
+
+// With Indices - Display Form
+
+$sum_(i=1)^n x_i y_i$
+
+== Independent Samples
+
+$mu_(bar(x)_1 - bar(x)_2) = mu_1 - mu_2$
+
+$sigma_(bar(x)_1 - bar(x)_2)^2 = frac(sigma_1^2, n_1) + frac(sigma_2^2, n_2)$
+
+$mu_(hat(p)_1 - hat(p)_2) = p_1 - p_2$
+
+$sigma_(hat(p)_1 - hat(p)_2)^2 = frac(p_1 (1 - p_1), n_1) + frac(p_2 (1 - p_2), n_2)$
+
+== Pooled Sample Variance
+
+$s_p^2 = frac((n_1 - 1)s_1^2 + (n_2 - 1)s_2^2, n_1 + n_2 - 2)$
+
+== Pooled Sample Proportion
+
+$hat(p) = frac(n_1 hat(p)_1 + n_2 hat(p)_2, n_1 + n_2)$
+
+== Chi-Square Test
+
+$chi^2 = sum frac((O - E)^2, E)$
+
+== Correlations
+
+$SS_(x) = sum (x - bar(x))^2 = sum x^2 - frac((sum x)^2, n)$
+
+$SS_(x, y) = sum (x - bar(x))(y - bar(y)) = sum x*y - frac((sum x)(sum y), n)$
+
+$r = frac(SS_(x*y), sqrt(SS_(x*x) SS_(y*y)))$
+
+== Regression
+
+// Population Regression Line
+
+$E(y) = alpha + beta x$
+
+var(y) = sigma^2
+
+// Least Squares Line
+
+hat(y) = a + bx
+
+where
+
+b = frac(SS_(xy), SS_(xx))
+
+and
+
+$bar(y) = a + b bar(x)$
+
+// Residual Sum of Squares
+
+SS_(Resid) = sum (y - hat(y))^2 = sum y^2 - a sum y - b sum xy
+
+// Standard Errors
+
+$s_e = sqrt(frac(SS_(Resid), n - 2))$
+
+$s_b = frac(s_e, sqrt(SS_(xx)))$
+
+$s_(a + bx) = s_e sqrt(1 + frac(1, n) + frac((x - bar(x))^2, SS_(xx)))$
+
+for prediction:
+
+$se(y - hat(y)) = s_e sqrt(1 + frac(1, n) + frac((x - bar(x))^2, SS_(xx)))$
+
+== Variance
+
+$SS_(Tr) = frac(T_1^2, n_1) + frac(T_2^2, n_2) + ... + frac(T_k^2, n_k) - frac(T^2, n)$
+
+$SS_(To) = x_1^2 + x_2^2 + ... + x_k^2 - frac(T^2, n)$
+
+$SS_(E) = SS_(To) - SS_(Tr)$
+```
+
+```
+// R code for plotting (converted to a Typst code block)
+#raw(lang: "r"){
+density_object = density(mpg\$hwy)
+pdf("~/Downloads/print_and_delete/out.pdf")
+plot(density_object)
+dev.off()
 }
 
-// Some quarto-specific definitions.
-
-#show raw.where(block: true): set block(
-    fill: luma(230),
-    width: 100%,
-    inset: 8pt,
-    radius: 2pt
-  )
-
-#let block_with_new_content(old_block, new_content) = {
-  let d = (:)
-  let fields = old_block.fields()
-  fields.remove("body")
-  if fields.at("below", default: none) != none {
-    // TODO: this is a hack because below is a "synthesized element"
-    // according to the experts in the typst discord...
-    fields.below = fields.below.amount
-  }
-  return block.with(..fields)(new_content)
+#raw(lang: "r"){
+filename = "~/Downloads/print_and_delete/out.png"
+png(filename = filename,
+  width = 480, height = 480, units = "px", pointsize = 12)
+plot(density_object)
+dev.off()
 }
+```
+/home/jim/code/docs/tech_notes/500_ML_Notes.qmd
+/home/jim/code/docs/tech_notes/
 
-#let empty(v) = {
-  if type(v) == "string" {
-    // two dollar signs here because we're technically inside
-    // a Pandoc template :grimace:
-    v.matches(regex("^\\s*$")).at(0, default: none) != none
-  } else if type(v) == "content" {
-    if v.at("text", default: none) != none {
-      return empty(v.text)
-    }
-    for child in v.at("children", default: ()) {
-      if not empty(child) {
-        return false
-      }
-    }
-    return true
-  }
+= ML Notes
 
-}
+== Logistic Regression
+- Using data, tune a model parameters of logistic equation to predict probabilities (ex: horse racing !)
+  Compare to ACTUAl output (win or loss) to do the tweeking. If your accuracy exceeds the Bookie (who introduces bias, to make money.) You can win!
 
-// Subfloats
-// This is a technique that we adapted from https://github.com/tingerrr/subpar/
-#let quartosubfloatcounter = counter("quartosubfloatcounter")
-
-#let quarto_super(
-  kind: str,
-  caption: none,
-  label: none,
-  supplement: str,
-  position: none,
-  subrefnumbering: "1a",
-  subcapnumbering: "(a)",
-  body,
-) = {
-  context {
-    let figcounter = counter(figure.where(kind: kind))
-    let n-super = figcounter.get().first() + 1
-    set figure.caption(position: position)
-    [#figure(
-      kind: kind,
-      supplement: supplement,
-      caption: caption,
-      {
-        show figure.where(kind: kind): set figure(numbering: _ => numbering(subrefnumbering, n-super, quartosubfloatcounter.get().first() + 1))
-        show figure.where(kind: kind): set figure.caption(position: position)
-
-        show figure: it => {
-          let num = numbering(subcapnumbering, n-super, quartosubfloatcounter.get().first() + 1)
-          show figure.caption: it => {
-            num.slice(2) // I don't understand why the numbering contains output that it really shouldn't, but this fixes it shrug?
-            [ ]
-            it.body
-          }
-
-          quartosubfloatcounter.step()
-          it
-          counter(figure.where(kind: it.kind)).update(n => n - 1)
-        }
-
-        quartosubfloatcounter.update(0)
-        body
-      }
-    )#label]
-  }
-}
-
-// callout rendering
-// this is a figure show rule because callouts are crossreferenceable
-#show figure: it => {
-  if type(it.kind) != "string" {
-    return it
-  }
-  let kind_match = it.kind.matches(regex("^quarto-callout-(.*)")).at(0, default: none)
-  if kind_match == none {
-    return it
-  }
-  let kind = kind_match.captures.at(0, default: "other")
-  kind = upper(kind.first()) + kind.slice(1)
-  // now we pull apart the callout and reassemble it with the crossref name and counter
-
-  // when we cleanup pandoc's emitted code to avoid spaces this will have to change
-  let old_callout = it.body.children.at(1).body.children.at(1)
-  let old_title_block = old_callout.body.children.at(0)
-  let old_title = old_title_block.body.body.children.at(2)
-
-  // TODO use custom separator if available
-  let new_title = if empty(old_title) {
-    [#kind #it.counter.display()]
-  } else {
-    [#kind #it.counter.display(): #old_title]
-  }
-
-  let new_title_block = block_with_new_content(
-    old_title_block, 
-    block_with_new_content(
-      old_title_block.body, 
-      old_title_block.body.body.children.at(0) +
-      old_title_block.body.body.children.at(1) +
-      new_title))
-
-  block_with_new_content(old_callout,
-    block(below: 0pt, new_title_block) +
-    old_callout.body.children.at(1))
-}
-
-// 2023-10-09: #fa-icon("fa-info") is not working, so we'll eval "#fa-info()" instead
-#let callout(body: [], title: "Callout", background_color: rgb("#dddddd"), icon: none, icon_color: black) = {
-  block(
-    breakable: false, 
-    fill: background_color, 
-    stroke: (paint: icon_color, thickness: 0.5pt, cap: "round"), 
-    width: 100%, 
-    radius: 2pt,
-    block(
-      inset: 1pt,
-      width: 100%, 
-      below: 0pt, 
-      block(
-        fill: background_color, 
-        width: 100%, 
-        inset: 8pt)[#text(icon_color, weight: 900)[#icon] #title]) +
-      if(body != []){
-        block(
-          inset: 1pt, 
-          width: 100%, 
-          block(fill: white, width: 100%, inset: 8pt, body))
-      }
-    )
-}
+== Bayes Thm
+- Compare performance of difference models
 
 
+== Log Normal
+Note:  log(1 + $e$) is $e$, for small e
 
-#let article(
-  title: none,
-  subtitle: none,
-  authors: none,
-  date: none,
-  abstract: none,
-  abstract-title: none,
-  cols: 1,
-  margin: (x: 1.25in, y: 1.25in),
-  paper: "us-letter",
-  lang: "en",
-  region: "US",
-  font: "linux libertine",
-  fontsize: 11pt,
-  title-size: 1.5em,
-  subtitle-size: 1.25em,
-  heading-family: "linux libertine",
-  heading-weight: "bold",
-  heading-style: "normal",
-  heading-color: black,
-  heading-line-height: 0.65em,
-  sectionnumbering: none,
-  toc: false,
-  toc_title: none,
-  toc_depth: none,
-  toc_indent: 1.5em,
-  doc,
-) = {
-  set page(
-    paper: paper,
-    margin: margin,
-    numbering: "1",
-  )
-  set par(justify: true)
-  set text(lang: lang,
-           region: region,
-           font: font,
-           size: fontsize)
-  set heading(numbering: sectionnumbering)
-  if title != none {
-    align(center)[#block(inset: 2em)[
-      #set par(leading: heading-line-height)
-      #if (heading-family != none or heading-weight != "bold" or heading-style != "normal"
-           or heading-color != black or heading-decoration == "underline"
-           or heading-background-color != none) {
-        set text(font: heading-family, weight: heading-weight, style: heading-style, fill: heading-color)
-        text(size: title-size)[#title]
-        if subtitle != none {
-          parbreak()
-          text(size: subtitle-size)[#subtitle]
-        }
-      } else {
-        text(weight: "bold", size: title-size)[#title]
-        if subtitle != none {
-          parbreak()
-          text(weight: "bold", size: subtitle-size)[#subtitle]
-        }
-      }
-    ]]
-  }
+Ex:  Consider yearly growth rates of many companies.  Growth rates vary by company and by year, usually small, and independent:
 
-  if authors != none {
-    let count = authors.len()
-    let ncols = calc.min(count, 3)
-    grid(
-      columns: (1fr,) * ncols,
-      row-gutter: 1.5em,
-      ..authors.map(author =>
-          align(center)[
-            #author.name \
-            #author.affiliation \
-            #author.email
-          ]
-      )
-    )
-  }
+Y(t + 1 ) = Y( t )*(1 + e), where is small, varies by year, by company.
 
-  if date != none {
-    align(center)[#block(inset: 1em)[
-      #date
-    ]]
-  }
+Take log:   log(Y) = log(Y) +  many e
+Claim:  sum of many small independent e become Normal
 
-  if abstract != none {
-    block(inset: 2em)[
-    #text(weight: "semibold")[#abstract-title] #h(1em) #abstract
-    ]
-  }
-
-  if toc {
-    let title = if toc_title == none {
-      auto
-    } else {
-      toc_title
-    }
-    block(above: 0em, below: 2em)[
-    #outline(
-      title: toc_title,
-      depth: toc_depth,
-      indent: toc_indent
-    );
-    ]
-  }
-
-  if cols == 1 {
-    doc
-  } else {
-    columns(cols, doc)
-  }
-}
-
-#set table(
-  inset: 6pt,
-  stroke: none
-)
-
-#show: doc => article(
-  title: [first typst],
-  authors: (
-    ( name: [jim],
-      affiliation: [],
-      email: [] ),
-    ),
-  date: [2023-12-20],
-  toc_title: [Table of contents],
-  toc_depth: 3,
-  cols: 1,
-  doc,
-)
-
-USE the #emph[typst app] ! - For typst & math, use this file For Math. - For typst & Text, use … .qmd - Typst for pdf (future html?) - latex does seem to work. But plenty does NOT work on this page. - BEST: use typst app
-
-Watch #link("https://www.youtube.com/watch?v=2DbuqYKOsrY") \
-Tutorial: #link("https://typst.app/docs/tutorial/writing-in-typst/")
-
-#horizontalrule
-
-x=3
-
-$x = 3$
-
-#horizontalrule
-
-\$ forall v, w in V, alpha in KK: alpha dot (v + w) = alpha v + alpha w \$ \*\*\* \$ \/\/ cont — contour integral, integral.cont, integral.double, integral.square, sum.integral \
-
-\\/\/ lt — less than, gt — greater than lt, lt.circle, lt.eq, lt.not, lt.eq.not, lt.tri, lt.tri.eq, lt.tri.eq.not, gt, lt.gt.eq, lt.gt.not \$ \*\*\* $a r r o w . b , t r i a n g l e . r , a n g l e . l$
-
-$a r r o w . r , t r i a n g l e . r , a n g l e . l$ \*\*\*
-
-\#show heading: set text(navy)
-
-\= This text goes into the box
-
-\#let alert(body, fill: red) = { set text(white) set align(center) rect( fill: fill, inset: 8pt, radius: 4pt, \[#emph[Warning:~\#body];\], ) }
-
-\#alert\[ Danger is imminent!\]
-
-\#alert(fill: blue)\[ KEEP OFF TRACKS\]
-
-\#show math.equation.where(block: true): pad.with(left: 1cm) \#show math.equation.where(block: true): set align(left)
-
-\#sym.arrow.r
-
-\$\#sym.arrow.r\$
-
-$arrow.r$
-
-\$\\u{2192}\$
-
-arrow.r
-
-\-\>
-
-$v := v e c (x_1 , x_2 , x_3)$
-
-The equation $Q = r h o A v + C$ defines the glacial flow rate.
-
-$A = p i r^2$ \
-
-\$\"area\" = pi dot \"radius\"^2\$ \
-
-\$cal(A) :=
-    { x in RR | x \"is natural\" }\$ \
-
-\#let x = 5 \
-
-\$\#x \< 17\$ \
-
-$x < y = > x g t . e q . n o t y$
-
-\$sum\_(k=0)^n k
-    &= 1 + ... + n \\
-    &= (n(n+1)) / 2\$
-
-$f r a c (a^2 , 2)$
-
-$1 / 2$
-
-\$vec(1, 2, delim: \"\[\")\$
-
-$m a t (1 , 2 ; 3 , 4)$
-
-\$lim\_x = op(\"lim\", limits: \#true)x\$
-
-\=Introduction \
-\+Chapter1 \
-\+Chapter2
+= tensor
+example: (intuition only)  Consider cube, with different stress on each side.  For each side, the stress can be a Matrix M times vector in 3 directions.  M*v. So need 3 matrices.  Tensor is more compact way to say this.
