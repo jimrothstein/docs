@@ -1,18 +1,7 @@
----
-output: pdf_document
-#output: html_document
-editor_options: 
-  chunk_output_type: console
----
-```{r}
-#| label: manifest
-#| include: false
-#| execute: false
-# rsconnect::writeManifest()
-```
 
-## aNCA
-Let me give you more context. When we do Non-Compartmental Analysis (NCA), our purpose is to characterize some drug properties by calculating what are called pharmacokinetic parameters (PP). These PPs CDISC mandates to collect them in a standard dataset format (called SDTM.PP or PP in short). This format specifies what standard names (PPTEST) or code names (PPTESTCD) should they have. Our whole list of PPs can be found with their descriptions in metadata_nca_parameters.csv
+== aNCA
+
+"Let me give you more context. When we do Non-Compartmental Analysis (NCA), our purpose is to characterize some drug properties by calculating what are called *pharmacokinetic parameters (PP)*. These PPs CDISC mandates to collect them in a standard dataset format (called SDTM.PP or PP in short). This format specifies what standard names (PPTEST) or code names (PPTESTCD) should they have. Our whole list of PPs can be found with their descriptions in metadata_nca_parameters.csv
 
 Ratio Parameters are a special kind of PPs, because they are derived by dividing some PPs (like CMAX) with others. Their general purpose is to have a measure that somehow compare the behavior of the drug under different circumstances. So in order to specify those circumstances, you need to tell the App what groups will be used as the test (fraction nominator) or the reference (fraction denominator) of the ratio calculation. To understand better the function I also recommend you to run the App, map data and then go the NCA tab at left and find the collapsible for Parameter ratios. There you will find a help button (icon ?) that explains better how the operation is done. It will also probably give you more understanding on why we have these arguments for the function.
 

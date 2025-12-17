@@ -1,3 +1,20 @@
+// uses noteworthy !
+#import "@preview/noteworthy:0.2.0": *
+
+
+#show: noteworthy.with(
+  paper-size: "a4",
+  font: "New Computer Modern",
+  language: "EN",
+  title: "Title of The Document",
+  author: "Your Name",
+  contact-details: "https://example.com", // Optional: Maybe a link to your website, or phone number
+  toc-title: "Table of Contents",
+  watermark: "DRAFT", // Optional: Watermark for the document
+)
+
+// Write here
+
 #set document(title: "0002_math_equations")
 #set page(margin: 0.5in)
 #set text(size: 11pt)
@@ -6,8 +23,62 @@
 
 Goal: Combine math, linear algebra, statistics, ML (not R)
 
-== REF:
+= REF:
 See: #link("https://github.com/jimrothstein/code_publish/blob/master/MATH/0002_math_equations.qmd")
+
+= use noteworthy
+#example[
+  3,5,7
+]
+
+#definition[
+  a prime number has two divisors, 1 and itself.
+]
+
+= Linear Algebra
+== Normal Equations, solution which minimizes error (regression)
+
+Write $F(x,y,z) = 3*x + 4*y + 5*z $
+
+== Matrix multiplication
+#example[
+  3,5,7
+]
+
+#definition[
+  a prime number has two divisors, 1 and itself.
+]
+
+
+$
+mat(3,4,5) #sym.dot.op vec(x,y,z)
+$
+
+== Linear transformation
+
+Suppose point P lies (1,1) in x-y plane, a distance of $sqrt(2)$ from origin.
+Write P in terms of natural basis parallel to ray to P.
+
+In regular basis,
+$
+P : vec(1,1) = vec(1,0) + vec(0,1)
+$
+
+$
+    vec(1,0)_"new" = 1/sqrt(2) vec(1,0) + 1/sqrt(2) vec(0,1) \
+
+    vec(0,1)_"new" = -1/sqrt(2) vec(1,0) + 1/sqrt(2) vec(0,1)  \
+
+"P is " sqrt(2) vec(1,0)_"new"
+
+$
+
+Tranformation matrix:
+$
+1/sqrt mat(1,0,-1,0)
+$
+
+
 
 == Error
 
@@ -259,7 +330,7 @@ Note:  log(1 + $e$) is $e$, for small e
 
 Ex:  Consider yearly growth rates of many companies.  Growth rates vary by company and by year, usually small, and independent:
 
-Y(t + 1 ) = Y( t )*(1 + e), where is small, varies by year, by company.
+// Y(t + 1 ) = Y( t )*(1 + e), where is small, varies by year, by company.
 
 Take log:   log(Y) = log(Y) +  many e
 Claim:  sum of many small independent e become Normal

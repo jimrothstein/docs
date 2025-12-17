@@ -1,31 +1,62 @@
 
+*bold*
+_underline_
+
+[ [nytimes.com] [https://www.nytimes.com]]
+
+links:
+[[*Legacy ??][This file]]
+[[file:281_emacs_notes.typ][281_emacs_cheat]]
+
+#+begin_quote
+Type <q <TAB> to insert quote block
+#+end_quote
+
 at: <2025-12-08 Mon>
 * Projects - TODO 
 * Learn Org mode 
-Goal is START organizing projects and NEXT TODO for each;  replacing paper.
+
+Goal: START organizing projects; NEXT TODO for each;  replacing paper.
 Second step:  Org mode vs denote vs ?  
 TODO: set org-agenda-files to collect ALL TODOs. 
+[ [org-mode ] [https://www.youtube.com/watch?v=0-brF21ShRk&list=PLknodeJt-I5GJmcd7ENakYf_M0x9q50d1&index=8]] Galvin
 - [ [tutorial][https://emacsclub.github.io/html/org_tutorial.html] ]
 - [ [another tutorial][https://orgmode.org/worg/org-tutorials/orgtutorial_dto.html] ]
 * Learn Help Files
+* elisp
+
+*Prot's text:*   repo: M-x Dired | M-x dired-do-info (over file: elispelem.info) 
+
 * Learn: Denote
 * Algebra, Math, Statistics
-- write simple Baysian example
-- write ellipse transformation to cononical coordinates. 
-- Calculus:  polar coordnates (r, theta),  r can be negative!
+~/code/docs/tech_notes/
+- write simple Baysian example :statistics:
+- write ellipse transformation to cononical coordinates. :math:
+- Calculus:  polar coordnates (r, theta),  r can be negative! :math:
+- Ng videos:  unsurprised (find patterns) [https://learn.deeplearning.ai/specializations/machine-learning/lesson/a7qh0/unsupervised-learning-part-2 [Andrwe Ng]
+
 * i3
-- don't waste time
-- video? study others?
+- Restore: config to basics
+- Commands & DOCs:  exec, restart, add menus
+  
 * Typst
-USE online typst editor to debug
-Basic:  000_simple.typ Using typst (learning curve to get symbols and format right).
-Math:  
-Convert Math (qmd) to typst (typ)?
+
+  USE online typst editor to debug  :typst
+  Basic:  000_simple.typ (learning curve to get symbols and format right).
+  Math:  done- simple matrix  notation
+
 * R
 - typst:  Ch 1,2 my Advanced R notes
 * Next Phone
-- Pixel 3a XT?
-* Legacy ??
+- Pixel 3a XT? :shopping:
+* LOCKER
+- teeth pills to clean
+- razor blade
+- more floss
+- manila folder
+- shoes/boots?
+  
+* Legacy Code ??
 
 
 #+BEGIN_CENTER
@@ -40,4 +71,6 @@ hi
 #+BEGIN_SRC bash
   git status
 #+END_SRC
+
+
 

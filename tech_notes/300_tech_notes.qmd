@@ -438,6 +438,8 @@ things and there are some groups you don't want to capture.
 
 
 ### LINUX
+- **systemd**, replaces old runlevels, init.  Daemons for many services
+- **systemctl** suite of commands to control 
 - Debian:  shutdown when sytem hangs?   CTRL-ALT-DEL  or ALT-printScreen
 - *gnome-control-center* is cli to manage linux, X11, ..(even with cinnamon/lightdm)
 - autologin, if using lightdm, as root edit /etc/lightdm/lightdm.confg
