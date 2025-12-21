@@ -1,9 +1,27 @@
-// Time-stamp: <Last changed 2025-12-17 20:24:59 by jim>
+// Time-stamp: <Last changed 2025-12-18 14:29:51 by jim>
 
 #set heading(numbering: "1.")
 #set text(
   font: "New Computer Modern"
 )
+
+= Learning
+
+Regarding learning it depends on what you want. For ratio calculations is something so specific that there is nothing about because it cannot get very extended, but if you have specific questions let me know and I can try my best on that!
+
+For other more general topics regarding this repo I would recommend checking our website, there you can find about:
+
+    NCA basic concepts. Here you can find the most basic theory behind Non Compartmental Analysis
+
+    Design & Architecture. This can give you a better perspective on how our R package (which is indeed also a ShinyApp) is structured
+
+Other pages:
+
+    PKNCA website. This is the package that we use in the background for all calculations. Unfortunately their website is very focussed on how to use PKNCA, and not so much on the concepts behind NCA. But maybe can be useful.
+
+    ADNCA - CDISC guideline. CDISC has some guidelines explaining the format expected for ADNCA, which is the input that our App uses. For some people like me is easier to understand the concepts once you grab how the data is structured, so here you have it.
+
+I've checked many websites and books on the Internet myself, but if I am honest with you nothing that I would highly recommend based on my experience 😅
 
 = aNCA
 Let me give you more context. When we do [*Non-Compartmental Analysis (NCA)*], our purpose is to characterize some drug properties by calculating what are called pharmacokinetic parameters (PP). These PPs CDISC mandates to collect them in a standard dataset format (called SDTM.PP or PP in short). This format specifies what standard names (PPTEST) or code names (PPTESTCD) should they have. Our whole list of PPs can be found with their descriptions in metadata_nca_parameters.csv

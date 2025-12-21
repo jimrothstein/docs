@@ -1,11 +1,10 @@
 
+281_emacs_notes.typ
 
 = NOTE:
 in transition,
 old:  280_emacs_notes.qmd
-new:  281_emacs_notes.typ 
-
-281_emacs_notes.typ
+new:  281_emacs_notes.typ   
 
 = TODO
 - i3 and emacs can conflict.    SEE: https://sqrtminusone.xyz/posts/2021-10-04-emacs-i3/
@@ -13,18 +12,25 @@ new:  281_emacs_notes.typ
 - Under ess-intro, see github website 
 
 = HELP
-^h v  ......       display-line-number ( variable) \
-^h a  ......       eval   // any emacs/gnu topic? \
-^h k  ......       F10     // keystroke  \
-^h f current-buffer \ ^h f ess-eval-region (help for emacs/ESS function)
-
 M-x apropos-documenation eval \
 M-x describe-bindings \
 M-x describe-mode
 
+#table(
+  columns: (auto, auto),
+  table.header(
+    [keystrokes], [comment]
+  ),
+    [^h v  ......],[ ^h v display-line-number ( variable)], 
+    [^h a  ......],[ ^h a eval   ], 
+    [^h k  ......],[^h a F10      ],
+    [^h f current-buffer], [] ,
+    [^h f ess-eval-region], [help for emacs/ESS function)],
+)
 
 = LEARNING
 
+// #link("url")[describe]
 - #link("https://protesilaos.com/codelog/2024-11-28-basic-emacs-configuration/")[Beginner])
 
 #table(
@@ -62,12 +68,9 @@ M-x describe-mode
   [], [#link("https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/6515/sicp.zip/full-text/book/book-Z-H-1.html")[https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/6515/sicp.zip/full-text/book/book-Z-H-1.html]],
   [], [#link("https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html")[https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html]],
   [], [#link("http://www.cs.cmu.edu/~dst/LispBook/")[http://www.cs.cmu.edu/~dst/LispBook/]],
+  [], [#link [Xahlee]("http://xahlee.info/emacs/how_to_read.html")[Xahlee]],
 )
 
-/*
-- #link [Xahlee](http://xahlee.info/emacs/how_to_read.html)
-- http://xahlee.info/emacs/how_to_read.html
-```
 
 - [ESS Manual](ess.r-project.org/manual)
 - [Emacs Manual]
@@ -78,27 +81,28 @@ M-x describe-mode
 - [Evil, Read & re-read:](https://github.com/noctuid/evil-guide)
 - [SFU] videos + web
 
-**Videos**
+
+= Videos
 - daviwil:  emacs from scratch: videos + config
 #link("
-<https://github.com/daviwil/emacs-from-scratch/tree/8c302a79bf5700f6ef0279a3daeeb4123ae8bd59",[emacs from scratch])>
-- Tsoding 
+(https://github.com/daviwil/emacs-from-scratch/tree/8c302a79bf5700f6ef0279a3daeeb4123ae8bd59"),[emacs from scratch])
 - Protesillaos, see HELP video
-- Goparism
 - tdhock (12 videos + R)
-- hacking vanilla
 
-**Blog**
-- [protesilaos](https://protesilaos.com/) \
+/*
+= Blog
+- #link(https://protesilaos.com/),[protesilaos] 
 -  <https://protesilaos.com/codelog/>
 
-**Shell**
+= Shell
 ^x p e  for eShell \
 ^h i m Elisp RET (read manual) not working \
 
-**Watch Every Command ! **
+= Watch Every Command ! 
+
 M-x global-command-log-mode \
 M-x clm/open-command-log-buffer \
+
 
 Create a footnote: [^1]
 

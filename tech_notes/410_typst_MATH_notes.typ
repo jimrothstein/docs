@@ -122,6 +122,14 @@ $SS_(x) = sum (x - bar(x))^2 = sum x^2 - ( (sum x)^2 ) / n$
 == Bayes
 - Video, Ox series: #link("https://youtu.be/U1HbB0ATZ_A?si=ljknvvraM7Fn4hz3")
 
+=== $P(A|B)$
+We are told $x in B$.  What is probability $x in A$?
+
+To be in A, $x in A inter B$.   But this depends on relative "sizes"
+
+Compare:   $x in A inter B$  relative to $x in B$, ie anywhere  B
+Hence   $P(A inter B)/P(B)$
+
 == Explain $s^2$ vs $hat(sigma)^2$
 
 $s^2$ refers to sample variance
@@ -182,12 +190,14 @@ $ P[ ] $
   x, "if " x > 0,
 ) 
 
-$ cal(P)(X) = cases(
+$
+cal(P)(X) = cases(
   a, 1/2,
   a, "if " x < 0,
   b, "if " x = 0,
   c, "if " x > 0,
-) $
+)
+$
 
 sums, regression
 
@@ -198,7 +208,7 @@ sums, regression
 hello _world_.
 
 == Summations
-
+/*
 ```
 // Without Indices
 
@@ -282,20 +292,21 @@ $s_b = frac(s_e, sqrt(SS_(xx)))$
 
 $s_(a + bx) = s_e sqrt(1 + frac(1, n) + frac((x - bar(x))^2, SS_(xx)))$
 
+
 for prediction:
 
-$se(y - hat(y)) = s_e sqrt(1 + frac(1, n) + frac((x - bar(x))^2, SS_(xx)))$
+// $se(y - hat(y)) = s_e sqrt(1 + frac(1, n) + frac((x - bar(x))^2, SS_(xx)))$
 
 == Variance
 
-$SS_(Tr) = frac(T_1^2, n_1) + frac(T_2^2, n_2) + ... + frac(T_k^2, n_k) - frac(T^2, n)$
+// $SS_(Tr) = frac(T_1^2, n_1) + frac(T_2^2, n_2) + ... + frac(T_k^2, n_k) - frac(T^2, n)$
 
-$SS_(To) = x_1^2 + x_2^2 + ... + x_k^2 - frac(T^2, n)$
+//SS_(To) = x_1^2 + x_2^2 + ... + x_k^2 - T^2/n
 
-$SS_(E) = SS_(To) - SS_(Tr)$
+
+// $SS_(E) = SS_(To) - SS_(Tr)$
 ```
 
-```
 // R code for plotting (converted to a Typst code block)
 #raw(lang: "r"){
 density_object = density(mpg\$hwy)
@@ -304,6 +315,7 @@ plot(density_object)
 dev.off()
 }
 
+```
 #raw(lang: "r"){
 filename = "~/Downloads/print_and_delete/out.png"
 png(filename = filename,
@@ -311,9 +323,11 @@ png(filename = filename,
 plot(density_object)
 dev.off()
 }
+
+\\ /home/jim/code/docs/tech_notes/500_ML_Notes.qmd
+\\ /home/jim/code/docs/tech_notes/
 ```
-/home/jim/code/docs/tech_notes/500_ML_Notes.qmd
-/home/jim/code/docs/tech_notes/
+*\
 
 = ML Notes
 
@@ -326,11 +340,13 @@ dev.off()
 
 
 == Log Normal
-Note:  log(1 + $e$) is $e$, for small e
+Note:
+// log(1 + e) tilde.equiv e   
+for small e
 
 Ex:  Consider yearly growth rates of many companies.  Growth rates vary by company and by year, usually small, and independent:
 
-// Y(t + 1 ) = Y( t )*(1 + e), where is small, varies by year, by company.
+\\ Y(t + 1 ) = Y( t )*(1 + e), where is small, varies by year, by company.
 
 Take log:   log(Y) = log(Y) +  many e
 Claim:  sum of many small independent e become Normal

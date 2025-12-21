@@ -1,4 +1,4 @@
-# Time-stamp: <Last changed 2025-12-17 20:01:11 by jim>
+# Time-stamp: <Last changed 2025-12-19 00:36:40 by jim>
 
 *bold*
 _underline_
@@ -36,6 +36,14 @@ TODO: set org-agenda-files to collect ALL TODOs.
 - Calculus:  polar coordnates (r, theta),  r can be negative! :math:
 - Ng videos:  unsurprised (find patterns) [https://learn.deeplearning.ai/specializations/machine-learning/lesson/a7qh0/unsupervised-learning-part-2 [Andrwe Ng]
 
+* Shiny
+TODO Examples:  UI/modules
+TODO March '25 pharma
+TODO Teal Gallery
+* Git
+HEAD, change Branch, vs TIP
+MERGE
+SQUASH
 * i3
 - Restore: config to basics
 - Commands & DOCs:  exec, restart, add menus
@@ -56,6 +64,8 @@ TODO: set org-agenda-files to collect ALL TODOs.
 - more floss
 - manila folder
 - shoes/boots?
+- green permanent marker
+- good spoon
   
 * Legacy Code ??
 
