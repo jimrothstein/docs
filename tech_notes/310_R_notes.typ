@@ -3,10 +3,6 @@
 // In process:  convert from .qmd to .typ      
 
 /*
-<!--
-Render quarto  (will use typst)
-KEEP as .qmd file
--->
 
 	PURPOSE:  Collect all notes, links, references for R to here.
 	NO installation (R, Rstudio, etc) in this file
@@ -82,7 +78,10 @@ detach(mtcars)
 # remove package 
 search()
 ```
+**bang-bang !!**
+injection:  insert unevaluated into code, for later evaluation.
 
+!!sym(<string>) - <strng> represents unknown, example col of tibble.  sym returns as symbol; !! evaluates (Ex:   mutate(!!sym(col).....)
 **bindings:**
 -   link between name (symbol) and an object
 -   EX:   `f` as a symbol and `function definition` (function(x) {...})

@@ -353,3 +353,23 @@ Claim:  sum of many small independent e become Normal
 
 = tensor
 example: (intuition only)  Consider cube, with different stress on each side.  For each side, the stress can be a Matrix M times vector in 3 directions.  M*v. So need 3 matrices.  Tensor is more compact way to say this.
+
+#line(length: 100%)
+
+= What is derivative?
+dy/dx is *symbol*, just *notation*
+- no meaning by itself, "derivative"
+- forget infinitesimals; surreal numbers
+- dx, dy are NOT limit of $Delta x, Delta y$; not fraction; no division
+
+- dy/dx is symbol for 
+$ 
+ lim (h-> 0) (f(x+h) - f(x))/h 
+$
+
+
+- More modern:   dx is differential form or co-vector a function that takes a tangent vector and returns scalar, which is magnitude of tangent vector in x-direction
+
+$
+f: R^2 -> R
+$

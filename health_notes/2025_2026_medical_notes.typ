@@ -106,3 +106,8 @@ SUN 16 NOV 2025 - Colonoscopy - What an ordeal!
 Monday 1 DEC 2025 - 2nd 24 hour of year (Kaiser) (4200 ml) fasting
 - diet includes assorted healthy items, but also ...
 - beans, 1 colard green, brown rice, assorted lettuc mix; dairy; 
+
+Friday, 26 DEC 2025 - STOOL
+Past week or so ... perfect stools!  swollen, single piece, elongated (> 6" - 10"?).
+What happened? more pysllium? more potatoes? (white +  sweet)? Increased rowing?
+OR, Less peanuts/peanut butter?
