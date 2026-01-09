@@ -1,6 +1,9 @@
 
 
-=== prior, see medical_notes.qmd,   continue here:
+/* makes bold, ie strong, appear in red, using asterisks or formal #strong[text]  */
+#show strong: set text(red)
+
+=== *prior*, see medical_notes.qmd,   continue here:
 
 Nov 10, 2025
 
@@ -111,3 +114,15 @@ Friday, 26 DEC 2025 - STOOL
 Past week or so ... perfect stools!  swollen, single piece, elongated (> 6" - 10"?).
 What happened? more pysllium? more potatoes? (white +  sweet)? Increased rowing?
 OR, Less peanuts/peanut butter?
+
+
+
+Tuesday, 5 Jan 2026  - STOOL
+Gee ... just about every STOOL fit same pattern:   swollen, elongated, 1 big piece.
+Until today.... chunks.    Yesterday, I ate #strong[peanut butter and ice cream], too much.
+
+Thursday 8 Jan 2026  - **STOOL**
+- With amble Psyllium,  elongated stool returns.  Need to Watch.
+
+- Jan 22 visit to Dr.  Medicare B includes, free, "Wellness" check, including eval for dementia; also blood test for genetic colon cancer risk (has this been done?  may only be for normal risk people?)
+
