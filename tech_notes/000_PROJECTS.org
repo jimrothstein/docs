@@ -1,8 +1,16 @@
-# Time-stamp: <Last changed 2025-12-19 00:36:40 by jim>
+# Time-stamp: <Last changed 2026-01-18 21:06:13 by jim>
+
+( ^c-[ ) Add to Agenda List
 
 *bold*
 _underline_
+/italilc/
++strike-through+
+H_2O
+\exists
+~print('hi')~
 
+--- https:://www.nytimes.com --- \
 [ [nytimes.com] [https://www.nytimes.com]]
 
 links:
@@ -13,9 +21,9 @@ links:
 Type <q <TAB> to insert quote block
 #+end_quote
 
-at: <2025-12-08 Mon>
-* Projects - TODO 
-* Learn Org mode 
+
+* Projects - TODO                                                   :todo:
+* TODO Learn Org mode                                                  :org:learn:
 
 Goal: START organizing projects; NEXT TODO for each;  replacing paper.
 Second step:  Org mode vs denote vs ?  
@@ -23,14 +31,19 @@ TODO: set org-agenda-files to collect ALL TODOs.
 [ [org-mode ] [https://www.youtube.com/watch?v=0-brF21ShRk&list=PLknodeJt-I5GJmcd7ENakYf_M0x9q50d1&index=8]] Galvin
 - [ [tutorial][https://emacsclub.github.io/html/org_tutorial.html] ]
 - [ [another tutorial][https://orgmode.org/worg/org-tutorials/orgtutorial_dto.html] ]
+
 * Learn Help Files
 * elisp
+** TODO Prot's book :read:
+** TODO Chicago book :read:
 
-*Prot's text:*   repo: M-x Dired | M-x dired-do-info (over file: elispelem.info) 
+* Prot's text:*   repo: M-x Dired | M-x dired-do-info (over file: elispelem.info) 
 
-* Learn: Denote
+* Learn: Denote :emacs:learn:
 * Algebra, Math, Statistics
-~/code/docs/tech_notes/
+** good, basic review geomrtry + transformations: https://pages.mtu.edu/~shene/COURSES/cs3621/NOTES/  :read:
+
+** Read Shaina Race :read:
 - write simple Baysian example :statistics:
 - write ellipse transformation to cononical coordinates. :math:
 - Calculus:  polar coordnates (r, theta),  r can be negative! :math:
@@ -40,14 +53,20 @@ TODO: set org-agenda-files to collect ALL TODOs.
 TODO Examples:  UI/modules
 TODO March '25 pharma
 TODO Teal Gallery
+
 * Git
+** TODO Git In Practice :read:
 HEAD, change Branch, vs TIP
 MERGE
 SQUASH
+
 * i3
-- Restore: config to basics
-- Commands & DOCs:  exec, restart, add menus
-  
+* ML/AI/LLMs/...
+** TODO Mnielson [ [neural][ http://neuralnetworksanddeeplearning.com/chap1.html]] :read:
+** TODO Clark models               :read: 
+** Kim, S.... https://skim.math.msstate.edu/LectureNotes/Machine_Learning_Lecture.pdf (python, looks educational!) :read:
+** TODO Patterns Hardt & Recht :read:
+
 * Typst
 
   USE online typst editor to debug  :typst
@@ -57,17 +76,12 @@ SQUASH
 * R
 - typst:  Ch 1,2 my Advanced R notes
 * Next Phone
-- Pixel 3a XT? :shopping:
-* LOCKER
-- teeth pills to clean
-- razor blade
-- more floss
-- manila folder
-- shoes/boots?
-- green permanent marker
-- good spoon
+** TODO Pixel 3a XT?                                               :shopping:
   
-* Legacy Code ??
+* Legacy Code 
+* pyTorch
+** https://www.learnpytorch.io/02_pytorch_classification/              :read:
+
 
 
 #+BEGIN_CENTER
@@ -82,6 +96,7 @@ hi
 #+BEGIN_SRC bash
   git status
 #+END_SRC
+
 
 
 

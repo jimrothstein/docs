@@ -124,5 +124,8 @@ Until today.... chunks.    Yesterday, I ate #strong[peanut butter and ice cream]
 Thursday 8 Jan 2026  - **STOOL**
 - With amble Psyllium,  elongated stool returns.  Need to Watch.
 
-- Jan 22 visit to Dr.  Medicare B includes, free, "Wellness" check, including eval for dementia; also blood test for genetic colon cancer risk (has this been done?  may only be for normal risk people?)
+- Jan 22 visit to Dr.  Medicare B includes, free, "Wellness" check,
+  including eval for dementia; also blood test for genetic colon
+  cancer risk (has this been done?  may only be for normal risk
+  people?)
 

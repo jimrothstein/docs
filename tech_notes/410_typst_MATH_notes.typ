@@ -147,6 +147,20 @@ $x = sqrt(b)$
 If $a^2=b$ and $b=2$, then the solution must be
 either $a = +sqrt(2)$ or $a = -sqrt(2)$.
 
+
+= Probability Space, Algebra, function
+Sample Space is set of atomic events:   throw 2 die, list all possible outcomes.
+Algebra is all possible subsets of the space.  Ex:  sets s.t. dice total to 4.
+By event, we do not retrict to just singular.  The event in previous example is dice total to 4.   This might be several atomic sets, but it is ONE event.
+$
+Pr(2 dice total = 4)
+$
+
+One way to look at probability is ratio of size of the subset (event) vs total allowable subspace (all possible events).
+Related:  If there are many possibilities for same outcome, expect the actual event probably to grow:   Birthday at Party:  Many possibilities n*(n-1) for match.  This is why so few actual people are needed to raise odds.
+
+
+
 == linear functional
 
 $phi : R^3 -> R$

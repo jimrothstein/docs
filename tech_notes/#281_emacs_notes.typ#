@@ -1,5 +1,4 @@
 
-
 281_emacs_notes.typ
 
 = NOTE:
@@ -30,12 +29,11 @@ M-x describe-mode
 )
 
 = Misc
-In emacs, open "frame" then 1 or more "windows" inside the frame
+In emacs, open "frame" then 1 or more "windows" inside the framE
 = i3 + emacs
 This works (Jan 2026)
 i3 conf has "emacs --daemon"  (runs in  background);
 Then, when I begin work,  emacsclient -a "" -t  (terminal)
-emacsclient -a "" -c   (gui, such as menus)
 
 Other possibilities include:
 systemd --user enable --now emacs
