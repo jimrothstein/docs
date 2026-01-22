@@ -387,3 +387,15 @@ $
 $
 f: R^2 -> R
 $
+
+
+== Laplace Transform, convolution
+
+- laplace, many nice propeties.
+- convolution of f,g becomes multiplication in freq domain; inverse is solution to original.
+
+if f(t) is prob density
+$
+L{f}(s) = int 0 to inf  f(t)*e-st dt
+$
+identify this as $ E[ e-tX]

@@ -94,8 +94,8 @@ I have known about gallstones for 15 years.  I find the odds that gallbladder ge
 
 
 SUN 16 NOV 2025 - Colonoscopy - What an ordeal!
-7 NOV - 2nd colonsocpy - success
-8 NOV - ER/hosptal
+7 NOV - 2nd colonoscopy - success
+8 NOV - ER/hospital
 9 NOV - release hospital, return Eugene
 10 NOV (Mon) - no BM
 11 NOV (T)  - BM, very light, slender, "normal"
@@ -108,11 +108,11 @@ SUN 16 NOV 2025 - Colonoscopy - What an ordeal!
 
 Monday 1 DEC 2025 - 2nd 24 hour of year (Kaiser) (4200 ml) fasting
 - diet includes assorted healthy items, but also ...
-- beans, 1 colard green, brown rice, assorted lettuc mix; dairy; 
+- beans, 1 collard green, brown rice, assorted lettuce mix; dairy; 
 
 Friday, 26 DEC 2025 - STOOL
 Past week or so ... perfect stools!  swollen, single piece, elongated (> 6" - 10"?).
-What happened? more pysllium? more potatoes? (white +  sweet)? Increased rowing?
+What happened? more psyillium? more potatoes? (white +  sweet)? Increased rowing?
 OR, Less peanuts/peanut butter?
 
 
@@ -121,7 +121,7 @@ Tuesday, 5 Jan 2026  - STOOL
 Gee ... just about every STOOL fit same pattern:   swollen, elongated, 1 big piece.
 Until today.... chunks.    Yesterday, I ate #strong[peanut butter and ice cream], too much.
 
-Thursday 8 Jan 2026  - **STOOL**
+Thursday 8 Jan 2026  - *STOOL*
 - With amble Psyllium,  elongated stool returns.  Need to Watch.
 
 - Jan 22 visit to Dr.  Medicare B includes, free, "Wellness" check,
@@ -129,3 +129,60 @@ Thursday 8 Jan 2026  - **STOOL**
   cancer risk (has this been done?  may only be for normal risk
   people?)
 
+
+
+#pagebreak()
+
+For January 22, 2026
+Wellness Check
+
+
+= Follow Medicare B guidelines
+If I drift off, we'll never finish.
+
+
+= Status:
+
+== No pressing issues. \
+But GI has number of long-term, sometimes overlapping conditions.  Historically (~ 10 years or more), GI most expensive, time-intensive procedures/tests/doctors. Many fail but little "knowledge" gained.  
+
+=== Examples
++ pancreas (atrophy, large number of cysts,  known ~3 years)
++ gallbladder (stones ~12 years, only event:   within hours of Nov '25, colonoscopy #4 and very extended prep)
++ oxalate (controlled, ~15 years;  too many doctors don't know; never full explanation)
+
+=== Current doctors:
++ Dr. Lam (Kaiser) - urology
++ Dr. Miyake (Kaiser)  - nephrology
++ GI - many, Need one on continuing  basis
+
+
+
+== Blood Pressure 
+controlled by medication *and* rowing (other exercise does not work )
+arteriosclerosis ?   (See date ?) 
+
+== Osteoporosis 
+- Next X-ray,
+- next infusion?
+
+== Dietician (Jan 27)
+How to  balance oxalate, gallbladder and nutrition?
+
+== Sleep
+Recently (< 1 year) becoming an issue.
+Cold + exercise improves sleep.
+
+= Doctor's issues
+?
+
+= Other Medicare B issues
+
+= Seek
+Seek:  single GI doctor for overall review,  on-going guidance, prevention, planning. \
+Seek:  Reduce mental health medication?
+
+= Ref
+
+Medicare Wellness: https://www.medicare.gov/coverage/yearly-wellness-visits#coverage-content-details
+Medicare Prevention: https://www.medicare.gov/coverage/preventive-screening-services 

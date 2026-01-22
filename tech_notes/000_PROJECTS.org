@@ -1,5 +1,8 @@
-# Time-stamp: <Last changed 2026-01-18 21:06:13 by jim>
+# Time-stamp: <Last changed 2026-01-20 16:12:32 by jim>
 
+
+* Projects - TODO                                                   :todo:
+* Org Notes
 ( ^c-[ ) Add to Agenda List
 
 *bold*
@@ -21,8 +24,6 @@ links:
 Type <q <TAB> to insert quote block
 #+end_quote
 
-
-* Projects - TODO                                                   :todo:
 * TODO Learn Org mode                                                  :org:learn:
 
 Goal: START organizing projects; NEXT TODO for each;  replacing paper.
@@ -43,6 +44,7 @@ TODO: set org-agenda-files to collect ALL TODOs.
 * Algebra, Math, Statistics
 ** good, basic review geomrtry + transformations: https://pages.mtu.edu/~shene/COURSES/cs3621/NOTES/  :read:
 
+** Linear Maps & Derivatives (https://math-website.pages.dev/, "CantorClosure:  https://www.reddit.com/r/learnmath/comments/1pjl731/differential_calculus_through_linear_maps/)
 ** Read Shaina Race :read:
 - write simple Baysian example :statistics:
 - write ellipse transformation to cononical coordinates. :math:
@@ -100,3 +102,9 @@ hi
 
 
 
+
+** Kim, S. Math Foundations https://skim.math.msstate.edu/LectureNotes/Machine_Learning_Lecture.pdf :read:
+** Mohamed AAZI - good, but lost the lin  :read:
+** ML from scratch, python, plus details:  https://github.com/rodmarkun/SmolML?tab=readme-ov-file :read:
+** video:  freeCodeCamp pyTorch  :read:
+** Geeks4Geeks : scikit  :read:
