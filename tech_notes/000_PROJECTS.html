@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-01-22 Thu 21:04 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="jim" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org1406627">1. Projects - TODO&#xa0;&#xa0;&#xa0;<span class="tag"><span class="todo">todo</span></span></a></li>
+<li><a href="#org1a6303c">2. Org Notes</a></li>
+<li><a href="#orge8deab5">3. <span class="todo TODO">TODO</span> Learn Org mode&#xa0;&#xa0;&#xa0;<span class="tag"><span class="org">org</span>&#xa0;<span class="learn">learn</span></span></a></li>
+<li><a href="#orgc8afb7b">4. Learn Help Files</a></li>
+<li><a href="#orgd6a57b0">5. elisp</a>
+<ul>
+<li><a href="#org8fe12e9">5.1. <span class="todo TODO">TODO</span> Prot's book&#xa0;&#xa0;&#xa0;<span class="tag"><span class="read">read</span></span></a></li>
+<li><a href="#orge1dacd5">5.2. <span class="todo TODO">TODO</span> Chicago book&#xa0;&#xa0;&#xa0;<span class="tag"><span class="read">read</span></span></a></li>
+</ul>
+</li>
+<li><a href="#org867debc">6. Prot's text:*   repo: M-x Dired | M-x dired-do-info (over file: elispelem.info)</a></li>
+<li><a href="#org71ab9dd">7. Learn: Denote&#xa0;&#xa0;&#xa0;<span class="tag"><span class="emacs">emacs</span>&#xa0;<span class="learn">learn</span></span></a></li>
+<li><a href="#orgdb0cb21">8. Algebra, Math, Statistics</a>
+<ul>
+<li><a href="#org65be73d">8.1. good, basic review geomrtry + transformations: https://pages.mtu.edu/~shene/COURSES/cs3621/NOTES/&#xa0;&#xa0;&#xa0;<span class="tag"><span class="read">read</span></span></a></li>
+<li><a href="#orgfe2777a">8.2. Linear Maps &amp; Derivatives (https://math-website.pages.dev/, "CantorClosure:  https://www.reddit.com/r/learnmath/comments/1pjl731/differential_calculus_through_linear_maps/)</a></li>
+<li><a href="#orgf251c34">8.3. Read Shaina Race&#xa0;&#xa0;&#xa0;<span class="tag"><span class="read">read</span></span></a></li>
+</ul>
+</li>
+<li><a href="#org3534c1f">9. Shiny</a></li>
+<li><a href="#orgf7f2b31">10. Git</a>
+<ul>
+<li><a href="#orgef28e3a">10.1. <span class="todo TODO">TODO</span> Git In Practice&#xa0;&#xa0;&#xa0;<span class="tag"><span class="read">read</span></span></a></li>
+</ul>
+</li>
+<li><a href="#org4504059">11. i3</a></li>
+<li><a href="#org177ae73">12. ML/AI/LLMs/&#x2026;</a>
+<ul>
+<li><a href="#orgc12d18c">12.1. <span class="todo TODO">TODO</span> Mnielson [ [neural][ http://neuralnetworksanddeeplearning.com/chap1.html]]&#xa0;&#xa0;&#xa0;<span class="tag"><span class="read">read</span></span></a></li>
+<li><a href="#org106750e">12.2. <span class="todo TODO">TODO</span> Clark models&#xa0;&#xa0;&#xa0;<span class="tag"><span class="read">read</span></span></a></li>
+<li><a href="#org19b8117">12.3. Kim, S&#x2026;. https://skim.math.msstate.edu/LectureNotes/Machine_Learning_Lecture.pdf (python, looks educational!)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="read">read</span></span></a></li>
+<li><a href="#org9236f5e">12.4. <span class="todo TODO">TODO</span> Patterns Hardt &amp; Recht&#xa0;&#xa0;&#xa0;<span class="tag"><span class="read">read</span></span></a></li>
+</ul>
+</li>
+<li><a href="#org592054f">13. Typst</a></li>
+<li><a href="#orgbd35619">14. R</a></li>
+<li><a href="#orgb84370d">15. Next Phone</a>
+<ul>
+<li><a href="#org5f986cc">15.1. <span class="todo TODO">TODO</span> Pixel 3a XT?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="shopping">shopping</span></span></a></li>
+</ul>
+</li>
+<li><a href="#orgb1de887">16. Legacy Code</a></li>
+<li><a href="#org9c58fc9">17. pyTorch</a>
+<ul>
+<li><a href="#orgd611bb3">17.1. https://www.learnpytorch.io/02_pytorch_classification/&#xa0;&#xa0;&#xa0;<span class="tag"><span class="read">read</span></span></a></li>
+<li><a href="#orgccc62f0">17.2. Kim, S. Math Foundations https://skim.math.msstate.edu/LectureNotes/Machine_Learning_Lecture.pdf&#xa0;&#xa0;&#xa0;<span class="tag"><span class="read">read</span></span></a></li>
+<li><a href="#orgb5c15a1">17.3. Mohamed AAZI - good, but lost the lin&#xa0;&#xa0;&#xa0;<span class="tag"><span class="read">read</span></span></a></li>
+<li><a href="#org7ffe437">17.4. ML from scratch, python, plus details:  https://github.com/rodmarkun/SmolML?tab=readme-ov-file&#xa0;&#xa0;&#xa0;<span class="tag"><span class="read">read</span></span></a></li>
+<li><a href="#orga6bb5ab">17.5. video:  freeCodeCamp pyTorch&#xa0;&#xa0;&#xa0;<span class="tag"><span class="read">read</span></span></a></li>
+<li><a href="#orgb5473f2">17.6. Geeks4Geeks : scikit&#xa0;&#xa0;&#xa0;<span class="tag"><span class="read">read</span></span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1406627" class="outline-2">
+<h2 id="org1406627"><span class="section-number-2">1.</span> Projects - TODO&#xa0;&#xa0;&#xa0;<span class="tag"><span class="todo">todo</span></span></h2>
+</div>
+<div id="outline-container-org1a6303c" class="outline-2">
+<h2 id="org1a6303c"><span class="section-number-2">2.</span> Org Notes</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+( ^c-[ ) Add to Agenda List
+</p>
+
+<p>
+<b>bold</b>
+<span class="underline">underline</span>
+<i>italilc</i>
+<del>strike-through</del>
+H<sub>2O</sub>
+&exist;
+<code>print('hi')</code>
+</p>
+
+<p>
+&#x2014; <a href="https:://www.nytimes.com">https:://www.nytimes.com</a> &#x2014; \
+[ [nytimes.com] [<a href="https://www.nytimes.com">https://www.nytimes.com</a>]]
+</p>
+
+<p>
+links:
+<a href="281_emacs_notes.typ">281<sub>emacs</sub><sub>cheat</sub></a>
+</p>
+
+<blockquote>
+<p>
+Type &lt;q &lt;TAB&gt; to insert quote block
+</p>
+</blockquote>
+</div>
+</div>
+<div id="outline-container-orge8deab5" class="outline-2">
+<h2 id="orge8deab5"><span class="section-number-2">3.</span> <span class="todo TODO">TODO</span> Learn Org mode&#xa0;&#xa0;&#xa0;<span class="tag"><span class="org">org</span>&#xa0;<span class="learn">learn</span></span></h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Goal: START organizing projects; NEXT TODO for each;  replacing paper.
+Second step:  Org mode vs denote vs ?  
+TODO: set org-agenda-files to collect ALL TODOs. 
+[ [org-mode ] [<a href="https://www.youtube.com/watch?v=0-brF21ShRk&amp;list=PLknodeJt-I5GJmcd7ENakYf_M0x9q50d1&amp;index=8">https://www.youtube.com/watch?v=0-brF21ShRk&amp;list=PLknodeJt-I5GJmcd7ENakYf_M0x9q50d1&amp;index=8</a>]] Galvin
+</p>
+<ul class="org-ul">
+<li>[ [tutorial][<a href="https://emacsclub.github.io/html/org_tutorial.html">https://emacsclub.github.io/html/org_tutorial.html</a>] ]</li>
+<li>[ [another tutorial][<a href="https://orgmode.org/worg/org-tutorials/orgtutorial_dto.html">https://orgmode.org/worg/org-tutorials/orgtutorial_dto.html</a>] ]</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc8afb7b" class="outline-2">
+<h2 id="orgc8afb7b"><span class="section-number-2">4.</span> Learn Help Files</h2>
+</div>
+<div id="outline-container-orgd6a57b0" class="outline-2">
+<h2 id="orgd6a57b0"><span class="section-number-2">5.</span> elisp</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org8fe12e9" class="outline-3">
+<h3 id="org8fe12e9"><span class="section-number-3">5.1.</span> <span class="todo TODO">TODO</span> Prot's book&#xa0;&#xa0;&#xa0;<span class="tag"><span class="read">read</span></span></h3>
+</div>
+<div id="outline-container-orge1dacd5" class="outline-3">
+<h3 id="orge1dacd5"><span class="section-number-3">5.2.</span> <span class="todo TODO">TODO</span> Chicago book&#xa0;&#xa0;&#xa0;<span class="tag"><span class="read">read</span></span></h3>
+</div>
+</div>
+<div id="outline-container-org867debc" class="outline-2">
+<h2 id="org867debc"><span class="section-number-2">6.</span> Prot's text:*   repo: M-x Dired | M-x dired-do-info (over file: elispelem.info)</h2>
+</div>
+
+<div id="outline-container-org71ab9dd" class="outline-2">
+<h2 id="org71ab9dd"><span class="section-number-2">7.</span> Learn: Denote&#xa0;&#xa0;&#xa0;<span class="tag"><span class="emacs">emacs</span>&#xa0;<span class="learn">learn</span></span></h2>
+</div>
+<div id="outline-container-orgdb0cb21" class="outline-2">
+<h2 id="orgdb0cb21"><span class="section-number-2">8.</span> Algebra, Math, Statistics</h2>
+<div class="outline-text-2" id="text-8">
+</div>
+<div id="outline-container-org65be73d" class="outline-3">
+<h3 id="org65be73d"><span class="section-number-3">8.1.</span> good, basic review geomrtry + transformations: <a href="https://pages.mtu.edu/~shene/COURSES/cs3621/NOTES/">https://pages.mtu.edu/~shene/COURSES/cs3621/NOTES/</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="read">read</span></span></h3>
+</div>
+
+<div id="outline-container-orgfe2777a" class="outline-3">
+<h3 id="orgfe2777a"><span class="section-number-3">8.2.</span> Linear Maps &amp; Derivatives (<a href="https://math-website.pages.dev/">https://math-website.pages.dev/</a>, "CantorClosure:  <a href="https://www.reddit.com/r/learnmath/comments/1pjl731/differential_calculus_through_linear_maps/">https://www.reddit.com/r/learnmath/comments/1pjl731/differential_calculus_through_linear_maps/</a>)</h3>
+</div>
+<div id="outline-container-orgf251c34" class="outline-3">
+<h3 id="orgf251c34"><span class="section-number-3">8.3.</span> Read Shaina Race&#xa0;&#xa0;&#xa0;<span class="tag"><span class="read">read</span></span></h3>
+<div class="outline-text-3" id="text-8-3">
+<ul class="org-ul">
+<li>write simple Baysian example :statistics:</li>
+<li>write ellipse transformation to cononical coordinates. :math:</li>
+<li>Calculus:  polar coordnates (r, theta),  r can be negative! :math:</li>
+<li>Ng videos:  unsurprised (find patterns) [<a href="https://learn.deeplearning.ai/specializations/machine-learning/lesson/a7qh0/unsupervised-learning-part-2">https://learn.deeplearning.ai/specializations/machine-learning/lesson/a7qh0/unsupervised-learning-part-2</a> [Andrwe Ng]</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org3534c1f" class="outline-2">
+<h2 id="org3534c1f"><span class="section-number-2">9.</span> Shiny</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+TODO Examples:  UI/modules
+TODO March '25 pharma
+TODO Teal Gallery
+</p>
+</div>
+</div>
+<div id="outline-container-orgf7f2b31" class="outline-2">
+<h2 id="orgf7f2b31"><span class="section-number-2">10.</span> Git</h2>
+<div class="outline-text-2" id="text-10">
+</div>
+<div id="outline-container-orgef28e3a" class="outline-3">
+<h3 id="orgef28e3a"><span class="section-number-3">10.1.</span> <span class="todo TODO">TODO</span> Git In Practice&#xa0;&#xa0;&#xa0;<span class="tag"><span class="read">read</span></span></h3>
+<div class="outline-text-3" id="text-10-1">
+<p>
+HEAD, change Branch, vs TIP
+MERGE
+SQUASH
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org4504059" class="outline-2">
+<h2 id="org4504059"><span class="section-number-2">11.</span> i3</h2>
+</div>
+<div id="outline-container-org177ae73" class="outline-2">
+<h2 id="org177ae73"><span class="section-number-2">12.</span> ML/AI/LLMs/&#x2026;</h2>
+<div class="outline-text-2" id="text-12">
+</div>
+<div id="outline-container-orgc12d18c" class="outline-3">
+<h3 id="orgc12d18c"><span class="section-number-3">12.1.</span> <span class="todo TODO">TODO</span> Mnielson [ [neural][ <a href="http://neuralnetworksanddeeplearning.com/chap1.html">http://neuralnetworksanddeeplearning.com/chap1.html</a>]]&#xa0;&#xa0;&#xa0;<span class="tag"><span class="read">read</span></span></h3>
+</div>
+<div id="outline-container-org106750e" class="outline-3">
+<h3 id="org106750e"><span class="section-number-3">12.2.</span> <span class="todo TODO">TODO</span> Clark models&#xa0;&#xa0;&#xa0;<span class="tag"><span class="read">read</span></span></h3>
+</div>
+<div id="outline-container-org19b8117" class="outline-3">
+<h3 id="org19b8117"><span class="section-number-3">12.3.</span> Kim, S&#x2026;. <a href="https://skim.math.msstate.edu/LectureNotes/Machine_Learning_Lecture.pdf">https://skim.math.msstate.edu/LectureNotes/Machine_Learning_Lecture.pdf</a> (python, looks educational!)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="read">read</span></span></h3>
+</div>
+<div id="outline-container-org9236f5e" class="outline-3">
+<h3 id="org9236f5e"><span class="section-number-3">12.4.</span> <span class="todo TODO">TODO</span> Patterns Hardt &amp; Recht&#xa0;&#xa0;&#xa0;<span class="tag"><span class="read">read</span></span></h3>
+</div>
+</div>
+<div id="outline-container-org592054f" class="outline-2">
+<h2 id="org592054f"><span class="section-number-2">13.</span> Typst</h2>
+<div class="outline-text-2" id="text-13">
+<p>
+USE online typst editor to debug  :typst
+Basic:  000<sub>simple.typ</sub> (learning curve to get symbols and format right).
+Math:  done- simple matrix  notation
+</p>
+</div>
+</div>
+<div id="outline-container-orgbd35619" class="outline-2">
+<h2 id="orgbd35619"><span class="section-number-2">14.</span> R</h2>
+<div class="outline-text-2" id="text-14">
+<ul class="org-ul">
+<li>typst:  Ch 1,2 my Advanced R notes</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb84370d" class="outline-2">
+<h2 id="orgb84370d"><span class="section-number-2">15.</span> Next Phone</h2>
+<div class="outline-text-2" id="text-15">
+</div>
+<div id="outline-container-org5f986cc" class="outline-3">
+<h3 id="org5f986cc"><span class="section-number-3">15.1.</span> <span class="todo TODO">TODO</span> Pixel 3a XT?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="shopping">shopping</span></span></h3>
+</div>
+</div>
+<div id="outline-container-orgb1de887" class="outline-2">
+<h2 id="orgb1de887"><span class="section-number-2">16.</span> Legacy Code</h2>
+</div>
+<div id="outline-container-org9c58fc9" class="outline-2">
+<h2 id="org9c58fc9"><span class="section-number-2">17.</span> pyTorch</h2>
+<div class="outline-text-2" id="text-17">
+</div>
+<div id="outline-container-orgd611bb3" class="outline-3">
+<h3 id="orgd611bb3"><span class="section-number-3">17.1.</span> <a href="https://www.learnpytorch.io/02_pytorch_classification/">https://www.learnpytorch.io/02_pytorch_classification/</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="read">read</span></span></h3>
+<div class="outline-text-3" id="text-17-1">
+<div class="org-center">
+<p>
+hi
+</p>
+</div>
+
+
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2024-05-04 Sat&gt;</span></span>:
+</p>
+
+<p>
+## REST RESTful, HTTP Protocol , JSON, RFC, API and Web Technologies
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">git status
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgccc62f0" class="outline-3">
+<h3 id="orgccc62f0"><span class="section-number-3">17.2.</span> Kim, S. Math Foundations <a href="https://skim.math.msstate.edu/LectureNotes/Machine_Learning_Lecture.pdf">https://skim.math.msstate.edu/LectureNotes/Machine_Learning_Lecture.pdf</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="read">read</span></span></h3>
+</div>
+<div id="outline-container-orgb5c15a1" class="outline-3">
+<h3 id="orgb5c15a1"><span class="section-number-3">17.3.</span> Mohamed AAZI - good, but lost the lin&#xa0;&#xa0;&#xa0;<span class="tag"><span class="read">read</span></span></h3>
+</div>
+<div id="outline-container-org7ffe437" class="outline-3">
+<h3 id="org7ffe437"><span class="section-number-3">17.4.</span> ML from scratch, python, plus details:  <a href="https://github.com/rodmarkun/SmolML?tab=readme-ov-file">https://github.com/rodmarkun/SmolML?tab=readme-ov-file</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="read">read</span></span></h3>
+</div>
+<div id="outline-container-orga6bb5ab" class="outline-3">
+<h3 id="orga6bb5ab"><span class="section-number-3">17.5.</span> video:  freeCodeCamp pyTorch&#xa0;&#xa0;&#xa0;<span class="tag"><span class="read">read</span></span></h3>
+</div>
+<div id="outline-container-orgb5473f2" class="outline-3">
+<h3 id="orgb5473f2"><span class="section-number-3">17.6.</span> Geeks4Geeks : scikit&#xa0;&#xa0;&#xa0;<span class="tag"><span class="read">read</span></span></h3>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: jim</p>
+<p class="date">Created: 2026-01-22 Thu 21:04</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

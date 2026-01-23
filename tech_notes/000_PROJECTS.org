@@ -1,4 +1,6 @@
 # Time-stamp: <Last changed 2026-01-20 16:12:32 by jim>
+# (setq org-export-with-broken-links 'mark) -- if see this error
+#  TODO:   install ox-typst, pdf fails;
 
 
 * Projects - TODO                                                   :todo:
@@ -17,7 +19,6 @@ H_2O
 [ [nytimes.com] [https://www.nytimes.com]]
 
 links:
-[[*Legacy ??][This file]]
 [[file:281_emacs_notes.typ][281_emacs_cheat]]
 
 #+begin_quote
