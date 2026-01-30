@@ -218,10 +218,18 @@ Dr. Wang can not solve the key questions (1) and (2).   I trust her to guide, mo
 
 The very worst time to educate patient and make decisions is late at night, attached to tubes, trying to understand what people are telling me.  Second worst:   post-colonoscopy.
 
-Repeating ailed colonoscopies, too many doctors, stool tests , "makes no sense clinically" ... is an expensive way to gather info.   Can we do this another way??
+Repeating failed colonoscopies, too many doctors, stool tests , "makes no sense clinically" ... is an expensive way to gather info.   Can we do this another way??
 
 Thanks very much.
 /* ------------------------  separate   */
 
 
- 
+== Jan 27, 2026  Dietician
+She and I seemed to be on same page.
+- If no problems, whole fat diary should be ok.
+- Oxalate, 47 (Dec 2025), is OK;  perhaps body has adjusted. (Normal is upto -49)
+- Add lemon; stay hydrated.
+- Add probiotics; she will send list.  (Apple cider vinegar is good).
+- K+ fully recovered by Dec 2025 labs.
+- SOY is ok, in moderation.   Soy contains estrogen; can promote male breast cancer.
+- One suggestion:  reduce/cut allopurinol  (originally for high uric acid).

@@ -1,7 +1,7 @@
 = 300 Tech Notes
+typst file
 
-This is quarto file, and render as quarto.
-Contains raw typst chunks.
+
 
 == Dec 2025 - HP boot reports amdgpu psp gfx failed, but continues
 - Status: unresolved

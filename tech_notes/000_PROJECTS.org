@@ -1,4 +1,4 @@
-# Time-stamp: <Last changed 2026-01-20 16:12:32 by jim>
+# Time-stamp: <Last changed 2026-01-23 22:48:31 by jim>
 # (setq org-export-with-broken-links 'mark) -- if see this error
 #  TODO:   install ox-typst, pdf fails;
 
@@ -50,7 +50,7 @@ TODO: set org-agenda-files to collect ALL TODOs.
 - write simple Baysian example :statistics:
 - write ellipse transformation to cononical coordinates. :math:
 - Calculus:  polar coordnates (r, theta),  r can be negative! :math:
-- Ng videos:  unsurprised (find patterns) [https://learn.deeplearning.ai/specializations/machine-learning/lesson/a7qh0/unsupervised-learning-part-2 [Andrwe Ng]
+- Ng videos:  unsurprised (find patterns) [https://learn.deeplearning.ai/specializations/machine-learning/lesson/a7qh0/unsupervised-learning-part-2 [Andrwe Ng]]
 
 * Shiny
 TODO Examples:  UI/modules
