@@ -1,53 +1,39 @@
----
-title: Current Prescriptions
-date: last-modified
-# Quarto requires title, if want date to appear
-# ~/.config/kickstart/skeleton/skeleton.qmd
----
 TAGS:  current_prescriptions
 
-------------------------  STOP
-STOP:   USE 2026_prescriptions.typ
-------------------------  STOP
+= Current Prescriptions  ( 2026-02-01)
+#set enum(indent: 1em)
 
-STOP
-#### Current Prescriptions  ( 2026-02-01)
++ Cozaar (Losartan) - 100 mg
++ Levothyroxine - 100 microg
 
-Prescription (as of \today):
-
--	Cozaar (Losartan) - 100 mg
--	Levothyroxine - 100 microg
--	Zyloprim (Allopurinol) - 100 mg
-- Wellbutrin (Bupropion) - 100 mg
-- Potassium Citrate - 10 mEq = 1080mg (x 4)
-- Flomax (Tamsulosin) - 0.4 mg
-- Norvasc (Amlodipine) - 10 mg
-- Lopid (Gemfibrozil) - 600 mg (x 1, not x 2 as prescribed)
-- Effexor (Venlafaxime) - 75 mg
-- Finasteride - 0 mg (was 5 mg)
--	Zenpep ZERO
-- Jardiance (Empagliflozin) = 12.5 mg
++ #emoji.quest (Allopurinol) - 100 mg
++ #emoji.quest Wellbutrin (Bupropion) - 100 mg
++ Potassium Citrate - 10 mEq = 1080mg (x 4)
++ Flomax (Tamsulosin) - 0.4 mg
++ Norvasc (Amlodipine) - 10 mg
++ #emoji.quest Lopid (Gemfibrozil) - 600 mg (x 1, not x 2 as prescribed)
++ #emoji.quest Effexor (Venlafaxime) - 75 mg
++ Jardiance (Empagliflozin) = 12.5 mg
 
 
 External
 
-- Selenium Sul 2.5% (shampoo)
-- 0.05% AUG Betamethasone Dipropionate (liquid, scalp)
-- 0.05% Clobetasol Propionate (psoriasis arm, butt)
-- (NEW) 2-3 drops mineral oil - very infrequent
++ Selenium Sul 2.5% (shampoo)
++ 0.05% AUG Betamethasone Dipropionate (liquid, scalp) - strong
++ 0.05% Clobetasol Propionate (psoriasis arm, butt) 
++ (NEW) 2-3 drops mineral oil - very infrequent
 
-**OTC**
+OTC
 
-- Psyllium (1 -2 Tbsp)
-- KAL Calcium Citrate 4 pills/d, total=1300 mg (Ca); NOTE: contains no vitamin D3 (hard to find)
-- D3 14,000 IU per week>
-- B vitamin - continue
-
----
++ Psyllium (1 -2 Tbsp)
++ KAL Calcium Citrate 4 pills/d, total=1300 mg (Ca); NOTE: contains no vitamin D3 (hard to find)
++ D3 14,000 IU per week>
++ B vitamin - continue
 
 
+/*
 
-## Changes:  
+== Changes:  
 **2025**
 
 **2024**
@@ -83,6 +69,7 @@ Changes:	**2021**
 
 ---
 
+===
 \newpage
 
 Details, Directions
@@ -255,3 +242,4 @@ OLD, discontinued Medications:
 
 
 vim:linebreak:nospell:nowrap:cul tw=78 fo=tqlnrc foldcolumn=1 cc=+1
+*/

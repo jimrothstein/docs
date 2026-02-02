@@ -953,6 +953,10 @@ vim:nospell
 - device must support 5G? GSM? Volte? ..
 - device should also support wifi (for mp3 downloads)
 
+*mp3 players*
+- DAC, dongle, digital devices:   seem to be superb music;  not android or podcast devices.
+- Sony as usual is best; also Fifo and many others
+
 
 
 RETAIL DEMO UNIT ('retail mode'):
@@ -973,6 +977,13 @@ RETAIL DEMO UNIT ('retail mode'):
 
 - Pixel 4a (5.8", too small) cheaper glass than pixel 3a; practical gone (Aug '25)
 - OnePlus 
+
+- (1/26) - older "flagships" models should be good.
+- Samsung - some say good; other don't agree.
+- waste so much time on this.
+- OnePlus 12, 13 all good - not cheap
+- OnePlus 8 (bought 9/25) ($137) very good, but no 3mm jack;
+- buy Redmi Note 14;    because mid-range; has 3mm jack;  6GB/128GB ($140)
 
 ```{=typst}
 #set align(center)
