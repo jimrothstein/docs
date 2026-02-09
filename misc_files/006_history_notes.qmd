@@ -149,6 +149,7 @@ left a taint to Federalist brand.   After Hamilton murder, Federalist were all
 but gone.   (Federalist prefered England's stability to Jefferson's support
 for anti-Monarchy French revolutionaries
 
+1812 - Marshall ruling?  Who was last Federalist?
 \section{ After Napoleon}
 -   removes many parochial, arthritic European structures like local tariffs,
 reduces number of German municipalities, etc.   setting environment `more
@@ -157,6 +158,16 @@ friendly` to industrial revolution.
 not just England.  Empirical fact(?):  more capital per worker, more GDP per
 worker. Why is Peru `poor`, cheaper to use 19th C inventions b/c cheap labor,
 its GDP/Capital is about where England was in 19th.
+
+## Panic 1819
+
+inflation/printing money? How banks affect money supply?
+  * [ ] Biddle arrives?
+
+1828 - Jackson defeats J Q Adams
+1832 - Jackson defeats Clay
+View at time:  national bank aids wall st, but harms democracy (in Jefferson's sense).   Jackson vetoes renewal of national bank; claims right to his own interpretation of constitution.
+Biddle and role of National Bank; many conflicts with Jackson - raise host of issues re: banking.
 
 ##  Panic 1837 (1837-1848)
 -   after period of rapid growth, esp. land.
@@ -174,6 +185,13 @@ domestic and foregin policies.  Longer term changes, US States get out of
 capital improvement projects (ie less public bonds, let private section do
 this), States begin to deploy
 property tax to raise revenues (and less sales of land) 
+Gold vs. paper/silver (US adopts gold standard in 1900 - among last to do so)
+
+1850 - Calif free;  slavery in Mexican aquisitions (TX); strong fugitive slave laws
+1854 - Kansas
+1859 - John Brown, had hoped to start slave rebellion;  frightens South
+1860 - Lincoln elected
+1861? - first income tax; North is broke; moves off Gold to paper.
 
 ## US Civil War
 Lincoln - where slavery exits, won't be touched;  so what is path to Emancipation?
@@ -187,6 +205,13 @@ NY riots in opposition to draft; Rebels block union troops, destroy bridges - le
 - But meaning of War changes:  Lincoln reads war books; harming southern economy is very positive.
 - US army morale picks up. The rest we know.
 - Separate Note:   Stanton, secy of War, x-NY governer; expected to be Republican candidate in 1860 but considered too vocal in anti-slavery;  would lose support.
+
+## Jay Cooke sells US Bonds retail.  This finances war, more than taxes.  In effect, Cooke created national bank system  to disseminate bonds;  need for national bank (or similar) established.
+Few believed he could sell so much retail.  He did.
+
+1864 - Chase had sought to run for Prez.
+
+## Who won Civil War?   US capitalism:  Bonds, effective national bank;  NY replaces Philly.
 
 ## Pennsylvania RR
 - (1852-1874) pres = J. Edgar Thompson, engineer, modernizes, uses Westinghouse Air Brake.

@@ -2,6 +2,8 @@
 typst file
 
 
+== Feb 2026
+Haskell working hard on  data science; tutorials... cloud based GUI
 
 == Dec 2025 - HP boot reports amdgpu psp gfx failed, but continues
 - Status: unresolved
@@ -139,6 +141,8 @@ SEE: Separate emacs/org documentation
 - Julia easier?
 - RUST learning curve, but high performance
 - Both have functional?, but seems to learn functional stay with lisp, racket, haskell or any similar
+
+
 
 == IMPERATIVE v DECLARATIVE
 - math notation is DECLARATIVE; indicates meaning, not exact details

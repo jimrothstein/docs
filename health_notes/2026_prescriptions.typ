@@ -6,7 +6,7 @@ TAGS:  current_prescriptions
 + Cozaar (Losartan) - 100 mg
 + Levothyroxine - 100 microg
 
-+ #emoji.quest (Allopurinol) - 100 mg
++ #strike[#emoji.quest (Allopurinol) - 100 mg]
 + #emoji.quest Wellbutrin (Bupropion) - 100 mg
 + Potassium Citrate - 10 mEq = 1080mg (x 4)
 + Flomax (Tamsulosin) - 0.4 mg
@@ -28,12 +28,15 @@ OTC
 + Psyllium (1 -2 Tbsp)
 + KAL Calcium Citrate 4 pills/d, total=1300 mg (Ca); NOTE: contains no vitamin D3 (hard to find)
 + D3 14,000 IU per week>
-+ B vitamin - continue
++ B vitamin - 1/week (for B6/B12)       
 
 
 /*
 
 == Changes:  
+**2026**
+- STOP Allopurinol; for gout, but I never had gout.  I did have high serum uric acid.
+
 **2025**
 
 **2024**
