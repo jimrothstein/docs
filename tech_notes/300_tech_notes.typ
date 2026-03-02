@@ -428,7 +428,7 @@ not in kernel.
    - other methods, like /etc/default/keyboard do not seem to work
    
    (did not work for non-Cinnamon)CAPS_LOCK: Use Cinnamon, keyboard options GUI to set CAPS_LOCK to ESC (easy)
-   June 9, 2024 (HP Elitebook, 845, G8 - 2nd HP laptop)
+   June 9, 2024 (Configure HP Elitebook, 845, G8 - 2nd HP laptop)
    - *~/dotfiles/create_soft_links.sh* VERY helpful
    - Emacs: must link emacs files in ~/dotfiles files in ~/emacs.d* =
    - must re-install: wezterm (see webpage), i3, zsh, git, emacs, ZSH, gh
@@ -1082,6 +1082,28 @@ https://check-vin.org/
 
 my VIN: 1HGEM22911L031079
 ------------------------
+
+
+
+=== Battery Notes (3/1/2026)
+- AGM is lead, with sulfuric acid.  The acid is absorbed(?) by a mat; so does not spill.
+- Resting Voltage (no load) ~ 12.8-12.9 V
+- When just recharged - voltage can be > 13 V.   This will settle back soon.
+- When car starts, the 12.8V will drop (should stay above 10V) and immediately bounce back as alternator begins.
+- The alternator (regulates battery re-charge) will bring voltage up to ~14V, at least briefly.
+
+Because computer runs the show, any change in one place triggers change somewhere else computer constantly adjusts.
+
+DC Voltage
+100% charge - 12.8
+75% charge - 12.6
+50% charge - 12.3
+
+Time to recharge a 12V battery depends on SoC (state of charge?) and amp output (10, 20 even 30 AMPS) of charger.
+Noco is good name.  Battery charger is NOT same as battery jumper, the latter is more expensive.  Ask because I don't know.
+
+
+
 
 BLACK, Prius 5 - 4 door , all owners in family (?) Chicago
 car: https://corvallis.craigslist.org/cto/d/corvallis-2011-toyota-prius-4dr/7791577925.html

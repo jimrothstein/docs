@@ -399,3 +399,19 @@ $
 L{f}(s) = int 0 to inf  f(t)*e-st dt
 $
 identify this as $ E[ e-tX]
+
+= Notes from gr-teachO
+== Gradient of $f=x*y + 4y - 3x^2 - y^2$
+Suppose this represents a surface with a minimum/maximum.
+Project onto the x-y axis and ask for a point $x_0$ = $(1,-1)$ find the vector that points toward min/max.
+
+Method #1  Take gradient
+
+$gradient f$ evaluated at $x_0$ will give us vector pointing to min/max
+
+$gradient f(arrow(x), arrow(y))$ = 
+#import "@preview/diverential:0.2.0": *
+
+$vec(dv(f,x, eval:0),(dv(f,y, eval:0)))$ =
+$vec(-7,7)$
+(reverse the sign, to find min)

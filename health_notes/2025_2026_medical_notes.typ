@@ -233,3 +233,27 @@ She and I seemed to be on same page.
 - K+ fully recovered by Dec 2025 labs.
 - SOY is ok, in moderation.   Soy contains estrogen; can promote male breast cancer.
 - One suggestion:  reduce/cut allopurinol  (originally for high uric acid).
+
+
+== <2026-02-16 Mon> (M-x org-timestamp)   FECES - normal ! lipids
+Stool is regular, very swollen, daily, mostly 1 big piece, often greenish.
+All, since recoverng from early Nov 25 colonoscopy.   Is it more psyllium?  something change?
+
+Lab Tests
+Tri = 83
+HDL = 58
+LDL = 90  (lower always better)
+
+total = 165  (ate LOT of pistachios 7 hours before - dum)
+Dr Z wants statin;  risk of heart attack in 10 years = 15%
+also, Gembibrozil = zero, none (today)   (1st time in 35 years). Statin to replace?
+Allopurinol - stopped 2 weeks ago
+
+SEE cholesterol history (in R, health_labs/)
+
+
+2-24-2026  return to  Gemfibrozil?
+Dr. Zoe is lazy, really lazy.  Back and forth on cholesterol and my rowing history.  She can not/will not asnwer simple questions:  when to repeat lipid test?  (I've stopped cheese)
+Seems her answer is always satin or lower LDL.   (This is not answer.   I am asking if makes sense to lower LDL the way I have historical done so; much less cheese and keep the rowing intensity)  I know she is not dumb, just she can not engage.
+Say questions too long to answer; make appt  Jesus Christ !   We did that.
+
