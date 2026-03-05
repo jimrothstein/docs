@@ -24,6 +24,7 @@ knitr:
 This is a quarto (.qmd) file.  
 Embeds raw `typst` (ex: math)  and `r` chunks and even legacy `latex`
 To render:   quarto render 260_typst_example.qmd
+(DO NOT use typst watch to render -- many errors)
 
 Note:  use of knitr to get most of R, chunks.  (optional)
 \footnotesize
