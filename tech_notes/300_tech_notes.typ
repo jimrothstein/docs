@@ -154,6 +154,8 @@ SEE: Separate emacs/org documentation
 2023-12-06 - Try couple of cv or resume templates and one quarto extension. Seemed to be more work than worth. Just use Rmarkdown to create resume.
 2024-01-26 READ r4ds Ch 28-29 b/c Quarto and config knitr
 
+To render a Quarto (*.qmd) file with embeded typst.   Use regular quarto render methods.
+
 == {X11, Wayland, video}
 **Warning:** Stay with X11 (proven, well-supported, works)
 
@@ -422,9 +424,10 @@ not in kernel.
 
 *** SETUP/CONFIG new HP Elitebook machine 
    <2024-10-10 Thu> HP Elitebook but with pure Debian/Cinnamon & i3
+
    *CAPSLOCK ESCAPE*; many easy ways => confusion!
    - Debian/Cinnamon & i3: *setxkbmap -option "caps:escape" (immediate)*
-     reboot? may need to sourc .xinitrc
+     reboot? may need to source  ~/.xinitrc
    - other methods, like /etc/default/keyboard do not seem to work
    
    (did not work for non-Cinnamon)CAPS_LOCK: Use Cinnamon, keyboard options GUI to set CAPS_LOCK to ESC (easy)

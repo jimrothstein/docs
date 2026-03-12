@@ -257,3 +257,27 @@ Dr. Zoe is lazy, really lazy.  Back and forth on cholesterol and my rowing histo
 Seems her answer is always satin or lower LDL.   (This is not answer.   I am asking if makes sense to lower LDL the way I have historical done so; much less cheese and keep the rowing intensity)  I know she is not dumb, just she can not engage.
 Say questions too long to answer; make appt  Jesus Christ !   We did that.
 
+Summary Medication Changes:
+- 0 (since Jan)Allopurinol
+-   Gemfibrozil, regular dose
+- (since 2-16)Cheese/sat fat - sharp reduction since 2-16-2026 (Dr. Z ignores repeated question as to WHEN to retake: goal LDL) Some say statin takes 4 weeks; others 4-12 weeks (3 months)
+
+
+== Statin Notes
+plaque - bad, makes arteries hard, inflexible;  can not remove; LDL causes
+CAC - Coronary Artery Calcium
+soft plaque - can break off and cause blockage
+Statin will not fix plaque;  statin preventive for addition to
+Statin blocks necessary enzyme liver needs to produce more cholesterol (at night)
+Whey - benfits of dairy?
+Gene: **pcsk9** inihits, lowers LDL; by affecting number of LDL receptors (too few is  problem)
+
+Some goals:
+- LDL 70 or less
+- non-HDL less than 130 mg/dL
+- cholesterol ratio:  total cholesterol/HDL = 165/58 = 2.84 or ration 2.84 to 1
+- LP(a) - 20% lifestyle, 80% genetics (why thin, healthy people can have heart issues?)
+
+<2026-03-10 Tue> Toothpaste
+- SLS  - NO!  Sodium lauryl sulfate
+- "Hello" - high in K nitrate; adds aloe verdi (claim: soothing)

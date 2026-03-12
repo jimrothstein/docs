@@ -5,11 +5,6 @@ format:
     keep-typ: true
 ---
 
-STOP:    use  004_china_notes.typ   STOP
-
-
-
-```
 ## THIS is QUARTO file:  
 ## Convert to *.typ?   Render: quarto render 004_china_notes.qmd   retrieve *.typ file
 
@@ -580,7 +575,9 @@ Education - prior to 1996, approx ¼ students go to vocational middle school, wh
 
 
 1997
-15th Party Congress (CCP elders must retire at 67 - not day they die; General Secy only 2 terms (5 years each); Hu now heir (4th generation); Qiao Shi  (reformer, pro-legal reform) retires; trick by Jiang Zemin, who solidifies his power; (supported by elder Bo Yibo - no reformer)
+      * 15th Party Congress (CCP elders must retire at 67 - not day they die; General Secy only 2 terms (@5 years each); Hu now heir (4th generation); Qiao Shi  (reformer, pro-legal reform) retires; trick by Jiang Zemin, who solidifies his power; (supported by elder Bo Yibo - no reformer)
+      *    
+
 
 1998
       * Reform of Army
@@ -859,4 +856,3 @@ Southern Tour
 State EPA
 Social Harmony, Social Stability, Harmonius Society(Hu) - After 1989 implicit pact, CCP keeps order & stability; economic reforms may proceed.   Return of Confucious (banned in CR)
 Tinanamen Square - largest square in Asia; torn down old housing in 1950s?TRUE
-```

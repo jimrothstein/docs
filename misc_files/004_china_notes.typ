@@ -1,21 +1,9 @@
----
-title: China Notes
-format:
-  typst:
-    keep-typ: true
----
-
-STOP:    use  004_china_notes.typ   STOP
-
-
-
 ```
-## THIS is QUARTO file:  
-## Convert to *.typ?   Render: quarto render 004_china_notes.qmd   retrieve *.typ file
+## THIS is TYPST file, converted from QUARTO file:  
+## Convert quarto to *.typ?   Render: quarto render 004_china_notes.qmd   retrieve *.typ file
 
 Last Update:
-08MAY2025
-
+10MAR2026
 
 
  
@@ -98,35 +86,35 @@ Qara-Khitai empire religious tolerant, good admin.   Claim: Mongols would benefi
 
 
 comprador (Portugese)
-	"buyer", Chinese who handles Chinese side of foreign business; quick-witted
-	hong
-	trading firm
-	taipan
-	foreign head of trading firm
-	Kiangsu
-	Jiangsu
-	godown
-	warehouse
-	chow-chow
-	cargo
-	fan kuei
-	foreign d
+    "buyer", Chinese who handles Chinese side of foreign business; quick-witted
+    hong
+    trading firm
+    taipan
+    foreign head of trading firm
+    Kiangsu
+    Jiangsu
+    godown
+    warehouse
+    chow-chow
+    cargo
+    fan kuei
+    foreign d
     jkevil ('foreign mud'=opuim)
-	"going native"
-	learning Chinese ways (i.e. something wrong)
-	
+    "going native"
+    learning Chinese ways (i.e. something wrong)
+    
 
-	
+    
 
-	Bubbling Springs Rd
-	Nanjing Lu (west) - compradors & taipans build homes
-	li
-	Shanghai alleyway
-	
+    Bubbling Springs Rd
+    Nanjing Lu (west) - compradors & taipans build homes
+    li
+    Shanghai alleyway
+    
 
-	
+    
 
-	use of sing-song language is insult to Chinese, as if not intelligent
+    use of sing-song language is insult to Chinese, as if not intelligent
 
 
 1840s
@@ -405,32 +393,32 @@ US policy? - two schools: (1) stay out of China affairs, let things play out, th
 
 
 Mao
-	Liu Shao qi, Deng Xiao ping
-	
+    Liu Shao qi, Deng Xiao ping
+    
 
-	
+    
 
-	“open door”
-	“closed door”
-	
+    “open door”
+    “closed door”
+    
 
-	
+    
 
-	mobalize peasants to struggle against landlords, rich, expose corrupt?
-	from BJ, send ‘work teams’ to root out corrupt rural officials
-	
+    mobalize peasants to struggle against landlords, rich, expose corrupt?
+    from BJ, send ‘work teams’ to root out corrupt rural officials
+    
 
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
 
 1965
 -Mao’s back; 4th wife hates DXP
