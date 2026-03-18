@@ -14,6 +14,12 @@ Haskell working hard on  data science; tutorials... cloud based GUI
 
 === LLM
 
+self-attention:  I went to bank to get money.   Does bank refer to river or building?
+
+transformer:   _He_ did something....           transformer can determine _he_ even if several paragraphs away.
+
+attention matrix:  NxN matrix,    pairs various tokens
+          
 Chris Brown: setup in R, ellmer, copilot, openRouter...
 - https://www.seascapemodels.org/R-llm-workshop/
 - https://www.seascapemodels.org/AI-assistants-for-scientific-coding/

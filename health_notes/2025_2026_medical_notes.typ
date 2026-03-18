@@ -272,11 +272,21 @@ Statin blocks necessary enzyme liver needs to produce more cholesterol (at night
 Whey - benfits of dairy?
 Gene: **pcsk9** inihits, lowers LDL; by affecting number of LDL receptors (too few is  problem)
 
+=== Diet
+Claim:  good: plant sterols, stanolds 
+- only 9/37 saturated fats raise LDL
+- fiber > 30 g/d
+- sat fat < 15 g/d
+- ratio Trig/HGL  < 1    (HIGH if > 2)
+- dairy?  full fat dairy?
+
 Some goals:
 - LDL 70 or less
 - non-HDL less than 130 mg/dL
 - cholesterol ratio:  total cholesterol/HDL = 165/58 = 2.84 or ration 2.84 to 1
 - LP(a) - 20% lifestyle, 80% genetics (why thin, healthy people can have heart issues?)
+
+
 
 <2026-03-10 Tue> Toothpaste
 - SLS  - NO!  Sodium lauryl sulfate
