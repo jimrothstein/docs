@@ -1,47 +1,145 @@
-# Time-stamp: <Last changed 2026-01-23 22:48:31 by jim>
+# Time-stamp: <Last changed 2026-04-03 16:48:33 by jim>
+
 # (setq org-export-with-broken-links 'mark) -- if see this error
 #  TODO:   install ox-typst, pdf fails;
 
 
+* ORG-MODE: purpose
+  Outliner, organize TODO, DEADLINES, embed elisp to initialize new project.
+  vs.  markdown or typst, which are document rendering.
+  Yes, markdown is practical standard, but org-mode useful in different way.
+  With a litle lisp, org-mode can be completely customized. Perhaps one reason emacs survives, with each new technology emacs can absorb it.
+
+
+To See (at botom)  [[*Org Notes]]  (C-c C-o)
+Structure:   Next: ,  then TODO , then notes
+
 * Projects - TODO                                                   :todo:
-* Org Notes
-( ^c-[ ) Add to Agenda List
 
-*bold*
-_underline_
-/italilc/
-+strike-through+
-H_2O
-\exists
-~print('hi')~
+* TODO Learn Org mode                                         :org:learn:
+** TODO org-mode easier to navigate
+   1. **NEXT ::  CLEAN up  TODO  (C-c a t)**
+   3. TODO set org-agenda-files to collect ALL TODOs. 
+   4. TODO  [[https://www.youtube.com/watch?v=0-brF21ShRk&list=PLknodeJt-I5GJmcd7ENakYf_M0x9q50d1&index=8][org-mode | Galvin | video]]
+   5. TODO tutorial https://emacsclub.github.io/html/org_tutorial.html
+   6. TODO :: [[https://orgmode.org/worg/org-tutorials/orgtutorial_dto.html][another tutorial]]
 
---- https:://www.nytimes.com --- \
-[ [nytimes.com] [https://www.nytimes.com]]
-
-links:
-[[file:281_emacs_notes.typ][281_emacs_cheat]]
-
-#+begin_quote
-Type <q <TAB> to insert quote block
-#+end_quote
-
-* TODO Learn Org mode                                                  :org:learn:
-
-Goal: START organizing projects; NEXT TODO for each;  replacing paper.
-Second step:  Org mode vs denote vs ?  
-TODO: set org-agenda-files to collect ALL TODOs. 
-[ [org-mode ] [https://www.youtube.com/watch?v=0-brF21ShRk&list=PLknodeJt-I5GJmcd7ENakYf_M0x9q50d1&index=8]] Galvin
-- [ [tutorial][https://emacsclub.github.io/html/org_tutorial.html] ]
-- [ [another tutorial][https://orgmode.org/worg/org-tutorials/orgtutorial_dto.html] ]
-
+      
 * Learn Help Files
-* elisp
+
+* Learn elisp
 ** TODO Prot's book :read:
 ** TODO Chicago book :read:
+** Prot's text:*   repo: M-x Dired | M-x dired-do-info (over file: elispelem.info) 
+** Learn: Denote                                               :emacs:learn:
 
-* Prot's text:*   repo: M-x Dired | M-x dired-do-info (over file: elispelem.info) 
+* openrouter
+- SKILLS.md tutorial (https://agentskills.io/skill-creation/quickstart)
+- Jon = interesting things with AGENTSkills (https://gilead-biostats.github.io/qcthat/dev/)
 
-* Learn: Denote :emacs:learn:
+* gridify
+** Outline:
+ 1. What is goal?
+ 2. Examples of metadata?
+ 3. Grobs
+4. How gridify works
+5. How to do it?
+
+   
+* aNCA
+ NEXT:
+ 1. video Day # 1
+ 2. Thermo - again
+ 3. admiralci: TODO How they create Agents.md and contents of this file.
+ 4. use positron
+
+  - 30 Days of CDISC
+
+
+* Typst
+
+  USE online typst editor to debug  :typst
+  Basic:  000_simple.typ (learning curve to get symbols and format right).
+  Math:  done- simple matrix  notation
+
+* R
+- typst:  Ch 1,2 my Advanced R notes
+
+
+  
+* ML/AI/LLMs/ Theory...
+
+** TODO Mnielson [ [neural][ http://neuralnetworksanddeeplearning.com/chap1.html]] :read:
+** TODO Clark models               :read: 
+** TODO Patterns Hardt & Recht :read:
+** Kim, S.... https://skim.math.msstate.edu/LectureNotes/Machine_Learning_Lecture.pdf (python - see Ch2, good, but also need numerical examples ) :read: 
+
+** Mohamed AAZI - good, but lost the lin  :read:
+** ML from scratch, python, plus details (can be opinated) :  https://github.com/rodmarkun/SmolML?tab=readme-ov-file :read:
+** Geeks4Geeks : scikit  :read:
+** Geeks4Geeks : many tutorials https://www.geeksforgeeks.org/machine-learning/machine-learning/
+** Peng tidyverse 2021 Ch5 models
+** Bagging:  Classifer (0,1)  Bootstramp original sample; but each with only 1 or 2 features (sampled) from all features (ex: ageron, 05-decison-trees)
+
+** Tom Yeh, [[https://www.youtube.com/playlist?list=PL0cq-CiC5Qhs9HcDnJpWuoDMrV0iPJ_-X][ai by hand videos]]
+** Mitchell [[https://www.youtube.com/playlist?list=PL0cq-CiC5Qhs9HcDnJpWuoDMrV0iPJ_-X][Mitchell W .. good intution]]
+** Columbia (backprop) https://www.youtube.com/watch?v=sIX_9n-1UbM   
+* ML
+Videos: https://www.youtube.com/@AndrejKarpathy/videos  (esp to see backprop, simple python: https://www.youtube.com/watch?v=VMj-3S1tku0&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=1&t=37s) 
+
+Kaggle: guide https://www.kaggle.com/learn/intro-to-machine-learning
+
+* opencode
+  (ideas!) https://youtu.be/WNx-s-RxVxk?si=BpD36FsFY8Lq6juv (matt pocock)
+*** agents
+    (Antigravity - awesom) https://www.youtube.com/watch?v=baGKgnbQUq8
+*** (KodeLab) https://www.youtube.com/watch?v=baGKgnbQUq8
+
+* pyTorch
+** https://www.learnpytorch.io/02_pytorch_classification/              :read:
+** (ageron, python code only for v1 of hands-on) https://github.com/ageron/handson-mlp
+** (ageron, some text + links to above code) https://deepwiki.com/ageron/handson-ml3/1-overview
+
+*** Learnpytorch.io
+  1. <2026-03-31 Tue> TODO NEXT:  move to positron? and  begin video: https://youtu.be/V_xro1bcAuA?list=PLbcglKxZP5PNVpX0Opb46KC1Tqp1X1Zql&t=19807
+  2. (freeCodeCamp) (videos) https://www.youtube.com/watch?v=V_xro1bcAuA&list=PLbcglKxZP5PNVpX0Opb46KC1Tqp1X1Zql&index=2&t=19070s
+  3. (text) Learn pyTorch https://www.learnpytorch.io/
+  4. (colab) https://colab.research.google.com/github/mrdbourke/pytorch-deep-learning/blob/main/01_pytorch_workflow.ipynb  
+
+Videos:
+
+  3.  video:  freeCodeCamp pyTorch:read:
+
+    (Chollet's deep learn: 2020) https://www.youtube.com/watch?v=ZLgOIr_AkuQ ** (pytorch ??)
+    (Obyte) https://www.youtube.com/watch?v=G4UAQ6bxQzE (clear & concise)
+
+Text:
+
+    (Chollet) 3rd - https://deeplearningwithpython.io/chapters/ **
+    (ski-learn models, tutorial ) https://www.geeksforgeeks.org/machine-learning/learning-model-building-scikit-learn-python-machine-learning-library/
+    (ChrisVdweth, aka Selene)https://chrisvdweth.github.io/selene/ ML workbooks + explanations
+
+Articles:
+
+    (0byte) https://0byte.io/articles/pytorch_introduction.html (goes with his video)
+    https://www.youtube.com/watch?v=G4UAQ6bxQzE
+
+Play Area:
+
+    (w3 live python) https://www.w3schools.com/python/trypython.asp?filename=demo_default **
+
+** Extra Videos
+  advanced, but simple approach:  "statistical manifolds", training LLM via  path
+  https://www.youtube.com/watch?v=EMxDsDfvM_s&t=265s
+
+* python
+  (Kim - see above)
+  (w3) https://www.w3schools.com/python/python_lists.asp ***
+
+#+BEGIN_SRC bash
+  git status
+#+END_SRC
+
 * Algebra, Math, Statistics
 ** good, basic review geomrtry + transformations: https://pages.mtu.edu/~shene/COURSES/cs3621/NOTES/  :read:
 
@@ -64,48 +162,57 @@ MERGE
 SQUASH
 
 * i3
-* ML/AI/LLMs/...
-** TODO Mnielson [ [neural][ http://neuralnetworksanddeeplearning.com/chap1.html]] :read:
-** TODO Clark models               :read: 
-** Kim, S.... https://skim.math.msstate.edu/LectureNotes/Machine_Learning_Lecture.pdf (python, looks educational!) :read:
-** TODO Patterns Hardt & Recht :read:
 
-* Typst
-
-  USE online typst editor to debug  :typst
-  Basic:  000_simple.typ (learning curve to get symbols and format right).
-  Math:  done- simple matrix  notation
-
-* R
-- typst:  Ch 1,2 my Advanced R notes
-* Next Phone
-** TODO Pixel 3a XT?                                               :shopping:
-  
-* Legacy Code 
-* pyTorch
-** https://www.learnpytorch.io/02_pytorch_classification/              :read:
+------------------------  Org Notes
 
 
+* Org Notes
+
+  - bullets:  see init.el, org-bullets
+  - C-c-[  Add to Agenda List
+  - Today's date:    C-c .       (Ex: <2026-03-24 Tue>)
+  - Schedule:   C-c C-s
+  - Deadline:   C-c C-d
+  - Better outline:  Org Indent mode (M-x org-indent-mode RET),
+  - C-c a t Display all TODOs
+
+*** To link:
+1. This will be link:  [the link][description]
+2. Next, surround it by another pair of brackets [
+3. Ex:   [https://nytimes.com][nytimes]   (Remember to enclose in [)
+4. To Edit existing link:  C-c C-l
+5. To create a link to HEADING called HEAD
+6. type : [*HEAD]  and surround with another set of brackets [
+
+*** org mode help
+Compact Help: https://orgmode.org/guide/index.html#SEC_Contents 
+[[file:281_emacs_notes.typ][281_emacs_cheat]]
+
+
+*bold*
+_underline_
+/italilc/
++strike-through+
+H_2O
+\exists
+~print('hi')~
+
+
+#+begin_quote
+Type <q <TAB> to insert quote block
+#+end_quote
 
 #+BEGIN_CENTER
 hi
 #+END_CENTER
 
 
-<2024-05-04 Sat>:
 
-## REST RESTful, HTTP Protocol , JSON, RFC, API and Web Technologies
-
-#+BEGIN_SRC bash
-  git status
-#+END_SRC
+# <-------------------------------------------------------
 
 
+* RANDOM
 
 
-
-** Kim, S. Math Foundations https://skim.math.msstate.edu/LectureNotes/Machine_Learning_Lecture.pdf :read:
-** Mohamed AAZI - good, but lost the lin  :read:
-** ML from scratch, python, plus details:  https://github.com/rodmarkun/SmolML?tab=readme-ov-file :read:
-** video:  freeCodeCamp pyTorch  :read:
-** Geeks4Geeks : scikit  :read:
+* Return to TOP
+Either click or C-c C-o [[*Projects - TODO]]

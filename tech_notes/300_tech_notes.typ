@@ -2,6 +2,16 @@
 typst file
 
 
+== Mar 2026
+
+=== Use Calibre for all files, including those currently on iPad.
+(status:  still investigation)
+- iPad to linux?  (calibre).  Several ways?
+- "Calibre Companion", runs on iPad and can retrieve files from linux;  but **not** send files to linux.
+- From iCloud to linux?
+- sftp between linux & ipad?   (linux:  sudo systemctl start ssh;    then ftp localhost<CR>)
+
+
 == Feb 2026
 Haskell working hard on  data science; tutorials... cloud based GUI
 
@@ -141,7 +151,14 @@ on INDEX C). Math, R, probability and stats notes **do NOT go here**
 
 == emacs/org mode/eLisp
 
-SEE: Separate emacs/org documentation
+CAUTION: org mode is structured outline; markdown, typst are for document formatting.
+TODO: Which to use?
+
+SEE: Separate emacs/org documentation  
+281_emacs_notes.typ
+
+SEE:  000_PROJECTS.org
+
 
 == functional programming (julia, rust, lisp)
 - Julia easier?
@@ -998,6 +1015,9 @@ RETAIL DEMO UNIT ('retail mode'):
 - OnePlus 8 (bought 9/25) ($137) very good, but no 3mm jack;
 - buy Redmi Note 14;    because mid-range; has 3mm jack;  6GB/128GB ($140)
 
+== Typst (and emacs)
+(22 MARCH 2026) - assorted problems getting all emacs pieces installed.  needs lsp, mist,  and a few other pieces.   Maybe very active development now.  Postpone till I have more info.
+
 ```{=typst}
 #set align(center)
 #block(
@@ -1132,4 +1152,3 @@ car: https://portland.craigslist.org/mlt/cto/d/portland-2012-toyota-prius/778999
 carfax: see pdf (shows battery replaced; Jack says it wasn't)
 service records: see pdf  
 
-***

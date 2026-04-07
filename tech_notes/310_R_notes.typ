@@ -7,15 +7,10 @@
 	PURPOSE:  Collect all notes, links, references for R to here.
 	NO installation (R, Rstudio, etc) in this file
 	
-	write 310_R_notes.qmd AFTER understand! 
+	Delay writing to 310_R_notes.typ until understand the entry.
 	including link to file where work actually done!
 
 
-```{r, setup, include=FALSE}
-knitr::opts_chunk$set(
-  comment = '', fig.width = 6, fig.height = 6, collapse = TRUE
-)
-```
 ## TODO
 explain process:  capture unevaluated code; manipulate it; later evaluate
 
@@ -24,6 +19,28 @@ explain process:  capture unevaluated code; manipulate it; later evaluate
 -	defuse &  inject are opposites
 -	embrase {{}}, tells function must first evalute the unevaluated content inside {{}}
 -   one idea is to carry unevaluated code and envir to another function; for either maniputlation or evalution.
+
+
+## R packages & LLM
+gander:: improve code
+mini077::
+chores::  for agent?
+mall:: row-by-row classifier
+
+```
+ragnar:: for documentation
+| Package | Description |
+|---------|-------------|
+| **mini007** | A lightweight framework for orchestrating multiple LLM agents to decompose and execute complex tasks, built on the ellmer package. |
+| **chores** | A collection of ergonomic LLM assistants that help complete repetitive coding tasks (documenting with roxygen, writing tests, converting to cli) via an RStudio addin. |
+| **btw** | A toolkit for connecting R environments with LLMs, providing utilities to describe R objects and workspace state for pasting into chat interfaces or integrating with ellmer. |
+| **gander** | An LLM chat interface integrated directly into RStudio/Positron that automatically incorporates context from code and the global environment, streaming responses into documents. |
+| **mall** | A package for running multiple LLM predictions against tables or vectors for NLP tasks like sentiment analysis, classification, and text extraction. |
+| **ragnar** | A tidy toolkit for building retrieval-augmented generation (RAG) workflows that processes documents, stores embeddings in DuckDB, and integrates with ellmer for grounded LLM responses. |
+```
+
+
+
 
 
 ## Compare

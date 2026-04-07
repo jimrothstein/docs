@@ -1,4 +1,4 @@
-// Time-stamp: <Last changed 2025-12-18 14:29:51 by jim>
+// Time-stamp: <Last changed 2026-03-26 20:35:12 by jim>
 
 #set heading(numbering: "1.")
 #set text(
@@ -17,7 +17,8 @@ For other more general topics regarding this repo I would recommend checking our
 
 Other pages:
 
-    PKNCA website. This is the package that we use in the background for all calculations. Unfortunately their website is very focussed on how to use PKNCA, and not so much on the concepts behind NCA. But maybe can be useful.
+    PKNCA website. This is the package that we use in the background for all calculations. Unfortunately their website is very focussed on how to use PKNCA, and not so much on the concepts behind NCA. But maybe can be useful.  Video:  https://www.youtube.com/watch?v=dSnMlLvnnbA&list=PLbcglKxZP5PPBplKMO9obNAjLIM7GGfp4&index=1&t=2443s
+
 
     ADNCA - CDISC guideline. CDISC has some guidelines explaining the format expected for ADNCA, which is the input that our App uses. For some people like me is easier to understand the concepts once you grab how the data is structured, so here you have it.
 

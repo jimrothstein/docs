@@ -2,6 +2,13 @@
 
 281_emacs_notes.typ
 
+
+== Typst
+3-24-2026
+To render:   use cli:  typst watch <file.typ>
+PROBLEMS:   with tree-sitter, LSP, mist, ....  Just wait
+==
+
 = NOTE:
 in transition,
 old:  280_emacs_notes.qmd
