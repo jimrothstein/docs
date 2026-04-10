@@ -1,4 +1,4 @@
-# Time-stamp: <Last changed 2026-04-03 16:48:33 by jim>
+# Time-stamp: <Last changed 2026-04-08 22:54:37 by jim>
 
 # (setq org-export-with-broken-links 'mark) -- if see this error
 #  TODO:   install ox-typst, pdf fails;
@@ -6,8 +6,7 @@
 
 * ORG-MODE: purpose
   Outliner, organize TODO, DEADLINES, embed elisp to initialize new project.
-  vs.  markdown or typst, which are document rendering.
-  Yes, markdown is practical standard, but org-mode useful in different way.
+  (markdown or typst, which are document rendering.)
   With a litle lisp, org-mode can be completely customized. Perhaps one reason emacs survives, with each new technology emacs can absorb it.
 
 
@@ -19,10 +18,10 @@ Structure:   Next: ,  then TODO , then notes
 * TODO Learn Org mode                                         :org:learn:
 ** TODO org-mode easier to navigate
    1. **NEXT ::  CLEAN up  TODO  (C-c a t)**
-   3. TODO set org-agenda-files to collect ALL TODOs. 
-   4. TODO  [[https://www.youtube.com/watch?v=0-brF21ShRk&list=PLknodeJt-I5GJmcd7ENakYf_M0x9q50d1&index=8][org-mode | Galvin | video]]
-   5. TODO tutorial https://emacsclub.github.io/html/org_tutorial.html
-   6. TODO :: [[https://orgmode.org/worg/org-tutorials/orgtutorial_dto.html][another tutorial]]
+   2. TODO set org-agenda-files to collect ALL TODOs. 
+   3. TODO  [[https://www.youtube.com/watch?v=0-brF21ShRk&list=PLknodeJt-I5GJmcd7ENakYf_M0x9q50d1&index=8][org-mode | Galvin | video]]
+   4. TODO tutorial https://emacsclub.github.io/html/org_tutorial.html
+   5. TODO :: [[https://orgmode.org/worg/org-tutorials/orgtutorial_dto.html][another tutorial]]
 
       
 * Learn Help Files
@@ -49,9 +48,8 @@ Structure:   Next: ,  then TODO , then notes
 * aNCA
  NEXT:
  1. video Day # 1
- 2. Thermo - again
+ 2. Thermo - again  (SEE ~/code/try_things_here/PKNCA <- scratch area)
  3. admiralci: TODO How they create Agents.md and contents of this file.
- 4. use positron
 
   - 30 Days of CDISC
 
@@ -89,11 +87,16 @@ Videos: https://www.youtube.com/@AndrejKarpathy/videos  (esp to see backprop, si
 
 Kaggle: guide https://www.kaggle.com/learn/intro-to-machine-learning
 
-* opencode
+* modern: opencode & tools
+ts - written in typescript?
   (ideas!) https://youtu.be/WNx-s-RxVxk?si=BpD36FsFY8Lq6juv (matt pocock)
 *** agents
     (Antigravity - awesom) https://www.youtube.com/watch?v=baGKgnbQUq8
 *** (KodeLab) https://www.youtube.com/watch?v=baGKgnbQUq8
+
+*** What is compact  [[compact ][~/code/docs/tech_notes/compact.md]]
+*** background:  context gets too big (https://papers.voltropy.com/LCM)
+*** free tools ? https://github.com/vava-nessa/free-coding-models?tab=readme-ov-file#-why-this-tool  
 
 * pyTorch
 ** https://www.learnpytorch.io/02_pytorch_classification/              :read:
@@ -168,6 +171,7 @@ SQUASH
 
 * Org Notes
 
+  - Shift-TAB   open/close all headings
   - bullets:  see init.el, org-bullets
   - C-c-[  Add to Agenda List
   - Today's date:    C-c .       (Ex: <2026-03-24 Tue>)
