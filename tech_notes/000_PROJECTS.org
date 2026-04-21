@@ -1,4 +1,4 @@
-# Time-stamp: <Last changed 2026-04-18 15:24:51 by jim>
+# Time-stamp: <Last changed 2026-04-20 18:39:36 by jim>
 
 # (setq org-export-with-broken-links 'mark) -- if see this error
 #  TODO:   install ox-typst, pdf fails;
@@ -106,6 +106,9 @@ ts - written in typescript?
   - SKILLS.md tutorial (https://agentskills.io/skill-creation/quickstart)
   - Jon = interesting things with AGENTSkills (https://gilead-biostats.github.io/qcthat/dev/)
   - (Antigravity - awesom) https://www.youtube.com/watch?v=baGKgnbQUq8
+  - opencode allows agent info to be put into ~/.config/opencode/opencode.json (advanage:  no need to put in AGENTS.md each time)
+
+*** Opencode has "subagents" - for specialized activites (General and explore)
     
 
 HuggingFace
@@ -120,9 +123,12 @@ HuggingFace
 *** What is compact  [[compact ][~/code/docs/tech_notes/compact.md]]
 *** background:  context gets too big (https://papers.voltropy.com/LCM)
 *** free tools ? https://github.com/vava-nessa/free-coding-models?tab=readme-ov-file#-why-this-tool  
-
 *** What is "tool"?  When LLM needs external info (file system, web) provides agent with such a tool. Agent then runs the tool.
-*** ACP (Agent Client Protocol) any IDE - any Agent communication (if both support) www.agentclientprotocol.com
+*** ACP (Agent Client Protocol) any IDE; write in buffer then send to agent - any Agent communication (if both support) www.agentclientprotocol.com
+*** ADR (Architecture Decision Model) - a record of decsions made, as process evolves
+*** artifact: A reminent that remains long after and yields insights into what we did; why; and how we did it.
+*** Open Claw: can communicate via slack, signal .... executes based on information arriving. (pi )
+
 * pyTorch
 ** https://www.learnpytorch.io/02_pytorch_classification/              :read:
 ** (ageron, python code only for v1 of hands-on) https://github.com/ageron/handson-mlp
