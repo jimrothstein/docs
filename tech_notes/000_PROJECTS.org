@@ -1,4 +1,4 @@
-# Time-stamp: <Last changed 2026-04-08 22:54:37 by jim>
+# Time-stamp: <Last changed 2026-04-18 15:24:51 by jim>
 
 # (setq org-export-with-broken-links 'mark) -- if see this error
 #  TODO:   install ox-typst, pdf fails;
@@ -33,8 +33,6 @@ Structure:   Next: ,  then TODO , then notes
 ** Learn: Denote                                               :emacs:learn:
 
 * openrouter
-- SKILLS.md tutorial (https://agentskills.io/skill-creation/quickstart)
-- Jon = interesting things with AGENTSkills (https://gilead-biostats.github.io/qcthat/dev/)
 
 * gridify
 ** Outline:
@@ -50,54 +48,81 @@ Structure:   Next: ,  then TODO , then notes
  1. video Day # 1
  2. Thermo - again  (SEE ~/code/try_things_here/PKNCA <- scratch area)
  3. admiralci: TODO How they create Agents.md and contents of this file.
+ 4. aNCA ... frustrated with PR.
 
   - 30 Days of CDISC
+
 
 
 * Typst
 
   USE online typst editor to debug  :typst
   Basic:  000_simple.typ (learning curve to get symbols and format right).
-  Math:  done- simple matrix  notation
 
 * R
 - typst:  Ch 1,2 my Advanced R notes
-
-
   
-* ML/AI/LLMs/ Theory...
+* ML/AI/LLMs/ Things to Read Theory...
 
+** ML from scratch, python, good introductions:  https://github.com/rodmarkun/SmolML?tab=readme-ov-file :read:
 ** TODO Mnielson [ [neural][ http://neuralnetworksanddeeplearning.com/chap1.html]] :read:
 ** TODO Clark models               :read: 
 ** TODO Patterns Hardt & Recht :read:
 ** Kim, S.... https://skim.math.msstate.edu/LectureNotes/Machine_Learning_Lecture.pdf (python - see Ch2, good, but also need numerical examples ) :read: 
 
 ** Mohamed AAZI - good, but lost the lin  :read:
-** ML from scratch, python, plus details (can be opinated) :  https://github.com/rodmarkun/SmolML?tab=readme-ov-file :read:
 ** Geeks4Geeks : scikit  :read:
 ** Geeks4Geeks : many tutorials https://www.geeksforgeeks.org/machine-learning/machine-learning/
 ** Peng tidyverse 2021 Ch5 models
 ** Bagging:  Classifer (0,1)  Bootstramp original sample; but each with only 1 or 2 features (sampled) from all features (ex: ageron, 05-decison-trees)
 
 ** Tom Yeh, [[https://www.youtube.com/playlist?list=PL0cq-CiC5Qhs9HcDnJpWuoDMrV0iPJ_-X][ai by hand videos]]
+
+** HuggingFace
+    video: https://youtu.be/QEaBAZQCtwE?si=KlY62cMeE63jtoNP
+    datacamp:  https://www.youtube.com/watch?v=R8h_gpSpEVU
+    exBert (visualize ??) https://www.youtube.com/watch?v=Dtw1lcFg3Ss
+    BERT: (article - I don't get it) https://arize.com/blog-course/unleashing-bert-transformer-model-nlp/
+
 ** Mitchell [[https://www.youtube.com/playlist?list=PL0cq-CiC5Qhs9HcDnJpWuoDMrV0iPJ_-X][Mitchell W .. good intution]]
+
 ** Columbia (backprop) https://www.youtube.com/watch?v=sIX_9n-1UbM   
+
 * ML
 Videos: https://www.youtube.com/@AndrejKarpathy/videos  (esp to see backprop, simple python: https://www.youtube.com/watch?v=VMj-3S1tku0&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=1&t=37s) 
-
 Kaggle: guide https://www.kaggle.com/learn/intro-to-machine-learning
 
-* modern: opencode & tools
+* RE - cart project
+- NEXT:  go though https://gymnasium.farama.org/introduction/basic_usage/  
+- video (newer OpenEnv) https://www.youtube.com/watch?v=VUb16HYIyl4
+* Organize + ai (knowledge graph, wiki, 
+- video: create wiki & knowledge graph, rag https://www.youtube.com/watch?v=yYSTsKo8moU
+- another LLM & wiki: https://www.youtube.com/watch?v=zVEb19AwkqM
+
+* modern: opencode, SKILLS.md, tools, HOW-TO, context
 ts - written in typescript?
   (ideas!) https://youtu.be/WNx-s-RxVxk?si=BpD36FsFY8Lq6juv (matt pocock)
-*** agents
-    (Antigravity - awesom) https://www.youtube.com/watch?v=baGKgnbQUq8
+*** AGENTS
+  - SKILLS.md tutorial (https://agentskills.io/skill-creation/quickstart)
+  - Jon = interesting things with AGENTSkills (https://gilead-biostats.github.io/qcthat/dev/)
+  - (Antigravity - awesom) https://www.youtube.com/watch?v=baGKgnbQUq8
+    
+
+HuggingFace
+    video: https://youtu.be/QEaBAZQCtwE?si=KlY62cMeE63jtoNP
+    datacamp:  https://www.youtube.com/watch?v=R8h_gpSpEVU
+    create spaces: https://youtu.be/xqdTFyRdtjQ?t=156
+    exBert (visualize ??) https://www.youtube.com/watch?v=Dtw1lcFg3Ss
+    BERT: (article - I don't get it) https://arize.com/blog-course/unleashing-bert-transformer-model-nlp/
+
 *** (KodeLab) https://www.youtube.com/watch?v=baGKgnbQUq8
 
 *** What is compact  [[compact ][~/code/docs/tech_notes/compact.md]]
 *** background:  context gets too big (https://papers.voltropy.com/LCM)
 *** free tools ? https://github.com/vava-nessa/free-coding-models?tab=readme-ov-file#-why-this-tool  
 
+*** What is "tool"?  When LLM needs external info (file system, web) provides agent with such a tool. Agent then runs the tool.
+*** ACP (Agent Client Protocol) any IDE - any Agent communication (if both support) www.agentclientprotocol.com
 * pyTorch
 ** https://www.learnpytorch.io/02_pytorch_classification/              :read:
 ** (ageron, python code only for v1 of hands-on) https://github.com/ageron/handson-mlp
@@ -144,9 +169,11 @@ Play Area:
 #+END_SRC
 
 * Algebra, Math, Statistics
+** CHEAT - Linear Algebra (*.typ)
 ** good, basic review geomrtry + transformations: https://pages.mtu.edu/~shene/COURSES/cs3621/NOTES/  :read:
 
 ** Linear Maps & Derivatives (https://math-website.pages.dev/, "CantorClosure:  https://www.reddit.com/r/learnmath/comments/1pjl731/differential_calculus_through_linear_maps/)
+** Pen & Paper - Gutmann - Exericse in ML (can I do??)
 ** Read Shaina Race :read:
 - write simple Baysian example :statistics:
 - write ellipse transformation to cononical coordinates. :math:
@@ -213,6 +240,12 @@ hi
 
 
 # <-------------------------------------------------------
+
+
+* Calibre/books/iPad/epub
+  TODO: All books in Drive/READ ?
+        Then get to Calibre
+        Then move to iPad or ePub tablet
 
 
 * RANDOM

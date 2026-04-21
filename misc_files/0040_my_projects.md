@@ -22,7 +22,6 @@ As of \today | 0040_my_projects.md
 
 
 ###  **MASTER:  ONGOING **
-\noindent\rule{10cm}{0.4pt}
 
 
 #### Deliverables

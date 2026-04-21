@@ -274,20 +274,42 @@ Gene: **pcsk9** inihits, lowers LDL; by affecting number of LDL receptors (too f
 
 === Diet
 Claim:  good: plant sterols, stanolds 
-- only 9/37 saturated fats raise LDL
+- only 9 out of 37 saturated fats raise LDL
 - fiber > 30 g/d
 - sat fat < 15 g/d
 - ratio Trig/HGL  < 1    (HIGH if > 2)
 - dairy?  full fat dairy?
 
+Guidelines:   See American College of Cardiology 2026 guidelines
+
 Some goals:
-- LDL 70 or less
+- Get measured by age 19!   Thereafter, every 5 years
+- LDL 70 or less (esp if 10-yr risk or CAC score over 100)
 - non-HDL less than 130 mg/dL
 - cholesterol ratio:  total cholesterol/HDL = 165/58 = 2.84 or ration 2.84 to 1
 - LP(a) - 20% lifestyle, 80% genetics (why thin, healthy people can have heart issues?)
+- Claim:  extremely aggressive goals ( LDL < 55) can even shrink plaque!  (NYtimes 14 APR 2026, "Well" pg D37)
+
+Risk Factors
+- Lipoprotein(a) - genetic, increases risk regardless of other lipids values; relatively constant throughout adult life.  Measure it at least once.
+- ApoB - better measure of cholesterol risk b/c includes all the "bad" cholesterol (LDL, Lp(a), vLDL) considered **reliable** measure.
+- (LDL particles differ in size/density and impact on body) 
+- Generally, lower LDL is better (with a few exceptions).  Risk is really **lifetime** risk; meaning total exposure:   time x lipids values.
+- PREVENT - calculator for 10-year  and 30-year risk (esp for young people)
+- CAC (coronary arterial calcium) score - If at intermediate risk this measure (using low-dose CT) can guide conversation.
+
+
+Treatment:
+- Statin - even for young! (put it in water)
+- ezetimibe - inhibit absorbing cholesterol from food.
+- bempedoic acid - inhibits cholesterol production in liver.
+- PCSK9 inhibitors (newer) - aids liver in eliminating LDL from blood (now: injection; pill coming)
+
+
 
 
 
 <2026-03-10 Tue> Toothpaste
 - SLS  - NO!  Sodium lauryl sulfate
 - "Hello" - high in K nitrate; adds aloe verdi (claim: soothing)
+===

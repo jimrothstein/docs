@@ -415,3 +415,33 @@ $gradient f(arrow(x), arrow(y))$ =
 $vec(dv(f,x, eval:0),(dv(f,y, eval:0)))$ =
 $vec(-7,7)$
 (reverse the sign, to find min)
+
+= Calculus
+== Compare derivative in 1D vs 2D
+curve (1D)  in $R^2$
+
+$
+f: RR -> RR
+$
+direction (only left/right, or no change)
+point at x
+point at x + h  (where h small, points are near)
+
+so
+$f(x)$ and $f(x + h)$ are both scalar.
+$ 
+ lim_(h-> 0) (f(x+h) - f(x))/h 
+$
+
+
+But in 2D
+surface (2D) in $R^3$
+directions now infinite
+point at  $vec(x)$
+2nd point a $vec(x +  s, y + r)$
+
+
+
+$
+f: RR^2 -> RR
+$

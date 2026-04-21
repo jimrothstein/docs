@@ -4,10 +4,10 @@ typst file
 
 == Mar 2026
 
-=== Use Calibre for all files, including those currently on iPad.
-(status:  still investigation)
-- iPad to linux?  (calibre).  Several ways?
-- "Calibre Companion", runs on iPad and can retrieve files from linux;  but **not** send files to linux.
+=== Use Calibre for all files - one central place - including those currently on iPad.
+From iPad:  can upload to Drive!
+To iPad:  from Drive to iPad?
+- from Linux? iPad runs "Calibre Companion" to retrieve from linux - NOT the reverse
 - From iCloud to linux?
 - sftp between linux & ipad?   (linux:  sudo systemctl start ssh;    then ftp localhost<CR>)
 
