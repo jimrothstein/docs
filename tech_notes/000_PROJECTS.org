@@ -1,9 +1,19 @@
-# Time-stamp: <Last changed 2026-04-20 18:39:36 by jim>
+# Time-stamp: <Last changed 2026-05-06 20:47:58 by jim>
 
 # (setq org-export-with-broken-links 'mark) -- if see this error
 #  TODO:   install ox-typst, pdf fails;
 
 
+# keep closed,  also can do: (setq org-startup-folded 'overview)
+#+STARTUP: overview
+
+<<<TOP>>> (<- target,   then anywhere in text, type target name,  link will form (reload)) 
+Typst
+
+
+Diary
+- NEXT: continue Kaggle (python and machine l)
+  
 * ORG-MODE: purpose
   Outliner, organize TODO, DEADLINES, embed elisp to initialize new project.
   (markdown or typst, which are document rendering.)
@@ -48,23 +58,41 @@ Structure:   Next: ,  then TODO , then notes
  1. video Day # 1
  2. Thermo - again  (SEE ~/code/try_things_here/PKNCA <- scratch area)
  3. admiralci: TODO How they create Agents.md and contents of this file.
- 4. aNCA ... frustrated with PR.
 
   - 30 Days of CDISC
 
 
 
-* Typst
+TOP
 
-  USE online typst editor to debug  :typst
-  Basic:  000_simple.typ (learning curve to get symbols and format right).
 
+* <<<Typst>>>    (target)
+
+  1. USE online typst editor to debug  :typst
+  2. Basic:  000_simple.typ (learning curve to get symbols and format right).
+  3. Pretty graphs?    plotsy + cetz
+
+  
 * R
 - typst:  Ch 1,2 my Advanced R notes
-  
-* ML/AI/LLMs/ Things to Read Theory...
 
-** ML from scratch, python, good introductions:  https://github.com/rodmarkun/SmolML?tab=readme-ov-file :read:
+* python (no ML)
+- LEARN: https://www.emilyriederer.com/post/py-rgo-2025/
+- 
+  
+* ML - Basics  (need to double-check)
+** Peng tidyverse 2021 Ch5 models
+** LEARNING: SmolML (uses Karpathy) from scratch in python, no pytorch :  https://github.com/rodmarkun/SmolML?tab=readme-ov-file :read:
+** Geeks4Geeks : many tutorials https://www.geeksforgeeks.org/machine-learning/machine-learning/
+** Kaggle: ** guide https://www.kaggle.com/learn/intro-to-machine-learning, 
+        https://www.kaggle.com/code/dansbecker/how-models-work
+** Karpathy https://www.youtube.com/watch?v=VMj-3S1tku0&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=1
+** Rebecca Carter, very clear:  tidymodel intro (https://rebeccabarter.com/blog/2020-03-25_machine_learning#what-is-tidymodels)
+
+
+
+* ML - more Hands-on
+
 ** TODO Mnielson [ [neural][ http://neuralnetworksanddeeplearning.com/chap1.html]] :read:
 ** TODO Clark models               :read: 
 ** TODO Patterns Hardt & Recht :read:
@@ -72,9 +100,11 @@ Structure:   Next: ,  then TODO , then notes
 
 ** Mohamed AAZI - good, but lost the lin  :read:
 ** Geeks4Geeks : scikit  :read:
-** Geeks4Geeks : many tutorials https://www.geeksforgeeks.org/machine-learning/machine-learning/
-** Peng tidyverse 2021 Ch5 models
 ** Bagging:  Classifer (0,1)  Bootstramp original sample; but each with only 1 or 2 features (sampled) from all features (ex: ageron, 05-decison-trees)
+
+* ML/AI/LLMs/ Things to Read Theory...
+
+** Video lectures:  AI, ML  probability, linear algebra!  https://www.youtube.com/watch?v=YIJrRfj37Cc&list=PLE0hRHRkCk4N-nYlVGSE8cwyzxQomm2Pa 
 
 ** Tom Yeh, [[https://www.youtube.com/playlist?list=PL0cq-CiC5Qhs9HcDnJpWuoDMrV0iPJ_-X][ai by hand videos]]
 
@@ -84,13 +114,10 @@ Structure:   Next: ,  then TODO , then notes
     exBert (visualize ??) https://www.youtube.com/watch?v=Dtw1lcFg3Ss
     BERT: (article - I don't get it) https://arize.com/blog-course/unleashing-bert-transformer-model-nlp/
 
-** Mitchell [[https://www.youtube.com/playlist?list=PL0cq-CiC5Qhs9HcDnJpWuoDMrV0iPJ_-X][Mitchell W .. good intution]]
-
 ** Columbia (backprop) https://www.youtube.com/watch?v=sIX_9n-1UbM   
 
-* ML
-Videos: https://www.youtube.com/@AndrejKarpathy/videos  (esp to see backprop, simple python: https://www.youtube.com/watch?v=VMj-3S1tku0&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=1&t=37s) 
-Kaggle: guide https://www.kaggle.com/learn/intro-to-machine-learning
+
+Why do we measure?   Suppose we sum over all elments of (0,1) - too big; uncountable.   Choose a measure where singletons have measure zero!
 
 * RE - cart project
 - NEXT:  go though https://gymnasium.farama.org/introduction/basic_usage/  
@@ -107,6 +134,8 @@ ts - written in typescript?
   - Jon = interesting things with AGENTSkills (https://gilead-biostats.github.io/qcthat/dev/)
   - (Antigravity - awesom) https://www.youtube.com/watch?v=baGKgnbQUq8
   - opencode allows agent info to be put into ~/.config/opencode/opencode.json (advanage:  no need to put in AGENTS.md each time)
+  - Simon Willison writes how he uses LLM models; https://simonwillison.net/2026/Mar/30/mr-chatterbox/
+  - Ask LLM to keep ~/NOTES.md  ("Oh, also, as you work, please keep working notes in ~/NOTES.md -- update them each new step you take, each investigation, and document your findings. Thank you!" 
 
 *** Opencode has "subagents" - for specialized activites (General and explore)
     
@@ -175,10 +204,16 @@ Play Area:
 #+END_SRC
 
 * Algebra, Math, Statistics
+*** Calculus
+    1. Linear Maps & Derivatives (https://math-website.pages.dev/, "CantorClosure:  https://www.reddit.com/r/learnmath/comments/1pjl731/differential_calculus_through_linear_maps/)
+    2. Calculus Book I have
+    3.  Deisenroth, https://mml-book.github.io/book/mml-book.pdf    
+    4. Paul's Online Notes  https://tutorial.math.lamar.edu/Classes/CalcIII/EqnsOfPlanes.aspx
+    5. Strang:  https://math.libretexts.org/Bookshelves/Calculus/Calculus_(OpenStax)/14%3A_Differentiation_of_Functions_of_Several_Variables/14.04%3A_Tangent_Planes_and_Linear_Approximations 
+
 ** CHEAT - Linear Algebra (*.typ)
 ** good, basic review geomrtry + transformations: https://pages.mtu.edu/~shene/COURSES/cs3621/NOTES/  :read:
 
-** Linear Maps & Derivatives (https://math-website.pages.dev/, "CantorClosure:  https://www.reddit.com/r/learnmath/comments/1pjl731/differential_calculus_through_linear_maps/)
 ** Pen & Paper - Gutmann - Exericse in ML (can I do??)
 ** Read Shaina Race :read:
 - write simple Baysian example :statistics:

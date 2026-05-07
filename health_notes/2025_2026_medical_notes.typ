@@ -1,9 +1,25 @@
 
 
+#show "finasteride": smallcaps
+#show "psyllium": set text(blue)
+#show "colonoscopy": set text(red)
+#show "statin": set text(red)
+
+This is finasteride.
+This is psyllium
+
 /* makes bold, ie strong, appear in red, using asterisks or formal #strong[text]  */
 #show strong: set text(red)
 
 === *prior*, see medical_notes.qmd,   continue here:
+
+
+=== General Health Notes
+- claim: daily, 2 min out-of-breath, can't talk.... ie brief, vigorous  + reg exercise ... great for metabolism
+- 
+
+
+=== Chron
 
 Nov 10, 2025
 
@@ -235,7 +251,7 @@ She and I seemed to be on same page.
 - One suggestion:  reduce/cut allopurinol  (originally for high uric acid).
 
 
-== <2026-02-16 Mon> (M-x org-timestamp)   FECES - normal ! lipids
+== 2026-02-16 Mon (M-x org-timestamp)   FECES - normal ! lipids
 Stool is regular, very swollen, daily, mostly 1 big piece, often greenish.
 All, since recoverng from early Nov 25 colonoscopy.   Is it more psyllium?  something change?
 
@@ -270,15 +286,26 @@ soft plaque - can break off and cause blockage
 Statin will not fix plaque;  statin preventive for addition to
 Statin blocks necessary enzyme liver needs to produce more cholesterol (at night)
 Whey - benfits of dairy?
-Gene: **pcsk9** inihits, lowers LDL; by affecting number of LDL receptors (too few is  problem)
+Gene: *pcsk9* inihits, lowers LDL; by affecting number of LDL receptors (too few is  problem)
 
 === Diet
-Claim:  good: plant sterols, stanolds 
+Claim:  good: plant sterols, stanolds (claim: both  clolesterol and this compete for absorption; thus can crowd out the cholesterol)
 - only 9 out of 37 saturated fats raise LDL
 - fiber > 30 g/d
 - sat fat < 15 g/d
 - ratio Trig/HGL  < 1    (HIGH if > 2)
 - dairy?  full fat dairy?
+
+Food affects:
+- vegan reduces cholesterol by -15 mg/dL
+- Mediterrean                   no effect
+- nuts (1serving/d)             - 4.8 mg/dL
+- more fiber (oatmeal)          < 5 mg/dL
+- portfolio diet                - 26 mg/dL (margarine enriched with sterols)
+
+plant sterols are found in  usual places (fruit/veg; whole grain; nuts; but also enriched cheese, milk with phytosterols ??)
+Many kinds of phytosterols;  Nuts have much more than vegetables.   
+
 
 Guidelines:   See American College of Cardiology 2026 guidelines
 
@@ -292,9 +319,9 @@ Some goals:
 
 Risk Factors
 - Lipoprotein(a) - genetic, increases risk regardless of other lipids values; relatively constant throughout adult life.  Measure it at least once.
-- ApoB - better measure of cholesterol risk b/c includes all the "bad" cholesterol (LDL, Lp(a), vLDL) considered **reliable** measure.
+- ApoB - better measure of cholesterol risk b/c includes all the "bad" cholesterol (LDL, Lp(a), vLDL) considered *reliable* measure.
 - (LDL particles differ in size/density and impact on body) 
-- Generally, lower LDL is better (with a few exceptions).  Risk is really **lifetime** risk; meaning total exposure:   time x lipids values.
+- Generally, lower LDL is better (with a few exceptions).  Risk is really *lifetime* risk; meaning total exposure:   time x lipids values.
 - PREVENT - calculator for 10-year  and 30-year risk (esp for young people)
 - CAC (coronary arterial calcium) score - If at intermediate risk this measure (using low-dose CT) can guide conversation.
 
@@ -306,10 +333,77 @@ Treatment:
 - PCSK9 inhibitors (newer) - aids liver in eliminating LDL from blood (now: injection; pill coming)
 
 
-
-
-
-<2026-03-10 Tue> Toothpaste
+2026-03-10 Tue Toothpaste
 - SLS  - NO!  Sodium lauryl sulfate
 - "Hello" - high in K nitrate; adds aloe verdi (claim: soothing)
-===
+
+2026-04-21 Lipids,   Lp(a) = 10 which is low, no risk??  no statin?  (do not see results from Trig, LDL, HDL)
+Dr. Z is something else.
+- 2 weeks ago, x-ray from shoulder.  I ask *STILL* asking what xray said.  She talks about physical therapy.
+- statin?  I feel left in the hanging. Why won't she do what she says?  Explain this thinking.
+
+#pagebreak
+
+#import "@preview/cheq:0.3.0": checklist
+#show: checklist
+#show: checklist.with(extras: true)
+
+2026-05-04 Dr. Z - appt
+Status as I see it:
+
+Status:
+What I want?
+
+
+- [ ] Rib injury 
+Status: Occasion pain. The wrap is not best. No followup.
+What is plan?: 
+Issue:  (1) is it "bone spasm" ? (2) Spine - suspect childhood, but do not know. 
+
+
+- [ ] Xray - status ??   Kaiser will not request;  Best Med will not send. Calls to Best Med not returned.  Is this a joke?
+Status:   Baffled
+What is plan?
+Issue: Kaiser wont' request xray; Best Med won't send; call not returned.   Asked doctor to intervene.
+
+- [ ] gallbladder - No followup.   Not aware of any problems then or now;  only told "angry".   
+Status: Don't know.
+What is plan:  
+Issue:  Not aware of any problem, either now or at time of colonoscopy (Nov 2025).  
+
+- [ ] GI
+Status: 
+What is plan:  
+Issue: Seems to be multiple issues that **should** manifest.  But do not. Concern that tinkering (e.g. gallblader), without knowing, could upset GI tract.
+
+
+- [ ] colonsocopy - 
+Status:  no followup
+What is plan:  no plan
+Issue:  What did we learn?   How to avoid this next time? 
+No explanation why took 4 attempts and then wound up in hospital. What did we learn?
+
+- [ ] Chosterol
+Status:  Baffled
+What is plan:
+Issue:  (1) Why no repeat LDL, Cholestorol (2) Statin:  Criteria and expectation? (more precise then 'lower LDL') (3) Contradictory info, doctor wrote wants < 100, but last test 90.
+
+
+
+
+
+### Sardines
+Portugese supposed to be best.
+Morocco is processing center.
+
+But asia is different; Europe still better
+
+- King Oscar MUCH too much oil - do not buy.
+- Bela: Expensive, but I like.
+- Matiz
+- Nuri
+- Jose G
+- Wild Planet
+
+
+

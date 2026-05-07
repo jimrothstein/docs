@@ -1,11 +1,11 @@
-// Time-stamp: <Last changed 2026-03-26 20:35:12 by jim>
+// Time-stamp: <Last changed 2026-04-25 20:58:19 by jim>
 
 #set heading(numbering: "1.")
 #set text(
   font: "New Computer Modern"
 )
 
-= Learning
+= Learning aNCA
 
 Regarding learning it depends on what you want. For ratio calculations is something so specific that there is nothing about because it cannot get very extended, but if you have specific questions let me know and I can try my best on that!
 
@@ -27,6 +27,11 @@ I've checked many websites and books on the Internet myself, but if I am honest 
 = aNCA
 Let me give you more context. When we do [*Non-Compartmental Analysis (NCA)*], our purpose is to characterize some drug properties by calculating what are called pharmacokinetic parameters (PP). These PPs CDISC mandates to collect them in a standard dataset format (called SDTM.PP or PP in short). This format specifies what standard names (PPTEST) or code names (PPTESTCD) should they have. Our whole list of PPs can be found with their descriptions in metadata_nca_parameters.csv
 
+== Design PKNCA::
+
+Summary of package, structure ...
+Goal:  Understand 
+https://github.com/humanpred/pknca/tree/main/design
 == Ratio Parameters
 
 Ratio Parameters are a special kind of PPs, because they are derived by dividing some PPs (like CMAX) with others. Their general purpose is to have a measure that somehow compare the behavior of the drug under different circumstances. So in order to specify those circumstances, you need to tell the App what groups will be used as the test (fraction nominator) or the reference (fraction denominator) of the ratio calculation. To understand better the function I also recommend you to run the App, map data and then go the NCA tab at left and find the collapsible for Parameter ratios. There you will find a help button (icon ?) that explains better how the operation is done. It will also probably give you more understanding on why we have these arguments for the function.
@@ -38,7 +43,233 @@ Ratio Parameters are a special kind of PPs, because they are derived by dividing
     Also, you mentioned SDTM. In Admiral, the process is about moving from SDTM to ADAM. aNCA uses SDTM?
 
 Not exactly. Right now aNCA uses ADNCA as an input. ADNCA is a specific kind of ADAM that is the result of combining SDTM.PC, SDTM.DM & SDTM.DM information. We use it to calculate the Pharmacokinetic Parameters (SDTM.PP) of the drug based on the analysis specifications done in ADNCA and through the App
+title: "suggestions.md to improve background.md "
+format: html
+---
 
+as of 25 APR 2026
+
+ DRAFT 
+
+link to background.Rmd (https://github.com/pharmaverse/aNCA/blob/main/vignettes/background.Rmd)
+link to manual.Rmd (https://github.com/pharmaverse/aNCA/blob/main/vignettes/manual.Rmd)
+## Contents
+* Purpose
+* Audience
+* Set goals
+* Proposed Changes (long list)
+* Links for more Info
+* Notes, TODOs  (not well-organized)
+
+## PURPOSE
+The goal is improve the document "What is NCA?" (background.md).   The purpose this document,  **suggestions.md**,  is to collect suggestions, ideas, snippets of code that might improve or extend the vignette "What is aNCA?" in the file **background.rmd**.  **suggestions.md** exisits only on branch [#1247](https://github.com/pharmaverse/aNCA/issues/1247) in the directory **inst/** and will be removed before final merge to main.
+
+Specifically, @Gero1999 (or anyone else) is encouraged to comment or review **suggestions.md** before changes are made to the actual vignette 
+
+@jimrothstein (jim) will keep **suggestions.md** up-to-date by including the various comments from others.  The idea is to come to  general agreement **before** making major changes to the vignette.  Of course, nothing is ever final but hopefully this approach will make process as simple as possible.
+
+## AUDIENCE?
+Is document for  a new developer?   For the user of the package **aNCA** ?   Someone else?
+
+I would like to write so useful to someone like me.   Familar with R, but new to pharmacokinetics (PK) , CDISC standards and the functions of aNCA package.  This person wants  to contribute to the codebase, ie a new developer.
+
+
+## INITIAL  THOUGHTS
+As it stands now, the vignette "What is NCA?" is good.   The big issue, as I see it, is how aNCA and PKNCA packages implement the process and align with CDISC standards.   So before reading manual.md. I think a bit of supplemental material could fit int.   For example,
+* a sketch of data flows through aNCA, 
+* more comments/explanations where CDISC standards apply, 
+* links to a "cheat sheet" for variables, for example (https://github.com/humanpred/pknca/blob/ee1b433a0efcf102f4ec5260a1e3b39803ba26b2/design/01-architecture.md)
+* understanding ADNCA format means 
+* videos:   
+  Then manual.Rmd can proceed to more details.
+  * This is excellent video:   Appilson, 5/29/25,   (https://www.youtube.com/watch?v=hvVS80I6s_U) (if accents are new to you, set playback speed to 0.80)
+* CDISC, BSD standards  https://www.youtube.com/watch?v=rjSi4F1eZYQ&list=PLJEUlD4Y7xnn5T4mCCCKXv1ofIY8D2G6v&index=1
+* Official CDISC/NcA    https://www.cdisc.org/system/files/members/standard/foundational/ADaMIG_for_Non-compartmental_Analysis_Input_Data_v1.0_1.pdf
+## Not a Book (LOL) :smile:
+"What is NCA?" should be as short as possible, and definitely not lengthy.  Instead, the vignette should offer links where the reader can find more detailed information.  
+
+It seems the entire clinical trials industry is filled with dataset words that I find difficult to follow when learning the code base.  The basic ideas of concentration, time, doses do not seem difficult.   So I propose to have many simple examples as possible so the reader gains confidence.  
+
+Please see LLM chat (below)
+
+## Links for more info
+* Basic pharmakinetics 1 Paths of drug through body (https://www.youtube.com/watch?v=WCmFrheYtcc ) 
+
+* Basic pharmakinetics 2 - How choice of route affects NCA parameters https://www.youtube.com/watch?v=WCmFrheYtcc 
+
+* Info on ADNCA Standard (https://pharmasug.org/proceedings/2024/DS/PharmaSUG-2024-DS-406.pdf)
+
+* Using GUI (app) from aNCA package https://youtu.be/RW1zbnDkTCM?si=wvFsSfBHwbq_SC9Z 
+
+
+*video (2016) - Bill P introduces PKNCA package & process  (https://www.youtube.com/watch?v=WCmFrheYtcc)
+
+
+Mostly Admiral pk functions, but beginning explains nominal vs actual time, other measures of time hhttps://youtu.be/70tqe60aL1w?si=5uH3g3h2zelRt3Pd 
+
+Data Flow
+aNCA - metadata (adnca example)  https://github.com/pharmaverse/aNCA/blob/main/R/data.R 
+User data (data.frame)
+    │
+    ├── PKNCAconc()  ──── validates, stores concentration data + metadata
+    ├── PKNCAdose()  ──── validates, stores dose data + metadata
+    │
+    └── PKNCAdata()  ──── combines conc + dose, generates intervals
+            │
+            └── pk.nca()  ──── orchestrates all parameter calculations
+                    │            (R/pk.calc.all.R)
+                    │
+                    └── PKNCAresults  ──── long-format results
+                            │
+                            └── summary()  ──── formatted wide table
+
+## NEXT?
+
+
+<hr>
+
+
+## WIP (not yet organized)
+
+## Big List for Discussion ...
+Possible inclusions?
+- link to official CDISC documentation (https://www.cdisc.org/system/files/members/standard/foundational/ADaMIG_for_Non-compartmental_Analysis_Input_Data_v1.0_1.pdf)
+- ADNCA format ( explain,  show trival example, ~ 5 rows, example or two in codebase)
+- (related?) link to `admiral` https://pharmaverse.github.io/admiral/articles/pk_adnca.html
+- edit chat with Gemini (below) 
+- much, much more
+- LLM chat shows very simple ADNCA example.  What is more realistic example in the code base?
+adnca_example  is 1308 x 33 dataset 
+
+> names(adnca_example)
+ [1] "STUDYID"  "USUBJID"  "PCSPEC"   "PARAM"    "METABFL"  "AFRLT"    "NFRLT"    "ARRLT"    "NRRLT"   
+[10] "TRTRINT"  "RRLTU"    "AVAL"     "AVALU"    "VOLUME"   "VOLUMEU"  "DOSETRT"  "TRT01A"   "DOSEA"   
+[19] "DOSEU"    "ROUTE"    "ADOSEDUR" "ATPTREF"  "AGE"      "AGEU"     "RACE"     "SEX"      "NCA1XRS" 
+[28] "NCA2XRS"  "NEFRLT"   "NERRLT"   "AEFRLT"   "AERRLT"   "DOSFRM"  
+
+## Initial Chat with Gemini LLM (unedited, if reader wants "more information link to list)
+ Gemini
+**ADNCA Format for NCA Analysis**
+Conversation with Gemini
+
+**Please explain ADNCA format in non-compartmental analysis (NCA). Give simiple example of a dataset in ADNCA format. No more than 5 rows.**
+
+>In the world of clinical data standards, specifically CDISC ADaM, the ADNCA (Analysis Data for Non-Compartmental Analysis) dataset serves as the bridge between raw concentration-time data and the final calculated PK parameters (like Cmax​ or AUC).
+
+> Its primary purpose is to organize clinical trial data into a structure that NCA software (like WinNonlin or R packages like nca) can ingest to perform calculations.
+
+>Key Characteristics of ADNCA
+
+>    One Record per Timepoint: Each row represents a single blood draw or observation for a specific subject at a specific time.
+
+>   Traceability: It maintains a clear link back to the source SDTM datasets (usually PC for Pharmacokinetics Concentrations and EX for Exposure).
+
+>    Ready for Calculation: It includes "Analysis" variables (prefixed with A) that have been cleaned—for example, handling values below the limit of quantification (BLQ) or converting actual sampling times into relative time from dose.
+
+>Simple Example: ADNCA Dataset
+
+>Below is a simplified example showing a single subject receiving a single dose.
+
+USUBJID	   EXTRT	ATIME	AVAL	AVALU	AVALCAT1
+-------    ----     ----    ----    ----    --------
+| 001-01 | Drug X	| 0	   |  0	     | ng/mL	BLQ
+| 001-01 | Drug X	| 0.5  |12.5	 | ng/mL	Analyzed
+| 001-01 | Drug X	| 1.0  |	25.2 |	ng/mL	Analyzed
+| 001-01	Drug X	|2.0   | 18.7	    ng/mL	Analyzed
+| 001-01	Drug X	|4.0   |	8.3	    ng/mL	Analyzed
+
+>Core Variables Explained
+
+>    USUBJID: Unique Subject Identifier.
+
+>    EXTRT: The treatment/drug name.
+
+>    ATIME (Analysis Time): The relative time from the dose (e.g., hours). This is crucial for calculating the area under the curve (AUC).
+
+>    VAL (Analysis Value): The numerical concentration result used for the math.
+
+>    AVALU: The unit for the concentration (e.g., ng/mL).
+
+>    AVALCAT1: Often used to flag values like "BLQ" (Below Limit of Quantitation), which tells the software whether to treat the value as zero or missing.
+
+**Where did you find "ATIME", "AVAL" as core variables and their purpose?**
+
+The definitions for AVAL and ATIME come directly from the CDISC ADaM (Analysis Data Model) standards. Specifically, they are part of the Basic Data Structure (BDS) and the ADaM Implementation Guide for Non-compartmental Analysis (ADNCA).
+1. AVAL (Analysis Value)
+
+This is a core variable in the BDS class, which is the foundation for almost all analysis datasets.
+
+    Source: CDISC ADaM Implementation Guide (ADaMIG).
+
+    Purpose: It is the primary numeric variable used for statistical analysis. In the context of ADNCA, AVAL holds the drug concentration value.
+
+    Why it's used: By standardizing the results into AVAL, programmers and regulatory reviewers (like the FDA) can run automated scripts for calculations or validation (e.g., using Pinnacle 21) without needing to know if the original raw variable was named PCORRES or CONC.
+
+2. ATIME (Analysis Time)
+
+While "Time" variables in SDTM (raw data) are often ISO 8601 strings (like 2026-04-22T14:30), NCA requires numeric time for calculations.
+
+    Source: ADaM Implementation Guide for Non-compartmental Analysis (ADNCA) v1.0.
+
+    Purpose: It represents the Analysis Time, typically the actual time elapsed since the dose was administered.
+
+    Why it's used: You cannot calculate an AUC (Area Under the Curve) using a clock timestamp; you need a numeric value (e.g., 0.5 hours, 1.0 hours) to serve as the x-axis for the trapezoidal rule.
+
+**Where to Find the Official Documentation**
+
+If you are building these datasets in your R environment (using packages like admiral or admiralneuro), these definitions are pulled from:
+
+    CDISC ADaMIG for NCA: The specialized supplement that defines how to bridge SDTM PC (Concentrations) and EX (Exposure) into an NCA-ready format.
+
+    The pharmaverse admiral documentation: Specifically the NCA vignette, which maps these CDISC variables to R functions.
+
+Review of proposed NCA ADAM standard
+
+This video provides an industry-level overview of the ADNCA standard and how it aligns with regulatory expectations for pharmacokinetic data.
+Review of proposed NCA ADAM standard - YouTube
+International Society of Pharmacometrics (ISOP) · 403 views
+
+**Is there a pdf file or url list these and their definitions?**
+
+Yes, there are several official and industry-standard resources where you can find these definitions. Depending on whether you want the formal regulatory standard or a practical "how-to" guide for R, you can use the following:
+1. The Official CDISC ADNCA Standard
+
+The formal source is the ADaM Implementation Guide for Non-compartmental Analysis Input Data (ADNCA) v1.0.
+
+    Access: You can find the landing page and document link on the CDISC ADaM Foundational Standards page.
+
+    What it contains: It includes the full metadata tables for every variable permitted in an ADNCA dataset, including AVAL, ATIME, and others like NFRLT (Nominal Relative Time from Last Dose).
+
+    Format: It is provided as a PDF (once you sign in to a free CDISC account).
+
+2. Pharmaverse admiral Documentation (Best for R Users)
+
+If you are working in R, the admiral package (which is part of the pharmaverse) provides a comprehensive mapping of these variables with clear, developer-friendly definitions.
+
+    URL: Creating a PK ADNCA Dataset (admiral)
+
+    Why it's useful: It explains how to derive ATIME from raw SDTM date/times and maps it directly to the CDISC standard. It also lists "Required Variables" versus "Permissible Variables."
+
+3. CDISC Knowledge Base (Quick Reference)
+
+The CDISC Knowledge Base has a specific page for the Basic Data Structure (BDS), which defines the core variables used in ADNCA (since ADNCA is a type of BDS dataset).
+
+    URL: ADaM Basic Data Structure (BDS) Example
+
+    Table Content: This link provides a table similar to the one below, detailing the Variable Name, Label, and Source/Derivation.
+
+Variable Definition Summary
+
+If you just need a quick cheat sheet for the variables you mentioned:
+Variable	Label	Definition / Purpose
+AVAL	Analysis Value	The numeric result (concentration) used for the analysis.
+ATIME	Analysis Time	The elapsed time since dose (e.g., in hours) used as the x-axis for NCA.
+PARAM	Parameter	The descriptive name (e.g., "Drug X Concentration").
+PARAMCD	Parameter Code	The short code for the parameter (e.g., "CONC").
+ADTM	Analysis Date/Time	The actual clock date and time of the sample (ISO 8601).
+
+
+<hr>
 
 =  Admiral Tools
 

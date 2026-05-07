@@ -1,6 +1,12 @@
 // uses noteworthy !
 #import "@preview/noteworthy:0.2.0": *
 
+/*   410_typst_MATH_notes.typ
+
+Put all typst notes HERE.
+Also check ~/code/publish_project/typst/  for more typst examples.
+*/
+
 
 #show: noteworthy.with(
   paper-size: "a4",
@@ -148,16 +154,20 @@ If $a^2=b$ and $b=2$, then the solution must be
 either $a = +sqrt(2)$ or $a = -sqrt(2)$.
 
 
-= Probability Space, Algebra, function
+== Probability Space, Algebra, function
 Sample Space is set of atomic events:   throw 2 die, list all possible outcomes.
 Algebra is all possible subsets of the space.  Ex:  sets s.t. dice total to 4.
 By event, we do not retrict to just singular.  The event in previous example is dice total to 4.   This might be several atomic sets, but it is ONE event.
+
 $
-Pr(2 dice total = 4)
+//Pr(2 dice total = 4);    need to write Pr( total = 4)
 $
 
-One way to look at probability is ratio of size of the subset (event) vs total allowable subspace (all possible events).
-Related:  If there are many possibilities for same outcome, expect the actual event probably to grow:   Birthday at Party:  Many possibilities n*(n-1) for match.  This is why so few actual people are needed to raise odds.
+One way to look at probability is ratio of size of the subset (event)
+vs total allowable subspace (all possible events).  Related: If there
+are many possibilities for same outcome, expect the actual event
+probably to grow: Birthday at Party: Many possibilities n\*(n-1) for
+match.  This is why so few actual people are needed to raise odds.
 
 
 
@@ -217,13 +227,166 @@ sums, regression
 
 // R code chunks (setup and library omitted as R-specific)
 
----
 
-hello _world_.
+
+// R code for plotting (converted to a Typst code block)
+```r
+density_object = density(mpg\$hwy)
+pdf("~/Downloads/print_and_delete/out.pdf")
+plot(density_object)
+dev.off()
+```
+
+```r
+filename = "~/Downloads/print_and_delete/out.png"
+png(filename = filename,
+  width = 480, height = 480, units = "px", pointsize = 12)
+plot(density_object)
+dev.off()
+```
+
+\\ /home/jim/code/docs/tech_notes/500_ML_Notes.qmd
+\\ /home/jim/code/docs/tech_notes/
+
+
+= ML Notes
+
+== Logistic Regression
+- Using data, tune a model parameters of logistic equation to predict probabilities (ex: horse racing !)
+  Compare to ACTUAl output (win or loss) to do the tweeking. If your accuracy exceeds the Bookie (who introduces bias, to make money.) You can win!
+
+== Bayes Thm
+- Compare performance of difference models
+
+
+== Log Normal
+Note:
+// log(1 + e) tilde.equiv e   
+for small e
+
+Ex:  Consider yearly growth rates of many companies.  Growth rates vary by company and by year, usually small, and independent:
+
+\\ Y(t + 1 ) = Y( t )\*(1 + e), where is small, varies by year, by company.
+
+Take log:   log(Y) = log(Y) +  many e
+Claim:  sum of many small independent e become Normal
+
+= tensor
+example: (intuition only)  Consider cube, with different stress on each side.  For each side, the stress can be a Matrix M times vector in 3 directions.  M*v. So need 3 matrices.  Tensor is more compact way to say this.
+
+#line(length: 100%)
+
+= What is derivative?
+dy/dx is *symbol*, just *notation*
+- no meaning by itself, "derivative"
+- forget infinitesimals; surreal numbers
+- dx, dy are NOT limit of $Delta x, Delta y$; not fraction; no division
+
+- dy/dx is symbol for 
+$ 
+ lim (h-> 0) (f(x+h) - f(x))/h 
+$
+
+
+- More modern:   dx is differential form or co-vector a function that takes a tangent vector and returns scalar, which is magnitude of tangent vector in x-direction
+
+$
+f: R^2 -> R
+$
+
+
+== Laplace Transform, convolution
+
+- laplace, many nice propeties.
+- convolution of f,g becomes multiplication in freq domain; inverse is solution to original.
+
+if f(t) is prob density
+```
+$
+L{f}(s) = int 0 to inf  f(t)*e-st dt
+$
+
+identify this as $ E[ e-tX]
+```
+
+= Notes from gr-teachO
+== Gradient of $f=x*y + 4y - 3x^2 - y^2$
+Suppose this represents a surface with a minimum/maximum.
+Project onto the x-y axis and ask for a point $x_0$ = $(1,-1)$ find the vector that points toward min/max.
+
+Method #1  Take gradient
+
+$gradient f$ evaluated at $x_0$ will give us vector pointing to min/max
+
+$gradient f(arrow(x), arrow(y))$ = 
+#import "@preview/diverential:0.2.0": *
+
+$vec(dv(f,x, eval:0),(dv(f,y, eval:0)))$ =
+$vec(-7,7)$
+(reverse the sign, to find min)
+
+= Calculus
+== Compare derivative in 1D vs 2D
+curve (1D)  in $R^2$
+
+$
+f: RR -> RR
+$
+direction (only left/right, or no change)
+point at x
+point at x + h  (where h small, points are near)
+
+so
+$f(x)$ and $f(x + h)$ are both scalar.
+
+// does not like lim
+// $display(lim_(h-> 0) (f(x+h) - f(x))/h) $
+
+
+But in 2D
+surface (2D) in $R^3$
+directions now infinite
+point at  $vec(x)$
+2nd point a $vec(x +  s, y + r)$
+
+
+
+$
+f: RR^2 -> RR
+$
+
+== Principal Axis Thm
+- generalize major/minor axes of ellipse
+- these axes are perpendicular
+- tells you how to find these axes
+
+
+=== Exampe: Ellipse, hyperbola
+
+principal axes are x,y
+$
+x^2/9 + y^2/25 = 1
+$
+
+$
+x^2/9 - y^2/25 = 1
+$
+
+===  Ellipse or Hyperbola
+
+$ 5*x^2 + 8*x*y + 5*y^2 = 1 $
+
+
+Complete the square, using u(x,y), v(x,y)
+- if sum, then ellipse
+- if difference, then hyperbola
+
+// Hint:  Consider $ l_1*c_1**2 + l_2*c_2^2 $   Find the eigenvalues for l; then eigenvectors for c
+
+
+/*   Many errors: 
 
 == Summations
-/*
-```
 // Without Indices
 
 $sum x_i$
@@ -296,7 +459,7 @@ $bar(y) = a + b bar(x)$
 
 // Residual Sum of Squares
 
-SS_(Resid) = sum (y - hat(y))^2 = sum y^2 - a sum y - b sum xy
+$ SS_(Resid) = sum (y - hat(y))^2 = sum y^2 - a sum y - b sum xy $
 
 // Standard Errors
 
@@ -319,129 +482,5 @@ for prediction:
 
 
 // $SS_(E) = SS_(To) - SS_(Tr)$
-```
 
-// R code for plotting (converted to a Typst code block)
-#raw(lang: "r"){
-density_object = density(mpg\$hwy)
-pdf("~/Downloads/print_and_delete/out.pdf")
-plot(density_object)
-dev.off()
-}
-
-```
-#raw(lang: "r"){
-filename = "~/Downloads/print_and_delete/out.png"
-png(filename = filename,
-  width = 480, height = 480, units = "px", pointsize = 12)
-plot(density_object)
-dev.off()
-}
-
-\\ /home/jim/code/docs/tech_notes/500_ML_Notes.qmd
-\\ /home/jim/code/docs/tech_notes/
-```
-*\
-
-= ML Notes
-
-== Logistic Regression
-- Using data, tune a model parameters of logistic equation to predict probabilities (ex: horse racing !)
-  Compare to ACTUAl output (win or loss) to do the tweeking. If your accuracy exceeds the Bookie (who introduces bias, to make money.) You can win!
-
-== Bayes Thm
-- Compare performance of difference models
-
-
-== Log Normal
-Note:
-// log(1 + e) tilde.equiv e   
-for small e
-
-Ex:  Consider yearly growth rates of many companies.  Growth rates vary by company and by year, usually small, and independent:
-
-\\ Y(t + 1 ) = Y( t )*(1 + e), where is small, varies by year, by company.
-
-Take log:   log(Y) = log(Y) +  many e
-Claim:  sum of many small independent e become Normal
-
-= tensor
-example: (intuition only)  Consider cube, with different stress on each side.  For each side, the stress can be a Matrix M times vector in 3 directions.  M*v. So need 3 matrices.  Tensor is more compact way to say this.
-
-#line(length: 100%)
-
-= What is derivative?
-dy/dx is *symbol*, just *notation*
-- no meaning by itself, "derivative"
-- forget infinitesimals; surreal numbers
-- dx, dy are NOT limit of $Delta x, Delta y$; not fraction; no division
-
-- dy/dx is symbol for 
-$ 
- lim (h-> 0) (f(x+h) - f(x))/h 
-$
-
-
-- More modern:   dx is differential form or co-vector a function that takes a tangent vector and returns scalar, which is magnitude of tangent vector in x-direction
-
-$
-f: R^2 -> R
-$
-
-
-== Laplace Transform, convolution
-
-- laplace, many nice propeties.
-- convolution of f,g becomes multiplication in freq domain; inverse is solution to original.
-
-if f(t) is prob density
-$
-L{f}(s) = int 0 to inf  f(t)*e-st dt
-$
-identify this as $ E[ e-tX]
-
-= Notes from gr-teachO
-== Gradient of $f=x*y + 4y - 3x^2 - y^2$
-Suppose this represents a surface with a minimum/maximum.
-Project onto the x-y axis and ask for a point $x_0$ = $(1,-1)$ find the vector that points toward min/max.
-
-Method #1  Take gradient
-
-$gradient f$ evaluated at $x_0$ will give us vector pointing to min/max
-
-$gradient f(arrow(x), arrow(y))$ = 
-#import "@preview/diverential:0.2.0": *
-
-$vec(dv(f,x, eval:0),(dv(f,y, eval:0)))$ =
-$vec(-7,7)$
-(reverse the sign, to find min)
-
-= Calculus
-== Compare derivative in 1D vs 2D
-curve (1D)  in $R^2$
-
-$
-f: RR -> RR
-$
-direction (only left/right, or no change)
-point at x
-point at x + h  (where h small, points are near)
-
-so
-$f(x)$ and $f(x + h)$ are both scalar.
-$ 
- lim_(h-> 0) (f(x+h) - f(x))/h 
-$
-
-
-But in 2D
-surface (2D) in $R^3$
-directions now infinite
-point at  $vec(x)$
-2nd point a $vec(x +  s, y + r)$
-
-
-
-$
-f: RR^2 -> RR
-$
+*/
