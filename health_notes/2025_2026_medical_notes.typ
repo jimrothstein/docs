@@ -407,3 +407,5 @@ But asia is different; Europe still better
 
 
 
+Feb 14, 2026 - buproprion
+- no indication Dr. Z reoredered it;  no refills remain; put in RX request on everet-north website

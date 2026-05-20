@@ -1,6 +1,12 @@
 // Basic examples:      https://sitandr.github.io/typst-examples-book/book/basics/scripting/basics.html
 
-// NEXT:   debug in typst online editor
+/* Notes:
+
+- render:  typst watch|compile <file.typ>
+- 1st debug:  online editor  typst.app  
+- 
+
+*/
 
 #set page("us-letter")
 #set heading(numbering: "1.")
@@ -9,28 +15,33 @@
   size: 10pt
 )
 
-/* To render: typst compile array.typ */
+= Goal:  Organized, simple examples
 
-== misc, line, color
+//#show heading: set text(red)
+#show heading.where(level: 2): set text(red)
+#show heading.where(level: 3): set text(blue)
+
+== Level 2: Red 
+
+=== Level 3: Blue
+
+#show heading: set text(black)
+return to normal color:
+
+= misc, line, color, par
 
 #line(length: 100%)
-#set text(blue)
-This is blue
 
-// begin
+#show heading.where(level: 2): set text(size: 0.8em)
+#show heading.where(level: 3): set text(font: "New Computer Modern", style: "italic", stroke: gray)
 #set par.line(numbering: "1.")
-This is a blue. \
-#set text(red)
-How do I change this to red? \
-Still red?!
-// end
-#set par.line(numbering: none)
 
+== begin paragraph number
+
+== align
 #align(right)[this is right aligned]
 
-
-set a variable:
-#set par.line(numbering: "1.")
+== set a variable:
 #emph[Hi] \
 
 #let A = text(blue, strong[Hi]) 
@@ -40,14 +51,16 @@ set a variable:
 #A to you! \
 #set par.line(numbering: none)
 
-=== red & color block
+== quote block
+#set quote(block: true, attribution: [Typst Examples Book])
+
+#quote[
+  Typst is great!
+]
+
+== red & color block
 #let block_text = block(stroke: red, inset: 1em)[This is red.]
-#line(length: 100%)
-#set text(blue)
-This is blue
-
-
-#set text(black)
+== small caps
 #show "project": smallcaps
 I am working on special project.
 
@@ -211,8 +224,6 @@ echo "Hello, World!"
 #show link: set text(stroke: rgb(10, 0, 0))
 #link("https://nytimes.com")[See nytimes]
 
-// changes EVERY Following heading
-//#show heading: set text(green)
 
 === function to color [body], if selected 
 // toggle on/off; set [body] a color

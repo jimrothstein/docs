@@ -1,3 +1,5 @@
+/*  *** In process using LLM to create llm-wiki **   */
+
 = 300 Tech Notes
 typst file
 
@@ -293,7 +295,7 @@ git revert HEAD~2..HEAD # keep history, but undo last 2 commits
 - git reflog # how HEAD jumped around
 - git checkout HEAD@{n} # move back to n
 ** Install R
-   - on Ubuntu, or mintlinux virgina, use jammy and follow https://cran.r-project.org/bin/linux/ubuntu/ (works)   
+   - on Ubuntu, or mint linux virgina, use jammy and follow https://cran.r-project.org/bin/linux/ubuntu/ (works)   
    - on Debian (such as LMDE) follow https://cran.r-project.org/bin/linux/debian/
      (1) Add: sudo vim.tiny /etc/apt/sources.list
      (2) insert: the deb XXX link 
@@ -414,6 +416,11 @@ things and there are some groups you don't want to capture.
 - autologin, if using lightdm, as root edit /etc/lightdm/lightdm.confg
   - in [seat:*], uncomment user and timeout line; set user to "jim" (no spaces around =)
 - mount usb: sudo mount /dev/sdb /media/usb_drive (RHS must EXIST)
+
+
+==== plymouth  (linux)
+Bundled in initial ramdisk, before any fs mounted.  Provides a graphical boot?? splash screen
+check /var/log/boot.log
 
 <2024-10-04 Fri> Cinnamon and i3 do not mix well (at this point)
 - Both are "desktop environment" (others: xfce4, gnome?)

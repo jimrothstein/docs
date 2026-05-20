@@ -5,6 +5,10 @@
 
 Put all typst notes HERE.
 Also check ~/code/publish_project/typst/  for more typst examples.
+
+- a*b  (no spaces around *)
+
+A#sub(long_subscript)
 */
 
 
@@ -37,16 +41,33 @@ See: #link("https://github.com/jimrothstein/code_publish/blob/master/MATH/0002_m
   3,5,7
 ]
 
+== set notation
+$
+{(x,y) | f(x)/g(x) = 1 
+$
+
 #definition[
   a prime number has two divisors, 1 and itself.
 ]
 
-= Linear Algebra
-== Normal Equations, solution which minimizes error (regression)
+== Notation
+$
+alpha in KK \
 
-Write $F(x,y,z) = 3*x + 4*y + 5*z $
+a dot (b+c) \
 
-== Matrix multiplication
+bb(A), AA, bb(1) \
+$
+
+
+= "Linear Algebra"
+== "Normal Equations, solution which minimizes error (regression)"
+
+$
+F(x,y,z) = 3*x + 4*y + 5*z
+$
+
+== "Matrix multiplication"
 #example[
   3,5,7
 ]
@@ -60,33 +81,33 @@ $
 mat(3,4,5) #sym.dot.op vec(x,y,z)
 $
 
+
 == Linear transformation
 
 Suppose point P lies (1,1) in x-y plane, a distance of $sqrt(2)$ from origin.
 Write P in terms of natural basis parallel to ray to P.
 
 In regular basis,
-$
-P : vec(1,1) = vec(1,0) + vec(0,1)
-$
 
 $
-    vec(1,0)_"new" = 1/sqrt(2) vec(1,0) + 1/sqrt(2) vec(0,1) \
-
-    vec(0,1)_"new" = -1/sqrt(2) vec(1,0) + 1/sqrt(2) vec(0,1)  \
-
-"P is " sqrt(2) vec(1,0)_"new"
-
+P : vec(1,1)#sub("old") = vec(1,0)#sub("old") + vec(0,1)#sub("old")
 $
 
-Tranformation matrix:
+In "natural" basis,
 $
-1/sqrt mat(1,0,-1,0)
+vec(1,0)#sub("new") = 1/sqrt(2)*vec(1,0) + 1/sqrt(2)*vec(0,1) \
 $
 
 
+Tranformation matrix: (wrong !)
 
-== Error
+$
+1/sqrt(2) mat(1,0; 0, 1)
+$
+
+
+
+== "Error"
 
 Suppose true function is quadratic and we model as linear. In most regions error is large and consistently large. Is this error *bias*? a failure of the model?
 
@@ -110,11 +131,17 @@ $lim_(n -> infinity) bar(x) = mu$
 
 for any n, compare mean of many k samples will approach $mu$ much faster
 
-$lim_(k -> infinity) bar(x_k) = n * mu$
+
+// lim_(k -> oo) (bar(x_k)) = n*mu
+
 
 ---
 
-$SS_(x) = sum (x - bar(x))^2 = sum x^2 - ( (sum x)^2 ) / n$
+/*
+$
+SS_(x) = sum (x - bar(x))^2 = sum x^2 - ( (sum x)^2 ) / n
+$
+*/
 
 ---
 
@@ -146,7 +173,12 @@ $hat(sigma)^2$ refers to population variance estimator
 $s^2$ is biased (toward values closer to mean). And if $N=1$, $s^2$ we get $0$, hardly believable population variance.
 (The reason is subtle, when $N$ is small odds are it will not capture enough of outliers. SEE LSR)
 
+== Summation
+
+/*
 $sum_(k=1)^n x_k$
+
+*/
 
 $x = sqrt(b)$
 
@@ -191,7 +223,14 @@ is chosen because it has *nice* properties that we expect of *information*.
 $X$ is discrete random variable
 try $H$, $T$ each prob = 1/2
 
-$cal(P)(X) = sum_(i=1)^n p(x) log(p(x))$
+$ sum_(k=0)^n k
+    &= 1 + ... + n \
+    &= (n(n+1)) / 2 $
+
+
+cal(P)(X) = $ sum_(i=1)^n p(x)*log(p(x)) $
+
+$cal(P)(X) = sum_(i=1)^n p(x)*log(p(x)) $
 
 "double-struck(P) = -"
 
@@ -283,6 +322,7 @@ dy/dx is *symbol*, just *notation*
 - dx, dy are NOT limit of $Delta x, Delta y$; not fraction; no division
 
 - dy/dx is symbol for 
+
 $ 
  lim (h-> 0) (f(x+h) - f(x))/h 
 $
@@ -290,27 +330,58 @@ $
 
 - More modern:   dx is differential form or co-vector a function that takes a tangent vector and returns scalar, which is magnitude of tangent vector in x-direction
 
-$
-f: R^2 -> R
-$
+
+f: R^2 - R
 
 
-== Laplace Transform, convolution
+== Likelihood (https://bookdown.org/roback/bookdown-BeyondMLR/ch-beyondmost.html#case-study-does-sex-run-in-families) 
+$ P(D, p)$
+D = Data (have)
+p = param (unknown)
+
+-Data = known
+-Distribution type - known
+-Unknown = parameter for Distribution that explains the data
+-Goal:  Choose parameter st most consistent with data.
+
+-Example Data, in a village, number/order of children (B, G, GG ?) and
+ number of families. (not measure probabity of having one boy; p is NOT random variable)  Look at
+ outcomes across village: how to explain? )
+
+Find best $p_b$ the probability of one boy  $(1-p_b)$ for each girl
+Once we have all the data, the likihood is expression  $ p_b^30 * (1-p_b)^20  $
+Plot, take derivative ... gives $ p_b $ = 0.60
+*This p is where the likihood is maximized* (explains observed data, the best)
+
+== "Laplace Transform, convolution"
 
 - laplace, many nice propeties.
 - convolution of f,g becomes multiplication in freq domain; inverse is solution to original.
 
 if f(t) is prob density
-```
+
 $
-L{f}(s) = int 0 to inf  f(t)*e-st dt
+L{f}(s)
 $
 
-identify this as $ E[ e-tX]
-```
+$
+integral_0^infinity f(t)*e^(-s)
+$
 
-= Notes from gr-teachO
-== Gradient of $f=x*y + 4y - 3x^2 - y^2$
+
+
+$
+integral_0^infinity f(t)e^-s
+$
+identify this as $ E[ e-"tX"]
+$
+
+$ integral_0^infinity e^(-x^2) dif x = sqrt(pi)/2 $
+
+
+== Notes from gr-teachO
+=== Gradient of $f=x*y + 4y - 3x^2 - y^2$
+
 Suppose this represents a surface with a minimum/maximum.
 Project onto the x-y axis and ask for a point $x_0$ = $(1,-1)$ find the vector that points toward min/max.
 
@@ -318,7 +389,8 @@ Method #1  Take gradient
 
 $gradient f$ evaluated at $x_0$ will give us vector pointing to min/max
 
-$gradient f(arrow(x), arrow(y))$ = 
+$gradient f(arrow(x), arrow(y))$ 
+
 #import "@preview/diverential:0.2.0": *
 
 $vec(dv(f,x, eval:0),(dv(f,y, eval:0)))$ =
@@ -337,6 +409,7 @@ point at x
 point at x + h  (where h small, points are near)
 
 so
+
 $f(x)$ and $f(x + h)$ are both scalar.
 
 // does not like lim
@@ -348,7 +421,6 @@ surface (2D) in $R^3$
 directions now infinite
 point at  $vec(x)$
 2nd point a $vec(x +  s, y + r)$
-
 
 
 $
@@ -383,9 +455,6 @@ Complete the square, using u(x,y), v(x,y)
 
 // Hint:  Consider $ l_1*c_1**2 + l_2*c_2^2 $   Find the eigenvalues for l; then eigenvectors for c
 
-
-/*   Many errors: 
-
 == Summations
 // Without Indices
 
@@ -395,14 +464,6 @@ $sum x_i^2$
 
 $sum x_i y_i$
 
-// With Indices - Inline Form
-
-$sum_(i=1)^n x_i$
-
-$sum_(i=1)^n x_i^2$
-
-$sum_(i=1)^n x_i y_i$
-
 // With Indices - Display Form
 
 $sum_(i=1)^n x_i y_i$
@@ -410,25 +471,13 @@ $sum_(i=1)^n x_i y_i$
 == Independent Samples
 
 $mu_(bar(x)_1 - bar(x)_2) = mu_1 - mu_2$
-
 $sigma_(bar(x)_1 - bar(x)_2)^2 = frac(sigma_1^2, n_1) + frac(sigma_2^2, n_2)$
-
 $mu_(hat(p)_1 - hat(p)_2) = p_1 - p_2$
 
 $sigma_(hat(p)_1 - hat(p)_2)^2 = frac(p_1 (1 - p_1), n_1) + frac(p_2 (1 - p_2), n_2)$
-
-== Pooled Sample Variance
-
-$s_p^2 = frac((n_1 - 1)s_1^2 + (n_2 - 1)s_2^2, n_1 + n_2 - 2)$
-
-== Pooled Sample Proportion
-
-$hat(p) = frac(n_1 hat(p)_1 + n_2 hat(p)_2, n_1 + n_2)$
-
 == Chi-Square Test
 
 $chi^2 = sum frac((O - E)^2, E)$
-
 == Correlations
 
 $SS_(x) = sum (x - bar(x))^2 = sum x^2 - frac((sum x)^2, n)$
@@ -442,7 +491,6 @@ $r = frac(SS_(x*y), sqrt(SS_(x*x) SS_(y*y)))$
 // Population Regression Line
 
 $E(y) = alpha + beta x$
-
 var(y) = sigma^2
 
 // Least Squares Line
@@ -456,31 +504,3 @@ b = frac(SS_(xy), SS_(xx))
 and
 
 $bar(y) = a + b bar(x)$
-
-// Residual Sum of Squares
-
-$ SS_(Resid) = sum (y - hat(y))^2 = sum y^2 - a sum y - b sum xy $
-
-// Standard Errors
-
-$s_e = sqrt(frac(SS_(Resid), n - 2))$
-
-$s_b = frac(s_e, sqrt(SS_(xx)))$
-
-$s_(a + bx) = s_e sqrt(1 + frac(1, n) + frac((x - bar(x))^2, SS_(xx)))$
-
-
-for prediction:
-
-// $se(y - hat(y)) = s_e sqrt(1 + frac(1, n) + frac((x - bar(x))^2, SS_(xx)))$
-
-== Variance
-
-// $SS_(Tr) = frac(T_1^2, n_1) + frac(T_2^2, n_2) + ... + frac(T_k^2, n_k) - frac(T^2, n)$
-
-//SS_(To) = x_1^2 + x_2^2 + ... + x_k^2 - T^2/n
-
-
-// $SS_(E) = SS_(To) - SS_(Tr)$
-
-*/
