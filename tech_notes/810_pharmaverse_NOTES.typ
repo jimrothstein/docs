@@ -1,4 +1,4 @@
-// Time-stamp: <Last changed 2026-04-25 20:58:19 by jim>
+// Time-stamp: <Last changed 2026-05-21 12:19:08 by jim>
 
 #set heading(numbering: "1.")
 #set text(
@@ -53,7 +53,7 @@ as of 25 APR 2026
 
 link to background.Rmd (https://github.com/pharmaverse/aNCA/blob/main/vignettes/background.Rmd)
 link to manual.Rmd (https://github.com/pharmaverse/aNCA/blob/main/vignettes/manual.Rmd)
-## Contents
+* Contents
 * Purpose
 * Audience
 * Set goals
@@ -61,20 +61,20 @@ link to manual.Rmd (https://github.com/pharmaverse/aNCA/blob/main/vignettes/manu
 * Links for more Info
 * Notes, TODOs  (not well-organized)
 
-## PURPOSE
+= PURPOSE
 The goal is improve the document "What is NCA?" (background.md).   The purpose this document,  **suggestions.md**,  is to collect suggestions, ideas, snippets of code that might improve or extend the vignette "What is aNCA?" in the file **background.rmd**.  **suggestions.md** exisits only on branch [#1247](https://github.com/pharmaverse/aNCA/issues/1247) in the directory **inst/** and will be removed before final merge to main.
 
 Specifically, @Gero1999 (or anyone else) is encouraged to comment or review **suggestions.md** before changes are made to the actual vignette 
 
 @jimrothstein (jim) will keep **suggestions.md** up-to-date by including the various comments from others.  The idea is to come to  general agreement **before** making major changes to the vignette.  Of course, nothing is ever final but hopefully this approach will make process as simple as possible.
 
-## AUDIENCE?
+== AUDIENCE?
 Is document for  a new developer?   For the user of the package **aNCA** ?   Someone else?
 
 I would like to write so useful to someone like me.   Familar with R, but new to pharmacokinetics (PK) , CDISC standards and the functions of aNCA package.  This person wants  to contribute to the codebase, ie a new developer.
 
 
-## INITIAL  THOUGHTS
+== INITIAL  THOUGHTS
 As it stands now, the vignette "What is NCA?" is good.   The big issue, as I see it, is how aNCA and PKNCA packages implement the process and align with CDISC standards.   So before reading manual.md. I think a bit of supplemental material could fit int.   For example,
 * a sketch of data flows through aNCA, 
 * more comments/explanations where CDISC standards apply, 
@@ -85,14 +85,14 @@ As it stands now, the vignette "What is NCA?" is good.   The big issue, as I see
   * This is excellent video:   Appilson, 5/29/25,   (https://www.youtube.com/watch?v=hvVS80I6s_U) (if accents are new to you, set playback speed to 0.80)
 * CDISC, BSD standards  https://www.youtube.com/watch?v=rjSi4F1eZYQ&list=PLJEUlD4Y7xnn5T4mCCCKXv1ofIY8D2G6v&index=1
 * Official CDISC/NcA    https://www.cdisc.org/system/files/members/standard/foundational/ADaMIG_for_Non-compartmental_Analysis_Input_Data_v1.0_1.pdf
-## Not a Book (LOL) :smile:
+Not a Book (LOL) :smile:
 "What is NCA?" should be as short as possible, and definitely not lengthy.  Instead, the vignette should offer links where the reader can find more detailed information.  
 
 It seems the entire clinical trials industry is filled with dataset words that I find difficult to follow when learning the code base.  The basic ideas of concentration, time, doses do not seem difficult.   So I propose to have many simple examples as possible so the reader gains confidence.  
 
 Please see LLM chat (below)
 
-## Links for more info
+== Links for more info
 * Basic pharmakinetics 1 Paths of drug through body (https://www.youtube.com/watch?v=WCmFrheYtcc ) 
 
 * Basic pharmakinetics 2 - How choice of route affects NCA parameters https://www.youtube.com/watch?v=WCmFrheYtcc 
