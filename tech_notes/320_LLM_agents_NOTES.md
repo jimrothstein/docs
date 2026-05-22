@@ -1,6 +1,6 @@
 ---
 name: 320_LLM_agents_NOTES.md
-description: This *.md:   operational notes, tools, websites   - no theory here.
+description: "This *.md:   operational notes, tools, websites   - no theory here."
 ---
 
 * Organize + ai (knowledge graph, wiki, 
