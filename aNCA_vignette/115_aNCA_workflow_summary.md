@@ -6,15 +6,68 @@ metadata:
   date: 21 May 2026
 ---
 =======================================
-This document is high-level conceptual summary that highlight the core workflow. 
-A second  section reviews the ideas in the **implementation.**
-A final section works some of functions, tibbles.
+
+## Intro
+
+These are my notes. As such very imperfect with errors, gaps and
+missing logic.
+
+The original intent was to bridge the gap between 2 vignettes:
+1. background.md
+2. this document
+3. manual.md
+
+This document is to show high-level, CDISC aligned work-flow from raw data to final ADaM ready for TLG.
+
+The second  section goes a little deeper ideas in the **implementation.**
+A final section goes a little deeper into functions, tibbles.
+
+The goal is to ease the transition to code-level and the manual.md
 
 ---
 
-## 1. The Core Data Pathway
+## The Core Data Pathway
 
-The lifecycle of PK data follows a rigid, standardized progression:
+The lifecycle of PK data follows a rigid, standardized progression: 
+
+The clinical reporting pipeline is an ETL (Extract, Transform, Load) architecture divided strictly into Pre-SDTM and Post-SDTM phases.
+
+
+## pre-SDTM
+
+Raw Concentration Stream \ 
+                          ---> [Custom R ETL Scripts] ---> SDTM PC Table & SDTM EX Table
+Raw Dosing Stream        /
+
+
+Pre-SDTM Mapping (Normalization & Standardization)
+(TODO: Clean up!)
+
+
+Data arrives as raw, unstructured database tables or flat files from
+separate transactional systems. To get these to a valid CDISC SDTM
+format, a clinical programmer must build custom R mapping scripts.
+
+The Dosing Table Pipeline: Raw fields from the clinic's Electronic
+Data Capture (EDC) system are mapped to the SDTM EX (Exposure)
+domain.The Concentration Table Pipeline: Raw transactional fields from
+the external Bioanalytical Lab are mapped to the SDTM PC
+(Pharmacokinetic Concentrations) domain.
+
+Primary & Composite Keys in SDTM PC Because clinical data is highly
+denormalized, no single field guarantees row uniqueness. You must look
+at the data through composite keys.
+
+  The Business/Natural Composite Key: To uniquely identify a
+concentration record under the official CDISC standard, you require a
+composite key of:$$\{\text{STUDYID}, \text{USUBJID}, \text{PCTESTCD},
+\text{PCCAT}, \text{PCVISITNUM}, \text{PCDTC}, \text{PCTPTNUM}\}$$
+
+  The Surrogate Technical Key (PCSEQ): Real-world operational data can
+capture duplicate timestamps (PCDTC). To guarantee absolute entity
+integrity, CDISC enforces a dedicated surrogate sequence counter
+field, PCSEQ. Therefore, the leanest guaranteed technical key for any
+row in the table is:$$\{\text{USUBJID} + \text{PCSEQ}\}$$
 
 
 $$\text{Raw Data} \longrightarrow \text{SDTM (PC/EX)} \longrightarrow \text{aNCA Engine} \longrightarrow \text{ADaM (ADPC/ADPP)}$$
@@ -25,20 +78,10 @@ $$\text{Raw Data} \longrightarrow \text{SDTM (PC/EX)} \longrightarrow \text{aNCA
 
 ---
 
-## 2. Key Clarifications & Corrections
-
-During our conversation, we sharpened a few critical concepts where the real-world software design differs from initial assumptions:
 
 * **Who Maps Raw Data to SDTM?**
 * `aNCA` does **not** touch raw data. The mapping to SDTM is done beforehand by a **Programmer** (user? , other pharmaverse packages?) using standard R/tidyverse tools, guided by a study specification document.
 
-
-* **What `aNCA` Expects as Input:**
-* `aNCA` expects the data to **already be in clean SDTM format** before it ever reads it. aNCA requires SDTM `PC` (concentrations) and optionally accepts SDTM `EX` (dosing).
-
-
-* **The "Recipe" (Analysis Settings):**
-*  The R code automates the *execution*, but the **Programmer** must supply the *rules*, for example *exclusions* (more later).  You must pass `aNCA` functions  your specific **Analysis Settings** (arguments/metadata) to tell it exactly how to handle BQL values, how to group profiles, and which PK parameters to calculate. (ex: Cmax)
 
 ### Table A: SDTM PC (Pharmacokinetic Concentrations)
 This table acts as a time-series log tracking drug levels found in blood samples. 
@@ -74,12 +117,41 @@ This table tracks exactly when a physical dose of the drug was administered to t
 2 PROT-001  SUBJ-102   DRUG-X       100  mg      2026-10-12T08:30      1
 
 ```
+## post-SDTM
+
+
+aNCA execution BEGINS entirely POST-SDTM. It cannot touch the raw data.
+
+[Phase 2: Post-SDTM Mapping & Derivation]
+
+SDTM PC & EX Tables ---> [aNCA Engine + Configuration Metadata] ---> ADaM ADPC & ADPP Tables
+
+* **What `aNCA` Expects as Input:**
+* `aNCA` expects the data to **already be in clean SDTM format** before it ever reads it. aNCA requires SDTM `PC` (concentrations) and optionally accepts SDTM `EX` (dosing).
+
+
+* **The "Recipe" (Analysis Settings):**
+*  The R code automates the *execution*, but the **Programmer** must supply the *rules*, for example *exclusions* (more later).  You must pass `aNCA` functions  your specific **Analysis Settings** (arguments/metadata) to tell it exactly how to handle BQL values, how to group profiles, and which PK parameters to calculate. (ex: Cmax)
 
 ---
 
-## 3. What Happens Inside `aNCA` (The First Steps)
 
 (TODO: mapping SDTM -> ADaM colNames)
+3. Phase 2: Post-SDTM Mapping to ADaM (Where aNCA Operates)The aNCA package acts strictly Post-SDTM. 
+
+| Source SDTMColumn | Target ADaMColumn | TransformationType     | ConceptualPurpose                                                        |
+|------------------|------------------|------------------------|--------------------------------------------------------------------------|
+| PCORRES (Char)   | AVAL (Numeric)   | Type Cast / Imputation | Converts text strings to float values for math engines.                  |
+| PCTESTCD (Char)  | PARAMCD (Char)   | System-wide Remap      | Converts a lab test code to an analysis parameter code.                  |
+| PCDTC / EXSTDTC  | AFRLT (Numeric)  | Calculated Delta       | Computes Actual Relative Time from Analyte First Dose (tsample​−tdose​). |
+
+It imports the valid SDTM tables and handles a complex mapping and derivation layer to generate CDISC ADaM (Analysis Data Model) datasets.
+
+
+This step requires a complete schema migration where source variables are transformed, re-typed, and renamed into analysis-ready targets:
+
+Source SDTM ColumnTarget ADaM ColumnTransformation TypeConceptual Purpose
+
 Once `aNCA` package receives the SDTM data and your Analysis Settings, it alters the dataset by renaming variables (e.g., `PCORRES` $\rightarrow$ `AVAL`), imputing BQLs, and adding relative time columns. Its very first task is **Profile Grouping**:
 
 * It isolates unique time-concentration curves.
@@ -87,30 +159,38 @@ Once `aNCA` package receives the SDTM data and your Analysis Settings, it alters
 
 ---
 
-========================================
 ```text *
 *Post-SDTM Phase (`aNCA` Territory):** The `aNCA` application begins execution *strictly* after this boundary. It reads the standardized input tables, blends them with an external configuration, and generates completely new relational analysis tables.
 
----
-
-## 2. Phase 1: Input Tables (Post-SDTM State)
-
 ```
 
----
-
-## 3. The Rules Engine: Configuration Metadata
+## The Rules Engine: Configuration Metadata
 
 The `aNCA` R code executes transformations programmatically, but it lacks the logic to make study-specific data decisions on its own. The developer must supply these rules via a **Configuration Metadata Object** (instantiated as an R `list` object or a JSON configuration file read into the R session memory at runtime).
 
 This metadata does not mix into the source tables; it acts as a look-up parameter matrix that dictates processing logic:
-j
+
 * **Data Partitioning Blueprint:** Instructs the R engine which columns to group by to build an independent time-concentration matrix (e.g., partition data by `USUBJID` + `PCVISITNUM` + `PCTESTCD`).
 * **Imputation Logic Rules:** Contains explicit conditional mapping instructions for the math engine. For example: *“If a row contains `PCORRES == 'BQL'` AND the sample timestamp `PCDTC` is less than or equal to the dose timestamp `EXSTDTC`, mutate the numerical result to `0`. If it occurs after a valid numeric concentration, mutate it to `NA`.”*
 
+Instead of being hardcoded, this is treated as a Configuration Metadata Object (or a settings file uploaded into the aNCA session).
+Where it sits in the Data Flow
+
+The metadata object acts as a side-car lookup parameter. It does not replace the source data; it is read simultaneously by aNCA processing functions to determine conditional branching logic during data processing.
+
+SDTM PC Table --------> [ aNCA Engine ] --------> ADaM ADPC/ADPP Tables
+                           ^
+Configuration Metadata ----+ (Controls logic for BQL, Grouping keys, Slope rules)
+
+What this Metadata contains:
+
+    Imputation Rules (e.g., BLQ/BQL): Defines conditional value replacements. For example, if a record is flagged as Below the Limit of Quantification (BLQ), the metadata specifies whether the R engine mutates AVAL to 0, LOQ/2, or drops the record entirely based on timing.
+
+    Partitioning/Grouping Keys: Tells the R script which column combinations constitute a distinct, isolated time-concentration curve (a single PK Profile). For example, it might instruct the engine to group by USUBJID + VISITNUM + PARAMCD. If a patient returns on Visit 2, the composite key changes, forcing the engine to instantiate a second, completely distinct profile group.
+
 ---
 
-## 4. Phase 2: Output Tables (ADaM Target Schema)
+## Output Tables (ADaM Target Schema)
 
 By executing the `aNCA` processing functions, the R engine performs a schema migration, mutating and renaming fields to conform to CDISC ADaM standards.
 
@@ -152,7 +232,7 @@ This table stores the final summarized results calculated across an entire parti
 
 ---
 
-## 5. Official Specification Blueprints
+## Official Specification Blueprints
 
 The core formatting rules, naming restrictions, and validation schemas used to govern these structural designs are fully documented in the following global clinical data registry standards:
 
@@ -161,4 +241,12 @@ The core formatting rules, naming restrictions, and validation schemas used to g
 
 ```
 
-```
+For the exact data structures, column schemas, and validation constraints governing these transforms, the primary regulatory blueprints are:
+
+    Pre-SDTM Mapping Rules: Formally documented in the Data Transfer Agreement (DTA) or the study-specific Data Specifications Document (Data Spec).
+
+    Official CDISC Standards:
+
+        To verify the structural rules of the input PC table, refer to the CDISC SDTM Implementation Guide (SDTMIG).
+
+        To verify the structural rules of the output tables, refer to the CDISC ADaM Implementation Guide (ADAMIG).

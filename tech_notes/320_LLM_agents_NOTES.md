@@ -39,3 +39,15 @@ HuggingFace
 *** ADR (Architecture Decision Model) - a record of decsions made, as process evolves
 *** artifact: A reminent that remains long after and yields insights into what we did; why; and how we did it.
 *** Open Claw: can communicate via slack, signal .... executes based on information arriving. (pi )
+
+AGENTS
+* Think linearly; terrible at connecting "insights";  want AGENT to explore branches ("Graph of Thought") before it does anything
+
+ORCHESTRATION
+* Sync tools, results, 
+
+MCP
+* standardizes a protocol for all actions; replaces ad-hoc
+
+GRAPH RAG
+* reason *between* documents.  (RAG can not do this)
