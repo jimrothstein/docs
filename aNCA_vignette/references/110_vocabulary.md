@@ -49,6 +49,14 @@ ADaMIG -  CDISC
 https://www.cdisc.org/system/files/members/standard/foundational/ADaMIG_for_Non-compartmental_Analysis_Input_Data_v1.0_1.pdf
 Requires knowing vocabulary.
 
+ADRG
+Analysis Data xxx Guide
+
+BDS
+What measured ?
+When measured ?
+see ADMIG v 1.2 Section 3.3
+
 CDATA or Specifications Document
 Mapping from raw data to SDTM.
 
@@ -86,6 +94,14 @@ Dosing
 SDTM PC
 observed concentrations, PC domain
 
+TLG
+Tables, lists, graphs
+
+Time v Duration
+SEE https://www.linkedin.com/pulse/understanding-intervals-time-duration-clinical-trials-daniel-wanjiru-b2gkf/ 
+Time requires 2 measurements (start, stop)
+Duration is difference, or can be its own variable.
+Give examples.
 
 Also see wikipidea: CDISC 
 pdf: ADaMIG v1.2, Section 3.3 (BDS, most of the dataset variables can be found )

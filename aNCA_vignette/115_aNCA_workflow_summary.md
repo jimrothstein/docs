@@ -2,7 +2,7 @@
 name: 115_aNCA_workflow_summary.md
 description: PK data lifecycle 
 metadata:
-  version: 0.001
+  version: 0.002
   date: 21 May 2026
 ---
 =======================================
@@ -25,6 +25,7 @@ A final section goes a little deeper into functions, tibbles.
 The goal is to ease the transition to code-level and the manual.md
 
 ---
+#  Level 1:  Concepts, CDISC
 
 ## The Core Data Pathway
 
@@ -250,3 +251,19 @@ For the exact data structures, column schemas, and validation constraints govern
         To verify the structural rules of the input PC table, refer to the CDISC SDTM Implementation Guide (SDTMIG).
 
         To verify the structural rules of the output tables, refer to the CDISC ADaM Implementation Guide (ADAMIG).
+
+# Level2: PKNCA implementation 
+
+## Overview
+
+To implement the ideas and pathways of CDISC (SDTM, ADaM), the package PKNCA does much of work to calculate NCA. Its implementation takes advantage of many R features to simplify coding (example: R objects)  Even when PKNCA gets to the place CDISC expects, it is not always obvious how align both paths.
+
+In this section, outline of the PKNCA's approach. In final section,  get to code. 
+
+(TODO)
+This paper  https://phuse.global/Communications/PHUSE_Blog/r-handling-of-noncompartmental-analysis-pharmacokinetic-packages  has succinct data flow and function definition
+This paper ""https://deepwiki.com/humanpred/pknca/1-overview"  has data flow.
+
+(TODO:  introduce core functions)
+
+
