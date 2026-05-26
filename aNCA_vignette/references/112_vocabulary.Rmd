@@ -1,14 +1,37 @@
 ---
-name:   110_aNCA_vocabulary.md
-description:  Short definitions, link for key technical vocabulary.
-  metadata:
+title: "112_vocabulary.Rmd"
+description: >
+  Vocabulary
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{aNCA vocabulary}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
 ---
------ STOP ----  used .Rmd file ------
+
 
 **TODO:  Check for accuracy, completeness, source and examples.  These are my rough notes**
 
 
-ADAM (or ADaM)
+<style>
+
+  .blue {
+    color: blue;
+    font-size: 0.8em;
+  }
+
+</style>
+
+:::{.callout-note}
+DRAFT
+:::
+
+[blue]{.blue}
+
+[mark]{.mark}
+
+[smaller]{.smaller}
+
 CDISC specified dataset structure. Specific colnames, variable types, units etc.  Yet also flexible enough to accomodate variety of data from clinical trials.  Constructed from domains.
 Example:  ADLB  (lab analysis) is constructed from domain dm, ds and others.  See paper (?)
 

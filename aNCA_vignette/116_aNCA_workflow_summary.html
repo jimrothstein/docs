@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.39">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Jim">
+<meta name="dcterms.date" content="2026-05-25">
+<meta name="description" content="Bridge between vignette 1 and vignette 3.">
+
+<title>116_aNCA_workflow_summary.Rmd</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="116_aNCA_workflow_summary_files/libs/clipboard/clipboard.min.js"></script>
+<script src="116_aNCA_workflow_summary_files/libs/quarto-html/quarto.js"></script>
+<script src="116_aNCA_workflow_summary_files/libs/quarto-html/popper.min.js"></script>
+<script src="116_aNCA_workflow_summary_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="116_aNCA_workflow_summary_files/libs/quarto-html/anchor.min.js"></script>
+<link href="116_aNCA_workflow_summary_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="116_aNCA_workflow_summary_files/libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="116_aNCA_workflow_summary_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="116_aNCA_workflow_summary_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="116_aNCA_workflow_summary_files/libs/bootstrap/bootstrap-43e5b345aceed70a1f1f19e78b596456.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#intro" id="toc-intro" class="nav-link active" data-scroll-target="#intro">Intro</a></li>
+  <li><a href="#level-1-concepts-cdisc" id="toc-level-1-concepts-cdisc" class="nav-link" data-scroll-target="#level-1-concepts-cdisc">Level 1: Concepts, CDISC</a>
+  <ul class="collapse">
+  <li><a href="#the-data-pathway" id="toc-the-data-pathway" class="nav-link" data-scroll-target="#the-data-pathway">The Data Pathway</a></li>
+  <li><a href="#pre-sdtm" id="toc-pre-sdtm" class="nav-link" data-scroll-target="#pre-sdtm">pre-SDTM</a>
+  <ul class="collapse">
+  <li><a href="#table-a-sdtm-pc-pharmacokinetic-concentrations" id="toc-table-a-sdtm-pc-pharmacokinetic-concentrations" class="nav-link" data-scroll-target="#table-a-sdtm-pc-pharmacokinetic-concentrations">Table A: SDTM PC (Pharmacokinetic Concentrations)</a></li>
+  <li><a href="#table-b-sdtm-ex-exposure-dosing---optional" id="toc-table-b-sdtm-ex-exposure-dosing---optional" class="nav-link" data-scroll-target="#table-b-sdtm-ex-exposure-dosing---optional">Table B: SDTM EX (Exposure / Dosing) - <em>Optional</em></a></li>
+  </ul></li>
+  <li><a href="#post-sdtm" id="toc-post-sdtm" class="nav-link" data-scroll-target="#post-sdtm">post-SDTM</a>
+  <ul class="collapse">
+  <li><a href="#table-2-adpp-adnca-analysis-dataset-pk-parameters" id="toc-table-2-adpp-adnca-analysis-dataset-pk-parameters" class="nav-link" data-scroll-target="#table-2-adpp-adnca-analysis-dataset-pk-parameters">Table 2: ADPP / ADNCA (Analysis Dataset PK Parameters)</a></li>
+  </ul></li>
+  <li><a href="#official-specification-blueprints" id="toc-official-specification-blueprints" class="nav-link" data-scroll-target="#official-specification-blueprints">Official Specification Blueprints</a></li>
+  </ul></li>
+  <li><a href="#level2-pknca-implementation" id="toc-level2-pknca-implementation" class="nav-link" data-scroll-target="#level2-pknca-implementation">Level2: PKNCA implementation</a>
+  <ul class="collapse">
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  </ul></li>
+  <li><a href="#level-3-anca-implementation-details" id="toc-level-3-anca-implementation-details" class="nav-link" data-scroll-target="#level-3-anca-implementation-details">Level 3: aNCA implementation details</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">116_aNCA_workflow_summary.Rmd</h1>
+</div>
+
+<div>
+  <div class="description">
+    <p>Bridge between vignette 1 and vignette 3.</p>
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jim </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 25, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<style>
+
+  .blue {
+    color: blue;
+    font-size: 0.8em;
+  }
+  .red {
+    color: red;
+    font-size: 1.0em;
+  }
+
+</style>
+<p><span class="red">News: This fellow’s work looks superior to my own attempt. Need to review! https://teunp.github.io/PKNCA.doc/user/workflow.html</span></p>
+<p>[TODO:</p>
+<ul>
+<li><p>intervals - better discusison, examples.</p></li>
+<li><p>explain “formula” (conc~time | group) and how it relates to grouping keys, partitioning, profiles, etc.</p></li>
+<li><p>annotate the Theoph example</p></li>
+<li><p>be certain “PKNCA” dataset is clear.</p></li>
+<li><p>SDTM as input: https://github.com/humanpred/pknca/issues/516 (I like)</p></li>
+<li><p>issue #289 and this document: https://www.lexjansen.com/pharmasug/2017/PO/PharmaSUG-2017-PO01.pdf ]{.blue}</p></li>
+</ul>
+<p><span class="blue">This vignette began as my own raw notes. Although the idea behind aNCA seemed very clear, number of variable names, CDISC’s role, and general data flow constantly confused me.</span></p>
+<p><span class="blue">The goal here is to: - depict the data flow, according to CDISC ideas. - then understand how PKNCA functions fit into the this data flow - at deeper level, understand how the PKNCA ransform data at each step, and how the final output tables are generated - in later step, depict the data flow beginning with aNCA and shiny (not yet done)</span></p>
+<section id="intro" class="level2">
+<h2 class="anchored" data-anchor-id="intro">Intro</h2>
+<p>These are my notes. As such very imperfect with errors, gaps and missing logic.</p>
+<p>The original intent was to bridge the gap between 2 vignettes: 1. background.md 2. this document 3. manual.md</p>
+<p>This document is to show high-level, CDISC aligned work-flow from raw data to final ADaM, meaning ready for TLG.</p>
+<p>The second section goes a little deeper ideas in the <strong>implementation.</strong> Vignette 3 (manual.md) does excellent job working through the catgories and details of dataset variables. This section is intended to introduce the workflow ideas. A final section goes a little deeper into functions, tibbles.</p>
+<p>The goal is to ease the transition to code-level and the manual.md</p>
+</section>
+<section id="level-1-concepts-cdisc" class="level1">
+<h1>Level 1: Concepts, CDISC</h1>
+<section id="the-data-pathway" class="level2">
+<h2 class="anchored" data-anchor-id="the-data-pathway">The Data Pathway</h2>
+<p><span class="blue">TODO: re-write with CDISC</span> The lifecycle of PK data follows a rigid, standardized progression:</p>
+<p>The clinical reporting pipeline is an ETL (Extract, Transform, Load) architecture divided strictly into Pre-SDTM and Post-SDTM phases.</p>
+</section>
+<section id="pre-sdtm" class="level2">
+<h2 class="anchored" data-anchor-id="pre-sdtm">pre-SDTM</h2>
+<p>Raw Concentration Stream &nbsp; —&gt; [Custom R ETL Scripts] —&gt; SDTM PC Table &amp; SDTM EX Table Raw Dosing Stream /</p>
+<p>Pre-SDTM Mapping (Normalization &amp; Standardization) <span class="blue">TODO: Clean up!</span></p>
+<p>Data arrives as raw, unstructured database tables or flat files from separate transactional systems. To get these to a valid CDISC SDTM format, a clinical programmer must build custom R mapping scripts.</p>
+<p>The Dosing Table Pipeline:<br>
+</p>
+<p>Raw fields from the clinic’s Electronic Data Capture (EDC) system are mapped to the SDTM EX (Exposure) domain.</p>
+<p>The Concentration Table Pipeline:<br>
+Raw transactional fields from the external Bioanalytical Lab are mapped to the SDTM PC (Pharmacokinetic Concentrations) domain.</p>
+<p>Primary &amp; Composite Keys in SDTM PC<br>
+Because clinical data is highly denormalized, no single field guarantees row uniqueness. You must look at the data through composite keys.</p>
+<p>The Business/Natural Composite Key:<br>
+</p>
+<p>To uniquely identify a concentration record under the official CDISC standard, you require a composite key of:<span class="math display">\[\{\text{STUDYID}, \text{USUBJID}, \text{PCTESTCD},
+\text{PCCAT}, \text{PCVISITNUM}, \text{PCDTC}, \text{PCTPTNUM}\}\]</span></p>
+<p>The Foregin Key (PCSEQ): Real-world operational data can capture duplicate timestamps (PCDTC). To guarantee absolute entity integrity, CDISC enforces a dedicated forgein counter field, PCSEQ. Therefore, the leanest guaranteed technical key for any row in the table is:<span class="math display">\[\{\text{USUBJID} + \text{PCSEQ}\}\]</span></p>
+<p><span class="math display">\[\text{Raw Data} \longrightarrow \text{SDTM (PC/EX)} \longrightarrow \text{aNCA Engine} \longrightarrow \text{ADaM (ADPC/ADPP)}\]</span></p>
+<ul>
+<li><strong>Raw Data:</strong> Consists of one and possibly two separate, messy streams: <strong>Dosing</strong> (from clinical sites) is required and <strong>Concentrations</strong> is optional (from bioanalytical labs).</li>
+<li><strong>SDTM:</strong> The “Rosetta Stone” phase where a programmer maps those two streams into a uniform language using strict, standardized variables (e.g., <code>USUBJID</code>, <code>PCSEQ</code>).</li>
+<li><strong>ADaM:</strong> The final “analysis-ready” structures (<strong>ADPC</strong> for concentrations/curves, <strong>ADPP</strong> for calculated macro-parameters like <span class="math inline">\(C_{max}\)</span> and <span class="math inline">\(AUC\)</span>).</li>
+</ul>
+<hr>
+<ul>
+<li><strong>Who Maps Raw Data to SDTM?</strong></li>
+<li><code>aNCA</code> does <strong>not</strong> touch raw data. The mapping to SDTM is done beforehand by a <strong>Programmer</strong> (user? , other pharmaverse packages?) using standard R/tidyverse tools, guided by a study specification document.</li>
+</ul>
+<section id="table-a-sdtm-pc-pharmacokinetic-concentrations" class="level3">
+<h3 class="anchored" data-anchor-id="table-a-sdtm-pc-pharmacokinetic-concentrations">Table A: SDTM PC (Pharmacokinetic Concentrations)</h3>
+<p>This table acts as a time-series log tracking drug levels found in blood samples.</p>
+<ul>
+<li><strong>Natural Composite Key:</strong> <code>STUDYID</code> + <code>USUBJID</code> + <code>PCTESTCD</code> + <code>PCCAT</code> + <code>PCVISITNUM</code> + <code>PCDTC</code> + <code>PCTPTNUM</code></li>
+<li><strong>Technical Surrogate Key:</strong> <code>USUBJID</code> + <code>PCSEQ</code> (Where <code>PCSEQ</code> is a sequential auto-incrementing integer starting at 1 for each unique subject).</li>
+</ul>
+<pre class="text"><code># Conceptual Example of a Clean SDTM PC Dataset
+  STUDYID   USUBJID    PCTESTCD  PCORRES  PCORRESU  PCVISITNUM  PCDTC             PCSEQ
+1 PROT-001  SUBJ-101   DRUG-X    BQL      ng/mL              1  2026-10-12T08:15      1
+2 PROT-001  SUBJ-101   DRUG-X    10.5     ng/mL              1  2026-10-12T09:15      2
+3 PROT-001  SUBJ-101   DRUG-X    45.2     ng/mL              1  2026-10-12T10:15      3
+4 PROT-001  SUBJ-101   DRUG-X    22.1     ng/mL              1  2026-10-12T12:15      4
+5 PROT-001  SUBJ-101   DRUG-X    5.3      ng/mL              1  2026-10-12T16:15      5
+
+(Note: `BQL` stands for Below the Quantifiable Limit—it means the lab instrument detected the drug but it was too low to measure as a clean float value.)
+</code></pre>
+<p><code>aNCA</code> expects to find its source data stored in two standardized tables defined by the CDISC SDTM framework. Because a clinical database is wide and flat rather than fully normalized, unique rows are enforced using composite natural keys or a dedicated technical surrogate key.</p>
+</section>
+<section id="table-b-sdtm-ex-exposure-dosing---optional" class="level3">
+<h3 class="anchored" data-anchor-id="table-b-sdtm-ex-exposure-dosing---optional">Table B: SDTM EX (Exposure / Dosing) - <em>Optional</em></h3>
+<p>This table tracks exactly when a physical dose of the drug was administered to the patient.</p>
+<ul>
+<li><strong>Technical Surrogate Key:</strong> <code>USUBJID</code> + <code>EXSEQ</code></li>
+</ul>
+<pre class="text"><code># Conceptual Example of an SDTM EX Dataset
+  STUDYID   USUBJID    EXTRT     EXDOSE  EXDOSU  EXSTDTC           EXSEQ
+1 PROT-001  SUBJ-101   DRUG-X       100  mg      2026-10-12T08:15      1
+2 PROT-001  SUBJ-102   DRUG-X       100  mg      2026-10-12T08:30      1
+</code></pre>
+</section>
+</section>
+<section id="post-sdtm" class="level2">
+<h2 class="anchored" data-anchor-id="post-sdtm">post-SDTM</h2>
+<p>aNCA execution BEGINS entirely POST-SDTM. It cannot touch the raw data.</p>
+<p>[Phase 2: Post-SDTM Mapping &amp; Derivation]</p>
+<p>SDTM PC &amp; EX Tables —&gt; [aNCA Engine + Configuration Metadata] —&gt; ADaM ADPC &amp; ADPP Tables</p>
+<ul>
+<li><p><strong>What <code>aNCA</code> Expects as Input:</strong></p></li>
+<li><p><code>aNCA</code> expects the data to <strong>already be in clean SDTM format</strong> before it ever reads it. aNCA requires SDTM <code>PC</code> (concentrations) and optionally accepts SDTM <code>EX</code> (dosing).</p></li>
+<li><p><strong>The “Recipe” (Analysis Settings):</strong></p></li>
+<li><p>The R code automates the <em>execution</em>, but the <strong>Programmer</strong> must supply the <em>rules</em>, for example <em>exclusions</em> (more later). You must pass <code>aNCA</code> functions your specific <strong>Analysis Settings</strong> (arguments/metadata) to tell it exactly how to handle BQL values, how to group profiles, and which PK parameters to calculate. (ex: Cmax)</p></li>
+</ul>
+<hr>
+<p>(TODO: mapping SDTM -&gt; ADaM colNames) 3. Phase 2: Post-SDTM Mapping to ADaM (Where aNCA Operates)The aNCA package acts strictly Post-SDTM.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 17%">
+<col style="width: 55%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Source SDTMColumn</th>
+<th>Target ADaMColumn</th>
+<th>TransformationType</th>
+<th>ConceptualPurpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PCORRES (Char)</td>
+<td>AVAL (Numeric)</td>
+<td>Type Cast / Imputation</td>
+<td>Converts text strings to float values for math engines.</td>
+</tr>
+<tr class="even">
+<td>PCTESTCD (Char)</td>
+<td>PARAMCD (Char)</td>
+<td>System-wide Remap</td>
+<td>Converts a lab test code to an analysis parameter code.</td>
+</tr>
+<tr class="odd">
+<td>PCDTC / EXSTDTC</td>
+<td>AFRLT (Numeric)</td>
+<td>Calculated Delta</td>
+<td>Computes Actual Relative Time from Analyte First Dose (tsample​−tdose​).</td>
+</tr>
+</tbody>
+</table>
+<p>It imports the valid SDTM tables and handles a complex mapping and derivation layer to generate CDISC ADaM (Analysis Data Model) datasets.</p>
+<p>This step requires a complete schema migration where source variables are transformed, re-typed, and renamed into analysis-ready targets:</p>
+<p>Source SDTM ColumnTarget ADaM ColumnTransformation TypeConceptual Purpose</p>
+<p>Once <code>aNCA</code> package receives the SDTM data and your Analysis Settings, it alters the dataset by renaming variables (e.g., <code>PCORRES</code> <span class="math inline">\(\rightarrow\)</span> <code>AVAL</code>), imputing BQLs, and adding relative time columns. Its very first task is <strong>Profile Grouping</strong>:</p>
+<ul>
+<li>It isolates unique time-concentration curves.</li>
+<li><em>Crucial Concept:</em> If the same patient returns for a second visit, <code>aNCA</code> treats this as a completely separate, independent PK profile (Curve 1 vs.&nbsp;Curve 2).</li>
+</ul>
+<hr>
+<p>``<code>text * *Post-SDTM Phase (</code>aNCA<code>Territory):** The</code>aNCA` application begins execution <em>strictly</em> after this boundary. It reads the standardized input tables, blends them with an external configuration, and generates completely new relational analysis tables.</p>
+<pre><code>
+## The Rules Engine: Configuration Metadata
+[Redo this entire section!]{.blue}
+
+
+The `aNCA` R code executes transformations programmatically, but it lacks the logic to make study-specific data decisions on its own. The developer must supply these rules via a **Configuration Metadata Object** (instantiated as an R `list` object or a JSON configuration file read into the R session memory at runtime).
+
+This metadata does not mix into the source tables; it acts as a look-up parameter matrix that dictates processing logic:
+
+* **Data Partitioning Blueprint:** Instructs the R engine which columns to group by to build an independent time-concentration matrix (e.g., partition data by `USUBJID` + `PCVISITNUM` + `PCTESTCD`).
+* **Imputation Logic Rules:** Contains explicit conditional mapping instructions for the math engine. For example: *“If a row contains `PCORRES == 'BQL'` AND the sample timestamp `PCDTC` is less than or equal to the dose timestamp `EXSTDTC`, mutate the numerical result to `0`. If it occurs after a valid numeric concentration, mutate it to `NA`.”*
+
+Instead of being hardcoded, this is treated as a Configuration Metadata Object (or a settings file uploaded into the aNCA session).
+Where it sits in the Data Flow
+
+The metadata object acts as a side-car lookup parameter. It does not replace the source data; it is read simultaneously by aNCA processing functions to determine conditional branching logic during data processing.
+
+SDTM PC Table --------&gt; [ aNCA Engine ] --------&gt; ADaM ADPC/ADPP Tables
+                           ^
+Configuration Metadata ----+ (Controls logic for BQL, Grouping keys, Slope rules)
+
+What this Metadata contains:
+
+    Imputation Rules (e.g., BLQ/BQL): Defines conditional value replacements. For example, if a record is flagged as Below the Limit of Quantification (BLQ), the metadata specifies whether the R engine mutates AVAL to 0, LOQ/2, or drops the record entirely based on timing.
+
+    Partitioning/Grouping Keys: Tells the R script which column combinations constitute a distinct, isolated time-concentration curve (a single PK Profile). For example, it might instruct the engine to group by USUBJID + VISITNUM + PARAMCD. If a patient returns on Visit 2, the composite key changes, forcing the engine to instantiate a second, completely distinct profile group.
+
+---
+
+## Output Tables (ADaM Target Schema)
+
+By executing the `aNCA` processing functions, the R engine mutates and renames fields to conform to CDISC ADaM standards.
+
+The two primary target tables generated are:
+
+### Table 1: ADPC (Analysis Dataset PK Concentrations)
+
+This is an altered, enhanced clone of the input concentration data. Text fields are cast to numeric floats, non-numeric strings are imputed, and absolute date-timestamps are calculated into relative numeric intervals.
+
+* **`PCORRES` (Character)** is converted and renamed to **`AVAL` (Numeric)**.
+* **`PCTESTCD` (Character)** is converted and renamed to **`PARAMCD` (Character)**.
+* The delta between `PCDTC` and `EXSTDTC` is calculated to create a new numeric time elapsed variable, **`AFRLT`** (Actual Relative Time).
+
+```text
+# Conceptual Example of a Generated ADPC Table
+  USUBJID    PARAMCD   AVAL  AVALU  AFRLT  VISITNUM
+1 SUBJ-101   DRUG-X     0.0  ng/mL   0.0          1  &lt;-- Imputed BQL to 0.0
+2 SUBJ-101   DRUG-X    10.5  ng/mL   1.0          1  &lt;-- Calculated 1 hour post-dose
+3 SUBJ-101   DRUG-X    45.2  ng/mL   2.0          1
+4 SUBJ-101   DRUG-X    22.1  ng/mL   4.0          1
+5 SUBJ-101   DRUG-X     5.3  ng/mL   8.0          1
+</code></pre>
+<section id="table-2-adpp-adnca-analysis-dataset-pk-parameters" class="level3">
+<h3 class="anchored" data-anchor-id="table-2-adpp-adnca-analysis-dataset-pk-parameters">Table 2: ADPP / ADNCA (Analysis Dataset PK Parameters)</h3>
+<p>This table stores the final summarized results calculated across an entire partitioned data group. Instead of representing individual blood draws over a timeline, it aggregates a single profile partition down to <strong>one unique summary row per parameter, per patient profile</strong>.</p>
+<ul>
+<li><strong>Technical Surrogate Key:</strong> <code>USUBJID</code> + <code>PARAMCD</code> + <code>PPSEQ</code></li>
+</ul>
+<pre class="text"><code># Conceptual Example of a Generated ADPP Summary Table
+  USUBJID    PARAMCD   PARAM                      AVAL  AVALU  VISITNUM
+1 SUBJ-101   CMAX      Max Concentration          45.2  ng/mL         1
+2 SUBJ-101   TMAX      Time of Max Conc            2.0  hr            1
+3 SUBJ-101   AUCALL    Area Under the Curve      185.4  h*ng/mL       1
+</code></pre>
+<hr>
+</section>
+</section>
+<section id="official-specification-blueprints" class="level2">
+<h2 class="anchored" data-anchor-id="official-specification-blueprints">Official Specification Blueprints</h2>
+<p>The core formatting rules, naming restrictions, and validation schemas used to govern these structural designs are fully documented in the following global clinical data registry standards:</p>
+<ul>
+<li><strong>Input Tables Validation Schema:</strong> <a href="https://www.cdisc.org/standards/foundational/sdtmig">CDISC SDTM Implementation Guide (SDTMIG)</a></li>
+<li><strong>Output Tables Validation Schema:</strong> <a href="https://www.google.com/search?q=https://www.cdisc.org/standards/foundational/adamig">CDISC ADaM Implementation Guide (ADAMIG)</a></li>
+</ul>
+<p>```</p>
+<p>For the exact data structures, column schemas, and validation constraints governing these transforms, the primary regulatory blueprints are:</p>
+<pre><code>Pre-SDTM Mapping Rules: Formally documented in the Data Transfer Agreement (DTA) or the study-specific Data Specifications Document (Data Spec).
+
+Official CDISC Standards:
+
+    To verify the structural rules of the input PC table, refer to the CDISC SDTM Implementation Guide (SDTMIG).
+
+    To verify the structural rules of the output tables, refer to the CDISC ADaM Implementation Guide (ADAMIG).</code></pre>
+</section>
+</section>
+<section id="level2-pknca-implementation" class="level1">
+<h1>Level2: PKNCA implementation</h1>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>To implement the ideas and pathways of CDISC (SDTM, ADaM), the package PKNCA does much of work to calculate NCA. Its implementation takes advantage of many R features to simplify coding (example: R objects) Even when PKNCA gets to the place CDISC expects, it is not always obvious how align both paths.</p>
+<p>In this section, outline of the PKNCA’s approach. In final section, get to code.</p>
+<p>(TODO) This paper https://phuse.global/Communications/PHUSE_Blog/r-handling-of-noncompartmental-analysis-pharmacokinetic-packages has succinct data flow and function definition This paper ““https://deepwiki.com/humanpred/pknca/1-overview” has data flow.</p>
+<p>(TODO: introduce core functions)</p>
+</section>
+</section>
+<section id="level-3-anca-implementation-details" class="level1">
+<h1>Level 3: aNCA implementation details</h1>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
