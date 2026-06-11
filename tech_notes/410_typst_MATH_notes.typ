@@ -334,6 +334,19 @@ $
 f: R^2 - R
 
 
+== Tangent Line in 1 dimension
+
+For a function $f(x)$, the tangent line at $x = a$ is:
+
+$ y = f(a) + (dif f)/(dif x) \|_(x=a) dot (x - a) $
+
+== Tangent Plane in 2 dimensions
+
+In 2 dimensions, $z = f(x,y)$, we find the tangent plane near $(a,b,f(a,b))$ as follows:
+
+$ z = f(a,b) + (partial f)/(partial x) \|_((x,y)=(a,b)) dot (x - a) + (partial f)/(partial y) \|_((x,y)=(a,b)) dot (y - b) $
+
+
 == Likelihood (https://bookdown.org/roback/bookdown-BeyondMLR/ch-beyondmost.html#case-study-does-sex-run-in-families) 
 $ P(D, p)$
 D = Data (have)
@@ -504,3 +517,170 @@ b = frac(SS_(xy), SS_(xx))
 and
 
 $bar(y) = a + b bar(x)$
+
+== Is this a line in 3D?
+
+$ a x + b y + c z + d = 0 $
+
+Are all quadratics equivalent to a conic section?
+
+$ x^2 - y^2 - 2 y - 1 = 0 $
+
+NO. This represents two lines. Factor as $ (x + y + 1)(x - y - 1) = 0 $
+
+Lines: $y = x - 1$ and $y = -x - 1$.
+
+== cetz.plot to plot!!
+
+#import "@preview/cetz:0.5.2"
+#import "@preview/cetz-plot:0.1.3": plot 
+
+#cetz.canvas({
+
+  let range = (-3, 3)
+  
+  plot.plot(
+    size: (6, 4), 
+    x-tick-step: 1, 
+    y-tick-step: 1, 
+    {
+      plot.add(
+        domain: range, 
+        x => x - 1,
+        style: (stroke: blue)
+      )
+      plot.add(
+        domain: range, 
+        x => -x - 1,
+        style: (stroke: red)
+      )
+    }
+  )
+})
+
+== Can a line and surface intersect?
+
+Here is how to present a line in 3D:
+
+$ x = a + t u $
+$ y = b + t v $
+$ z = c + t w $
+
+$t$ is a parameter. The surface is $F(x, y, z) = 0$.
+
+The intersection becomes a polynomial in $t$, $ sum a_i t^i = 0 $.
+
+But for $n > 4$, may not be closed form.
+
+Numerical: as line approaches tangent, floating point error may prevent solution.
+
+= Measure Theory Foundation of Probability
+
+== Probability Space
+
+#definition[
+  A *probability space* is a triple $(Omega, cal(F), P)$:
+  - $Omega$: *sample space* (set of all possible outcomes)
+  - $cal(F)$: *sigma-algebra* on $Omega$ (the set of events)
+  - $P$: *probability measure* $P : cal(F) -> [0,1]$
+]
+
+=== Sigma-Algebra
+
+A *sigma-algebra* (or sigma-field) $cal(F)$ on a set $Omega$ is a collection of subsets of $Omega$ such that:
+- $emptyset in cal(F)$ and $Omega in cal(F)$
+- If $A in cal(F)$ then $A^c in cal(F)$ (closed under complement)
+- If $A_1, A_2, ... in cal(F)$ then $union_(i=1)^infinity A_i in cal(F)$ (countable union)
+
+The pair $(Omega, cal(F))$ is a *measurable space*.
+
+The *Borel sigma-algebra* $cal(B)(bb(R))$ is the smallest sigma-algebra on $bb(R)$ containing all open intervals. It is the standard choice for real-valued random variables.
+
+=== Probability Measure
+
+A function $P : cal(F) -> [0,1]$ is a *probability measure* if:
+1. $P(Omega) = 1$
+2. For pairwise disjoint $A_1, A_2, ... in cal(F)$:
+$P(union_(i=1)^infinity A_i) = sum_(i=1)^infinity P(A_i)$ (countable additivity)
+
+== Random Variable
+
+#definition[
+  A *random variable* $X$ is a measurable function:
+  $X : (Omega, cal(F)) -> (bb(R), cal(B)(bb(R)))$
+  i.e. for every Borel set $B in cal(B)$, the preimage is an event:
+  $X^(-1)(B) in cal(F)$
+]
+
+== Distribution and CDF
+
+The *distribution* (or *law*) of $X$ is the pushforward probability measure on $bb(R)$:
+$P_X (B) = P(X in B) = P(X^(-1)(B))$ for all $B in cal(B)(bb(R))$
+
+The *cumulative distribution function (CDF)* is:
+$F_X (x) = P_X((-infinity, x]) = P(X <= x)$
+
+Properties: $F_X$ is non-decreasing, right-continuous, with limits $0$ at $-infinity$ and $1$ at $infinity$.
+
+== Density as Radon-Nikodym Derivative
+
+If $P_X$ is absolutely continuous w.r.t. Lebesgue measure $lambda$, the Radon-Nikodym theorem gives a density:
+$f(x) = (dif P_X) / (dif lambda)(x)$ such that
+$P_X (B) = integral_B f(x) dif x$ for all $B in cal(B)(bb(R))$
+
+For discrete $X$, the PMF is the Radon-Nikodym derivative w.r.t. counting measure.
+
+== Expectation as Lebesgue Integral
+
+#definition[
+  $E[X] = integral_Omega X(omega) dif P(omega)$
+]
+
+This single integral unifies:
+- Discrete: $E[X] = sum_k x_k P(X = x_k)$
+- Continuous: $E[X] = integral_(-infinity)^infinity x f(x) dif x$
+
+== Why Measure Theory
+
+- Rigorous limits: LLN and CLT rely on convergence theorems (Monotone Convergence, Dominated Convergence, Fatou)
+- Sigma-algebras model *information*: filtrations for martingales, stopping times, stochastic processes
+- Conditional expectation defined via Radon-Nikodym / $L^2$ projection
+- Handles mixed, singular, and infinite-dimensional distributions
+
+=== Non-Nice but Measurable PDF Examples
+
+These examples show that measurability, not continuity or Riemann integrability, is the essential requirement for a valid PDF.
+
+==== Example 1: Discontinuous on a set of positive measure
+
+Let $C subset [0,1]$ be a *fat Cantor set*: nowhere dense, positive Lebesgue measure (say $lambda(C) = 1/2$).
+
+$f(x) = 2 * I_C (x)$, for $x in [0,1]$
+
+- $I_C$ is Borel measurable (C is Borel), so $f$ is measurable
+- $integral_0^1 f(x) dif x = 2 lambda(C) = 1$, valid PDF
+- $f$ is *nowhere continuous* (every point of $C$ is a boundary point), discontinuous on a set of positive measure
+- Not Riemann integrable, but perfectly Lebesgue integrable
+
+==== Example 2: Mixed distribution with an atom
+
+$X = B * Z$ where $B tilde "Ber"(1/2)$ and $Z tilde N(0,1)$.
+
+PDF w.r.t. dominating measure $mu = lambda + delta_0$ (Lebesgue + point mass at 0):
+
+$f(x) = 1/2 delta_0 (x) + 1/2 * 1 / sqrt(2 pi) e^(-x^2 / 2)$
+
+- Measurable; $mu$ is a sigma-finite measure
+- Has a point mass at 0; not absolutely continuous w.r.t. Lebesgue alone
+- Useful for zero-inflated models (spike at zero + continuous tail)
+
+==== Example 3: Unbounded, integrable singularity
+
+$f(x) = 1 / (2 sqrt(|x|)) I_([-1, 0) union (0, 1]) (x)$
+
+- Measurable
+- $integral_(-1)^1 f(x) dif x = 1$, valid PDF
+- $f(x) -> infinity$ as $x -> 0$, but the singularity is Lebesgue integrable
+- Not properly Riemann integrable (unbounded), but is improperly Riemann integrable and Lebesgue integrable
+
+Key lesson: measurability is the only requirement for a valid PDF. Continuity, boundedness, and Riemann integrability are *not* necessary — and many useful distributions violate them.

@@ -1,0 +1,36 @@
+---
+title: "KDnuggets News — 2026-06-02"
+date: "2026-06-02"
+---
+
+## Latest Posts from KDnuggets
+
+1. **[Practical NLP in the Browser with Transformers.js](https://www.kdnuggets.com/practical-nlp-in-the-browser-with-transformers-js)** — *Shittu Olumide* — May 29, 2026  
+   This tutorial covers three NLP tasks: text classification, zero-shot labelling, and question answering using Transformers.js's pipeline() API.
+
+2. **[The 'Entry-Level' Gatekeeper: Auditing Job Descriptions with Textstat](https://www.kdnuggets.com/the-entry-level-gatekeeper-auditing-job-descriptions-with-textstat)** — *Iván Palomares Carrascosa* — May 29, 2026  
+   How to use Python and Textstat to automate capturing "gatekeeping language" in job descriptions.
+
+3. **[Tweaking Local Language Model Settings with Ollama](https://www.kdnuggets.com/tweaking-local-language-model-settings-with-ollama)** — *Matthew Mayo* — May 28, 2026  
+   A deep dive into Ollama's configuration engine for fine-tuning local language model parameters.
+
+4. **[7 Real World AI Projects to Build in 2026 (with Guides)](https://www.kdnuggets.com/7-real-world-ai-projects-to-build-in-2026-with-guides)** — *Abid Ali Awan* — May 28, 2026  
+   Seven practical AI projects that automate real workflows including job search, web research, and more.
+
+5. **[Pandas GroupBy Explained With Examples](https://www.kdnuggets.com/pandas-groupby-explained-with-examples)** — *Abid Ali Awan* — May 27, 2026  
+   How to use Pandas GroupBy to summarize, compare, and analyze grouped data with practical examples.
+
+6. **[5 Scipy.stats Tricks for Simulating 'What If' Scenarios](https://www.kdnuggets.com/5-scipy-stats-tricks-for-simulating-what-if-scenarios)** — *Matthew Mayo* — May 27, 2026  
+   Five essential scipy.stats tricks for designing high-performance simulations using NumPy and SciPy.
+
+7. **[Visual Debugging Tools for Machine Learning Workflows](https://www.kdnuggets.com/visual-debugging-tools-for-machine-learning-workflows)** — *Nate Rosidi* — May 26, 2026  
+   What to visualize during training, the tools that provide visualizations, and methods to capture model computations.
+
+8. **[Top 7 Python Libraries for Large-Scale Data Processing](https://www.kdnuggets.com/top-7-python-libraries-for-large-scale-data-processing)** — *Bala Priya C* — May 26, 2026  
+   Python libraries that make large-scale data processing faster, more scalable, and easier to manage.
+
+9. **[Auditing Model Bias with Balanced Datasets with Mimesis](https://www.kdnuggets.com/auditing-model-bias-with-balanced-datasets-with-mimesis)** — *Iván Palomares Carrascosa* — May 25, 2026  
+   How to use the Mimesis library to generate balanced, counterfactual datasets for bias analysis.
+
+10. **[5 More Must-Know Python Concepts](https://www.kdnuggets.com/5-more-must-know-python-concepts)** — *Matthew Mayo* — May 25, 2026  
+    Five more fundamental Python concepts every developer should have in their toolkit.

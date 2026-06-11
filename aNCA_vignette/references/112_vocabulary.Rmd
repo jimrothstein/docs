@@ -86,6 +86,23 @@ Parameter-Value (BDS - Basic Data Structure) model
 normalized (or long tidyverse form) used in ADNCA. (Wide would have separate columns for Cmax, Tmax, etc.)
 more below at bottom
 
+
+**ADOSEDUR** 
+is used to determine the appropriate start imputation (time?) for
+missing C0 values in intravascular doses (IV). The automatic half-life
+determined by PKNCA may also change based on the duration of the
+infusion for superior accuracy. If not provided, aNCA assumes all
+doses are bolus ( ADOSEDUR = 0 ) and applies the corresponding
+imputation rules.
+
+
+The automatic HL calculation will never include points that are still
+hapenning during an infussion administration, this is what is meant
+here. On top, if an administration is bolus the C0 is extrapolated
+with a log-lin back regression. And yes, the variable ADOSEDUR will be
+the administration duration (so only infusions will be ADOSEDUR>0)
+
+
 ADaMIG -  CDISC 
 https://www.cdisc.org/system/files/members/standard/foundational/ADaMIG_for_Non-compartmental_Analysis_Input_Data_v1.0_1.pdf
 Requires knowing vocabulary.

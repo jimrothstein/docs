@@ -1,0 +1,91 @@
+;; -*- mode: emacs-lisp; lexical-binding:t; coding: utf-8-emacs; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Tue Jun  9 16:35:20 2026
+;; Desktop file format version 208
+;; Emacs version 30.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (27176 41784 946532 51000) (desktop . "208") "jim@jim-debian" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font . "-PfEd-DejaVu Sans Mono-regular-normal-normal-*-15-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 0) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars . right) (horizontal-scroll-bars) (foreground-color . "black") (background-color . "white") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 1) (tab-bar-lines . 0) (tool-bar-lines . 1) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 16) (scroll-bar-height . 16) (alpha) (alpha-background) (no-focus-on-map) (no-accept-focus) (fullscreen . maximized) (visibility . t) (use-frame-synchronization) (skip-taskbar) (z-group) (display-type . color) (background-mode . light) (cursor-color . "purple") (font-parameter) (sticky) (shaded) (environment) (last-focus-update . t) (tabs (current-tab (name . "google_search.md") (explicit-name))) (frameset--id . "49D2-CADB-9A10-A6FD") (frameset--mini t . t) (height . 54) (width . 209) (modeline . t) (unsplittable) (left . 0) (top . 0) (icon-name) (display . ":0") (explicit-name)) ((min-height . 4) (min-width . 20) (min-height-ignore . 3) (min-width-ignore . 12) (min-height-safe . 1) (min-width-safe . 4) (min-pixel-height . 72) (min-pixel-width . 180) (min-pixel-height-ignore . 54) (min-pixel-width-ignore . 108) (min-pixel-height-safe . 18) (min-pixel-width-safe . 36)) hc (pixel-width . 1916) (pixel-height . 965) (total-width . 213) (total-height . 54) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 962) (pixel-height . 965) (total-width . 107) (total-height . 54) (normal-height . 1.0) (normal-width . 0.5) (buffer "google_search.md" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 218) (start . 1)) (prev-buffers ("*Buffer List*" 1 317) ("999_junk.md" 8662 9982) ("tech_notes" 1 2325) ("000_PROJECTS.org" 2167 8995) ("google_search.md" 1 216) ("*Messages*" 1979 3751))) (leaf (last . t) (pixel-width . 954) (pixel-height . 965) (total-width . 106) (total-height . 54) (normal-height . 1.0) (normal-width . 0.5) (buffer "*evil-registers*" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1) (start . 1)))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist '((48 . "Query:\n**\"recommended vaccines for infant to first birthday, include references, create markdown (.md) file\"**\n") (116 file . "~/code/docs/tech_notes/300_tech_notes.typ") (114 file . "~/code/docs/tech_notes/310_R_notes.typ") (113) (112 file . "~/code/docs/tech_notes/810_pharmaverse_NOTES.typ") (109 file . "~/code/docs/health_notes/2025_2026_medical_notes.typ") (106 file . "~/code/docs/jobs/310_job_notes.qmd") (101 file . "~/code/docs/tech_notes/281_emacs_notes.typ") (51 file . "~/.config/i3/config") (105 file . "~/.config/emacs/init.el") (97 file . "~/.config/zsh/aliases.zsh")))
+(setq file-name-history '("/home/jim/code/docs" "~/code/docs/perplexity.md" "~/code/docs/tech_notes/000_PROJECTS.org" "~/code/docs/tech_notes/300_tech_notes.typ" "~/dotfiles/emacs/init.el" "~/.config/emacs/init.el"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/home/jim/code/docs/google_search.md"
+  "google_search.md"
+  'markdown-mode
+  '(font-lock-mode eldoc-mode visual-line-mode yas-minor-mode evil-local-mode flycheck-mode display-line-numbers-mode evil-collection-unimpaired-mode company-mode)
+  218
+  '(216 nil)
+  nil
+  nil
+  '((tab-width . 4) (buffer-display-time 27176 41750 818035 531000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines))
+  '((mark-ring (214 25 196))))
+
+(desktop-create-buffer 208
+  "/home/jim/code/docs/tech_notes/999_junk.md"
+  "999_junk.md"
+  'markdown-mode
+  '(font-lock-mode eldoc-mode visual-line-mode yas-minor-mode evil-local-mode flycheck-mode display-line-numbers-mode evil-collection-unimpaired-mode company-mode)
+  9982
+  '(9982 nil)
+  nil
+  nil
+  '((tab-width . 4) (buffer-display-time 27176 41633 252688 572000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines))
+  '((mark-ring (9883 9881 1))))
+
+(desktop-create-buffer 208
+  nil
+  "tech_notes"
+  'dired-mode
+  '(font-lock-mode visual-line-mode yas-minor-mode evil-local-mode display-line-numbers-mode evil-collection-unimpaired-mode company-mode)
+  2325
+  '(2325 nil)
+  t
+  '("/home/jim/code/docs/tech_notes/")
+  '((buffer-display-time 27176 41609 560944 208000) (overwrite-mode) (truncate-lines))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/jim/code/docs/tech_notes/000_PROJECTS.org"
+  "000_PROJECTS.org"
+  'org-mode
+  '(company-mode font-lock-mode visual-line-mode yas-minor-mode evil-local-mode flycheck-mode display-line-numbers-mode evil-collection-unimpaired-mode org-bullets-mode)
+  8995
+  '(8995 nil)
+  nil
+  nil
+  '((tab-width . 8) (buffer-display-time 27176 41608 224949 376000) (buffer-file-coding-system . undecided-unix) (overwrite-mode) (truncate-lines))
+  '((mark-ring (8995 8995 8995))))
+
+(desktop-create-buffer 208
+  "/home/jim/code/docs/gemini.md"
+  "gemini.md"
+  'markdown-mode
+  '(font-lock-mode eldoc-mode visual-line-mode yas-minor-mode evil-local-mode flycheck-mode display-line-numbers-mode evil-collection-unimpaired-mode company-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 4) (buffer-display-time 27176 40899 762457 887000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines))
+  '((mark-ring (445 443 4302 4070 4070))))
+
+(desktop-create-buffer 208
+  "/home/jim/code/docs/perplexity.md"
+  "perplexity.md"
+  'markdown-mode
+  '(font-lock-mode eldoc-mode visual-line-mode yas-minor-mode evil-local-mode flycheck-mode display-line-numbers-mode evil-collection-unimpaired-mode company-mode)
+  58
+  '(58 nil)
+  nil
+  nil
+  '((tab-width . 4) (buffer-display-time 27176 40818 40550 391000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines))
+  '((mark-ring (65 63 25 60 1 2))))
+

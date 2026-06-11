@@ -2,8 +2,7 @@
 name: posit-news
 description: |
   Use multiple sub-agents to fetch and display news from Posit, including blog posts, podcast episodes, videos, and events.
-  Use when the user wants to see recent Posit news, blog updates, podcast episodes, videos, or company announcements.
-
+  Use when the user wants to see recent Posit news, blog updates, podcast episodes, videos, or company announcements. This agent is called by a SKILL 'posit-news' 
 ---
 
 # Posit News
@@ -45,7 +44,7 @@ Note: YouTube (`https://www.youtube.com/@PositPBC/videos`) is blocked by WebFetc
 
 1. First, run `date +%Y-%m-%d` to get today's date.
 
-2. Use WebFetch to retrieve all blog URLs in parallel. For each blog, use this prompt:
+2. Use WebFetch to retrieve all blog URLs in parallel. Use "Fetch each URL with format: 'markdown'" For each blog, use this prompt:
    "Extract the [N] most recent blog posts with title, date, brief description, and URL."
    Note: The Posit blog (`https://posit.co/blog/`) is an HTML page — look for the post listing section. Tidyverse, Shiny, and Quarto blogs are also HTML pages.
 
@@ -72,7 +71,12 @@ Note: YouTube (`https://www.youtube.com/@PositPBC/videos`) is blocked by WebFetc
 
 6. For relative URLs, prepend the source's base URL to form complete links.
 
-7. Present the results grouped by source in this format.  Then save as news.md in markdown. 
+7. To save to file:
+
+- prepend Date to "news.qmd"
+- use directory /home/jim/code/docs/AGENTS/ 
+- the contents should be in quarto (.qmd) format.
+
    ```
    ## Posit Blog (3 latest)
 
@@ -90,9 +94,13 @@ Note: YouTube (`https://www.youtube.com/@PositPBC/videos`) is blocked by WebFetc
 
    - (YYYY-MM-DD) **Post Title**: Brief description. URL
 
+*** 
+
    ## The Test Set Podcast (latest episode)
 
    - (ep DDD) **Episode Title**: Brief description. URL
+
+***
 
    ## Posit Videos (3 latest)
 

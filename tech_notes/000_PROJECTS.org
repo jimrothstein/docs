@@ -1,4 +1,4 @@
-# Time-stamp: <Last changed 2026-05-22 13:30:19 by jim>
+# Time-stamp: <Last changed 2026-06-10 17:36:19 by jim>
 
 # (setq org-export-with-broken-links 'mark) -- if see this error
 #  TODO:   install ox-typst, pdf fails;
@@ -80,6 +80,23 @@ TOP
 - LEARN: https://www.emilyriederer.com/post/py-rgo-2025/
 - 
   
+* AGENTS/LLM/harness - practical!
+- blog, articles, https://sebastianraschka.com/ 
+- Hadley's blog
+- LLM are stateless (no memory)
+- human - LLM is HTTP request/response
+- Tool - LLM can not reply with weather,  LLM looks for tool, which runs on user's machine
+- Which tool?  JSON will list tool LLM should  use.
+- JSON is message transfer
+- HARNESS (ex: ellmer) - bounds, not the "driver", just limits, actually calls the tool
+- AGENT is wrapper around all of this, loop
+- LLM is "engine", HARNESS is rest of car, control speed, direction, memory, dashboard"
+- LLM is brain, HARNESS is rest of body. Brain says "run", harness controls muscles, lungs, ....
+
+
+- 
+
+  
 * ML - Basics  (need to double-check)
 ** Peng tidyverse 2021 Ch5 models
 ** LEARNING: SmolML (uses Karpathy) from scratch in python, no pytorch :  https://github.com/rodmarkun/SmolML?tab=readme-ov-file :read:
@@ -89,9 +106,6 @@ https://www.kaggle.com/code/dansbecker/how-models-work
 ** Karpathy https://www.youtube.com/watch?v=VMj-3S1tku0&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=1
 ** Rebecca Carter, very clear:  tidymodel intro (https://rebeccabarter.com/blog/2020-03-25_machine_learning#what-is-tidymodels)
 
-
-
-* ML - more Hands-on
 
 ** TODO Mnielson [ [neural][ http://neuralnetworksanddeeplearning.com/chap1.html]] :read:
 ** TODO Clark models               :read: 
@@ -255,8 +269,8 @@ hi
         Then move to iPad or ePub tablet
 
 
-* RANDOM
 
 
 * Return to TOP
 Either click or C-c C-o [[*Projects - TODO]]
+

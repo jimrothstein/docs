@@ -98,3 +98,8 @@ standards.  The work is entirely in R and R packages, plus github
 tools, to insure adherence to tidyverse style, 97% + testing coverage
 and the like.  Some TEAL (shiny) and related R experience roughly upto
 metaprogamming.
+
+
+**12JUNE2026**
+- linkedin, glassdoor - people say best (maybe I need to post more!)
+- Columbus, OH  - NYTimes claims popular with giant tech manufacturing companies. 
