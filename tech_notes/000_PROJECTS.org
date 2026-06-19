@@ -1,4 +1,4 @@
-# Time-stamp: <Last changed 2026-06-15 16:14:20 by jim>
+# Time-stamp: <Last changed 2026-06-18 23:21:01 by jim>
 
 # (setq org-export-with-broken-links 'mark) -- if see this error
 #  TODO:   install ox-typst, pdf fails;
@@ -113,7 +113,7 @@ https://www.kaggle.com/code/dansbecker/how-models-work
 ** Bagging:  Classifer (0,1)  Bootstramp original sample; but each with only 1 or 2 features (sampled) from all features (ex: ageron, 05-decison-trees)
 
 * ML/AI/LLMs/ Things to Read Theory...
-
+  Cameron Wolfe:explains  https://cameronrwolfe.substack.com/p/ai-agents
 ** Video lectures:  AI, ML  probability, linear algebra!  https://www.youtube.com/watch?v=YIJrRfj37Cc&list=PLE0hRHRkCk4N-nYlVGSE8cwyzxQomm2Pa 
 
 ** Tom Yeh, [[https://www.youtube.com/playlist?list=PL0cq-CiC5Qhs9HcDnJpWuoDMrV0iPJ_-X][ai by hand videos]]
