@@ -1,5 +1,7 @@
 /*  *** In process using LLM to create llm-wiki **   */
 
+LLM NOTES?   go here: 320_LLM_agents_NOTES.md 
+
 = 300 Tech Notes
 typst file
 
@@ -23,30 +25,6 @@ Haskell working hard on  data science; tutorials... cloud based GUI
 - sudo dmesg
 - sudo journalctr -b 
 - secureddisplay? LOAD_TA(0x1)
-
-=== LLM
-
-self-attention:  I went to bank to get money.   Does bank refer to river or building?
-
-transformer:   _He_ did something....           transformer can determine _he_ even if several paragraphs away.
-
-attention matrix:  NxN matrix,    pairs various tokens
-          
-Chris Brown: setup in R, ellmer, copilot, openRouter...
-- https://www.seascapemodels.org/R-llm-workshop/
-- https://www.seascapemodels.org/AI-assistants-for-scientific-coding/
-
-- Large LLMs book (@ 2/1/2025): <https://luisdva.github.io/llmsr-book/before-start.html>
-- ellmer <https://github.com/tidyverse/ellmer/>
-
-Chat examples
-
-- Shiny assistant <https://shiny.posit.co/blog/posts/shiny-assistant/>
-- query chat <https://github.com/posit-dev/querychat  
-  Given a db, write query in English; LLM adjusts shiny app to show graphs, data
-
-- dev article <https://docs.continue.dev/customize/overview> 
-- R, ollama, deepseek <https://drmowinckels.io/blog/2025/ollama/>
 
 === Hardware
 23 DEC 2024 - wireless mouse, $10, bestbuy, M220 logitech, 18 month

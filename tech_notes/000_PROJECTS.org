@@ -1,4 +1,4 @@
-# Time-stamp: <Last changed 2026-06-10 17:36:19 by jim>
+# Time-stamp: <Last changed 2026-06-15 16:14:20 by jim>
 
 # (setq org-export-with-broken-links 'mark) -- if see this error
 #  TODO:   install ox-typst, pdf fails;
@@ -66,8 +66,7 @@ Structure:   Next: ,  then TODO , then notes
 TOP
 
 
-* <<<Typst>>>    (target)
-
+Typst
   1. USE online typst editor to debug  :typst
   2. Basic:  000_simple.typ (learning curve to get symbols and format right).
   3. Pretty graphs?    plotsy + cetz
@@ -76,25 +75,22 @@ TOP
 * R
 - typst:  Ch 1,2 my Advanced R notes
 
+Python
 * python (no ML)
 - LEARN: https://www.emilyriederer.com/post/py-rgo-2025/
-- 
   
 * AGENTS/LLM/harness - practical!
 - blog, articles, https://sebastianraschka.com/ 
 - Hadley's blog
 - LLM are stateless (no memory)
-- human - LLM is HTTP request/response
-- Tool - LLM can not reply with weather,  LLM looks for tool, which runs on user's machine
+- human -> LLM is HTTP request/response
+- Tool -> LLM can not reply with weather,  LLM looks for tool, which runs on user's machine
 - Which tool?  JSON will list tool LLM should  use.
 - JSON is message transfer
 - HARNESS (ex: ellmer) - bounds, not the "driver", just limits, actually calls the tool
 - AGENT is wrapper around all of this, loop
 - LLM is "engine", HARNESS is rest of car, control speed, direction, memory, dashboard"
 - LLM is brain, HARNESS is rest of body. Brain says "run", harness controls muscles, lungs, ....
-
-
-- 
 
   
 * ML - Basics  (need to double-check)
@@ -138,6 +134,7 @@ Why do we measure?   Suppose we sum over all elments of (0,1) - too big; uncount
 * RE - cart project
 - NEXT:  go though https://gymnasium.farama.org/introduction/basic_usage/  
 - video (newer OpenEnv) https://www.youtube.com/watch?v=VUb16HYIyl4
+
 * pyTorch
 ** https://www.learnpytorch.io/02_pytorch_classification/              :read:
 ** (ageron, python code only for v1 of hands-on) https://github.com/ageron/handson-mlp
@@ -182,6 +179,7 @@ Play Area:
 #+BEGIN_SRC bash
   git status
 #+END_SRC
+
 
 * Algebra, Math, Statistics
 *** Calculus

@@ -409,3 +409,9 @@ But asia is different; Europe still better
 
 Feb 14, 2026 - buproprion
 - no indication Dr. Z reoredered it;  no refills remain; put in RX request on everet-north website
+
+June 12, 2026 - Dr. Miyake
+- Should take finesteride.   Two main drugs are (1) flomax and (2) finesteride.  He ordered it.
+- Mg is high in urine:  could be diet, but also kidney not able to keep Mg in complete balance (typical with CKD)
+- Ox 49
+- Urine test I took (492 mg), is much more senstive than usually Protein/Creatinine ratio.   492 is low.  Becomes issues at 2,000-3000.

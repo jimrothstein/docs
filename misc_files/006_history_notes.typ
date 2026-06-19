@@ -541,3 +541,21 @@ promises” are not contracts, not enforceable, not legal justification to repla
 <eugene-or>
 Judge Alfred Ted Goodwin, 1923-2023 father was Baptist minister; \
 \- ordered cross removed from Ore. hiltop. - beach bet high tide and vegetation is PUBLIC (1964) - Nixon appointed to fed bench. - favored #strong[federal] enforcement to protect Spotted Owl - forcing children to recite "one nation under god" violates separation of Church. (unfortunately, reversed in separate case when 'teacher led') - also branded cattle (man of the west?)
+
+== FIELD, Laura K.  "Furious Minds" (2025;   320.520973) 
+
+This is troubling book.  Traces the HARD RIGHT from academia to think
+tank to US gov't.  Things like "Straussian", or JV Vance follows
+"Deneen" (social conservative, society holds together by relgion or
+old customs in face of too much individual freedom, conquering
+nature); Claremount Institute ; Hillsdale College (mich);
+"Post-Liberal" ... Somehow issues from Greek classics, US Founders,
+Lincoln-Douglas Debates (Lincoln argued "morality", but Douglas argued
+Popular Sovereignty was more democratic, really?), Separate of
+Church-State allowed room for morality to develop.  Somethings these
+and others get transformed to far right, daily fare. Much I could not
+follow.  But seems these people take it very, very seriously (ie
+academics). And make Betsy DeVos look liberal for remarking we do not
+have national school curciulum.  MLK had it right I think; too
+abstraction and you are completely removed from what is real in 20th
+Century

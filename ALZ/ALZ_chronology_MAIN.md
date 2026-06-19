@@ -862,3 +862,26 @@ Marion County Community Corrections  (here? https://www.co.marion.or.us/SO/Proba
 
 Location Type: Detention Center
 3610 Aumsville Hwy SE
+
+### 13 JUNE 2026 - ALZ has been released, motion to "set aside" [expungment] convictions and arrest in several criminal cases:
+- ORS 137.225
+- Note: Under section 3 (b), if granted
+""shall enter an appropriate order containing the original arrest or citation charge, the conviction charge, if applicable and different from the original, the date of charge, the submitting agency and the disposition of the charge. Upon the entry of the order, the person for purposes of the law shall be deemed not to have been previously convicted, arrested, cited or charged, and the court shall issue an order sealing all official records in the case, including the records of arrest, citation or charge, whether or not the arrest, citation or charge resulted in a further criminal proceeding."
+
+
+QUESTIONS:
+- Is ALZ under supervised probation?  If yes, "set aside" not yet allowed b/c has not completed sentence?
+- Is ALZ employed?  in school? [Or, continuing path similar to before?]
+- Is ALZ still maintaining "destitute"?
+- Is ALZ expecting to adopt, seek custidy of other non-biological children?
+
+
+I want to OBJECT to any and all modfications to public record.
+Reason:  
+It is public record.   Closest thing we have to "truth" and it is imperative continue to exist and be publicly avialable.
+
+Over the years, ALZ has had a number of interactions with the legal system (civil, criminal, family) and large amounts of documentation is in her own hand. Even if this not 100% accurate, it does reveal much information and patterns that will tell the next person something about ALZ.   Of course, this "next" person should make independent judgement, but  at least have considerable data to be informed.
+
+In this criminal case and in others in the record, there are numerous examples where ALZ has shown herself not be trustworthy, not to be taken at her word and or give all the details leading to false conclusions.  Sh just is not to  be given the benefit of the doubt.   Yes, defendant is entitled to go on with her life, but not as a person with no past, no history.  That is not fair to next person.
+
+
