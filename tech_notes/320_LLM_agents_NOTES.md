@@ -15,13 +15,14 @@ Short Definitions:
 
 node:  allow js use outside browser
 javascript:  Why?   designed for async http requests
+openwebui.com: cloud, ui, to connect to local ollama.  Don't see benefit. 
 
 self-attention:  I went to bank to get money.   Does bank refer to river or building?
 transformer:   _He_ did something....           transformer can determine _he_ even if several paragraphs away.
 attention matrix:  NxN matrix,    pairs various tokens
-Compact?  [[compact ][~/code/docs/tech_notes/compact.md]]
-Context  context gets too big (https://papers.voltropy.com/LCM)
-free tools ? https://github.com/vava-nessa/free-coding-models?tab=readme-ov-file#-why-this-tool  
+Compact:  [[compact ][~/code/docs/tech_notes/compact.md]]
+Context:  context gets too big (https://papers.voltropy.com/LCM)
+free tool: https://github.com/vava-nessa/free-coding-models?tab=readme-ov-file#-why-this-tool  
 
 Tool:   When LLM needs external info (file system, web) provides agent with such a tool. Agent then runs the tool.
 
