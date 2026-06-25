@@ -1,6 +1,16 @@
 
 281_emacs_notes.typ
 
+Convert to .md
+
+
+
+== elisp
+
+** TODO Prot's book :read:
+** TODO Chicago book :read:
+** Prot's text:*   repo: M-x Dired | M-x dired-do-info (over file: elispelem.info) 
+** Learn: Denote                                               :emacs:learn:
 
 == Typst
 3-24-2026
@@ -156,6 +166,19 @@ Run lisp ?  or REPL:   open  ~/code/elisp_project/010_basic_elisp.el
 - gnu elisp https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html 
 - Toretzky Gentle Common Lisp http://www.cs.cmu.edu/~dst/LispBook/
 
+= Org mode
+  Outliner, organize TODO, DEADLINES, embed elisp to initialize new project.
+  (markdown or typst, which are document rendering.)
+  With a litle lisp, org-mode can be completely customized. Perhaps one reason emacs survives, with each new technology emacs can absorb it.
+   1. **NEXT ::  CLEAN up  TODO  (C-c a t)**
+   2. TODO set org-agenda-files to collect ALL TODOs. 
+   3. TODO  [[https://www.youtube.com/watch?v=0-brF21ShRk&list=PLknodeJt-I5GJmcd7ENakYf_M0x9q50d1&index=8][org-mode | Galvin | video]]
+   4. TODO tutorial https://emacsclub.github.io/html/org_tutorial.html
+   5. TODO :: [[https://orgmode.org/worg/org-tutorials/orgtutorial_dto.html][another tutorial]]
+
+
+To See (at botom)  [[*Org Notes]]  (C-c C-o)
+Structure:   Next: ,  then TODO , then notes
 
 
 quarto render <file.qmd> (uses quarto/typst cli to generate pdf)

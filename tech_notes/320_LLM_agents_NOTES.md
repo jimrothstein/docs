@@ -42,9 +42,66 @@ Chris Brown: setup in R, ellmer, copilot, openRouter...
 - Large LLMs book (@ 2/1/2025): <https://luisdva.github.io/llmsr-book/before-start.html>
 - ellmer <https://github.com/tidyverse/ellmer/>
 
+- blog, articles, https://sebastianraschka.com/ 
+- Hadley's blog
+- LLM are stateless (no memory)
+- human -> LLM is HTTP request/response
+- Tool -> LLM can not reply with weather,  LLM looks for tool, which runs on user's machine
+- Which tool?  JSON will list tool LLM should  use.
+- JSON is message transfer
+- HARNESS (ex: ellmer) - bounds, not the "driver", just limits, actually calls the tool
+- AGENT is wrapper around all of this, loop
+- LLM is "engine", HARNESS is rest of car, control speed, direction, memory, dashboard"
+- LLM is brain, HARNESS is rest of body. Brain says "run", harness controls muscles, lungs, ....
+
+https://cameronrwolfe.substack.com/p/agentic-rl
+
+
+### ML BASICS
+
+** Peng tidyverse 2021 Ch5 models
+** LEARNING: SmolML (uses Karpathy) from scratch in python, no pytorch :  https://github.com/rodmarkun/SmolML?tab=readme-ov-file :read:
+** Geeks4Geeks : many tutorials https://www.geeksforgeeks.org/machine-learning/machine-learning/
+** Kaggle: ** guide https://www.kaggle.com/learn/intro-to-machine-learning, 
+https://www.kaggle.com/code/dansbecker/how-models-work
+** Karpathy https://www.youtube.com/watch?v=VMj-3S1tku0&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=1
+** Rebecca Carter, very clear:  tidymodel intro (https://rebeccabarter.com/blog/2020-03-25_machine_learning#what-is-tidymodels)
+
+
+** TODO Mnielson [ [neural][ http://neuralnetworksanddeeplearning.com/chap1.html]] :read:
+** TODO Clark models               :read: 
+** TODO Patterns Hardt & Recht :read:
+** Kim, S.... https://skim.math.msstate.edu/LectureNotes/Machine_Learning_Lecture.pdf (python - see Ch2, good, but also need numerical examples ) :read: 
+
+** Mohamed AAZI - good, but lost the lin  :read:
+** Geeks4Geeks : scikit  :read:
+** Bagging:  Classifer (0,1)  Bootstramp original sample; but each with only 1 or 2 features (sampled) from all features (ex: ageron, 05-decison-trees)
+
+
+#### from scratch
+python, multiple lessons, build each piece, tokenizer, transformer, harness .... https://github.com/rohitg00/ai-engineering-from-scratch
+
+
+  Cameron Wolfe:explains  https://cameronrwolfe.substack.com/p/ai-agents
+** Video lectures:  AI, ML  probability, linear algebra!  https://www.youtube.com/watch?v=YIJrRfj37Cc&list=PLE0hRHRkCk4N-nYlVGSE8cwyzxQomm2Pa 
+
+** Tom Yeh, [[https://www.youtube.com/playlist?list=PL0cq-CiC5Qhs9HcDnJpWuoDMrV0iPJ_-X][ai by hand videos]]
+
+** HuggingFace
+video: https://youtu.be/QEaBAZQCtwE?si=KlY62cMeE63jtoNP
+datacamp:  https://www.youtube.com/watch?v=R8h_gpSpEVU
+exBert (visualize ??) https://www.youtube.com/watch?v=Dtw1lcFg3Ss
+BERT: (article - I don't get it) https://arize.com/blog-course/unleashing-bert-transformer-model-nlp/
+
+** Columbia (backprop) https://www.youtube.com/watch?v=sIX_9n-1UbM   
+
+
+Why do we measure?   Suppose we sum over all elments of (0,1) - too big; uncountable.   Choose a measure where singletons have measure zero!
+
+**For LLM, AGENTS see:  LLM_NOTES.md**
+
 Misc:
 (ideas!) https://youtu.be/WNx-s-RxVxk?si=BpD36FsFY8Lq6juv (matt pocock)
-Chat examples
 
 - Shiny assistant <https://shiny.posit.co/blog/posts/shiny-assistant/>
 - query chat <https://github.com/posit-dev/querychat  

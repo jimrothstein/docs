@@ -18,6 +18,17 @@ format:
 
 */
 
+== Vocabulary
+-kleptocracy government with rampant greed and corruption.
+-plutotcracy government by the wealthiest
+-kakistocracy government dangerously incompetatent
+-kleptocracy government where politicans enrich themselves 
+-ochlocracy, rule by loudest, angriest crowd
+-idiocracy, rules by incompetatent
+- self-indulgent sybarite
+- mobocracy, rule by mob, possibly violent
+- gerontocracy, rule by oldest
+
 
 Germany #link("www.nytimes.com")[failing nytimes.com]
 
@@ -559,3 +570,88 @@ academics). And make Betsy DeVos look liberal for remarking we do not
 have national school curciulum.  MLK had it right I think; too
 abstraction and you are completely removed from what is real in 20th
 Century
+
+== WICKER, Tom "Shooting Star" (McCarthy = McC)
+RFK:   "very complicated character"
+
+A great salesman, real drive, hard work, excellent memory, good at bluffing, outgoing and easy to be-friend.
+A Puzzle.
+Began Wisc farm, somehow figured out how to escape: Rises through assorted jobs, until:  HS at 19 (finised 4 years in 1); law school (1930-35) and win election to  be local judge (1939), but a few questions emerge unfairly criticized judge he replaced; questionable accounting.  Is Democrat.
+1942 (age 33) enlists; run illegal liquor scheme; wins at poker; sent to S. Pacific; but never saw real action.  Pilots did not want him as crew. Still in uniform runs for 1944 Senate (now as GOP), sort of trial balloon.  Leaves a Marines (no Saipan, Philippines) and back as judge!
+1946 Senate wins against LaFollette Jr, who did not seem eager to compaign.
+
+*1950, Feb 9 - Wheeling*
+
+- 1950, Spring, Tydings Committee to check McC claims; but McC claims
+  only grow; no longer anonymous, now popular, influencial with GOP,
+  asked to campaing with others.  Of course, other GOP latch
+  on. (Margaret Chase Smith and a few others protest early on, but now
+  his power too great)
+
+- McC "point of order" constatnly interruts many hearings.  annoying.
+- *McCarran Act* - a Dem - "subversives" can be interned; Truman
+   vetos; Congress overrides.
+
+1950 - midterms;  Tydings out; Nixon in; many who received McC's smears are voted OUT.
+McC attacks Acheson, many times.
+1951 (june 14) - attacks George Marshall (wow!)
+
+=== 1952 Election
+- McC has ability to create headlines, based on nothing, fear.
+- JFK -defeats Henry Cabot Lodge (had been McC foe in Tyding Hearings)
+- Stuart Symington
+  Goldwaeter - wins
+- House GoP   221 - 213
+- Senate GoP 48-47 (Wayne Morse = independent)
+- IKE and Nixon win 55% of popular vote, including many areas of South.
+- IKE - keep distance from McC. IKE does NOT defend Geo Marshal.
+- Hank Greespun - becomes bitter McC enemy.
+
+=== 1953
+- McC makes headlines with pink Army dentist; commanding officer gives
+  him honorable discharge. McC seeks Secy of Army! As dentist saga
+  continues, McC seeks to investigate Ft. Monmouth for reds.
+
+- Along the way, Roy Cohn's boyfriend "Shine" is drafted (and somehow
+  was on McC Committee ??) Cohn (and McC?) play all kinds of games with army to give Shine favorable treatment!!   (and keep him near Cohn)
+- VoA libraries in embassies; attacks as subservice 
+- June 1953, even HOOVER warns McC "...do spade work.. " (ie preliminary work; get facts)
+- clash  with CIA/Dulles, who refuses to allow McC to interogate (investigate) CIA agent.
+- McC seeks Oppenheimer; HOOVER blocks accuses McC of seeking headlines; (Later, HOOVER does promote Oppenheimer investigation) 
+- IKE keeps head down.
+- IKE concern that McC might all American scientists RED.  So IKE
+  gives support for separate, non-McC Oppenheimer hearings. So McC can
+  not do the investigation. *IKE protects HIMSELF.*
+
+=== 1954 - at peak power.  50% approval rating
+- Army Hearings - 36 days televised (LBJ said to do this !By June, falls to 34% favorable:
+- By June, falls to 34% favorable:
+
+- Murrow ? See it now?
+
+- June 11, Sen Flanders -VT (about to retire) calls McC to answer questions re: finances, OR lose Chairman of Investigations Committee
+- Knowland (R - Calif ) opposes, will split R Party.  And Southern Dems want to protect seniority system.
+- So, Flanders replaces with "censure"
+- Dirksen opposes (R- IL)
+- August 31, 1954 (begins) Watkins Committee formed (LBJ's hand in
+  selecting members, including R); NO TV | strict rules |
+  counter-examination: only 1 person at time (McC or his lawyer) may
+  speak; 13 charges.  As soon as McC tries to disrupt ("point of
+  order""); he is made to stop.
+
+- Sept 27, 1954 Watkins - unanimous, censure; only for McC treatment
+  of Senate and Gen Zwicker; no charges for "McCarthysm"
+- With IKE's approval, 1954 Communist Control Act, including strip
+  citizenship, seize printing press; Warrior Humphrey adds amendmant
+  Communists are an "agency" of hostile foreign power.  No one can say
+  Dems soft on Reds.
+- 1954 mid-terms, Dems take majority (48-47) in Senate (LBJ); Cliff Case (liberal R-NJ) elected; Oregon: Guy Gordon (McC supporter?  wanted "fair process" against McC) replaced by D. Neuberger (D-Ore). [Neuberger was German-Jewish, outspoken liberal; wanted to outlaw motor races ??!! dies 47, wife wins Senate seat]
+- McC end was slow;  LBJ guides, but Senate weakened its resolved;  In Dec 1954, McC keeps at it - now ignored.
+- May 2 1957 DEAD.  RFK attends Wisc funeral.  1955, 1956, 1957 McC is shadow;  heavy drinking; despondant.
+  
+
+
+
+
+
+

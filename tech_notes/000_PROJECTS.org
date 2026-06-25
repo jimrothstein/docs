@@ -1,4 +1,4 @@
-# Time-stamp: <Last changed 2026-06-18 23:21:01 by jim>
+# Time-stamp: <Last changed 2026-06-22 17:14:08 by jim>
 
 # (setq org-export-with-broken-links 'mark) -- if see this error
 #  TODO:   install ox-typst, pdf fails;
@@ -15,34 +15,13 @@ Diary
 - NEXT: continue Kaggle (python and machine l)
   
 * ORG-MODE: purpose
-  Outliner, organize TODO, DEADLINES, embed elisp to initialize new project.
-  (markdown or typst, which are document rendering.)
-  With a litle lisp, org-mode can be completely customized. Perhaps one reason emacs survives, with each new technology emacs can absorb it.
 
 
-To See (at botom)  [[*Org Notes]]  (C-c C-o)
-Structure:   Next: ,  then TODO , then notes
+emacs:   go to 281_emacs_notes.org 
 
-* Projects - TODO                                                   :todo:
-
-* TODO Learn Org mode                                         :org:learn:
-** TODO org-mode easier to navigate
-   1. **NEXT ::  CLEAN up  TODO  (C-c a t)**
-   2. TODO set org-agenda-files to collect ALL TODOs. 
-   3. TODO  [[https://www.youtube.com/watch?v=0-brF21ShRk&list=PLknodeJt-I5GJmcd7ENakYf_M0x9q50d1&index=8][org-mode | Galvin | video]]
-   4. TODO tutorial https://emacsclub.github.io/html/org_tutorial.html
-   5. TODO :: [[https://orgmode.org/worg/org-tutorials/orgtutorial_dto.html][another tutorial]]
-
-      
-* Learn Help Files
 
 * Learn elisp
-** TODO Prot's book :read:
-** TODO Chicago book :read:
-** Prot's text:*   repo: M-x Dired | M-x dired-do-info (over file: elispelem.info) 
-** Learn: Denote                                               :emacs:learn:
 
-* openrouter
 
 * gridify
 ** Outline:
@@ -76,64 +55,18 @@ Typst
 - typst:  Ch 1,2 my Advanced R notes
 
 Python
-* python (no ML)
-- LEARN: https://www.emilyriederer.com/post/py-rgo-2025/
+
+go to 320_ML_agents_NOTES.md
   
-* AGENTS/LLM/harness - practical!
-- blog, articles, https://sebastianraschka.com/ 
-- Hadley's blog
-- LLM are stateless (no memory)
-- human -> LLM is HTTP request/response
-- Tool -> LLM can not reply with weather,  LLM looks for tool, which runs on user's machine
-- Which tool?  JSON will list tool LLM should  use.
-- JSON is message transfer
-- HARNESS (ex: ellmer) - bounds, not the "driver", just limits, actually calls the tool
-- AGENT is wrapper around all of this, loop
-- LLM is "engine", HARNESS is rest of car, control speed, direction, memory, dashboard"
-- LLM is brain, HARNESS is rest of body. Brain says "run", harness controls muscles, lungs, ....
-
-  
-* ML - Basics  (need to double-check)
-** Peng tidyverse 2021 Ch5 models
-** LEARNING: SmolML (uses Karpathy) from scratch in python, no pytorch :  https://github.com/rodmarkun/SmolML?tab=readme-ov-file :read:
-** Geeks4Geeks : many tutorials https://www.geeksforgeeks.org/machine-learning/machine-learning/
-** Kaggle: ** guide https://www.kaggle.com/learn/intro-to-machine-learning, 
-https://www.kaggle.com/code/dansbecker/how-models-work
-** Karpathy https://www.youtube.com/watch?v=VMj-3S1tku0&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=1
-** Rebecca Carter, very clear:  tidymodel intro (https://rebeccabarter.com/blog/2020-03-25_machine_learning#what-is-tidymodels)
-
-
-** TODO Mnielson [ [neural][ http://neuralnetworksanddeeplearning.com/chap1.html]] :read:
-** TODO Clark models               :read: 
-** TODO Patterns Hardt & Recht :read:
-** Kim, S.... https://skim.math.msstate.edu/LectureNotes/Machine_Learning_Lecture.pdf (python - see Ch2, good, but also need numerical examples ) :read: 
-
-** Mohamed AAZI - good, but lost the lin  :read:
-** Geeks4Geeks : scikit  :read:
-** Bagging:  Classifer (0,1)  Bootstramp original sample; but each with only 1 or 2 features (sampled) from all features (ex: ageron, 05-decison-trees)
-
-* ML/AI/LLMs/ Things to Read Theory...
-  Cameron Wolfe:explains  https://cameronrwolfe.substack.com/p/ai-agents
-** Video lectures:  AI, ML  probability, linear algebra!  https://www.youtube.com/watch?v=YIJrRfj37Cc&list=PLE0hRHRkCk4N-nYlVGSE8cwyzxQomm2Pa 
-
-** Tom Yeh, [[https://www.youtube.com/playlist?list=PL0cq-CiC5Qhs9HcDnJpWuoDMrV0iPJ_-X][ai by hand videos]]
-
-** HuggingFace
-video: https://youtu.be/QEaBAZQCtwE?si=KlY62cMeE63jtoNP
-datacamp:  https://www.youtube.com/watch?v=R8h_gpSpEVU
-exBert (visualize ??) https://www.youtube.com/watch?v=Dtw1lcFg3Ss
-BERT: (article - I don't get it) https://arize.com/blog-course/unleashing-bert-transformer-model-nlp/
-
-** Columbia (backprop) https://www.youtube.com/watch?v=sIX_9n-1UbM   
-
-
-Why do we measure?   Suppose we sum over all elments of (0,1) - too big; uncountable.   Choose a measure where singletons have measure zero!
-
-**For LLM, AGENTS see:  LLM_NOTES.md**
-
 * RE - cart project
+
 - NEXT:  go though https://gymnasium.farama.org/introduction/basic_usage/  
 - video (newer OpenEnv) https://www.youtube.com/watch?v=VUb16HYIyl4
+
+* python
+  (Kim - see above)
+  (w3) https://www.w3schools.com/python/python_lists.asp ***
+- LEARN: https://www.emilyriederer.com/post/py-rgo-2025/
 
 * pyTorch
 ** https://www.learnpytorch.io/02_pytorch_classification/              :read:
@@ -172,13 +105,6 @@ Play Area:
   advanced, but simple approach:  "statistical manifolds", training LLM via  path
   https://www.youtube.com/watch?v=EMxDsDfvM_s&t=265s
 
-* python
-  (Kim - see above)
-  (w3) https://www.w3schools.com/python/python_lists.asp ***
-
-#+BEGIN_SRC bash
-  git status
-#+END_SRC
 
 
 * Algebra, Math, Statistics
