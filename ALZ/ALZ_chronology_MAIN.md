@@ -863,10 +863,32 @@ Marion County Community Corrections  (here? https://www.co.marion.or.us/SO/Proba
 Location Type: Detention Center
 3610 Aumsville Hwy SE
 
+
+### 4 JUNE 2026 (my notes)
+re:  case aginst warden, A181840 (control), A181841
+
+Appellete
+State - Plaintiff Respondent (Laura P. Robertson)
+ALZ   - Def Appellant (lawyer Nora Coon)
+submitted **2026-05-09**
+Before Judgees Ortega (presidinga), Hellman, O'Connor
+Judge Matthew Tracey Pro Temp
+Affirmed : Designation of Prevailing Party & Award of Costs
+Prevailing Party:  Respondent
+"No Costs Allowed"
+
+Applette Judgement: effective 12JAN2026 (ORS 19.450  https://oregon.public.law/statutes/ors_19.450)
+
+
+
+
 ### 13 JUNE 2026 - ALZ has been released, motion to "set aside" [expungment] convictions and arrest in several criminal cases:
+**DA Atty:   Ashley Alben-Pond 503-588-5489**
 - ORS 137.225
 - Note: Under section 3 (b), if granted
 ""shall enter an appropriate order containing the original arrest or citation charge, the conviction charge, if applicable and different from the original, the date of charge, the submitting agency and the disposition of the charge. Upon the entry of the order, the person for purposes of the law shall be deemed not to have been previously convicted, arrested, cited or charged, and the court shall issue an order sealing all official records in the case, including the records of arrest, citation or charge, whether or not the arrest, citation or charge resulted in a further criminal proceeding."
+
+Spoke with Ms. Alben-Pond, by the book, too early for ALZ's request.   Can not object to set aside **attempted theft** b/c it was dismissed , but I can.  ALZ is no longer under supervision??  Therefore **stipulated agreement** no longer applies????
 
 
 QUESTIONS:

@@ -60,6 +60,33 @@ bb(A), AA, bb(1) \
 $
 
 
+= Tangent Line
+
+Given a function, f find tangent line at point $(x_0, y_0)$
+
+== Equation of Line
+
+$y=m*x + b$
+
+The slope of line at point P is, by definition, 
+$(y-y_0)/(x-x_0) = m$
+
+From calculus, we know slope is equal to
+$m = f(x_0)$
+
+Thus m is now known.
+
+== Line through origin, parallel to tangent
+
+$y = m*x$
+
+== Line through $x_0$, parallel to tangent 
+$y = m(x - x_0)$
+
+== The tangent line, through $(x_0, y_0)$
+
+$y = m(x - x_0) + f(x_0)$
+
 = "Linear Algebra"
 == "Normal Equations, solution which minimizes error (regression)"
 
