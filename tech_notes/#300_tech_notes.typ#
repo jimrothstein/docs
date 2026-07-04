@@ -425,8 +425,10 @@ things and there are some groups you don't want to capture.
 === mount
 mount --bind
 
-To temporarily load and run and sys:
+- To temporarily load and run and sys:
 sudo chroot /mnt/X/  #  where /mnt/X must already exist
+
+
 
 
 ==== plymouth  (linux)

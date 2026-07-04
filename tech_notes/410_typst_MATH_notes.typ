@@ -355,7 +355,9 @@ $
 $
 
 
-- More modern:   dx is differential form or co-vector a function that takes a tangent vector and returns scalar, which is magnitude of tangent vector in x-direction
+- More modern: dx is differential form or co-vector a function that
+  takes a tangent vector and returns scalar, which is magnitude of
+  tangent vector in x-direction
 
 
 f: R^2 - R
@@ -471,7 +473,7 @@ $
 - generalize major/minor axes of ellipse
 - these axes are perpendicular
 - tells you how to find these axes
-
+- no cross terms
 
 === Exampe: Ellipse, hyperbola
 
@@ -494,7 +496,11 @@ Complete the square, using u(x,y), v(x,y)
 - if difference, then hyperbola
 
 // Hint:  Consider $ l_1*c_1**2 + l_2*c_2^2 $   Find the eigenvalues for l; then eigenvectors for c
+// c_1 and c_2 are functions of (x,y)
 
+Matrix formulation:
+Q(x,y) = [x y](5 4)[x y]*T = 1
+               4 5
 == Summations
 // Without Indices
 
