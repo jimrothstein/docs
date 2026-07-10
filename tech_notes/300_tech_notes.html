@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.39">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>tech_notes</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="300_tech_notes_files/libs/clipboard/clipboard.min.js"></script>
+<script src="300_tech_notes_files/libs/quarto-html/quarto.js"></script>
+<script src="300_tech_notes_files/libs/quarto-html/popper.min.js"></script>
+<script src="300_tech_notes_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="300_tech_notes_files/libs/quarto-html/anchor.min.js"></script>
+<link href="300_tech_notes_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="300_tech_notes_files/libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="300_tech_notes_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="300_tech_notes_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="300_tech_notes_files/libs/bootstrap/bootstrap-43e5b345aceed70a1f1f19e78b596456.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">———————–</h1></header>
+
+
+
+
+<p>/* *** In process using LLM to create llm-wiki ** */</p>
+<p>LLM NOTES? go here: 320_LLM_agents_NOTES.md</p>
+<section id="tech-notes" class="level1">
+<h1>300 Tech Notes</h1>
+<p>typst file</p>
+<section id="jul-2026" class="level2">
+<h2 class="anchored" data-anchor-id="jul-2026">Jul 2026</h2>
+<ul>
+<li>Change from <em>.typ file to </em>.md; why? it simple text and md easier</li>
+</ul>
+<section id="sudo-apt" class="level3">
+<h3 class="anchored" data-anchor-id="sudo-apt">sudo apt</h3>
+<p>sudo apt autoremove # a dependency no longer needed</p>
+<p>sudo apt-mark # pkgs settings, such as being held</p>
+<p>sudo apt install –fix-broken <pkg> sudo apt install –fix-missing</pkg></p>
+</section>
+</section>
+<section id="linux-cli" class="level2">
+<h2 class="anchored" data-anchor-id="linux-cli">linux cli</h2>
+<p>df -h # free space on system</p>
+<p>journalctl -b -1 # show system messages from prior boot</p>
+<section id="audio" class="level3">
+<h3 class="anchored" data-anchor-id="audio">Audio</h3>
+<p>WirePlumber PipeWire ALSA (bottom)</p>
+<ul>
+<li>Audio: low-level Pipewire, replaces pulseaudio (https://wiki.archlinux.org/title/PipeWire) (ALSA remains the lowest level library)</li>
+<li>Audio: <em>WirePlumper</em> (wpctl) is used to manage this library</li>
+<li>Audio: May see references to older PulseAudio, but this probably PipeWire emulating the older package. PulseAudo package is no longer on machine.</li>
+<li><em>wpctl</em> is CLI</li>
+</ul>
+<p>** Mar 2026</p>
+</section>
+<section id="use-calibre-for-all-files---one-central-place---including-those-currently-on-ipad." class="level3">
+<h3 class="anchored" data-anchor-id="use-calibre-for-all-files---one-central-place---including-those-currently-on-ipad.">Use Calibre for all files - one central place - including those currently on iPad.</h3>
+<p>From iPad: can upload to Drive! To iPad: from Drive to iPad? - from Linux? iPad runs “Calibre Companion” to retrieve from linux - NOT the reverse - From iCloud to linux? - sftp between linux &amp; ipad? (linux: sudo systemctl start ssh; then ftp localhost<cr>)</cr></p>
+<p>** Feb 2026 Haskell working hard on data science; tutorials… cloud based GUI</p>
+<p>** Dec 2025 - HP boot reports amdgpu psp gfx failed, but continues - Status: unresolved - HP 845 G8, laptop; otherwise runs fine. - sudo dmesg - sudo journalctr -b - secureddisplay? LOAD_TA(0x1)</p>
+</section>
+<section id="hardware" class="level3">
+<h3 class="anchored" data-anchor-id="hardware">Hardware</h3>
+<p>23 DEC 2024 - wireless mouse, $10, bestbuy, M220 logitech, 18 month batter life, plain vanilla is just fine.</p>
+</section>
+<section id="folds" class="level3">
+<h3 class="anchored" data-anchor-id="folds">folds</h3>
+<p>folds: use za or (define-key evil-normal-state-map (kbd “<tab>”) ’evil-toggle-fold) need package for evil/folds - za open fold - zc close fold - zr open all folds - zm close all folds - C-3 S-TAB (show outline upto level 3 - WORKS!)</tab></p>
+</section>
+<section id="url-links" class="level3">
+<h3 class="anchored" data-anchor-id="url-links">url links</h3>
+<p>nytimes.com @ nytimes file:280_emacs_notes.qmd @ emacs notes https://www.nytimes.com @ nytimes.com</p>
+<p>** TODO - use folds, to simplify navigating this document - no R here, no Stats - includes <em>i3</em>, <em>emacs</em>, <em>Debian</em> - HTTR2 notes = mess - Break this document into separate files, merge into one big one?</p>
+<ul>
+<li>&lt;2024-10-10 Thu&gt; now Debian 12 (Cinnamon or i3); no more linux mint; LMDE … &lt;2024-08-26 Mon&gt;</li>
+<li>do not use emacs as “DESKTOP” - everything, windows on the screen at once.</li>
+<li>humans can not multitask; keep window only used for current work.</li>
+<li>computers great for keeping lists of buffers, search when you move to next task.</li>
+<li>tools like ivy can recall things like split window, code 1 side; dir on other</li>
+<li>exist tools to maintain buffers in ‘projects’</li>
+<li>EXWM still not sure.</li>
+</ul>
+<p>&lt;2024-07-01 Mon&gt; - ex looks very useful! - SO(3) - not sure what I am asking; normal subgroups, symmetries?</p>
+<p>** Github actions - do not guess, do not play: READ DOCS - render quarto (in gfm, github format, SEE <em>gh_actions_project/quarto, SEE main.yaml</em> - will render qmd to md file (github format) - do not soft link qmd files, actual file or copy must in project - of course, can render to md locally and merely push to github; - do not know branch and yaml the same (ie not both main…)</p>
+<ul>
+<li>(Github actions) Reading
+<ul>
+<li>Book <a href="https://orchid00.github.io/actions_sandbox/" class="uri">https://orchid00.github.io/actions_sandbox/</a></li>
+<li><a href="https://www.r-bloggers.com/2021/01/automatic-rendering-of-a-plot-with-github-actions-3/" class="uri">https://www.r-bloggers.com/2021/01/automatic-rendering-of-a-plot-with-github-actions-3/</a></li>
+<li><a href="https://www.simonpcouch.com/blog/2020-12-27-r-github-actions-commit/index.html" class="uri">https://www.simonpcouch.com/blog/2020-12-27-r-github-actions-commit/index.html</a></li>
+<li><a href="https://fromthebottomoftheheap.net/2020/04/30/rendering-your-readme-with-github-actions/" class="uri">https://fromthebottomoftheheap.net/2020/04/30/rendering-your-readme-with-github-actions/</a></li>
+</ul></li>
+</ul>
+<p>** Posit Connect Cloud (new) - works with Shiny; gets code and manifest (json, with all R dependencies) from github (works)</p>
+<p>** 29-May-2024: Upgrade to R 4.4, Linux Mint 21.3 (Virginia)</p>
+<p>&lt;2024-09-25 Wed&gt;</p>
+<p>** “ex” editor</p>
+<ul>
+<li>simple, vi-like editor (see https://www.geeksforgeeks.org/ex-command-in-linux-with-examples/)</li>
+<li>:a (to add text)</li>
+<li>:w , :wq</li>
+<li>print : 1,3 or :1,3p :4 (print line 4)</li>
+<li>delete : 1,2d</li>
+<li>print all lines g /the/ p</li>
+<li>: 3 s/this/that (line 3)</li>
+<li>/he/ he, help, heading…</li>
+<li>/&lt;he&gt;/ “he” only</li>
+<li>/&lt;.he&gt;/ not “he”, but “she”, “the” will pass</li>
+<li><dl>
+<dt>: /&lt;a move to first line where “a” begins</dt>
+<dd>
+/&gt;last$
+</dd>
+</dl></li>
+</ul>
+<p>prior to ‘ex’, was ‘ed’</p>
+<p>** PGP - install public key: <em>gpg –recv-keys XXX</em>, where XXX= 16 alphanumber - KEY SIGNING: (summary) I can create public-private keypair. If I ‘sign’ doc with private key, then anyone with my public key can READ and will know ONLY I could have encryted the file. - Encrypt with my PUBLIC KEY, then only someone with my PRIVATE KEY can read it. - ALL keys belong on Debian key ring. *** R - This is a nightmare. There are several discrete steps; Do one at time! - sketch: get public key; import; convert .asc to .gpg (if needed); cp .gpg to Debian’s ring - USE gpg; DO NOT USE apt-key - apt-secure - ONLY 2 line to run. Just do what Cran R says to do for Debian, key-ring: https://ftp.osuosl.org/pub/cran/. Then reboot, update apt. - gpg keys; Debian: see apt-secure, READ carefully, but it doeswork. - gpg –list-keys</p>
+<p>** i3, i3wm Videos: basic config: https://www.youtube.com/watch?v=88o2XuH3E08&amp;list=PLbcglKxZP5PMTWVe1KhZX3Jvo0xqk8h5I&amp;index=1 - man i3 has good help, but quick becomes <em>x11</em> - review man i3-dmenu-desktop</p>
+<p>** PURPOSE: Misc Tech Notes; details, notes can be here (but COMMANDS put on INDEX C). Math, R, probability and stats notes <strong>do NOT go here</strong></p>
+<p>** emacs/org mode/eLisp</p>
+<p>CAUTION: org mode is structured outline; markdown, typst are for document formatting. TODO: Which to use?</p>
+<p>SEE: Separate emacs/org documentation<br>
+281_emacs_notes.typ</p>
+<p>SEE: 000_PROJECTS.org</p>
+<p>** functional programming (julia, rust, lisp) - Julia easier? - RUST learning curve, but high performance - Both have functional?, but seems to learn functional stay with lisp, racket, haskell or any similar</p>
+<p>** IMPERATIVE v DECLARATIVE - math notation is DECLARATIVE; indicates meaning, not exact details (example1: summation sign). Tell computer what you WANT, leave details to compiler or program. - IMPERATIVE (older, obsolete?) every detail, machine language?</p>
+<p>** QUARTO: 2023-12-06 - Try couple of cv or resume templates and one quarto extension. Seemed to be more work than worth. Just use Rmarkdown to create resume. 2024-01-26 READ r4ds Ch 28-29 b/c Quarto and config knitr</p>
+<p>To render a Quarto (*.qmd) file with embeded typst. Use regular quarto render methods.</p>
+<p>** {X11, Wayland, video} <strong>Warning:</strong> Stay with X11 (proven, well-supported, works)</p>
+<p>Wayland is open source <em>protocol</em> replacement for X windows, (widgets says get graphics from X or Wayland). WESTON is reference implementation.</p>
+<p>Because Wayland accepts same toolkits (Qt, GTK) as X, the impact for developers and users should be minimal. Wayland shrinks X; much functional now in Linux kernel.</p>
+<ul>
+<li>Xserver: ‘display’ server, runs locally, makes display and keyboard available to apps (either local or network) ~/.xsession-errors - Unlike cli, GUIs have no console; errors err redirected to this file ~/.Xauthority - is random code to control which progams output to my X11 session</li>
+</ul>
+<p>** {PDF, Pandoc, Latex}</p>
+</section>
+<section id="pdf-notes-ignores-html-css-also-ignores-yaml-header-pandoc-render" class="level3">
+<h3 class="anchored" data-anchor-id="pdf-notes-ignores-html-css-also-ignores-yaml-header-pandoc-render">PDF Notes [ignores html, css; also ignores YAML header (pandoc &amp; ::render()]</h3>
+</section>
+<section id="print-raw-text-example-from-github-raw" class="level3">
+<h3 class="anchored" data-anchor-id="print-raw-text-example-from-github-raw">Print raw text (example, from github, raw)</h3>
+<p><em>Quarto</em> saveas qmd, add yaml header, enclose all text in ``` (verbatim); render inside rstudio.</p>
+<p>2023-12-30 - tlmgr controls much latex install: fonts, *.sty, - for PDF: pdf2latex, pdflatex (pandoc will do it, but complain) - in R, tinytex::latexmk()</p>
+<p>To create pdf, just about everything works: pandoc, markdown, latex, knitr.. Note: zathura uses library, open source <code>popler</code>.</p>
+<p>NOTE: Missing latex .sty ?<br>
+- With .tex file, run (in R) tinytex:latemk(*.tex) to install - OR, use tlmgr install <font> - fonts installed? fc-list : family - also luaotfload (loads fonts) - ENGINE=software (such as <strong>luatex</strong>, tex, pdftex) - FORMAT=macros (such as <strong>lualatex</strong>)</font></p><font>
+<p>(Jan 2022) <strong>Missing font, package? TinyTex</strong> * update R * keep_tex: true (in YAML) * at R console tinytex::lualatex(“…. .tex”), or tinytex::latexmk(“<em>.tex”) </em> ~ some times works, sometimes not ~</p>
+<p>Lua in <em>.tex file </em> see ~/code/publish_project/TEX/</p>
+<p>(pre-Quarto !) HTML [to produce HTML with pandoc, all latex is IGNORED.]</p>
+<p>I do <strong>not</strong> know how to create fancy HTML files from knitr, pandoc.</p>
+<p>HTML is pain in ass and HUGE time waste. Pandoc can handle markdown and small amounts of latex (math) b/c ppl have added filters or other widgets to pandoc.</p>
+<p>If using Latex, its packages, diagrams with Latex … must go with PDF.</p>
+<p>-H header<br>
+-V or –variable<br>
+–pdf-engine=xelatex</p>
+<ul>
+<li>Try verbatum; process as a markdown. pandoc balks at processing straight text if it thinks it sees markdown. If lucky, !pandoc % -o file.pdf will work.</li>
+</ul>
+</font></section><font>
+<section id="sectionlatex-notes" class="level3">
+<h3 class="anchored" data-anchor-id="sectionlatex-notes">section{LATEX NOTES}</h3>
+<ul>
+<li><p>Tikz seems to be most popular way to gaphics vs <strong>pstricks</strong>.</p>
+<p>footnote:</p>
+<p><strong>postscript</strong> a more powerful programming language than tex; <strong>pstricks</strong>, ghostscript; pdf (a subset of postscript) hails from this. However, using postscript with latex requires addins, such as ghostscript; drivers; … Avoid <strong>postscript</strong> and packages pstricks, even if greater capability.</p></li>
+</ul>
+<p>Original tex was 320 low-level cmds (aka primitives). Macros created from these. But actual engine (tex) hidden from user.</p>
+<p><strong>LuaTex</strong> (engine) is re-write of core TEX engine (hard, written in C).<br>
+Therefore, <strong>LuaTex</strong> added primitives, more open (can use tex or lua)</p>
+<p><strong>LuaLatex</strong> is macro package.</p>
+<p>EXAMPLE: In .tex file, write lua: directlua is new primitive; lua api inside value for</p>
+<p><span class="math display">\[\pi = \directlua{tex.sprint(math.pi)}\]</span></p>
+</section>
+<section id="revealjs-slides-with-quarto" class="level3">
+<h3 class="anchored" data-anchor-id="revealjs-slides-with-quarto">revealjs slides with Quarto</h3>
+<p>** GIT commands</p>
+<p>HEAD - normally points to branch (tip) but can point to commit (detached HEAD). <strong>Goes where you go, like a shadow.</strong> Commits are immutable. HEADS can move around.</p>
+<ul>
+<li><p>git merge –no-ff –no-commit main (no fastforward, <em>dry-run</em>)</p></li>
+<li><p>git restore –source master~2 path/file (2 commits back, give path to file)</p></li>
+<li><p>git log MANY USEFUL! See Book 2.3 (https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History), Refernce (https://git-scm.com/docs/git-log)</p></li>
+<li><p>git diff HEAD~ HEAD #show change between prior and most recent commit (“https://git-scm.com/docs/git-diff_) book: (https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository.html#_git_diff_staged)</p></li>
+<li><p>git diff HEAD – path/to/file.R # this file only, show diff (Ex: git diff play dev # merge back into dev, but 1st see changes)</p></li>
+<li><p><label><input type="checkbox">UNDO one or more commits (many ways) Detach head by git checkout <sha>, then build out new branch (git checkout -b new) git revert <sha> # keeps history, undo one past commit git revert HEAD~2..HEAD # keep history, but undo last 2 commits</sha></sha></label></p></li>
+<li><p>git reflog # how HEAD jumped around</p></li>
+<li><p>git checkout HEAD@{n} # move back to n ** Install R</p>
+<ul>
+<li>on Ubuntu, or mint linux virgina, use jammy and follow https://cran.r-project.org/bin/linux/ubuntu/ (works)<br>
+</li>
+<li>on Debian (such as LMDE) follow https://cran.r-project.org/bin/linux/debian/
+<ol type="1">
+<li>Add: sudo vim.tiny /etc/apt/sources.list</li>
+<li>insert: the deb XXX link</li>
+<li>save, run as jim, sudo apt install r-base etc.</li>
+</ol></li>
+</ul></li>
+</ul>
+<p>** REGEX - TODO import (?) all REGEX/* files to here</p>
+<ul>
+<li>for regex reading see 300_tech_reading.md</li>
+</ul>
+</section>
+</font></section><font>
+</font></section><font>
+<section id="section" class="level1">
+
+<section id="document-regex-here" class="level2">
+<h2 class="anchored" data-anchor-id="document-regex-here">DOCUMENT REGEX HERE</h2>
+</section>
+<section id="text-no-examples-in-this-file" class="level2">
+<h2 class="anchored" data-anchor-id="text-no-examples-in-this-file">(text, no examples in this file)</h2>
+</section>
+</section>
+<section id="section-1" class="level1">
+<h1>———————–</h1>
+<p>/home/jim/code/docs/tech_notes/REGEX.md</p>
+<p>2024-04-30 - Use a cheat sheet - Reduce paper - Annotate (here, or in 2 files) ONLY when needs</p>
+<section id="this-file-codedocstech_notesregex.md" class="level2">
+<h2 class="anchored" data-anchor-id="this-file-codedocstech_notesregex.md">this file: ~/code/docs/tech_notes/REGEX.md</h2>
+</section>
+<section id="codedocstech_notes001_grep_regex_p_examples.qmd" class="level2">
+<h2 class="anchored" data-anchor-id="codedocstech_notes001_grep_regex_p_examples.qmd">~/code/docs/tech_notes/001_grep_regex_P_examples.qmd</h2>
+</section>
+<section id="codedocstech_notes002_grep_examples.md" class="level2">
+<h2 class="anchored" data-anchor-id="codedocstech_notes002_grep_examples.md">~/code/docs/tech_notes/002_grep_examples.md</h2>
+</section>
+<section id="some-regex-in-codezsh_projectzsh_sh_files" class="level2">
+<h2 class="anchored" data-anchor-id="some-regex-in-codezsh_projectzsh_sh_files">SOME regex: in ~/code/zsh_project/ZSH_SH_FILES/</h2>
+</section>
+<section id="regex" class="level2">
+<h2 class="anchored" data-anchor-id="regex">REGEX</h2>
+<p>TODO: - sed, when to use? - emphasize goal: use grep -P, regex to understand how REGEX works. Tired of every 6 months learning all over again. - greedy/not greedy and backtrack . Think like a regex engine! - How to aerate regex ! - regex can be used to: - find - validate - replace/insert - split - … - When whiz, can do summersaults with CLI, zsh tools (sed, grep , cut …) and regex. Not NOW.</p>
+<ul>
+<li>Separate learning REGEX (grep -P, regex) and using REGEX in R, which I think is a tad easier.</li>
+</ul>
+<section id="definitions---as-always-crucial" class="level3">
+<h3 class="anchored" data-anchor-id="definitions---as-always-crucial">DEFINITIONS - as always, crucial</h3>
+<ul>
+<li><p>regex is a string; do not forget this.</p></li>
+<li><p>META CHARACTERS - ascii (?) characters which by-default have non-literal meaning to engine that digests them. <strong>Engine</strong> specific. Must ESCAPE these characters to use as literals. Other contexts, such as unix shell, have similar idea: <code>&lt;</code>, <code>&gt;' for example, refer to **redirect** . In C, sprintf,</code>%` indicates formatting and literal use.</p></li>
+<li><p><strong>To Escape</strong> indicate to underlying engine that this meta character should be handled as though literal.</p></li>
+<li><p>POSIX:</p></li>
+<li><p>backslash<br>
+</p></li>
+<li><p>[ ]</p></li>
+<li><p>{ }</p></li>
+<li><p>( )</p></li>
+<li><p>caret ^</p></li>
+<li><p>$</p></li>
+<li><p>dot .</p></li>
+<li><p>pipe |</p></li>
+<li><p>?</p></li>
+<li><p>asterisk *</p></li>
+<li><p><code>+ -</code></p></li>
+<li><p>``+ - ’’</p></li>
+<li><p>+ - X</p></li>
+<li><p>\begin{verbatim}</p></li>
+<li><ul>
+<li>\end{verbatim}</li>
+</ul></li>
+</ul>
+</section>
+<section id="render-regex-verbatim---4-ways-latex" class="level3">
+<h3 class="anchored" data-anchor-id="render-regex-verbatim---4-ways-latex">Render REGEX Verbatim - 4 ways (latex?)</h3>
+<p><code>+ -</code></p>
+<p>``+ - ’’</p>
+<p></p>
+<p></p>
+<ul>
+<li><strong>Character Class</strong> Things like [0-9].<br>
+Rmk: [0-9]+ means repeat one or more of the prior <strong>Character class</strong> So both 321 and 333 match this regex.</li>
+</ul>
+</section>
+<section id="specific-to-vimneovim" class="level3">
+<h3 class="anchored" data-anchor-id="specific-to-vimneovim">Specific to vim/neovim</h3>
+<ul>
+<li><p>magic = o need to escape (wait till know what doing first) - well, um.</p></li>
+<li><p>magic = <code>\v</code> no need to escape (wait till know what doing first)</p></li>
+</ul>
+</section>
+<section id="specific-to-r" class="level3">
+<h3 class="anchored" data-anchor-id="specific-to-r">Specific to R</h3>
+<ul>
+<li>Before regex library (engine) sees code, the <strong>compiler</strong> (byte code?) gets it first. Must use double backslash for just one backslash to be seen by regex engine. Shell interpreters have no such compiler and single backslash suffices.</li>
+</ul>
+<p>###= Regex grouping: capture &amp; non-capture</p>
+<p><strong>Perl</strong> PCRE for lookaheads, capture (in R, perl=T) from !so</p>
+<p>Groups that capture you can use later on in the regex to match OR you can use them in the replacement part of the regex. Making a non-capturing group simply exempts that group from being used for either of these reasons.</p>
+<p>Non-capturing groups are great if you are trying to capture many different things and there are some groups you don’t want to capture.</p>
+</section>
+<section id="linux-debian" class="level3">
+<h3 class="anchored" data-anchor-id="linux-debian">LINUX / DEBIAN</h3>
+<p>RESCUE MODE, How to get to cli prompt? - Use Debian installer, rescue mode - eventually will get prompt (a lot of screens to go through)</p>
+<p>DEBIAN iso: should not need dd command; just cd to USB</p>
+<ul>
+<li><p>Debian: shutdown when sytem hangs? CTRL-ALT-DEL or ALT-printScreen</p></li>
+<li><p><em>gnome-control-center</em> is cli to manage linux, X11, ..(even with cinnamon/lightdm)</p></li>
+<li><p>xfce4-session-* # (may need to poke around)</p></li>
+<li><p>autologin, if using lightdm, as root edit /etc/lightdm/lightdm.confg</p>
+<ul>
+<li>in [seat:*], uncomment user and timeout line; set user to “jim” (no spaces around =)</li>
+</ul></li>
+<li><p>mount usb: sudo mount /dev/sdb /media/usb_drive (RHS must EXIST)</p></li>
+</ul>
+<p>versions: - Debian stable - Debian testing/sid - next version</p>
+</section>
+<section id="mount" class="level3">
+<h3 class="anchored" data-anchor-id="mount">mount</h3>
+<p>mount –bind mount | grep “/dev/” # list devices /dev/*</p>
+<p>To temporarily load and run and sys: sudo chroot /mnt/X/ # where /mnt/X must already exist</p>
+<p>###= plymouth (linux) Bundled in initial ramdisk, before any fs mounted. Provides a graphical boot?? splash screen check /var/log/boot.log</p>
+<p>&lt;2024-10-04 Fri&gt; Cinnamon and i3 do not mix well (at this point) - Both are “desktop environment” (others: xfce4, gnome?) - When lightdm (login manager) runs, user can choose ’desktop envir” AND authenticates. - SEE for “rules” https://forums.linuxmint.com/viewtopic.php?p=2533879#p2533879 - LMDE is meant to run Cinnamon (and not i3); I got i3 to run using testing Debian. But this breaks LMDE (Cinnamon).</p>
+<p>21-July-2023: Rumors, Linux Mint (now based upon Ubuntu/Canonical ) may be moving to <strong>LMDE</strong> (Linux Mint Debian Edition) - 2024 - tried Mint; I think had some issues with i3; tried Debian - 2025 - Debian 13</p>
+<ul>
+<li><p>Booting … firmware | bootloader (finds all kernels, os) | grub2 (user select) ;<br>
+</p></li>
+<li><p>READ &gt;info grub <cr></cr></p></li>
+<li><p>/kernel is MINIMUM to start; this is why drivers often need separate install, not in kernel.</p></li>
+<li><p>SWAP - latest Linuxmint built-in, no need</p></li>
+<li><p>LinuxMint - installer sets mountpoints</p></li>
+<li><p>PARTIONs - is separate; &nbsp;for all else (~30-40GB enough)</p></li>
+<li><p>Boot drive - needs flag <code>boot</code> and <code>esp</code> (?)</p></li>
+</ul>
+<p>###= GRUB2 - 1st: do not panic - pre-linux boot - Usally all it wants is to know which partition is root - Read: any simple article on this. (ex: https://www.dedoimedo.com/computers/grub-2.html) - May see (hd0) or (hd0,gpt2), (hd0,gpt3) refer to hard drive and partition - In my case (hd0, 2), and command ~ set root=(hd0,gpt2) - May involve updates to /etc/default/grub (use their tool)</p>
+<p>GRUB is bootloade, boots kernel into RAM (vmlinuz, .initrd.gz) MBR long gone, IGNORE (hd0,2) means drive hd0, partition 2</p>
+<p>*** SETUP/CONFIG new HP Elitebook machine &lt;2024-10-10 Thu&gt; HP Elitebook but with pure Debian/Cinnamon &amp; i3</p>
+<p><em>CAPSLOCK ESCAPE</em>; many easy ways =&gt; confusion! - Debian/Cinnamon &amp; i3: <em>setxkbmap -option “caps:escape” (immediate)</em> reboot? may need to source ~/.xinitrc - other methods, like /etc/default/keyboard do not seem to work</p>
+<p>(did not work for non-Cinnamon)CAPS_LOCK: Use Cinnamon, keyboard options GUI to set CAPS_LOCK to ESC (easy) June 9, 2024 (Configure HP Elitebook, 845, G8 - 2nd HP laptop) - <em>~/dotfiles/create_soft_links.sh</em> VERY helpful - Emacs: must link emacs files in ~/dotfiles files in ~/emacs.d* = - must re-install: wezterm (see webpage), i3, zsh, git, emacs, ZSH, gh - public keys .. read debian’s guide - zsh change shell: chsh -s $(which zsh) jim - emacs: FIRST install/config <em>‘use-package’</em> always a pane: - Cinnamen: hardward/keyboard/layout/options choice to set CAPSLOCK to ESC (works, but with i3 too?) - websites: Google 1st, then Firefox (rest should follow) - <em>keep</em> sh files, links, config files up-to-date AND in dotfiles/backup!</p>
+<p>Drive is NOT 512G NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINTS sda 8:0 0 238.5G 0 disk ├─sda1 8:1 0 512M 0 part /boot/efi ├─sda2 8:2 0 27.9G 0 part / ├─sda3 8:3 0 977M 0 part [SWAP] └─sda4 8:4 0 209.1G 0 part /home</p>
+<p><strong>du -f (run on 11NOV2024)</strong> Filesystem Size Used Avail Use% Mounted on udev 7.5G 0 7.5G 0% /dev tmpfs 1.5G 1.7M 1.5G 1% /run /dev/sda2 28G 9.4G 17G 37% / tmpfs 7.5G 18M 7.5G 1% /dev/shm tmpfs 5.0M 12K 5.0M 1% /run/lock /dev/sda4 205G 3.9G 191G 2% /home /dev/sda1 511M 5.9M 506M 2% /boot/efi tmpfs 1.5G 52K 1.5G 1% /run/user/1000</p>
+<p>*** format fat32, for copiers To make fat32 usb device.(for copier) 1) (optional; too slow) can put all zeros (optional, slow - ~ 5MB/s or 200 seconds for 1 GB on USB 2.0) 2) sudo parted /dev/sda mklabel msdos (makes empty partition table, of form MBR) 3) sudo parted /dev/sda mkpart primary fat32 0% 100% (makes partition) 4) sudo mkfs.fat -F32 /dev/sda (format this partiion, if says to use -I do so!) 5) sudo parted /dev/sdb print (confirms fat32)</p>
+<p>To burn iso on usb (I never got gui’s to work) 1) sudo dd bs=4M if=/path/to/file.iso of=/dev/sda status=progress oflag=sync</p>
+<ul>
+<li>mount usb_device (thumb drive)</li>
+<li>format, partition etc. check fs: <strong>df -Th /dev/sda</strong></li>
+</ul>
+<p>-format -NO! use fat32 (above) to work with other devices sudo mkfs.exfat /dev/sda</p>
+<p>-mount mount /dev/sda /media/a_mt_point (a_mt_point must already exist)</p>
+<p>*** remap capslock to escape</p>
+<p>{ # PURPOSE: <strong>maps ChromeBox “capslock” key to Escape.</strong> # - use &gt; xev to find that capslock is key 133. # - xmodmap is older, but simpler to change key action to change key action. # - newer is <strong>setxkbmap</strong> but I find more effort to figure out simple things. # - SEE tech_notes # - lots of ways to do this remap. This works, stay with it: # DEPRECTED:</p>
+<p>xmodmap -e “keycode 133 = Escape” Lenovo: capslock keycode = 66, and escape is 9. However, capslock still insisting on going in caps lock (UPPER CASE) setkbmap seems to suggest using caps:swapescape and not caps:escape, but xmodmap won’t accept.</p>
+<p>}</p>
+<p>** cron job, crontab</p>
+<p>{ grep jim /var/log/syslog # see cron jobs that ran</p>
+<p>Sat May 21 18:48:16 PDT 2022 - jr changed /etc/rsyslog/50-default.conf - uncomment #cron – cron s/d now log to cron.log - after change, run sudo service rsyslog restart</p>
+<ul>
+<li>see cron Icard (‘linux’) }</li>
+</ul>
+<p>** Linux Kernel</p>
+<p>{ - one LTS Ubuntu can have many (upstream) kernels - Mix &amp; Match kernels? X? - Kernel Upgrade - See INDEX C.</p>
+<p>}</p>
+<ul>
+<li>systemctl - control dameon and services</li>
+<li>loginctl - control login daemon (such as when i3/lightdm crashes)</li>
+</ul>
+<p><em>jim_Permissions</em> u g o (user group other)</p>
+<!-- begin ZSH -->
+<p>** ZSH notes</p>
+<p><em>ZSH</em> ZSH REF CARD: (start) https://www.bash2zsh.com/zsh_refcard/refcard.pdf SEE MANUAL: https://zsh.sourceforge.io/Doc/Release/ SEE ZSH GUIDE (2003, Stephenson) https://zsh.sourceforge.io/Guide/zshguide.html ZSH FAQ (2010) https://zsh.sourceforge.io/FAQ/ ZSH REF: Lots of simple GLOB examples here: http://reasoniamhere.com/2014/01/11/outrageously-useful-tips-to-master-your-z-shell/</p>
+<p>~/dotfiles/.zshrc ~/dotfiles/.zshenv zsh -x *.sh # prints line then executes</p>
+</section>
+<section id="script-header" class="level3">
+<h3 class="anchored" data-anchor-id="script-header">script header</h3>
+<p>#!/bin/zsh -xv # verbose</p>
+</section>
+<section id="diff--y-file1-file2-2-columns" class="level3">
+<h3 class="anchored" data-anchor-id="diff--y-file1-file2-2-columns">diff -y file1 file2 (2 columns)</h3>
+<ul>
+<li>SEE github, zsh_project</li>
+<li>arrays, SEE 008_array, ordered, unordered, append, typeset, unset, array + glob</li>
+<li>structures: for, case … see 032_</li>
+<li>find: 028_ and others</li>
+<li>prompt, ansi, echo $fg_bold[green’]hi SEE:</li>
+<li>also: grep, ${var}, tee, (( string_to_numbers)), do..done</li>
+</ul>
+</section>
+<section id="widgets" class="level3">
+<h3 class="anchored" data-anchor-id="widgets">widgets</h3>
+<ul>
+<li>software chunk, “beginning of line”, “kill-line”</li>
+<li>to invoke: user types <c-a>, <alt-b> &lt;CTRL-[-B&gt; (using vim notation)</alt-b></c-a></li>
+<li>but notation: ‘^a’, ‘’ ‘^[b’</li>
+<li>‘’ = <esc></esc></li>
+<li>‘^[’ = also <esc></esc></li>
+</ul>
+</section>
+<section id="bind-to-widget" class="level3">
+<h3 class="anchored" data-anchor-id="bind-to-widget">bind to widget</h3>
+<ul>
+<li>bindkey ‘^k’ kill-line (binkey.shortcut.existing widget)</li>
+</ul>
+</section>
+<section id="glob-vs-extended-glob-see-guide-5.9.7w" class="level3">
+<h3 class="anchored" data-anchor-id="glob-vs-extended-glob-see-guide-5.9.7w">glob vs extended-glob (SEE Guide 5.9.7):w</h3>
+<ul>
+<li>ll demo/**/*.txt</li>
+<li>ls -l demo/**/*&lt;1-10&gt;.txt</li>
+<li>ls -l demo/**/[a]*.txt (begins with <code>a</code>)</li>
+<li>ls -l demo/**/[^cC]*.txt (do not begin with <code>c</code> or <code>C</code>)</li>
+<li>print -l **/*(/) # just dir (recurse)</li>
+<li>print -l **/*(.) # just files (recurse)</li>
+<li>ls -ldh demo/**/*(DOL[1,6]) # 6 largest files</li>
+<li>Lots of syntax to select JUST what you want!</li>
+</ul>
+</section>
+<section id="parameter-expansion" class="level3">
+<h3 class="anchored" data-anchor-id="parameter-expansion">parameter expansion</h3>
+<p>SEE 000_PE_examples.sh - ${var/old/new} 1 replace - ${var//old/new} all - ${f#<em>.} is x.y where f = file.x.y (remove left) - ${f#</em>.} is x.y where f = file.x.y (remove left) - ${f##*.} is y (greedy, remove all left)</p>
+<ul>
+<li>SEE FAQ73, https://mywiki.wooledge.org/ , GNU Bash Ref Manual 3.5.3</li>
+</ul>
+</section>
+<section id="zshunix-permissions" class="level3">
+<h3 class="anchored" data-anchor-id="zshunix-permissions">zsh/unix permissions</h3>
+<p>*** unix, zsh permissions u g o owner–in group–others</p>
+<p>r=4 w=2 x=1 chmod 700 rwx — — “public” 644 rw- r– r– “private” 600 rw- — —</p>
+<p>*** zsh commands in emacs (SEE: zsh_project)</p>
+</section>
+<section id="completion-use-zstyle" class="level3">
+<h3 class="anchored" data-anchor-id="completion-use-zstyle">completion, Use zstyle</h3>
+<p>man zshcompsys zstyle + 3rd party scripts - do MANY things (completion, modify settings, config VCS_INFO …) SEE: https://thevaluable.dev/zsh-completion-guide-examples/</p>
+<p><em>VCS_INFO</em> is a function, used to populate variables (prompt, for ex) <em>retrieved from vcs, ie git</em> SEE: https://arjanvandergaag.nl/blog/customize-zsh-prompt-with-vcs-info.html SEE: https://zsh.sourceforge.io/Doc/Release/User-Contributions.html#Version-Control-Information</p>
+USAGE: <em>zstyle</em> <pattern>
+<style>
+<values> and is NOT so OBVIOUS ! if match, apply the style USAGE: zstyle <configure><VCS_INFO>
+<OUTPUT>
+<p>Completion: ex: cd <TAB> completion zstyle ‘:completion:<em>:</em>:cp:’ zstyle ’:completion:*’</p>
+<p>General: :completion:<fun>:<complete>:<command>:<arguments>:<tag> - command (cd, rm, etc) - <tag> (could be files, users, options ??)</p>
+<p><em>precmd</em> is hook function, runs before ZSH prompt (SEE manual 9.3.1) SEE: https://zsh.sourceforge.io/Doc/Release/Functions.html#Special-Functions</p>
+</section>
+<section id="printf" class="level3">
+<h3>printf</h3>
+<ul>
+<li><p>string(%s), digit(%d); example: digit,pad with by 5 printf “%05d” ${x}</p></li>
+<li><p>R: see sprintf https://www.r-bloggers.com/2010/05/number-formatting/</p></li>
+</ul>
+<p>*** zle = zsh line editor/keymaps/widgets/</p>
+<p>*** misc zsh</p>
+<p>SEE Serge Gebhardt widgets correspond to commands, often with shortcut</p>
+<p>Given a widget (ex: ‘’, ie esc b) bindkey ‘’ #returns backward-word; ie ESC-b, aka M-b goes back one word !<br />
+binddky ‘^b’ # returns backward-charac</p>
+<p>bindkey ‘’ # returns foward-word</p>
+<p>bindkey ‘^a’ # returns beginning-of-line</p>
+<p>zle -al # list of widgets</p>
+<p>keymaps=collection of shortcuts bindkey -l # vi modes?</p>
+<p>To see mapping: 1. cat <CR>; type key; <C-C> ends (try M-b) 2. <C-V> ; type key</p>
+<p>invoke widget: 1. <C-A> bind to shortcut 2. zle <widget> # to execut 3. sp widget <execute-named-command></p>
+<p>TERMCAP - obsolete</p>
+</section>
+<section id="sudo-vs-su-." class="level3">
+<h3>sudo vs su ….</h3>
+<p>{</p>
+<ul>
+<li>su jim change to User ‘jim’</li>
+<li>sudo cmd - last ~ 15’ (temporary use of root privileges) - asks for user’s password - allows root ‘privileges’ but the home directory, path etc remains the user’s</li>
+<li>next 3 are same: (change to root user, with root env) [use exit to exit]</li>
+<li><ul>
+<li>su - root # change to root user, with root env</li>
+</ul></li>
+<li><ul>
+<li>sudo su</li>
+</ul></li>
+<li><ul>
+<li><p>sudo su -</p>
+<ul>
+<li>shell: either login or non-login</li>
+<li>non-login has 2 flavors: <strong>interactive</strong> (user at CLI) and <strong>non-interactive</strong> (a subshell for scripts)</li>
+</ul></li>
+</ul></li>
+</ul>
+<p>!askubuntu 376199 !askubuntu 1225041</p>
+<p>}</p>
+<!-- end ZSH -->
+</section>
+<section id="drive-info" class="level3">
+<h3>drive info</h3>
+<pre><code># succinct, useful info
+lsblk --output NAME,UUID,PARTUUID</code></pre>
+<p>xev keyboard</p>
+<p>{ - Keyboard specific, find what <em>keycode</em> a button is mapped to: - USAGE: &gt; xev - type just 1 button, look for its keycode, keysym on this keyboard - example: q will be keycode=24, keysym=0x71 called ‘q’</p>
+<p>}</p>
+<p>17JULY2023 - ebook-viewer (calibre) has conflict with caps:swapescape, can not figure out REF: <a href="https://wiki.archlinux.org/title/Xorg/Keyboard_configuration" class="uri">https://wiki.archlinux.org/title/Xorg/Keyboard_configuration</a> FIX: now using <strong>setxkbmap -option caps:escape (in .xinitrc) </strong> DEPRECATES anything before 17JULY 2023</p>
+<p>xxd</p>
+<p>{</p>
+<pre><code>- To find how zsh maps a button (A, alt, F2) :  
+- USAGE: &gt; xxd &lt;CR&gt;
+- press &lt;ALT&gt;+a
+- terminal displays coding (^[a)
+- SEE ROTHGAR</code></pre>
+<p>}</p>
+</section>
+<section id="glob" class="level3">
+<h3>GLOB</h3>
+<p>grep_vs_ls</p>
+<p><em>Grep</em> always finds words that match a pattern and returns file names of matches.</p>
+<p>ls (+ glob) <strong>finds filenames that match a pattern</strong>. Very different from grep. (same in vim)</p>
+<p><em>jim_GLOB_examples</em> Mostly of form ls or ll or print -l and **/* example: print -l ~/code/**/*.(R|Rmd) # any level, return all .R and .Rmd files</p>
+<p>See my zsh GLOG handwritten notes (till typed in here)</p>
+</section>
+<section id="zle" class="level3">
+<h3>ZLE</h3>
+<p>ZLE = Zsh line editor | NOT GNU readline<br />
+<em>zle_widgets</em> (all commands)</p>
+<p>Output from zle -al (~403 cmds) <snip></p>
+</section>
+<section id="bindkey" class="level3">
+<h3>BINDKEY</h3>
+<p><em>bindkey</em> # results, all shortcuts</p>
+<p>(sample) “<sup>A”-”</sup>C” self-insert “^D” list-choices “<sup>E”-”</sup>F” self-insert “^G” list-expand “^H” vi-backward-delete-char “^I” expand-or-complete</p>
+</section>
+<section id="google-api-curl" class="level3">
+<h3>Google, API, curl</h3>
+<p>(1APR2022) Google’s example, with loop for uri_redirect https://accounts.google.com/o/oauth2/v2/auth? scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube.readonly&amp; response_type=code&amp; state=security_token%3D138r5719ru3e1%26url%3Dhttps%3A%2F%2Foauth2.example.com%2Ftoken&amp; redirect_uri=http%3A//127.0.0.1%3A9004&amp; client_id=client_id</p>
+<pre><code>- Google&#39;s authorization server: https://accounts.google.com/o/oauth2/v2/auth</code></pre>
+</section>
+<section id="from-explorer" class="level3">
+<h3>From Explorer</h3>
+<p>GET https://youtube.googleapis.com/youtube/v3/playlists?part=snippet%2CcontentDetails&amp;maxResults=5&amp;mine=true&amp;key=[YOUR_API_KEY] HTTP/1.1</p>
+<p>Authorization: Bearer [YOUR_ACCESS_TOKEN] Accept: application/json</p>
+</section>
+<section id="section-2" class="level3">
+<h3></h3>
+<p>same, but as Curl</p>
+<p>curl<br />
+‘https://youtube.googleapis.com/youtube/v3/playlists?part=snippet%2CcontentDetails&amp;maxResults=5&amp;mine=true&amp;key=[YOUR_API_KEY]’<br />
+–header ‘Authorization: Bearer [YOUR_ACCESS_TOKEN]’<br />
+–header ‘Accept: application/json’<br />
+–compressed</p>
+</section>
+<section id="from-google-playground" class="level3">
+<h3>From Google Playground</h3>
+<p>https://youtube.googleapis.com/youtube/v3/commentThreads?videoId=Mec9sw1cJk8&amp;part=snippet,replies ###</p>
+</section>
+<section id="section-3" class="level3">
+<h3></h3>
+<p>CURL | YOUTUBE API | GOOGLE API | OAUTH 2.0 |</p>
+<p>client = oauth_client(id= client_id, token_url = token_url, secret = client_secret, key = API_KEY, auth = “body”, # header or body</p>
+<pre><code>    name = &quot;youtube_ONE_video_ALL_comments&quot;)</code></pre>
+<p>req &lt;- request(“https://www.googleapis.com/youtube/v3/commentThreads?videoId=Mec9sw1cJk8&amp;part=snippet,replies”) %&gt;% req_oauth_auth_code(client = client, auth_url = auth_url, token_params=scope[[1]])</p>
+<p>resp &lt;- req %&gt;% req_perform()</p>
+<p>Some Remarks: - Google is but one implementation of various API, oauth technologies. The more you read the more confused you may become (at least for me).<br />
+- The R package <strong>gargle</strong> is uses <strong>httr</strong> and therefore not my preference.<br />
+- I am using httr2 to automate things; I’d like to understand things using a little as possible: curl, browser and local server running as localhost.<br />
+- Most of the R work is done at lower level, such as packages curl and httpuv.</p>
+<p>begin{verbatim} G O O G L E end{verbatim}</p>
+</section>
+<section id="httr2---notes-needs-clean-up" class="level3">
+<h3>HTTR2 - NOTES (needs clean up!)</h3>
+<p>PURPOSE: Demonstrate configuration for HTTR2 and OAUTH2 with Google’s Youtube API.</p>
+<pre><code>                        - uses off-the-shelf `httr2::req_oauth_auth_code()` + configuration
+                      - uses authorization code flow.
+                        - uses redirect_uri localhost, cut &amp; paste (via obo) is deprecated.
+                        - httr2:: hides almost all details of interaction.
+                        - use curl and localhost such as httpuv:: to see lower level</code></pre>
+<p>Source: https://developers.google.com/youtube/v3/guides/auth/installed-apps</p>
+<p>RELATED INFO: - Google Explorer (youtube) - Google OAUTH2 playground</p>
+<pre><code>
+#\###**==========================
+From Google (Youtube) Explorer:
+GET https://youtube.googleapis.com/youtube/v3/playlists?part=snippet%2CcontentDetails&amp;maxResults=5&amp;mine=true&amp;key=[YOUR_API_KEY] HTTP/1.1
+
+Authorization: Bearer [YOUR_ACCESS_TOKEN]
+Accept: application/json
+
+#\###**==========================
+</code></pre>
+<p>For youtube (auth code): echo “curl -Lsv "https://accounts.google.com/o/oauth2/v2/auth?<br />
+client_id=$client_id&amp;<br />
+redirect_uri=https://127.0.0.1:8080&amp;<br />
+scope=https://www.googleapis.com/auth/youtube&amp;<br />
+response_type=code"”</p>
+<p>scope = list( “https://www.googleapis.com/auth/youtube”, “https://www.googleapis.com/auth/youtube.force-ssl”)</p>
+<p>For youtube (obtain results): curl<br />
+‘https://youtube.googleapis.com/youtube/v3/playlists?part=snippet%2CcontentDetails&amp;maxResults=5&amp;mine=true&amp;key=[YOUR_API_KEY]’<br />
+–header ‘Authorization: Bearer [YOUR_ACCESS_TOKEN]’<br />
+–header ‘Accept: application/json’<br />
+–compressed</p>
+<p>###= NEEDED SCOPES: https://www.googleapis.com/auth/youtube Manage your YouTube account https://www.googleapis.com/auth/youtube.force-ssl See, edit, and permanently delete your YouTube videos, ratings, comments and captions</p>
+<p>playlistId = “PLlXfTHzgMRUIqYrutsFXCOmiqKUgOgGJ5” # Pavel Grinfeld, Linear Alg 3</p>
+<p>###= Procedure: - Follow hadley outlines in Vignette for Github and and getting user’s information. (Requires oauth token) - Change for google - let httr2 handle the details, use this function: httr2::req_oauth_auth_code() - If I have this right, this will (1) get the access token and (2) complete REST request.</p>
+<p>** Pandoc PANDOC: !pandoc –metadata=project:xxx –lua-filter doc/panvimdoc/scripts/skip-blocks.lua –lua-filter doc/panvimdoc/scripts/include-files.lua -t doc/panvimdoc/scripts/panvimdoc.lua % -o doc/jimHelp.txt</p>
+<p>** MORE CURL CURL Examples:</p>
+cURL write (to standard) w response after callling example.com
+<p>github curl https://api.github.com/zen</p>
+<p>returns lot of kev=value pairs curl https://api.github.com/users/defunkt</p>
+<p>-include headers curl -i https://api.github.com/users/defunkt</p>
+<p>headers only curl –head <URL></p>
+<p>CURL_CONFIG (a FILE) USAGE curl -K CURL_CONFIG …</p>
+<p>Misc Notes: “State” - cookies used to be used; now state carried in headers</p>
+<p>Misc Notes: “State” - cookies used to be used; now state carried in headers<br />
+vim:nospell</p>
+<p>** ANDROID</p>
+</section>
+<section id="android-mobile-cell-phone---notes" class="level3">
+<h3>Android, Mobile, Cell Phone - notes</h3>
+<p><em>Nov 2024</em> - need wireless phone? or working wifi-only phone? (mine does not work)</p>
+<p><em>Carrier</em> - 5G or <code>slower</code> 4G/LTE - 1-5 GB per month seems OK for some video, streaming … - podcasts ~ 1MB/minute of talk (use wifi) - want unlimited text/talk - MintMobile (owned by T-Mobile) claims $15 per month - US - SIMS: physical or eSim, if device supports - not my current onePlus 3T,</p>
+<ul>
+<li>device must support 5G? GSM? Volte? ..</li>
+<li>device should also support wifi (for mp3 downloads)</li>
+</ul>
+<p><em>mp3 players</em> - DAC, dongle, digital devices: seem to be superb music; not android or podcast devices. - Sony as usual is best; also Fifo and many others</p>
+<p>RETAIL DEMO UNIT (‘retail mode’): - ie runs in endless LOOP, no Cell ability, no MEI - useable ONLY for wifi - Can be BARGAIN, but … - Must unlock bootloader (to remove ‘endless loop software’ and become regular wifi device. Locked means bootloder hard-coded insist OS match a code. - if CAN unlock bootloader , BARGAIN. Beware endless hours otherwise.</p>
+<ul>
+<li>bootloader lock - at least TWO kinds</li>
+<li>carrier lock - that carrier only and even if unlocked software may persist</li>
+<li>factory lock - seems many are carrier unlocked; but less or factory unlocked.</li>
+</ul>
+<p>*** Google Pixel <strong>3a XL</strong> (my phone, 6.3” good size) - screen broken Aug ’25 - Android 12 = final google update. - DO expect “unofficial” Android 13 for this phone (sooner or lalter).</p>
+<ul>
+<li><p>Pixel 4a (5.8”, too small) cheaper glass than pixel 3a; practical gone (Aug ’25)</p></li>
+<li><p>OnePlus</p></li>
+<li><p>(1/26) - older “flagships” models should be good.</p></li>
+<li><p>Samsung - some say good; other don’t agree.</p></li>
+<li><p>waste so much time on this.</p></li>
+<li><p>OnePlus 12, 13 all good - not cheap</p></li>
+<li><p>OnePlus 8 (bought 9/25) ($137) very good, but no 3mm jack;</p></li>
+<li><p>buy Redmi Note 14; because mid-range; has 3mm jack; 6GB/128GB ($140)</p></li>
+</ul>
+<p>** Typst (and emacs) (22 MARCH 2026) - assorted problems getting all emacs pieces installed. needs lsp, mist, and a few other pieces. Maybe very active development now. Postpone till I have more info.</p>
+<p>*** <strong>OEM Unlock</strong> - greyed out? (like mine) then not possible to unlock bootloader itself. Means: no root. <strong>no ROM install</strong> <strong>no TWRP</strong> - my pixel is VERISON (sprint?) phone; not a Google phone; b/c IMEI begins with 35… NO way to change bootloader.</p>
+</section>
+<section id="adb" class="level3">
+<h3>ADB</h3>
+<ul>
+<li><p><em>ADB</em> DEBUG: a “mode” that allows installing apps, read logs on Android, file transfer… Works by running TCP sever on host (PC) and daemon on device (phone) Works by running TCP sever on host (PC) and daemon on device (phone)</p></li>
+<li><p>SEE https://www.howtogeek.com/192732/android-usb-connections-explained-mtp-ptp-and-usb-mass-storage/</p>
+<ul>
+<li>adb –help</li>
+<li>adb shell <command></li>
+<li>adb shell df -h
+<ul>
+<li>adb shell ls /system/bin (available cmds)</li>
+</ul></li>
+<li>adb push [ – sync ] # only push if newer</li>
+<li><strong>adb push * /sdcard/Music # worked 3/25, push to pixel 4</strong></li>
+</ul></li>
+<li><p>Photo tranfer, different.</p></li>
+<li><p><strong>mp3 file transfer</strong> ADB appears to be FUSSY: remove things like <code>?</code> from file names or foregin char. ADB sucks at error messages; chokes; just seem to stall. Just fix the file names and adb will work; speed is very good; but even 25 MB/s ~ 1.8 GB/min. Be patient with 40 GB.</p></li>
+<li><p>Bluetooth - wasted plenty of time: use wired ADB; some mention Ubuntu &amp; bluetooth never got along. Either way - TIME SINK; waste.</p></li>
+<li><p><em>MTP</em> is protocol to move files; seems imperfect (CLAIM: now standardized, better) ; PTP for photos</p></li>
+</ul>
+<p>mtp://[usb:001,085] where 085 refers to device. (Run lsusb) - AVOID this stuff; <strong>stay with ADB and fix those file names</strong></p>
+<ul>
+<li><strong>adb backup</strong> dissappointing, time-sink; THINK backup all all my apps, data, but can NOT find clear documentation. STOP.</li>
+<li>Do not like Google bloatware. Expected something like ONEPLUS (which I install ROM). Google’s rules, annoyances - must remove. do not want G- ecosystem to point to each of its sister apps.</li>
+</ul>
+<p>*** Android os - Android is U/I to actual OS, which is <strong>Dalik</strong>, uses java VM <strong>Recovery Mode</strong> is separate partition(?) contains just enough code to boot in this mode. Replacing this code is <strong>custom</strong> recovery vs <strong>stock</strong> recovery. - <strong>FASTBOOT</strong> purpose to <code>flash</code> ROM on device; level beyond ADB.</p>
+</section>
+<section id="sectionlaptop-buying-notes" class="level3">
+<h3>section{Laptop Buying Notes}</h3>
+<p><strong>eMMc</strong> is on bmotherboard(embedded), slow but works: cheap, reliable; fine to boot. Check /dev/mmcblk** SSD is much better, but more expensive.</p>
+<p>*** Lenovo T480 (stolen May 2024)</p>
+<ul>
+<li>running Linux Mint (no more Chromebooks)</li>
+<li>Power, 65W, need brick or wall charger.</li>
+<li>cable must support 3 Amps</li>
+<li>buzz words GaN, PD (Power Delivery), no need latest PPS</li>
+<li>name brands: Anker, Belkin, “Amazon Basics”, <strong>Beware off-brand</strong> buy based on what is compatible with T480 (go crazy trying to match standards, USB-C 3.1, 3.2, 4.0, generatations, standard or not?)</li>
+</ul>
+<p>** RUST (systems level language)</p>
+<ul>
+<li><p>programmer has control over memory, variables. Leads to SAFETY and PERFORMANCE. At cost of understanding more about memory etc.</p></li>
+<li><p><em>macro</em> is code that runs at COMPILE time; inserts compiled code sections. (Saves programmer from needing to write common code over and over.)</p></li>
+</ul>
+<p><em>CAR NOTES</em> https://check-vin.org/</p>
+<p>my VIN: 1HGEM22911L031079</p>
+</section>
+<section id="battery-notes-312026" class="level3">
+<h3>Battery Notes (3/1/2026)</h3>
+<ul>
+<li>AGM is lead, with sulfuric acid. The acid is absorbed(?) by a mat; so does not spill.</li>
+<li>Resting Voltage (no load) ~ 12.8-12.9 V</li>
+<li>When just recharged - voltage can be &gt; 13 V. This will settle back soon.</li>
+<li>When car starts, the 12.8V will drop (should stay above 10V) and immediately bounce back as alternator begins.</li>
+<li>The alternator (regulates battery re-charge) will bring voltage up to ~14V, at least briefly.</li>
+</ul>
+<p>Because computer runs the show, any change in one place triggers change somewhere else computer constantly adjusts.</p>
+<p>DC Voltage 100% charge - 12.8 75% charge - 12.6 50% charge - 12.3</p>
+<p>Time to recharge a 12V battery depends on SoC (state of charge?) and amp output (10, 20 even 30 AMPS) of charger. Noco is good name. Battery charger is NOT same as battery jumper, the latter is more expensive. Ask because I don’t know.</p>
+<p>BLACK, Prius 5 - 4 door , all owners in family (?) Chicago car: https://corvallis.craigslist.org/cto/d/corvallis-2011-toyota-prius-4dr/7791577925.html carfax: https://www.autovhr.com/CFReports-ran/AutoVhr-CFreport_1728601520.html -carfax clean no records, post-2018 Ingrid 2009/Prius Hatch 4D/112k/$9/(carfax: says $8.4) (JTDKB20U3 93503700) car: WHTIE, https://portland.craigslist.org/wsc/cto/d/portland-upgraded-base-model-prius-2009/7786557907.html carfax: https://www.autovhr.com/CFReports-ran/AutoVhr-CFreport_1728671601.html</p>
+<p>waiting: Travis has receipt for last; and battery: 12V or hybrid</p>
+<p>#———————— Jack JACK, 2012/preisC/111K/$8.9/JTDKDTB30C1023315 (<em>dealer offered him $7k trade-in</em>) Waiting: his battery, recent records car: https://portland.craigslist.org/mlt/cto/d/portland-2012-toyota-prius/7789997037.html carfax: see pdf (shows battery replaced; Jack says it wasn’t) service records: see pdf</p>
+</section>
+<section id="reddit-api" class="level3">
+<h3>Reddit, API</h3>
+<pre><code>Managing and exporting your saved items on Reddit can be tricky because **Reddit’s native interface does not include a search bar for saved items**, and it enforces a strict **1,000-item limit** (saving a 1,001st item will push the oldest one out of your list).
+
+Because your saved list is private, a direct URL like `reddit.com/user/jimrothstein1/saved/` can only be viewed when you are securely logged into your specific account.
+
+A breakdown of the different methods available to search, download, or handle this list includes Python options, AI tools, and browser extensions.
+
+
+### Method 1: Using Python and the Reddit API (Highly Recommended)
+
+Using Python alongside **PRAW** (Python Reddit API Wrapper) is the most reliable way to back up your list. It allows you to download everything into a readable file (like a CSV or Markdown file) which you can then easily search using standard computer tools or open in Excel.
+
+**How it works:**
+
+1. Go to Reddit’s App Preferences while logged in and create an app to get your `client_id` and `client_secret`.
+2. Install PRAW using pip: `pip install praw`
+3. Run a script to iterate through your saved history.
+
+**Example Python Script:**
+
+```python
+import praw
+import csv
+
+# Initialize Reddit API credentials
+reddit = praw.Reddit(
+    client_id=&quot;YOUR_CLIENT_ID&quot;,
+    client_secret=&quot;YOUR_CLIENT_SECRET&quot;,
+    user_agent=&quot;SavedPostExporter v1.0 by /u/jimrothstein1&quot;,
+    username=&quot;jimrothstein1&quot;,
+    password=&quot;YOUR_PASSWORD&quot;
+)
+
+# Open a CSV file to write the data
+with open(&quot;reddit_saved.csv&quot;, &quot;w&quot;, newline=&quot;&quot;, encoding=&quot;utf-8&quot;) as file:
+    writer = csv.writer(file)
+    writer.writerow([&quot;Type&quot;, &quot;Title/Comment&quot;, &quot;Subreddit&quot;, &quot;URL&quot;])
+
+    # Fetch saved items (Maxes out at Reddit&#39;s 1000 limit)
+    for item in reddit.user.me().saved(limit=None):
+        if isinstance(item, praw.models.Submission):
+            writer.writerow([&quot;Post&quot;, item.title, item.subreddit.display_name, item.url])
+        elif isinstance(item, praw.models.Comment):
+            writer.writerow([&quot;Comment&quot;, item.body, item.subreddit.display_name, item.permalink])
+
+print(&quot;Backup complete! Check reddit_saved.csv&quot;)
+</code></pre>
+<p>#—</p>
+</section>
+<section id="method-2-can-you-tell-an-ai-agent-to-do-it" class="level3">
+<h3>Method 2: Can you tell an AI Agent to do it?</h3>
+<p><strong>Yes, but with security and privacy caveats.</strong></p>
+<p>An AI agent <strong>cannot</strong> download the list simply by reading the URL you provided. Because your saved list requires a secure login, a standard AI agent will just see a “403 Forbidden” or “Page Not Found” error.</p>
+<p>To use an AI agent (like a local LLM or an AI automation tool), you would have to choose one of two paths:</p>
+<ol type="1">
+<li><strong>The Automated Browser Route (Safer but Technical):</strong> You can use an AI coding assistant (like Claude or ChatGPT) to write a script utilizing <strong>Playwright</strong> or <strong>Selenium</strong>. You log into Reddit manually on your computer, and the AI-generated script handles scrolling through the page, scraping the text, and compiling it into a document.</li>
+<li><strong>The Credential Route (High Risk):</strong> You could provide an AI agent with your Reddit API keys or username/password to execute a Python backup script for you. <strong>This is highly discouraged</strong> unless the AI agent is running completely locally on your own machine, as sharing passwords or session cookies with third-party cloud AIs poses a severe security risk.</li>
+</ol>
+</section>
+<section id="method-3-dedicated-third-party-tools-extensions" class="level3">
+<h3>Method 3: Dedicated Third-Party Tools &amp; Extensions</h3>
+<p>If you prefer not to write code, several community-built tools bypass Reddit’s limitations:</p>
+<ul>
+<li><strong>Reddit Data Request (Official Takeout):</strong> You can request a complete legal archive of your data directly from Reddit via <strong><a href="https://www.google.com/search?q=https://reddit.com/settings/data-request">reddit.com/settings/data-request</a></strong>. Reddit will email you a ZIP file containing CSV files of your history. Note that this often only contains the <em>links</em> to your saved items rather than full text descriptions, and it can take several days to process.</li>
+<li><strong>Browser Extensions (Notion / CSV Exporters):</strong> There are several popular extensions on the Chrome Web Store and Firefox Add-ons library designed specifically for this purpose. They use secure OAuth authentication (meaning you never reveal your password) to let you click a single button to export your saved items directly into a spreadsheet or a Notion database, complete with search and tagging capabilities.</li>
+<li><strong>Web Utilities (e.g., Reddit-Saved.com):</strong> Free web apps exist that securely authenticate through Reddit OAuth, index your list, and provide an instant search bar. Because they store a record of your saves once synced, they can often help you preserve items beyond Reddit’s 1,000-post memory wall.</li>
+</ul>
+<p>```</p>
+</section>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id = "quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+</body>
+
+</html>
+</style></pattern></section></section></section></font></main></div></body></html>

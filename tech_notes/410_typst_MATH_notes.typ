@@ -1,4 +1,4 @@
-// uses noteworthy !
+// ubses noteworthy !
 #import "@preview/noteworthy:0.2.0": *
 
 /*   410_typst_MATH_notes.typ
@@ -499,7 +499,7 @@ Complete the square, using u(x,y), v(x,y)
 // c_1 and c_2 are functions of (x,y)
 
 Matrix formulation:
-Q(x,y) = [x y](5 4)[x y]*T = 1
+Q(x,y) = [x y](5 4)[x y]^T = 1
                4 5
 == Summations
 // Without Indices
@@ -717,3 +717,111 @@ $f(x) = 1 / (2 sqrt(|x|)) I_([-1, 0) union (0, 1]) (x)$
 - Not properly Riemann integrable (unbounded), but is improperly Riemann integrable and Lebesgue integrable
 
 Key lesson: measurability is the only requirement for a valid PDF. Continuity, boundedness, and Riemann integrability are *not* necessary — and many useful distributions violate them.
+
+= Linear Algebra (Zero Divisors / Non-trivial Nullspace)
+
+$
+A = mat(1,-1; 2,-2),\
+v = vec(1,1)
+$
+
+$A v = 0$ where neither $A$ nor $v$ is zero.
+
+- A is *singular*: $det(A) = 0$, i.e. non-invertible.
+- $v$ lies in the **nullspace** (kernel) of $A$.
+- This is a **zero divisor** in the ring of matrices: matrix rings are *not* integral domains because they have non-trivial zero divisors.
+- An *integral domain* is a ring where `$ab = 0$` implies $a = 0$ or $b = 0$ — matrix rings violate this.
+
+ title List available models
+from google.colab import ai
+
+response = ai.generate_text("Explain integral domain in algebra, give simple example.   Output should be in typst format")
+
+print(response)
+ `@title` List available models
+from google.colab import ai
+
+ai.list_models()
+response = ai.generate_text("Explain integral domain in algebra, give simple example.   Output should be in typst  format")
+print(response)
+
+Here is a clear and concise explanation of an integral domain in abstract algebra, formatted for Typst. 
+
+You can save the code below with a `.typ` extension (e.g., `integral_domain.typ`) and compile it using the Typst compiler.
+
+```typ
+#set page(paper: "a4", margin: (x: 2cm, y: 2.5cm))
+#set text(font: "Liberation Serif", size: 11pt)
+#set par(justify: true)
+
+#align(center)[
+  #text(size: 18pt, weight: "bold")[Integral Domains in Algebra]
+]
+
+#v(1cm)
+
+In abstract algebra, an *integral domain* is a special kind of ring that behaves very much like the familiar system of integers. It is a algebraic structure where multiplication is well-behaved, specifically because it lacks "zero divisors."
+
+== Definition
+
+A ring $(R, +, *)$ is called an *integral domain* if it satisfies the following four properties:
+
+1. *Commutativity:* Multiplication is commutative. For all $a, b in R$,
+   $a * b = b * a$
+
+2. *Identity:* There exists a multiplicative identity element, typically denoted as $1$ (where $1 != 0$). For all $a in R$,
+   $a * 1 = a$
+
+3. *No Zero Divisors:* The ring has no non-zero elements that multiply to give zero. That is, if $a, b in R$ and
+   $a * b = 0$
+   then either $a = 0$ or $b = 0$ (or both).
+
+4. *Associativity and Distributivity:* Like all rings, multiplication is associative, and multiplication distributes over addition.
+
+#block(
+  fill: rgb("f0f8ff"),
+  inset: 12pt,
+  radius: 4pt,
+  stroke: 0.5pt + rgb("b0c4de"),
+[
+  *Key Takeaway:* In an integral domain, you can perform *cancellation*. If $a != 0$ and $a * b = a * c$, you can safely conclude that $b = c$. This is not true in all rings!
+]
+)
+
+== The Standard Example: The Integers ($ZZ$)
+
+The most intuitive example of an integral domain is the set of integers, denoted by $ZZ = {..., -3, -2, -1, 0, 1, 2, 3, ...}$, under normal addition and multiplication.
+
+Let's check the properties:
+- *Commutative ring with identity:* Yes, $a times b = b times a$, and the number $1$ acts as the identity ($a times 1 = a$).
+- *No Zero Divisors:* If you multiply two integers and get $0$ (i.e., $a times b = 0$), it is physically impossible for both $a$ and $b$ to be non-zero. At least one of them *must* be $0$.
+
+Thus, $(ZZ, +, times)$ is an integral domain.
+
+== A Counter-Example (Not an Integral Domain)
+
+To understand integral domains, it helps to see a ring that is *not* one. Consider the ring of integers modulo 6, denoted as $ZZ_6 = \{0, 1, 2, 3, 4, 5\}$.
+
+In $ZZ_6$, arithmetic is performed modulo 6 (you divide by 6 and take the remainder).
+Look at the elements $2$ and $3$. Neither of them is zero ($2 != 0$ and $3 != 0$). However, if we multiply them:
+
+$ 2 * 3 = 6 equiv 0 quad (mod 6) $
+
+Because $2 * 3 = 0$ in this ring, $2$ and $3$ are called *zero divisors*. 
+
+Since $ZZ_6$ contains zero divisors, **$ZZ_6$ is not an integral domain.**
+
+== Summary of Common Integral Domains
+
+- $ZZ$ (The Integers)
+- $QQ$ (The Rational Numbers)
+- $RR$ (The Real Numbers)
+- $CC$ (The Complex Numbers)
+- Any polynomial ring $R[x]$ where $R$ is an integral domain (e.g., $ZZ[x]$)
+```
+
+=== Features of this Typst markup:
+- It uses standard Typst math notation (e.g., `$a * b = b * a$`).
+- It structures the explanation with headings (`==`).
+- It includes a highlighted "Key Takeaway" box using Typst's `#block` function for visual clarity.
+- It provides both a positive example `($\mathbb{Z}$)` and a negative example `($\mathbb{Z}_6$)` to make the concept easy to digest.

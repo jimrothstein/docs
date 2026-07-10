@@ -1,6 +1,6 @@
 TAGS:  current_prescriptions
 
-= Current Prescriptions  ( 2026-02-01)
+= Current Prescriptions  ( 2026-07-01)
 #set enum(indent: 1em)
 
 + Cozaar (Losartan) - 100 mg
@@ -17,11 +17,21 @@ TAGS:  current_prescriptions
 
 
 External
+SCALP
+
++ 0.05% AUG Betamethasone Dipropionate (liquid, scalp) - strong
+Rotate:  (see specific dirertions)
 
 + Selenium Sul 2.5% (shampoo)
-+ 0.05% AUG Betamethasone Dipropionate (liquid, scalp) - strong
+- ketoconaole (new)scalp
+- OTC shampos: (difference ingredients use differnt paths)
+
+
+
+SKIN
 + 0.05% Clobetasol Propionate (psoriasis arm, butt) 
 + (NEW) 2-3 drops mineral oil - very infrequent
+- moisturizers, 
 
 OTC
 
@@ -36,6 +46,12 @@ OTC
 == Changes:  
 **2026**
 - STOP Allopurinol; for gout, but I never had gout.  I did have high serum uric acid.
+- ADD Finesteride (Dr. Miyake recommend, restart usage)
+
+- Per Dermatologist, May 2026:
+- ADD Ketoconazole 2% (scalp, anti-fungal)
+- ADD various moisturizers, creams (skin, CeraVe -  generic), Vasaline to skin
+
 
 **2025**
 

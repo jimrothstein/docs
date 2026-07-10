@@ -1,15 +1,23 @@
-/*  *** In process using LLM to create llm-wiki **   */
+---
+title: "300_tech_notes.md"
+format:
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+---
 
 LLM NOTES?   go here: 320_LLM_agents_NOTES.md 
 
-= 300 Tech Notes
+# 300 Tech Notes
 typst file
 
 
-== Jul 2026
+## Jul 2026
+- Change from *.typ file to *.md;  why? it simple text and md easier
 
 
-=== sudo apt    
+### sudo apt    
 sudo apt autoremove  # a dependency no longer needed
 
 sudo apt-mark        # pkgs settings, such as being held
@@ -18,11 +26,13 @@ sudo apt install  --fix-broken <pkg>
 sudo apt install  --fix-missing
 
 
-== linux cli
+## linux cli
 df -h # free space on system
 
+journalctl -b -1  # show system messages from prior boot
 
-=== Audio
+
+### Audio
 WirePlumber
 PipeWire
 ALSA (bottom)
@@ -32,9 +42,9 @@ ALSA (bottom)
 - Audio:  May see references to older PulseAudio, but this probably PipeWire emulating the older package.  PulseAudo package is no longer on machine.
 - *wpctl* is CLI
 
-== Mar 2026
+** Mar 2026
 
-=== Use Calibre for all files - one central place - including those currently on iPad.
+### Use Calibre for all files - one central place - including those currently on iPad.
 From iPad:  can upload to Drive!
 To iPad:  from Drive to iPad?
 - from Linux? iPad runs "Calibre Companion" to retrieve from linux - NOT the reverse
@@ -42,21 +52,21 @@ To iPad:  from Drive to iPad?
 - sftp between linux & ipad?   (linux:  sudo systemctl start ssh;    then ftp localhost<CR>)
 
 
-== Feb 2026
+** Feb 2026
 Haskell working hard on  data science; tutorials... cloud based GUI
 
-== Dec 2025 - HP boot reports amdgpu psp gfx failed, but continues
+** Dec 2025 - HP boot reports amdgpu psp gfx failed, but continues
 - Status: unresolved
 - HP 845 G8, laptop; otherwise runs fine.
 - sudo dmesg
 - sudo journalctr -b 
 - secureddisplay? LOAD_TA(0x1)
 
-=== Hardware
+### Hardware
 23 DEC 2024 - wireless mouse, $10, bestbuy, M220 logitech, 18 month
 batter life, plain vanilla is just fine.
 
-=== folds
+### folds
 folds: use za or (define-key evil-normal-state-map (kbd "<tab>") 'evil-toggle-fold)
 need package for evil/folds
 - za open fold
@@ -65,12 +75,12 @@ need package for evil/folds
 - zm close all folds
 - C-3 S-TAB (show outline upto level 3 - WORKS!)
 
-=== url links
+### url links
 nytimes.com @ nytimes
 file:280_emacs_notes.qmd @ emacs notes
 https://www.nytimes.com @ nytimes.com
 
-== TODO
+** TODO
 - use folds, to simplify navigating this document
 - no R here, no Stats
 - includes *i3*, *emacs*, *Debian*
@@ -91,7 +101,7 @@ https://www.nytimes.com @ nytimes.com
 - ex looks very useful!
 - SO(3) - not sure what I am asking; normal subgroups, symmetries?
 
-== Github actions
+** Github actions
 - do not guess, do not play: READ DOCS
 - render quarto (in gfm, github format, SEE *gh_actions_project/quarto, SEE main.yaml*
   - will render qmd to md file (github format)
@@ -112,24 +122,17 @@ https://www.nytimes.com @ nytimes.com
 
 <2024-09-25 Wed>
 
-== "ex" editor
+** "ex" editor
 
 - simple, vi-like editor (see https://www.geeksforgeeks.org/ex-command-in-linux-with-examples/)
 - :a (to add text)
 - :w , :wq
 - print : 1,3 or :1,3p :4 (print line 4)
 - delete : 1,2d 
-- print all lines g /the/ p
-- : 3 s/this/that (line 3)
-- /he/ he, help, heading...
-- /\<he\>/ "he" only
-- /\<.he\>/ not "he", but "she", "the" will pass 
-- : /<a move to first line where "a" begins
-  : />last$
 
 prior to 'ex', was 'ed'
 
-== PGP
+** PGP
 - install public key: *gpg --recv-keys XXX*, where XXX= 16 alphanumber
 - KEY SIGNING: (summary) I can create public-private keypair.
   If I 'sign' doc with private key, then anyone with my public key can
@@ -145,17 +148,17 @@ prior to 'ex', was 'ed'
 - gpg keys; Debian: see apt-secure, READ carefully, but it doeswork.
 - gpg --list-keys
 
-== i3, i3wm
+** i3, i3wm
 Videos:
 basic config: https://www.youtube.com/watch?v=88o2XuH3E08&list=PLbcglKxZP5PMTWVe1KhZX3Jvo0xqk8h5I&index=1
 - man i3 has good help, but quick becomes *x11*
 - review man i3-dmenu-desktop 
 
-== PURPOSE:
+** PURPOSE:
 Misc Tech Notes; details, notes can be here (but COMMANDS put
 on INDEX C). Math, R, probability and stats notes **do NOT go here**
 
-== emacs/org mode/eLisp
+** emacs/org mode/eLisp
 
 CAUTION: org mode is structured outline; markdown, typst are for document formatting.
 TODO: Which to use?
@@ -166,26 +169,26 @@ SEE: Separate emacs/org documentation
 SEE:  000_PROJECTS.org
 
 
-== functional programming (julia, rust, lisp)
+** functional programming (julia, rust, lisp)
 - Julia easier?
 - RUST learning curve, but high performance
 - Both have functional?, but seems to learn functional stay with lisp, racket, haskell or any similar
 
 
 
-== IMPERATIVE v DECLARATIVE
+** IMPERATIVE v DECLARATIVE
 - math notation is DECLARATIVE; indicates meaning, not exact details
   (example1: summation sign). Tell computer what you WANT, leave details to
   compiler or program.
 - IMPERATIVE (older, obsolete?) every detail, machine language?
 
-== QUARTO:
+** QUARTO:
 2023-12-06 - Try couple of cv or resume templates and one quarto extension. Seemed to be more work than worth. Just use Rmarkdown to create resume.
 2024-01-26 READ r4ds Ch 28-29 b/c Quarto and config knitr
 
 To render a Quarto (*.qmd) file with embeded typst.   Use regular quarto render methods.
 
-== {X11, Wayland, video}
+** {X11, Wayland, video}
 **Warning:** Stay with X11 (proven, well-supported, works)
 
 Wayland is open source *protocol* replacement for X windows, (widgets
@@ -200,10 +203,10 @@ kernel.
 ~/.xsession-errors - Unlike cli, GUIs have no console; errors err redirected to this file
 ~/.Xauthority - is random code to control which progams output to my X11 session
 
-== {PDF, Pandoc, Latex}
+** {PDF, Pandoc, Latex}
 
-=== PDF Notes [ignores html, css; also ignores YAML header (pandoc & ::render()]
-=== Print raw text (example, from github, raw)
+### PDF Notes [ignores html, css; also ignores YAML header (pandoc & ::render()]
+### Print raw text (example, from github, raw)
 *Quarto* saveas qmd, add yaml header, enclose all text in ``` (verbatim); render inside rstudio.
 
 2023-12-30
@@ -249,7 +252,7 @@ If using Latex, its packages, diagrams with Latex ... must go with PDF.
 pandoc balks at processing straight text if it thinks it sees markdown.
 If lucky, !pandoc % -o file.pdf will work.
 
-=== section{LATEX NOTES}
+### section{LATEX NOTES}
 
 - Tikz seems to be most popular way to gaphics vs **pstricks**.
 
@@ -273,9 +276,9 @@ value for
 
 $$\pi = \directlua{tex.sprint(math.pi)}$$
 
-=== revealjs slides with Quarto
+### revealjs slides with Quarto
 
-== GIT commands   
+** GIT commands   
 
 HEAD - normally points to branch (tip) but can point to commit (detached HEAD). 
 **Goes where you go, like a shadow.** Commits are
@@ -305,7 +308,7 @@ git revert HEAD~2..HEAD # keep history, but undo last 2 commits
      (2) insert: the deb XXX link 
      (3) save, run as jim, sudo apt install r-base etc.
 
-== REGEX
+** REGEX
 - TODO import (?) all REGEX/* files to here
 
 - for regex reading see 300_tech_reading.md
@@ -345,7 +348,7 @@ and regex. Not NOW.
 - Separate learning REGEX (grep -P, regex) and using REGEX in R, which I think
 is a tad easier.
 
-=== DEFINITIONS - as always, crucial
+### DEFINITIONS - as always, crucial
 - regex is a string; do not forget this.
 - META CHARACTERS - ascii (?) characters which by-default have
 non-literal meaning to engine that digests them. **Engine** specific.
@@ -391,18 +394,18 @@ should be handled as though literal.
 - **Character Class** Things like [0-9].  
 Rmk: [0-9]+ means repeat one or more of the prior **Character class** So both 321 and 333 match this regex.
 
-=== Specific to vim/neovim
+### Specific to vim/neovim
 - magic = \v no need to escape (wait till know what doing first) - well, um.
 
 - magic = `\v` no need to escape (wait till know what doing first)
 
-=== Specific to R
+### Specific to R
 - Before regex library (engine) sees code, the **compiler** (byte code?) gets
 it first. Must use double backslash for just one backslash to be seen by
 regex engine. Shell interpreters have no such compiler and single backslash
 suffices.
 
-==== Regex grouping: capture & non-capture
+###= Regex grouping: capture & non-capture
 
 **Perl** PCRE for lookaheads, capture (in R, perl=T)
 from !so
@@ -414,24 +417,38 @@ exempts that group from being used for either of these reasons.
 Non-capturing groups are great if you are trying to capture many different
 things and there are some groups you don't want to capture. 
 
-=== LINUX
+### LINUX / DEBIAN   
+
+RESCUE MODE, How to get to cli prompt?
+- Use Debian installer, rescue mode
+- eventually will get prompt (a lot of screens to go through)
+
+DEBIAN iso:   should not need dd command; just cd to USB
+
+
 - Debian: shutdown when sytem hangs? CTRL-ALT-DEL or ALT-printScreen
+
 - *gnome-control-center* is cli to manage linux, X11, ..(even with cinnamon/lightdm)
+- xfce4-session-*    # (may need to poke around)
+
 - autologin, if using lightdm, as root edit /etc/lightdm/lightdm.confg
   - in [seat:*], uncomment user and timeout line; set user to "jim" (no spaces around =)
 - mount usb: sudo mount /dev/sdb /media/usb_drive (RHS must EXIST)
 
+versions:
+- Debian stable
+- Debian testing/sid  - next version
 
-=== mount
+
+### mount
 mount --bind
+mount | grep "/dev/"  # list devices /dev/*
 
-- To temporarily load and run and sys:
+To temporarily load and run and sys:
 sudo chroot /mnt/X/  #  where /mnt/X must already exist
 
 
-
-
-==== plymouth  (linux)
+###= plymouth  (linux)
 Bundled in initial ramdisk, before any fs mounted.  Provides a graphical boot?? splash screen
 check /var/log/boot.log
 
@@ -456,7 +473,7 @@ not in kernel.
 - PARTIONs - \home is separate; \ for all else (~30-40GB enough)
 - Boot drive - needs flag `boot` and `esp` (?)
 
-==== GRUB2
+###= GRUB2
 - 1st: do not panic
 - pre-linux boot
 - Usally all it wants is to know which partition is root 
@@ -464,6 +481,11 @@ not in kernel.
 - May see (hd0) or (hd0,gpt2), (hd0,gpt3) refer to hard drive and partition
 - In my case (hd0, 2), and command ~ set root=(hd0,gpt2)
 - May involve updates to /etc/default/grub (use their tool)
+
+GRUB is bootloade, boots kernel into RAM  (vmlinuz, .initrd.gz)
+MBR long gone, IGNORE
+(hd0,2) means drive hd0, partition 2
+
 
 *** SETUP/CONFIG new HP Elitebook machine 
    <2024-10-10 Thu> HP Elitebook but with pure Debian/Cinnamon & i3
@@ -546,7 +568,7 @@ setkbmap seems to suggest using caps:swapescape and not caps:escape, but xmodmap
 
 }
 
-== cron job, crontab
+** cron job, crontab
 
 {
 	grep jim /var/log/syslog # see cron jobs that ran
@@ -560,7 +582,7 @@ Sat May 21 18:48:16 PDT 2022
 -	see cron Icard ('linux')
 }
 
-== Linux Kernel
+** Linux Kernel
 
 {
 	- one LTS Ubuntu can have many (upstream) kernels
@@ -577,7 +599,7 @@ u g o (user group other)
 
 <!-- begin ZSH -->
 
-== ZSH notes
+** ZSH notes
 
 *ZSH*
 ZSH REF CARD: (start) https://www.bash2zsh.com/zsh_refcard/refcard.pdf
@@ -591,10 +613,10 @@ http://reasoniamhere.com/2014/01/11/outrageously-useful-tips-to-master-your-z-sh
 ~/dotfiles/.zshenv
 zsh -x *.sh # prints line then executes
 
-=== script header
+### script header
 #!/bin/zsh -xv # verbose
 
-=== diff -y file1 file2 (2 columns)
+### diff -y file1 file2 (2 columns)
 - SEE github, zsh_project
 - arrays, SEE 008_array, ordered, unordered, append, typeset, unset, array + glob
 - structures: for, case ... see 032_
@@ -602,17 +624,17 @@ zsh -x *.sh # prints line then executes
 - prompt, ansi, echo $fg_bold[green']hi SEE: 
 - also: grep, ${var}, tee, (( string_to_numbers)), do..done
 
-=== widgets 
+### widgets 
 - software chunk, "beginning of line", "kill-line"
 - to invoke: user types <C-A>, <ALT-B> <CTRL-[-B> (using vim notation)
 - but notation: '^a', '\eb' '^[b'
 - '\e' = <ESC>
 - '^[' = also <ESC>
 
-=== bind to widget
+### bind to widget
 - bindkey '^k' kill-line (binkey.shortcut.existing widget)
 
-=== glob vs extended-glob (SEE Guide 5.9.7):w
+### glob vs extended-glob (SEE Guide 5.9.7):w
 
 - ll demo/**/*.txt
 - ls -l demo/**/*<1-10>.txt
@@ -623,7 +645,7 @@ zsh -x *.sh # prints line then executes
 - ls -ldh demo/**/*(DOL[1,6]) # 6 largest files
 - Lots of syntax to select JUST what you want!
 
-=== parameter expansion
+### parameter expansion
 SEE 000_PE_examples.sh
 - ${var/old/new} 1 replace
 - ${var//old/new} all
@@ -633,7 +655,7 @@ SEE 000_PE_examples.sh
 
 - SEE FAQ73, https://mywiki.wooledge.org/ , GNU Bash Ref Manual 3.5.3
 
-=== zsh/unix permissions
+### zsh/unix permissions
 
 *** unix, zsh permissions
 u g o
@@ -648,7 +670,7 @@ chmod 700 rwx --- ---
 
 *** zsh commands in emacs (SEE: zsh_project)
 
-=== completion, Use zstyle
+### completion, Use zstyle
 man zshcompsys
 zstyle + 3rd party scripts - do MANY things (completion, modify settings, config VCS_INFO ...)
 SEE: https://thevaluable.dev/zsh-completion-guide-examples/
@@ -673,7 +695,7 @@ General:
 *precmd* is hook function, runs before ZSH prompt (SEE manual 9.3.1)
 SEE: https://zsh.sourceforge.io/Doc/Release/Functions.html#Special-Functions 
 
-=== printf
+### printf
 - string(%s), digit(%d); example: digit,pad with by 5 
 printf "%05d\n" ${x}
 
@@ -711,7 +733,7 @@ invoke widget:
 TERMCAP - obsolete
 
  
-=== sudo vs su ....
+### sudo vs su ....
 {
 
 - su jim change to User 'jim'
@@ -737,7 +759,7 @@ TERMCAP - obsolete
 
 <!-- end ZSH -->
 
-=== drive info
+### drive info
 
 	# succinct, useful info
 	lsblk --output NAME,UUID,PARTUUID
@@ -769,7 +791,7 @@ xxd
 	- SEE ROTHGAR
 }
 
-=== GLOB
+### GLOB
 
 grep_vs_ls
 
@@ -786,7 +808,7 @@ files
 
 See my zsh GLOG handwritten notes (till typed in here)
 
-=== ZLE
+### ZLE
 
 ZLE	= Zsh line editor | NOT GNU readline\
 *zle_widgets* (all commands)
@@ -794,7 +816,7 @@ ZLE	= Zsh line editor | NOT GNU readline\
 Output from zle -al (~403 cmds)
 <snip>
 
-=== BINDKEY
+### BINDKEY
 
 *bindkey* # results, all shortcuts
 
@@ -806,7 +828,7 @@ Output from zle -al (~403 cmds)
 "^H" vi-backward-delete-char
 "^I" expand-or-complete
 
-=== Google, API, curl
+### Google, API, curl
 (1APR2022)
 Google's example, with loop for uri_redirect
 https://accounts.google.com/o/oauth2/v2/auth?
@@ -818,14 +840,14 @@ https://accounts.google.com/o/oauth2/v2/auth?
 
 	- Google's authorization server: https://accounts.google.com/o/oauth2/v2/auth
 
-=== From Explorer
+### From Explorer
 GET https://youtube.googleapis.com/youtube/v3/playlists?part=snippet%2CcontentDetails&maxResults=5&mine=true&key=[YOUR_API_KEY] HTTP/1.1
 
 Authorization: Bearer [YOUR_ACCESS_TOKEN]
 Accept: application/json
 
 
-===
+###
 same, but as Curl
     
 curl \
@@ -836,9 +858,9 @@ curl \
 
 
 
-=== From Google Playground
+### From Google Playground
    https://youtube.googleapis.com/youtube/v3/commentThreads?videoId=Mec9sw1cJk8&part=snippet,replies
-===
+###
 
 ###
    CURL | YOUTUBE API | GOOGLE API | OAUTH 2.0 | 
@@ -873,7 +895,7 @@ begin{verbatim}
 				G O O G L E
 end{verbatim}
 
-=== HTTR2 - NOTES (needs clean up!)
+### HTTR2 - NOTES (needs clean up!)
 
 PURPOSE: Demonstrate configuration for HTTR2 and OAUTH2 with Google's Youtube API.
 
@@ -893,14 +915,14 @@ RELATED INFO:
 
 ```
 
-#\===============================
+#\###**==========================
 From Google (Youtube) Explorer:
 GET https://youtube.googleapis.com/youtube/v3/playlists?part=snippet%2CcontentDetails&maxResults=5&mine=true&key=[YOUR_API_KEY] HTTP/1.1
 
 Authorization: Bearer [YOUR_ACCESS_TOKEN]
 Accept: application/json
 
-#\===============================
+#\###**==========================
 
 ```
 
@@ -923,7 +945,7 @@ curl \
   --header 'Accept: application/json' \
   --compressed
 
-==== NEEDED SCOPES:
+###= NEEDED SCOPES:
 https://www.googleapis.com/auth/youtube	Manage your YouTube account
 https://www.googleapis.com/auth/youtube.force-ssl	See, edit, and permanently delete your YouTube videos, ratings, comments and captions
 
@@ -936,18 +958,18 @@ playlistId  =  "PLlXfTHzgMRUIqYrutsFXCOmiqKUgOgGJ5"  # Pavel Grinfeld, Linear Al
 				E N D G O O G L E
 \end{verbatim}
 
-==== Procedure: 
+###= Procedure: 
   - Follow hadley outlines in Vignette for Github and and getting user's information. (Requires oauth token)
   - Change for google 
 	- let httr2 handle the details, use this function: httr2::req_oauth_auth_code()
   - If I have this right, this will (1) get the access token and (2) complete REST
 request.
 
-== Pandoc
+** Pandoc
 PANDOC:
 !pandoc --metadata=project:xxx --lua-filter doc/panvimdoc/scripts/skip-blocks.lua --lua-filter doc/panvimdoc/scripts/include-files.lua -t doc/panvimdoc/scripts/panvimdoc.lua % -o doc/jimHelp.txt
 
-== MORE CURL
+** MORE CURL
 CURL Examples:
 
 cURL write (to standard)
@@ -984,9 +1006,9 @@ Misc Notes:
 "State" - cookies used to be used; now state carried in headers  
 vim:nospell
 
-== ANDROID
+** ANDROID
 
-=== Android, Mobile, Cell Phone - notes
+### Android, Mobile, Cell Phone - notes
 
 *Nov 2024* - need wireless phone? or working wifi-only phone? (mine does not work)
 
@@ -1035,7 +1057,7 @@ RETAIL DEMO UNIT ('retail mode'):
 - OnePlus 8 (bought 9/25) ($137) very good, but no 3mm jack;
 - buy Redmi Note 14;    because mid-range; has 3mm jack;  6GB/128GB ($140)
 
-== Typst (and emacs)
+** Typst (and emacs)
 (22 MARCH 2026) - assorted problems getting all emacs pieces installed.  needs lsp, mist,  and a few other pieces.   Maybe very active development now.  Postpone till I have more info.
 
 ```{=typst}
@@ -1055,7 +1077,7 @@ RETAIL DEMO UNIT ('retail mode'):
 - my pixel is VERISON (sprint?) phone; not a Google phone; b/c IMEI begins with 35... NO way to change bootloader.
 
 
-=== ADB
+### ADB
 
 - *ADB* DEBUG: a "mode" that allows installing apps, read logs on Android, file
 	transfer... Works by running TCP sever on host (PC) and daemon on device
@@ -1100,7 +1122,7 @@ mtp://[usb:001,085] where 085 refers to device. (Run lsusb)
 - **FASTBOOT** purpose to `flash` ROM on device; level beyond ADB.
 
 
-=== section{Laptop Buying Notes}
+### section{Laptop Buying Notes}
 
 **eMMc** is on bmotherboard(embedded), slow but works: cheap, reliable; fine to boot. Check /dev/mmcblk**
 SSD is much better, but more expensive.  
@@ -1117,7 +1139,7 @@ SSD is much better, but more expensive.
   USB-C 3.1, 3.2, 4.0, generatations, standard or not?)
 
  
-== RUST (systems level language)
+** RUST (systems level language)
 
 - programmer has control over memory, variables. Leads to SAFETY and
   PERFORMANCE. At cost of understanding more about memory etc.		
@@ -1130,11 +1152,10 @@ SSD is much better, but more expensive.
 https://check-vin.org/
 
 my VIN: 1HGEM22911L031079
-------------------------
 
 
 
-=== Battery Notes (3/1/2026)
+### Battery Notes (3/1/2026)
 - AGM is lead, with sulfuric acid.  The acid is absorbed(?) by a mat; so does not spill.
 - Resting Voltage (no load) ~ 12.8-12.9 V
 - When just recharged - voltage can be > 13 V.   This will settle back soon.
@@ -1158,14 +1179,13 @@ BLACK, Prius 5 - 4 door , all owners in family (?) Chicago
 car: https://corvallis.craigslist.org/cto/d/corvallis-2011-toyota-prius-4dr/7791577925.html
 carfax: https://www.autovhr.com/CFReports-ran/AutoVhr-CFreport_1728601520.html
 -carfax clean no records, post-2018 
----
 Ingrid 2009/Prius Hatch 4D/112k/$9/(carfax: says $8.4) (JTDKB20U3 93503700)
 car: WHTIE, https://portland.craigslist.org/wsc/cto/d/portland-upgraded-base-model-prius-2009/7786557907.html 
 carfax: https://www.autovhr.com/CFReports-ran/AutoVhr-CFreport_1728671601.html
 
 waiting: Travis has receipt for last; and battery: 12V or hybrid 
 
------------------------- Jack
+#------------------------ Jack
 JACK, 2012/preisC/111K/$8.9/JTDKDTB30C1023315 (*dealer offered him $7k trade-in*)
 Waiting: his battery, recent records
 car: https://portland.craigslist.org/mlt/cto/d/portland-2012-toyota-prius/7789997037.html
@@ -1174,7 +1194,7 @@ service records: see pdf
 
 
 
-=== Reddit,  API
+### Reddit,  API
 ```
 Managing and exporting your saved items on Reddit can be tricky because **Reddit’s native interface does not include a search bar for saved items**, and it enforces a strict **1,000-item limit** (saving a 1,001st item will push the oldest one out of your list).
 
@@ -1182,7 +1202,6 @@ Because your saved list is private, a direct URL like `reddit.com/user/jimrothst
 
 A breakdown of the different methods available to search, download, or handle this list includes Python options, AI tools, and browser extensions.
 
----
 
 ### Method 1: Using Python and the Reddit API (Highly Recommended)
 
@@ -1225,7 +1244,7 @@ print("Backup complete! Check reddit_saved.csv")
 
 ```
 
----
+#---
 
 ### Method 2: Can you tell an AI Agent to do it?
 
@@ -1238,7 +1257,6 @@ To use an AI agent (like a local LLM or an AI automation tool), you would have t
 1. **The Automated Browser Route (Safer but Technical):** You can use an AI coding assistant (like Claude or ChatGPT) to write a script utilizing **Playwright** or **Selenium**. You log into Reddit manually on your computer, and the AI-generated script handles scrolling through the page, scraping the text, and compiling it into a document.
 2. **The Credential Route (High Risk):** You could provide an AI agent with your Reddit API keys or username/password to execute a Python backup script for you. **This is highly discouraged** unless the AI agent is running completely locally on your own machine, as sharing passwords or session cookies with third-party cloud AIs poses a severe security risk.
 
----
 
 ### Method 3: Dedicated Third-Party Tools & Extensions
 

@@ -153,6 +153,22 @@ Few believed he could sell so much retail. He did.
 
 - ditto for birth control b/c reduces children of 'unfit' classes. Spencer prefers 'survival of fitest': why waste money/reforms on lower classes.
 
+== T. Roosevelt and  Philippines
+- Teddy is imperialist, war hawk.
+- Was Philippines practice for Vietnam?
+- By aggreement, US replaces Spain, without much violence.  Not what Amercians told Philippines.
+- US murders without restraint; water torchure by shuffing stick in mouth (losing teeth), but wanton violence in country.
+- Teddy *lies to Congress*, but Congress investigates when American soliders' letters reveal truth.
+- Lodge, TR's friend, quashes.
+- 1904 (?) Saint Louis World's Fair, US depicts Philippines as brutal savages, but also has young Philippines children be perfectly behaved and singing American songs.
+- See how good Americanization is for that country.
+- US populice? Believes US Army as force for good and could not treat Philippines poorly.
+
+Rise of Taft,
+1903 Dept of War, CORPULANT, but apparently well-liked
+
+1905 TR sends daughter and Taft on Pacific Tour,
+
 Bryan - sounded like Fundamentalist. Not quite. His objection to evolution: IF man incapable of rising above lower animal instincts, then SOCIAL REFORMS (ie done by us imperfect people) DOOMED to fail. More modern (?) social reforms necessary to CONTROL worst of human animal side. ???
 
 Scopes - Though Bryan initially won in court, the decision was actually overturned on appeal (technical issue). Then appeals court closed case, without clear resolution on the main issue. Should religious doctrine (CREATION) be allowed in public school was never argued?
@@ -162,6 +178,45 @@ Scopes - Though Bryan initially won in court, the decision was actually overturn
 - Ex: 1921 - Darwin on cover of Biology books. 1926 edition -he is gone. Evolution removed from southern textbooks. LESSON: do not put your teachers on trial, just change books. True today! Report (1936) Biology \#cite(<1900>, form: "prose") had more science than 1936. Creation remained LAW in many states; Texas much of 20C and certainly after 1980s.
 
 - #strong[\J. Howard Pew] (Sun Oil) capitalism and religion do NOT conflict. Use of religion in conservatism. Prior mostly just rich, anti-New Deal, or ideology (Ann Ryan, a few university profs). Pew wants return to fundamentalism. Opposes Niebuhr and liberal Christian ideology.
+
+== US Depression
+- fall 1932 many thought Dep ending; Dow is up; no Bank runs
+- Why Hoover lost?   PROHIBITION, FDR against, Hoover would not call for repeal
+- House:  315 D - 117 R
+- Senate: 59 D - 47 R
+- vote:  57% FDR - 40% Hoover
+- BUT ... late fall Dow falls 
+- Now real FEAR, no asset safe, put money in matrice,  Gold leaving US
+- 1933:
+- Senate Banking Committee (chair Norbeck) not held any hearings on crash; now, hoping to tag Dems with problem (??) Norbeck decides need to hold hearings.
+- No good lawyer will take this role for Banking Committee and the pay is very low.
+- Ferdinand Pecora, NYC DA office, Italian, no fancy education, discrimination..... but is good at cross-examination
+- Feb 21, 1933 Citibank boss, Mitchell, testifies but "forgot" to bring the subpeona'd documents
+- Led by Pecora, begin a sequence of hearings that change public opinion.  Bankers are not upright pillars of business;  newspapers and public follow events. 
+- Citibank gave loans to executives to buy its stock (so, no one paid
+  loans either, recall customers all had margin calls), Mitchell made
+  phony trade to wife and reports NO income tax. Efforts to inflate
+  stock etc.
+
+- US economy getting worse, just before inaugeration:
+- NYSE halts trading
+- Hoover tells FDR to delcare emergency (FDR:   you do it; you are president)
+- Several states close bannks.
+- March 4, 1933 (Saturday) is inaugeration.   NY state closes banks.
+- March 5 (?), 1933 - FDR firmly and boldly uses Federal power, close
+  All the banks, restricts gold; FDR b/c mood in country has shifted. 
+  Idea that gov't should not interfere with business vanishes.
+- March 13 (M) markets/banks re-open; Wall Street waits for FDR.
+  Citbank splits into commerical/securities (voluntary), Chase
+  follows.  As does Morgan, but GLASS felt since Morgan private no
+  need.
+- Woodin is Treasury Secy (FDR wanted GLASS, who has health issues,
+  but GLASS wants 'sound money' (gold, no devalue, no inflation
+  policy) - FDR can not guarantee
+
+- 
+
+
 
   #strong[Billy Graham] (1955)
 

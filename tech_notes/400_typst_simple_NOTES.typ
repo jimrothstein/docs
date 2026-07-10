@@ -21,6 +21,10 @@
 #show heading.where(level: 2): set text(red)
 #show heading.where(level: 3): set text(blue)
 
+% Comment
+
+`literal * # % `
+
 == Level 2: Red 
 
 === Level 3: Blue

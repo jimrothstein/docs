@@ -5,9 +5,15 @@ description: "This *.md:   operational notes, tools, websites   - no theory here
 
 THIS IS *.md file.
 
+### Changes
+- remove typst
+
 ### LEARN (above average!)
 * Hadley - newsletter, using ellmer to explain agent, harness ...
 * Simon Willison writes how he uses LLM models; https://simonwillison.net/2026/Mar/30/mr-chatterbox/
+* Blog with very clear explanations & background: https://blog.apify.com/mcp-a2a-agentic-internet/
+
+### Colab
 
 
 ### LLM
@@ -21,7 +27,6 @@ Short Definitions:
   self-attention:  I went to bank to get money.   Does bank refer to river or building?
 transformer:   _He_ did something....           transformer can determine _he_ even if several paragraphs away.
     Transformers are neural networks that make NLP (natural language) possible and allow for reading large amounts.
-
 
 * attention matrix:  NxN matrix,    pairs various tokens
 
@@ -92,7 +97,7 @@ python, multiple lessons, build each piece, tokenizer, transformer, harness ....
 
 ** Tom Yeh, [[https://www.youtube.com/playlist?list=PL0cq-CiC5Qhs9HcDnJpWuoDMrV0iPJ_-X][ai by hand videos]]
 
-### HuggingFace
+### HuggingFace or HF
 
 Benefit ?  Try out different models, all from one central location.
 But this is not my main interest.
@@ -111,6 +116,9 @@ Course
 
 * Columbia (backprop) https://www.youtube.com/watch?v=sIX_9n-1UbM   
 
+#### ml-intern
+- article:  useful text, https://www.kdnuggets.com/getting-started-with-hugging-face-ml-intern-your-first-ml-agent
+-almost immediately exhausted tokens
 
 Why do we measure?   Suppose we sum over all elments of (0,1) - too big; uncountable.   Choose a measure where singletons have measure zero!
 

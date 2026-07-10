@@ -415,3 +415,35 @@ June 12, 2026 - Dr. Miyake
 - Mg is high in urine:  could be diet, but also kidney not able to keep Mg in complete balance (typical with CKD)
 - Ox 49
 - Urine test I took (492 mg), is much more senstive than usually Protein/Creatinine ratio.   492 is low.  Becomes issues at 2,000-3000.
+
+July 7, 2026 - Sleep Apnea
+- CPAP - device at constant air pressure
+- APAP - device at variable air pressure (it auto adjusts)
+
+COMPARE:
+
+https://www.perplexity.ai/search/compare-effectiveness-of-apap-3NO8dh32RNSYXaFG5OsrbQ
+
+ORAL DEVICE:
+Yes, it will treat the sleep apnea, address snoring, consolidate the sleep, and reduce need for nocturnal enuresis.  A referral has been placed with the TMD Clinic; they will contact you to schedule an appointment.
+- I was AHI of 25 and now effectively 0 after one month of using my Somnomed Avant ($2250 AUD), fitted by specialist dentist.
+- SomnoDent Flex before and it was the most comfortable device I owned but it broke twice
+- Mandibular Adjustment Device (aka Oral Appliance)
+ 
+TMD Clinic
+Kaiser Permanente Interstate Medical Office Central
+503-331-3060; toll free at 855-512-5983
+Address: 3600 N Interstate Ave, Portland, OR 97227
+ 
+From the TMD Clinic: Teeth movement will happen.  The process takes 8 weeks from “when the member is financially complete”.  If you answered “yes” to any of the screening questions, please know it may influence if you will be a good candidate for the oral sleep appliance.  However, a TMD provider will let you know at appointment.
+
+
+== SCALP (see: )
+These two work on dandruff (dermititis ).   
+- ketoconzole 2% (new )
+- Selenium Sulfide 2 1/2 %
+Ketoconazole and selenium sulfide are both antifungal agents used to
+treat dandruff and *seborrheic dermatitis*, but they work
+differently. *Ketoconazole* directly targets the fungus causing
+dandruff, while selenium sulfide slows down skin cell turnover to
+reduce flaking.
