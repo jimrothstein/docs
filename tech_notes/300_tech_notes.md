@@ -7,6 +7,13 @@ format:
     colorlinks: true
 ---
 
+------------------------  separate
+CAUTION:  Typ ->  md conversion
+- many warnings
+------------------------  separate
+
+
+
 LLM NOTES?   go here: 320_LLM_agents_NOTES.md 
 
 # 300 Tech Notes
@@ -42,7 +49,7 @@ ALSA (bottom)
 - Audio:  May see references to older PulseAudio, but this probably PipeWire emulating the older package.  PulseAudo package is no longer on machine.
 - *wpctl* is CLI
 
-** Mar 2026
+**Mar 2026**
 
 ### Use Calibre for all files - one central place - including those currently on iPad.
 From iPad:  can upload to Drive!
@@ -52,10 +59,10 @@ To iPad:  from Drive to iPad?
 - sftp between linux & ipad?   (linux:  sudo systemctl start ssh;    then ftp localhost<CR>)
 
 
-** Feb 2026
+**Feb 2026**
 Haskell working hard on  data science; tutorials... cloud based GUI
 
-** Dec 2025 - HP boot reports amdgpu psp gfx failed, but continues
+**Dec 2025** - HP boot reports amdgpu psp gfx failed, but continues
 - Status: unresolved
 - HP 845 G8, laptop; otherwise runs fine.
 - sudo dmesg
@@ -76,11 +83,12 @@ need package for evil/folds
 - C-3 S-TAB (show outline upto level 3 - WORKS!)
 
 ### url links
-nytimes.com @ nytimes
-file:280_emacs_notes.qmd @ emacs notes
-https://www.nytimes.com @ nytimes.com
+nytimes.com @ nytimes \
+file:280_emacs_notes.qmd @ emacs notes \
+https://www.nytimes.com @ nytimes.com \
 
-** TODO
+**TODO**
+
 - use folds, to simplify navigating this document
 - no R here, no Stats
 - includes *i3*, *emacs*, *Debian*
@@ -122,7 +130,7 @@ https://www.nytimes.com @ nytimes.com
 
 <2024-09-25 Wed>
 
-** "ex" editor
+**"ex" editor**
 
 - simple, vi-like editor (see https://www.geeksforgeeks.org/ex-command-in-linux-with-examples/)
 - :a (to add text)
@@ -176,7 +184,7 @@ SEE:  000_PROJECTS.org
 
 
 
-** IMPERATIVE v DECLARATIVE
+**IMPERATIVE v DECLARATIVE**
 - math notation is DECLARATIVE; indicates meaning, not exact details
   (example1: summation sign). Tell computer what you WANT, leave details to
   compiler or program.
@@ -203,7 +211,7 @@ kernel.
 ~/.xsession-errors - Unlike cli, GUIs have no console; errors err redirected to this file
 ~/.Xauthority - is random code to control which progams output to my X11 session
 
-** {PDF, Pandoc, Latex}
+** PDF, Pandoc, Latex
 
 ### PDF Notes [ignores html, css; also ignores YAML header (pandoc & ::render()]
 ### Print raw text (example, from github, raw)

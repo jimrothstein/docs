@@ -21,9 +21,9 @@ SCALP
 
 + 0.05% AUG Betamethasone Dipropionate (liquid, scalp) - strong
 Rotate:  (see specific dirertions)
+- ketoconaole 2% (new)scalp
 
 + Selenium Sul 2.5% (shampoo)
-- ketoconaole (new)scalp
 - OTC shampos: (difference ingredients use differnt paths)
 
 
@@ -46,6 +46,8 @@ OTC
 == Changes:  
 **2026**
 - STOP Allopurinol; for gout, but I never had gout.  I did have high serum uric acid.
+
+- ADD:
 - ADD Finesteride (Dr. Miyake recommend, restart usage)
 
 - Per Dermatologist, May 2026:

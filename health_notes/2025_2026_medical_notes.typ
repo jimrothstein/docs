@@ -7,6 +7,7 @@
 
 This is finasteride.
 This is psyllium
+NEED DATE? use M-x org-timestamp
 
 /* makes bold, ie strong, appear in red, using asterisks or formal #strong[text]  */
 #show strong: set text(red)
@@ -20,6 +21,7 @@ This is psyllium
 
 
 === Chron
+
 
 Nov 10, 2025
 
@@ -447,3 +449,16 @@ treat dandruff and *seborrheic dermatitis*, but they work
 differently. *Ketoconazole* directly targets the fungus causing
 dandruff, while selenium sulfide slows down skin cell turnover to
 reduce flaking.
+
+== MRI, Lost paper work <2026-07-10 Fri>
+- Originally placed in Feb'26 and again May 4 '26,  Ore Imaging **still** does not have.
+- Yesterday, July 9 (or 8th) called, and they want to place a new, 3rd ONE !!
+- What happened to first 2?   Eventually, Regional understands there a problem and will send to ....?
+- Yesterday, "Ashley" calls, needs ins info.
+- Ashley, Lane, "Kaiser Personal Health Care Team" to sort out issues that require pre-approval. 541-225-3410
+- Today, call to Ashley.  I asked to understand the process.  Apprently, doctor never ordered in Feb (really?) and the one from May has been "sitting" in my chart.
+  Ashley said aware of this kind of problem.   Patient is supposed to be  **advocate** and contact them when things do not happen.
+- She became annoyed as I probed into details, "After the doctor pushes the button, where does it go?"
+- Ashley did not know what "medicare" I am assigned to? Explained the CCO idea (trillium) and that I don't belong to anyone's medicare.  I do not want to be enrolled in Kaiser Advantage program.
+- Seems she know has info she needs for "prior-authorization".  Next Trillium will approve or deny.  Call her back by next Tuesday or Wednesay. This is 1st time with this medicare and Trillium.
+- EXHAUSTING.
