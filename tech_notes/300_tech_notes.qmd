@@ -2,23 +2,24 @@
 title: "300_tech_notes.md"
 format:
   pdf:
-    toc: true
-    number-sections: true
-    colorlinks: true
+    toc: false
+    number-sections: false
 ---
 
-------------------------  separate
+<!--
+
 CAUTION:  Typ ->  md conversion
 - many warnings
-------------------------  separate
 
+To use typst engine (no option to use typst engine, to render to html, ONLY pdf)
+quarto render <file.qmd> --to typst
 
+To use pdf engine  
+quarto render <file.qmd> --to pdf 
+
+-->
 
 LLM NOTES?   go here: 320_LLM_agents_NOTES.md 
-
-# 300 Tech Notes
-typst file
-
 
 ## Jul 2026
 - Change from *.typ file to *.md;  why? it simple text and md easier
@@ -26,12 +27,9 @@ typst file
 
 ### sudo apt    
 sudo apt autoremove  # a dependency no longer needed
-
 sudo apt-mark        # pkgs settings, such as being held
-
 sudo apt install  --fix-broken <pkg>
 sudo apt install  --fix-missing
-
 
 ## linux cli
 df -h # free space on system
@@ -227,7 +225,7 @@ Note: zathura uses library, open source `popler`.
 
 NOTE: Missing latex .sty ?  
 - With .tex file, run (in R) tinytex:latemk(*.tex) to install
-- OR, use tlmgr install <font>
+- OR, use tlmgr install font
 - fonts installed? fc-list : family
 - also luaotfload (loads fonts)
 - ENGINE=software (such as **luatex**, tex, pdftex) 
@@ -427,6 +425,23 @@ things and there are some groups you don't want to capture.
 
 ### LINUX / DEBIAN   
 
+#### lightdm/login
+- *gnome-control-center* is cli to manage linux, X11, ..(even with cinnamon/lightdm)
+- xfce4-session-*    # (may need to poke around)
+
+- autologin, if using lightdm, as root edit /etc/lightdm/lightdm.confg
+  - in [seat:*], uncomment user and timeout line; set user to "jim" (no spaces around =)
+- mount usb: sudo mount /dev/sdb /media/usb_drive (RHS must EXIST)
+
+- When logging, using a *getty*, which looks (default)
+- /etc/profile
+- ~/.profile
+
+#### Xsession
+- look /etc/X11/Xsession and .../Xsession.d
+- too much - don't understand; confused
+
+
 RESCUE MODE, How to get to cli prompt?
 - Use Debian installer, rescue mode
 - eventually will get prompt (a lot of screens to go through)
@@ -435,13 +450,6 @@ DEBIAN iso:   should not need dd command; just cd to USB
 
 
 - Debian: shutdown when sytem hangs? CTRL-ALT-DEL or ALT-printScreen
-
-- *gnome-control-center* is cli to manage linux, X11, ..(even with cinnamon/lightdm)
-- xfce4-session-*    # (may need to poke around)
-
-- autologin, if using lightdm, as root edit /etc/lightdm/lightdm.confg
-  - in [seat:*], uncomment user and timeout line; set user to "jim" (no spaces around =)
-- mount usb: sudo mount /dev/sdb /media/usb_drive (RHS must EXIST)
 
 versions:
 - Debian stable
@@ -495,7 +503,20 @@ MBR long gone, IGNORE
 (hd0,2) means drive hd0, partition 2
 
 
-*** SETUP/CONFIG new HP Elitebook machine 
+## CAPSLOCK
+
+### setxkbmap
+put in:
+- ~/.profile (for login)
+- ~/.xinitrc (2/26 - setxkbmap is here)
+- other locations, but get help
+
+### Xmodmap (older, easier ?)
+- SEE Xahlee.info/Xmodmap
+- ALSO modmap -pke # useful commands
+
+
+### SETUP/CONFIG new HP Elitebook machine 
    <2024-10-10 Thu> HP Elitebook but with pure Debian/Cinnamon & i3
 
    *CAPSLOCK ESCAPE*; many easy ways => confusion!
@@ -514,6 +535,24 @@ MBR long gone, IGNORE
      - Cinnamen: hardward/keyboard/layout/options choice to set CAPSLOCK to ESC (works, but with i3 too?)
    - websites: Google 1st, then Firefox (rest should follow)
    - *keep* sh files, links, config files up-to-date AND in dotfiles/backup!
+   
+### Chromebox
+
+PURPOSE: **maps ChromeBox "capslock" key to Escape.**
+ - use > xev to find that capslock is key 133.
+ - xmodmap is older, but simpler to change key action to change key
+action.
+ - newer is **setxkbmap** but I find more effort to figure out simple things.
+ - SEE tech_notes
+ - lots of ways to do this remap. This works, stay with it: 
+
+### Lenovo
+xmodmap -e "keycode 133 = Escape"
+Lenovo: capslock keycode = 66, and escape is 9. However, capslock still insisting on going in caps lock (UPPER CASE)
+setkbmap seems to suggest using caps:swapescape and not caps:escape, but xmodmap won't accept.
+
+
+### Partitions
 
 Drive is NOT 512G 
 NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
@@ -557,24 +596,6 @@ sudo mkfs.exfat /dev/sda
 mount /dev/sda /media/a_mt_point
 (a_mt_point must already exist)
 
-*** remap capslock to escape
-
-{
-# PURPOSE: **maps ChromeBox "capslock" key to Escape.**
-# - use > xev to find that capslock is key 133.
-# - xmodmap is older, but simpler to change key action to change key
-action.
-# - newer is **setxkbmap** but I find more effort to figure out simple things.
-# - SEE tech_notes
-# - lots of ways to do this remap. This works, stay with it: 
-#
-DEPRECTED:
-
-xmodmap -e "keycode 133 = Escape"
-Lenovo: capslock keycode = 66, and escape is 9. However, capslock still insisting on going in caps lock (UPPER CASE)
-setkbmap seems to suggest using caps:swapescape and not caps:escape, but xmodmap won't accept.
-
-}
 
 ** cron job, crontab
 

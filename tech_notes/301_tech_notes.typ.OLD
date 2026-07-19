@@ -1,7 +1,11 @@
-/*  *** In process using LLM to create llm-wiki **   */
+
+====  STOP ===
+USE: 300_tech_notes.md
+
+This file (301_tech_notes.typ.OLD) is *OLD* 
+===== STOP ====
 
 LLM NOTES?   go here: 320_LLM_agents_NOTES.md 
-
 # 300 Tech Notes
 typst file
 
@@ -14,7 +18,6 @@ typst file
 sudo apt autoremove  # a dependency no longer needed
 
 sudo apt-mark        # pkgs settings, such as being held
-
 sudo apt install  --fix-broken <pkg>
 sudo apt install  --fix-missing
 
@@ -550,7 +553,8 @@ sudo mkfs.exfat /dev/sda
 mount /dev/sda /media/a_mt_point
 (a_mt_point must already exist)
 
-*** remap capslock to escape
+
+### remap capslock to escape
 
 {
 # PURPOSE: **maps ChromeBox "capslock" key to Escape.**
