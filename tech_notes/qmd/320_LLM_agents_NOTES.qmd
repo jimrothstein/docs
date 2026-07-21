@@ -75,6 +75,8 @@ https://cameronrwolfe.substack.com/p/agentic-rl
 * Kaggle: ** guide https://www.kaggle.com/learn/intro-to-machine-learning, 
 https://www.kaggle.com/code/dansbecker/how-models-work
 * Karpathy https://www.youtube.com/watch?v=VMj-3S1tku0&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=1
+* Karpathy Playlists https://www.youtube.com/playlist?list=PLAqhIrjkxbuW9U8-vZ_s_cjKPT_FqRStI 
+
 * Rebecca Carter, very clear:  tidymodel intro (https://rebeccabarter.com/blog/2020-03-25_machine_learning#what-is-tidymodels)
 
 

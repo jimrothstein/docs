@@ -4,7 +4,11 @@
 
 - render:  typst watch|compile <file.typ>
 - 1st debug:  online editor  typst.app  
-- 
+ 
+
+to use typst format (works great) with *.qmd:
+- quarto render *.qmd --to typst
+This renders to pdf, using the typst format in _quarto.yml, or in document header
 
 */
 
@@ -14,6 +18,8 @@
   font: "New Computer Modern",
   size: 10pt
 )
+
+PURPOSE:  basic typst syntax
 
 = Goal:  Organized, simple examples
 
