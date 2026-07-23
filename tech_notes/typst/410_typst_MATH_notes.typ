@@ -727,10 +727,17 @@ $
 
 $A v = 0$ where neither $A$ nor $v$ is zero.
 
-- A is *singular*: $det(A) = 0$, i.e. non-invertible.
+- A is *singular*: $det(A) = 0$, i.e. non-invertible, and there are non-trival solutions for $v$.
 - $v$ lies in the **nullspace** (kernel) of $A$.
 - This is a **zero divisor** in the ring of matrices: matrix rings are *not* integral domains because they have non-trivial zero divisors.
 - An *integral domain* is a ring where `$ab = 0$` implies $a = 0$ or $b = 0$ — matrix rings violate this.
+
+
+== Eigenvalue
+$
+Ax = lx
+$
+has non-trival solutions if det (A-lambdaI) is singular (= 0)
 
  title List available models
 from google.colab import ai

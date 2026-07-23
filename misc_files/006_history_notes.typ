@@ -180,14 +180,41 @@ Scopes - Though Bryan initially won in court, the decision was actually overturn
 - #strong[\J. Howard Pew] (Sun Oil) capitalism and religion do NOT conflict. Use of religion in conservatism. Prior mostly just rich, anti-New Deal, or ideology (Ann Ryan, a few university profs). Pew wants return to fundamentalism. Opposes Niebuhr and liberal Christian ideology.
 
 == US Depression
-- fall 1932 many thought Dep ending; Dow is up; no Bank runs
-- Why Hoover lost?   PROHIBITION, FDR against, Hoover would not call for repeal
-- House:  315 D - 117 R
-- Senate: 59 D - 47 R
-- vote:  57% FDR - 40% Hoover
-- BUT ... late fall Dow falls 
+- Coolidge and prior Prez would never think to touch/interfere with markets
+- Mar 1929, Hoover is inaugerated
+  Is aware of many speculators and many mergers.  Knows Germany can not make payments.
+- Big Banks: Bank of Morgan (private, bus loans), Citbank (retail, middle class "sunshine" Mitchell, stocks always will go up), Chase (Rockefeller)
+- Fed had tried to increase interest rates (to cut speculation), but Big Banks oppose. Despise gov't interference.
+- Sept 15 - Oct 15, Dow -7%
+- Oct 19, 1929 (1/2 day Saturday trading) - Dow -8% for week.
+- Oct 23, W, panic selling Dow -7% for day.
+- Oct 24, R, Big Banks form $250MM pool, spend $100MM to buy stocks
+- Oct 25, F calmer
+- Oct 26, S calmer
+- **Oct 28, 1929 M** panic, Dow -13% for day.
+- **Oct 29, 1929 T** Dow -11.7% for day.
+- All of 1929, Dow -17%
+- 1930, Dow -30%
+- 1931, stocks about 1/2 value, Dep gets deeper and deeper, just no demand.
+  6/20/31 - one idea, close banks for 1 year.
+  9/12/31 - UK off gold.
+  10/4/31 - Hoover tells Big Banks: stop foreclosures, aid weaker banks, OR ... I go to Congress
+- 1932:  too little, too late
+  Dawes: Reconstruction Finance Corp (credit to business)
+  Some civil work projects, too little.
+  Cut capital gains tax
+  Congress & Mellon hated RFC; Wright Patman (TX) is foe of Mellon
+  Hoover talks, has ideas - but does not follow through
+  Stegal talks of gov't backed retail savings bank (way to far for capitalist to accept)
+- fall 1932
+  many thought Dep ending; Dow is up in summer; no Bank runs
+  Why Hoover lost?   PROHIBITION, FDR against, Hoover would not call for repeal
+  House:  315 D - 117 R
+  Senate: 59 D - 47 R
+  vote:  57% FDR - 40% Hoover
+- BUT ... late fall Dow falls again
 - Now real FEAR, no asset safe, put money in matrice,  Gold leaving US
-- 1933:
+- **1933**:
 - Senate Banking Committee (chair Norbeck) not held any hearings on crash; now, hoping to tag Dems with problem (??) Norbeck decides need to hold hearings.
 - No good lawyer will take this role for Banking Committee and the pay is very low.
 - Ferdinand Pecora, NYC DA office, Italian, no fancy education, discrimination..... but is good at cross-examination
