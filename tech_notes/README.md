@@ -1,6 +1,7 @@
 ---
 name:  README.md
-description:  Render *.qmd, *.typ
+description:  Render *.qmd, *.typplast ud
+last update:  7/23/2026
 ---
 
 ## Where is my file?
@@ -27,5 +28,12 @@ quarto render *.qmd --to html
 - typst engine does not support html
 - 
 
-## How to rneder *.typ to pdf or html?
+## How to render *.typ to pdf or html?
 - At present use cli **typst**
+
+
+## How to convert *.typ to markdown?
+```
+pandoc file.typ -t markdown -o file.md 
+```
+- PROBLEM:  often much cleanup; worse lingering typt command (in the file.md) may badly trip quarto render.
