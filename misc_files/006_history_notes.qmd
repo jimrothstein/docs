@@ -11,12 +11,11 @@ format:
 ---
 
 <!--
-This document began as *.qmd;
-With appropriate quarto heading for typst format and save *.typ, I recovered a converted *.typ file.
-Most was junk and deleted.
-This is remainder.
+QUARTO *.md file
 
-To render:      quarto render 006_.....qmd  saves typ file
+Needs cleanup
+
+To render:      quarto render <file.qmd> --to typst
 
 -->
 
@@ -218,8 +217,9 @@ Scopes - Though Bryan initially won in court, the decision was actually overturn
 - Now real FEAR, no asset safe, put money in matrice,  Gold leaving US
 - **1933**:
 - Senate Banking Committee (chair Norbeck) not held any hearings on crash; now, hoping to tag Dems with problem (??) Norbeck decides need to hold hearings.
+- first choice: Judge Samuel Seabury, investigated **Tammany Hall** & corrupt **Mayor Walker** (resigns); will recommend Pecora
 - No good lawyer will take this role for Banking Committee and the pay is very low.
-- Ferdinand Pecora, NYC DA office, Italian, no fancy education, discrimination..... but is good at cross-examination
+- Ferdinand Pecora, NYC DA office, Italian, began poverty,  no fancy education, discrimination..... but is good at cross-examination
 - Feb 21, 1933 Citibank boss, Mitchell, testifies but "forgot" to bring the subpeona'd documents
 - Led by Pecora, begin a sequence of hearings that change public opinion.  Bankers are not upright pillars of business;  newspapers and public follow events. 
 - Citibank gave loans to executives to buy its stock (so, no one paid
@@ -242,9 +242,14 @@ Scopes - Though Bryan initially won in court, the decision was actually overturn
 - Woodin is Treasury Secy (FDR wanted GLASS, who has health issues,
   but GLASS wants 'sound money' (gold, no devalue, no inflation
   policy) - FDR can not guarantee
+  **Glass** : arrogant, aristocratic, but is banking expert. Had suggested separate commercial/investment banking and will allow some branch banking.
+- **FDR** dislikes:  
+  (1) Huey Long, 39, freshman senator; opposes branch banking; always eager for fight? Says Glass in pocket of Morgan Bank. Ties up Glass bill with assorted antics.
+  (2) MacArthur
 
-- 
+- **Agnes Meyer**, wife of wealty Fed reserve Chair (1930-33), chronicles inept Senate, husband 1933 buys Washington Post; daughter=**Katherine Graham** Advocates many good causes (https://en.wikipedia.org/wiki/Agnes_E._Meyer).
 
+- **Anaconda Copper**
 
 
   #strong[Billy Graham] (1955)
