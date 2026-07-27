@@ -72,8 +72,10 @@ https://cameronrwolfe.substack.com/p/agentic-rl
 * Peng tidyverse 2021 Ch5 models
 * LEARNING: SmolML (uses Karpathy) from scratch in python, no pytorch :  https://github.com/rodmarkun/SmolML?tab=readme-ov-file :read:
 * Geeks4Geeks : many tutorials https://www.geeksforgeeks.org/machine-learning/machine-learning/
+
 * Kaggle: ** guide https://www.kaggle.com/learn/intro-to-machine-learning, 
 https://www.kaggle.com/code/dansbecker/how-models-work
+
 * Karpathy https://www.youtube.com/watch?v=VMj-3S1tku0&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=1
 * Karpathy Playlists https://www.youtube.com/playlist?list=PLAqhIrjkxbuW9U8-vZ_s_cjKPT_FqRStI 
 

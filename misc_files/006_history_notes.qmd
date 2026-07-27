@@ -1,24 +1,26 @@
-/*  This document began as *.qmd;   With appropriate quarto heading for typst format and save *.typ, I recovered a converted *.typ file.
-Most was junk and deleted.
-This is remainder.
-
-quarto render 006_.....qmd  saves typ file
 ---
 title: 006_history_notes.qmd 
 format:
   typst:
     papersize: "us-letter" 
     fontsize: 8pt
-    margin:
-      x: .3cm
-      y: .3cm
     columns: 1
-    keep-typ: true
+    margin:
+      x: 0.5cm
+    keep-typ: false
 ---
 
-*/
+<!--
+This document began as *.qmd;
+With appropriate quarto heading for typst format and save *.typ, I recovered a converted *.typ file.
+Most was junk and deleted.
+This is remainder.
 
-== Vocabulary
+To render:      quarto render 006_.....qmd  saves typ file
+
+-->
+
+## Vocabulary
 -kleptocracy government with rampant greed and corruption.
 -plutotcracy government by the wealthiest
 -kakistocracy government dangerously incompetatent
@@ -32,7 +34,7 @@ format:
 
 Germany #link("www.nytimes.com")[failing nytimes.com]
 
-== Russia
+##  Russia
 <russia>
 - Mongol vs Turkic vs Tatar?
 
@@ -80,7 +82,7 @@ Great Terror - show-trials, Bukharin, Lev Kamenev, Zinoviev, Alexi Rykov, but Pa
 - 15-19th Both France and Russia have claims `spiritual` and protector ties to Holy land. Monks, some also not so pious, do all the work in Holy Land.
 - 1852 SPARK. Unruly pilgrims, not so pious… Nicholas I extends protection. Napolean III (?) seeking support of Fr Catholics also steps in; French warships to Holy Land. Now UK is nervous.
 
-== English Civil War
+### English Civil War
 <english-civil-war>
 - Gentry, landed Gentry: upper class, but not nobles or church, inherited land, able to live by collecting rent. Some actually wealthier than nobles.
   James I (1st Stuart) 1649 - Charles I beheaded (impeached) (blamed for allowing uprisings rebellions) Cromwell (gifted solider, gifted govenor; established republic, defeated royalism; restored stability in 1650s, statesman; - 1658) 1684 - James II (Catholic) succeeds brother Charles II. 1689 - William III (from Netherlands) removes James II . #strong[Glorious Revolution] was actual neither. Replaced one king with another - EXCEPT King no longer sovereign but #strong[constitutional monarch] meaning beholden to English people(really?) and not elected by GOD. #strong[Whig] triumph (ie aristocrats, oppose Catholic rule)

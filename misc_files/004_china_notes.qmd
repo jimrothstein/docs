@@ -5,13 +5,12 @@ format:
     keep-typ: true
 ---
 
-STOP:    use  004_china_notes.typ   STOP
-
-
-
 ```
-## THIS is QUARTO file:  
-## Convert to *.typ?   Render: quarto render 004_china_notes.qmd   retrieve *.typ file
+## THIS is now QUARTO file:    NEEDS CLEANUP
+## It began as *.typ file.  Conversion to *.md is not easy.
+
+## USEAGE: quarto render <file.qmd> --to typst.   
+## "typst" here means typst engine.  This renders ONLY to pdf.
 
 Last Update:
 08MAY2025

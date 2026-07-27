@@ -1,5 +1,6 @@
 // ubses noteworthy !
 #import "@preview/noteworthy:0.2.0": *
+#import "@preview/physica:0.9.8": *
 
 /*   410_typst_MATH_notes.typ
 
@@ -725,19 +726,38 @@ A = mat(1,-1; 2,-2),\
 v = vec(1,1)
 $
 
+=== non-trival solutions to homogenous equations
 $A v = 0$ where neither $A$ nor $v$ is zero.
 
 - A is *singular*: $det(A) = 0$, i.e. non-invertible, and there are non-trival solutions for $v$.
-- $v$ lies in the **nullspace** (kernel) of $A$.
-- This is a **zero divisor** in the ring of matrices: matrix rings are *not* integral domains because they have non-trivial zero divisors.
+- $v$ lies in the *nullspace* (kernel) of $A$.
+- This is a *zero divisor* in the ring of matrices: matrix rings are *not* integral domains because they have non-trivial zero divisors.
 - An *integral domain* is a ring where `$ab = 0$` implies $a = 0$ or $b = 0$ — matrix rings violate this.
 
 
+Example, where neither A nor x are 0, but product is:
+$ A x = 0 $
+
+$mat(2 2; 4 4)$ has det = 0, (linear dependent columns & columns)
+then 
+
+$vec(x_1, x_2) = c vec(1, -1)$
+Neither A nor x are zero, but product is.
+
 == Eigenvalue
-$
-Ax = lx
-$
-has non-trival solutions if det (A-lambdaI) is singular (= 0)
+$ A zeta = lambda zeta  $
+
+has non-trival solutions if singular, require it
+$matrixdet(A - lambda I) = 0 $
+
+Let
+$A = P D P^-1$
+where columns of P are eigenvectors and if D exists
+
+Find $D = y^T P^T A P y$
+
+
+== Google Colab
 
  title List available models
 from google.colab import ai
@@ -757,6 +777,7 @@ Here is a clear and concise explanation of an integral domain in abstract algebr
 You can save the code below with a `.typ` extension (e.g., `integral_domain.typ`) and compile it using the Typst compiler.
 
 ```typ
+
 #set page(paper: "a4", margin: (x: 2cm, y: 2.5cm))
 #set text(font: "Liberation Serif", size: 11pt)
 #set par(justify: true)
@@ -812,11 +833,13 @@ To understand integral domains, it helps to see a ring that is *not* one. Consid
 In $ZZ_6$, arithmetic is performed modulo 6 (you divide by 6 and take the remainder).
 Look at the elements $2$ and $3$. Neither of them is zero ($2 != 0$ and $3 != 0$). However, if we multiply them:
 
-$ 2 * 3 = 6 equiv 0 quad (mod 6) $
+$
+2 * 3 = 6 equiv 0 quad (mod 6)
+$
 
-Because $2 * 3 = 0$ in this ring, $2$ and $3$ are called *zero divisors*. 
+Because $2*3 = 0$ in this ring, $2$ and $3$ are called *zero divisors*. 
 
-Since $ZZ_6$ contains zero divisors, **$ZZ_6$ is not an integral domain.**
+Since $ZZ_6$ contains zero divisors, *$ZZ_6$ is not an integral domain.*
 
 == Summary of Common Integral Domains
 
@@ -828,7 +851,10 @@ Since $ZZ_6$ contains zero divisors, **$ZZ_6$ is not an integral domain.**
 ```
 
 === Features of this Typst markup:
-- It uses standard Typst math notation (e.g., `$a * b = b * a$`).
+
+- It uses standard Typst math notation eg
+
+a*b = b*a
+
 - It structures the explanation with headings (`==`).
 - It includes a highlighted "Key Takeaway" box using Typst's `#block` function for visual clarity.
-- It provides both a positive example `($\mathbb{Z}$)` and a negative example `($\mathbb{Z}_6$)` to make the concept easy to digest.
