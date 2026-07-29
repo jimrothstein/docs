@@ -1,24 +1,48 @@
+---
+title: 2025-26 Medical Notes
+date: last-modified
+format: typst
+---
 
+<!-- proper way to embed typst, but run using quarto -->
 
+```{=typst}
 #show "finasteride": smallcaps
 #show "psyllium": set text(blue)
 #show "colonoscopy": set text(red)
 #show "statin": set text(red)
+#show strong: set text(red)
+```
 
 This is finasteride.
 This is psyllium
 NEED DATE? use M-x org-timestamp
-
-/* makes bold, ie strong, appear in red, using asterisks or formal #strong[text]  */
-#show strong: set text(red)
 
 === *prior*, see medical_notes.qmd,   continue here:
 
 
 === General Health Notes
 - claim: daily, 2 min out-of-breath, can't talk.... ie brief, vigorous  + reg exercise ... great for metabolism
-- 
+ 
+DAILY SUGAR, PROTEIN
+- ** < 36g/day for ADDED sugar** 
+- no limit for natural sugar (fruits, not fruit juices) foods, dairy as part of a BALANCED DIET
+- AFTER Exercise RECOVERY?
+  Chocolate Milk is good balance of sugar/carbs/protein
+  <30 min: Generally milk + glucose (fruit, honey, all ok)
 
+DAILY PROTEIN
+- 0.8g/kg,
+- 50g protein for 150 lb person
+
+
+CAREFUL
+- (**24g added sugar**, 170 cal, 4g protein) individual serving of chocolate yoguart!
+
+
+Suntan, UV, DRY SKIN
+- mineral suntan (>30) environmentally better
+- vasaline: NOT sun protective; used  to seal in moisture, NOT 
 
 === Chron
 
@@ -148,9 +172,6 @@ Thursday 8 Jan 2026  - *STOOL*
   people?)
 
 
-
-#pagebreak()
-
 For January 22, 2026
 Wellness Check
 
@@ -204,6 +225,12 @@ Seek:  Reduce mental health medication?
 
 Medicare Wellness: https://www.medicare.gov/coverage/yearly-wellness-visits#coverage-content-details
 Medicare Prevention: https://www.medicare.gov/coverage/preventive-screening-services 
+
+7/16/2026 Wellness update:
+per Tory (Kaiser membership/esclation, 770-291-6939 direct) 
+"Kaiser does not accept original medicare" must find provider who does.
+Confusion re:  Wellness Check; Same or similar name means different things. Confusing!
+Not sure what to do.
 
 
 == Jan 22, 2026
@@ -344,11 +371,15 @@ Dr. Z is something else.
 - 2 weeks ago, x-ray from shoulder.  I ask *STILL* asking what xray said.  She talks about physical therapy.
 - statin?  I feel left in the hanging. Why won't she do what she says?  Explain this thinking.
 
+```{=typst}
 #pagebreak
+```
 
+```{=typst}
 #import "@preview/cheq:0.3.0": checklist
 #show: checklist
 #show: checklist.with(extras: true)
+```
 
 2026-05-04 Dr. Z - appt
 Status as I see it:
@@ -398,6 +429,7 @@ Issue:  (1) Why no repeat LDL, Cholestorol (2) Statin:  Criteria and expectation
 Portugese supposed to be best.
 Morocco is processing center.
 
+- surprise:  Jewish sardines (in water, or olive oil) are pretty good at good price!
 But asia is different; Europe still better
 
 - King Oscar MUCH too much oil - do not buy.
@@ -418,6 +450,14 @@ June 12, 2026 - Dr. Miyake
 - Ox 49
 - Urine test I took (492 mg), is much more senstive than usually Protein/Creatinine ratio.   492 is low.  Becomes issues at 2,000-3000.
 
+
+March 2026, - fall, pushed to ground
+-xray - see OLDER problems, not current one.
+-"bone" trauma?   Located where broke it <2000, lower back, pelvis, very localized.
+- initially extreme pain with any movement
+- wear a tight wrap every day to July 27, 2026.
+- Now, not perfect but can walk, exercise, carry heavy items, rollover easily. END 
+
 July 7, 2026 - Sleep Apnea
 - CPAP - device at constant air pressure
 - APAP - device at variable air pressure (it auto adjusts)
@@ -426,11 +466,45 @@ COMPARE:
 
 https://www.perplexity.ai/search/compare-effectiveness-of-apap-3NO8dh32RNSYXaFG5OsrbQ
 
+
+<!-- from @perplexity, use block, followed by specific text rules for the  block -->
+
+```{=typst}
+#block(inset: (left: 1em))[
+#text(size: 8pt)[
 ORAL DEVICE:
-Yes, it will treat the sleep apnea, address snoring, consolidate the sleep, and reduce need for nocturnal enuresis.  A referral has been placed with the TMD Clinic; they will contact you to schedule an appointment.
-- I was AHI of 25 and now effectively 0 after one month of using my Somnomed Avant ($2250 AUD), fitted by specialist dentist.
+
+Yes, it will treat the sleep apnea, address snoring, consolidate the sleep, and reduce need for nocturnal enuresis. A referral has been placed with the TMD Clinic; they will contact you to schedule an appointment.
+- I was AHI of 25 and now effectively 0 after one month of using my Somnomed Avant (\$2250 AUD), fitted by specialist dentist.
 - SomnoDent Flex before and it was the most comfortable device I owned but it broke twice
 - Mandibular Adjustment Device (aka Oral Appliance)
+
+An oral device for sleep apnea can help breathing, but it can also change how your teeth fit together and may aggravate jaw or tooth symptoms in some people. If your teeth are already loose or you grind them, you should have the device fit and monitored by a dentist experienced in sleep apnea treatment. #link("https://my.clevelandclinic.org/health/treatments/21129-oral-appliance-therapy-for-sleep-apnea")[my.clevelandclinic]
+
+*What can happen*
+
+- Short-term: jaw soreness, tooth discomfort, dry mouth, and TMJ irritation are common early on. #link("https://my.clevelandclinic.org/health/treatments/21129-oral-appliance-therapy-for-sleep-apnea")[my.clevelandclinic]
+- Longer-term: bite changes and tooth movement can happen over time; loose teeth are reported as a possible side effect in some patients. #link("https://my.clevelandclinic.org/health/treatments/21129-oral-appliance-therapy-for-sleep-apnea")[my.clevelandclinic]
+- If you grind your teeth, an oral appliance may wear out faster or become uncomfortable, so follow-up is important. #link("https://www.sleepapnea.org/treatment/oral-appliance-for-sleep-apnea/")[sleepapnea]
+
+*Loose or grinding teeth*
+
+If teeth are already loose, the appliance may put extra stress on them because it anchors to the teeth and holds the jaw forward. That does not automatically mean you cannot use one, but it does mean your dentist should evaluate tooth stability, gum support, and whether another sleep-apnea treatment is safer. #link("https://my.clevelandclinic.org/health/treatments/21129-oral-appliance-therapy-for-sleep-apnea")[my.clevelandclinic]
+
+*What to do*
+
+1. Tell your sleep dentist or dentist about the loose teeth and grinding before getting fitted.
+2. Ask whether you need a periodontal exam or X-rays first.
+3. Use regular follow-up visits to check bite changes and tooth movement.
+4. Seek prompt care if a tooth feels looser, you get new pain, or your bite changes suddenly. #link("https://my.clevelandclinic.org/health/treatments/21129-oral-appliance-therapy-for-sleep-apnea")[my.clevelandclinic]
+
+If you want, I can also help you compare an oral appliance vs CPAP specifically for someone with loose teeth and bruxism.
+]
+]
+```
+
+
+
  
 TMD Clinic
 Kaiser Permanente Interstate Medical Office Central

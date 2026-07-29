@@ -1,22 +1,19 @@
 ---
 title: "300_tech_notes.md"
-format:
-  pdf:
-    toc: false
-    number-sections: false
+date: last-modified
 ---
 
 <!--
 
 CAUTION:  Typ ->  md conversion
 - many warnings
+- CLEANUP
 
 To use typst engine (no option to use typst engine, to render to html, ONLY pdf)
 quarto render <file.qmd> --to typst
 
 To use pdf engine  
 quarto render <file.qmd> --to pdf 
-
 -->
 
 # TOP
@@ -698,7 +695,14 @@ chmod 700 rwx --- ---
 "public" 644 rw- r-- r-- 
 "private" 600 rw- --- ---
 
-*** zsh commands in emacs (SEE: zsh_project)
+### basic linux commands
+- delete all files  EXCEPT "txt" files: \
+  find . ! -name '*.txt' -type f -exec rm -f {} +
+  grabs all non txt files, replaces{} with these files, all one line (+)
+
+
+
+### zsh commands in emacs (SEE: zsh_project)
 
 ### completion, Use zstyle
 man zshcompsys
