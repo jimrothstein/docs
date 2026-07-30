@@ -71,12 +71,12 @@ batter life, plain vanilla is just fine.
 
 ### folds
 folds: use za or (define-key evil-normal-state-map (kbd "<tab>") 'evil-toggle-fold)
-need package for evil/folds
-- za open fold
-- zc close fold
-- zr open all folds
-- zm close all folds
-- C-3 S-TAB (show outline upto level 3 - WORKS!)
+need package for evil/folds \
+- za open fold \
+- zc close fold \
+- zr open all folds 
+- zm close all folds 
+- C-3 S-TAB (show outline upto level 3 - WORKS!) 
 
 ### url links
 nytimes.com @ nytimes \
