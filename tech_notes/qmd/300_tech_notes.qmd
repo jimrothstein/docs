@@ -700,6 +700,9 @@ chmod 700 rwx --- ---
   find . ! -name '*.txt' -type f -exec rm -f {} +
   grabs all non txt files, replaces{} with these files, all one line (+)
 
+CoMMIT first!
+- find . -name '*.txt' -type f -exec rm  -i {} ;   **ask** user before removing file
+- rm *.txt -i    CAREFUL  
 
 
 ### zsh commands in emacs (SEE: zsh_project)
