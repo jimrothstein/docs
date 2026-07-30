@@ -20,12 +20,6 @@ LLM NOTES? go here: 320_LLM_agents_NOTES.md
 
 - Change from *.typ file to *.md; why? it simple text and md easier
 
-### sudo apt
-
-sudo apt autoremove \# a dependency no longer needed sudo apt-mark \#
-pkgs settings, such as being held sudo apt install –fix-broken <pkg>
-sudo apt install –fix-missing
-
 ## linux cli
 
 df -h \# free space on system
