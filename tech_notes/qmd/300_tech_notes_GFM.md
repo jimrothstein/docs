@@ -1,13 +1,11 @@
-# 300_tech_notes.md
-jim
-2026-07-29
-
 <!--
 &#10;CAUTION:  Typ ->  md conversion
 - many warnings
 - CLEANUP
 &#10;To use typst engine (no option to use typst engine, to render to html, ONLY pdf)
-quarto render <file.qmd> --to typst
+&#10;quarto render <file.qmd> --to typst
+&#10;Render to gfm: (typst blocks ignored, ie skipped)
+&#10;quarto render <file.qmd> --to gfm
 &#10;To use pdf engine  
 quarto render <file.qmd> --to pdf 
 -->
@@ -280,7 +278,7 @@ $$\pi = \directlua{tex.sprint(math.pi)}$$
 
 ### revealjs slides with Quarto
 
-\*\* GIT commands
+### GIT commands
 
 HEAD - normally points to branch (tip) but can point to commit (detached
 HEAD). **Goes where you go, like a shadow.** Commits are immutable.
@@ -309,8 +307,12 @@ HEADS can move around.
 
 - git reflog \# how HEAD jumped around
 
-- git checkout HEAD@{n} \# move back to n \*\* Install R
+- git checkout HEAD@{n} \# move back to n
 
+#### gh commands
+
+- gh repo delete jimrothstein/<repo> on github/Be sure have permissions
+- gh repo list \*\* Install R
   - on Ubuntu, or mint linux virgina, use jammy and follow
     https://cran.r-project.org/bin/linux/ubuntu/ (works)  
   - on Debian (such as LMDE) follow
@@ -718,7 +720,6 @@ https://zsh.sourceforge.io/Doc/Release/User-Contributions.html#Version-Control-I
 
 USAGE: *zstyle* <pattern>
 <style>
-
 <values> and is NOT so OBVIOUS ! if match, apply the style USAGE: zstyle
 <configure><VCS_INFO>
 <OUTPUT>
