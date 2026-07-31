@@ -10,7 +10,12 @@ CAUTION:  Typ ->  md conversion
 - CLEANUP
 
 To use typst engine (no option to use typst engine, to render to html, ONLY pdf)
+
 quarto render <file.qmd> --to typst
+
+Render to gfm: (typst blocks ignored, ie skipped)
+
+quarto render <file.qmd> --to gfm
 
 To use pdf engine  
 quarto render <file.qmd> --to pdf 
