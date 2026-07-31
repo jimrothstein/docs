@@ -23,7 +23,7 @@ quarto render <file.qmd> --to pdf
 -->
 
 # TOP
-LLM NOTES?   go here: 320_LLM_agents_NOTES.md 
+LLM NOTES?   USE: 320_LLM_agents_NOTES.md 
 
 ## Jul 2026
 - Change from *.typ file to *.md;  why? it simple text and md easier
