@@ -1,6 +1,7 @@
 ---
 title: "300_tech_notes.md"
 date: last-modified
+description: Variety of misc tech notes
 ---
 
 <!--
@@ -296,7 +297,7 @@ $$\pi = \directlua{tex.sprint(math.pi)}$$
 
 ### revealjs slides with Quarto
 
-** GIT commands   
+### GIT commands   
 
 HEAD - normally points to branch (tip) but can point to commit (detached HEAD). 
 **Goes where you go, like a shadow.** Commits are
@@ -319,6 +320,10 @@ git revert HEAD~2..HEAD # keep history, but undo last 2 commits
 
 - git reflog # how HEAD jumped around
 - git checkout HEAD@{n} # move back to n
+
+#### gh commands
+- gh repo delete jimrothstein/<repo>  on github/Be sure have permissions
+- gh repo list
 ** Install R
    - on Ubuntu, or mint linux virgina, use jammy and follow https://cran.r-project.org/bin/linux/ubuntu/ (works)   
    - on Debian (such as LMDE) follow https://cran.r-project.org/bin/linux/debian/
