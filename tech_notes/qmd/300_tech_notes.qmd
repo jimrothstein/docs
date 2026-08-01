@@ -2,7 +2,6 @@
 title: "300_tech_notes.md"
 date: last-modified
 description: Variety of misc tech notes
-format: gfm
 ---
 
 For pdf:
