@@ -5,15 +5,22 @@ last update:  7/23/2026
 ---
 
 
+## Render *.qmd to markdown (gfm)
+```
+quarto render *.qmd --to gfm
+```
 
-## How to render *.qmd to  pdf?
+
+## Render *.qmd to  pdf?
 ```
 quarto render *.qmd --to typst
 ```
 
+<details>
 - *.qmd, the preferred method is:  use quarto, .qmd file, with **format: typst**
 -  Why?  format: typst works better than using latex, lualatex engines
 - If need to use latex engines, use **format: pdf**
+</details>
 
 
 
