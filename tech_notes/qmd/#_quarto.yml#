@@ -24,6 +24,7 @@ format:
   typst:
     mainfont: "Liberation Serif"
     monofont: "Liberation Mono"
+    number-sections: true
   html:
     html-math-method: katex
     code-fold: false
@@ -46,4 +47,5 @@ format:
     margin-right: 30mm
   gfm:
     number-sections: true
+    toc: true
     
