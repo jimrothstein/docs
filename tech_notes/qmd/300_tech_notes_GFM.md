@@ -1,3 +1,8 @@
+---
+name: 300_tech_notes_GFM.md
+description:  Uses basic markdown, md.  
+---
+
 <!--
 &#10;CAUTION:  Typ ->  md conversion
 - many warnings
@@ -10,15 +15,15 @@
 quarto render <file.qmd> --to pdf 
 -->
 
-# TOP
+## TOP
 
 LLM NOTES? go here: 320_LLM_agents_NOTES.md
 
-## Jul 2026
+### Jul 2026
 
 - Change from *.typ file to *.md; why? it simple text and md easier
 
-## linux cli
+### linux cli
 
 df -h \# free space on system
 
