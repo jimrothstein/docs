@@ -2,7 +2,11 @@
 title: "300_tech_notes.md"
 date: last-modified
 description: Variety of misc tech notes
+format: gfm
 ---
+
+quarto render 300_tech_notes.md --to typst\
+quarto render 300_tech_notes.md --to gfm\
 
 <!--
 
@@ -91,14 +95,13 @@ batter life, plain vanilla is just fine.
 ### folds
 folds: use za or (define-key evil-normal-state-map (kbd "<tab>") 'evil-toggle-fold)
 need package for evil/folds \
+
 - za open fold \
 - zc close fold \
 - zr open all folds 
 - zm close all folds 
 - C-3 S-TAB (show outline upto level 3 - WORKS!) 
 
-
-- 
 ### Chron
 <2024-10-10 Thu> now Debian 12 (Cinnamon or i3); no more linux mint; LMDE ...
 <2024-08-26 Mon> 
@@ -403,10 +406,6 @@ should be handled as though literal.
 - **Character Class** Things like [0-9].  
 Rmk: [0-9]+ means repeat one or more of the prior **Character class** So both 321 and 333 match this regex.
 
-### Specific to vim/neovim
-- magic = \v no need to escape (wait till know what doing first) - well, um.
-
-- magic = `\v` no need to escape (wait till know what doing first)
 
 ### Specific to R
 - Before regex library (engine) sees code, the **compiler** (byte code?) gets
@@ -1006,11 +1005,11 @@ playlistId  =  "PLlXfTHzgMRUIqYrutsFXCOmiqKUgOgGJ5"  # Pavel Grinfeld, Linear Al
   - If I have this right, this will (1) get the access token and (2) complete REST
 request.
 
-** Pandoc
-PANDOC:
+### Pandoc
+
 !pandoc --metadata=project:xxx --lua-filter doc/panvimdoc/scripts/skip-blocks.lua --lua-filter doc/panvimdoc/scripts/include-files.lua -t doc/panvimdoc/scripts/panvimdoc.lua % -o doc/jimHelp.txt
 
-** MORE CURL
+### MORE CURL
 CURL Examples:
 
 cURL write (to standard)
@@ -1047,7 +1046,6 @@ Misc Notes:
 "State" - cookies used to be used; now state carried in headers  
 vim:nospell
 
-** ANDROID
 
 ### Android, Mobile, Cell Phone - notes
 
