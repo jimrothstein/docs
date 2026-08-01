@@ -1,7 +1,6 @@
----
-name: 300_tech_notes_GFM.md
-description:  Uses basic markdown, md.  
----
+# 300_tech_notes.md
+jim
+2026-07-31
 
 <!--
 &#10;CAUTION:  Typ ->  md conversion
@@ -17,17 +16,22 @@ quarto render <file.qmd> --to pdf
 
 ## TOP
 
-LLM NOTES? go here: 320_LLM_agents_NOTES.md
+LLM NOTES? USE: 320_LLM_agents_NOTES.md
 
 ### Jul 2026
 
 - Change from *.typ file to *.md; why? it simple text and md easier
 
+### url links
+
+nytimes.com @ nytimes  
+file:280_emacs_notes.qmd @ emacs notes  
+https://www.nytimes.com @ nytimes.com  
+
 ### linux cli
 
-df -h \# free space on system
-
-journalctl -b -1 \# show system messages from prior boot
+- df -h \# free space on system
+- journalctl -b -1 \# show system messages from prior boot
 
 ### Audio
 
@@ -54,9 +58,13 @@ sudo systemctl start ssh; then ftp localhost<CR>)
 **Feb 2026** Haskell working hard on data science; tutorials… cloud
 based GUI
 
-**Dec 2025** - HP boot reports amdgpu psp gfx failed, but continues -
-Status: unresolved - HP 845 G8, laptop; otherwise runs fine. - sudo
-dmesg - sudo journalctr -b - secureddisplay? LOAD_TA(0x1)
+**Dec 2025** - HP boot reports amdgpu psp gfx failed, but continues
+
+- Status: unresolved
+- HP 845 G8, laptop; otherwise runs fine.
+- sudo dmesg
+- sudo journalctr -b
+- secureddisplay? LOAD_TA(0x1)
 
 ### Hardware
 
@@ -72,25 +80,9 @@ folds: use za or (define-key evil-normal-state-map (kbd “<tab>”)
 - zr open all folds - zm close all folds - C-3 S-TAB (show outline upto
 level 3 - WORKS!)
 
-### url links
+- ### Chron
 
-nytimes.com @ nytimes  
-file:280_emacs_notes.qmd @ emacs notes  
-https://www.nytimes.com @ nytimes.com  
-
-**TODO**
-
-- use folds, to simplify navigating this document
-
-- no R here, no Stats
-
-- includes *i3*, *emacs*, *Debian*
-
-- HTTR2 notes = mess
-
-- Break this document into separate files, merge into one big one?
-
-- \<2024-10-10 Thu\> now Debian 12 (Cinnamon or i3); no more linux mint;
+  \<2024-10-10 Thu\> now Debian 12 (Cinnamon or i3); no more linux mint;
   LMDE … \<2024-08-26 Mon\>
 
 - do not use emacs as “DESKTOP” - everything, windows on the screen at
@@ -210,13 +202,6 @@ functional now in Linux kernel.
 
 \*\* PDF, Pandoc, Latex
 
-### PDF Notes \[ignores html, css; also ignores YAML header (pandoc & ::render()\]
-
-### Print raw text (example, from github, raw)
-
-*Quarto* saveas qmd, add yaml header, enclose all text in \`\`\`
-(verbatim); render inside rstudio.
-
 2023-12-30 - tlmgr controls much latex install: fonts, \*.sty, - for
 PDF: pdf2latex, pdflatex (pandoc will do it, but complain) - in R,
 tinytex::latexmk()
@@ -329,16 +314,7 @@ HEADS can move around.
 \*\* REGEX - TODO import (?) all REGEX/\* files to here
 
 - for regex reading see 300_tech_reading.md
-
-# ———————–
-
-## DOCUMENT REGEX HERE
-
-## (text, no examples in this file)
-
-# ———————–
-
-/home/jim/code/docs/tech_notes/REGEX.md
+- /home/jim/code/docs/tech_notes/REGEX.md
 
 2024-04-30 - Use a cheat sheet - Reduce paper - Annotate (here, or in 2
 files) ONLY when needs
@@ -633,14 +609,13 @@ kernels? X? - Kernel Upgrade - See INDEX C.
 
 <!-- begin ZSH -->
 
-\*\* ZSH notes
+## ZSH notes
 
-*ZSH* ZSH REF CARD: (start)
-https://www.bash2zsh.com/zsh_refcard/refcard.pdf SEE MANUAL:
-https://zsh.sourceforge.io/Doc/Release/ SEE ZSH GUIDE (2003, Stephenson)
-https://zsh.sourceforge.io/Guide/zshguide.html ZSH FAQ (2010)
-https://zsh.sourceforge.io/FAQ/ ZSH REF: Lots of simple GLOB examples
-here:
+ZSH REF CARD: (start) https://www.bash2zsh.com/zsh_refcard/refcard.pdf
+SEE MANUAL: https://zsh.sourceforge.io/Doc/Release/ SEE ZSH GUIDE (2003,
+Stephenson) https://zsh.sourceforge.io/Guide/zshguide.html ZSH FAQ
+(2010) https://zsh.sourceforge.io/FAQ/ ZSH REF: Lots of simple GLOB
+examples here:
 http://reasoniamhere.com/2014/01/11/outrageously-useful-tips-to-master-your-z-shell/
 
 ~/dotfiles/.zshrc ~/dotfiles/.zshenv zsh -x \*.sh \# prints line then
@@ -725,6 +700,7 @@ https://zsh.sourceforge.io/Doc/Release/User-Contributions.html#Version-Control-I
 
 USAGE: *zstyle* <pattern>
 <style>
+
 <values> and is NOT so OBVIOUS ! if match, apply the style USAGE: zstyle
 <configure><VCS_INFO>
 <OUTPUT>
