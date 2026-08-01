@@ -1,52 +1,55 @@
 ---
 title: Current Prescriptions
 date: last-modified
-description:  prescriptions and history
+description: prescriptions and chronology
 ---
 
 TAGS:  current_prescriptions
 
-## Current Prescriptions
+# Current Prescriptions ( 2026-07-01)
 
-Prescription (as of \today):
+1.  Cozaar (Losartan) - 100 mg
+2.  Levothyroxine - 100 microg
+3.   Wellbutrin (Bupropion) - 100 mg
+4.  Potassium Citrate - 10 mEq = 1080mg (x 4)
+6.  Flomax (Tamsulosin) - 0.4 mg
+7.  Norvasc (Amlodipine) - 10 mg
+8.   Lopid (Gemfibrozil) - 600 mg (x 1, not x 2 as prescribed)
+9.   Effexor (Venlafaxime) - 75 mg
+10. Jardiance (Empagliflozin) = 12.5 mg
+11. Finasteride - 5mg
 
--	Cozaar (Losartan) - 100 mg
--	Levothyroxine - 100 microg
--	Zyloprim (Allopurinol) - 100 mg
-- Wellbutrin (Bupropion) - 100 mg
-- Potassium Citrate - 10 mEq = 1080mg (x 4)
-- Flomax (Tamsulosin) - 0.4 mg
-- Norvasc (Amlodipine) - 10 mg
-- Lopid (Gemfibrozil) - 600 mg (x 1, not x 2 as prescribed)
-- Effexor (Venlafaxime) - 75 mg
-- Finasteride - 0 mg (was 5 mg)
-- Jardiance (Empagliflozin) = 12.5 mg
-- Finasteride = 5mg
+External SCALP:
+
+1. Selenium Sul 2.5% (shampoo)
+2. 0.05% AUG Betamethasone Dipropionate (liquid, scalp) - strong
+1.   ketoconaole 2% (new)scalp ??
+
+Rotate: (see specific dirertions)
+3   OTC shampos: (difference ingredients use differnt paths)
+
+SKIN
+
+1.  0.05% Clobetasol Propionate (psoriasis arm, butt)
+2.  2-3 drops mineral oil - very infrequent
+3.  moisturizers (new)
+
+OTC
+
+1.  Psyllium (1 -2 Tbsp)
+2.  KAL Calcium Citrate 4 pills/d, total=1300 mg (Ca); NOTE: contains no
+    vitamin D3 (hard to find)
+3.  D3 14,000 IU per week\>
+4.  B vitamin - 1/week (for B6/B12)
+    
 
 
-External
-
-SCALP:  \
-- Selenium Sul 2.5% (shampoo)  
-- 0.05% AUG Betamethasone Dipropionate (liquid, scalp)  
-
-
-SKIN:   
-- 0.05% Clobetasol Propionate (psoriasis arm, butt)  
-- 2-3 drops mineral oil - very infrequent  
-- (NEW) moisturizers, vasaline  
-
-**OTC**
-
-- Psyllium (1 -2 Tbsp)
-- KAL Calcium Citrate 4 pills/d, total=1300 mg (Ca); NOTE: contains no vitamin D3 (hard to find)
-- D3 14,000 IU per week>
-- B vitamin - continue
+<hr>
 
 ## Changes:  
 
 **2026**
-July:  Resume Finasteride.  Why?  Need it.
+July - Resume Finasteride (per Dr. Miyake, after several year not taking).  Why? helps.
 
 **2025**
 
