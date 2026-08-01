@@ -45,4 +45,5 @@ format:
     margin-left: 30mm
     margin-right: 30mm
   gfm:
+    number-sections: true
     

@@ -5,8 +5,17 @@ description: Variety of misc tech notes
 format: gfm
 ---
 
-quarto render 300_tech_notes.md --to typst\
-quarto render 300_tech_notes.md --to gfm\
+For pdf:
+quarto render 300_tech_notes.qmd --to typst\
+
+For gfm
+quarto render 300_tech_notes.qmd, or  \
+quarto render 300_tech_notes.qmd --to gfm\
+
+
+## TOD0
+- Move important sections to top
+- Use typst blocks when need formatting
 
 <!--
 
@@ -283,12 +292,9 @@ Therefore, **LuaTex** added primitives, more open (can use tex or lua)
 
 **LuaLatex** is macro package.
 
-EXAMPLE: In .tex file, write lua: directlua is new primitive; lua api inside
-value for  
-
-$$\pi = \directlua{tex.sprint(math.pi)}$$
-
 ### revealjs slides with Quarto
+
+<hr>
 
 ### GIT commands   
 
@@ -627,6 +633,8 @@ Sat May 21 18:48:16 PDT 2022
 
 *jim_Permissions*
 u g o (user group other)
+
+<hr>
 
 <!-- begin ZSH -->
 

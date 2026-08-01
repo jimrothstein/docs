@@ -2,8 +2,15 @@
 jim
 2026-07-31
 
-quarto render 300_tech_notes.md –to typst  
-quarto render 300_tech_notes.md –to gfm  
+For pdf: quarto render 300_tech_notes.qmd –to typst  
+
+For gfm quarto render 300_tech_notes.qmd, or  
+quarto render 300_tech_notes.qmd –to gfm  
+
+## TOD0
+
+- Move important sections to top
+- Use typst blocks when need formatting
 
 <!--
 &#10;CAUTION:  Typ ->  md conversion
@@ -256,12 +263,9 @@ Therefore, **LuaTex** added primitives, more open (can use tex or lua)
 
 **LuaLatex** is macro package.
 
-EXAMPLE: In .tex file, write lua: directlua is new primitive; lua api
-inside value for
-
-$$\pi = \directlua{tex.sprint(math.pi)}$$
-
 ### revealjs slides with Quarto
+
+<hr>
 
 ### GIT commands
 
@@ -595,6 +599,8 @@ kernels? X? - Kernel Upgrade - See INDEX C.
 - loginctl - control login daemon (such as when i3/lightdm crashes)
 
 *jim_Permissions* u g o (user group other)
+
+<hr>
 
 <!-- begin ZSH -->
 
