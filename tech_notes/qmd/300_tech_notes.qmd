@@ -111,26 +111,24 @@ need package for evil/folds \
 - C-3 S-TAB (show outline upto level 3 - WORKS!) 
 
 ### Chron
-<2024-10-10 Thu> now Debian 12 (Cinnamon or i3); no more linux mint; LMDE ...
-<2024-08-26 Mon> 
-- do not use emacs as "DESKTOP" - everything, windows on the screen at once.
-- humans can not multitask; keep window only used for current work.
-- computers great for keeping lists of buffers, search when you move to next task.
-- tools like ivy can recall things like split window, code 1 side; dir on other
-- exist tools to maintain buffers in 'projects'
-- EXWM still not sure.
+<2024-08-26 Mon> \
+- do not use emacs as "DESKTOP" - everything, windows on the screen at once. \
+- humans can not multitask; keep window only used for current work. \
+- computers great for keeping lists of buffers, search when you move to next task. \
+- tools like ivy can recall things like split window, code 1 side; dir on other \
+- exist tools to maintain buffers in 'projects' \ 
+- EXWM still not sure. \
 
-<2024-07-01 Mon>
-- ex looks very useful!
-- SO(3) - not sure what I am asking; normal subgroups, symmetries?
+<2024-07-01 Mon> \
+- ex looks very useful! \
 
-** Github actions
+### Github actions
 - do not guess, do not play: READ DOCS
 - render quarto (in gfm, github format, SEE *gh_actions_project/quarto, SEE main.yaml*
-  - will render qmd to md file (github format)
-  - do not soft link qmd files, actual file or copy must in project
-  - of course, can render to md locally and merely push to github;
-  - do not know branch and yaml the same (ie not both main...)
+- will render qmd to md file (github format)
+- do not soft link qmd files, actual file or copy must in project
+- of course, can render to md locally and merely push to github;
+- do not know branch and yaml the same (ie not both main...)
 
 - (Github actions) Reading
   - Book <https://orchid00.github.io/actions_sandbox/>
@@ -141,11 +139,9 @@ need package for evil/folds \
 ** Posit Connect Cloud (new)
 - works with Shiny; gets code and manifest (json, with all R dependencies) from github (works)
 
-** 29-May-2024: Upgrade to R 4.4, Linux Mint 21.3 (Virginia)
-
 <2024-09-25 Wed>
 
-**"ex" editor**
+### "ex" editor**
 
 - simple, vi-like editor (see https://www.geeksforgeeks.org/ex-command-in-linux-with-examples/)
 - :a (to add text)
@@ -162,6 +158,7 @@ prior to 'ex', was 'ed'
   READ and will know ONLY I could have encryted the file.
 - Encrypt with my PUBLIC KEY, then only someone with my PRIVATE KEY can read it.
 - ALL keys belong on Debian key ring.
+
 *** R
 - This is a nightmare. There are several discrete steps; Do one at time!
 - sketch: get public key; import; convert .asc to .gpg (if needed); cp .gpg to Debian's ring
@@ -171,7 +168,7 @@ prior to 'ex', was 'ed'
 - gpg keys; Debian: see apt-secure, READ carefully, but it doeswork.
 - gpg --list-keys
 
-** i3, i3wm
+### i3, i3wm
 Videos:
 basic config: https://www.youtube.com/watch?v=88o2XuH3E08&list=PLbcglKxZP5PMTWVe1KhZX3Jvo0xqk8h5I&index=1
 - man i3 has good help, but quick becomes *x11*
@@ -205,11 +202,6 @@ SEE:  000_PROJECTS.org
   compiler or program.
 - IMPERATIVE (older, obsolete?) every detail, machine language?
 
-** QUARTO:
-2023-12-06 - Try couple of cv or resume templates and one quarto extension. Seemed to be more work than worth. Just use Rmarkdown to create resume.
-2024-01-26 READ r4ds Ch 28-29 b/c Quarto and config knitr
-
-To render a Quarto (*.qmd) file with embeded typst.   Use regular quarto render methods.
 
 ** {X11, Wayland, video}
 **Warning:** Stay with X11 (proven, well-supported, works)
@@ -226,7 +218,7 @@ kernel.
 ~/.xsession-errors - Unlike cli, GUIs have no console; errors err redirected to this file
 ~/.Xauthority - is random code to control which progams output to my X11 session
 
-** PDF, Pandoc, Latex
+### PDF, Pandoc, Latex
 
 
 2023-12-30
@@ -340,12 +332,14 @@ git revert HEAD~2..HEAD # keep history, but undo last 2 commits
 - Reduce paper
 - Annotate (here, or in 2 files) ONLY when needs
 
-## this file: ~/code/docs/tech_notes/REGEX.md
-## ~/code/docs/tech_notes/001_grep_regex_P_examples.qmd
-## ~/code/docs/tech_notes/002_grep_examples.md
-## SOME regex: in ~/code/zsh_project/ZSH_SH_FILES/
+
 
 ## REGEX
+
+- this file: ~/code/docs/tech_notes/REGEX.md
+- ~/code/docs/tech_notes/001_grep_regex_P_examples.qmd
+- ~/code/docs/tech_notes/002_grep_examples.md
+- SOME regex: in ~/code/zsh_project/ZSH_SH_FILES/
 
 TODO:
 - sed, when to use?
