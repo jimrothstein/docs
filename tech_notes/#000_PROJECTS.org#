@@ -8,8 +8,6 @@
 #+STARTUP: overview
 
 <<<TOP>>> (<- target,   then anywhere in text, type target name,  link will form (reload)) 
-Typst
-
 
 Diary
 - NEXT: continue Kaggle (python and machine l)
@@ -23,33 +21,7 @@ emacs:   go to 281_emacs_notes.org
 * Learn elisp
 
 
-* gridify
-** Outline:
- 1. What is goal?
- 2. Examples of metadata?
- 3. Grobs
-4. How gridify works
-5. How to do it?
-
    
-* aNCA
- NEXT:
- 1. video Day # 1
- 2. Thermo - again  (SEE ~/code/try_things_here/PKNCA <- scratch area)
- 3. admiralci: TODO How they create Agents.md and contents of this file.
-
-  - 30 Days of CDISC
-
-
-
-TOP
-
-
-Typst
-  1. USE online typst editor to debug  :typst
-  2. Basic:  000_simple.typ (learning curve to get symbols and format right).
-  3. Pretty graphs?    plotsy + cetz
-
   
 * R
 - typst:  Ch 1,2 my Advanced R notes
@@ -106,7 +78,6 @@ Play Area:
   https://www.youtube.com/watch?v=EMxDsDfvM_s&t=265s
 
 
-  
 
 * Algebra, Math, Statistics
 *** Calculus
