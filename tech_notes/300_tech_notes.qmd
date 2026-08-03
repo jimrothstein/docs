@@ -4,6 +4,8 @@ date: last-modified
 description: Variety of misc tech notes
 ---
 
+** qmd file is authority **
+
 For pdf:
 quarto render 300_tech_notes.qmd --to typst\
 
@@ -57,6 +59,43 @@ sudo apt install  --fix-broken <pkg> \
 sudo apt install  --fix-missing]
 )
 ```
+###  GIT COMMANDS  (Cheat)
+HEAD - normally points to branch (tip) but can point to commit (detached HEAD).
+**Goes where you go, like a shadow.** Commits are
+immutable. HEADS can move around.
+
+
+#### GIT - Where am I
+git show HEAD -- <file>  | Shows what green/red  on very last commit (now in the file)
+
+
+- git merge --no-ff --no-commit main (no fastforward, *dry-run*)
+
+- git restore --source master~2 path/file (2 commits back, give path to file)
+
+- git log MANY USEFUL! See Book 2.3 (https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History), Refernce (https://git-scm.com/docs/git-log)
+
+- git diff HEAD~ HEAD #show change between prior and most recent commit ("https://git-scm.com/docs/git-diff_) book: (https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository.html#_git_diff_staged)
+- git diff HEAD -- path/to/file.R # this file only, show diff
+(Ex: git diff play dev # merge back into dev, but 1st see changes)
+
+- [ ] UNDO one or more commits (many ways)
+Detach head by git checkout <SHA>, then build out new branch (git checkout -b new)
+git revert <SHA> # keeps history, undo one past commit
+git revert HEAD~2..HEAD # keep history, but undo last 2 commits
+
+- git reflog # how HEAD jumped around
+- git checkout HEAD@{n} # move back to n
+
+#### gh commands
+- gh repo delete jimrothstein/<repo>  on github/Be sure have permissions
+- gh repo list
+** Install R
+   - on Ubuntu, or mint linux virgina, use jammy and follow https://cran.r-project.org/bin/linux/ubuntu/ (works)
+   - on Debian (such as LMDE) follow https://cran.r-project.org/bin/linux/debian/
+     (1) Add: sudo vim.tiny /etc/apt/sources.list
+     (2) insert: the deb XXX link
+     (3) save, run as jim, sudo apt install r-base etc.
 
 ### url links
 nytimes.com @ nytimes \
@@ -291,37 +330,6 @@ Therefore, **LuaTex** added primitives, more open (can use tex or lua)
 
 ### GIT commands   
 
-HEAD - normally points to branch (tip) but can point to commit (detached HEAD). 
-**Goes where you go, like a shadow.** Commits are
-immutable. HEADS can move around.    
-
-- git merge --no-ff --no-commit main (no fastforward, *dry-run*) 
-
-- git restore --source master~2 path/file (2 commits back, give path to file)
-
-- git log MANY USEFUL! See Book 2.3 (https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History), Refernce (https://git-scm.com/docs/git-log) 
-
-- git diff HEAD~ HEAD #show change between prior and most recent commit ("https://git-scm.com/docs/git-diff_) book: (https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository.html#_git_diff_staged)
-- git diff HEAD -- path/to/file.R # this file only, show diff
-(Ex: git diff play dev # merge back into dev, but 1st see changes)
-
-- [ ] UNDO one or more commits (many ways)
-Detach head by git checkout <SHA>, then build out new branch (git checkout -b new)
-git revert <SHA> # keeps history, undo one past commit
-git revert HEAD~2..HEAD # keep history, but undo last 2 commits
-
-- git reflog # how HEAD jumped around
-- git checkout HEAD@{n} # move back to n
-
-#### gh commands
-- gh repo delete jimrothstein/<repo>  on github/Be sure have permissions
-- gh repo list
-** Install R
-   - on Ubuntu, or mint linux virgina, use jammy and follow https://cran.r-project.org/bin/linux/ubuntu/ (works)   
-   - on Debian (such as LMDE) follow https://cran.r-project.org/bin/linux/debian/
-     (1) Add: sudo vim.tiny /etc/apt/sources.list
-     (2) insert: the deb XXX link 
-     (3) save, run as jim, sudo apt install r-base etc.
 
 ** REGEX
 - TODO import (?) all REGEX/* files to here
