@@ -68,7 +68,6 @@ immutable. HEADS can move around.
 #### GIT - Where am I
 git show HEAD -- <file>  | Uses green/red to show very last changes (now included in  file)
 
-
 #### Undo/Go Back
 git a
 git commit --amend --no-edit
@@ -76,6 +75,19 @@ git commit --amend --no-edit
 
 - git merge --no-ff --no-commit main (no fastforward, *dry-run*)
 
+#### Git - merge fails
+Pick: which content?
+
+```
+<<< HEAD  (my branch)
+... content A ...
+
+=======   (remote branch has this)
+... content B
+
+>>> (remote branch)
+
+```
 - git restore --source master~2 path/file (2 commits back, give path to file)
 
 - git log MANY USEFUL! See Book 2.3 (https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History), Refernce (https://git-scm.com/docs/git-log)
