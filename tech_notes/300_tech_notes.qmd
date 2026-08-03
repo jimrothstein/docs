@@ -84,7 +84,6 @@ Pick: which content?
 
 =======   (remote branch has this)
 ... content B
-
 >>> (remote branch)
 
 ```
