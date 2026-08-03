@@ -71,7 +71,10 @@ git show HEAD -- <file>  | Uses green/red to show very last changes (now include
 #### Undo/Go Back
 git a
 git commit --amend --no-edit
-  Changes last commit and changes SHA.
+  Changes last commit and changes SHA.  If already pushed, and now amending, github finds difference and won't push till you fix.
+
+git push -f origin main
+  Not good idea.
 
 - git merge --no-ff --no-commit main (no fastforward, *dry-run*)
 
