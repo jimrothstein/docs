@@ -3,9 +3,6 @@ jim
 
 THIS IS \*.md file.
 
-### Changes
-
-- remove typst
 
 ### LEARN (above average!)
 
@@ -62,13 +59,11 @@ THIS IS \*.md file.
 Short Definitions:
 
 - node: allow js use outside browser
-
 - javascript: Why? designed for async http requests
-
 - openwebui.com: cloud, ui, to connect to local ollama. Don’t see
   benefit.
 
-  self-attention: I went to bank to get money. Does bank refer to river
+- self-attention: I went to bank to get money. Does bank refer to river
   or building? transformer: *He* did something…. transformer can
   determine *he* even if several paragraphs away. Transformers are
   neural networks that make NLP (natural language) possible and allow

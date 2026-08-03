@@ -3,10 +3,6 @@ name: 320_LLM_agents_NOTES.qmd
 description: "This *.md:   operational notes, tools, websites   - no theory here."
 ---
 
-THIS IS *.md file.
-
-### Changes
-- remove typst
 
 ### LEARN (above average!)
 * Hadley - newsletter, using ellmer to explain agent, harness ...
