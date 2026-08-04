@@ -4,6 +4,13 @@ description:  Render *.qmd, *.typplast ud
 last update:  7/23/2026
 ---
 
+
+## Authority
+- Generally, use *.qmd* for single source of truth.
+- Since gfm displays better in github, the use:
+- quarto render <file.qmd> --to gfm    to generate the *.md*
+- *.qmd*  remains latest version
+
 ## Where is my file?
 
 - *.qmd in qmd/ is preferred to store NOTES
