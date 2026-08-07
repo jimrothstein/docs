@@ -41,7 +41,7 @@ quarto render <file.qmd> --to pdf
 ## TOP
 LLM NOTES?   USE: 320_LLM_agents_NOTES.md 
 
-### Jul 2026
+## Jul 2026
 - Change from *.typ file to *.md;  why? it simple text and md easier
 
 
@@ -68,14 +68,30 @@ immutable. HEADS can move around.
 #### GIT - Where am I
 git show HEAD -- <file>  | Uses green/red to show very last changes (now included in  file)
 
+#### History (of HEAD)  [ local only ]
+git reflog
+git reflog HEAD@{3}
+git reflog HEAD@{yesterday}
+
+#### Show changes made a certain <SHA> (green/red)  [ short for git log -g --short-abbrev  ]
+git show HEAD@{3}          | commit
+git show <br>@{yesterday}  | branch
+
+
 #### Undo/Go Back
 git a
 git commit --amend --no-edit
   Changes last commit and changes SHA.  If already pushed, and now amending, github finds difference and won't push till you fix.
 
-git push -f origin main
+git revert <SHA> # keeps history, undo one past commit
+git revert HEAD~2..HEAD # keep history, but undo last 2 commits
+
+git push -f origin main  | force
   Not good idea.
 
+
+#### git merge
+- better:  git fetch 1st
 - git merge --no-ff --no-commit main (no fastforward, *dry-run*)
 
 #### Git - merge fails
@@ -98,10 +114,14 @@ Pick: which content?
 - git diff HEAD -- path/to/file.R # this file only, show diff
 (Ex: git diff play dev # merge back into dev, but 1st see changes)
 
-- [ ] UNDO one or more commits (many ways)
+#### switch branch or commit
+git switch <branch>
+git switch -    | return to prior branch
+
+git switch SHA  | no longer works
+git switch --detach SHA | can inspect commit (or create new branch at this SHA)
 Detach head by git checkout <SHA>, then build out new branch (git checkout -b new)
-git revert <SHA> # keeps history, undo one past commit
-git revert HEAD~2..HEAD # keep history, but undo last 2 commits
+
 
 - git reflog # how HEAD jumped around
 - git checkout HEAD@{n} # move back to n
