@@ -1,7 +1,9 @@
 ---
 title: 006_history_notes.qmd 
-format: typst: papersize: "us-letter"  fontsize: 8pt columns: 1 margin: x: 0.5cm
-  keep-typ: false ---
+format:
+  typst:
+    keep-typ: false
+---
 
 <!-- QUARTO *.md file
 
@@ -78,9 +80,11 @@ goal is to finish. US benefits: steel, rolling stock, bridges done in US.
 Trans-Siberian is gov’t managed and planned project! (contacts allow to privage
 companies.) Auto route not done till late 20th. Trans-Siberian is big success.
 
+```{=typst}
 #strong[But, triggers Russo-Japanase War, 1904-5] Like England, no way Japan
  will allow another power to play in its waters. Japan strikes just before
  trans-Siberian is complete (to limit supplies, troop transports …)
+```
 
 1760 George III (\~ 17) educated, but poor understanding ppl. Continent (esp
 France) respect English power, but not English culture, resistance to change, a
@@ -121,7 +125,7 @@ elsewhere seemed to not rule out amassing property (then called estates ?) and
 perhaps first capitalist - UNCLEAR. Also tolerant (well, maybe not for
 Catholics, jews)
 
-== Impeach <impeach> England: evolved as method for Parliament to assure power
+## Impeach <impeach> England: evolved as method for Parliament to assure power
 over King. (King can not be prosecuted for any crime.)
 
 
@@ -131,7 +135,7 @@ over King. (King can not be prosecuted for any crime.)
 1784 - 2nd
 1789 Washington Inaugerated
 
-== Whiskey Rebellion <whiskey-rebellion>
+## Whiskey Rebellion <whiskey-rebellion>
 1791, but July 1794 Poor farmers refuse to pay whiskey tax that fed govt issues
 to raise money. Hamilton's idea. (9 cent/gal for small distillers - farmers; 6
 cents/gal for larger distlers) Some violence in and round Pittsburgh.
@@ -147,7 +151,7 @@ against central gov't.
 
 
 
-== Alien and Sedition Acts - 1797 (Adams)
+## Alien and Sedition Acts - 1797 (Adams)
 <alien-and-sedition-acts---1797-adams>
 Unconstitutional, but based on perceived threat from French revolutionaries and fellow-travelers to topple Federalist govt (Adams), was seldom used but left a taint to Federalist brand. After Hamilton murder, Federalist were all but gone. (Federalist prefered England’s stability to Jefferson’s support for anti-Monarchy French revolutionaries
 
@@ -155,13 +159,13 @@ Unconstitutional, but based on perceived threat from French revolutionaries and 
 - removes many parochial, arthritic European structures like local tariffs, reduces number of German municipalities, etc. setting environment `more friendly` to industrial revolution.
 - France, Germany, USA … also contributed to technological improvements, not just England. Empirical fact(?): more capital per worker, more GDP per worker. Why is Peru `poor`, cheaper to use 19th C inventions b/c cheap labor, its GDP/Capital is about where England was in 19th.
 
-== Panic 1819
+## Panic 1819
 <panic-1819>
 inflation/printing money? How banks affect money supply? \* \[ \] Biddle arrives?
 
 1828 - Jackson defeats J Q Adams 1832 - Jackson defeats Clay View at time: national bank aids wall st, but harms democracy (in Jefferson’s sense). Jackson vetoes renewal of national bank; claims right to his own interpretation of constitution. Biddle and role of National Bank; many conflicts with Jackson - raise host of issues re: banking.
 
-== Panic 1837 (1837-1848)
+## Panic 1837 (1837-1848)
 <panic-1837-1837-1848>
 - after period of rapid growth, esp.~land.
 - by 1837, deep depression; one of worst in US history.
@@ -172,19 +176,19 @@ inflation/printing money? How banks affect money supply? \* \[ \] Biddle arrives
 
 1850 - Calif free; slavery in Mexican aquisitions (TX); strong fugitive slave laws 1854 - Kansas 1859 - John Brown, had hoped to start slave rebellion; frightens South 1860 - Lincoln elected 1861? - first income tax; North is broke; moves off Gold to paper.
 
-== US Civil War
+## US Civil War
 <us-civil-war>
 Lincoln - where slavery exits, won’t be touched; so what is path to Emancipation? -early 1861, union soldiers return slaves to owners! - in 1862, Lincoln raises Q with cabinet. Most thining, including Lincoln, gradual Emancipation (by 1900??); emancipation would lead to riots; blacks should be returned to Africa; Congress & Pres have no such authority to free another’s property; whites in Ohio River fear job loss; northern friends of South (copperheads. - but Events have affect: NY riots in opposition to draft; Rebels block union troops, destroy bridges - leads to suspention of habeus corpus; dissent (peaceful) considered "disloyal" and leads to arrests. - War going poorly, McCellan 'aristocratic', formalized military, planning, training …; fails to go after LEE after Antiem. 11/7/62 dismissed.(why so long? no one else to replace him!) - Second view of war: #emph[Frances Lieber] ( https:\/\/en.wikipedia.org/wiki/Francis\_Liebermath) Ph.D, encylopdias’…. saw Napolean as child; war’s purpose to achieve political end. Rules of War (pows get fed; no needless violence; must achieve political end) Kill Gurilla’s YES. Leads to GENERAL ORDER 100, April 1863. - But Lincoln continues to waiver; at low point, perhaps gradual emancipation by 1900? - But meaning of War changes: Lincoln reads war books; harming southern economy is very positive. - US army morale picks up. The rest we know. - Separate Note: Stanton, secy of War, x-NY governer; expected to be Republican candidate in 1860 but considered too vocal in anti-slavery; would lose support.
 
-== Jay Cooke sells US Bonds retail. This finances war, more than taxes. In effect, Cooke created national bank system to disseminate bonds; need for national bank (or similar) established.
+## Jay Cooke sells US Bonds retail. This finances war, more than taxes. In effect, Cooke created national bank system to disseminate bonds; need for national bank (or similar) established.
 <jay-cooke-sells-us-bonds-retail.-this-finances-war-more-than-taxes.-in-effect-cooke-created-national-bank-system-to-disseminate-bonds-need-for-national-bank-or-similar-established.>
 Few believed he could sell so much retail. He did.
 
 1864 - Chase had sought to run for Prez.
 
-== Who won Civil War? US capitalism: Bonds, effective national bank; NY replaces Philly.
+## Who won Civil War? US capitalism: Bonds, effective national bank; NY replaces Philly.
 <who-won-civil-war-us-capitalism-bonds-effective-national-bank-ny-replaces-philly.>
-== Pennsylvania RR
+## Pennsylvania RR
 <pennsylvania-rr>
 - (1852-1874) pres = J. Edgar Thompson, engineer, modernizes, uses Westinghouse Air Brake.
 
@@ -203,7 +207,25 @@ Few believed he could sell so much retail. He did.
 
 - ditto for birth control b/c reduces children of 'unfit' classes. Spencer prefers 'survival of fitest': why waste money/reforms on lower classes.
 
-== T. Roosevelt and  Philippines
+
+- 1893 Panic:  Citibank and Kuhn Loeb re-capitalize UPRR; Citi has ample capital from investors  seeking investments
+- 1907 Citibank Mitchell sees bank run
+- 1916 Mitchell joins Citibank - retail expansion.  He becomes great salesman and sales manager.
+- 1921 Mitchell becomes Citiank pres and leads business growth/expansion (Sunshine Charlie is always bullish); often takes BOLD steps and wins
+- 1920s Mitchell bullish on "General Sugar (Cuba)", but Bank makes bad loan.  Rather
+  than take loss, Bank issues new stock; 1/2 to Bank to buy worthless stock; with
+  proceeds General Sugar re-pays the loan (even); Who take the lost?  Citi investment
+  bank records no loss.
+
+
+- 1929 (jan) Mitchell joins NY Fed, despite obvious conflicts
+Can buy stocks with 10% down, remainder at margin; A practice known as "call
+loan market" Big Corp put idile money into this market, earning 12% interest
+late 1928. A trader can use stock as collateral to obtain a loan called call
+loan;   The big NY Banks can borrow from Fed at 5%; proceeds into call loans
+earning 12%.
+
+### T. Roosevelt and  Philippines
 - Teddy is imperialist, war hawk.
 - Was Philippines practice for Vietnam?
 - By aggreement, US replaces Spain, without much violence.  Not what Amercians told Philippines.
@@ -214,7 +236,8 @@ Few believed he could sell so much retail. He did.
 - See how good Americanization is for that country.
 - US populice? Believes US Army as force for good and could not treat Philippines poorly.
 
-Rise of Taft,
+
+### Rise of Taft,
 1903 Dept of War, CORPULANT, but apparently well-liked
 
 1905 TR sends daughter and Taft on Pacific Tour,
@@ -229,7 +252,7 @@ Scopes - Though Bryan initially won in court, the decision was actually overturn
 
 - #strong[\J. Howard Pew] (Sun Oil) capitalism and religion do NOT conflict. Use of religion in conservatism. Prior mostly just rich, anti-New Deal, or ideology (Ann Ryan, a few university profs). Pew wants return to fundamentalism. Opposes Niebuhr and liberal Christian ideology.
 
-== US Depression
+## US Depression
 - Coolidge and prior Prez would never think to touch/interfere with markets
 - Mar 1929, Hoover is inaugerated
   Is aware of many speculators and many mergers.  Knows Germany can not make payments.
@@ -296,9 +319,10 @@ Scopes - Though Bryan initially won in court, the decision was actually overturn
   (1) Huey Long, 39, freshman senator; opposes branch banking; always eager for fight? Says Glass in pocket of Morgan Bank. Ties up Glass bill with assorted antics.
   (2) MacArthur
 
-- **Agnes Meyer**, wife of wealty Fed reserve Chair (1930-33), chronicles inept Senate, husband 1933 buys Washington Post; daughter=**Katherine Graham** Advocates many good causes (https://en.wikipedia.org/wiki/Agnes_E._Meyer).
+- **Agnes Meyer**, wife of wealty Fed reserve Chair (1930-33), chronicles inept Senate, husband 1933 buys Washington Post;
+daughter=**Katherine Graham** Advocates many good causes (https://en.wikipedia.org/wiki/Agnes_E._Meyer).
 
-- **Anaconda Copper**
+- **Anaconda Copper**  In 1929, Citi (as investment bank?) sold shares @ $125; by 1932 $5.  Bank Pres Mitchel: we are not responsible.
 
 
   #strong[Billy Graham] (1955)
@@ -317,7 +341,7 @@ Scopes - Though Bryan initially won in court, the decision was actually overturn
 
 McCarthy - Till Feb 1950, only thing he did was was get sugar controls lifted for his friends at Pepsi.
 
-=== Churchill
+### Churchill
 <churchill>
 Boar War, captured. Eventually (1911) joins PM Asquith gov’t (reformer) in Admirality. But in 1912, Chur changes from reform to hawk. Held various gov’t positions prior to and though WWI. Is responsible for plan to send army into Turkey via Dardines, but was removed and apparently others also responsible. Eventually led troops in France; thinks about air force; feels generals too tied to past (ex1: General Haigg); did not want harsh terms for Germany. Lloyd George is PM during WWI. Churchill has many ideas and willing to try. This can ruffle old guard.
 
@@ -395,7 +419,7 @@ Karl Schmitt Catholic lawyer, 1888-1985, political theorist, also Nazi. Opposes 
 
 - Rmk: Treaty of Sevres, Turkey/Ataturk stands against and gets more favorable Treat of Lausanne. Mussolini and now Hitler and many Germans admire strong Turkey and Ataturk.
 
-== Durrs of Alabama "Outside the Magic Circle"
+## Durrs of Alabama "Outside the Magic Circle"
 <durrs-of-alabama-outside-the-magic-circle>
 Virginia Foster Durr (1903- ) remarkable; able to cast aside upbringing.{{{ Influencial whites through racial, liberal causes of 1st half 20th century. Knew: Mary McLeod Bethume, Studs Terkel, Linus Pauling, Eleanor Roosevelt, oppposed Poll Tax; apposed HUAC; apposed Truman’s loyalty oath (1946 - claimed it was to get ahead of HUAC and NJ Rep Parnell Thomas); supported Henry Wallace; brother-in-law Hugo Black (liberal ??)
 
@@ -426,14 +450,14 @@ by 1946: question: anti-colonial vs Hindu-nationalism
 
 \*\* July 4, 1946 - US leaves Philippines \*\* Roxas had colloberated with Japanese, but MacAuther defends do never tried. Delfin Jaranilla, US educated, admired MacAruther, treated badly at Batann death march. Judge (very biased) at Tokyo War Crimes Trial.
 
-== Rise of Hard Right: anti\_New Deal.
+## Rise of Hard Right: anti\_New Deal.
 <rise-of-hard-right-anti_new-deal.>
 - hate National Recovery Act’s price controls; profanity to business.
 - Assorted groups in 1930s-1950s, Leonard Read (Chamber of Commerce, vast networking, Foundation for Econ Education) Liberty League (duPonts) National Association of Manuf. These are not nice people; have agenda. Barody (American Enterprise): soft touch, `policy papers` to give to Congress. Others: Eventually pursue mass audience, get mass recruits (not just business or ideology or religious)
 - By 1978, Powell memo; Kenysian not working; corp MUST get into poltics. First use of PAC. Coors. Prop 13 (Laffer had hand? cut taxes, watch GDP soar). Heritage Found (Coors). Jack Kemp: stop regulating, cut cut cut; GDP will be unleashed.
 - More post-Powell: Business Round table (soft touch, CEOS only; direct reach to pols, both D and R; and Carter, NO social issues, Softer touch but same as Bouleware or Goldwater) Chamber of Commerce (not big biz; "entrapenues", Amyway - DEVOS - "American Way". Anyone can join C of C. more aggressive, freedom and capitalism; populist; more like political party than lobbyist)
 
-== Smith Act (1940) advocate, even teach, overthrow US govt is criminal
+## Smith Act (1940) advocate, even teach, overthrow US govt is criminal
 <smith-act-1940-advocate-even-teach-overthrow-us-govt-is-criminal>
 #block[
 #set enum(numbering: "(1)", start: 1958)
@@ -442,7 +466,7 @@ by 1946: question: anti-colonial vs Hindu-nationalism
 
 Esther Cooper Jackson (1917-2022), - South, Brooklyn, Detoit - "Freedom Ways" (editor) - worked with W.E. DuBois (SEE bio by https:\/\/en.wikipedia.org/wiki/David\_Levering\_Lewis - 1940 AG Tom Clark, South Negro Youth C… (later SNCC) is subversive. - #link("https://en.wikipedia.org/wiki/Esther_Cooper_Jackson") - National Committee to Defend Negro Leadership; Families of Smith Act
 
-== Ayn Rand, novels, 1943-1957.
+## Ayn Rand, novels, 1943-1957.
 <ayn-rand-novels-1943-1957.>
 #block[
 #set enum(numbering: "(1)", start: 1958)
@@ -452,24 +476,24 @@ Esther Cooper Jackson (1917-2022), - South, Brooklyn, Detoit - "Freedom Ways" (e
 - "common good" is awful | self-interest paramount | it is better moral code than even religion (?!)
 - property: absolute right to do what you want w/ property. No govt interference Business loves her.
 
-== Sen Taft, isolationist
+## Sen Taft, isolationist
 <sen-taft-isolationist>
 1938 - New Deal stirs hatred of rich | will bring socialism; isolationist.
 
-== Strategic vs Area vs Precision Bombing
+## Strategic vs Area vs Precision Bombing
 <strategic-vs-area-vs-precision-bombing>
 - Did not work, intent: limit civilan casualties, we are not like immoral enemy.
 - This view changes! Desden (US Gen Spaatz; Feb 1945; Secy of War Stimpson kept out of loop; did not like destruction of glorious city; or needless deaths; a moral man and concerned with image of US). Lovett limits info to this moral boss Stimpson; just says "precision bombing" - a lie.
 - Tokyo (March 1945; firebomb, Gen Lemay new to Japan; told he must get results or lose job; and quickly realizes stategic bombing not working; will need to invade island; tries fire - naplam - noting Japanese cities mostly wood; goal: weaken moral)
 
-== Decision to Drop A-Bomb
+## Decision to Drop A-Bomb
 <decision-to-drop-a-bomb>
 - No real 'decision', it was the entire reason.
 - Truman not truly lead actor; aruge that Stimpson, Staaz and Toto are major players
 - But, WHERE to drop Bomb?
 - (see next) As it became clear, Japan was not doing to surrender and Am public did not protest Dresden, much debate of where. Need for Japanese to see clearly the power; dud would not do (fear that a dud over Germany and Germans would figure out how to make it! No such fear with Japan) A solely military, strategic target would not demonstrate full power of bomb. Nor would anything of reinforced conceate Had to a city; not near mountain. And because of imprecision of bombing (despite new Nordon scope) had to aimed at center of city. Even scientists acknowleded this logic. Both Conant and Opie silent, however, about role of radiation, though they know it will happen)
 
-== Unconditional - notes from book; Japanese surrender. (SEE also …)
+## Unconditional - notes from book; Japanese surrender. (SEE also …)
 <unconditional---notes-from-book-japanese-surrender.-see-also>
 - Work with japanese 'moderates': US Amb toJapan in 1920s, "Jap" experts: Grew and Dooman (but 1920s Japanese rulers very different from militarists) ; Hoover (!) - Stimpson Doctrine, based on observations of 1st round of Japanese aggression, 1931: moderates will soon prevail. FDR had provoked Japan??
 
@@ -525,7 +549,7 @@ Fulton: Churchill speaks for war; at time many criticized; Truman, present, also
 
 1946 - most US scientists: what have we done? DEBATES: Share knowledge? Cooler heads knew Russians would catch up; but hawks rise. Truman disliked Oppenheimer; things Russians will "never" catch up. Influence by his own racial prejudices. Truman captured by hawks does not even want to share with British. Acheson-Litelton (influenced by Oppenheimer) - share bomb with world, to manage it. Barauch presents to UN (6/46), aging, poor choice, did not believe tenets himself. AEC: civilan control of US bomb, not military.
 
-== US Education Policy (1944 - )
+## US Education Policy (1944 - )
 <us-education-policy-1944-->
 \-Jan’44, FDR speech to prepare for end of war: includes need for education. -1944 - we got GI Bill, which FDR is #emph[not] like. Excludes blacks, women, emphasis on #strong[individual] and not systemic, all of society as FDR and liberals want. Improve education for ALL. -1945 - Adam Clayton Powell - no \$ for any segregated institutions, attaches to every bill. Of ccourse, Southern racists held opposite view: no \$ for non-segrated institutiion. Tying GI beneifts to individual meant blacks, woman easily excluded when they applied. Whereas \$ for institutions and all would make harder to discriminate. - 9/1957 - AR - block integration. - 10/4/1957 - Sputnik and then Mutnik (dog) Those opposed to federal education investment: racists; relious question, money for Catholic schools also? And what is purpose of education "a right, to make person whole" (Dewey) or career and an aid to industry?
 
@@ -543,12 +567,12 @@ The path is now set: market, career, not education for itself; not a right. 1965
 
 - good: Lester Cole - objective film re: Burma Lillian Hellman - sharp tounge, anti-Huac Edward Dmytrk, director, included religious toleratance (Crossfire, 1947) Emmet Lavery, lawyer, Committee for 1st Amendmand Dorothy Parker, Edward G. Robinson, Melvyn Douglas, John Ford
 
-1947 Awareness European economy poor. Spring ==\> Marshall. \
+1947 Awareness European economy poor. Spring ##\> Marshall. \
 March ’47: Loyalty Order, signed by Truman! Hoover, Ambassador Hurley (China) disloyalty has entered US gov’t (!?) Chill falls over federal employees, finger prints, a few fired.
 
-\- Military under unified (ref to 1941 attackZ), civilian command. - War Department (army) + Navy; both military at head ==\> Defense Dept (civilian) - National Security Agency: coorindate, military + foreign policy (vs. State Dept ??) - `world policeman` enters debate in Congress.
+\- Military under unified (ref to 1941 attackZ), civilian command. - War Department (army) + Navy; both military at head ##\> Defense Dept (civilian) - National Security Agency: coorindate, military + foreign policy (vs. State Dept ??) - `world policeman` enters debate in Congress.
 
-== US, WWII VP Wallace, Am style facism.
+## US, WWII VP Wallace, Am style facism.
 <us-wwii-vp-wallace-am-style-facism.>
 - 1944? "build a wall around the US so high and so secure that not a single alien or foreign refugee from any country … could possibly scale or ascend it." Senator Reynolds (D-NC, Military Affairs Committee, isolationist, racist, wealthy; "Fortess American")
 
@@ -560,23 +584,23 @@ March ’47: Loyalty Order, signed by Truman! Hoover, Ambassador Hurley (China) 
 
 - perversion of truth and fact. Their newspapers and propaganda carefully cultivate every fissure of disunity, every crack in the common front against fascism. They use isolationism as a slogan to conceal their own selfish imperialism. They cultivate hate of and distrust of both Britain and Russia. They claim to be super-patriots, but they would destroy every liberty guaranteed by the Constitution. They demand free enterprise but their spokesman for monopoly and vested interests. Their final objective toward which all their deceit is directed is to capture political power so that, using power of the state and the power of the market simultaneously, they may keep the common man in eternal subjection.
 
-== GE Strike, Boulware
+## GE Strike, Boulware
 <ge-strike-boulware>
 - 1946 strikes catches GE off guard (huh?). Emerges Boulware: GE is boss, not union. You take what we give; no matter how long you strike.
 
-== HUAC
+## HUAC
 <huac>
 - claim: there really was effort by CPUSA and "popular front" to disseminate organizing, education, labor activities. But overthrow??
 - 1947, 1948 (?) investigates communist influence in Hollywood (actors, directors, writers …) Vicious. Many those targeted had liberal leanings or depicted another side of life in their works, films themes like religious tolerance, anti-Semitic (ex: John Wayne film ALSO shows heroism of fighters in Burma?) HUAC forced you to take stand or they would end your career. Some, including an RKO executive Dore Schary , stood their ground (“Until the time is proven that a Communist is dedicated to overthrow gov’t, I can not determine any grounds for hiring but the man’s competance.
 
-== William F Buckley emerges:
+## William F Buckley emerges:
 <william-f-buckley-emerges>
 - pro-McCarthy
 - anti-'elite' liberal education
 - labor union "monopolies"
 - he seeks non-business adherents to conversative (more ideological)
 
-== John Birch Society, real person
+## John Birch Society, real person
 <john-birch-society-real-person>
 - 1939 rural Georgia, bible-thumping family, graduates college.
 
@@ -596,7 +620,7 @@ March ’47: Loyalty Order, signed by Truman! Hoover, Ambassador Hurley (China) 
 
 - 1952 Taft also sees communistis everywhere. But Eisenhower gets nomination. Birch Society forms actively in 1957? 1958?
 
-== IKE and presidental power
+## IKE and presidental power
 <ike-and-presidental-power>
 John Foster Dulles dies in June 1959; thaw begins in East-West. Major conference set for 1960, Paris. Failed. IKE even was tiring of Nixon’s infatuation with seeing REDS everywhere. NO. The event was U-2 shot down. \
 Message by You: IKE #emph[seemed] to have some decent instincts. But he also tolerate or set the stage for all kinds of bad shit., Saturday, December 12 2020, 12:33 PM IKE #emph[seemed] to have some decent instincts. But he also tolerate or set the stage for all kinds of bad shit.
@@ -605,12 +629,12 @@ One legacy: creeping Presidental power to make war. He got Senate approval for v
 
 Adlai Steveson: After Senate passed one of these 85-3, Congress has given president a "blank check".,
 
-== Goldwater: 1957 hearings.
+## Goldwater: 1957 hearings.
 <goldwater-1957-hearings.>
 Hates unions, "freedeom", no one should challenge the boss. Walter Ruether at hearings.
 
 
-== Failure of New Left
+## Failure of New Left
 By late 50s, a comfortity had setled :  unions become more complacent; Americans lost fear of post WWII depression.  Corp may have hated New Deal, but by-large accepted role of govt in economy.  IKE did not seek to break New Deal, for example. accepted unions, except for GE and "bovered...."    However, the EU had recovered; the US South had industrialized 
 
 The New Left/New Elites were "purists", college-educated and affected by different issues than "Old Left"   In particular, New Left did not seek to align with working people/organize and grow.
@@ -623,12 +647,12 @@ Initially, the UFW gained support from both UAW and Teamsters.  But the latter b
 Some, likek Jerry Wurf (ACFSWME) very devoted to gov't works, sanitation works (Memphis).
 But on the whole, 60s did not see political power of mass movement grow. 
 
-== JFK
+## JFK
 <jfk>
 - To balance conscience and job, he promised to resign if ever conflict!
 - Both JFK and esp HHH supported clause allow govt to arrest/detain subversives in times of national crisis. 1962 Cuban Missile, FBI Hoover kept list and called many such subversives (anonymously, to track them). JFK did not declare emergency. Bernstein’s parents of (Berstein/Woodruff) receieved phone calls.
 
-== Watergate
+## Watergate
 <watergate>
 REF: book Goliath 1972 - Watergate babies, young, `liberal`, college-educated and definitely anti-war. Replace old man, Wright Patman (D-TX), 1928-1972, who believed in preventing monopoly power. He was last of generation like Brandeis who oppposed bigness, concentrated power (though may be different reasons). In 1930s, he passed law to prevent A&P, chain store, from offering various discounts, rebaits that made mom&pop difficult to compete against. He had no problem with "efficiency", or that mom&pop could offer better service. He opposed concentrated power to UNFAIRLY change playing field. That was "fair trade" meant in 1930s.
 
@@ -636,7 +660,7 @@ Both Hofstader and Galbrieth praised big business! H- argued American triumph & 
 
 A&P law become symbol of opposition to gov’t. : deas of Limiting big business persisted to 1960s (by mostly old men). Began change in Democrat Party away from working people, fairness, economic issues.
 
-== Reagan
+## Reagan
 <reagan>
 - even in 1940s did not associate "liberalism" as first step to Communism, but "proud" to keep Communists out of his union. But in '50s more pro-business, against govt intervention'. Goldwater speach "time for choosing" said nothing about social issues. By 1966, sees opportunity to go attack to attach LBJ’s great society and SOCIAL ISSUES for first time (crime, welfare, persmissive society criminals have more rights than victims ) Not racist, just govt should have no role in making balance. Voting Rights Act "humiliation" for South; he opposed it b/c opposed to gov’t intervention, not racism. His pro-ERA, pro-abortion, tighter gun control positions as gov. would all vanish in 1970s as #emph[single issue social issues] backlash.
 
@@ -654,7 +678,7 @@ A&P law become symbol of opposition to gov’t. : deas of Limiting big business 
 
 - So Bush, same policies as Reagan, became target of far-right, way to crtiicize Reaganism without criticizing Reagan.
 
-== SCOTUS
+## SCOTUS
 <scotus>
 ```
 - Did you know this ???     From SCOTUS oral arugment ....   "political
@@ -662,7 +686,7 @@ A&P law become symbol of opposition to gov’t. : deas of Limiting big business 
 
 promises” are not contracts, not enforceable, not legal justification to replace the politician!
 
-== Mon 14 Dec 2020 50 years from now, today will be remembered as ….
+## Mon 14 Dec 2020 50 years from now, today will be remembered as ….
 <mon-14-dec-2020-50-years-from-now-today-will-be-remembered-as-.>
 - Day USA passed 300K covid deaths
 - Day USA began vaccinations
@@ -675,7 +699,7 @@ promises” are not contracts, not enforceable, not legal justification to repla
 - Known for some other reason.
 - Long forgotten day.
 
-== Lorraine Hansberry (Rasisen in the Sun)
+## Lorraine Hansberry (Rasisen in the Sun)
 <lorraine-hansberry-rasisen-in-the-sun>
 - 1930s, raised in area south/west of Washington Park (between Cottage and Grand (MLK))
 - some areas black, some white …. Woodlawn all white.
@@ -686,12 +710,12 @@ promises” are not contracts, not enforceable, not legal justification to repla
 
 - 1987 crash? not due to economic conditions; failure of Black-Sholes model (buy puts, 'insurance') to protect against falling markets. Can’t do that when everyone is doing same; and market is crashing.
 
-== Eugene, OR
+## Eugene, OR
 <eugene-or>
 Judge Alfred Ted Goodwin, 1923-2023 father was Baptist minister; \
 \- ordered cross removed from Ore. hiltop. - beach bet high tide and vegetation is PUBLIC (1964) - Nixon appointed to fed bench. - favored #strong[federal] enforcement to protect Spotted Owl - forcing children to recite "one nation under god" violates separation of Church. (unfortunately, reversed in separate case when 'teacher led') - also branded cattle (man of the west?)
 
-== FIELD, Laura K.  "Furious Minds" (2025;   320.520973) 
+## FIELD, Laura K.  "Furious Minds" (2025;   320.520973)
 
 This is troubling book.  Traces the HARD RIGHT from academia to think
 tank to US gov't.  Things like "Straussian", or JV Vance follows
@@ -709,7 +733,7 @@ have national school curciulum.  MLK had it right I think; too
 abstraction and you are completely removed from what is real in 20th
 Century
 
-== WICKER, Tom "Shooting Star" (McCarthy = McC)
+## WICKER, Tom "Shooting Star" (McCarthy = McC)
 RFK:   "very complicated character"
 
 A great salesman, real drive, hard work, excellent memory, good at bluffing, outgoing and easy to be-friend.
@@ -734,7 +758,7 @@ Began Wisc farm, somehow figured out how to escape: Rises through assorted jobs,
 McC attacks Acheson, many times.
 1951 (june 14) - attacks George Marshall (wow!)
 
-=== 1952 Election
+### 1952 Election
 - McC has ability to create headlines, based on nothing, fear.
 - JFK -defeats Henry Cabot Lodge (had been McC foe in Tyding Hearings)
 - Stuart Symington
@@ -745,7 +769,7 @@ McC attacks Acheson, many times.
 - IKE - keep distance from McC. IKE does NOT defend Geo Marshal.
 - Hank Greespun - becomes bitter McC enemy.
 
-=== 1953
+### 1953
 - McC makes headlines with pink Army dentist; commanding officer gives
   him honorable discharge. McC seeks Secy of Army! As dentist saga
   continues, McC seeks to investigate Ft. Monmouth for reds.
@@ -761,7 +785,7 @@ McC attacks Acheson, many times.
   gives support for separate, non-McC Oppenheimer hearings. So McC can
   not do the investigation. *IKE protects HIMSELF.*
 
-=== 1954 - at peak power.  50% approval rating
+### 1954 - at peak power.  50% approval rating
 - Army Hearings - 36 days televised (LBJ said to do this !By June, falls to 34% favorable:
 - By June, falls to 34% favorable:
 

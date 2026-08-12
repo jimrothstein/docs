@@ -9,6 +9,26 @@ description: "This *.md:   operational notes, tools, websites   - no theory here
 * Simon Willison writes how he uses LLM models; https://simonwillison.net/2026/Mar/30/mr-chatterbox/
 * Blog with very clear explanations & background: https://blog.apify.com/mcp-a2a-agentic-internet/
 
+
+### 09 AUG 2026
+- https://eli.thegreenplace.net/2025/reverse-mode-automatic-differentiation/
+- auto diff: Baydin, et al https://arxiv.org/pdf/1502.05767
+- Karpathy:  Spelled out intro to micrograd:   https://www.youtube.com/watch?v=VMj-3S1tku0&list=PLbcglKxZP5PNVpX0Opb46KC1Tqp1X1Zql
+- Diesenroth https://mml-book.github.io/book/mml-book.pdf
+- Use Semantic Line Breaks (https://sembr.org/)
+
+Thought I knew derivatives and partial differentiation, but I don't. <br> Was
+following Karpathy's excellent , "Spelled Out Intro to Micrograd".  He's clear
+and I followed steps, but I also began to see much more depth with things like
+computational graphs, backpropation, tweaking neural networks and gradient
+descent.  So I sidetracked.   Diesenroth
+(https://mml-book.github.io/book/mml-book.pdf ) has good treatment of much of
+the math in neural networks.  This blog post
+https://eli.thegreenplace.net/2025/reverse-mode-automatic-differentiation/ was
+very helpful and I am now working through this paper by Baydin, et al, which
+really dives into what these techniques are about.
+
+
 ### ML BASICS
 
 * Peng tidyverse 2021 Ch5 models
@@ -18,12 +38,13 @@ description: "This *.md:   operational notes, tools, websites   - no theory here
 * Kaggle: ** guide https://www.kaggle.com/learn/intro-to-machine-learning, 
 https://www.kaggle.com/code/dansbecker/how-models-work
 
+
 * Karpathy https://www.youtube.com/watch?v=VMj-3S1tku0&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=1
 * Karpathy Playlists https://www.youtube.com/playlist?list=PLAqhIrjkxbuW9U8-vZ_s_cjKPT_FqRStI 
 
 * Rebecca Carter, very clear:  tidymodel intro (https://rebeccabarter.com/blog/2020-03-25_machine_learning#what-is-tidymodels)
 
-
+* AI Books (free) https://github.com/MarcosSete/awesome-free-ai-books
 * TODO Mnielson [ [neural][ http://neuralnetworksanddeeplearning.com/chap1.html]] :read:
 * TODO Clark models               :read: 
 * TODO Patterns Hardt & Recht :read:

@@ -1176,10 +1176,10 @@ RETAIL DEMO UNIT ('retail mode'):
   - adb --help
   - adb shell <command>
   - adb shell df -h
-    - adb shell ls /system/bin (available cmds)
+  - adb shell ls /system/bin (available cmds)
 
-  - adb push [ -- sync ] # only push if newer
-  - **adb push * /sdcard/Music # worked 3/25, push to pixel 4**
+  - adb -d push --sync * /sdcard/Music /
+   -d to use emulator (when 2 devices), --sync only pushes newer files
 
 
 - Photo tranfer, different.
