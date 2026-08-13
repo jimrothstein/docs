@@ -1173,6 +1173,7 @@ RETAIL DEMO UNIT ('retail mode'):
 	(phone) Works by running TCP sever on host (PC) and daemon on device (phone)
 
 - SEE https://www.howtogeek.com/192732/android-usb-connections-explained-mtp-ptp-and-usb-mass-storage/
+  - use "adb -d" not "adb" if 2 more devices present
   - adb --help
   - adb shell <command>
   - adb shell df -h
