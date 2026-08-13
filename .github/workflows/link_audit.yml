@@ -1,0 +1,43 @@
+name: link_audit
+## Link audit for Lane County Public Health website.
+## Runs monthly on schedule, or manually via workflow_dispatch.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 12 1 * *"   # 1st of month, 12:00 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.2.2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run link audit
+        run: |
+          python3 advisory/link_audit.py --out-dir advisory/audit_results
+
+      - name: Show summary
+        run: |
+          cat advisory/audit_results/link_audit.md
+
+      - name: Commit results
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add advisory/audit_results
+          git commit -m "Update link audit results" || \
+            echo "no changes; nothing to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
