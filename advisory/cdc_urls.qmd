@@ -1,6 +1,7 @@
 ---
 title: "CDC.gov URLs on Lane County Public Health pages"
 date: 2026-08-12
+description: CDC links on Lane County Public Health pages, per LLM
 format: gfm
 ---
 
