@@ -1,0 +1,42 @@
+---
+title: "CDC.gov URLs on Lane County Public Health pages"
+date: 2026-08-12
+format: gfm
+---
+
+Search performed: scanned the Lane County Public Health landing page
+(<https://www.lanecountyor.gov/cms/One.aspx?portalId=3585881&pageId=4078590>) and its
+subpages under the Public Health section for any URL linking to `cdc.gov` or
+mentioning "Center(s) for Disease Control".
+
+19 unique CDC links found across 3 subpages. The main Public Health landing page
+itself has no CDC links. The Public Health News page mentions "Centers for Disease
+Control and Prevention" in a measles story but contains no link to cdc.gov.
+
+## Immunization Program (pageId 4078566)
+
+- https://www.cdc.gov/flu/index.htm — "CDC" (flu info)
+- https://www.cdc.gov/vaccines/schedules/index.html — immunization schedule (infants/children/adolescents)
+- https://www.cdc.gov/vaccines/imz-schedules/adult-easyread.html — adult immunization schedule
+- https://www.cdc.gov/vaccines/schedules/easy-to-read/adult.html — immunization schedule (easy-to-read)
+- https://www.cdc.gov/vaccines/hcp/index.html — National Immunization Program
+- http://www.cdc.gov/vaccines/index.html — General Vaccine Information
+- https://www.cdc.gov/vaccine-safety/ — Vaccine Safety
+- https://www.cdc.gov/vaccines-children/diseases/index.html — Infant/Childhood Immunization Schedule
+- https://www.cdc.gov/vaccines/imz-schedules/adolescent-easyread.html — Adolescents & Teens Immunization Schedule
+
+## Coronavirus (COVID-19) (pageId 16503774)
+
+- https://www.cdc.gov/coronavirus/2019-ncov/index.html — "CDC COVID-19"
+
+## Preparedness (pageId 4078581)
+
+- https://www.cdc.gov/clean-hands/about/index.html — hand washing
+- https://www.cdc.gov/hygiene/about/when-and-how-to-clean-and-disinfect-your-home.html — clean/disinfect surfaces
+- https://www.cdc.gov/food-safety/ — handle/prepare food safely
+- https://www.cdc.gov/antibiotic-use/about/index.html — antibiotics
+- https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.cdc.gov%2Ffood-safety%2Ffoods%2Fkeep-food-safe-after-emergency.html — "Keep Food Safe After a Disaster" (Outlook wrapper around a cdc.gov URL)
+- https://www.cdc.gov/emergency/index.html — CDC resources
+- http://emergency.cdc.gov/coping/index.asp — CDC coping
+- https://www.cdc.gov/disability-emergency-preparedness/about/index.html — planning needs
+- https://emergency.cdc.gov/ — CDC (Centers for Disease Control and Prevention)

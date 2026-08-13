@@ -1,0 +1,1 @@
+/home/jim/dotfiles/opencode/projects/advisory_project.md
