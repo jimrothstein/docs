@@ -69,7 +69,8 @@
     "README_test.html": "b4f4971d"
   },
   "260_typst_cheat.qmd": {
-    "260_typst_cheat.html": "a291a3a1"
+    "260_typst_cheat.html": "a291a3a1",
+    "260_typst_cheat.typ": "c38dd6d0"
   },
   "280_emacs_notes.md": {
     "280_emacs_notes.html": "fe975134"
@@ -95,5 +96,9 @@
   },
   "003_tech_reading.qmd": {
     "003_tech_reading.typ": "b912a35c"
+  },
+  "265_typst_example.qmd": {
+    "265_typst_example.typ": "68c7aba4",
+    "265_typst_example.md": "85fcc836"
   }
 }

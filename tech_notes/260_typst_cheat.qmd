@@ -7,10 +7,13 @@ editor:
     wrap: 72
 ---
 
-*For Quarto -> TYPST -> PDF, see example:  280_emacs_notes.qmd*
 
-* HERE:  USE native TYPST app,  use 250_quarto_cheat.typ*
-*For pure typst SEE 410_typst_MATH_notes.typ"
+PURPOSE:  This is *.qmd file with *typst* chunks
+USE:   quarto render 260_typst_cheat.qmd --to typst
+
+TODO:  Cleanup, remove remanents of past SCSS, remove what does **not** work.
+
+
 
 USE the *typst app* !
 - For typst & math, use this file For Math.
@@ -539,73 +542,9 @@ decorate that chunk
 
 ***
 
-### SCSS @mixin (not working)
-
-Put this in custom.scss
-```
-@mixin absolute-center() {
-  position:absolute;
-  left:50%;
-  top:50%;
-  transform:translate(-50%,-50%);
-}
-.element-1 {
-  @include absolute-center();
-  color:green;
-}
-.element-2 {
-  @include absolute-center();
-  color:blue;
-}
 ```
 
-Usage:
-```
-@mixin square($size) {
-  width:$size;
-  height:$size;
-  color:white;
-}
-div {
-  @include square(60px);
-  background-color:#000;
-}
-```
 
-::: {.element-1}
-element-1
-:::
-
-::: {.element-2}
-element-2
-:::
-
-::: {.square}
-square
-:::
-
-
-***
-
-### SCSS hover
-
-``` { .button-container }
-1. hover and see what happends
-```
-``` { .nested_class }
-1. hover and see what happends
-```
-
-::: nested_class
-2. hover and see what happends
-:::
-
-<div class="button-container">
-    <p class="button-text">Click me</p>
-</div>
-
-
-------------------------------------------------------------------------
 
 ### Display code and chunk options
 
@@ -748,11 +687,7 @@ This does what?
 <!-- END -->
 
 
-```{r}
-# knitr::knit_exit()
-```
 
-------------------------------------------------------------------------
 
 <!--   CSS below this line -->
 

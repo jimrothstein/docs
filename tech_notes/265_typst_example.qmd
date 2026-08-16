@@ -1,22 +1,12 @@
 ---
 title: "Hello Typst!"
-format:
-  typst:
-    toc: true
-    section-numbering: 1.1.a
-    columns: 2
-keep-typ: false
-knitr:
-  opts_chunk: 
-    collapse: true
-    comment: "#>" 
-    R.options:
-      knitr.graphics.auto_pdf: true
+date: today
+description: 265_typst_example.qmd;   typst  basics + math
 ---
 
 This is a quarto (.qmd) file.  
 Embeds raw `typst` (ex: math)  and `r` chunks.  
-To render:   quarto render 260_typst_example.qmd
+To render:   quarto render 265_typst_example.qmd
 
 ```{=typst}
 
