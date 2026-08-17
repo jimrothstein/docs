@@ -30,20 +30,23 @@ https://www.hireitpeople.com/resume-database/63-net-developers-architects-resume
     data.table, shiny, quarto (some SCSS), webR, plots (base + ggplot2)
     roughly to level of Advanced R book.
 -   SQL: 2+ years, joins, data.table, dplyr; mySQL
--   RStudio, Neovim/Nvim-R as IDE
+-   IDE: Positron, emacs
 -   Exposure to regression models, KNN, Random Forest, Logical
     Regression
 -   R Shiny, modules, reactive programming, dashboard, bslib themes
 -   Quarto, Rmarkdown, latex, pandoc, Katex, knitr, some SCSS, CSS
 -   Git/Github: 3+ years, PR, merging
 -   Zsh Shell: 3+ years scripts, regex, configuration
--   Lua - used to configure neovim, plugins including Nvim-R
 -   OpenAPI: wrote R code to prepare code, requests and convert
     responses to tibbles, inlcuding outh2.
 -   Linux (Debian, LinuxMint, Ubuntu): 4+ years, shell scripts, cron
     jobs, Rscripts
 
 ### Recent Projects & Skills {#recent}
+
+-   For local government agency, created automated checker for broken website urls.  Wrote specs, used LLM to link github actions and python script.
+
+-   Using quarto + typst, writing backpropagation introduction.
 
 -   (active) Fix issues in Pharamaverse Admiral and sdmtchecks R
     packages.
