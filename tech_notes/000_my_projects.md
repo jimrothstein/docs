@@ -1,26 +1,20 @@
-# Time-stamp: <Last changed 2026-06-22 17:14:08 by jim>
+---
+title: 000_my_projects.md
+description: Attempt to keep work up-to-date
+---
 
-# --------------   STOP ----------------
-#
-# USE 000_my_projects.md
-# --------------------------------------
+**warning**
+This is *.md file.
+It once WAS an *.org.  Expect issues.
+Why the change?  I use .qmd a lot
 
 
-# (setq org-export-with-broken-links 'mark) -- if see this error
-#  TODO:   install ox-typst, pdf fails;
-
-
-# keep closed,  also can do: (setq org-startup-folded 'overview)
-#+STARTUP: overview
-
-<<<TOP>>> (<- target,   then anywhere in text, type target name,  link will form (reload)) 
 Typst
 
 
 Diary
 - NEXT: continue Kaggle (python and machine l)
   
-* ORG-MODE: purpose
 
 
 emacs:   go to 281_emacs_notes.org 
@@ -29,26 +23,8 @@ emacs:   go to 281_emacs_notes.org
 * Learn elisp
 
 
-* gridify
-** Outline:
- 1. What is goal?
- 2. Examples of metadata?
- 3. Grobs
-4. How gridify works
-5. How to do it?
-
    
-* aNCA
- NEXT:
- 1. video Day # 1
- 2. Thermo - again  (SEE ~/code/try_things_here/PKNCA <- scratch area)
- 3. admiralci: TODO How they create Agents.md and contents of this file.
 
-  - 30 Days of CDISC
-
-
-
-TOP
 
 
 Typst

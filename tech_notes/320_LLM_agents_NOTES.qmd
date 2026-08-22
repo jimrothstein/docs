@@ -9,6 +9,15 @@ description: "This *.md:   operational notes, tools, websites   - no theory here
 * Simon Willison writes how he uses LLM models; https://simonwillison.net/2026/Mar/30/mr-chatterbox/
 * Blog with very clear explanations & background: https://blog.apify.com/mcp-a2a-agentic-internet/
 
+### 21 AUG 2026
+python coding: (Aaruhs) https://youtu.be/6ZTVp70Mf5s?list=PLbcglKxZP5PN24k_s_a4QlTR_FSZ7HON3
+- b/c python coding, ML (but now I do not the theory )
+
+pytorch - has tutorial (https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html)
+
+
+  
+
 
 ### 09 AUG 2026
 - https://eli.thegreenplace.net/2025/reverse-mode-automatic-differentiation/

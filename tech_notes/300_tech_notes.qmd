@@ -1,5 +1,6 @@
 ---
-title: "300_tech_notes.md"
+
+title: "300_tech_notes.qmd"
 date: last-modified
 description: Variety of misc tech notes
 ---
@@ -8,6 +9,7 @@ description: Variety of misc tech notes
 
 For pdf:
 quarto render 300_tech_notes.qmd --to typst\
+(in emacs M-x preview-quarto,   uses typst if it see typst chunk)
 
 For gfm
 quarto render 300_tech_notes.qmd, or  \
@@ -78,8 +80,10 @@ git reflog HEAD@{3}
 git reflog HEAD@{yesterday}
 
 #### Show changes made a certain <SHA> (green/red)  [ short for git log -g --short-abbrev  ]
+```
 git show HEAD@{3}          | commit
 git show <br>@{yesterday}  | branch
+````
 
 
 #### Undo/Go Back
@@ -753,6 +757,10 @@ chmod 700 rwx --- ---
 - delete all files  EXCEPT "txt" files: \
   find . ! -name '*.txt' -type f -exec rm -f {} +
   grabs all non txt files, replaces{} with these files, all one line (+)
+
+
+### which directory exists? (1st one prints)
+- ls -l ~/.config/emacs/bin/doom ~/.emacs.d/bin/doom 2>/dev/null
 
 CoMMIT first!
 - find . -name '*.txt' -type f -exec rm  -i {} ;   **ask** user before removing file
