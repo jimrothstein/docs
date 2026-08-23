@@ -1388,3 +1388,9 @@ If you prefer not to write code, several community-built tools bypass Reddit's l
 * **Web Utilities (e.g., Reddit-Saved.com):** Free web apps exist that securely authenticate through Reddit OAuth, index your list, and provide an instant search bar. Because they store a record of your saves once synced, they can often help you preserve items beyond Reddit's 1,000-post memory wall.
 
 ```
+
+### Typst - purple ellipse
+
+```{=typst}
+#ellipse(width: 2cm, height: 1.2cm, fill: purple)
+```
