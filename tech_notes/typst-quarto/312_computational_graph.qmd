@@ -1,0 +1,248 @@
+---
+title: "A Small Computational Graph"
+format:
+  typst: 
+    toc: false
+    section-numbering: 1.1.a
+    columns: 1
+---
+
+```{=typst}
+
+
+#import "@preview/fletcher:0.5.8": diagram, node, edge
+
+#diagram(
+  node-stroke: 0.8pt,
+  node-fill: rgb("f9f9f9"),
+  spacing: (15mm, 10mm),
+
+  // Inputs and weights
+  node((0, 0), $x$, radius: 5mm),
+  node((0, 1), $w_1$, radius: 5mm),
+  node((0, 2.5), $w_2$, radius: 5mm),
+  node((0, 3.5), $y$, radius: 5mm),
+
+  // Multiplication
+  node((1.5, 0.5), $times$, radius: 6mm, name: <mul1>),
+  node((1.5, 3.0), $times$, radius: 6mm, name: <mul2>),
+
+  edge((0, 0), <mul1>, "->"),
+  edge((0, 1), <mul1>, "->"),
+  edge((0, 2.5), <mul2>, "->"),
+  edge((0, 3.5), <mul2>, "->"),
+
+  // Addition
+  node((3.0, 1.75), $+$, radius: 6mm, name: <add>),
+
+  edge(<add>, <act>, "->", label: $z$, label-pos: 0.5, label-side: auto),
+  edge(<mul2>, <add>, "->", label: $w_2 y$, label-pos: 0.4, label-side: right),
+
+  // Activation
+  node(
+    (4.5, 1.75),
+    $sigma$,
+    radius: 6mm,
+    fill: rgb("e6f2ff"),
+    stroke: blue + 1pt,
+    name: <act>,
+  ),
+
+  edge(<add>, <act>, "->", label: $z$, label-pos: 0.5, label-side: auto ),
+
+  // Output
+  node((6.0, 1.75), $f(x, y)$, stroke: none, fill: none, name: <out>),
+  edge(<act>, <out>, "->"),
+)
+```
+***
+
+```{=typst}
+#diagram(
+  node-stroke: 0.8pt,
+  node-fill: rgb("f9f9f9"),
+  spacing: (15mm, 10mm),
+
+  // Inputs and weights
+  node((0, 0), $x$, radius: 5mm),
+  node((0, 1), $w_1$, radius: 5mm),
+  node( (1,1), name: <a>, $a=x*w_1$, radius: 15mm ),
+
+  edge((0, 0), <a>, "->"),
+  edge((0, 1), <a>, "->"),
+)
+```
+```{=typst}
+#import "@preview/fletcher:0.5.8" as fletcher: diagram, node, edge
+```
+Comment
+```{=typst}
+/*
+a long comment
+
+*/
+
+```
+***
+
+Linear (?) Diagram, includes nodes and edges
+- Use backslash to linebreak \
+```{=typst}
+#diagram(cell-size: 15mm, $
+	G edge(f, ->) edge("d", pi, ->>) & im(f) \
+	G slash ker(f) edge("ur", tilde(f), "hook-->")
+$)\
+```
+
+#### simple diagrams 
+```{=typst}
+#diagram(cell-size: 15mm, $
+	A edge(f, ->) edge("d", pi, ->>) & B edge(g, ->) & C edge(h, -> ) & D
+$)\
+```
+***
+
+### linear
+```{=typst}
+#diagram(
+$
+A edge("wave") &
+B edge("zigzag") &
+C edge("coil") & D \
+alpha &&& omega \
+a edge(g, ->) & b
+$
+)\
+```
+### practice (need A <--- B)
+```{=typst}
+#diagram({
+  node((0, 0), [A], name: <A>)
+  node((4, 0), [B], name: <B>)
+
+  edge(<A>, <B>, "->", shift: 3pt)
+  edge(<A>, <B>, "<-", shift: -3pt)
+})
+```
+
+#### Add grid
+```{=typst}
+#diagram(
+debug: true, // show a coordinate grid
+spacing: (5pt, 4em), // small column gaps, large row spacing
+node((0,0), $f$),
+node((1,0), $f$, stroke: 1pt),
+node((2,0), $f$, stroke: blue, shape: rect),
+)\
+```
+
+### Add vertical space
+```{=typst}
+A
+#v(1cm)
+B\
+```
+
+
+```{=typst}
+
+#set align(center)
+#block(
+  fill: rgb("f58025"),
+  inset: 14pt,
+  width: 100%,
+[Can use typ file, but then use `typst` ecosystem to render, quarto approach simpler]
+)
+#set align(left)
+
+```
+
+
+***
+
+### Consider the function:
+
+```{=typst}
+$
+f(x, y) = (x + y)y
+$
+```
+
+::: {#fig-computation-graph}
+
+```{dot}
+digraph computation_graph {
+  graph [
+    rankdir = LR,
+    bgcolor = "transparent",
+    nodesep = 0.45,
+    ranksep = 0.7
+  ];
+
+  node [
+    shape = circle,
+    style = filled,
+    fillcolor = "#EAF2FF",
+    color = "#3B6EA5",
+    fontname = "Helvetica",
+    fontsize = 10,
+    margin = 0.08
+  ];
+
+  edge [
+    color = "#4A5568",
+    arrowsize = 0.75
+  ];
+
+  x   [label = "x"];
+  y   [label = "y"];
+  add [label = "+"];
+  mul [label = "×"];
+  f   [label = "f"];
+
+  x -> add;
+  y -> add;
+  add -> mul;
+  y -> mul;
+  mul -> f;
+}
+```
+
+A computational graph for the function above.
+
+:::
+
+The forward computation introduces an intermediate value:
+
+```{=typst}
+#import "@preview/diverential:0.3.0": *
+$
+u = x + y \
+f = u y
+$
+```
+
+For the reverse pass:
+
+```{=typst}
+$
+dvp(f,u) = y \
+dif f / dif x
+  = (dif f / dif u)(dif u / dif x)
+  = y
+$
+```
+
+The variable \(y\) occurs along two paths, so its contributions add:
+
+```{=typst}
+$
+dif f / dif y
+  = underbrace(dif f / dif y)_(text("direct path"))
+  + underbrace(
+      (dif f / dif u)(dif u / dif y)
+    )_(text("through ") u) \
+  = u + y \
+  = x + 2y
+$
+```

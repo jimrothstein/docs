@@ -23,6 +23,24 @@ gerontocracy, rule by oldest
 
 Germany #link("www.nytimes.com")[failing nytimes.com]
 
+```{=typst}
+
+% Set variables
+set #J = Jerusalem
+set #C = Constantinople
+
+```
+
+## Ottoman Empire (Zionism)
+- 1839-1876 "Tanzimat" - all religions each | citizens and foreigners can buy land, new settlements
+- 1882 - 1st Jewish Settlement
+- 1887 - Jerusalem under direct control of Constantinople 
+- 1897 - Hertz' book: Jewish State 
+- 1902 - Kaiser visits Jerusalem;  1st and only visit by Hertzel, who finds it too hot, too dirty (he dies 1904, age 44)
+At this point, only citizens can vote.  Few foreginers are citizens. Moslem control Jerusalem's govt.
+- 1902 Zionist Conference; Sultan welcomes Jews, but only in small settlements and not in Palestine; Zionists reject British offer of piece of Uganda. Want Palestine.
+KEY problem, even at this point: Arabs will not accept Jewish state.  Perhaps violence will scare away the Jews.   But Jews think they can convince Arabs, especially with argument Jews bring western skills, money, education .... fundamental error.
+- 1908 Young Turks revolt.  Triggers nationalism and especially Arab nationalistm.   OLD: we are proud Ottomans (jews, christian, moslem); NEW: we are Arabs.
 ##  Russia <russia> - Mongol vs Turkic vs Tatar?
 
 - populated long ago (\~2000-3000 BC?) , possible Scandinavian offshoot?

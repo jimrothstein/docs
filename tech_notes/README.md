@@ -1,7 +1,7 @@
 ---
 name:  README.md
-description:  Render *.qmd, *.typplast ud
-last update:  7/23/2026
+description:  Render *.qmd, embed *.typ
+last update:  8/30/2026
 ---
 
 

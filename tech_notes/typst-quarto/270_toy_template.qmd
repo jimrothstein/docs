@@ -1,0 +1,112 @@
+---
+title: "270_toy_typst_template.qmd "
+author: "JR"
+date: today 
+editor:
+  markdown: 
+    wrap: 72
+---
+
+
+## Example 1
+
+
+```
+Here, we are defining the variable amazed, assigning it a function that takes a single argument, term, and returns content with the term surrounded by sparkles. We also put the whole thing in a box so that the te.   term is argument of function
+
+#quote("#let amazed(term) = box[✨ #term ✨] / You are #amazed[beautiful]!")"
+```
+
+```{=typst}
+#let amazed(term) = box[✨ #term ✨]
+
+You are #amazed[beautiful]!
+```
+  
+### Example 2
+```
+
+Function amazed has "term" as arg, plus color arg with default 
+
+#let amazed(term, color: blue) = {
+  text(color, box[✨ #term ✨])
+}
+
+You are #amazed[beautiful]!
+I am #amazed(color: purple)[amazed]!
+```
+
+```{=typst}
+#let amazed(term, color: blue) = {
+  text(color, box[✨ #term ✨])
+}
+
+You are #amazed[beautiful]!
+I am #amazed(color: purple)[amazed]!
+And I am #amazed(color: black)[jim]
+```
+
+### Example 3
+
+
+```
+"#show: amazed" is shortcut to calling function amazed and rest is just first argument.
+
+#show: amazed
+I choose to focus on the good
+in my life and let go of any
+negative thoughts or beliefs.
+In fact, I am amazing!
+```
+
+```{=typst}
+#show: amazed
+I choose to focus on the good
+in my life and let go of any
+negative thoughts or beliefs.
+In fact, I am amazing!
+```
+
+
+
+
+### Example 4 (Embed set and show rules)
+
+```
+#let template(doc) = [
+  //#set text(font: "Inria Serif")
+  #show "something cool": [Typst]
+  #doc
+]
+
+#show: template
+```
+
+```{=typst}
+#let template(doc) = [
+  #set text(color: green)
+  #show "something cool": [Typst]
+  #doc
+]
+```
+
+#show: template
+I am learning something cool today.
+It's going great so far!
+
+### Example 5
+```
+Just like we already discovered in the previous chapter, set rules will apply to everything within their content block. Since the everything show rule passes our whole document to the template function, the text set rule and string show rule in our template will apply to the whole document. Let’s use this knowledge to create a template that reproduces the body style of the paper we wrote in the previous chapter.
+```
+
+
+Define function template with 1 arg and will return content.  
+```
+```{=typst}
+#let template(doc) = [
+  // #set text(font: "Inria Serif")
+  #show "something cool": [Typst]
+  #doc
+]
+```
+ 

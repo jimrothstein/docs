@@ -1,0 +1,1110 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+]{report}
+\usepackage{xcolor}
+\usepackage[lmargin=30mm,rmargin=30mm]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{241,243,245}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.40,0.45,0.13}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\ExtensionTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.28,0.35,0.67}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.46,0.62}{#1}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.07,0.07,0.07}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+\ifLuaTeX
+  \usepackage{luacolor}
+  \usepackage[soul]{lua-ul}
+\else
+  \usepackage{soul}
+\fi
+
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
+\definecolor{quarto-callout-color}{HTML}{909090}
+\definecolor{quarto-callout-note-color}{HTML}{0758E5}
+\definecolor{quarto-callout-important-color}{HTML}{CC1914}
+\definecolor{quarto-callout-warning-color}{HTML}{EB9113}
+\definecolor{quarto-callout-tip-color}{HTML}{00A047}
+\definecolor{quarto-callout-caution-color}{HTML}{FC5300}
+\definecolor{quarto-callout-color-frame}{HTML}{acacac}
+\definecolor{quarto-callout-note-color-frame}{HTML}{4582ec}
+\definecolor{quarto-callout-important-color-frame}{HTML}{d9534f}
+\definecolor{quarto-callout-warning-color-frame}{HTML}{f0ad4e}
+\definecolor{quarto-callout-tip-color-frame}{HTML}{02b875}
+\definecolor{quarto-callout-caution-color-frame}{HTML}{fd7e14}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{sidenotes}{}{\usepackage{sidenotes}}
+\@ifpackageloaded{marginnote}{}{\usepackage{marginnote}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{tikz}{}{\usepackage{tikz}}
+\makeatother
+        \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+          \node[shape=circle,draw,inner sep=1pt] (char) {{\scriptsize#1}};}}  
+                  
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+% fallback for those not using the hyperref driver hyperxmp:
+\makeatletter
+\@ifundefined{xmpquote}{\newcommand{\xmpquote}[1]{#1}}{}
+\makeatother
+\hypersetup{
+  pdftitle={260\_typst\_cheat.qmd},
+  pdfauthor={JR},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{260\_typst\_cheat.qmd}
+\author{JR}
+\date{2026-08-23}
+\begin{document}
+\maketitle
+
+
+PURPOSE: Mixed quarto/typst features. Includes quarto div, html tricks
+(legacy)
+
+\subsection{TODO}\label{todo}
+
+\begin{itemize}
+\tightlist
+\item
+  create quarto template that embeds this setup
+\item
+  learn typst options for \_quarto.yml, under format: typst
+\end{itemize}
+
+\subsection{typst variable to hold
+{[}content{]}}\label{typst-variable-to-hold-content}
+
+\subsection{typst variables can hold {[}content{]}, or strings, lengths,
+font sizes, numbers,
+binary\ldots.}\label{typst-variables-can-hold-content-or-strings-lengths-font-sizes-numbers-binary.}
+
+\subsection{PURPOSE:}\label{purpose}
+
+This is \emph{.qmd file with (1) various quarto display tricks and (2)
+}typst* chunks. /
+
+\subsection{USE:}\label{use}
+
+quarto render 260\_typst\_cheat.qmd --to typst
+
+\subsection{TODO:}\label{todo-1}
+
+Cleanup, remove remnants of past SCSS, remove what does \textbf{not}
+work.
+
+USE the \emph{typst app} ! - For typst \& math, use this file For Math.
+- For typst \& Text, use \ldots{} .qmd - Typst for pdf (future html?) -
+latex does seem to work. But plenty does NOT work on this page. - BEST:
+use typst app
+
+Watch \url{https://www.youtube.com/watch?v=2DbuqYKOsrY}\\
+Tutorial: \url{https://typst.app/docs/tutorial/writing-in-typst/}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{description}
+\item[Def Word A]
+Word A means \ldots..
+\item[Word B]
+B means this.
+\end{description}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+For CSS, use:
+
+This is shadowbox in generic `div' container (Note: many ways to put
+into .qmd) SEE:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div
+
+SEE: https://pandoc.org/chunkedhtml-demo/8.18-divs-and-spans.html
+
+Should also be in shadobx, using pandox's colons
+
+Latex, MATH, \textbf{diagrams}: SEE \texttt{code\_publish} esp MATH and
+LATEX (but poor organization)
+
+Embed latex.sty and real latex in quarto
+https://youtu.be/2DbuqYKOsrY?t=396
+
+Or, add \texttt{quarto\ extensions} (format: my\_extension) To add latex
+or HTML forms \ldots{} Or, some R packages (gt, \ldots) allow you to
+embed latex in a function. OR, typst (since 2022) - simpler than latex
+
+\subsection{typst}\label{typst}
+
+*.qmd, then template (position things like \(title\)), then style doc to
+set title = ``Hello'' Typt is more English; compare to SCSS to make,
+say, a box, yellow, with a font \ldots{}
+
+\chapter{Section I}\label{section-i}
+
+go to {[}Jim{]}
+
+\section{TO DO}\label{to-do}
+
+In SCSS file, there are - tags Example: h1 \{ \ldots{} \} - class
+Example: .important \{ \ldots{} \} - id Example: \#title \{ \ldots\}
+
+Inside the \{ \ldots{} \} is SCSS
+
+Once defined, the SCSS can applied in *.qmd file in several ways
+
+\begin{itemize}
+\tightlist
+\item
+  chunk:
+\end{itemize}
+
+\begin{verbatim}
+#| class-output:  myclass
+\end{verbatim}
+
+\begin{itemize}
+\item
+  text: add highlight \{.highlight\}
+\item
+  div:
+\end{itemize}
+
+\begin{verbatim}
+::: {.border}
+ text
+:::
+\end{verbatim}
+
+\begin{itemize}
+\item
+  inline: {render this text}
+\item
+  via markdown: \emph{this is italics} this is underline
+\end{itemize}
+
+this is also underlined, using definition in SCSS
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{To Publish quarto to
+connect.posit.cloud}\label{to-publish-quarto-to-connect.posit.cloud}
+
+https://connect.posit.cloud/jimrothstein
+
+This is IDE (https://posit.cloud/content/yours?sort=name\_asc)
+
+\begin{itemize}
+\item
+  Copy desired *.qmd to this folder: quarto \ldots{} test
+\item
+  Run the writeManifest() (below)
+\item
+  (Does render work locally?)
+\item
+  Check the resulting manifest.json is not bloated with excessive
+  packages/dependencies.
+\item
+  commit/push
+\item
+  On this website: - https://connect.posit.cloud/jimrothstein
+\item
+  \texttt{Publish}
+\item
+  Choose Github, this folder, which *.qmd file
+\end{itemize}
+
+In this folder/project,
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#rsconnect::writeManifest()}
+\end{Highlighting}
+\end{Shaded}
+
+\section{Absolute positioning
+example}\label{absolute-positioning-example}
+
+{I love .small}
+
+{centering}
+
+{[}absolute positioning{]}\{.absolute top=``50\%'' left-``50\%''\}
+
+{and cake.}
+
+\section{Preliminaries}\label{preliminaries}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, breakable, colback=white, colframe=quarto-callout-color-frame, left=2mm, leftrule=.75mm, opacityback=0, rightrule=.15mm, toprule=.15mm]
+
+KEEP as QUARTO .qmd file (to learn to decorate) RStudio also - easy to
+post completed quarto to Posit Cloud
+
+\end{tcolorbox}
+
+\subsection{REF}\label{ref}
+
+\begin{itemize}
+\item
+  \url{https://sass-lang.com/documentation/}
+\item
+  \href{https://sass-lang.com/documentation/}{sass-lang.org}
+\item
+\item
+\end{itemize}
+
+Here is \href{https://sass-lang.com/documentation/}{FOO} and here is
+\href{https://pandoc.org/MANUAL.html\#inline-links}{Pandoc links}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-tip-color!10!white, colframe=quarto-callout-tip-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{References, click to expand}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+\begin{itemize}
+\tightlist
+\item
+  Mimi - quarto, some CSS, SCSS (see her actual code):
+  https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/\\
+\item
+  Themes, SASS:
+\item
+  SASS R pkg:
+  https://cran.r-project.org/web/packages/sass/vignettes/sass.html\\
+\item
+  Quarto Themes + modify with SCSS:
+  https://quarto.org/docs/output-formats/html-themes.html\#basic-options
+  ~
+\end{itemize}
+
+\end{tcolorbox}
+
+``Sass theme files can define both variables that globally set things
+like colors and fonts, as well as rules that define more fine grained
+behavior. To customize an existing Bootstrap theme with your own set of
+variables and/or rules, just provide the base theme and then your custom
+theme file(s):''
+
+\begin{verbatim}
+PURPOSE: Collect misc stuff related to quarto and HTML
+
+- quarto 
+- css, SCSS
+- revealjs   (SEE:  examples in code_publish)
+- HTML
+\end{verbatim}
+
+\subsection{Misc quarto tips}\label{misc-quarto-tips}
+
+\begin{itemize}
+\tightlist
+\item
+  Quarto looks to \_quarto.yml in current dir, then in parent dir.
+\item
+  This takes dominance over any scsc file in yaml in the .qmd file.
+  (check !!)
+\item
+  \texttt{div} means container
+\item
+  \texttt{:::\ blocks} are called \emph{fences} and complies to
+  \textless div \ldots\textgreater{}
+\end{itemize}
+
+https://www.sitepoint.com/understanding-and-using-rem-units-in-css/
+
+\begin{itemize}
+\tightlist
+\item
+  .em - height of entire metal type block, not the character alone.
+\item
+  .rem - size relative to the HTML root tag (\textasciitilde{} 16 px)
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+These are same: \texttt{::::\{.X\}} and \texttt{::::\{X\}} where X is
+defined in CSS/SCSS.
+
+\subsection{Output chunks}\label{output-chunks}
+
+Note: use of \texttt{class-source} and \texttt{class-output}, define
+.custombox\_* in SCSS class-source not working.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x}\OtherTok{=}\DecValTok{1}
+\NormalTok{y }\OtherTok{=}\NormalTok{ x }\SpecialCharTok{+}\DecValTok{2}
+\NormalTok{y}
+\NormalTok{[}\DecValTok{1}\NormalTok{] }\DecValTok{3}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x}\OtherTok{=}\DecValTok{1}
+\NormalTok{y }\OtherTok{=}\NormalTok{ x }\SpecialCharTok{+}\DecValTok{2}
+\NormalTok{y}
+\NormalTok{[}\DecValTok{1}\NormalTok{] }\DecValTok{3}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x}\OtherTok{=}\DecValTok{1}
+\NormalTok{y }\OtherTok{=}\NormalTok{ x }\SpecialCharTok{+}\DecValTok{2}
+\NormalTok{y}
+\NormalTok{[}\DecValTok{1}\NormalTok{] }\DecValTok{3}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#| code{-}fold: true}
+\CommentTok{\#| code{-}summmary: Show code.}
+
+\NormalTok{Show me}
+\end{Highlighting}
+\end{Shaded}
+
+\section{Pandoc only (cli) - pdf,}\label{pandoc-only-cli---pdf}
+
+pandoc -D latex \# template pandoc -D html
+
+templates look like \(var\), or \(IF\) etc. trick: Regardless of
+content, place 3 back ticks at top/bottom will render document as
+straight text.
+
+\footnotesize
+
+To render ascii document with small font (for printing):
+
+\begin{itemize}
+\item
+  in , use ``` for verbatum
+\item
+  very top: \footenotesize
+\item
+  pandoc -f markdown -o out.pdf
+\item
+  pandoc -f markdown -V geometry:margin=2cm -o out.pdf
+\item
+  quarto render --to gfm --output
+  \textless output\_file.md\textgreater{}
+\item
+  Visual Mode = menu driven, simplifies decorattion
+\item
+  Renders automatically.
+\end{itemize}
+
+\section{Quarto - basics}\label{quarto---basics}
+
+markdown does NOT offer all tools (ex: change color) best to avoid
+direct HTML insertion, use tools:
+
+\begin{itemize}
+\item
+  knitr:: can be useful functions:
+  \url{https://cran.r-project.org/web/packages/knitr/knitr.pdf}
+\item
+  rmarkdown cookbook:
+  \url{https://bookdown.org/yihui/rmarkdown-cookbook}
+\item
+  markdown:: adds to rmarkdown:
+\item
+  Mimi: videos
+\item
+  Pandoc's version of markdown:
+\item
+  Bootstrap: predefined SEE getbootstrap.com css help-classes
+\end{itemize}
+
+\subsection{quarto examples}\label{quarto-examples}
+
+SEE namespace file
+
+\subsection{Run quarto (CLI) create project to create any quarto
+project, including slides with
+revealjs.}\label{run-quarto-cli-create-project-to-create-any-quarto-project-including-slides-with-revealjs.}
+
+For revealjs, choose presentation when create document (in Rstudio)
+
+\subsection{Quarto - markup, callouts}\label{quarto---markup-callouts}
+
+\ul{underline text, where defined?}
+
+{text with border, defined?}
+
+\subsection{Create a footnote:}\label{create-a-footnote}
+
+Need footnote one here: \footnote{This is footnote one.}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Call out examples}\label{call-out-examples}
+
+REF: https://quarto.org/docs/authoring/callouts.html
+
+\subsection{.callout-note}\label{callout-note}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-note-color!10!white, colframe=quarto-callout-note-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+This is .callout-note:\\
+Note that there are five types of callouts, including: \texttt{note},
+\texttt{warning}, \texttt{important}, \texttt{tip}, and
+\texttt{caution}.
+
+\end{tcolorbox}
+
+\subsection{.callout-tip}\label{callout-tip}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-tip-color!10!white, colframe=quarto-callout-tip-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+This is an example of a callout with a title.
+
+\end{tcolorbox}
+
+\subsection{.callout-caution, collapse}\label{callout-caution-collapse}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-caution-color!10!white, colframe=quarto-callout-caution-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-caution-color}{\faFire}\hspace{0.5em}{Caution}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+Expand To Learn About Collapse
+
+This is an example of a `folded' caution callout that can be expanded by
+the user. You can use \texttt{collapse="true"} to collapse it by default
+or \texttt{collapse="false"} to make a collapsible callout that is
+expanded by default.
+
+\end{tcolorbox}
+
+\subsection{.content-visible
+when-format=html}\label{content-visible-when-formathtml}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-tip-color!10!white, colframe=quarto-callout-tip-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Expand for Full Code Walkthrough}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(admiral)}
+\FunctionTok{library}\NormalTok{(tibble)}
+\NormalTok{adbds }\OtherTok{\textless{}{-}} \FunctionTok{tribble}\NormalTok{(}
+  \SpecialCharTok{\textasciitilde{}}\NormalTok{PARAMCD, }\SpecialCharTok{\textasciitilde{}}\NormalTok{AVAL,}
+  \StringTok{"AST"}\NormalTok{,    }\DecValTok{42}\NormalTok{,}
+  \StringTok{"AST"}\NormalTok{,    }\DecValTok{52}\NormalTok{,}
+  \StringTok{"AST"}\NormalTok{,    }\ConstantTok{NA\_real\_}\NormalTok{,}
+  \StringTok{"ALT"}\NormalTok{,    }\DecValTok{33}\NormalTok{,}
+  \StringTok{"ALT"}\NormalTok{,    }\DecValTok{51}
+\NormalTok{)}
+\CommentTok{\# Create a criterion flag with values "Y" and NA}
+\FunctionTok{derive\_vars\_crit\_flag}\NormalTok{(}
+\NormalTok{  adbds,}
+  \AttributeTok{condition =}\NormalTok{ AVAL }\SpecialCharTok{\textgreater{}} \DecValTok{50}\NormalTok{,}
+  \AttributeTok{description =} \StringTok{"Absolute value \textgreater{} 50"}
+\NormalTok{)}
+\CommentTok{\# Create criterion flag with values "Y", "N", and NA and parameter dependent}
+\CommentTok{\# criterion description}
+\FunctionTok{derive\_vars\_crit\_flag}\NormalTok{(}
+\NormalTok{  adbds,}
+  \AttributeTok{crit\_nr =} \DecValTok{2}\NormalTok{,}
+  \AttributeTok{condition =}\NormalTok{ AVAL }\SpecialCharTok{\textgreater{}} \DecValTok{50}\NormalTok{,}
+  \AttributeTok{description =} \FunctionTok{paste}\NormalTok{(PARAMCD, }\StringTok{"\textgreater{} 50"}\NormalTok{),}
+  \AttributeTok{values\_yn =} \ConstantTok{TRUE}\NormalTok{,}
+  \AttributeTok{create\_numeric\_flag =} \ConstantTok{TRUE}
+\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\end{tcolorbox}
+
+\subsection{aside}\label{aside}
+
+\marginnote{\begin{footnotesize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  An aside.\\
+\end{enumerate}
+
+\end{footnotesize}}
+
+\marginnote{\begin{footnotesize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Another aside;
+\item
+  contains a hidden keep a secret? USE \{.hidden\}
+\end{enumerate}
+
+\end{footnotesize}}
+
+\subsection{hidden}\label{hidden}
+
+4 This is secret
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Two columns}\label{two-columns}
+
+I would like to have text here
+
+Sentence becomes longer, it should automatically stay in their column
+
+and here
+
+More text
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Quarto \& CSS \textbar{} SCSS (see \_quarto.yml cosmo +
+custom.scss)}\label{quarto-css-scss-see-_quarto.yml-cosmo-custom.scss}
+
+in YAML, I used \texttt{date:\ \ today}\\
+but in inline r 23 August 2026
+
+1 verbatim:
+
+\begin{verbatim}
+in chunks: 
+- OLD way: `{r style="xxx"; class=""} 
+- NEW way: `{r .name } where .name is defined in .CSS or .SCSS 
+\end{verbatim}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-note-color!10!white, colframe=quarto-callout-note-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+2nd way:
+
+in chunks: - OLD way: `\{r style=``xxx''; class=``\,``\}
+
+\begin{itemize}
+\tightlist
+\item
+  NEW way: `\{r .name \} where .name is defined in .CSS or .SCSS
+\end{itemize}
+
+\end{tcolorbox}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Defined in SCSS (.custombox\_white)
+
+\begin{itemize}
+\tightlist
+\item
+  Div Examples, defined in prior CSS block as \texttt{greybox}
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Custom Blocks
+(rmarkdown-9.6)}\label{custom-blocks-rmarkdown-9.6}
+
+\marginnote{\begin{footnotesize}
+
+(aside) Custom Blocks
+
+\end{footnotesize}}
+
+\protect\phantomsection\label{hello}
+Hello \textbf{world}! is this CSS or SCSS?
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{verbatim}
+This example ... renders as:
+:::{.small}
+Is this .small?
+:::
+\end{verbatim}
+
+Is this .small?
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{itemize}
+\item
+  BE SURE to use \texttt{\_quarto.yml} in base directory.
+\item
+  \texttt{\_quarto.yml} identifies css or SCSS file.
+\item
+  Quarto uses \texttt{themes} from Bootstrap, in special file format (*
+  \ldots. *) OR, use existing SCSS
+\item
+  Because \texttt{\textless{}}, \texttt{\textgreater{}} have meaning in
+  HTML, use \texttt{escaped} version \texttt{\textless{}\&} in HTTP
+\end{itemize}
+
+\begin{verbatim}
+
+
+::: aside 
+SEE References 
+:::
+
+Interactive? javascript widgets or **Shiny** Fiddle with code? use
+**WebR**
+
+Decorate?\
+- Use assorted tags that compile to html div - In chunks, use knitr to
+decorate that chunk
+
+------------------------------------------------------------------------
+
+
+### SCSS examples (mostly)
+
+***
+
+``` {.small}
+1. This is small b/c I used `.small` 
+\end{verbatim}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  But this time, \texttt{small} is inside the colon blocks
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{3. Very small}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Inside colon blocks
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+
+
+
+\FunctionTok{\#\#\# Display code and chunk options}
+
+
+\NormalTok{::: \{.cell\}}
+
+\InformationTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}\textasciigrave{}\{.cell{-}code  code{-}line{-}numbers="|5|6"\}}
+\NormalTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}}\OperatorTok{\{}\NormalTok{r}\OperatorTok{\}}
+\PreprocessorTok{\#}\ErrorTok{| label: example}
+\PreprocessorTok{\#}\ErrorTok{| code{-}line{-}numbers: "|5|6"}
+\PreprocessorTok{\#}\ErrorTok{| echo: fenced \# shows these options in output}
+\NormalTok{x  }\OperatorTok{\textless{}{-}} \DecValTok{1}
+\NormalTok{y  }\OperatorTok{\textless{}{-}} \DecValTok{2}
+\NormalTok{x}\OperatorTok{+}\NormalTok{y}
+\end{Highlighting}
+\end{Shaded}
+
+````
+
+\begin{verbatim}
+[1] 3
+\end{verbatim}
+
+:::
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+TODO pdf - fix greater than equa pdf: toc: false include-in-header:
+text: \textbar{}
+
+\usepackage[top=.5in, bottom=.5in, left=.7in, right=.5in]{geometry}
+        \usepackage{amsmath,amssymb,amstext,amsfonts}
+        \usepackage{lipsum}
+
+Will only appear in PDF. \renewcommand{\familydefault}{\sfdefault}
+
+\section{R Definitions \& Examples   (TERSE)}
+\section{Manuals}
+
+\textbackslash section(Definitions\}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{table with scss}\label{table-with-scss}
+
+First Name
+
+Last Name
+
+Super Hero
+
+Peter
+
+Parker
+
+Spiderman
+
+Bruce
+
+Wayne
+
+Batman
+
+Clark
+
+Kent
+
+Superman
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Example of Bootstrap classes:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{mtcars[}\DecValTok{1}\SpecialCharTok{:}\DecValTok{5}\NormalTok{, }\StringTok{"mpg"}\NormalTok{]}
+\NormalTok{[}\DecValTok{1}\NormalTok{] }\FloatTok{21.0} \FloatTok{21.0} \FloatTok{22.8} \FloatTok{21.4} \FloatTok{18.7}
+\end{Highlighting}
+\end{Shaded}
+
+To make sure that we always get a data frame, we have to use the
+argument \texttt{drop\ =\ FALSE}. Now we use the chunk option
+\texttt{class.source\ =\ "bg-success"}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{mtcars[}\DecValTok{1}\SpecialCharTok{:}\DecValTok{5}\NormalTok{, }\StringTok{"mpg"}\NormalTok{, drop }\OtherTok{=} \ConstantTok{FALSE}\NormalTok{]}
+\NormalTok{                   mpg}
+\NormalTok{Mazda RX4         }\FloatTok{21.0}
+\NormalTok{Mazda RX4 Wag     }\FloatTok{21.0}
+\NormalTok{Datsun }\DecValTok{710}        \FloatTok{22.8}
+\NormalTok{Hornet }\DecValTok{4}\NormalTok{ Drive    }\FloatTok{21.4}
+\NormalTok{Hornet Sportabout }\FloatTok{18.7}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Annotate code and create code to change font
+color:}\label{annotate-code-and-create-code-to-change-font-color}
+
+Use knitr to create for red font, rmarkdown cookbook 5.1
+
+\protect\phantomsection\label{annotated-cell-17}%
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{col }\OtherTok{=} \ControlFlowTok{function}\NormalTok{(text, color)\{ }\hspace*{\fill}\NormalTok{\circled{1}}
+    \ControlFlowTok{if}\NormalTok{ (knitr}\SpecialCharTok{::}\FunctionTok{is\_html\_output}\NormalTok{()) \{ }\hspace*{\fill}\NormalTok{\circled{2}}
+        \FunctionTok{sprintf}\NormalTok{(}\StringTok{"\textless{}span style=\textquotesingle{}color:\%s\textquotesingle{}\textgreater{} \%s \textless{}/span\textgreater{}"}\NormalTok{, color, text )}
+\NormalTok{    \}}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{description}
+\tightlist
+\item[\circled{1}]
+Annotate line 1
+\item[\circled{2}]
+Annotate line 2
+\end{description}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Fancy Theorems}\label{fancy-theorems}
+
+\begin{verbatim}
+not working
+
+::: column-margin
+We know from *the first fundamental theorem of calculus* that for $x$ in
+$[a, b]$:
+
+$$\frac{d}{dx}\left( \int_{a}^{x} f(u)\,du\right)=f(x).$$
+
+:::
+\end{verbatim}
+
+\section{R chunks with decorations}\label{r-chunks-with-decorations}
+
+\subsection{Box (rmarkdown-book 9.6)}\label{box-rmarkdown-book-9.6}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{mtcars[}\DecValTok{1}\SpecialCharTok{:}\DecValTok{3}\NormalTok{, }\DecValTok{1}\SpecialCharTok{:}\DecValTok{2}\NormalTok{]}
+\NormalTok{               mpg cyl}
+\NormalTok{Mazda RX4     }\FloatTok{21.0}   \DecValTok{6}
+\NormalTok{Mazda RX4 Wag }\FloatTok{21.0}   \DecValTok{6}
+\NormalTok{Datsun }\DecValTok{710}    \FloatTok{22.8}   \DecValTok{4}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{mtcars[}\DecValTok{1}\SpecialCharTok{:}\DecValTok{3}\NormalTok{, }\DecValTok{1}\SpecialCharTok{:}\DecValTok{2}\NormalTok{]}
+\NormalTok{               mpg cyl}
+\NormalTok{Mazda RX4     }\FloatTok{21.0}   \DecValTok{6}
+\NormalTok{Mazda RX4 Wag }\FloatTok{21.0}   \DecValTok{6}
+\NormalTok{Datsun }\DecValTok{710}    \FloatTok{22.8}   \DecValTok{4}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\protect\phantomsection\label{special}
+This does what?
+
+\section{CSS here}\label{css-here}
+
+\subsection{CSS in-line examples.}\label{css-in-line-examples.}
+
+PURPOSE: Collect of HTML and PDF inline commands to control output
+
+\subsection{in-file, CSS examples}\label{in-file-css-examples}
+
+\subsection{Quarto: In-line CSS Examples for HTML,
+PDF}\label{quarto-in-line-css-examples-for-html-pdf}
+
+Very small
+
+\subsection{Inline}\label{inline}
+
+We can apply styles to a sentence or a word by creating spans using
+\texttt{{[}{]}} to surround the sentence or word that we want to style
+and use \texttt{\{\}} to define the style that we want to apply. For
+example,
+
+The color of this word is {red}. And {this line has a yellow
+background}.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Create a CSS class
+(inline)}\label{create-a-css-class-inline}
+
+\begin{verbatim}
+create class "myColor" (red) inline | use in paragraph | and div block| 
+\end{verbatim}
+
+Example 1
+
+myColor
+
+Example 2
+
+This is a Div defined by CSS, inline
+
+\subsubsection{Header uses in-file CSS
+class}\label{header-uses-in-file-css-class}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{head}\NormalTok{(mtcars, }\AttributeTok{n=}\DecValTok{2}\NormalTok{)}
+\NormalTok{              mpg cyl disp  hp drat    wt  qsec vs am gear carb}
+\NormalTok{Mazda RX4      }\DecValTok{21}   \DecValTok{6}  \DecValTok{160} \DecValTok{110}  \FloatTok{3.9} \FloatTok{2.620} \FloatTok{16.46}  \DecValTok{0}  \DecValTok{1}    \DecValTok{4}    \DecValTok{4}
+\NormalTok{Mazda RX4 Wag  }\DecValTok{21}   \DecValTok{6}  \DecValTok{160} \DecValTok{110}  \FloatTok{3.9} \FloatTok{2.875} \FloatTok{17.02}  \DecValTok{0}  \DecValTok{1}    \DecValTok{4}    \DecValTok{4}
+\end{Highlighting}
+\end{Shaded}
+
+\section{Acknowledgments}\label{acknowledgments}
+
+I am grateful for the insightful comments offered by the anonymous peer
+reviewers at Books \& Texts. The generosity and expertise of one and all
+have improved this study in innumerable ways and saved me from many
+errors; those that inevitably remain are entirely my own responsibility.
+
+
+
+
+\end{document}

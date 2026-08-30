@@ -7,6 +7,7 @@ format: typst
 <!-- proper way to embed typst, but run using quarto -->
 
 ```{=typst}
+% show "criteria/trigger"  "do what?"
 #show "finasteride": smallcaps
 #show "psyllium": set text(blue)
 #show "colonoscopy": set text(red)
@@ -449,6 +450,12 @@ But asia is different; Europe still better
 - Wild Planet
 
 
+Date?
+Ur_Alb/Creatine 419! \
+157  - Total Cholesterol \
+ 53  - HDL \
+ 79  - LDL \
+124  - Trig \
 
 Feb 14, 2026 - buproprion
 - no indication Dr. Z reoredered it;  no refills remain; put in RX request on everet-north website
