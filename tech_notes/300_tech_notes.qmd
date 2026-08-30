@@ -5,6 +5,18 @@ date: last-modified
 description: Variety of misc tech notes
 ---
 
+
+### literal print
+```console
+foo@bar:~$ whoami
+foo
+```
+
+### run in zsh shell
+```zsh
+whoami
+```
+```
 ** qmd file is authority **
 
 For pdf:
@@ -135,7 +147,7 @@ Detach head by git checkout <SHA>, then build out new branch (git checkout -b ne
 - git checkout HEAD@{n} # move back to n
 
 #### gh commands
-- gh repo delete jimrothstein/<repo>  on github/Be sure have permissions
+- gh repo delete jimrothstein/<repo> --yes     on github/Be sure have permissions( yes means no confirm )
 - gh repo list
 ** Install R
    - on Ubuntu, or mint linux virgina, use jammy and follow https://cran.r-project.org/bin/linux/ubuntu/ (works)

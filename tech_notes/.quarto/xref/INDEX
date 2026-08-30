@@ -100,5 +100,8 @@
   "265_typst_example.qmd": {
     "265_typst_example.typ": "68c7aba4",
     "265_typst_example.md": "85fcc836"
+  },
+  "400_simple_MATH_notes.qmd": {
+    "400_simple_MATH_notes.typ": "0232fe93"
   }
 }

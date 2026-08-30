@@ -9,38 +9,20 @@ It once WAS an *.org.  Expect issues.
 Why the change?  I use .qmd a lot
 
 
-Typst
+
+## Diary
+for LLM, agents, related meth ....
+GOTO 320_LLM_agents_NOTES.qmd
 
 
-Diary
-- NEXT: continue Kaggle (python and machine l)
+### Typst
   
-
-
-emacs:   go to 281_emacs_notes.org 
-
-
-* Learn elisp
-
-
-   
-
-
-
-Typst
-  1. USE online typst editor to debug  :typst
-  2. Basic:  000_simple.typ (learning curve to get symbols and format right).
-  3. Pretty graphs?    plotsy + cetz
-
-  
-* R
+### R
 - typst:  Ch 1,2 my Advanced R notes
 
-Python
-
-go to 320_ML_agents_NOTES.md
+### (basic) Python
+otherwise, go to 320_LLM_agents_NOTES.qmd
   
-* RE - cart project
 
 - NEXT:  go though https://gymnasium.farama.org/introduction/basic_usage/  
 - video (newer OpenEnv) https://www.youtube.com/watch?v=VUb16HYIyl4
@@ -49,18 +31,6 @@ go to 320_ML_agents_NOTES.md
   (Kim - see above)
   (w3) https://www.w3schools.com/python/python_lists.asp ***
 - LEARN: https://www.emilyriederer.com/post/py-rgo-2025/
-
-
-* pyTorch
-** https://www.learnpytorch.io/02_pytorch_classification/              :read:
-** (ageron, python code only for v1 of hands-on) https://github.com/ageron/handson-mlp
-** (ageron, some text + links to above code) https://deepwiki.com/ageron/handson-ml3/1-overview
-
-*** Learnpytorch.io
-  1. <2026-03-31 Tue> TODO NEXT:  move to positron? and  begin video: https://youtu.be/V_xro1bcAuA?list=PLbcglKxZP5PNVpX0Opb46KC1Tqp1X1Zql&t=19807
-  2. (freeCodeCamp) (videos) https://www.youtube.com/watch?v=V_xro1bcAuA&list=PLbcglKxZP5PNVpX0Opb46KC1Tqp1X1Zql&index=2&t=19070s
-  3. (text) Learn pyTorch https://www.learnpytorch.io/
-  4. (colab) https://colab.research.google.com/github/mrdbourke/pytorch-deep-learning/blob/main/01_pytorch_workflow.ipynb  
 
 Videos:
 
@@ -89,14 +59,14 @@ Play Area:
   https://www.youtube.com/watch?v=EMxDsDfvM_s&t=265s
 
 
-
-* Algebra, Math, Statistics
-*** Calculus
+## Algebra, Math, Statistics
+### Calculus
     1. Linear Maps & Derivatives (https://math-website.pages.dev/, "CantorClosure:  https://www.reddit.com/r/learnmath/comments/1pjl731/differential_calculus_through_linear_maps/)
-    2. Calculus Book I have
-    3.  Deisenroth, https://mml-book.github.io/book/mml-book.pdf    
+    2. Hubbard & Hubbard: (move to Calibre, only have bootleg pdf)
+    3. Deisenroth, https://mml-book.github.io/book/mml-book.pdf    
     4. Paul's Online Notes  https://tutorial.math.lamar.edu/Classes/CalcIII/EqnsOfPlanes.aspx
     5. Strang:  https://math.libretexts.org/Bookshelves/Calculus/Calculus_(OpenStax)/14%3A_Differentiation_of_Functions_of_Several_Variables/14.04%3A_Tangent_Planes_and_Linear_Approximations 
+    6.  
 
 ** CHEAT - Linear Algebra (*.typ)
 ** good, basic review geomrtry + transformations: https://pages.mtu.edu/~shene/COURSES/cs3621/NOTES/  :read:
@@ -180,4 +150,3 @@ hi
 
 * Return to TOP
 Either click or C-c C-o [[*Projects - TODO]]
-

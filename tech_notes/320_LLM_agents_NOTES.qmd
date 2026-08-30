@@ -9,15 +9,21 @@ description: "This *.md:   operational notes, tools, websites   - no theory here
 * Simon Willison writes how he uses LLM models; https://simonwillison.net/2026/Mar/30/mr-chatterbox/
 * Blog with very clear explanations & background: https://blog.apify.com/mcp-a2a-agentic-internet/
 
+
+### 27 AUG 2026
+- Bloggers
+    Andrew Heiss 
+    S. Raschka
+    Emil Huitfeldt
+
 ### 21 AUG 2026
 python coding: (Aaruhs) https://youtu.be/6ZTVp70Mf5s?list=PLbcglKxZP5PN24k_s_a4QlTR_FSZ7HON3
 - b/c python coding, ML (but now I do not the theory )
 
 pytorch - has tutorial (https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html)
+pytorch - free day camp  https://youtu.be/V_xro1bcAuA?si=HVHV2IhUW-ALzJGc
 
-
-  
-
+- LLM:   https://visionbook.mit.edu/
 
 ### 09 AUG 2026
 - https://eli.thegreenplace.net/2025/reverse-mode-automatic-differentiation/
@@ -127,6 +133,11 @@ python, multiple lessons, build each piece, tokenizer, transformer, harness ....
 
 ** Tom Yeh, [[https://www.youtube.com/playlist?list=PL0cq-CiC5Qhs9HcDnJpWuoDMrV0iPJ_-X][ai by hand videos]]
 
+
+### "open weight" model
+- if LLM has already been trained for coding, say, and knows python or R. A developer might want to additional train (ie change small number of weights) so the LLM understands our code, goal, team's criteria and so on. SEE:  <https://www.perplexity.ai/search/64ab25c1-b924-4a7e-9ffd-c59750bfb91a> 
+- Why companies might release open weight?   Hope developers adopt and build upon it; test;  Get feedback before building fancier LLM? 
+- Run local, so much cheaper?   Must open weight
 ### HuggingFace or HF
 
 Benefit ?  Try out different models, all from one central location.
@@ -172,6 +183,28 @@ Config:  allows agent info to be put into ~/.config/opencode/opencode.json (adva
 - video: create wiki & knowledge graph, rag https://www.youtube.com/watch?v=yYSTsKo8moU
 - another LLM & wiki: https://www.youtube.com/watch?v=zVEb19AwkqM
 
+#### opencode config
+- in JSON?
+
+
+example
+```
+agents:
+  research:
+    mode: 
+    description: 
+    tools ["read", "web..."]
+  writer:
+    mode:
+    dir:
+    tools: [read, write]
+```
+
+#### opencode CLI
+- opencode run " ..."
+- opencode agent [command]
+- opencode github [command]
+
 ### good projects
 Builds LLMwiki https://pankajkr62.substack.com/p/how-i-built-a-zero-cost-100-local
 
@@ -182,7 +215,7 @@ Builds LLMwiki https://pankajkr62.substack.com/p/how-i-built-a-zero-cost-100-loc
 
 ***
 
-HuggingFace
+### HuggingFace
 * video: https://youtu.be/QEaBAZQCtwE?si=KlY62cMeE63jtoNP
 * datacamp:  https://www.youtube.com/watch?v=R8h_gpSpEVU
     

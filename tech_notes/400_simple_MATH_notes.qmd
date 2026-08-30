@@ -1,3 +1,40 @@
+
+---
+name: 400_simple_MATH_notes.qmd
+description: "This *.md:   operational notes, tools, websites   - no theory here."
+---
+
+
+## Draw
+
+```{=typst}
+// With content.
+
+#rect( fill: blue.lighten(80%))[ This is a rectangle ] 
+
+#polygon(
+  fill: blue.lighten(80%),
+  stroke: red,
+  (20%, 0pt),
+  (60%, 0pt),
+  (80%, 2cm),
+  (0%,  2cm))
+
+
+#rect(radius: 15%, height: 15%, width: 10%, fill: yellow)
+
+#polygon.regular(vertices: 4)
+
+#polygon(
+  fill: blue, 
+  stroke: red,
+  (0pt, 0pt), 
+  (10pt, 10pt), 
+  (0pt, 10pt))
+```
+
+## Typst Basics
+```{=typst}
 // Basic examples:      https://sitandr.github.io/typst-examples-book/book/basics/scripting/basics.html
 
 /* Notes:
@@ -101,18 +138,6 @@ You can write comments with `//` and `/* comment */`:
 /* Or even like
 this */
 
-===  fenced code blocks
-
-```typ
-Inside a typ block:  Just in case you didn't read source,
-this is how code is written:
-
-// Like this
-/* Or even like
-this */
-
-By the way, I'm writing it all in a _fenced code block_ with *syntax highlighting*!
-```
 
 === text with box
 
@@ -182,14 +207,15 @@ I hope you noticed auto-matched "smart quotes" there.
   lorem(30),
 )
 #line(length:100%)
+```
 
-=== R Code does not execute ??
-```r
+=== R Code does execute ??
+```{r}
 x =2
 y = 3
 x*y
 ```
-
+```{=typst}
 === rectangles, circles
 [Try 1]
 #rect(
@@ -221,11 +247,13 @@ x*y
 )
   
 === Bash does not work
-```bash
+```
+
+```{bash}
 # Your Bash commands here
 echo "Hello, World!"
 ```
-
+```{=typst}
 == url
 // #show <element>:
 #show link: underline
@@ -305,14 +333,6 @@ lorem(10) \
 #f(name: "world")
 
 
-= R
-```r
-2+2
-```
-
-
-
-
 === show rule
 
 RULE: show "XX": text(green)[I am green] \
@@ -320,3 +340,4 @@ RULE: show "XX": text(green)[I am green] \
 #show "XX": text(green)[I am green]
 
 Do you see "XX" text?
+```
