@@ -3,11 +3,24 @@ name: 320_LLM_agents_NOTES.qmd
 description: "This *.md:   operational notes, tools, websites   - no theory here."
 ---
 
+<!--
+
+    *.qmd file 
+   TAB to hide/open sections 
+    
+-> -->
+
 
 ### LEARN (above average!)
 * Hadley - newsletter, using ellmer to explain agent, harness ...
 * Simon Willison writes how he uses LLM models; https://simonwillison.net/2026/Mar/30/mr-chatterbox/
 * Blog with very clear explanations & background: https://blog.apify.com/mcp-a2a-agentic-internet/
+
+
+### 4 SEP 2026
+- added grok-bot (from google)
+- has access to my Github and linkedin.
+- its agents handle requests from me.
 
 
 ### 27 AUG 2026
@@ -183,9 +196,6 @@ Config:  allows agent info to be put into ~/.config/opencode/opencode.json (adva
 - video: create wiki & knowledge graph, rag https://www.youtube.com/watch?v=yYSTsKo8moU
 - another LLM & wiki: https://www.youtube.com/watch?v=zVEb19AwkqM
 
-#### opencode config
-- in JSON?
-
 
 example
 ```
@@ -237,8 +247,110 @@ AGENTS
 ORCHESTRATION
 * Sync tools, results, 
 
-MCP
+### MCP
 * standardizes a protocol for all actions; replaces ad-hoc
+- The user works with assistant (the LLM), which then needs to query a database, send email, search ...
+- You *could* write API calls for each server and each call (get/put....).
+- Use MCP as the common denominator:  LLM decides what it needs and which server
+  to call.   Working with MCP, no need to write API calls. MCP has enough to
+  handle calls to many servers.
 
-GRAPH RAG
+
+### GRAPH RAG
 * reason *between* documents.  (RAG can not do this)
+
+
+### MCP server
+
+MCP does not invent a new network protocol. It uses **JSON-RPC** for the
+*meaning* of messages—“list tools,” “call this tool,” “here is the result”—and
+then chooses a *transport* for physically moving those messages between the
+client and server. The standard transports are **stdio** for local servers and
+**Streamable HTTP** for remote ones.
+[modelcontextprotocol](https://modelcontextprotocol.io/specification/2026-07-28/basic/transports)
+
+## The core distinction
+
+Think of the protocol stack like this:
+
+```text
+MCP operation:    tools/call, resources/read, initialize, ...
+Message format:   JSON-RPC 2.0, encoded as UTF-8 JSON
+Transport:        stdio  OR  Streamable HTTP
+Underlying I/O:   process pipes OR HTTP/TCP/TLS
+```
+
+So an MCP client might send a conceptual request such as:
+
+```json
+{
+  "jsonrpc": "2.0",
+  "id": 12,
+  "method": "tools/call",
+  "params": {
+    "name": "search_docs",
+    "arguments": { "query": "MCP transports" }
+  }
+}
+```
+
+MCP defines what that request means. The transport determines **how it gets from process A to process B**.
+
+## Local MCP: stdio
+
+For a local integration, the client typically starts the MCP server as a **child process**—much as a shell starts a command.
+
+```text
+MCP client / host
+    │ starts server process
+    ├── writes requests → server stdin
+    └── reads replies   ← server stdout
+```
+
+The messages are newline-delimited JSON-RPC: essentially, one JSON message per line. `stderr` remains available for logs and diagnostics, so a server must not mix debug output into `stdout`. [modelcontextprotocol](https://modelcontextprotocol.io/specification/2025-03-26/basic/transports)
+
+The concept is the same as Unix pipes:
+
+```bash
+program-a | program-b
+```
+
+but both sides can keep exchanging structured JSON messages. It is simple, local, and avoids opening a network port—ideal for a desktop AI application launching a filesystem, Git, database, or custom Python MCP server on your Debian machine.
+
+## Remote MCP: Streamable HTTP
+
+For a remote server, the server runs independently and exposes one MCP HTTP endpoint, commonly conceptually `/mcp`.
+
+```text
+MCP client  ── HTTP POST containing JSON-RPC ──>  MCP service
+MCP client  <── JSON response or event stream ──  MCP service
+```
+
+The client sends each JSON-RPC request or notification in an HTTP `POST`. The service can return:
+
+- A normal JSON response for an ordinary, quick request.
+- A **Server-Sent Events (SSE)** response stream when it needs to send progress, multiple results, or server-to-client notifications over time. [modelcontextprotocol](https://modelcontextprotocol.io/specification/2026-07-28/basic/transports/streamable-http)
+
+This design gets normal web infrastructure benefits: HTTPS, authentication, proxies, load balancers, and a remotely hosted server that can serve more than one client. [modelcontextprotocol](https://modelcontextprotocol.io/specification/2025-03-26/basic/transports)
+
+## A useful mental model
+
+MCP is analogous to a familiar separation in web development:
+
+| Layer | Analogy | MCP equivalent |
+|---|---|---|
+| Application contract | REST endpoint semantics or an RPC API | MCP methods such as `tools/list` and `tools/call` |
+| Message envelope | A JSON API request/response schema | JSON-RPC |
+| Delivery mechanism | Unix pipes, HTTP, WebSockets, etc. | stdio or Streamable HTTP |
+
+The key idea: **an MCP server is an RPC service for LLM applications.** Its local form uses process pipes; its remote form uses web requests, optionally with a one-way streaming response channel. The client does not need to care much about the server’s programming language or implementation—only that both parties speak the same MCP/JSON-RPC contract. [modelcontextprotocol](https://modelcontextprotocol.io/specification/2026-07-28/basic/transports)
+Yes.
+
+- **Local MCP:** usually one machine. The client starts the MCP server as a local child process and they communicate through `stdin`/`stdout`. [sourcecraft](https://sourcecraft.dev/portal/docs/en/code-assistant/operations/agent/mcp/server-transports   )
+- **Remote MCP:** usually at least two machines. The client connects to an independently running MCP server over HTTP/HTTPS. [modelcontextprotocol](https://modelcontextprotocol.io/specification/draft/basic/transports/streamable-http)
+
+One nuance: HTTP MCP can also run on the **same** machine (for example, `localhost:3000`). “Remote” primarily means it is a separately running network service, not necessarily a physically different computer. [modelcontextprotocol](https://modelcontextprotocol.io/specification/draft/basic/transports/streamable-http)
+
+Yes—**technically, it is the HTTP/“remote-style” transport** even when both run on one machine via `localhost`.
+
+“Remote” here really means: the client connects to a separately running server over **HTTP**, rather than launching it and communicating through `stdin`/`stdout`. `localhost` just makes that HTTP connection stay on your own machine. [developers.cloudflare](https://developers.cloudflare.com/agents/model-context-protocol/protocol/transport/)

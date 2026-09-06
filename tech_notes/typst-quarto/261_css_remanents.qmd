@@ -1,87 +1,16 @@
----
-title: "260_typst_cheat.qmd "
-author: "JR"
-date: today 
-editor:
-  markdown: 
-    wrap: 72
----
+ 
+<!--
+               STOP 
+Remenetns of 260_typst_cheat.qmd -->
 
-PURPOSE:  Mixed quarto/typst features.  Includes quarto div, html tricks (legacy)
-
-### TODO
-- create quarto template that embeds this setup
-- learn typst options for _quarto.yml, under format: typst
-
-```{=typst}
-#set page(
-  paper: "us-letter",
-  margin: (x: 0.5cm, y: 0.5cm),
-)
-
-#set text(
-  font: "New Computer Modern",
-  size: 10pt
-)
-```
-
-### typst variable to hold [content]
-```{=typst}
-#let ipa = text(
-  style: "italic",
-)[/taɪpst/]
-
-% using ipa as variable
-The canonical way to
-pronounce Typst is #ipa.
-
-% passing ipa as argument
-#table(
-  columns: (1fr, 1fr),
-  [Name], [Typst],
-  [Pronunciation], ipa,
-)
-```
-
-### typst variables can hold [content], or strings, lengths, font sizes, numbers, binary....
-```{=typst}
-// Content with markup inside
-#let blind-text = [_Lorem ipsum_ dolor sit amet]
-
-// Unformatted strings
-#let funny-font = "MS Comic Sans"
-
-// Absolute lengths (see also pt, in, ...)
-#let mile = 160934cm
-
-// Lengths relative to the font size
-#let double-space = 2em
-
-// Ratios
-#let progress = 80%
-
-// Integer numbers
-#let answer = 42
-
-// Booleans
-#let truth = false
-
-// Horizontal and vertical alignment
-#let focus=center
-
-
-#blind-text \
-#funny-font \
-#mile \
-```
-
-
-### PURPOSE:  
-This is *.qmd file with (1) various quarto display tricks and (2) *typst* chunks. /
-
-### USE:   
-quarto render 260_typst_cheat.qmd --to typst
-
+Has css, scss .... probably do not need.
+But saving this, in case I do.
+               
+               
+               
+               -->
+<!--
+-->
 ### TODO:  
 Cleanup, remove remnants of past SCSS, remove what does **not** work.
 
@@ -870,3 +799,4 @@ I am grateful for the insightful comments offered by the anonymous peer
 reviewers at Books & Texts. The generosity and expertise of one and all
 have improved this study in innumerable ways and saved me from many
 errors; those that inevitably remain are entirely my own responsibility.
+

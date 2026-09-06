@@ -102,6 +102,11 @@
     "265_typst_example.md": "85fcc836"
   },
   "400_simple_MATH_notes.qmd": {
-    "400_simple_MATH_notes.typ": "0232fe93"
+    "400_simple_MATH_notes.typ": "0232fe93",
+    "400_simple_MATH_notes.html": "774028a4",
+    "400_simple_MATH_notes.tex": "23b8bc97"
+  },
+  "312_computational_graph.qmd": {
+    "312_computational_graph.typ": "311523a9"
   }
 }

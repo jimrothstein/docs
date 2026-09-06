@@ -84,10 +84,14 @@ In fact, I am amazing!
 
 ```{=typst}
 #let template(doc) = [
-  #set text(color: green)
+  #set text(orange)
   #show "something cool": [Typst]
   #doc
-]
+  ]
+
+#show: template
+I am learning something cool today.
+It's going great so far!
 ```
 
 #show: template
