@@ -173,3 +173,13 @@ The variable 'jr' holds value #jr
 #show "typst": set text(orange)
 #box(stroke: gray, inset: 1em)[typst should be _taught_]
 ```
+
+### Diagrams
+*Diagram, includes nodes and edges
+
+```{=typst}
+#diagram(cell-size: 15mm, $
+	G edge(f, ->) edge("d", pi, ->>) & im(f) \
+	G slash ker(f) edge("ur", tilde(f), "hook-->")
+$)\
+```
