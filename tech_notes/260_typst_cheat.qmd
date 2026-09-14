@@ -32,8 +32,13 @@ PURPOSE:  Mixed quarto/typst features.  Includes quarto div, html tricks (legacy
 )
 
 
+
 #set heading(numbering: "1.")
 #outline()
+#show regex("[Mmath]"): it => emph(it)
+
+
+math is fund
 ```
 
 ## Concatinate (code block)
@@ -45,6 +50,37 @@ PURPOSE:  Mixed quarto/typst features.  Includes quarto div, html tricks (legacy
   a + [the] + b
 }
 ```
+## Appear like R code
+```{=typst}
+#let r = raw.with(lang: "r")
+
+This can then be used like: #r("x <- c(10, 42)")
+```
+
+## Smaller/larger font in block
+````{=typst}
+```py
+def python():
+  return 5 + 5
+```
+// Switch to JetBrains Mono for both
+// inline and block raw.
+#show raw: set text(font: "JetBrains Mono")
+JetBrains Mono \
+
+// Reset raw blocks to the same size as normal text,
+// but keep inline raw at the reduced size.
+#show raw.where(block: true): set text(1em / 0.8)
+
+Now using the ` ` font for raw text.
+Here's some Python code. It looks larger now:
+
+```py
+def python():
+  return 5 + 5
+```
+
+````
 
 ## link
 ```{=typst}

@@ -7,8 +7,34 @@ format:
     columns: 1
 ---
 
-```{=typst}
 
+## Simple
+```{=typst}
+== Computational Graph
+
+
+#figure(
+  stack(
+    dir: ltr,
+    spacing: 0.5em,
+    "(input)  x",
+    text(2em, sym.arrow.long),
+    rect[w=x+3],
+    text(2em, sym.arrow.long),
+    rect[v=w^2],
+  
+    text(2em, sym.arrow.long),
+    text[(output) y = v]
+    
+  ),
+  caption: [
+    Tags enable PDF accessibility
+  ],
+)
+```
+
+## Use Fletcher
+```{=typst}
 
 #import "@preview/fletcher:0.5.8": diagram, node, edge
 

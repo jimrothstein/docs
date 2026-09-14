@@ -1,16 +1,20 @@
+---
+title: "410_MATH_notes.qmd"
+author: "JR"
+date: today 
+editor:
+  markdown: 
+    wrap: 72
+---
+
+```{=typst}
 // ubses noteworthy !
 #import "@preview/noteworthy:0.2.0": *
 #import "@preview/physica:0.9.8": *
 
-/*   410_typst_MATH_notes.typ
-
-Put all typst notes HERE.
-Also check ~/code/publish_project/typst/  for more typst examples.
-
 - a*b  (no spaces around *)
 
 A#sub(long_subscript)
-*/
 
 
 #show: noteworthy.with(
@@ -291,29 +295,6 @@ cal(P)(X) = cases(
 $
 
 sums, regression
-
-// R code chunks (setup and library omitted as R-specific)
-
-
-
-// R code for plotting (converted to a Typst code block)
-```r
-density_object = density(mpg\$hwy)
-pdf("~/Downloads/print_and_delete/out.pdf")
-plot(density_object)
-dev.off()
-```
-
-```r
-filename = "~/Downloads/print_and_delete/out.png"
-png(filename = filename,
-  width = 480, height = 480, units = "px", pointsize = 12)
-plot(density_object)
-dev.off()
-```
-
-\\ /home/jim/code/docs/tech_notes/500_ML_Notes.qmd
-\\ /home/jim/code/docs/tech_notes/
 
 
 = ML Notes
@@ -858,3 +839,15 @@ a*b = b*a
 
 - It structures the explanation with headings (`==`).
 - It includes a highlighted "Key Takeaway" box using Typst's `#block` function for visual clarity.
+
+
+=== BONDS
+
+if bond yield changes by  $delta y$, then the price change is $delta p =  "duration"/(delta y)$
+
+Example:   If duration is 5, and the yield decreases by 100 basis points (1%), expect the price to increase by 5%
+
+- short-term bonds respond more quickly to rate changes.
+- duration of bond proportional to time to maturity (check this)
+
+```

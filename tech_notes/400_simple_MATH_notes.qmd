@@ -1,7 +1,10 @@
-
 ---
-name: 400_simple_MATH_notes.qmd
-description: "This *.md:   operational notes, tools, websites   - no theory here."
+title: "400_simple_MATH_notes.qmd"
+author: "JR"
+date: today 
+editor:
+  markdown: 
+    wrap: 72
 ---
 
 
@@ -182,4 +185,6 @@ The variable 'jr' holds value #jr
 	G edge(f, ->) edge("d", pi, ->>) & im(f) \
 	G slash ker(f) edge("ur", tilde(f), "hook-->")
 $)\
+
+#bibliography("math.bib", style: "chicago-author-date", title: [References])
 ```

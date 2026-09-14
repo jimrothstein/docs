@@ -354,3 +354,8 @@ One nuance: HTTP MCP can also run on the **same** machine (for example, `localho
 Yes—**technically, it is the HTTP/“remote-style” transport** even when both run on one machine via `localhost`.
 
 “Remote” here really means: the client connects to a separately running server over **HTTP**, rather than launching it and communicating through `stdin`/`stdout`. `localhost` just makes that HTTP connection stay on your own machine. [developers.cloudflare](https://developers.cloudflare.com/agents/model-context-protocol/protocol/transport/)
+
+## What does a neural network do (concepts)
+- Suppose we want to do "separation", say of cats/dogs (or n categories) - if linear separation fails.
+- Bend space: TODO Somehow convert entire space to weird, n-dimensions such that  we can find a "direction" leading to greater probability of "dog", and a separate direction leading to greater probability of "cat"
+- This is not a binary cut (dog| no dog),  run through sigmoid (or softmax) to normalize (0-1) as probability.

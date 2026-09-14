@@ -4,7 +4,6 @@ description:  DOCs files and related
 last update:  7/23/2026
 ---
 
-
 ## Render *.qmd to markdown (gfm)
 ```
 quarto render *.qmd --to gfm
