@@ -249,7 +249,7 @@ ORCHESTRATION
 
 ### MCP
 * standardizes a protocol for all actions; replaces ad-hoc
-- The user works with assistant (the LLM), which then needs to query a database, send email, search ...
+- The user works with assistant (the LLM).   LLM decides next move: needs to query a database, send email, search ... and MCP simplies requests.
 - You *could* write API calls for each server and each call (get/put....).
 - Use MCP as the common denominator:  LLM decides what it needs and which server
   to call.   Working with MCP, no need to write API calls. MCP has enough to
@@ -268,6 +268,8 @@ then chooses a *transport* for physically moving those messages between the
 client and server. The standard transports are **stdio** for local servers and
 **Streamable HTTP** for remote ones.
 [modelcontextprotocol](https://modelcontextprotocol.io/specification/2026-07-28/basic/transports)
+
+**127.0.0.1** is not web address.  It is an endpoint. 
 
 ## The core distinction
 

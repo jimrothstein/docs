@@ -8,13 +8,13 @@ editor:
 ---
 
 ```{=typst}
-// ubses noteworthy !
+// uses noteworthy !
 #import "@preview/noteworthy:0.2.0": *
 #import "@preview/physica:0.9.8": *
 
-- a*b  (no spaces around *)
+// a*b  (no spaces around *)
 
-A#sub(long_subscript)
+// A#sub(long_subscript)
 
 
 #show: noteworthy.with(
@@ -33,6 +33,8 @@ A#sub(long_subscript)
 #set document(title: "0002_math_equations")
 #set page(margin: 0.5in)
 #set text(size: 11pt)
+#set heading(numbering: "1.")
+#outline(depth: 3)
 
 // Goal: Combine math, linear algebra, statistics, ML (not R)
 
@@ -46,7 +48,7 @@ See: #link("https://github.com/jimrothstein/code_publish/blob/master/MATH/0002_m
   3,5,7
 ]
 
-== set notation
+= set notation
 $
 {(x,y) | f(x)/g(x) = 1 
 $
@@ -55,7 +57,7 @@ $
   a prime number has two divisors, 1 and itself.
 ]
 
-== Notation
+= Notation
 $
 alpha in KK \
 
@@ -450,6 +452,17 @@ point at  $vec(x)$
 $
 f: RR^2 -> RR
 $
+== Jacobian, concise form
+
+$
+  bold(v) = (v_1, v_2, dots, v_n)
+  quad
+  bold(f): RR^n arrow RR^n
+
+  J_(bold(f))(bold(v))
+  =
+  (frac(partial f_i, partial v_j))_(i,j=1)^n
+$
 
 == Principal Axis Thm
 - generalize major/minor axes of ellipse
@@ -757,8 +770,6 @@ Here is a clear and concise explanation of an integral domain in abstract algebr
 
 You can save the code below with a `.typ` extension (e.g., `integral_domain.typ`) and compile it using the Typst compiler.
 
-```typ
-
 #set page(paper: "a4", margin: (x: 2cm, y: 2.5cm))
 #set text(font: "Liberation Serif", size: 11pt)
 #set par(justify: true)
@@ -831,6 +842,7 @@ Since $ZZ_6$ contains zero divisors, *$ZZ_6$ is not an integral domain.*
 - Any polynomial ring $R[x]$ where $R$ is an integral domain (e.g., $ZZ[x]$)
 ```
 
+```{=typst}
 === Features of this Typst markup:
 
 - It uses standard Typst math notation eg

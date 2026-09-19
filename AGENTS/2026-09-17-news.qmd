@@ -1,0 +1,53 @@
+---
+title: "Posit News: 2026-09-17"
+date: 2026-09-17
+---
+
+## Posit Blog (3 latest)
+
+- (2026-09-15) **From Plausible to Provable: Why We Say "Prove It With Posit"**: Generative AI makes it easy to produce plausible-looking analysis; Posit's case that analysis must be provable, code-first, and trustworthy. https://posit.co/blog/prove-it-with-posit
+- (2026-09-15) **R, meet Snowflake: Introducing Posit's skiLift and skiPatrol Packages**: Two packages for working with Snowflake from R, now maintained by Posit. https://posit.co/blog/r-meet-snowflake-introducing-posits-skilift-and-skipatrol-packages
+- (2026-09-15) **Introducing Positron on Amazon SageMaker**: Bringing Posit's next-gen data science IDE to Amazon SageMaker Studio. https://posit.co/blog/introducing-positron-amazon-sagemaker
+
+## Tidyverse Blog (3 latest)
+
+- (2026-04-27) **processx 3.9.0**: Kernel-level process pipelines, pseudo-terminal support on Windows, and Linux parent-death signals. https://www.tidyverse.org/blog/2026/04/processx-3-9-0/
+- (2026-03-31) **tabpfn 0.1.0**: A new R package for tabular deep learning models. https://www.tidyverse.org/blog/2026/03/tabpfn-0-1-0/
+- (2026-03-20) **2026 Posit Internships**: Posit is sponsoring four summer internship positions in 2026. https://www.tidyverse.org/blog/2026/03/2026-internships/
+
+## Shiny Blog (3 latest)
+
+- (2026-09-15) **Complete chat applications in shinychat: R 0.5.0 and Python 0.7.1**: Easier to build complete, conversation-centered Shiny chat apps with history, editing, branching, greetings, suggestions, citations, and tool displays. https://opensource.posit.co/blog/2026-09-15_shinychat-r-0.5.0-python-0.7.1/
+- (2026-08-04) **Shiny updates: R 1.14, Python 1.7, bslib 0.12**: Hand your coding agent the keys to Shiny, run R apps without blocking the console, slide in offcanvas panels, and clean up dynamic modules with destroy(). https://opensource.posit.co/blog/2026-08-04_shiny-r-1-14-python-1-7/
+- (2026-06-29) **watcher 0.2.0: filesystem watching for R**: The engine behind Shiny auto-reload, introduced to the R community after a year quietly powering Shiny. https://opensource.posit.co/blog/2026-06-29_watcher-0-2-0/
+
+## Quarto Blog (3 latest)
+
+- (2026-08-03) **Quarto 1.10**: A maintenance release packed with fixes plus accessibility checks that work offline and can target a WCAG conformance level, and localized strings for custom templates. https://opensource.posit.co/blog/2026-08-03_quarto-1-10/
+- (2026-05-07) **Quarto 2: Parsing and Source Maps**: Why Quarto 2 ships its own Markdown parser — actionable syntax errors and source locations that survive the entire processing pipeline. https://opensource.posit.co/blog/2026-05-07_quarto-2-parsing/
+- (2026-04-14) **Chrome Headless Shell in Quarto**: Quarto 1.9 replaces Puppeteer Chromium with Chrome Headless Shell — smaller, arm64-ready, and Docker-friendly. https://opensource.posit.co/blog/2026-04-14_chrome-headless-shell/
+
+***
+
+## The Test Set Podcast (latest episode)
+
+- (ep 30) **Smuggled Gold and Untrustworthy Intuition — with Leland McInnes**: Leland McInnes (UMAP, HDBSCAN) on tracking laundered gold through mineral impurities, optimizing casino slot machines, and why nobody's intuition survives high-dimensional space. https://posit.co/thetestset/episode/smuggled-gold-and-untrustworthy-intuition-with-leland-mcinnes
+
+***
+
+## Posit Videos (3 latest)
+
+- (2026-08-26) **AI Governance in Workbench** - Sam Edwardes: Workflow demo for IT admins on governing AI — controlling AI providers/models at user and group level, auditing AI-vs-human contribution in Workbench, Package Manager, and Connect. https://posit.co/workflow-demo/ai-governance-workbench
+- (2026-08-13) **Agents can already reason, plan, and act. The harder question is how you stay in control.** - Sara Altman (with AT&T, SAP, Revefi, Rubrik): Panel on governing agentic AI in production — adaptive governance, observability of reasoning traces, human-in-the-loop design. https://posit.co/webinar/operationalizing-agentic-ai-governance-observability-human-control
+- (2026-09) **AI Governance in Posit Team** - Sam Edwardes: Product demo of governing AI in Posit Team — restricting access, model control, credential security and usage reporting, agent plugin governance. https://posit.co/product-demo/ai-governance-workbench
+
+## Recent Posit Events (2 most recent)
+
+- (2026-09-10) **Data Science Hangout: Matt Bannert**: Integrating AI & analytics solutions in a regulated corporate environment and using devops for data science at Helsana Insurances. https://posit.co/data-science-hangout/matt-bannert
+- (2026-09-03) **Data Science Hangout: Rylan Murry**: Connecting the web of health system data and building a health care data team at Nebraska Methodist Health System. https://posit.co/data-science-hangout/rylan-murry
+
+## Upcoming Posit Events (next 3)
+
+- (2026-09-22) **CDAO Government 2026**: Meet Posit at CDAO Government, September 22-23 in Washington, D.C. https://posit.co/events/cdao-government-2026
+- (2026-09-24) **Institutional research and advancements, shown by the people doing it**: Peer lightning talks from Harvard, Georgetown, and more on turning institutional data into decisions. https://posit.co/webinar/institutional-research-showcase
+- (2026-09-30) **MCP in practice: Building repeatable AI workflows with custom MCP servers**: Live demo with Samiul Haque and Matt Leary on building repeatable AI workflows with custom MCP servers. https://posit.co/workflow-demo/mcp-practice-building-repeatable-ai-workflows-custom-mcp-servers
