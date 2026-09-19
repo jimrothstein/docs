@@ -30,6 +30,12 @@ $$
 ∀ v, w ∈ V, α ∈ 𝕂: α ⋅ (v + w) = α v + α w
 $$
 
+### index, sequence of functions
+```{=typst}
+$i_1, i_2, dots, i_n$ \
+$f_1, f_2, dots, f_n$
+```
+
 ### SVD
 
 A can be any matrix
@@ -186,5 +192,5 @@ The variable 'jr' holds value #jr
 	G slash ker(f) edge("ur", tilde(f), "hook-->")
 $)\
 
-#bibliography("math.bib", style: "chicago-author-date", title: [References])
+// #bibliography("math.bib", style: "chicago-author-date", title: [References])
 ```

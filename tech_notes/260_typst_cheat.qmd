@@ -86,7 +86,7 @@ def python():
 ```{=typst}
 #show link: underline
 #link("https://nytimes.com") \
-#link("https//nytimes.com")[NY Times]
+#link("https//nytimes.com")[the NY Times]
 #divider()    // actual function is defined near bottom
 ```
     
