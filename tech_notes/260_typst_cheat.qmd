@@ -17,8 +17,27 @@ PURPOSE:  Mixed quarto/typst features.  Includes quarto div, html tricks (legacy
 - learn typst options for _quarto.yml, under format: typst
 - typst vs latex (ex:  https://www.reddit.com/r/math/s/jIHGOicBsP); many dislike mixing markdown with code
 - typst:  need to learn: https://typst.app/docs/reference/scripting/#fields
+- template:  Create and use!
 
 ```{=typst}
+
+Use:
+
+#import "template.typ": apply-template
+
+
+// `func.with(..)` applies the arguments to the function and returns the new
+// function with those defaults applied
+#show: apply-template.with(name: "Jim's Report")
+
+This is main 905_use_template.qmd. \
+It imports the template template.typ
+
+= Level 1
+== Level 2
+
+Or, this one:
+
 #set page(
   paper: "us-letter",
   margin: (x: 0.5cm, y: 0.5cm),
