@@ -1,4 +1,5 @@
 ### Cheat Sheet
+110_simple_cheat.md
 Experimental:   \  
 Purpose:  Simplest possible command cheat sheet.\
 USAGE:  Should appear correct in github\
@@ -24,7 +25,7 @@ Edit/save/commit/push
 ```
 - git checkout <SHA> -- <file>
 ```
-  
+
 List files ignored (uses .gitignore)
 ```
 git check-ignore **/*
@@ -35,7 +36,7 @@ diff
 ```
 git diff                             # green shows CHANGES, if you COMMIT
 git diff HEAD                             # changes (green) in w dir since last commit
-git diff HEAD~ HEAD                  # additions (green) in w. dir since last commit
+git diff HEAD~ HEAD                  # compare last commit with one prior; add (green) , delete (orange)
 git diff HEAD --unified=0            # ONLY LINES deleted, added since(?) last commit
 git diff <oldest> <newest>
 git diff HEAD~ HEAD -- <file>        # recent change to one file
@@ -60,7 +61,22 @@ git log --since=2.weeks
 git log --until
 
 NOTATION:       origin..HEAD         # after origin, before HEAD 
-                HEAD ^origin         # -same-
+            HEAD ^origin         # -same-
+```
+
+.gitignore(SEE git check-ignore)
+```
+.gitkeep                            # git does not allowed empty dir; by convention ".gitkeep" is placeholder in empty dir
+~/.gitignore                        # global, plus can have local .gitignore
+git update-index --skip-worktree <file>    # (as of 2024) way to remove <file> from index (--skip-worktree: do not update)
+
+```
+#### squash
+\<after-this-commit\>             This <SHA> will not change.
+Run git rebase -i <after-this-commit>; except for final **pick***  change earlier picks to **s**
+
+```
+git rebase -i <after-this-commit>
 ```
 
 
@@ -71,11 +87,13 @@ NOTATION:       origin..HEAD         # after origin, before HEAD
 <https://github.com/mlflow/mlflow/issues/12478#issuecomment-2517567782> \
 
 ```
-uv init --package <mypackage>   # creates new dir and related files (not venv)
 python3 -m venv .venv           # Install venv to .venv/
 python3 -m venv <path-to-target-dir> # (9/26) use venv project-by-project for now
 
 
+uv init --package <mypackage>   # creates new dir and related files (not venv)
+uv venv                         # in target directory
+uv venv && source .venv/bin/activate      # create and activate
 
 uv add <pkg1> <pkg2>            # adds dependencies
 
