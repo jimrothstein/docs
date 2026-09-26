@@ -537,3 +537,9 @@ RULE: show "XX": text(green)[I am green] \
 
 Do you see "XX" text?
 ```
+
+
+```{=typst}
+#let t = read("README.md")
+#raw(t, block: true)
+```

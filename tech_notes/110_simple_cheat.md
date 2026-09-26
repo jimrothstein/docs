@@ -1,8 +1,36 @@
 ### Cheat Sheet
 110_simple_cheat.md
 Experimental:   \  
-Purpose:  Simplest possible command cheat sheet.\
+PURPOSE:  Simplest possible command cheat sheet.\
 USAGE:  Should appear correct in github\
+in Typst:   use read()
+
+
+### ex editor (https://users.ox.ac.uk/~martinw/unix/chap9.html)
+```
+ex <file>
+:1,$p                   # display all lines
+:.                      # display current line
+:i                      # insert at current line, 1
+...
+...
+.                       # single period to end insertion
+:w
+:q
+:ex <another file>
+:5 s/the/The/           # line 5, make change
+:6,7 d                  # lines 6,7 delete
+:/<search-for-..../
+:h                      # now in help.txt
+:1,5p                   # print lines (in help)
+:q                      # return to  edit
+
+
+
+
+
+
+```
 
 #### git
 
@@ -42,7 +70,20 @@ git diff <oldest> <newest>
 git diff HEAD~ HEAD -- <file>        # recent change to one file
 git diff <br> origin/<br>            # 1st do git fetch; compare local to origin
 ```
+diff - local v remote
+```
+- git fetch                         # makes no changes locally, safe
+- git diff main origin/main         # 
+```
 
+git pull gives errors
+```
+- abort
+- fix, try: git diff <my-local-br> origin/<remote-br>              # my-local-br may be "main"
+- pull again
+
+
+```
 ```
 git reset - NO, do not use          # use git restore
 git restore                         # restore <file> as it was at <SHA>
@@ -82,7 +123,7 @@ git rebase -i <after-this-commit>
 
 
 
-#### python, uv
+### python, uv
 <https://docs.python.org/3/library/venv.html> \
 <https://github.com/mlflow/mlflow/issues/12478#issuecomment-2517567782> \
 
@@ -104,4 +145,7 @@ uv add <pkg1> <pkg2>            # adds dependencies
 ### zsh
 ```
 diff -y file1 file2
+rm -i -- ^*.txt                 # careful!  deletes ALL except *.txt
+l = (a,b)                       # list
+for e in $l[@]; echo $e        # echo all
 ```
