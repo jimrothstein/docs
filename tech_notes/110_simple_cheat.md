@@ -139,6 +139,9 @@ uv venv && source .venv/bin/activate      # create and activate
 uv add <pkg1> <pkg2>            # adds dependencies
 
 
+Require minimum version
+
+uv add "mcp[cli]>=2.0.0"
 ```
 
 

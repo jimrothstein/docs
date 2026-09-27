@@ -1,17 +1,10 @@
 ---
-name: 320_LLM_agents_NOTES.qmd
+name: 320_LLM_agents_NOTES.md
 description: "This *.md:   operational notes, tools, websites   - no theory here."
 ---
 
-<!--
-
-    *.qmd file 
-   TAB to hide/open sections 
-    
--> -->
-
-
-### LEARN (above average!)
+`````````
+=== LEARN (above average!)
 * Hadley - newsletter, using ellmer to explain agent, harness ...
 * Simon Willison writes how he uses LLM models; https://simonwillison.net/2026/Mar/30/mr-chatterbox/
 * Blog with very clear explanations & background: https://blog.apify.com/mcp-a2a-agentic-internet/
@@ -262,6 +255,17 @@ ORCHESTRATION
 - Use MCP as the common denominator:  LLM decides what it needs and which server
   to call.   Working with MCP, no need to write API calls. MCP has enough to
   handle calls to many servers.
+  
+### MCP Stack
+- MCP operations:   tools (calls), resources, prompts (to run in LLM)
+- Mpg format:  JSON-RPC 2.0 (any transport, msg protocol distinct from transport)
+- Transport:   stdio (local, comunicate internal; a bit like pipe:   ls | grep "apple")
+  or streamable HTTP
+- Underlying IO: process pipes or HTTP/TCP/TLS
+
+stdio - uses localhost:3000.   This is NOT url, not using an api
+The advantage of MCP is that for remote calls, no longer need to write tedius API code. Much, maybe not all, is hidden from developer
+
 
 
 ### GRAPH RAG

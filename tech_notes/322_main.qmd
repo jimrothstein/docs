@@ -1,6 +1,0 @@
-###  Insert md document into this .qmd+typst
-```{=typst}
-#let t = read("322_LLM_experiment.md")
-#raw(t, block: true)
-```
-
