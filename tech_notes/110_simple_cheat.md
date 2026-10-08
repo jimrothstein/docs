@@ -1,9 +1,32 @@
 ### Cheat Sheet
-110_simple_cheat.md
+110_simple_cheat.Mead
 Experimental:   \  
 PURPOSE:  Simplest possible command cheat sheet.\
 USAGE:  Should appear correct in github\
 in Typst:   use read()
+
+
+### typst, markdown, documents
+
+Render md to pdf, via pandoc
+```
+pandoc *.md -o main.{pdf, md} -t typst      # hmmm, error, needs fallback font
+```
+
+### yt-dlp
+
+- 10 lines, phrase 'shiny posit'
+yt-dlp ytsearch10:'shiny posit'  --get-id --get-title
+
+### Doom emacs
+
+Spell, use flyspell + aspell for now (10/26)
+```
+M-x doom/help-search-heading RET DoomModels :checker
+M-x $                  # check current word
+M-x ispell             # entire buffer or region
+M-x flyspell-mode      # highlight misspelled works
+```
 
 
 ### ex editor (https://users.ox.ac.uk/~martinw/unix/chap9.html)
@@ -90,12 +113,12 @@ git restore                         # restore <file> as it was at <SHA>
 
 ```
 
-git log (SEE SMC 2.3 REF)
+git log (SEE SIC 2.3 REF)
 ```
 git log [ opts ] [revision - range] [ [--] <path>]
 
 git log -p -2                        # last 2 commits
-git log --pretty=format:'%h_ %ar'    # sha, n weeks
+git log --pretty=format:'%h_ %AM'    # sha, n weeks
 git log --relative-date
 git log --oneline -5                 # SHA, description, last 5 (TERSE)
 git log --since=2.weeks
@@ -139,11 +162,24 @@ uv venv && source .venv/bin/activate      # create and activate
 uv add <pkg1> <pkg2>            # adds dependencies
 
 
-Require minimum version
+Require minimum version:
 
 uv add "mcp[cli]>=2.0.0"
 ```
 
+### zathura 
+```
+-f open & find str
+-v version
+-P open at pagenumber
+F11 - full-screen
+
+
+:exec rm $FILE # removes current file
+
+
+
+```
 
 ### zsh
 ```

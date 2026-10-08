@@ -14,8 +14,8 @@ To render:      quarto render <file.qmd> --to typst
 -->
 
 ## Vocabulary -kleptocracy government with rampant greed and corruption.
--plutotcracy government by the wealthiest -kakistocracy government dangerously
-incompetatent -kleptocracy government where politicans enrich themselves
+-plutocracy government by the wealthiest -kakistocracy government dangerously
+incompetent -kleptocracy government where politicans enrich themselves
 -ochlocracy, rule by loudest, angriest crowd -idiocracy, rules by incompetatent
 - self-indulgent sybarite - mobocracy, rule by mob, possibly violent -
 gerontocracy, rule by oldest
@@ -32,7 +32,9 @@ set #C = Constantinople
 ```
 
 ## Ottoman Empire (Zionism)
+FACTS:   Turks in Turkey speak Turkish, not Arabic.; many Ottoman Jews feel very at home; As Ottoman citizen,  Jews can buy land.
 - 1839-1876 "Tanzimat" - all religions each | citizens and foreigners can buy land, new settlements
+- 1876 - Sultan disbands Parliament
 - 1882 - 1st Jewish Settlement
 - 1887 - Jerusalem under direct control of Constantinople 
 - 1897 - Hertz' book: Jewish State 
@@ -40,7 +42,26 @@ set #C = Constantinople
 At this point, only citizens can vote.  Few foreginers are citizens. Moslem control Jerusalem's govt.
 - 1902 Zionist Conference; Sultan welcomes Jews, but only in small settlements and not in Palestine; Zionists reject British offer of piece of Uganda. Want Palestine.
 KEY problem, even at this point: Arabs will not accept Jewish state.  Perhaps violence will scare away the Jews.   But Jews think they can convince Arabs, especially with argument Jews bring western skills, money, education .... fundamental error.
-- 1908 Young Turks revolt.  Triggers nationalism and especially Arab nationalistm.   OLD: we are proud Ottomans (jews, christian, moslem); NEW: we are Arabs.
+European Jews differ from Ottoman Jews and do not know enough of culture to get along with Arabs.  Too impatient, too direct.  Arabs have own way of settling differences so no one loses face.  (But plenty of Arabs do seem willing to sell land to Jews.)
+- Jews debate:  economic power 1st, or politican power?  Some see future will be difficult to reconcile both Arabs and Zionists.
+- To Arabs, Zionist land purchases growing concern.  Some Arabs do make effort to understand Jews and its teachings, but unhappy Jews (ie from Europe) do not want to assimilate: use Hebrew, not Arabic or Turkish; fear Jews will raise an army, form a state; do not hire non-Jewish.  Jew organiztions support Jews, not non-Jew Ottomans. It is not anti-Jewish, but anti-Zionism.
+
+- 1905 (in French) book, pro-Arab warns of possible violence ahead.
+- 3 Arab families control much land; often cheat independ Arab land owners;  ie Ottoman Empire is corrupt
+- 1908 Young Turks revolt. Significant b/c triggers nationalism and especially Arab nationalistm.   OLD: we are proud Ottomans (jews, christian, moslem); NEW: we are Arabs.  Parliament formed (since 1876)
+- 80k Jews/0.5 MM Muslims+Christians in Palestine
+- 1911 Parliament urges adherance to existing laws; no land sales to foreigners.  Some Arabs in Jeruselum fiery speaches against more Jewish arrivals.
+
+- 1913 Balkins rise.  By Treaty of London, Ottomans lose battle in Balkans.  Now few European Arabs or power in Ottoman gov't 
+- Zionist strategy for next several decades: populate Palestine as quickly as possible before Arab Nationalism becomes impossible impediment.
+- Hebrew - not German, French, even Arabic - because seen as unifier and nationalism (Remember most Ottomans, including Jews are familar with Arabic, even if not native tongue)
+- Sept 1913 last pre-war Zionist Conference (Vienna).  Jerseluem - not Jaffa, Heifa ... - to be capital.  To unify various Jewish cultures.   And most of all:  Jews must settle ASAP before Arab nationalism becomes stronger.  Surpise? Russian Jews peasants start sending money to Palestine.
+- Jews make efforts, attempts at secret meetings;  and no doubt a few Arabs do also;  but Arabs have many different groups, each claiming to be the leader. Difficult.  Ottomans are not the problem, Arabs are.
+- 1913 Arab Conference (Paris)
+- 1914 PROPOSED Arab-Zionist meeting.  Didn't happen (war)
+- 1914+  War time; not enough labor.  Ottoman military seizes animals; crops die .....
+- DEC 1918 - British enter Jeruselum.   Hertz's dream that Arabs would eventually be won over by Jewish conributions ... FALSE.
+
 ##  Russia <russia> - Mongol vs Turkic vs Tatar?
 
 - populated long ago (\~2000-3000 BC?) , possible Scandinavian offshoot?
