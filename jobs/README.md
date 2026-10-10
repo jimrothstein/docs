@@ -1,22 +1,538 @@
 
 
-Jobs:
+Experiment:
 
-12 SEP 2024
+This is *.md file.
+Typst chunks are embedded.
 
-- 2 resumes (one for R;  one for clinical_trials)
-- each own directory
+How will it appear in Github?
+  
+  
+```typst
+  
+#import "template.typ": apply-template
 
-R jobs:
-- jobs/resume_r
 
-Clinical Trials Resume: 
-- jobs/resume_SEPT_2024/clinical_trials_resume.qmd
-- 1)
-- run in R Studio; 
-- final html file:   docs/clinical_trials_resume.html
+// `func.with(..)` applies the arguments to the function and returns the new
+// function with those defaults applied
+#show: apply-template.with(name: "Jim's Report")
 
-- manually save as pdf
-- 2)
-  - use quarto render --to gfm --output ...resume.md  # (github flavor; will display in github)
+This is main 905_use_template.qmd. \
+It imports the template template.typ
+
+= Level 1
+== Level 2
+
+Or, this one:
+
+#set page(
+  paper: "us-letter",
+  margin: (x: 0.5cm, y: 0.5cm),
+)
+
+#set text(
+  font: "New Computer Modern",
+  size: 15pt,
+  fill: black   // gray is too light
+
+)
+
+
+
+#set heading(numbering: "1.")
+#outline()
+#show regex("[Mmath]"): it => emph(it)
+
+
+math is fund
+```
+
+## Concatinate (code block)
+```{=typst}
+#{
+  let a = [from]
+  let b = [*world*]
+  [hello]
+  a + [the] + b
+}
+```
+## Appear like R code
+```{=typst}
+#let r = raw.with(lang: "r")
+
+This can then be used like: #r("x <- c(10, 42)")
+```
+
+## Smaller/larger font in block
+````{=typst}
+```py
+def python():
+  return 5 + 5
+```
+// Switch to JetBrains Mono for both
+// inline and block raw.
+#show raw: set text(font: "JetBrains Mono")
+JetBrains Mono \
+
+// Reset raw blocks to the same size as normal text,
+// but keep inline raw at the reduced size.
+#show raw.where(block: true): set text(1em / 0.8)
+
+Now using the ` ` font for raw text.
+Here's some Python code. It looks larger now:
+
+```py
+def python():
+  return 5 + 5
+```
+
+````
+
+## link
+```{=typst}
+#show link: underline
+#link("https://nytimes.com") \
+#link("https//nytimes.com")[the NY Times]
+#divider()    // actual function is defined near bottom
+```
+    
+
+## expressions (https://typst.app/docs/reference/scripting/)
+
+
+```{=typst}
+compact syntax (use hash) to embed a code expression into markup: / 
+
+#emph[Hello] \   // function call
+#emoji.face \    // field
+#"hello".len()   // method calls
+```
+
+### functions
+```{=typst}
+Call a function. \
+\#list([A], [B]) \ 
+
+#list([A], [B])
+
+Named arguments and trailing  \
+content blocks. \ 
+\#enum(start: 2)[A][B]
+
+#enum(start: 2)[A][B]
+
+Version without parentheses.
+\#list[A][B]
+#list[A][B]
+
+```
+
+### for loop (create list)
+```{=typst}
+// automatically puts into list
+
+#for x in "ABC" [
+  - Letter #x
+]
+```
+
+### typst variable to hold [content]
+
+```{=typst}
+#let ipa = text(
+  style: "italic",
+)[/taɪpst/]
+
+// using ipa as variable
+The canonical way to
+pronounce Typst is #ipa.
+
+// passing ipa as argument
+#table(
+  columns: (1fr, 1fr),
+  [Name], [Typst],
+  [Pronunciation], ipa,
+)
+```
+
+### typst variables can hold [content], or strings, lengths, font sizes, numbers, binary....
+```{=typst}
+// Content with markup inside
+#let blind-text = [_Lorem ipsum_ dolor sit amet]
+
+// Unformatted strings
+#let funny-font = "MS Comic Sans"
+
+// Absolute lengths (see also pt, in, ...)
+#let mile = 160934cm
+
+// Lengths relative to the font size
+#let double-space = 2em
+
+// Ratios
+#let progress = 80%
+
+// Integer numbers
+#let answer = 42
+
+// Booleans
+#let truth = false
+
+// Horizontal and vertical alignment
+#let focus=center
+
+
+#blind-text \
+#funny-font \
+#mile \
+```
+
+## Function: create block with divider
+```{=typst}
+
+#let info(body) = block(
+  stroke: (left: 1.5pt + blue),
+  fill: aqua.lighten(50%),
+  context {
+    body
+    show divider: set block(
+      spacing: .2em     // height of this block?
+    )
+    divider()
+  }
+)
+
+
+// the call
+#info[this should be blue]
+
+
+```
+
+### PURPOSE:  
+This is *.qmd file with (1) various quarto display tricks and (2) *typst* chunks. /
+
+### USE:   
+quarto render 260_typst_cheat.qmd --to typst
+
+
+## Typst Basics (TODO: cleanup !)
+```{=typst}
+// Basic examples:      https://sitandr.github.io/typst-examples-book/book/basics/scripting/basics.html
+
+/* Notes:
+
+- render:  typst watch|compile <file.typ>
+- 1st debug:  online editor  typst.app  
+ 
+
+to use typst format (works great) with *.qmd:
+- quarto render *.qmd --to typst
+This renders to pdf, using the typst format in _quarto.yml, or in document header
+
+*/
+
+#set page("us-letter")
+#set heading(numbering: "1.")
+#set text(
+  font: "New Computer Modern",
+  size: 10pt
+)
+
+PURPOSE:  basic typst syntax
+
+= Goal:  Organized, simple examples
+
+//#show heading: set text(red)
+#show heading.where(level: 2): set text(red)
+#show heading.where(level: 3): set text(blue)
+
+% Comment
+
+`literal * # % `
+
+== Level 2: Red 
+
+=== Level 3: Blue
+
+#show heading: set text(black)
+return to normal color:
+
+= misc, line, color, par
+
+#line(length: 100%)
+
+#show heading.where(level: 2): set text(size: 0.8em)
+#show heading.where(level: 3): set text(font: "New Computer Modern", style: "italic", stroke: gray)
+#set par.line(numbering: "1.")
+
+== begin paragraph number
+
+== align
+#align(right)[this is right aligned]
+
+== set a variable:
+#emph[Hi] \
+
+#let A = text(blue, strong[Hi]) 
+#A \
+
+#let A = strong[hi] 
+#A to you! \
+#set par.line(numbering: none)
+
+== quote block
+#set quote(block: true, attribution: [Typst Examples Book])
+
+#quote[
+  Typst is great!
+]
+
+== red & color block
+#let block_text = block(stroke: red, inset: 1em)[This is red.]
+== small caps
+#show "project": smallcaps
+I am working on special project.
+
+#line(length: 100%)
+
+== envelope symbol
+
+#let envelope = symbol(
+  "🖂",
+  ("stamped", "🖃"),
+  ("stamped.pen", "🖆"),
+  ("lightning", "🖄"),
+  ("fly", "🖅"),
+)
+
+#envelope
+#envelope.stamped
+#envelope.stamped.pen
+#envelope.lightning
+#envelope.fly
+
+#line(length: 100%)
+
+=== comments
+
+You can write comments with `//` and `/* comment */`:
+// Like this
+/* Or even like
+this */
+
+
+=== text with box
+
+Refer to the docs (green) ... 
+#box(
+  rect(fill: green),
+  height: 9pt,
+  
+)
+... for more information.
+
+#rect(fill: blue)
+
+box
+
+#box(stroke: red, inset: 1em)[
+#lorem(5)
+]
+
+
+#show heading: set text(navy)
+
+Function to create rect 
+
+#let alert(body, fill: red) = {
+  set text(white)
+  set align(center)
+  rect(
+    fill: fill,
+    inset: 8pt,
+    radius: 4pt,
+    [*Warning:\ #body*],
+  )
+}
+
+#alert[
+  Danger is imminent!
+]
+
+#alert(fill: blue)[
+  KEEP OFF TRACKS
+]
+=
+=== center
+
+#align(center)[Center this]
+
+#block(
+  fill: luma(230),
+  inset: 8pt,
+  radius: 4pt,
+  lorem(30),
+)
+
+
+== What else?
+
+There are not much things in basic "markup" syntax,
+but we will see much more interesting things very soon!
+I hope you noticed auto-matched "smart quotes" there.
+
+#line(length:100%)
+#block(
+  fill: luma(230),
+  inset: 8pt,
+  radius: 4pt,
+  lorem(30),
+)
+#line(length:100%)
+```
+
+=== R Code does execute ??
+```{r}
+x =2
+y = 3
+x*y
+```
+```{=typst}
+=== rectangles, circles
+[Try 1]
+#rect(
+  width: 100%,
+  height: 2cm,
+  place(horizon + right, square()),
+)
+
+[Try 2]
+#rect(
+  width: 100%,
+  height: 2cm,
+  place(horizon + right, square(square(square()))),
+)
+
+#line(length: 100%)
+#line(length: 100%)
+#circle(radius: 50pt)
+#circle(radius: 25pt, stroke: red)
+#circle(radius: 25pt)[
+  #set align(center)
+  stop \
+]
+
+// make concentric
+#circle(
+  radius: 50pt,
+  place(horizon + center, circle(circle(fill: blue)))
+)
+  
+=== Bash does not work
+```
+
+```{bash}
+# Your Bash commands here
+echo "Hello, World!"
+```
+```{=typst}
+== url
+// #show <element>:
+#show link: underline
+#link("https://nytimes.com")[See nytimes]
+
+#show link: set text(stroke: rgb(10, 0, 0))
+#link("https://nytimes.com")[See nytimes]
+
+
+=== function to color [body], if selected 
+// toggle on/off; set [body] a color
+#let format(body, on: false) = {
+  set text(green) if on
+  [#body]
+}
+
+#set par.line(numbering: "1.")
+// first is true, second false 
+#format( on: true)[a line]  \ // body is [a line]
+#format(on: false)[a second line]
+
+// begin
+This is a black. \
+#set text(red)
+How do I change this to red? \
+Still red?!
+// end
+#set par.line(numbering: none)
+
+#align(right)[this is right aligned]
+
+#set text(black)
+#show "project": smallcaps
+I am working on special project.
+
+#line(length: 100%)
+
+#block_text
+
+#figure(caption: "The block", block_text)
+
+== text
+lorem(10) \
+#lorem(10)
+
+#block(
+    fill: luma(230),
+)
+
+= Content block
+[ *hello*  jim]
+
+= Content + code
+#{ let a = [jim]
+ [My name is ] + a
+}
+
+= function
+
+#let f(name) = "Hello, " + name
+#f("world!") \
+#f("jim")
+
+// The following syntaxes are equivalent
+#let f = (name) => "Hello, " + name
+#let f(name) = "Hello, " + name
+
+== function with content argument, using []
+#let f(name) = [Hello, #name]
+#f[World] // also don't forget we can use it to pass content!
+
+== default args
+#let f(name: "no name") = [Hello, #name!]
+
+#f()
+#f(name: "Joe")
+#f(name: "world")
+
+
+=== show rule
+
+RULE: show "XX": text(green)[I am green] \
+
+#show "XX": text(green)[I am green]
+
+Do you see "XX" text?
+```
+
+
+```{=typst}
+#let t = read("README.md")
+#raw(t, block: true)
+```
+
+  
+  
+  
+  
 
