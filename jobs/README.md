@@ -15,7 +15,7 @@ How will it appear in Github?
 
 <hr>
 
-![Embed the image file here](fake-resume-1.svg)
+![Embed the image file here](jobs/fake-resume-1.svg)
 
 ![Embed the image file here](fake-resume-2.svg)
 
