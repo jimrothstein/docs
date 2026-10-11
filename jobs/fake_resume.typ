@@ -1,7 +1,5 @@
 #set page(width: auto, height: auto, margin: 10pt)
 
-= Level 1
-== Level 2
 
 Or, this one:
 
@@ -18,11 +16,12 @@ fill: black   // gray is too light
 )
 
 
-
 #set heading(numbering: "1.")
 #outline()
 #show regex("[Mmath]"): it => emph(it)
 
+= Level 1
+== Level 2
 
 math is fun
 

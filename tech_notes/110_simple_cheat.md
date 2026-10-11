@@ -68,7 +68,10 @@ If pushed: CHANGE Last commit, keep same msg, must force
 - git add
 - git commit --amend -C HEAD 
 - git push -f
-
+```
+If NOT pushed:
+```
+-
 ```
 
 Restore file to prior state \

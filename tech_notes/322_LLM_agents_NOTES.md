@@ -6,8 +6,8 @@ description: "This *.md:   operational notes, tools, websites   - no theory here
 `````````
 === LEARN (above average!)
 * Hadley - newsletter, using ellmer to explain agent, harness ...
-* Simon Willison writes how he uses LLM models; https://simonwillison.net/2026/Mar/30/mr-chatterbox/
-* Blog with very clear explanations & background: https://blog.apify.com/mcp-a2a-agentic-internet/
+* Simon Willison writes how he uses LLM models; (https://simonwillison.net/2026/Mar/30/mr-chatterbox/)
+* Blog with very clear explanations & background: (https://blog.apify.com/mcp-a2a-agentic-internet/)
 
 
 ### 4 SEP 2026
@@ -23,20 +23,20 @@ description: "This *.md:   operational notes, tools, websites   - no theory here
     Emil Huitfeldt
 
 ### 21 AUG 2026
-python coding: (Aaruhs) https://youtu.be/6ZTVp70Mf5s?list=PLbcglKxZP5PN24k_s_a4QlTR_FSZ7HON3
+python coding: (Aaruhs) <https://youtu.be/6ZTVp70Mf5s?list=PLbcglKxZP5PN24k_s_a4QlTR_FSZ7HON3>
 - b/c python coding, ML (but now I do not the theory )
 
-pytorch - has tutorial (https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html)
+pytorch - has tutorial (<https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html>)
 pytorch - free day camp  https://youtu.be/V_xro1bcAuA?si=HVHV2IhUW-ALzJGc
 
 - LLM:   https://visionbook.mit.edu/
 
 ### 09 AUG 2026
-- https://eli.thegreenplace.net/2025/reverse-mode-automatic-differentiation/
-- auto diff: Baydin, et al https://arxiv.org/pdf/1502.05767
+- <https://eli.thegreenplace.net/2025/reverse-mode-automatic-differentiation/>
+- auto diff: Baydin, et al <https://arxiv.org/pdf/1502.05767>
 - Karpathy:  Spelled out intro to micrograd:   https://www.youtube.com/watch?v=VMj-3S1tku0&list=PLbcglKxZP5PNVpX0Opb46KC1Tqp1X1Zql
-- Diesenroth https://mml-book.github.io/book/mml-book.pdf
-- Use Semantic Line Breaks (https://sembr.org/)
+- Diesenroth <https://mml-book.github.io/book/mml-book.pdf>
+- Use Semantic Line Breaks (<https://sembr.org/>)
 
 Thought I knew derivatives and partial differentiation, but I don't. <br> Was
 following Karpathy's excellent , "Spelled Out Intro to Micrograd".  He's clear
@@ -45,7 +45,7 @@ computational graphs, backpropation, tweaking neural networks and gradient
 descent.  So I sidetracked.   Diesenroth
 (https://mml-book.github.io/book/mml-book.pdf ) has good treatment of much of
 the math in neural networks.  This blog post
-https://eli.thegreenplace.net/2025/reverse-mode-automatic-differentiation/ was
+<https://eli.thegreenplace.net/2025/reverse-mode-automatic-differentiation/> was
 very helpful and I am now working through this paper by Baydin, et al, which
 really dives into what these techniques are about.
 
@@ -54,23 +54,17 @@ really dives into what these techniques are about.
 
 * Peng tidyverse 2021 Ch5 models
 * LEARNING: SmolML (uses Karpathy) from scratch in python, no pytorch :  https://github.com/rodmarkun/SmolML?tab=readme-ov-file :read:
-* Geeks4Geeks : many tutorials https://www.geeksforgeeks.org/machine-learning/machine-learning/
+* Geeks4Geeks : many tutorials <https://www.geeksforgeeks.org/machine-learning/machine-learning/>
 
 * Kaggle: ** guide https://www.kaggle.com/learn/intro-to-machine-learning, 
 https://www.kaggle.com/code/dansbecker/how-models-work
-
-
 * Karpathy https://www.youtube.com/watch?v=VMj-3S1tku0&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=1
 * Karpathy Playlists https://www.youtube.com/playlist?list=PLAqhIrjkxbuW9U8-vZ_s_cjKPT_FqRStI 
-
-* Rebecca Carter, very clear:  tidymodel intro (https://rebeccabarter.com/blog/2020-03-25_machine_learning#what-is-tidymodels)
-
-* AI Books (free) https://github.com/MarcosSete/awesome-free-ai-books
+* AI Books (free) <https://github.com/MarcosSete/awesome-free-ai-books>
 * TODO Mnielson [ [neural][ http://neuralnetworksanddeeplearning.com/chap1.html]] :read:
 * TODO Clark models               :read: 
 * TODO Patterns Hardt & Recht :read:
-* Kim, S.... https://skim.math.msstate.edu/LectureNotes/Machine_Learning_Lecture.pdf (python - see Ch2, good, but also need numerical examples ) :read: 
-
+* Kim, S.... <https://skim.math.msstate.edu/LectureNotes/Machine_Learning_Lecture.pdf> (python - see Ch2, good, but also need numerical examples ) :read: 
 * Mohamed AAZI - good, but lost the lin  :read:
 * Geeks4Geeks : scikit  :read:
 * Bagging:  Classifier (0,1)  Bootstramp original sample; but each with only 1 or 2 features (sampled) from all features (ex: ageron, 05-decison-trees)
