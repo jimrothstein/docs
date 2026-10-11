@@ -41,6 +41,7 @@ Trials R package development.
 - SQL: 2+ years, joins, dplyr
 - Positron, emacs, zsh shell, github, github actions
 - admiral, admiraldev, sdtmchecks
+- opencode, MCP, built SKILLS.md, 
 
 </div>
 
