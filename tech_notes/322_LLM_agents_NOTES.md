@@ -3,8 +3,7 @@ name: 320_LLM_agents_NOTES.md
 description: "This *.md:   operational notes, tools, websites   - no theory here."
 ---
 
-`````````
-=== LEARN (above average!)
+### LEARN (above average!)
 * Hadley - newsletter, using ellmer to explain agent, harness ...
 * Simon Willison writes how he uses [LLM models](https://simonwillison.net/2026/Mar/30/mr-chatterbox/)
 * Blog with very clear explanations & [background](https://blog.apify.com/mcp-a2a-agentic-internet/)
