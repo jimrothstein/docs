@@ -6,8 +6,8 @@ description: "This *.md:   operational notes, tools, websites   - no theory here
 `````````
 === LEARN (above average!)
 * Hadley - newsletter, using ellmer to explain agent, harness ...
-* Simon Willison writes how he uses LLM models; (https://simonwillison.net/2026/Mar/30/mr-chatterbox/)
-* Blog with very clear explanations & background: (https://blog.apify.com/mcp-a2a-agentic-internet/)
+* Simon Willison writes how he uses [LLM models](https://simonwillison.net/2026/Mar/30/mr-chatterbox/)
+* Blog with very clear explanations & [background](https://blog.apify.com/mcp-a2a-agentic-internet/)
 
 
 ### 4 SEP 2026
