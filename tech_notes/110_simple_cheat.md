@@ -77,8 +77,17 @@ If NOT pushed:
 Restore file to prior state \
 Edit/save/commit/push
 ```
-- git checkout <SHA> -- <file>
+- git checkout <SHA> -- <file>   # restores <file> to where it was at <SHA>
+- git checkout <SHA>             # detached HEAD, git checkout - to return
+
+- git show <commit>:<file>       # no detached HEAD, just prints file content
+
+$ git checkout master             (1)    now on branch 'master'
+$ git checkout master~2 Makefile  (2)    replace Makefile with version 2 commits back
+$ rm -f hello.c                          accidentally delete a file
+$ git checkout hello.c            (3)    recover lost file
 ```
+
 
 List files ignored (uses .gitignore)
 ```
