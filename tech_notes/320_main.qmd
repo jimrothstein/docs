@@ -1,0 +1,14 @@
+###  Insert md document into this .qmd+typst
+
+This main, .qmd file
+The text needs to be an *.md file
+
+PURPOSE:  Create/edit files in simple markdown *.md*
+When need pdf, run this file.   Not perfect, but simple
+
+TO USE:   quarto render 320_main.qmd --to typst
+```{=typst}
+#let t = read("322_LLM_agents_NOTES.md")
+#raw(t, block: true)
+```
+

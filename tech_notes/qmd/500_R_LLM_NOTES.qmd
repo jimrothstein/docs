@@ -1,0 +1,30 @@
+---
+title: "500_R_LLM_NOTES.qmd"
+author: "JR"
+date: "5/22/2021"
+output:  html_document
+toc:  false
+editor_options: 
+  chunk_output_type: console
+---
+::: {.small}
+
+::: callout-note
+This document is about **R & LLM**, but written in quarto to practice quarto decorations \
+quarto render <file.qmd> --to gfm --output 280_emacs_notes.md
+:::
+
+[280_emacs_notes.qmd](280_emacs_notes.qmd)
+300_tech_notes.qmd
+810_pharmaverse_notes.qmd
+
+##### ------------------------ footnote 
+
+Create a footnote: [^1]
+
+[^1]: This is footnote one.
+
+\newpage
+\pagebreak
+
+

@@ -1,0 +1,68 @@
+---
+title:	"car"
+output: 
+  html:
+  pdf_document:
+    latex_engine: xelatex
+---
+
+
+### auto accident, 2023-08-26
+
+1.  Friday, 9-10 pm, returning from grocery shopping, attempting to slide in only
+    open parking space on streeet in front of office.  Done this many times.
+    (HULL center patrons fill up most slots on street). West side of Willamette,
+    I am driving south.
+    
+
+2.  Glasses on; street lighting good; had just completely illegal U-turn on
+    Willamette (only recently began to do this). Seat belt on; no drinking; no
+    distractions.  No right mirror (same for several years).
+
+3.  Sometimes I parallel park, but this time attempted to slide in front first,
+    directly in front of red truck (ie to south).  Generous parking spaces and done this many
+    times before.  Speed - 5 mph? more?   Suddenly car lurged. Body, restrained by seatbelt,
+    also lurged foward.   VERY suprised.   What did I hit?  Red truck (TUNDRA) on
+    right, but it did not seem close.  Surprised. Not convinced I did this
+    (clearly I did.)
+
+4.  Mistake two.   Did not leave vehicle, but tried to backup and straight wheel.
+    But each time easing forward, connected with red truck.  Tried to backup and
+    really turn wheel; same thing.  Still unclear what I hit; did my roof
+    contact with underside of his large left mirror??  
+
+5.  After a few more attempts, got car to move away from truck and go foward to
+    parking spot in front of truck.  However, the car slid in to curb at sharp
+    angle.  Ok, back up again (I'm clear of truck at this point). But each time,
+    car goes back to curb.   Tried several times.
+    
+6.  With flashers on (car rear end protrudes into street).  Get out. Front right
+    wheel and left right wheel point in different directions!  Push tire, try to
+    reverse and straight (parallel to street) ; again no luck.
+
+7.  Still at same angle;  get out to examine truck.  Seems minimal damage... fender mark;
+    scapes below door, same height as fender mark.  Its mirror seems OK.  In
+    street, I retrieve large metal bolt.  Red truck or mine??
+    
+8.  Total time?   10 min?   Try to get car to drive forward;   Try to push. No
+    luck. Couple ask if I need push.   But after consideration.  Decide something
+    wrong with steering and push won't help.
+
+9.  Call chuck, insurance company etc.  Put away perishables  (in office refrig)
+    When I return, truck owner there.  Kyle?  Exchange insurance.   he does not seem
+    too pissed. Show metal bolt;  not his.  Kyle is pretty sure I connected first
+    with his bumper.  Very plausible.
+
+10. Various phone calls, insurance, chuck etc.  How did I do this?  How could I
+    so badly misjudge?  What's wrong with me? 
+
+11. And what about the steering and the metal bolt?   Assuming metal bolt related
+    to broken steering:   Did this happen just BEFORE hitting truck; DURING, ie
+    turning wheel, trying to go back or forward.    From position of bolt,
+    certainly happened well before I was able to slide into parking slot.  Bolt
+    is adjacent to red truck's door, but far into roadway; about where my steering column
+    would be; far into roadway. 
+    
+
+   vim:linebreak nowrap tw=81 fo=tqlnr foldcolumn=3 
+

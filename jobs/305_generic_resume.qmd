@@ -1,0 +1,96 @@
+---
+title: ""
+format:
+  pdf:
+    titlepage: false
+---
+
+<!-- 
+
+To render:   
+   quarto render 305_generic_resume.qmd
+
+using bootstrap 2 column grid
+-->
+
+## jim Rothstein
+
+[jimrothstein@gmail.com](jimrothstein@gmail.com)  
+(831) 824-4304 (messages)
+
+<https://www.linkedin.com/in/jimrothstein> \
+<https://github.com/jimrothstein>
+
+### Overview
+
+R package developer. Use LLM to write/verify code.   
+
+### Related Skills
+
+<div class="columns">
+
+<div class="column" width="50%">
+
+- R, 4+ years
+- python, 1 year
+- tidyverse, httr2, data.table, shiny, quarto …
+- github actions
+- SQL: 2+ years, joins, dplyr
+- Positron, emacs, vim
+- admiral, admiraldev, sdtmchecks
+- github
+- zsh shell
+- linux
+
+</div>
+</div>
+
+### Recent Projects & Skills
+
+- Worked with pharmaverse, including admiral, and pilot5 JSON
+  delivery to FDA.  Worked with CDISC standards, such a ADaM, SDTM,
+  and including schema and REST api. Wrote github actions
+  workflow to automate.
+
+- Develop github actions to automatically verify various
+  pharmaverse datasets and templates pass tests.
+
+- Using Shiny developed preliminary dashboard for analysis of
+  Drug Benefit Denials (public data from Center for Medicare and
+  Medicaid (CMS)).
+
+- Used youtube API and `httr` and `httr2` to add/modify
+  youtube.com playlists. Used OAUTH tokens scope. 
+
+- Used tools in `rrapply` , `tidyr` , `vctrs`, `tibblify` to unravel
+  deeply nested JSONs in tree/json format to table (from REST apis)
+
+- (active) Contribute to various Open Source projects (Github)
+
+### RELATED WORK HISTORY:
+
+2014 - present **R-Coders** Self-employed R programmer. \
+
+1996-2014 Self-employed contractor, including \
+
+- Webmaster, community expatriate website in Dalian, China, 2005 – 2008 Setup,
+- Capital IT Group, Dalian, China 2004- Mentor Chinese software
+  engineers
+- Center for Electronic Art, San Francisco, 2002 Taught Java, mySQL, jsp
+  classes. 
+- Teaching (1998-2012) Taught classes java, math, internet, statistics
+  in China and California community college in US. 
+- Webmaster, Saratoga Systems, Campbell, CA (1996-1998) Maintain NT
+  and IIS server. Various internet projects.
+- Web Database Development, Microsoft, Redmond, WA (1996) Web database
+  applications.
+- Contract Programming Assignments: Chicago, IL (1986-1996) Develop
+  variety of business database applications (Paradox, Delphi, Access)
+- Developed relational database model for insurance company to track
+  debt and assets of its multi-billion real estate porfolio.  
+
+### Education
+
+    BS MIT, physics
+
+### 

@@ -1,0 +1,365 @@
+---
+name: "412_MATH_differentiate_NOTES.qmd"
+author: "JR"
+date: today 
+editor:
+  markdown: 
+    wrap: 72
+---
+
+
+## derivative
+```
+Modified from @perplexity <https://www.perplexity.ai/search/aefc7c0e-5fc4-4b54-8b52-91e4f736577f> 
+```
+
+```{=typst}
+#set page(
+  paper: "us-letter",
+  margin: (x: 0.5cm, y: 0.5cm),
+)
+
+#set text(
+  font: "New Computer Modern",
+  size: 10pt,
+  fill: black   // gray is too light
+
+)
+
+
+
+#set heading(numbering: "1.")
+#outline()
+#show regex("[Mmath]"): it => emph(it)
+
+// derivative.typ
+//
+// Notes: Derivatives of scalar and vector-valued functions and
+// mean-square-error gradient descent for one linear neuron.
+
+= Derivatives of Vector-Valued Functions
+
+== Scalar Input, Scalar Output (single variable)
+Suppose
+
+$
+f: RR -> RR.
+$
+
+
+$
+d f / d x
+= f'(x)
+$
+
+== Scalar Input, Vector Output
+
+Suppose
+
+$
+bold(f)(x) = (f_1(x), f_2(x), f_3(x)),
+$
+
+where each component takes one scalar input:
+
+$
+f_i: RR -> RR.
+$
+
+Then the derivative is found component-wise:
+
+$
+d bold(f) / d x
+= (f_1'(x), f_2'(x), f_3'(x)).
+$
+
+The result is a vector in $RR^3$. Geometrically, it is the tangent
+vector to the curve traced by $bold(f)(x)$ as $x$ changes.
+
+== Two Inputs, Vector Output
+
+Now suppose
+
+$
+bold(f)(x, y)
+= (f_1(x, y), f_2(x, y), f_3(x, y)),
+$
+
+where each component has two scalar inputs:
+
+$
+f_i: RR^2 -> RR.
+$
+
+The derivative is the *Jacobian matrix*:
+
+$
+D bold(f)(x, y)
+=
+mat(
+  frac(partial f_1, partial x), frac(partial f_1, partial y);
+  frac(partial f_2, partial x), frac(partial f_2, partial y);
+  frac(partial f_3, partial x), frac(partial f_3, partial y),
+).
+$
+
+This is a $3 times 2$ matrix:
+
+- 3 rows, one for each output component.
+- 2 columns, one for each input variable.
+
+For a small input change
+
+$
+Delta bold(x)
+=
+vec(Delta x, Delta y),
+$
+
+the corresponding output change is approximately
+
+$
+Delta bold(f)
+approx
+D bold(f)(x, y) Delta bold(x).
+$
+
+== General Form
+
+Let
+
+$
+bold(f): RR^n -> RR^m,
+$
+
+with input vector
+
+$
+bold(x) = (x_1, x_2, ..., x_n)
+$
+
+and output vector
+
+$
+bold(f)(bold(x))
+=
+(f_1(bold(x)), f_2(bold(x)), ..., f_m(bold(x))).
+$
+
+The Jacobian is
+
+$
+J_bold(f)(bold(x))
+=
+mat(
+  frac(partial f_1, partial x_1), frac(partial f_1, partial x_2), dots.h, frac(partial f_1, partial x_1);
+
+  // row 2
+ frac(partial f_2, partial x_1), frac(partial f_2, partial x_2), dots.h, frac(partial f_2, partial x_n);
+//row 3
+dots.v, dots.v, dots.h, dots.v;
+
+// row 4
+ frac(partial f_1, partial x_m), frac(partial f_2, partial x_m), dots.h, frac(partial f_n, partial x_m);
+)
+$
+
+Its size is
+
+$
+m times n.
+$
+
+That is:
+
+- Number of rows = number of output components.
+- Number of columns = number of input components.
+
+As local shorthand, one could write the size as
+
+$
+|bold(f)| times |bold(x)|.
+$
+
+Here, $|bold(v)|$ must be explicitly defined to mean the *number of
+components* of vector $bold(v)$, rather than its usual possible meaning
+of vector length or norm.
+
+= Gradient Descent for One Linear Neuron
+
+== Setup
+
+Consider a single linear neuron with:
+
+- Input vector $bold(x) in RR^n$.
+- Weight vector $bold(w) in RR^n$.
+- Scalar bias $b in RR$.
+- Scalar prediction $hat(y) in RR$.
+
+The neuron computes
+
+$
+hat(y) = bold(w)^T bold(x) + b.
+$
+
+Suppose the training data consist of $N$ input--target pairs:
+
+$
+{(bold(x)^(1), y^(1)), (bold(x)^(2), y^(2)), ..., (bold(x)^(N), y^(N))}.
+$
+
+For datapoint $i$, the prediction is
+
+$
+hat(y)^(i)
+=
+bold(w)^T bold(x)^(i) + b.
+$
+
+== Mean Square Error
+
+The mean square error is
+
+$
+E(bold(w), b)
+=
+frac(1, N)
+sum_(i = 1)^N
+(
+  bold(w)^T bold(x)^(i) + b - y^(i)
+)^2.
+$
+
+Equivalently, if the residual for datapoint $i$ is
+
+$
+r^(i)
+=
+hat(y)^(i) - y^(i)
+=
+bold(w)^T bold(x)^(i) + b - y^(i),
+$
+
+then
+
+$
+E(bold(w), b)
+=
+frac(1, N)
+sum_(i = 1)^N (r^(i))^2.
+$
+
+== Parameters
+
+Combine the weights and bias into one parameter vector:
+
+$
+bold(theta)
+=
+vec(
+  w_1,
+  w_2,
+  dots,
+  w_n,
+  b,
+)
+in RR^(n + 1).
+$
+
+The error is then a scalar-valued function:
+
+$
+E: RR^(n + 1) -> RR.
+$
+
+== Jacobian of the Error
+
+Because the error has one scalar output and $n + 1$ parameter inputs,
+its Jacobian has size
+
+$
+1 times (n + 1).
+$
+
+Symbolically,
+
+$
+J_E(bold(theta))
+=
+mat(
+  frac(partial E, partial theta_1),
+  frac(partial E, partial theta_2),
+  dots,
+  frac(partial E, partial theta_(n + 1)),
+).
+$
+
+Writing the parameter components explicitly gives
+
+$
+J_E(bold(w), b)
+=
+mat(
+  frac(partial E, partial w_1),
+  frac(partial E, partial w_2),
+  dots,
+  frac(partial E, partial w_n),
+  frac(partial E, partial b),
+).
+$
+
+This Jacobian is the derivative of the scalar error with respect to all
+parameters, written as a row vector.
+
+The gradient is commonly written as a column vector:
+
+$
+nabla E(bold(theta))
+=
+J_E(bold(theta))^T
+=
+vec(
+  frac(partial E, partial w_1),
+  frac(partial E, partial w_2),
+  dots.v,
+  frac(partial E, partial w_n),
+  frac(partial E, partial b),
+).
+$
+
+Thus:
+
+- The Jacobian of $E$ has shape $1 times (n + 1)$.
+- The column-gradient $nabla E$ has shape $(n + 1) times 1$.
+- Both contain the same partial derivatives; they differ only by
+  transpose convention.
+
+== Gradient Descent
+
+With learning rate $eta > 0$, gradient descent updates the parameter
+vector by moving in the direction opposite the gradient:
+
+$
+bold(theta)
+arrow
+bold(theta) - eta nabla E(bold(theta)).
+$
+
+Equivalently, for weights and bias:
+
+$
+bold(w)
+arrow
+bold(w) - eta frac(partial E, partial bold(w)),
+$
+
+$
+b
+arrow
+b - eta frac(partial E, partial b).
+$
+
+The negative-gradient direction is used because it is the local
+direction in parameter space that decreases the error most rapidly.
+```
+

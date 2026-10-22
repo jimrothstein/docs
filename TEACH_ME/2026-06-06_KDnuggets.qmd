@@ -1,0 +1,79 @@
+---
+title: "KDnuggets News — June 6, 2026"
+date: "2026-06-06"
+format: html
+---
+
+## Latest Blog Posts from KDnuggets
+
+Here are the 10 most recent posts from [KDnuggets](https://www.kdnuggets.com/news/index.html):
+
+---
+
+### 1. A Deep Dive into Calibration of Language Models: Platt Scaling, Isotonic Regression, Temperature Scaling
+**Date:** June 5, 2026 | **Author:** Nate Rosidi  
+**Description:** Discover three post-hoc methods for closing the gap between confidence and accuracy.  
+[Read more →](https://www.kdnuggets.com/a-deep-dive-into-calibration-of-language-models-platt-scaling-isotonic-regression-temperature-scaling)
+
+---
+
+### 2. 3 SpaCy Tricks for Efficient Text Processing & Entity Recognition
+**Date:** June 5, 2026 | **Author:** Matthew Mayo  
+**Description:** In this article, we will explore three essential spaCy tricks that every developer should have in their toolkit to maximize processing speed and customize entity recognition.  
+[Read more →](https://www.kdnuggets.com/3-spacy-tricks-for-efficient-text-processing-entity-recognition)
+
+---
+
+### 3. What the Agentic Era Means for Data Science
+**Date:** June 4, 2026 | **Author:** Vinod Chugani  
+**Description:** Learn how AI agents are reshaping data science workflows and which skills practitioners need in 2026.  
+[Read more →](https://www.kdnuggets.com/what-the-agentic-era-means-for-data-science)
+
+---
+
+### 4. 7 Steps to Mastering Time Series Analysis with Python
+**Date:** June 4, 2026 | **Author:** Bala Priya C  
+**Description:** This article breaks down 7 key steps to help you analyze and forecast time series data with Python.  
+[Read more →](https://www.kdnuggets.com/7-steps-to-mastering-time-series-analysis-with-python)
+
+---
+
+### 5. How to Write to Files in Python: A Beginner's Guide
+**Date:** June 3, 2026 | **Author:** Abid Ali Awan  
+**Description:** Learn how to write, append, and save text, CSV, and JSON files in Python using native file handling tools that work out of the box.  
+[Read more →](https://www.kdnuggets.com/how-to-write-to-files-in-python-a-beginners-guide)
+
+---
+
+### 6. 5 Fun Papers That Explain LLMs Clearly
+**Date:** June 3, 2026 | **Author:** Kanwal Mehreen  
+**Description:** Want to understand LLMs better? Start with these five foundational papers that explain how they work.  
+[Read more →](https://www.kdnuggets.com/5-fun-papers-that-explain-llms-clearly)
+
+---
+
+### 7. A Gentle Primer on LLM Explainability
+**Date:** June 2, 2026 | **Author:** Iván Palomares Carrascosa  
+**Description:** This article discusses LLM explainability and outlines the advances, trends, and ongoing developments in this important field of study.  
+[Read more →](https://www.kdnuggets.com/a-gentle-primer-on-llm-explainability)
+
+---
+
+### 8. 10 GitHub Repositories for Modern Database Systems and Tools
+**Date:** June 2, 2026 | **Author:** Abid Ali Awan  
+**Description:** Explore 10 top open-source GitHub repositories for modern databases, analytics, SQL, caching, monitoring, replication, PostgreSQL, SQLite, and AI agent memory.  
+[Read more →](https://www.kdnuggets.com/10-github-repositories-for-modern-database-systems-and-tools)
+
+---
+
+### 9. Mocking a Year of IoT Sensor Time Series Data with Mimesis
+**Date:** June 1, 2026 | **Author:** Iván Palomares Carrascosa  
+**Description:** In this guide, you will learn the process of generating a year's worth of daily temperature readings, mimicking a seasonal curve that looks like real — all together with device-level metadata.  
+[Read more →](https://www.kdnuggets.com/mocking-a-year-of-iot-sensor-time-series-data-with-mimesis)
+
+---
+
+### 10. 5 Must-Know Python Concepts for Data Scientists
+**Date:** June 1, 2026 | **Author:** Matthew Mayo  
+**Description:** In this article, we will dive deep into five must-know Python concepts that will help you transition from writing clunky, slow spaghetti code to constructing lightning-fast, production-grade, and beautifully functional data pipelines.  
+[Read more →](https://www.kdnuggets.com/5-must-know-python-concepts-for-data-scientists)

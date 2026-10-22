@@ -1,0 +1,111 @@
+---
+title: "A Small Computational Graph fletcher"
+format:
+  typst: default
+---
+```{=typst}
+#import "@preview/fletcher:0.5.8" as fletcher: diagram, node, edge
+#import "@preview/diverential:0.3.0": *
+
+
+#figure(
+  align(center)[
+    #diagram(
+      cell-size: 18mm,
+      node-shape: circle,
+      node-stroke: 0.8pt + rgb("#3B6EA5"),
+      node-fill: rgb("#EAF2FF"),
+      node-inset: 3pt,
+
+      // Forward computation: solid blue arrows.
+      node((0, 0), $x$, name: <x>),
+      node((0, 1), $y$, name: <y>),
+      node((1, 0.5), $u = x + y$, name: <u>),
+      node((2, 0.5), $f = u y$, name: <f>),
+
+      edge(<x>, "-|>", <u>, stroke: rgb("#3B6EA5")),
+      edge(<y>, "-|>", <u>, stroke: rgb("#3B6EA5")),
+      edge(<u>, "-|>", <f>, stroke: rgb("#3B6EA5")),
+      edge(<y>, <f>, "-|>", bend: -25deg, stroke: rgb("#3B6EA5")),
+
+      // Reverse pass: dashed red arrows.
+      edge(
+        <f>, <u>, "<|-",
+        bend: 15deg,
+        stroke: 1pt + rgb("#C53030"),
+        label: $dvp(f,u)  = y$,
+        label-pos: 0.5,
+        label-side: left,
+      ),
+      edge(
+        <u>, <x>, "<|-",
+        bend: 15deg,
+        stroke: 1pt + rgb("#C53030"),
+        label: $dvp(f,x)  = y$,
+        label-pos: 0.55,
+        label-side: left,
+      )
+    )
+  ],
+  caption: [
+    Solid blue arrows show the forward evaluation.
+    Dashed red arrows show selected reverse-mode derivatives.
+  ],
+)
+```
+
+Practice here: 
+
+```{=typst}
+#import "@preview/fletcher:0.5.8" as fletcher: diagram, node, edge
+#import "@preview/diverential:0.3.0": *
+
+#figure(
+  align(center)[
+    #diagram(
+      cell-size: 18mm,
+      node-shape: circle,
+      node-stroke: 0.8pt + rgb("#3B6EA5"),
+      node-fill: rgb("#EAF2FF"),
+      node-inset: 3pt,
+
+      // Forward computation: solid blue arrows.
+      node((0, 0), $u$, name: <u>),
+      node((0, 1), $v$, name: <v>),
+      node((1, 0.5), $a = u + v$, name: <a>),
+      node((2, 0.5), $b = a v$, name: <b>),
+//      node((3,0.5)), [y], name:<y>),
+
+
+      edge(<u>, "-|>", <a>, stroke: rgb("#3B6EA5")),
+      edge(<v>, "-|>", <a>, stroke: rgb("#3B6EA5")),
+      edge(<a>, "-|>", <b>, stroke: rgb("#3B6EA5")),
+      edge(<v>, <b>, "-|>", bend: -25deg, stroke: rgb("#3B6EA5")),
+//      line((0,0), (1,1), stroke: green)
+      )
+ //     edge(<b>, <y>,  "-|>")
+
+      // Reverse pass: dashed red arrows.
+/**      edge(
+        <f>, <u>, "<|-",
+        bend: 15deg,
+        stroke: 1pt + rgb("#C53030"),
+        label: $dvp(f,u)  = y$,
+        label-pos: 0.5,
+        label-side: left,
+      ),
+      edge(
+        <u>, <x>, "<|-",
+        bend: 15deg,
+        stroke: 1pt + rgb("#C53030"),
+        label: $dvp(f,x)  = y$,
+        label-pos: 0.55,
+        label-side: left,
+**/     )
+    )
+  ],
+  caption: [
+    Solid blue arrows show the forward evaluation.
+  ],
+)
+```
