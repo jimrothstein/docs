@@ -163,7 +163,10 @@ git rebase -i <after-this-commit>
 
 
 
-### python, uv
+### python, uv - pain in ...
+- simplest:   use positron, do what it says, including environment
+- then use "pip install XXX" inside positron, seems to work
+
 <https://docs.python.org/3/library/venv.html> \
 <https://github.com/mlflow/mlflow/issues/12478#issuecomment-2517567782> \
 
