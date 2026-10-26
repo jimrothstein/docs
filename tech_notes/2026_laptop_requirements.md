@@ -2,6 +2,13 @@
 
 For your R/Python coding and light local-LLM use, my **ranking** is: AMD Ryzen 7 first, AMD Ryzen 5 second, then Intel configurations. This is a buying-preference ranking at comparable RAM, condition, and price—not a claim that AMD wins every benchmark. The tested Ryzen 7 model excelled in sustained multicore work, while Intel did better in some single-core tasks.[^1_1]
 
+
+## Now, HP Elite 845 G7/ AMD Ryzen 7 PRO 4750U/ 16GB/256GB
+
+## Questions:
+- Compare USB 4.0 vs Thunderbolt and benefits (if any)
+- P14s - any issues?
+
 ## T14s Gen 3: best to last
 
 | Rank | Processor configuration | Assessment |

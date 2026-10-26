@@ -9,6 +9,8 @@ editor:
 
 PURPOSE:  Mixed quarto/typst features.  Includes quarto div, html tricks (legacy)
 
+NOTE:   SEE typst chunk for typst commands;  render to see results
+
 
 # Typst Cheat
 
@@ -19,6 +21,8 @@ PURPOSE:  Mixed quarto/typst features.  Includes quarto div, html tricks (legacy
 - typst:  need to learn: https://typst.app/docs/reference/scripting/#fields
 - template:  Create and use!
 
+
+## templates, set page, set text, set heading, outline
 ```{=typst}
 
 Use:
@@ -50,8 +54,6 @@ Or, this one:
 
 )
 
-
-
 #set heading(numbering: "1.")
 #outline()
 // emph is italits, strong is bold
@@ -62,26 +64,18 @@ math is fun
 ```
 
 ## Types of Values
-```{=typst}
 - Content, with markup is default; can have styling (font, color etc) \
+```{=typst}
 #strong[arg], the arg is content   \
 #strong[jim] \
 
 - #"This is not content _ it is string _ **" \
 - "But this is content" \
-
 ```
 
 ## primitive, measurements
-```{=typst}
-none/boolean/float/string (raw string, no styling)
-
-2pt, 10deg, 2fr, ratio, colors
-
-
-
-
-```
+- none/boolean/float/string (raw string, no styling)
+- 2pt, 10deg, 2fr, ratio, colors
 
 ## Concatinate (code block)
 ```{=typst}
@@ -92,6 +86,7 @@ none/boolean/float/string (raw string, no styling)
   a + [the] + b
 }
 ```
+
 ## Appear like R code
 ```{=typst}
 #let r = raw.with(lang: "r")
@@ -101,6 +96,7 @@ This can then be used like: #r("x <- c(10, 42)")
 
 ## Smaller/larger font in block
 ````{=typst}
+
 ```py
 def python():
   return 5 + 5
@@ -131,14 +127,10 @@ def python():
 #link("https//nytimes.com")[the NY Times]
 #divider()    // actual function is defined near bottom
 ```
-    
 
 ## expressions (https://typst.app/docs/reference/scripting/)
-
-
-```{=typst}
 compact syntax (use hash) to embed a code expression into markup: / 
-
+```{=typst}
 #emph[Hello] \   // function call
 #emoji.face \    // field
 #"hello".len()   // method calls
