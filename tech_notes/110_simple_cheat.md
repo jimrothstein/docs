@@ -160,6 +160,22 @@ Run git rebase -i <after-this-commit>; except for final **pick***  change earlie
 git rebase -i <after-this-commit>
 ```
 
+### i3
+
+https://devdocs.io/i3/
+To find class of a window, in shell type: (WM_CLASS is literal, type as it is)
+
+-xprop WM_CLASS
+
+- then switch and click on browser window, or emacs, or caliber or whatever want the class
+- in shell, class name will be returned, choose the 2nd string
+
+```
+
+
+
+
+```
 
 
 

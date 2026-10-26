@@ -54,10 +54,33 @@ Or, this one:
 
 #set heading(numbering: "1.")
 #outline()
-#show regex("[Mmath]"): it => emph(it)
+// emph is italits, strong is bold
+#show regex("[Mmath]"): it => strong(it)
 
 
-math is fund
+math is fun
+```
+
+## Types of Values
+```{=typst}
+- Content, with markup is default; can have styling (font, color etc) \
+#strong[arg], the arg is content   \
+#strong[jim] \
+
+- #"This is not content _ it is string _ **" \
+- "But this is content" \
+
+```
+
+## primitive, measurements
+```{=typst}
+none/boolean/float/string (raw string, no styling)
+
+2pt, 10deg, 2fr, ratio, colors
+
+
+
+
 ```
 
 ## Concatinate (code block)
