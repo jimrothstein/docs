@@ -3,9 +3,9 @@ name: link_audit
 ## Runs monthly on schedule, or manually via workflow_dispatch.
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: "0 12 1 * *"   # 1st of month, 12:00 UTC
+#  workflow_dispatch:
+#  schedule:
+#    - cron: "0 12 1 * *"   # 1st of month, 12:00 UTC
 
 permissions:
   contents: write
