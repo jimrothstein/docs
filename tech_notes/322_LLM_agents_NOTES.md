@@ -346,6 +346,8 @@ Yes—**technically, it is the HTTP/“remote-style” transport** even when bot
 
 “Remote” here really means: the client connects to a separately running server over **HTTP**, rather than launching it and communicating through `stdin`/`stdout`. `localhost` just makes that HTTP connection stay on your own machine. [developers.cloudflare](https://developers.cloudflare.com/agents/model-context-protocol/protocol/transport/)
 
+### LLM and tokens
+- zwolf25/token mining/efficiency https://github.com/zwolf25/tokenminning
 ## What does a neural network do (concepts)
 - Suppose we want to do "separation", say of cats/dogs (or n categories) - if linear separation fails.
 - Bend space: TODO Somehow convert entire space to weird, n-dimensions such that  we can find a "direction" leading to greater probability of "dog", and a separate direction leading to greater probability of "cat"

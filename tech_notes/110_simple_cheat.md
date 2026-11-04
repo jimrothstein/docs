@@ -187,20 +187,33 @@ To find class of a window, in shell type: (WM_CLASS is literal, type as it is)
 <https://github.com/mlflow/mlflow/issues/12478#issuecomment-2517567782> \
 
 ```
-python3 -m venv .venv           # Install venv to .venv/
-python3 -m venv <path-to-target-dir> # (9/26) use venv project-by-project for now
-
+Try:
+mdkir <target>
+uv venv                         # in target directory, creates .venv?
+source .venv/bin/activate      # create and activate
+uv pip install -r requirements.txt
 
 uv init --package <mypackage>   # creates new dir and related files (not venv)
-uv venv                         # in target directory
-uv venv && source .venv/bin/activate      # create and activate
-
 uv add <pkg1> <pkg2>            # adds dependencies
 
 
 Require minimum version:
 
 uv add "mcp[cli]>=2.0.0"
+
+USAGE: \
+uv [OPTIONS] <COMMAND>
+-v verbose
+-V version
+
+<COMMAND>:  pip, venv, run, init, sync ...
+
+USAGE: \
+uv pip [OPTIONS]
+
+
+python3 -m venv .venv           # Install venv to .venv/
+python3 -m venv <path-to-target-dir> # (9/26) use venv project-by-project for now
 ```
 
 ### zathura 

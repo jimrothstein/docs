@@ -7,28 +7,23 @@ editor:
     wrap: 72
 ---
 
-PURPOSE:  Mixed quarto/typst features.  Includes quarto div, html tricks (legacy)
+PURPOSE:  *.qmd file to show Mixed quarto/typst features.  Includes quarto div, html tricks (legacy)
+
+HOW TO USE:  
+- See pdf for rendered snippets 
+- Snippets:   see here
 
 NOTE:   SEE typst chunk for typst commands;  render to see results
+
+*quarto render 260_typst_cheat.qmd --to typst*
 
 
 # Typst Cheat
 
-## TODO
-- create quarto template that embeds this setup
-- learn typst options for _quarto.yml, under format: typst
-- typst vs latex (ex:  https://www.reddit.com/r/math/s/jIHGOicBsP); many dislike mixing markdown with code
-- typst:  need to learn: https://typst.app/docs/reference/scripting/#fields
-- template:  Create and use!
-
-
-## templates, set page, set text, set heading, outline
+## import template and \
+set page, set text, set heading, outline \
 ```{=typst}
-
-Use:
-
 #import "template.typ": apply-template
-
 
 // `func.with(..)` applies the arguments to the function and returns the new
 // function with those defaults applied
@@ -42,6 +37,7 @@ It imports the template template.typ
 
 Or, this one:
 
+// can put these in template, also
 #set page(
   paper: "us-letter",
   margin: (x: 0.5cm, y: 0.5cm),
@@ -56,28 +52,46 @@ Or, this one:
 
 #set heading(numbering: "1.")
 #outline()
-// emph is italits, strong is bold
-#show regex("[Mmath]"): it => strong(it)
-
-
-math is fun
 ```
 
-## Types of Values
-- Content, with markup is default; can have styling (font, color etc) \
-```{=typst}
-#strong[arg], the arg is content   \
-#strong[jim] \
 
-- #"This is not content _ it is string _ **" \
-- "But this is content" \
+### double space, then reset
+```{=typst}
+/* double space */
+#set par(leading: 1.5em, justify: false, spacing: 2.5em)
+#lorem(50)
+
+/* reset to default space */
+#set par(leading: 0.65em, justify: false, spacing: 2.5em)
+```
+
+### set rule, 
+
+- NOTE: emph is italics, strong is bold
+- both "math", with M|m followed by optional -s
+```{=typst}
+#show regex("[Mm]aths?"): it => strong(it)
+
+math is fun   \
+maths is fun   \
+Math is fun \
+```
+
+## String vs Content
+- Content, with markup is default; can have styling (font, color etc) 
+
+```{=typst}
+#"This is not content ** *_ it is string _ **" \
+
+"But this is content" \
 ```
 
 ## primitive, measurements
 - none/boolean/float/string (raw string, no styling)
 - 2pt, 10deg, 2fr, ratio, colors
 
-## Concatinate (code block)
+
+## Concatenate (code block)
 ```{=typst}
 #{
   let a = [from]
@@ -90,19 +104,18 @@ math is fun
 ## Appear like R code
 ```{=typst}
 #let r = raw.with(lang: "r")
-
-This can then be used like: #r("x <- c(10, 42)")
+USAGE:\
+#r("x <- c(10, 42)")
 ```
 
-## Smaller/larger font in block
-````{=typst}
-
+## python block
 ```py
 def python():
   return 5 + 5
 ```
-// Switch to JetBrains Mono for both
-// inline and block raw.
+## Smaller/larger font in block
+- Switch to JetBrains Mono for both inline and block raw.
+````{=typst}
 #show raw: set text(font: "JetBrains Mono")
 JetBrains Mono \
 
@@ -110,7 +123,7 @@ JetBrains Mono \
 // but keep inline raw at the reduced size.
 #show raw.where(block: true): set text(1em / 0.8)
 
-Now using the ` ` font for raw text.
+Now using the ` ` font for raw text. \
 Here's some Python code. It looks larger now:
 
 ```py
@@ -121,6 +134,7 @@ def python():
 ````
 
 ## link
+- show link to always add underline
 ```{=typst}
 #show link: underline
 #link("https://nytimes.com") \
@@ -133,39 +147,31 @@ compact syntax (use hash) to embed a code expression into markup: /
 ```{=typst}
 #emph[Hello] \   // function call
 #emoji.face \    // field
-#"hello".len()   // method calls
+#"hello".len()   // lenght, method calls
 ```
 
-### functions
+## functions \#list() creates a list \ 
+
+### lists
 ```{=typst}
-Call a function. \
-\#list([A], [B]) \ 
 
+list\
 #list([A], [B])
-
-Named arguments and trailing  \
-content blocks. \ 
-\#enum(start: 2)[A][B]
-
-#enum(start: 2)[A][B]
-
-Version without parentheses.
-\#list[A][B]
 #list[A][B]
-
+enum\
+#enum(start: 2)[A][B]
 ```
 
 ### for loop (create list)
 ```{=typst}
-// automatically puts into list
+// automatically put into list
 
 #for x in "ABC" [
   - Letter #x
 ]
 ```
 
-### typst variable to hold [content]
-
+### Create a content variable (text with markup)
 ```{=typst}
 #let ipa = text(
   style: "italic",
@@ -175,11 +181,11 @@ Version without parentheses.
 The canonical way to
 pronounce Typst is #ipa.
 
-// passing ipa as argument
+Use table to display nicely
 #table(
   columns: (1fr, 1fr),
   [Name], [Typst],
-  [Pronunciation], ipa,
+  [Pronunciation], ipa, // row 1 // 
 )
 ```
 
@@ -214,62 +220,41 @@ pronounce Typst is #ipa.
 #funny-font \
 #mile \
 ```
+****
 
 ## Function: create block with divider
 ```{=typst}
 
-#let info(body) = block(
-  stroke: (left: 1.5pt + blue),
+#let info(body) = block(   // function
+  //stroke: (left: 2.5pt + blue),     // only left side
+  stroke: (2.5pt + blue),            // this is box-like
   fill: aqua.lighten(50%),
   context {
     body
     show divider: set block(
-      spacing: .2em     // height of this block?
+      spacing: 1.8em     // height of this blue block
     )
-    divider()
+    divider()   // adds horizontal line (to divide )
   }
 )
 
 
-// the call
+Display a divider:
 #info[this should be blue]
-
-
 ```
 
-### PURPOSE:  
-This is *.qmd file with (1) various quarto display tricks and (2) *typst* chunks. /
 
-### USE:   
-quarto render 260_typst_cheat.qmd --to typst
-
-
-## Typst Basics (TODO: cleanup !)
+## More basics 
 ```{=typst}
 // Basic examples:      https://sitandr.github.io/typst-examples-book/book/basics/scripting/basics.html
-
-/* Notes:
-
-- render:  typst watch|compile <file.typ>
-- 1st debug:  online editor  typst.app  
- 
-
-to use typst format (works great) with *.qmd:
-- quarto render *.qmd --to typst
-This renders to pdf, using the typst format in _quarto.yml, or in document header
-
-*/
 
 #set page("us-letter")
 #set heading(numbering: "1.")
 #set text(
   font: "New Computer Modern",
-  size: 10pt
+  size: 15pt    // 10 is small 15pt is a better!
 )
 
-PURPOSE:  basic typst syntax
-
-= Goal:  Organized, simple examples
 
 //#show heading: set text(red)
 #show heading.where(level: 2): set text(red)
@@ -296,16 +281,16 @@ return to normal color:
 
 == begin paragraph number
 
-== align
+== align right
 #align(right)[this is right aligned]
 
-== set a variable:
-#emph[Hi] \
-
+== set a variable "A" to context
+blue + strong
 #let A = text(blue, strong[Hi]) 
-#A \
+#A \  // display
 
-#let A = strong[hi] 
+strong only
+#let A = strong[Hi] 
 #A to you! \
 #set par.line(numbering: none)
 
@@ -316,8 +301,12 @@ return to normal color:
   Typst is great!
 ]
 
-== red & color block
+== red & color block (Box?)
 #let block_text = block(stroke: red, inset: 1em)[This is red.]
+
+#block_text   // use it
+
+
 == small caps
 #show "project": smallcaps
 I am working on special project.
@@ -426,6 +415,9 @@ x =2
 y = 3
 x*y
 ```
+
+*****
+
 ```{=typst}
 === rectangles, circles
 [Try 1]

@@ -1,0 +1,47 @@
+---
+
+title: "450_python_NOTE.qmd
+date: last-modified
+description: Notes related to python 
+---
+
+## packages
+- parquet  method to store data
+- polars - (like tibble) view as spreadsheet:  row/columns (origin:  apache arrow)
+-  
+
+### Legacy
+- numpy - matrices, lin alg, numerical calculations
+- pandas
+
+
+### positron
+- ~/.positron/extensions/
+- argv.json
+
+- ~/.posit
+  - ai/
+  - assistant/
+
+- ~/.config/Positron/User/settings.json
+
+### positron skills
+
+SEE: https://github.com/posit-dev/skills
+
+(posit-dev, open-source, r-lib, shiny, quarto)
+
+• USER-LEVEL:
+	• ~/.posit/assistant/skills/<skill-name>/SKILL.md
+	• ~/.agents/skills/<skill-name>/SKILL.md
+
+• PROJECT-LEVEL (overrides user-level):
+	• .posit/assistant/skills/<skill-name>/SKILL.md
+	• .agents/skills/<skill-name>/SKILL.md
+
+
+
+
+## websocket v REST api (both use HTTP)
+- websocket is like 2-way, telephone, 
+- REST stateless and client must initiate
