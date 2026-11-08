@@ -8,6 +8,12 @@
 
 #### Main Regex file:  ~/code/docs/tech_notes/REGEX.md
 #### This file: ~/code/docs/tech_notes/002_grep_examples.md
+
+Grep a log file for an exact phrase
+```
+grep -E 'level=ERROR' log/opencode.log | wc -l
+```
+
 ```
 #	Goal: remove far right portion of prompt (for clarity)
 {

@@ -520,7 +520,7 @@ If you want, I can also help you compare an oral appliance vs CPAP specifically 
 ```
 
 
-
+```{=typst}
  
 TMD Clinic
 Kaiser Permanente Interstate Medical Office Central
@@ -562,3 +562,12 @@ RESULTS:   rec'd October 2026;   total time:  Jan/Feb 2026 - mid-October
 - Plus one other: in-between teeth
 - Use eBrush more - cleans better.  Get 2nd one?
 
+
+2026-11-05
+
+Kidney function/A1C Notes from perplexity:
+https://www.perplexity.ai/search/41b7ba1c-b2f0-4e76-b033-aa57822ad986
+
+- 5.5 or 5.6 is ok, not worth effort to reduce.
+
+```

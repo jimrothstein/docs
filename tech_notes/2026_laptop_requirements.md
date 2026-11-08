@@ -201,3 +201,46 @@ Strategy: buy a **16 GB** L14/Framework and add a 16 GB stick — much easier th
 3. T14 Gen 3 AMD 32 GB
 4. P14s Gen 4 AMD
 5. Fallback: L14 Gen 3 AMD or Framework 13 AMD with self-added RAM
+
+---
+
+# T14s Gen 3 Intel ranking, and what you lose vs Ryzen (researched 2026-11-05)
+
+Context: Ryzen 7/5 T14s Gen 3 units are scarce used; Intel units are plentiful. This section ranks the Intel configurations on their own merits for Debian, R/Python coding, and light local-LLM use, assuming RAM, screen, price, and condition are comparable. Benchmark figures below are from the NotebookCheck test units (R7 PRO 6850U T14s G3 vs i5-1235U T14s G3, with i7-1265U and i7-1260P data from same-chassis siblings).[^3_1][^3_2]
+
+## Intel chips, best to last
+
+| Rank | Configuration | Assessment |
+| :-- | :-- | :-- |
+| 1 | Intel Core i7-1265U (vPro) / i7-1255U | Best Intel target for this chassis: 2P+8E / 12 threads, up to 4.7–4.8 GHz, **Iris Xe 96 EU**. Highest Intel single-core score measured (Cinebench R23 SC 1820 in a Latitude 9430; the i5-1235U T14s itself hit 1683 vs 1520 for the 6850U).[^3_1][^3_2] Multicore in the thin T14s chassis is only marginally above the i5-U, so the premium buys clocks + a 20% larger iGPU, not sustained throughput. |
+| 2 | Intel Core i5-1235U / i5-1245U | Sweet spot of the Intel lineup in this machine: R23 MC 9208 (−8% vs 6850U's 10031), near-identical sustained multicore to the i7-U because the chassis taps both at ~33 W sustained. The i5 has 80 EU Iris Xe (−20% iGPU vs i7-U). Between Intel-only options, the price/RAM difference decides; choose the i5 when cheaper or better equipped. |
+| 3 | Intel i7-1260P / 1270P | Conditional: 6P+8E promises more, but P-series throttles badly in thin 14" chassis — an X1 Carbon's 1260P sustained-loop score fell from 1615 to a low of 1063 in Cinebench R15, i.e. up to ~34% below its burst score, and Nvidia-adjacent tests show P-sustained ≈ U-sustained at best. Worse battery and heat than the U-series in the same T14s body. Only pay extra if the specific listing is cheaper. |
+| 4 | Intel i5-1240P / 1250P | Same P-series logic with only 80 EU. A T16's i5-1240P ran a sustained R15 loop at Ø1033 (919–1747) — a whisker above the i5-1235U *throttled* floor and below the i5-U's average. No sustained advantage justifies it. |
+| 5 | Intel i7-1280P | Rare in the used market (special-bid, not offered in EMEA); same thermal ceiling as the other P-series in this chassis, so no realistic path to sustained superiority. Avoid paying a premium. |
+
+## What you lose with an Intel T14s Gen 3 vs the Ryzen 6850U (or 6650U)
+
+| Loss | Detail | Size of the loss |
+| :-- | :-- | :-- |
+| GPU: Radeon 680M/660M → Iris Xe | 6850U's Radeon 680M (RDNA2, 12 CU) is roughly **2× faster** than even the 96-EU Iris Xe; an i5's 80-EU unit is ~2.4× behind. For light local-LLM GPU offload (llama.cpp/openVINO/Vulkan) and any GPU-accelerated R/Python work, this is the biggest single loss. | Large |
+| Sustained multicore | 6850U: R23 MC 10031, R15 loop rock-stable (Ø1600, 1589–1686, no drop). Intel U-series: 9208–9219 (−8%) with R15 loops that sag ~20% below burst (1261 vs 1587 for the i5). E-cores ramp down first under sustained load; the Ryzen's 8 true Zen3+ cores hold their line. | Moderate: −8% multicore steady-state, plus burst instability |
+| Battery | Same 57 Wh battery: Wi-Fi websurfing 12.0 h (AMD) vs 9.6 h (i5-1235U); under load 2.5 h vs 1.3 h. | Moderate (matters little for you) |
+| Memory platform | AMD is always LPDDR5-6400. Intel T14s G3 ships both **DDR4-3200** and LPDDR5-6400 configurations (the tested unit was DDR5-4800-class); DDR4 units have much lower memory bandwidth, which hurts the Iris Xe iGPU and memory-bound R/NumPy work. | Variable — real only if you buy a DDR4 unit (see below) |
+| Hybrid-cluster scheduling on Linux | Alder Lake's P+E cores need a modern kernel for sane scheduling (Debian 12's 6.1+ is fine; older kernels mis-schedule E-cores). The Ryzen's uniform 8C/16T is simpler and predictable for long parallel runs. | Small (with a current kernel) |
+
+Not a loss: AVX-512 — neither chip has it usable (Alder Lake ships it fused-off; 6850U is Zen3+, where AVX-512 arrived only with Zen 4). Wi-Fi is equal quality on both (Intel AX211 vs Qualcomm WCN685x measured within 2%).
+
+## What you gain with Intel
+
+- **Two full Thunderbolt 4 ports** (AMD has one USB4 + one USB-C 3.2 Gen 2). TB4 ⊇ USB4, so this is strictly better connectivity; NotebookCheck verified Thunderbolt docks and even a TB eGPU run on both machines. If a TB dock matters to your desk, this partially offsets the ranking.[^3_1][^3_2]
+- Higher single-core (+11–20% Cinebench R23 SC), Quick Sync media engine (excellent VAAPI on Linux), and a much larger used supply.
+
+## Buying rules if Intel
+
+1. Prefer **i7-1265U/1255U** when RAM/price are comparable; i5-1235U/1245U is fine when cheaper.
+2. **Only buy LPDDR5-6400 listings** — DDR4-3200 units sacrifice iGPU and bandwidth; verify in the listing's Memory field.
+3. Skip the P-series unless the specific unit is cheaper or carries more RAM/screen (their "advantage" does not survive this chassis thermally).
+
+[^3_1]: https://www.notebookcheck.net/Lenovo-ThinkPad-T14s-G3-AMD-laptop-review-Quiet-and-efficient-workhorse-with-Ryzen-power.682906.0.html
+[^3_2]: https://www.notebookcheck.net/Lenovo-ThinkPad-T14s-G3-Intel-laptop-review-quiet-efficient-and-fast.675670.0.html
+[^3_3]: https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T14s_Gen_3_Intel/ThinkPad_T14s_Gen_3_Intel_Spec.pdf

@@ -3,6 +3,10 @@ name: 320_LLM_agents_NOTES.md
 description: "This *.md:   operational notes, tools, websites   - no theory here."
 ---
 
+###  Chron
+Nov 7, 2026 - use npx; intstall posit-dev/skills;  video - Learn PyTorch (Daniel Bourke) (book: https://www.learnpytorch.io/)
+
+
 ### LEARN (above average!)
 * Hadley - newsletter, using ellmer to explain agent, harness ...
 * Simon Willison writes how he uses [LLM models](https://simonwillison.net/2026/Mar/30/mr-chatterbox/)
@@ -34,7 +38,7 @@ pytorch - free day camp  https://youtu.be/V_xro1bcAuA?si=HVHV2IhUW-ALzJGc
 ### ML BASICS
 
 * Peng tidyverse 2021 Ch5 models
-* LEARNING: SmolML (uses Karpathy) from scratch in python, no pytorch :  https://github.com/rodmarkun/SmolML?tab=readme-ov-file :read:
+* LEARNING: SmolML (uses Karpathy) from scratch in python, no pytorch, good intro :  https://github.com/rodmarkun/SmolML?tab=readme-ov-file :read:
 * Geeks4Geeks : many tutorials <https://www.geeksforgeeks.org/machine-learning/machine-learning/>
 * Kaggle: ** guide https://www.kaggle.com/learn/intro-to-machine-learning, 
 https://www.kaggle.com/code/dansbecker/how-models-work
