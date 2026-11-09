@@ -58,7 +58,7 @@ ex <file>
 #### git
 
 git rebase (simple form)
-- moves commits from `dev` after HEAD of `main`
+- moves commits from `dev` branch to main,  after HEAD 
 ```
 git rebase main
 ```
