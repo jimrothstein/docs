@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-11-17] ingest | Math and statistics notes
+- Disposition: Update
+- Raw: tech_notes/412_math_differentiate_NOTES.qmd
+
+## [2026-11-17] ingest | no material: tech_notes/411_math_notes_part2.qmd
+- Disposition: No material
+
 ## [2026-11-09] ingest | Math and statistics notes
 - Disposition: New
 - Raw: tech_notes/410_MATH_notes.qmd

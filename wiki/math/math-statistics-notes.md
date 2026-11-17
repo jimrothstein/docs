@@ -1,9 +1,9 @@
 ---
 Title: Math and statistics notes
 Topic: math
-Updated: 2026-11-09
+Updated: 2026-11-17
 Sources: tech_notes (in-place notes, undated)
-Raw: [410_MATH_notes.qmd](../../tech_notes/410_MATH_notes.qmd)
+Raw: [410_MATH_notes.qmd](../../tech_notes/410_MATH_notes.qmd); [412_math_differentiate_NOTES.qmd](../../tech_notes/412_math_differentiate_NOTES.qmd)
 ---
 
 # Math and statistics notes
@@ -75,6 +75,32 @@ Setup: D = Data (known), p = param (unknown); goal "Choose parameter st most con
 ## Gradient worked example
 
 For `f=x*y + 4y - 3x^2 - y^2` at `x_0` = (1,-1): the gradient points toward min/max. Using diverential's `dv`: `$vec(dv(f,x, eval:0),(dv(f,y, eval:0)))$` = `vec(-7,7)` — "(reverse the sign, to find min)".
+
+## Vector-valued derivatives and the Jacobian
+
+Source `412_math_differentiate_NOTES.qmd`, headed "Derivatives of Vector-Valued Functions" and "Modified from @perplexity".
+
+- Scalar input, scalar output: `f: RR -> RR`, `d f / d x = f'(x)`.
+- Scalar input, vector output: `bold(f)(x) = (f_1(x), f_2(x), f_3(x))` with each `f_i: RR -> RR`; the derivative is found component-wise: `d bold(f) / d x = (f_1'(x), f_2'(x), f_3'(x))`. "The result is a vector in $RR^3$. Geometrically, it is the tangent vector to the curve traced by $bold(f)(x)$ as $x$ changes."
+- Two inputs, vector output: `bold(f)(x, y) = (f_1(x, y), f_2(x, y), f_3(x, y))` with each `f_i: RR^2 -> RR`; "The derivative is the *Jacobian matrix*":
+
+```
+D bold(f)(x, y) = mat(frac(partial f_1, partial x), frac(partial f_1, partial y); frac(partial f_2, partial x), frac(partial f_2, partial y); frac(partial f_3, partial x), frac(partial f_3, partial y))
+```
+
+"This is a $3 times 2$ matrix" — 3 rows, one for each output component; 2 columns, one for each input variable. For a small input change `Delta bold(x) = vec(Delta x, Delta y)`, "the corresponding output change is approximately" `Delta bold(f) approx D bold(f)(x, y) Delta bold(x)`.
+- General form `bold(f): RR^n -> RR^m` with input `bold(x) = (x_1, x_2, ..., x_n)`: the Jacobian `J_bold(f)(bold(x))` — "Its size is $m times n$": "Number of rows = number of output components. Number of columns = number of input components." Local shorthand `|bold(f)| times |bold(x)|`, where "$|bold(v)|$ must be explicitly defined to mean the *number of components* of vector $bold(v)$, rather than its usual possible meaning of vector length or norm." (The notes' general matrix layout is rough — its last row mixes indices, e.g. `frac(partial f_1, partial x_m)` ... `frac(partial f_n, partial x_m)`.)
+
+## Gradient descent for one linear neuron
+
+Same source, headed "Gradient Descent for One Linear Neuron".
+
+- Setup: input `bold(x) in RR^n`, weight `bold(w) in RR^n`, scalar bias `b in RR`, scalar prediction `hat(y) in RR`; the neuron computes `hat(y) = bold(w)^T bold(x) + b`. Training data `{(bold(x)^(1), y^(1)), (bold(x)^(2), y^(2)), ..., (bold(x)^(N), y^(N))}`; for datapoint `i`, `hat(y)^(i) = bold(w)^T bold(x)^(i) + b`.
+- Mean square error: `E(bold(w), b) = frac(1, N) sum_(i = 1)^N (bold(w)^T bold(x)^(i) + b - y^(i))^2`; with residual `r^(i) = hat(y)^(i) - y^(i) = bold(w)^T bold(x)^(i) + b - y^(i)`, `E(bold(w), b) = frac(1, N) sum_(i = 1)^N (r^(i))^2`.
+- Parameters combined: `bold(theta) = vec(w_1, w_2, dots, w_n, b) in RR^(n + 1)`, so the error is `E: RR^(n + 1) -> RR`.
+- Jacobian of the error: one scalar output and `n + 1` parameter inputs, so its size is `1 times (n + 1)`; `J_E(bold(theta)) = mat(frac(partial E, partial theta_1), frac(partial E, partial theta_2), dots, frac(partial E, partial theta_(n + 1)),)` and `J_E(bold(w), b) = mat(frac(partial E, partial w_1), frac(partial E, partial w_2), dots, frac(partial E, partial w_n), frac(partial E, partial b),)`. "This Jacobian is the derivative of the scalar error with respect to all parameters, written as a row vector."
+- Gradient as a column vector: `nabla E(bold(theta)) = J_E(bold(theta))^T = vec(frac(partial E, partial w_1), frac(partial E, partial w_2), dots.v, frac(partial E, partial w_n), frac(partial E, partial b),)`. "The Jacobian of $E$ has shape $1 times (n + 1)$. The column-gradient $nabla E$ has shape $(n + 1) times 1$. Both contain the same partial derivatives; they differ only by transpose convention."
+- Update rule with learning rate `eta > 0`: `bold(theta) arrow bold(theta) - eta nabla E(bold(theta))`; equivalently `bold(w) arrow bold(w) - eta frac(partial E, partial bold(w))` and `b arrow b - eta frac(partial E, partial b)`. "The negative-gradient direction is used because it is the local direction in parameter space that decreases the error most rapidly."
 
 ## Principal axis theorem
 
