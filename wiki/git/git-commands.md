@@ -1,9 +1,9 @@
 ---
 Title: Git Commands
 Topic: git
-Updated: 2026-11-08
+Updated: 2026-11-09
 Sources: tech_notes (in-place notes, undated)
-Raw: [110_simple_cheat.md](../../tech_notes/110_simple_cheat.md)
+Raw: [110_simple_cheat.md](../../tech_notes/110_simple_cheat.md); [300_tech_notes.qmd](../../tech_notes/300_tech_notes.qmd)
 ---
 
 # Git Commands
@@ -98,6 +98,55 @@ git log --until
 ```
 
 Range notation: `origin..HEAD` — after origin, before HEAD; `HEAD ^origin` — same.
+
+## HEAD, reflog, and moving back
+
+HEAD normally points to the branch tip but can point to a commit (detached HEAD); **"Goes where you go, like a shadow."** Commits are immutable; HEADS can move around.
+
+```sh
+git show HEAD -- <file>      # green/red of the very last changes
+git reflog                   # how HEAD jumped around [local only]
+git reflog HEAD@{3}
+git reflog HEAD@{yesterday}
+git show HEAD@{3}            # commit
+git show <br>@{yesterday}    # branch
+git checkout HEAD@{n}        # move back to n
+```
+
+Undo while keeping history: `git revert <SHA>` (undo one past commit); `git revert HEAD~2..HEAD` (undo last 2). Amend — `git add; git commit --amend --no-edit` — "Changes last commit and changes SHA." "If already pushed, and now amending, github finds difference and won't push till you fix." `git push -f origin main` (force): "Not good idea."
+
+## switch and branches
+
+```sh
+git switch <branch>
+git switch -                # return to prior branch
+git switch SHA              # no longer works
+git switch --detach SHA     # inspect commit (or create new branch at this SHA)
+```
+
+Detach head by `git checkout <SHA>`, then build out a new branch (`git checkout -b new`).
+
+## Merge and conflicts
+
+Better: `git fetch` 1st. Dry run: `git merge --no-ff --no-commit main` (no fastforward). When merge fails, pick which content:
+
+```
+<<< HEAD  (my branch)
+... content A ...
+
+=======   (remote branch has this)
+... content B
+>>> (remote branch)
+```
+
+`git restore --source master~2 path/file` — restore a file to 2 commits back. Also `git diff HEAD -- path/to/file.R` — diff for one file only.
+
+## gh commands
+
+```sh
+gh repo delete jimrothstein/<repo> --yes   # on github; --yes means no confirm; be sure to have permissions
+gh repo list
+```
 
 ## See Also
 

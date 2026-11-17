@@ -6,6 +6,17 @@ USAGE:  Should appear correct in github\
 in Typst:   use read()
 
 
+### adb
+  - use "adb -d" not "adb"
+  - adb --help
+  - adb shell <command>
+  - adb shell df -h
+  - adb shell ls /system/bin (available cmds)
+
+  - adb -d push --sync * /sdcard/Music /
+   -d to use emulator (when 2 devices), --sync only pushes newer files
+
+
 ### typst, markdown, documents
 
 Render md to pdf, via pandoc
@@ -47,11 +58,6 @@ ex <file>
 :h                      # now in help.txt
 :1,5p                   # print lines (in help)
 :q                      # return to  edit
-
-
-
-
-
 
 ```
 
@@ -172,48 +178,45 @@ To find class of a window, in shell type: (WM_CLASS is literal, type as it is)
 
 ```
 
-
-
-
 ```
-
-
-
 ### python, uv - pain in ...
 - simplest:   use positron, do what it says, including environment
-- then use "pip install XXX" inside positron, seems to work
+- use uv, not pip, 
+- avoid "uv pip" - use uv alone
 
 <https://docs.python.org/3/library/venv.html> \
 <https://github.com/mlflow/mlflow/issues/12478#issuecomment-2517567782> \
 
 ```
-Try:
-mdkir <target>
-uv venv                         # in target directory, creates .venv?
-source .venv/bin/activate      # create and activate
-uv pip install -r requirements.txt
-
-uv init --package <mypackage>   # creates new dir and related files (not venv)
-uv add <pkg1> <pkg2>            # adds dependencies
-
-
-Require minimum version:
-
-uv add "mcp[cli]>=2.0.0"
-
 USAGE: \
 uv [OPTIONS] <COMMAND>
 -v verbose
 -V version
 
+HELP: \
+uv init -h
+uv venv -h
+uv run -h
+
 <COMMAND>:  pip, venv, run, init, sync ...
 
-USAGE: \
-uv pip [OPTIONS]
 
+NEW WAY (https://www.youtube.com/watch?v=AMdG7IjgSPM)
+- uv init my_app  (creates dir, git, .toml ...)
+- uv add pkgs  (pkgs, update *.toml, adds .venv, uv.lock*)
+- uv add "mcp[cli]>=2.0.0"    (minimum version)
+- uv tree (show depends)
+- uv run main.py  ( runs code AND activates .venv )
 
-python3 -m venv .venv           # Install venv to .venv/
-python3 -m venv <path-to-target-dir> # (9/26) use venv project-by-project for now
+- uv add -r <requirements.txt>   (if you have this filel)
+
+OLD WAY
+- create new dir
+- python3 -m venv .venv (create vir dir named .venv)
+- source .venv/bin   (activate)
+- pip install pkgs
+- create requirements.txt file (dependencies)
+
 ```
 
 ### zathura 
@@ -230,12 +233,18 @@ F11 - full-screen
 
 ```
 
-### zsh
+### zsh / bash
 
 SEE ~/code/make_project/   210...
+
+<~/code/make_project/>
 ```
+ll -R  code/try_things_here     # recursive dir
+find ~/dotfiles  -name SKILL.md # 
+
 diff -y file1 file2
 rm -i -- ^*.txt                 # careful!  deletes ALL except *.txt
 l = (a,b)                       # list
-for e in $l[@]; echo $e        # echo all
+for e in $l[@]; echo $e         # echo all
+
 ```

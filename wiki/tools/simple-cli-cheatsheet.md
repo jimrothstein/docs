@@ -1,7 +1,7 @@
 ---
 Title: Simple CLI Cheat Sheet
 Topic: tools
-Updated: 2026-11-08
+Updated: 2026-11-09
 Sources: tech_notes (in-place notes, undated)
 Raw: [110_simple_cheat.md](../../tech_notes/110_simple_cheat.md)
 ---
@@ -108,3 +108,4 @@ for e in $l[@]; echo $e   # echo all
 ## See Also
 
 - [Git commands](../git/git-commands.md)
+- [Emacs basics and learning resources](emacs-basics.md)
