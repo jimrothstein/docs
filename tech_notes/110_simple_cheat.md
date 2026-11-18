@@ -63,6 +63,9 @@ ex <file>
 
 #### git
 
+line-by-line, list commit, date, user
+git blame <file>
+
 git rebase (simple form)
 - moves commits from `dev` branch to main,  after HEAD 
 ```
@@ -82,7 +85,7 @@ If pushed: CHANGE Last commit, keep same msg, must force
 ```
 If NOT pushed:
 ```
--
+- git commit --amend -m "new msg"
 ```
 
 Restore file to prior state \
@@ -162,6 +165,9 @@ git update-index --skip-worktree <file>    # (as of 2024) way to remove <file> f
 \<after-this-commit\>             This <SHA> will not change.
 Run git rebase -i <after-this-commit>; except for final **pick***  change earlier picks to **s**
 
+Squash commits 4,5,6 onto new 4'
+BEFORE:   1 2 3 4 5 6
+AFTER:    1 2 3 4'
 ```
 git rebase -i <after-this-commit>
 ```
