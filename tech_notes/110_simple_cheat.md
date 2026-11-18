@@ -61,7 +61,19 @@ ex <file>
 
 ```
 
+***
+
 #### git
+
+
+git stash  
+git stash pop
+```
+- save local, uncommited work
+- recover it
+```
+
+just added = green
 
 git blame /<file/>
 - line-by-line, list commit, date, user
