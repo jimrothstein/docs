@@ -63,8 +63,9 @@ ex <file>
 
 #### git
 
-line-by-line, list commit, date, user
-git blame <file>
+git blame /<file/>
+- line-by-line, list commit, date, user
+
 
 git rebase (simple form)
 - moves commits from `dev` branch to main,  after HEAD 
